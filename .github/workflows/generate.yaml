@@ -1,0 +1,112 @@
+# This workflow generates the API docs, following the documented process in o3de/sig-docs-community.
+
+name: Generate Docs
+
+env:
+  version_joined: ''
+  doxygen_path: ${{ github.workspace }}/sig-docs-community/tools/o3de-doxygen
+  api_path: ${{ github.workspace }}/api.o3de.org
+  o3de_path: ${{ github.workspace }}/o3de
+  sig_path: ${{ github.workspace }}/sig-docs-community
+  extras_path: ${{ github.workspace }}/o3de-extras
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version (xx.yy.z)'
+        required: true
+        type: string
+      off_release:
+        description: "Generate off O3DE main branch?"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install deps
+        run: sudo apt-get install -y doxygen
+
+      - name: Get Version w/o dots
+        run: INPUT=${{ inputs.version }}; echo "version_joined=${INPUT//./}" >> ${GITHUB_ENV}
+
+      - name: Checkout api.o3de.org
+        uses: actions/checkout@v4.2.2
+        with:
+          path: api.o3de.org
+          ref: main
+
+      # Release builds
+      - name: Checkout O3DE, stabilization branch
+        if: ${{ ! inputs.off_release }}
+        uses: actions/checkout@v4.2.2
+        with:
+          path: o3de
+          repository: o3de/o3de
+          ref: "stabilization/${{ env.version_joined }}"
+      - name: Checkout O3DE-extras, stabilization branch
+        if: ${{ ! inputs.off_release }}
+        uses: actions/checkout@v4.2.2
+        with:
+          path: o3de-extras
+          repository: o3de/o3de-extras
+          ref: "stabilization/${{ env.version_joined }}"
+
+      # Off-release builds
+      - name: Checkout O3DE, main branch
+        if: ${{ inputs.off_release }}
+        uses: actions/checkout@v4.2.2
+        with:
+          path: o3de
+          repository: o3de/o3de
+          ref: "main"
+      - name: Checkout O3DE-extras, main branch
+        if: ${{ inputs.off_release }}
+        uses: actions/checkout@v4.2.2
+        with:
+          path: o3de-extras
+          repository: o3de/o3de-extras
+          ref: "main"
+
+
+      - name: Checkout sig-docs
+        uses: actions/checkout@v4.2.2
+        with:
+          path: sig-docs-community
+          repository: o3de/sig-docs-community
+          ref: main
+
+      - name: Set config
+        # Set the config information
+        run: |
+          echo "#! /bin/bash 
+
+          O3DE_PATH=${{ env.o3de_path }} 
+          O3DEORG_PATH=${{ env.api_path }}
+          PROJECT_NUMBER=${{ inputs.version }}" > ${{ env.doxygen_path }}/config.sh
+
+      - name: Debug
+        run: cat ${{ env.doxygen_path }}/config.sh
+
+      - name: Ensure scripts are executable
+        run: chmod +x ${{ env.doxygen_path}}/*.sh
+      - name: Copy extras Gems
+        run: cp -r ${{ env.extras_path }}/Gems/* ${{ env.o3de_path }}/Gems
+
+      - name: Generate Framework
+        run: ${{ env.doxygen_path}}/o3de-framework-apis.sh
+      - name: Generate Gems
+        run: ${{ env.doxygen_path}}/o3de-gem-apis.sh
+      - name: Commit and Create PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          signoff: true
+          path: ${{ env.api_path }}
+          commit-message: "Automatic generation of API docs for version ${{ inputs.version }}."
+          branch: generate/${{ inputs.version }}
+          title: "Generate API docs for ${{ inputs.version }}"
+          body: "Automated change from Generate Docs GitHub Action."
+  
