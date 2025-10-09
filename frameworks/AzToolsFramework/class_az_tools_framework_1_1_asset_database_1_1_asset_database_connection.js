@@ -1,5 +1,6 @@
 var class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection =
 [
+    [ "QueryCombinedByJobID", "class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html#a8a5b403c47252db235730cfe3b6bae44", null ],
     [ "QueryDependsOnSourceBySourceDependency", "class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html#a279c1b5f436e5181af7f457f0f1dab2c", null ],
     [ "QueryDirectReverseProductDependenciesBySourceGuidSubId", "class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html#a64e3c05594f211cb3d0c74bc1d382c21", null ],
     [ "QueryProductDependenciesUnresolvedAdvanced", "class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html#af5c3b301d2c8f052f1604a5c50cceac3", null ],

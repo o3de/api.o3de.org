@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"class_phys_x_1_1_rigid_body_configuration.html":[1,0,1,163],
 "class_phys_x_1_1_rigid_body_configuration.html#a984c2d55513234fb2f84ed312f432911":[1,0,1,163,0],
 "class_phys_x_1_1_rigid_body_configuration.html#af205339be3e5a5babf050e55440fc117":[1,0,1,163,1],
 "class_phys_x_1_1_scene_query_helpers_1_1_phys_x_query_filter_callback.html":[1,0,1,6,0],
@@ -44,8 +45,8 @@ var NAVTREEINDEX2 =
 "class_polygon_prism_mesh_utils_1_1_mesh2_d.html#a80a782f3bf5f4c1ea59a716807794d52":[1,0,3,2,0],
 "class_polygon_prism_mesh_utils_1_1_mesh2_d.html#ad5bd2bab4b35dc322acbf284e1cfea41":[1,0,3,2,1],
 "classes.html":[1,1],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_c.html":[1,3,0,1],
 "functions_d.html":[1,3,0,2],
 "functions_e.html":[1,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "struct_phys_x_1_1_scene_query_helpers_1_1_unbounded_overlap_callback.html":[1,0,1,6,1],
 "struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html":[1,0,1,7,0,0],
 "struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html#a58353222278fd58bf2ecffb8dd396721":[1,0,1,7,0,0,0],
-"struct_phys_x_1_1_utils_1_1_prefab_info.html":[1,0,1,7,2],
-"struct_phys_x_debug_1_1_color_mappings.html":[1,0,2,0]
+"struct_phys_x_1_1_utils_1_1_prefab_info.html":[1,0,1,7,2]
 };

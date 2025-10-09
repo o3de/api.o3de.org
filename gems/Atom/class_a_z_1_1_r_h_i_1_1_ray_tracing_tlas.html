@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -73,10 +73,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec8d96d997c703cc1a138141515d4e68" id="r_aec8d96d997c703cc1a138141515d4e68"><td class="memItemLeft" align="right" valign="top"><a id="aec8d96d997c703cc1a138141515d4e68" name="aec8d96d997c703cc1a138141515d4e68"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RHI_MULTI_DEVICE_OBJECT_GETTER</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas.html">RayTracingTlas</a>)</td></tr>
 <tr class="separator:aec8d96d997c703cc1a138141515d4e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c9a589cbbfd95ac0261356147bab92" id="r_a90c9a589cbbfd95ac0261356147bab92"><td class="memItemLeft" align="right" valign="top"><a id="a90c9a589cbbfd95ac0261356147bab92" name="a90c9a589cbbfd95ac0261356147bab92"></a>
-ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBuffers</b> (MultiDevice::DeviceMask deviceMask, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas_descriptor.html">RayTracingTlasDescriptor</a> *descriptor, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
-<tr class="memdesc:a90c9a589cbbfd95ac0261356147bab92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the internal TLAS buffers from the descriptor. <br /></td></tr>
-<tr class="separator:a90c9a589cbbfd95ac0261356147bab92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc552e616ff4b7c4a9491b24556b852d" id="r_adc552e616ff4b7c4a9491b24556b852d"><td class="memItemLeft" align="right" valign="top"><a id="adc552e616ff4b7c4a9491b24556b852d" name="adc552e616ff4b7c4a9491b24556b852d"></a>
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBuffers</b> (MultiDevice::DeviceMask deviceMask, const AZStd::unordered_map&lt; int, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_ray_tracing_tlas_descriptor.html">DeviceRayTracingTlasDescriptor</a> &gt; &amp;descriptor, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
+<tr class="memdesc:adc552e616ff4b7c4a9491b24556b852d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the internal TLAS buffers from the descriptor. <br /></td></tr>
+<tr class="separator:adc552e616ff4b7c4a9491b24556b852d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18791c102d2d9c47d3b1023903881474" id="r_a18791c102d2d9c47d3b1023903881474"><td class="memItemLeft" align="right" valign="top"><a id="a18791c102d2d9c47d3b1023903881474" name="a18791c102d2d9c47d3b1023903881474"></a>
 const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">RHI::Buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTlasBuffer</b> () const</td></tr>
 <tr class="memdesc:a18791c102d2d9c47d3b1023903881474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the TLAS RHI buffer. <br /></td></tr>
@@ -161,7 +161,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas.html">RayTracingTlas</a></p>
-<p>A <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas.html">RayTracingTlas</a> is created from the information in the <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas_descriptor.html">RayTracingTlasDescriptor</a>. </p>
+<p>A <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas.html">RayTracingTlas</a> is created from the information in the RayTracingTlasDescriptor. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/<b>RayTracingAccelerationStructure.h</b></li>
 </ul>
@@ -171,7 +171,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas.html">RayTracingTlas</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

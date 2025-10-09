@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"class_phys_x_1_1_editor_primitive_collider_component_requests.html#a5982b1434df8abf5f35fdd43df5b6df4":[1,0,1,75,3],
 "class_phys_x_1_1_editor_primitive_collider_component_requests.html#a6658970315734888e19017d56febb142":[1,0,1,75,1],
 "class_phys_x_1_1_editor_primitive_collider_component_requests.html#a6d10790e3bbc8bb57c1f6df16bc8b725":[1,0,1,75,7],
 "class_phys_x_1_1_editor_primitive_collider_component_requests.html#a7283ac395f3797768888505ba5243f6a":[1,0,1,75,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_phys_x_1_1_ragdoll_component.html":[1,0,1,158],
 "class_phys_x_1_1_ragdoll_node.html":[1,0,1,159],
 "class_phys_x_1_1_rigid_body.html":[1,0,1,161],
-"class_phys_x_1_1_rigid_body_component.html":[1,0,1,162],
-"class_phys_x_1_1_rigid_body_configuration.html":[1,0,1,163]
+"class_phys_x_1_1_rigid_body_component.html":[1,0,1,162]
 };

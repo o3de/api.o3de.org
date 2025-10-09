@@ -1,6 +1,9 @@
 var struct_a_z_1_1_r_h_i_1_1_device_features =
 [
     [ "m_computeShader", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a083a6ad86886fab379c45925043153ad", null ],
+    [ "m_crossDeviceDeviceMemory", "struct_a_z_1_1_r_h_i_1_1_device_features.html#aa16e48c829ad14cfa15af19ab5dfe64f", null ],
+    [ "m_crossDeviceFences", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a881af70524a9da3c63cdc39f9db8f372", null ],
+    [ "m_crossDeviceHostMemory", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a7c8ac4c71cb6050569e3423d08551cdc", null ],
     [ "m_customSamplePositions", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a4cca41a499305989b9314cc8cfbde49f", null ],
     [ "m_dualSourceBlending", "struct_a_z_1_1_r_h_i_1_1_device_features.html#aca26fa950738ca39f13ae420c0814e31", null ],
     [ "m_dynamicShadingRateImage", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a001202f9ddf818c0daf36d4c9ea53b21", null ],

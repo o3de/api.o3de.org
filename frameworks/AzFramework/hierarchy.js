@@ -837,7 +837,6 @@ var hierarchy =
       [ "Physics::CharacterConfiguration", "class_physics_1_1_character_configuration.html", null ],
       [ "Physics::RagdollConfiguration", "class_physics_1_1_ragdoll_configuration.html", null ]
     ] ],
-    [ "AzPhysics::SystemConfiguration", "struct_az_physics_1_1_system_configuration.html", null ],
     [ "AzPhysics::SystemInterface", "class_az_physics_1_1_system_interface.html", null ],
     [ "AzPhysics::TriggerEvent", "struct_az_physics_1_1_trigger_event.html", null ],
     [ "AZStd::hash< AzFramework::EntitySpawnTicket >", "struct_a_z_std_1_1hash_3_01_az_framework_1_1_entity_spawn_ticket_01_4.html", null ],

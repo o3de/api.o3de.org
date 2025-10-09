@@ -10,6 +10,7 @@ var hierarchy =
     [ "AZStd::concurrency_check_scope", "class_a_z_std_1_1concurrency__check__scope.html", null ],
     [ "AZStd::concurrency_checker", "class_a_z_std_1_1concurrency__checker.html", null ],
     [ "AZStd::lru_cache< KeyType, MappedType, Hasher, EqualKey, Allocator >", "class_a_z_std_1_1lru__cache.html", null ],
+    [ "AZStd::small_vector< T, FixedSize >", "class_a_z_std_1_1small__vector.html", null ],
     [ "AZStd::vector_set_base< Key, Compare, RandomAccessContainer >", "class_a_z_std_1_1vector__set__base.html", [
       [ "AZStd::fixed_vector_set< Key, Capacity, Compare >", "class_a_z_std_1_1fixed__vector__set.html", null ],
       [ "AZStd::vector_set< Key, Compare, Allocator >", "class_a_z_std_1_1vector__set.html", null ]

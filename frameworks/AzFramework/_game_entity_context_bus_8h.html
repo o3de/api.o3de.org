@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,7 +54,8 @@ $(document).ready(function(){initNavTree('_game_entity_context_bus_8h.html','');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">GameEntityContextBus.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -62,6 +63,7 @@ $(document).ready(function(){initNavTree('_game_entity_context_bus_8h.html','');
 <code>#include &lt;AzCore/Math/Uuid.h&gt;</code><br />
 <code>#include &lt;AzCore/Asset/AssetCommon.h&gt;</code><br />
 <code>#include &lt;AzFramework/Entity/BehaviorEntity.h&gt;</code><br />
+<code>#include &lt;AzFramework/AzFrameworkAPI.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -82,6 +84,15 @@ Typedefs</h2></td></tr>
 <tr class="separator:aadb3846b92b2f2fd3c3f510a89b14f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5aabe6982ca24f37a0c94d4be7ea24b" id="r_ac5aabe6982ca24f37a0c94d4be7ea24b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_az_framework.html#ac5aabe6982ca24f37a0c94d4be7ea24b">AzFramework::GameEntityContextEventBus</a> = AZ::EBus&lt; <a class="el" href="class_az_framework_1_1_game_entity_context_events.html">GameEntityContextEvents</a> &gt;</td></tr>
 <tr class="separator:ac5aabe6982ca24f37a0c94d4be7ea24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2a30e0925e4bccb0cc9f0a0f2292105f" id="r_a2a30e0925e4bccb0cc9f0a0f2292105f"><td class="memItemLeft" align="right" valign="top"><a id="a2a30e0925e4bccb0cc9f0a0f2292105f" name="a2a30e0925e4bccb0cc9f0a0f2292105f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_EBUS_SINGLE_ADDRESS</b> (AZF_API, <a class="el" href="class_az_framework_1_1_game_entity_context_requests.html">AzFramework::GameEntityContextRequests</a>)</td></tr>
+<tr class="separator:a2a30e0925e4bccb0cc9f0a0f2292105f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71f6e5cc925071a6178db142f2d5f53" id="r_aa71f6e5cc925071a6178db142f2d5f53"><td class="memItemLeft" align="right" valign="top"><a id="aa71f6e5cc925071a6178db142f2d5f53" name="aa71f6e5cc925071a6178db142f2d5f53"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_EBUS_SINGLE_ADDRESS</b> (AZF_API, <a class="el" href="class_az_framework_1_1_game_entity_context_events.html">AzFramework::GameEntityContextEvents</a>)</td></tr>
+<tr class="separator:aa71f6e5cc925071a6178db142f2d5f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for buses that dispatch and receive events from the game entity context. The game entity context holds gameplay entities, as opposed to system entities, editor entities, and so on. </p>
@@ -91,7 +102,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75702505ddfbdd2f20447bb0081139c9.html">Code</a></li><li class="navelem"><a class="el" href="dir_e7e3f0b8e20a8c41ad58732be797221b.html">Framework</a></li><li class="navelem"><a class="el" href="dir_dcb88635fd9569c27ef38925fdc47175.html">AzFramework</a></li><li class="navelem"><a class="el" href="dir_583a736b36cb7e9380e70957e174f219.html">AzFramework</a></li><li class="navelem"><a class="el" href="dir_2006a5b5314941f7bd18f3cb6502bc03.html">Entity</a></li><li class="navelem"><a class="el" href="_game_entity_context_bus_8h.html">GameEntityContextBus.h</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

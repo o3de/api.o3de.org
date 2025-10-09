@@ -176,11 +176,15 @@ var NAVTREEINDEX0 =
 "class_open_x_r_vk_1_1_system_component.html#adc7f2eac4a7e7a80fca8ae7c1ec7bf5b":[1,0,1,22,0],
 "class_open_x_r_vk_1_1_system_component.html#afa5ebbce1a2e400df52a1b799cc8d9b5":[1,0,1,22,3],
 "class_open_x_r_vk_1_1_x_r_camera_movement_component.html":[1,0,1,23],
+"class_open_x_r_vk_1_1_x_r_controller_animations_component.html":[1,0,1,24],
+"class_open_x_r_vk_1_1_x_r_controller_component.html":[1,0,1,25],
+"class_open_x_r_vk_1_1_x_r_interactable_component.html":[1,0,1,27],
+"class_open_x_r_vk_1_1_x_r_ray_interactor_component.html":[1,0,1,28],
 "class_open_x_r_vk_builders_1_1_open_x_r_assets_builder.html":[1,0,2,0],
 "class_open_x_r_vk_builders_1_1_open_x_r_assets_builder_system_component.html":[1,0,2,1],
 "classes.html":[1,1],
-"functions.html":[1,3,0,0],
 "functions.html":[1,3,0],
+"functions.html":[1,3,0,0],
 "functions_b.html":[1,3,0,1],
 "functions_c.html":[1,3,0,2],
 "functions_f.html":[1,3,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a6cd5f5ad2471dc4f613a409b13345f11":[1,0,0,0,3,0,19],
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a7bab27f5a6fb87bbe1ae23396420d734":[1,0,0,0,3,0,12],
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a89e82342c107279b6631521bd8ed3e9d":[1,0,0,0,3,0,2],
-"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a8e619fd9081a425a85ed140f38951f43":[1,0,0,0,3,0,30],
-"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a9cdb3afe9b32d49e7c238e418b5a4c24":[1,0,0,0,3,0,0],
-"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#aa5bc92a4979b7ac8f898fbe3baf3e33d":[1,0,0,0,3,0,24],
-"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#aad4d697285a70c3f4eea8c64952a2efb":[1,0,0,0,3,0,10],
-"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#ab9e9ec9f0e8bc0bc0a88b271722ae599":[1,0,0,0,3,0,18]
+"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a8e619fd9081a425a85ed140f38951f43":[1,0,0,0,3,0,30]
 };

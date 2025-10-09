@@ -1,7 +1,7 @@
 var class_r_o_s2_1_1_r_o_s2_sensor_component_base =
 [
-    [ "GetFrameID", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#a41b6b5ead301da37cb906ac1fe8d9944", null ],
     [ "GetNamespace", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#af0bb0e9d8c4c4bf1edd436504b8b270a", null ],
+    [ "GetNamespacedFrameID", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#ac61bc9ca03404beef7dc2acd2cecbf24", null ],
     [ "StartSensor", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#a5878923b7874998a55a4ad6aba0b0966", null ],
     [ "StopSensor", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#a332f0d3ac3b3d9436967a460d409c5e7", null ],
     [ "m_adaptedEventHandler", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#af94b7df2b6a0b715b18780f4b90de31a", null ],

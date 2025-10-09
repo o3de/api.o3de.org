@@ -1,13 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"class_im_gui_1_1_im_gui_frame_visualizer_node.html#a3b86cfc9b82c009ac0608d28ef3c70b4":[4,0,6,1,0],
-"class_im_gui_1_1_im_gui_frame_visualizer_node.html#a49bfd4fca37ddecebb02947d1ae4255e":[4,0,6,1,3],
-"class_im_gui_1_1_im_gui_frame_visualizer_node.html#a99632c3cf847a0efd7e63c3f2d7be1cd":[4,0,6,1,2],
-"class_im_gui_1_1_im_gui_frame_visualizer_node.html#ad2e7433fb97d6c4333c88f0891351be7":[4,0,6,1,7],
-"class_im_gui_1_1_im_gui_frame_visualizer_node.html#adaa81628894d518d1a13cbcccaf6e028":[4,0,6,1,6],
-"class_im_gui_1_1_im_gui_frame_visualizer_text_field.html":[4,0,6,2],
-"class_im_gui_1_1_im_gui_frame_visualizer_window.html":[4,0,6,3],
-"class_im_gui_1_1_im_gui_frame_visualizer_window.html#a004c2f1c14bac62c2e52caf336e5ea74":[4,0,6,3,1],
 "class_im_gui_1_1_im_gui_frame_visualizer_window.html#a4a5e8c6aecd84e3090c31b324e155bc3":[4,0,6,3,5],
 "class_im_gui_1_1_im_gui_frame_visualizer_window.html#acfed0eb3269a6ec180d3abf622540c7d":[4,0,6,3,2],
 "class_im_gui_1_1_im_gui_frame_visualizer_window.html#ad68a2189c70aad5defb16b0df8ce8134":[4,0,6,3,3],
@@ -249,5 +241,13 @@ var NAVTREEINDEX23 =
 "custom_memory_pools.html#custom_memory_pools_when_not_use":[0,14,1],
 "custom_memory_pools.html#linear_algorithm":[0,14,2],
 "custom_pools.html":[0,3],
-"custom_pools.html#custom_pools_features_and_benefits":[0,3,1]
+"custom_pools.html#custom_pools_features_and_benefits":[0,3,1],
+"custom_pools.html#custom_pools_usage":[0,3,0],
+"debugging_memory_usage.html":[0,16],
+"debugging_memory_usage.html#debugging_memory_usage_corruption_detection":[0,16,2],
+"debugging_memory_usage.html#debugging_memory_usage_initialization":[0,16,0],
+"debugging_memory_usage.html#debugging_memory_usage_leak_detection":[0,16,3],
+"debugging_memory_usage.html#debugging_memory_usage_margins":[0,16,1],
+"defragmentation.html":[0,4],
+"deprecated.html":[1]
 };

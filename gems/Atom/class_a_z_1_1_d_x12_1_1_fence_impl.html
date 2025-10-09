@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -78,8 +78,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0a274ddcdcaedd4d308227db605f49e inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence" id="r_ab0a274ddcdcaedd4d308227db605f49e"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">DeviceFence</a>, &quot;{D66C8B8F-226A-4018-89C1-F190A730CBC3}&quot;, Object)</td></tr>
 <tr class="separator:ab0a274ddcdcaedd4d308227db605f49e inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0e9cd4edae3d6efb2bafc326c87eef inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence" id="r_a9e0e9cd4edae3d6efb2bafc326c87eef"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#a9e0e9cd4edae3d6efb2bafc326c87eef">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device, FenceState initialState, bool usedForWaitingOnDevice=false)</td></tr>
-<tr class="separator:a9e0e9cd4edae3d6efb2bafc326c87eef inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d12819b9e21e66de50d7f19bd4018fa inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence" id="r_a4d12819b9e21e66de50d7f19bd4018fa"><td class="memItemLeft" align="right" valign="top">
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device, FenceState initialState, FenceFlags flags=FenceFlags::None)</td></tr>
+<tr class="memdesc:a4d12819b9e21e66de50d7f19bd4018fa inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the fence using the provided device and initial state. <br /></td></tr>
+<tr class="separator:a4d12819b9e21e66de50d7f19bd4018fa inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd90e997d46c2fc149238d27756812fe inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence" id="r_acd90e997d46c2fc149238d27756812fe"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#acd90e997d46c2fc149238d27756812fe">InitCrossDevice</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device, RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">DeviceFence</a> &gt; originalDeviceFence)</td></tr>
+<tr class="separator:acd90e997d46c2fc149238d27756812fe inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dc07a2436efea40acb37d643c0b6a3d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence" id="r_a5dc07a2436efea40acb37d643c0b6a3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#a5dc07a2436efea40acb37d643c0b6a3d">Shutdown</a> () override final</td></tr>
 <tr class="memdesc:a5dc07a2436efea40acb37d643c0b6a3d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the fence.  <br /></td></tr>
 <tr class="separator:a5dc07a2436efea40acb37d643c0b6a3d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_fence"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +184,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>DX12</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_d_x12_1_1_fence_impl.html">FenceImpl</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

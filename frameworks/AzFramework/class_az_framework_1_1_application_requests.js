@@ -20,7 +20,6 @@ var class_az_framework_1_1_application_requests =
     [ "ResolveEnginePath", "class_az_framework_1_1_application_requests.html#a1c266284e99d33768a9c85e7b590e232", null ],
     [ "RunMainLoop", "class_az_framework_1_1_application_requests.html#ab44609739861ff6c22668f2c9e7b8b09", null ],
     [ "SetPrefabSystemEnabled", "class_az_framework_1_1_application_requests.html#acd00d451a6d6e917c63401ebec8e8e12", null ],
-    [ "ShouldAssertForLegacySlicesUsage", "class_az_framework_1_1_application_requests.html#ad9d2cee28e9b30944b54b21c1250aa1a", null ],
     [ "TerminateOnError", "class_az_framework_1_1_application_requests.html#a7f5907e96596d870645c5a89ab1f3e28", null ],
     [ "WasExitMainLoopRequested", "class_az_framework_1_1_application_requests.html#a9e58dc73a9db81caa25ff112ef7fbd28", null ]
 ];

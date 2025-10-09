@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,6 +52,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_material_syste
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_material_system-members.html">List of all members</a>  </div>
@@ -63,9 +64,41 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_material_syste
  <a href="class_a_z_1_1_r_p_i_1_1_material_system.html#details">More...</a></p>
 
 <p><code>#include &lt;MaterialSystem.h&gt;</code></p>
+
+<p>Inherits MaterialInstanceHandlerInterface::Registrar, and Data::AssetBus::Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a16de461a241fdf6c7a8f5127dd42a466" id="r_a16de461a241fdf6c7a8f5127dd42a466"><td class="memItemLeft" align="right" valign="top"><a id="a16de461a241fdf6c7a8f5127dd42a466" name="a16de461a241fdf6c7a8f5127dd42a466"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialSystem</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_system.html">MaterialSystem</a> &amp;other)=delete</td></tr>
+<tr class="separator:a16de461a241fdf6c7a8f5127dd42a466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9e41e3d8035050d5f51bdcaf82064f" id="r_a1f9e41e3d8035050d5f51bdcaf82064f"><td class="memItemLeft" align="right" valign="top"><a id="a1f9e41e3d8035050d5f51bdcaf82064f" name="a1f9e41e3d8035050d5f51bdcaf82064f"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_system.html">MaterialSystem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_system.html">MaterialSystem</a> &amp;other)=delete</td></tr>
+<tr class="separator:a1f9e41e3d8035050d5f51bdcaf82064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4fa5b01ccebbe6bd16cd1b013ae82c" id="r_a5c4fa5b01ccebbe6bd16cd1b013ae82c"><td class="memItemLeft" align="right" valign="top"><a id="a5c4fa5b01ccebbe6bd16cd1b013ae82c" name="a5c4fa5b01ccebbe6bd16cd1b013ae82c"></a>
+<a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_instance_data.html">MaterialInstanceData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterMaterialInstance</b> (const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> &gt; material) override</td></tr>
+<tr class="separator:a5c4fa5b01ccebbe6bd16cd1b013ae82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6b1e304d2dea7326218201a7e79067" id="r_aea6b1e304d2dea7326218201a7e79067"><td class="memItemLeft" align="right" valign="top"><a id="aea6b1e304d2dea7326218201a7e79067" name="aea6b1e304d2dea7326218201a7e79067"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseMaterialInstance</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_instance_data.html">MaterialInstanceData</a> &amp;materialInstance) override</td></tr>
+<tr class="separator:aea6b1e304d2dea7326218201a7e79067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c9972b2ba7826641c5149c22de0258" id="r_af8c9972b2ba7826641c5149c22de0258"><td class="memItemLeft" align="right" valign="top"><a id="af8c9972b2ba7826641c5149c22de0258" name="af8c9972b2ba7826641c5149c22de0258"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterMaterialTexture</b> (const int materialTypeIndex, const int materialInstanceIndex, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">Image</a> &gt; image) override</td></tr>
+<tr class="separator:af8c9972b2ba7826641c5149c22de0258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca773eb73ca7565606376e4ad608efd8" id="r_aca773eb73ca7565606376e4ad608efd8"><td class="memItemLeft" align="right" valign="top"><a id="aca773eb73ca7565606376e4ad608efd8" name="aca773eb73ca7565606376e4ad608efd8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseMaterialTexture</b> (const int materialTypeIndex, const int materialInstanceIndex, int32_t textureIndex) override</td></tr>
+<tr class="separator:aca773eb73ca7565606376e4ad608efd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de0d5590e0ac139671bc981d6530d03" id="r_a2de0d5590e0ac139671bc981d6530d03"><td class="memItemLeft" align="right" valign="top"><a id="a2de0d5590e0ac139671bc981d6530d03" name="a2de0d5590e0ac139671bc981d6530d03"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shared_sampler_state.html">SharedSamplerState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterTextureSampler</b> (const int materialTypeIndex, const int materialInstanceIndex, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_sampler_state.html">RHI::SamplerState</a> &amp;samplerState) override</td></tr>
+<tr class="separator:a2de0d5590e0ac139671bc981d6530d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d0c20218b838902296ff1c18dbdb27" id="r_a85d0c20218b838902296ff1c18dbdb27"><td class="memItemLeft" align="right" valign="top"><a id="a85d0c20218b838902296ff1c18dbdb27" name="a85d0c20218b838902296ff1c18dbdb27"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_sampler_state.html">RHI::SamplerState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisteredTextureSampler</b> (const int materialTypeIndex, const int materialInstanceIndex, const uint32_t samplerIndex) override</td></tr>
+<tr class="separator:a85d0c20218b838902296ff1c18dbdb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53351a70f5c8117f44ed4111c9fb2683" id="r_a53351a70f5c8117f44ed4111c9fb2683"><td class="memItemLeft" align="right" valign="top"><a id="a53351a70f5c8117f44ed4111c9fb2683" name="a53351a70f5c8117f44ed4111c9fb2683"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Compile</b> () override</td></tr>
+<tr class="separator:a53351a70f5c8117f44ed4111c9fb2683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9378ee7bbc6b06bfe6a7976fe86240b3" id="r_a9378ee7bbc6b06bfe6a7976fe86240b3"><td class="memItemLeft" align="right" valign="top"><a id="a9378ee7bbc6b06bfe6a7976fe86240b3" name="a9378ee7bbc6b06bfe6a7976fe86240b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugPrintMaterialInstances</b> ()</td></tr>
+<tr class="separator:a9378ee7bbc6b06bfe6a7976fe86240b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a224e4b5184aeb9c51978696ea84a47d2" id="r_a224e4b5184aeb9c51978696ea84a47d2"><td class="memItemLeft" align="right" valign="top"><a id="a224e4b5184aeb9c51978696ea84a47d2" name="a224e4b5184aeb9c51978696ea84a47d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
 <tr class="separator:a224e4b5184aeb9c51978696ea84a47d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,7 +126,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetHandle
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_system.html">MaterialSystem</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,7 +70,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2a1e25e3514dc759c655b58b1e5cc31" id="r_ad2a1e25e3514dc759c655b58b1e5cc31"><td class="memItemLeft" align="right" valign="top"><a id="ad2a1e25e3514dc759c655b58b1e5cc31" name="ad2a1e25e3514dc759c655b58b1e5cc31"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_physics_1_1_system_interface.html">SystemInterface</a>)</td></tr>
 <tr class="separator:ad2a1e25e3514dc759c655b58b1e5cc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bea8f507edd3c3970a2e891cf286333" id="r_a9bea8f507edd3c3970a2e891cf286333"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#a9bea8f507edd3c3970a2e891cf286333">Initialize</a> (const <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> *config)=0</td></tr>
+<tr class="memitem:a9bea8f507edd3c3970a2e891cf286333" id="r_a9bea8f507edd3c3970a2e891cf286333"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#a9bea8f507edd3c3970a2e891cf286333">Initialize</a> (const SystemConfiguration *config)=0</td></tr>
 <tr class="separator:a9bea8f507edd3c3970a2e891cf286333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7712474974a9b64e6b5f444232b6b0" id="r_aaf7712474974a9b64e6b5f444232b6b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#aaf7712474974a9b64e6b5f444232b6b0">Reinitialize</a> ()=0</td></tr>
 <tr class="separator:aaf7712474974a9b64e6b5f444232b6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,10 +101,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllScen
 <tr class="memitem:abbadda7007f2c204ff6f0f17d0a7c1fb" id="r_abbadda7007f2c204ff6f0f17d0a7c1fb"><td class="memItemLeft" align="right" valign="top">virtual AZStd::pair&lt; SceneHandle, SimulatedBodyHandle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#abbadda7007f2c204ff6f0f17d0a7c1fb">FindAttachedBodyHandleFromEntityId</a> (AZ::EntityId entityId)=0</td></tr>
 <tr class="separator:abbadda7007f2c204ff6f0f17d0a7c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ba1fc145adca06aa696ecfec14f90c" id="r_a15ba1fc145adca06aa696ecfec14f90c"><td class="memItemLeft" align="right" valign="top"><a id="a15ba1fc145adca06aa696ecfec14f90c" name="a15ba1fc145adca06aa696ecfec14f90c"></a>
-virtual const <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetConfiguration</b> () const =0</td></tr>
-<tr class="memdesc:a15ba1fc145adca06aa696ecfec14f90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> used to initialize the Physics system. <br /></td></tr>
+virtual const SystemConfiguration *&#160;</td><td class="memItemRight" valign="bottom"><b>GetConfiguration</b> () const =0</td></tr>
+<tr class="memdesc:a15ba1fc145adca06aa696ecfec14f90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current SystemConfiguration used to initialize the Physics system. <br /></td></tr>
 <tr class="separator:a15ba1fc145adca06aa696ecfec14f90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e8c18695b8668ffdec781c51833d10" id="r_a70e8c18695b8668ffdec781c51833d10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#a70e8c18695b8668ffdec781c51833d10">UpdateConfiguration</a> (const <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> *newConfig, bool forceReinitialization=false)=0</td></tr>
+<tr class="memitem:a70e8c18695b8668ffdec781c51833d10" id="r_a70e8c18695b8668ffdec781c51833d10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#a70e8c18695b8668ffdec781c51833d10">UpdateConfiguration</a> (const SystemConfiguration *newConfig, bool forceReinitialization=false)=0</td></tr>
 <tr class="separator:a70e8c18695b8668ffdec781c51833d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c946815eb4a4f20329d772b53c86a5" id="r_ab3c946815eb4a4f20329d772b53c86a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_system_interface.html#ab3c946815eb4a4f20329d772b53c86a5">UpdateDefaultSceneConfiguration</a> (const <a class="el" href="struct_az_physics_1_1_scene_configuration.html">SceneConfiguration</a> &amp;sceneConfiguration)=0</td></tr>
 <tr class="separator:ab3c946815eb4a4f20329d772b53c86a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,7 +407,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
         <tr>
           <td class="memname">virtual void AzPhysics::SystemInterface::Initialize </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> *&#160;</td>
+          <td class="paramtype">const SystemConfiguration *&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -610,7 +610,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Register to receive notifications when the <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> changes. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Register to receive notifications when the SystemConfiguration changes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The handler to receive the event. </td></tr>
   </table>
@@ -854,7 +854,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Advance the Physics state. This will iterate the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a> list, update All simulation bodies and advance the physics state by the given delta time. It is recommended to call this function to run the physics tick. Advanced users may manually update each scene, if required to have finer control. This function will also signal the OnPresimulateEvent and OnPostsimulateEvent. The OnPresimulateEvent will have a parameter that will be the total time executed by the simulation. When <a class="el" href="struct_az_physics_1_1_system_configuration.html#a4b6472a8482366abbf48ecc40ee0f3ba" title="Timestep in seconds to run the physics update. See DefaultFixedTimestep.">SystemConfiguration::m_fixedTimestep</a> is greater than zero, the simulation will run at the fixed time step and may run multiple steps per frame. This time can range from 0.0f to <a class="el" href="struct_az_physics_1_1_system_configuration.html#ad6393376043b3dbd2a24cefeccb32748" title="Value represents 1/60th or 60 FPS.">SystemConfiguration::m_maxTimestep</a>. Where 0.0 time indicates that the simulation did not execute any steps this frame. When <a class="el" href="struct_az_physics_1_1_system_configuration.html#a4b6472a8482366abbf48ecc40ee0f3ba" title="Timestep in seconds to run the physics update. See DefaultFixedTimestep.">SystemConfiguration::m_fixedTimestep</a> equal to or less than zero, the simulation will step once with a time between deltaTime and <a class="el" href="struct_az_physics_1_1_system_configuration.html#ad6393376043b3dbd2a24cefeccb32748" title="Value represents 1/60th or 60 FPS.">SystemConfiguration::m_maxTimestep</a>. Example Advanced users might do to self manage Advancing the physics state. </p><div class="fragment"><div class="line"><span class="comment">//The following would be somewhere in the client code game update loop.</span></div>
+<p>Advance the Physics state. This will iterate the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a> list, update All simulation bodies and advance the physics state by the given delta time. It is recommended to call this function to run the physics tick. Advanced users may manually update each scene, if required to have finer control. This function will also signal the OnPresimulateEvent and OnPostsimulateEvent. The OnPresimulateEvent will have a parameter that will be the total time executed by the simulation. When SystemConfiguration::m_fixedTimestep is greater than zero, the simulation will run at the fixed time step and may run multiple steps per frame. This time can range from 0.0f to SystemConfiguration::m_maxTimestep. Where 0.0 time indicates that the simulation did not execute any steps this frame. When SystemConfiguration::m_fixedTimestep equal to or less than zero, the simulation will step once with a time between deltaTime and SystemConfiguration::m_maxTimestep. Example Advanced users might do to self manage Advancing the physics state. </p><div class="fragment"><div class="line"><span class="comment">//The following would be somewhere in the client code game update loop.</span></div>
 <div class="line"><span class="keywordflow">if</span> (<span class="keyword">auto</span>* system = <a class="code hl_class" href="class_a_z_1_1_interface.html">AZ::Interface&lt;AzPhysics::SystemInterface&gt;::Get</a>())</div>
 <div class="line">{</div>
 <div class="line">    SceneInterfaceList&amp; sceneList = system-&gt;GetAllScenes();</div>
@@ -891,7 +891,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
         <tr>
           <td class="memname">virtual void AzPhysics::SystemInterface::UpdateConfiguration </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a> *&#160;</td>
+          <td class="paramtype">const SystemConfiguration *&#160;</td>
           <td class="paramname"><em>newConfig</em>, </td>
         </tr>
         <tr>
@@ -912,7 +912,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Update the <a class="el" href="struct_az_physics_1_1_system_configuration.html">SystemConfiguration</a>. This will apply the new configuration, some properties may require the reinitialization of the physics system and will tear down all Scenes and Simulation bodies. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Update the SystemConfiguration. This will apply the new configuration, some properties may require the reinitialization of the physics system and will tear down all Scenes and Simulation bodies. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newConfig</td><td>The new configuration to apply. </td></tr>
     <tr><td class="paramname">forceReinitialization</td><td>Flag to force a reinitialization of the physics system. Default false. </td></tr>
@@ -963,7 +963,7 @@ SystemEvents::OnDefaultSceneConfigurationChangedEvent&#160;</td><td class="memIt
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzPhysics</b></li><li class="navelem"><a class="el" href="class_az_physics_1_1_system_interface.html">SystemInterface</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:51 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:51 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

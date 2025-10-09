@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,6 +52,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_material_type_
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AZ::RPI::MaterialTypeAssetCreator Class Reference</div></div>
@@ -62,14 +63,20 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_material_type_
 
 <p>Inherits <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; MaterialTypeAsset &gt;</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0734705d6eb33721465ba41c412c6142" id="r_a0734705d6eb33721465ba41c412c6142"><td class="memItemLeft" align="right" valign="top"><a id="a0734705d6eb33721465ba41c412c6142" name="a0734705d6eb33721465ba41c412c6142"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DrawItemType</b> = AZ::RPI::ShaderCollection::Item::DrawItemType</td></tr>
+<tr class="separator:a0734705d6eb33721465ba41c412c6142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a33a67e88c217e244b89d5cbb62389047" id="r_a33a67e88c217e244b89d5cbb62389047"><td class="memItemLeft" align="right" valign="top"><a id="a33a67e88c217e244b89d5cbb62389047" name="a33a67e88c217e244b89d5cbb62389047"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Begin</b> (const Data::AssetId &amp;assetId)</td></tr>
 <tr class="memdesc:a33a67e88c217e244b89d5cbb62389047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin creating a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. <br /></td></tr>
 <tr class="separator:a33a67e88c217e244b89d5cbb62389047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030032e9115d19f432415528c7eddfc7" id="r_a030032e9115d19f432415528c7eddfc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a030032e9115d19f432415528c7eddfc7">AddShader</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;shaderVariantId={}, const AZ::Name &amp;shaderTag={}, const AZ::Name &amp;materialPipelineName=MaterialPipelineNone)</td></tr>
-<tr class="separator:a030032e9115d19f432415528c7eddfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2ec998446b38c9261add11555ca913" id="r_a3f2ec998446b38c9261add11555ca913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a3f2ec998446b38c9261add11555ca913">AddShader</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;shaderVariantId={}, const AZ::Name &amp;shaderTag={}, const DrawItemType drawItemType=DrawItemType::Raster, const AZ::Name &amp;materialPipelineName=MaterialPipelineNone)</td></tr>
+<tr class="separator:a3f2ec998446b38c9261add11555ca913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1719ee0f11b1f9b9a7c1d74128c7b2c2" id="r_a1719ee0f11b1f9b9a7c1d74128c7b2c2"><td class="memItemLeft" align="right" valign="top"><a id="a1719ee0f11b1f9b9a7c1d74128c7b2c2" name="a1719ee0f11b1f9b9a7c1d74128c7b2c2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVersion</b> (uint32_t version)</td></tr>
 <tr class="memdesc:a1719ee0f11b1f9b9a7c1d74128c7b2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the version of the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. <br /></td></tr>
@@ -82,10 +89,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVersionUpdate</b> 
 <tr class="separator:a3efaf959aaf1b2e49ecd7b427d54604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3978096472e624872f167a2fd73f5a5" id="r_ad3978096472e624872f167a2fd73f5a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ad3978096472e624872f167a2fd73f5a5">BeginMaterialProperty</a> (const Name &amp;materialPropertyName, MaterialPropertyDataType dataType, const AZ::Name &amp;materialPipelineName=MaterialPipelineNone)</td></tr>
 <tr class="separator:ad3978096472e624872f167a2fd73f5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9675db3e279f28e5b6b47f7de597f54b" id="r_a9675db3e279f28e5b6b47f7de597f54b"><td class="memItemLeft" align="right" valign="top"><a id="a9675db3e279f28e5b6b47f7de597f54b" name="a9675db3e279f28e5b6b47f7de597f54b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectMaterialPropertyToShaderInput</b> (const Name &amp;shaderInputName)</td></tr>
-<tr class="memdesc:a9675db3e279f28e5b6b47f7de597f54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an output mapping from the current material property to a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> input. <br /></td></tr>
-<tr class="separator:a9675db3e279f28e5b6b47f7de597f54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306a3c27d9cf094de9648889843c3912" id="r_a306a3c27d9cf094de9648889843c3912"><td class="memItemLeft" align="right" valign="top"><a id="a306a3c27d9cf094de9648889843c3912" name="a306a3c27d9cf094de9648889843c3912"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectMaterialPropertyToShaderParameter</b> (const Name &amp;shaderInputName)</td></tr>
+<tr class="memdesc:a306a3c27d9cf094de9648889843c3912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an output mapping from the current material property to a ShaderPararameter field. <br /></td></tr>
+<tr class="separator:a306a3c27d9cf094de9648889843c3912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5792ae4c89fb610db4f9994fac107d36" id="r_a5792ae4c89fb610db4f9994fac107d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a5792ae4c89fb610db4f9994fac107d36">ConnectMaterialPropertyToShaderOptions</a> (const Name &amp;shaderOptionName)</td></tr>
 <tr class="separator:a5792ae4c89fb610db4f9994fac107d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a300393291e26512d7038a3ac1946733d" id="r_a300393291e26512d7038a3ac1946733d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a300393291e26512d7038a3ac1946733d">ConnectMaterialPropertyToShaderEnabled</a> (const Name &amp;shaderTag)</td></tr>
@@ -114,10 +121,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPropertyValue</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddUvName</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">RHI::ShaderSemantic</a> &amp;shaderInput, const Name &amp;uvName)</td></tr>
 <tr class="memdesc:a6460412ceba6d41ec82b146cf18c11ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds UV name for a shader input. <br /></td></tr>
 <tr class="separator:a6460412ceba6d41ec82b146cf18c11ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d1439a272da4f476507ed87c800ac4" id="r_a65d1439a272da4f476507ed87c800ac4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a65d1439a272da4f476507ed87c800ac4">CreateMaterialShaderParameterLayout</a> ()</td></tr>
+<tr class="separator:a65d1439a272da4f476507ed87c800ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e08d06cb583715bee2c441a6de71b82" id="r_a9e08d06cb583715bee2c441a6de71b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a9e08d06cb583715bee2c441a6de71b82">SetMaterialShaderParameterLayout</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a> parameters)</td></tr>
+<tr class="separator:a9e08d06cb583715bee2c441a6de71b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbece480e6480389e9c09a86c29980c" id="r_a7bbece480e6480389e9c09a86c29980c"><td class="memItemLeft" align="right" valign="top"><a id="a7bbece480e6480389e9c09a86c29980c" name="a7bbece480e6480389e9c09a86c29980c"></a>
+const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialShaderParameterLayout</b> () const</td></tr>
+<tr class="memdesc:a7bbece480e6480389e9c09a86c29980c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the currently registered material <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> Parameter Layout. <br /></td></tr>
+<tr class="separator:a7bbece480e6480389e9c09a86c29980c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aeeddd428bc49c5ec49e849c5547761" id="r_a5aeeddd428bc49c5ec49e849c5547761"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_properties_layout.html">MaterialPropertiesLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a5aeeddd428bc49c5ec49e849c5547761">GetMaterialPropertiesLayout</a> (const AZ::Name &amp;materialPipelineName=MaterialPipelineNone) const</td></tr>
 <tr class="separator:a5aeeddd428bc49c5ec49e849c5547761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a901471d9f950c8546e79cc82d44b5963" id="r_a901471d9f950c8546e79cc82d44b5963"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a901471d9f950c8546e79cc82d44b5963">GetMaterialShaderResourceGroupLayout</a> () const</td></tr>
 <tr class="separator:a901471d9f950c8546e79cc82d44b5963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e27128f90c8543ef264b6d1c3be47f" id="r_ae8e27128f90c8543ef264b6d1c3be47f"><td class="memItemLeft" align="right" valign="top"><a id="ae8e27128f90c8543ef264b6d1c3be47f" name="ae8e27128f90c8543ef264b6d1c3be47f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateShaderParameterConnections</b> ()</td></tr>
+<tr class="separator:ae8e27128f90c8543ef264b6d1c3be47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a707cddd00bda955b63a3ddce038f5b3e" id="r_a707cddd00bda955b63a3ddce038f5b3e"><td class="memItemLeft" align="right" valign="top"><a id="a707cddd00bda955b63a3ddce038f5b3e" name="a707cddd00bda955b63a3ddce038f5b3e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &amp;result)</td></tr>
 <tr class="separator:a707cddd00bda955b63a3ddce038f5b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,8 +226,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (
 
 </div>
 </div>
-<a id="a030032e9115d19f432415528c7eddfc7" name="a030032e9115d19f432415528c7eddfc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a030032e9115d19f432415528c7eddfc7">&#9670;&#160;</a></span>AddShader()</h2>
+<a id="a3f2ec998446b38c9261add11555ca913" name="a3f2ec998446b38c9261add11555ca913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2ec998446b38c9261add11555ca913">&#9670;&#160;</a></span>AddShader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,6 +249,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (
           <td></td>
           <td class="paramtype">const AZ::Name &amp;&#160;</td>
           <td class="paramname"><em>shaderTag</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DrawItemType&#160;</td>
+          <td class="paramname"><em>drawItemType</em> = <code>DrawItemType::Raster</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -357,6 +381,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (
 
 </div>
 </div>
+<a id="a65d1439a272da4f476507ed87c800ac4" name="a65d1439a272da4f476507ed87c800ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d1439a272da4f476507ed87c800ac4">&#9670;&#160;</a></span>CreateMaterialShaderParameterLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a> AZ::RPI::MaterialTypeAssetCreator::CreateMaterialShaderParameterLayout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This will create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> Parameter Layout from the registered <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> Properties and functors and return it. This will not register the layout, you still have to use <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a9e08d06cb583715bee2c441a6de71b82">SetMaterialShaderParameterLayout()</a> to do that. </p>
+
+</div>
+</div>
 <a id="a5aeeddd428bc49c5ec49e849c5547761" name="a5aeeddd428bc49c5ec49e849c5547761"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5aeeddd428bc49c5ec49e849c5547761">&#9670;&#160;</a></span>GetMaterialPropertiesLayout()</h2>
 
@@ -397,6 +439,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (
       </table>
 </div><div class="memdoc">
 <p>This provides access to the material ShaderResourceGroupLayout being used for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a>. This is needed by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a> to initialize functor objects. The same layout object can be retrieved from the ShaderAssets passed to the creator, but this function is provided for convenience. </p><dl class="section return"><dt>Returns</dt><dd>A valid pointer if a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> with a material ShaderResourceGroupLayout was added. Otherwise, returns nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a9e08d06cb583715bee2c441a6de71b82" name="a9e08d06cb583715bee2c441a6de71b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e08d06cb583715bee2c441a6de71b82">&#9670;&#160;</a></span>SetMaterialShaderParameterLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::MaterialTypeAssetCreator::SetMaterialShaderParameterLayout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a>&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> Parameter Layout. The Layout is usually created by <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a65d1439a272da4f476507ed87c800ac4">CreateMaterialShaderParameterLayout()</a>, but if the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> Parameter Layout differs from the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> Properties Layout, it can be created separately. </p>
 
 </div>
 </div>
@@ -489,7 +550,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNotNull</b> (
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html">MaterialTypeAssetCreator</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

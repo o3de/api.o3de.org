@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"struct_az_tools_framework_1_1_action_properties.html":[2,0,5,32],
 "struct_az_tools_framework_1_1_action_properties.html#a1f2afdbed98583105f2760c2727b5583":[2,0,5,32,2],
 "struct_az_tools_framework_1_1_action_properties.html#a1fe565a790d1aa37acbec090191b18cf":[2,0,5,32,1],
 "struct_az_tools_framework_1_1_action_properties.html#aa9bbb29087f0fb57599f0d59bf92c359":[2,0,5,32,6],
@@ -33,11 +34,13 @@ var NAVTREEINDEX11 =
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_details.html#a1fa296a0685a5ec88a6d1b2d5604256f":[2,0,5,0,80,2],
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_details.html#aed7268ae540a1a39e3d3528c31750fae":[2,0,5,0,80,1],
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html":[2,0,5,0,81],
+"struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a283f2335b2a10a8a420f0013fae522b3":[2,0,5,0,81,4],
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a53fd86ae4e3710597959e1b05c9ef06d":[2,0,5,0,81,3],
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a5cdc16fb29d161ed521721f73c83a1ad":[2,0,5,0,81,0],
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a66cb00b0c0e3f9a2e0962ad50cc0ab9c":[2,0,5,0,81,1],
-"struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a7a275671517a0aad92bed38f08114a35":[2,0,5,0,81,4],
+"struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a7a275671517a0aad92bed38f08114a35":[2,0,5,0,81,5],
 "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#abb3a683618109ef195ab63a7d0cef5c0":[2,0,5,0,81,2],
+"struct_az_tools_framework_1_1_asset_database_1_1_stat_database_entry.html":[2,0,5,2,17],
 "struct_az_tools_framework_1_1_asset_editor_1_1_asset_editor_window_settings.html":[2,0,5,3,7],
 "struct_az_tools_framework_1_1_asset_editor_1_1_asset_editor_window_settings.html#afe48a85aeaa01922dfe9e5f6fa416f8e":[2,0,5,3,7,0],
 "struct_az_tools_framework_1_1_asset_file_info_list_comparison_1_1_comparison_data.html":[2,0,5,49,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX11 =
 "struct_az_tools_framework_1_1_tool_bar_properties.html":[2,0,5,376],
 "struct_az_tools_framework_1_1_tool_tip.html":[2,0,5,381],
 "struct_az_tools_framework_1_1_tools_application_1_1_path_asset_entry.html":[2,0,5,377,0],
-"struct_az_tools_framework_1_1_trace_logger_1_1_log_message.html":[2,0,5,382,0],
-"struct_az_tools_framework_1_1_translation_manipulators_view_create_info.html":[2,0,5,384],
-"struct_az_tools_framework_1_1_view_bookmark.html":[2,0,5,390],
-"struct_az_tools_framework_1_1_view_bookmark.html#affcc8bd6eef8622339359cac407d3eca":[2,0,5,390,0]
+"struct_az_tools_framework_1_1_trace_logger_1_1_log_message.html":[2,0,5,382,0]
 };

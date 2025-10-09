@@ -1,6 +1,5 @@
 var class_a_z_1_1_behavior_context =
 [
-    [ "ClassBuilder", "struct_a_z_1_1_behavior_context_1_1_class_builder.html", "struct_a_z_1_1_behavior_context_1_1_class_builder" ],
     [ "EBusBuilder", "struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html", null ],
     [ "GlobalMethodBuilder", "struct_a_z_1_1_behavior_context_1_1_global_method_builder.html", null ],
     [ "GlobalPropertyBuilder", "struct_a_z_1_1_behavior_context_1_1_global_property_builder.html", null ],

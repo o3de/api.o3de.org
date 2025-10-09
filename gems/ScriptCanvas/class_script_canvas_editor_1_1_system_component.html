@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,7 +60,7 @@ $(document).ready(function(){initNavTree('class_script_canvas_editor_1_1_system_
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits AZ::Component, SystemRequestBus::Handler, AzToolsFramework::EditorEvents::Bus::Handler, AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotificationBus::Handler, ScriptCanvasExecutionBus::Handler, AZ::UserSettingsNotificationBus::Handler, AZ::Data::AssetBus::MultiHandler, AzToolsFramework::AssetSeedManagerRequests::Bus::Handler, AzToolsFramework::EditorEntityContextNotificationBus::Handler, AzToolsFramework::AssetSystemBus::Handler, AZ::SystemTickBus::Handler, and AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler.</p>
+<p>Inherits AZ::Component, SystemRequestBus::Handler, AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotificationBus::Handler, ScriptCanvasExecutionBus::Handler, AZ::UserSettingsNotificationBus::Handler, AZ::Data::AssetBus::MultiHandler, AzToolsFramework::AssetSeedManagerRequests::Bus::Handler, AzToolsFramework::EditorEntityContextNotificationBus::Handler, AzToolsFramework::AssetSystemBus::Handler, AZ::SystemTickBus::Handler, and AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -82,9 +82,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditorCreatableTyp
 <tr class="memitem:a744207f8918b3614022ee9e4514c4536" id="r_a744207f8918b3614022ee9e4514c4536"><td class="memItemLeft" align="right" valign="top"><a id="a744207f8918b3614022ee9e4514c4536" name="a744207f8918b3614022ee9e4514c4536"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEditorComponentsOnEntity</b> (AZ::Entity *entity, const AZ::Data::AssetType &amp;assetType) override</td></tr>
 <tr class="separator:a744207f8918b3614022ee9e4514c4536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c84f5d480b52d216b43799aabc527c1" id="r_a1c84f5d480b52d216b43799aabc527c1"><td class="memItemLeft" align="right" valign="top"><a id="a1c84f5d480b52d216b43799aabc527c1" name="a1c84f5d480b52d216b43799aabc527c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyRegisterViews</b> () override</td></tr>
-<tr class="separator:a1c84f5d480b52d216b43799aabc527c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabf658d7ec4c4f56b71a44edce0284f" id="r_acabf658d7ec4c4f56b71a44edce0284f"><td class="memItemLeft" align="right" valign="top"><a id="acabf658d7ec4c4f56b71a44edce0284f" name="acabf658d7ec4c4f56b71a44edce0284f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenScriptCanvasEditor</b> (const AZStd::string &amp;sourcePath) override</td></tr>
+<tr class="separator:acabf658d7ec4c4f56b71a44edce0284f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a2b072b9c85675c1679207e963dac2" id="r_a46a2b072b9c85675c1679207e963dac2"><td class="memItemLeft" align="right" valign="top"><a id="a46a2b072b9c85675c1679207e963dac2" name="a46a2b072b9c85675c1679207e963dac2"></a>
 <a class="el" href="class_script_canvas_editor_1_1_reporter.html">Reporter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RunAssetGraph</b> (SourceHandle source, ScriptCanvas::ExecutionMode mode) override</td></tr>
 <tr class="separator:a46a2b072b9c85675c1679207e963dac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +109,12 @@ AzToolsFramework::AssetSeedManagerRequests::AssetTypePairs&#160;</td><td class="
 <tr class="memitem:af337b2f1671ea24365b4bc3f36f98a09" id="r_af337b2f1671ea24365b4bc3f36f98a09"><td class="memItemLeft" align="right" valign="top"><a id="af337b2f1671ea24365b4bc3f36f98a09" name="af337b2f1671ea24365b4bc3f36f98a09"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActionContextRegistrationHook</b> () override</td></tr>
 <tr class="separator:af337b2f1671ea24365b4bc3f36f98a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcfabe99eafdea98434976dc7a77bb7" id="r_acbcfabe99eafdea98434976dc7a77bb7"><td class="memItemLeft" align="right" valign="top"><a id="acbcfabe99eafdea98434976dc7a77bb7" name="acbcfabe99eafdea98434976dc7a77bb7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActionRegistrationHook</b> () override</td></tr>
+<tr class="separator:acbcfabe99eafdea98434976dc7a77bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eaa03a7e67a31ad26b7d5abde22c7c7" id="r_a8eaa03a7e67a31ad26b7d5abde22c7c7"><td class="memItemLeft" align="right" valign="top"><a id="a8eaa03a7e67a31ad26b7d5abde22c7c7" name="a8eaa03a7e67a31ad26b7d5abde22c7c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnMenuBindingHook</b> () override</td></tr>
+<tr class="separator:a8eaa03a7e67a31ad26b7d5abde22c7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -152,7 +158,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestGarbageCollect
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_script_canvas_editor.html">ScriptCanvasEditor</a></li><li class="navelem"><a class="el" href="class_script_canvas_editor_1_1_system_component.html">SystemComponent</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:13 for Open 3D Engine ScriptCanvas Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:13 for Open 3D Engine ScriptCanvas Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

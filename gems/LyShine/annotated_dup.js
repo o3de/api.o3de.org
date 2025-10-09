@@ -328,6 +328,8 @@ var annotated_dup =
     [ "UiGameEntityContextNotifications", "class_ui_game_entity_context_notifications.html", "class_ui_game_entity_context_notifications" ],
     [ "UiGameEntityContextRequests", "class_ui_game_entity_context_requests.html", "class_ui_game_entity_context_requests" ],
     [ "UiGameEntityContextSliceInstantiationResults", "class_ui_game_entity_context_slice_instantiation_results.html", "class_ui_game_entity_context_slice_instantiation_results" ],
+    [ "UiHierarchyInteractivityToggleComponent", "class_ui_hierarchy_interactivity_toggle_component.html", "class_ui_hierarchy_interactivity_toggle_component" ],
+    [ "UiHierarchyInteractivityToggleInterface", "class_ui_hierarchy_interactivity_toggle_interface.html", "class_ui_hierarchy_interactivity_toggle_interface" ],
     [ "UiImageComponent", "class_ui_image_component.html", "class_ui_image_component" ],
     [ "UiImageInterface", "class_ui_image_interface.html", "class_ui_image_interface" ],
     [ "UiImageSequenceComponent", "class_ui_image_sequence_component.html", null ],

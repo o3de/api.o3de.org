@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,6 +52,7 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_r_p_i_1_1_material_pipe
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data_1_1_shader_template-members.html">List of all members</a>  </div>
@@ -64,6 +65,13 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_r_p_i_1_1_material_pipe
 
 <p><code>#include &lt;MaterialPipelineSourceData.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2bdab1674bdc4ee701196839fbe0c41e" id="r_a2bdab1674bdc4ee701196839fbe0c41e"><td class="memItemLeft" align="right" valign="top"><a id="a2bdab1674bdc4ee701196839fbe0c41e" name="a2bdab1674bdc4ee701196839fbe0c41e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DrawItemType</b> = AZ::RPI::ShaderCollection::Item::DrawItemType</td></tr>
+<tr class="memdesc:a2bdab1674bdc4ee701196839fbe0c41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the generated draw-items. <br /></td></tr>
+<tr class="separator:a2bdab1674bdc4ee701196839fbe0c41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf09559995ba26ae5a9a0bc9f52b6538" id="r_aaf09559995ba26ae5a9a0bc9f52b6538"><td class="memItemLeft" align="right" valign="top"><a id="aaf09559995ba26ae5a9a0bc9f52b6538" name="aaf09559995ba26ae5a9a0bc9f52b6538"></a>
@@ -86,14 +94,31 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_shader</b>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_azsli</b></td></tr>
 <tr class="memdesc:a281fd20defe3f02be2a69560fbc4d9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative path to a template .azsli file that will be stitched together with material-specific shader code. <br /></td></tr>
 <tr class="separator:a281fd20defe3f02be2a69560fbc4d9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96df22c38fb947648b2a54647e6a3e0e" id="r_a96df22c38fb947648b2a54647e6a3e0e"><td class="memItemLeft" align="right" valign="top"><a id="a96df22c38fb947648b2a54647e6a3e0e" name="a96df22c38fb947648b2a54647e6a3e0e"></a>
-Name&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderTag</b></td></tr>
-<tr class="memdesc:a96df22c38fb947648b2a54647e6a3e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">tag to identify the shader, particularly in lua functors <br /></td></tr>
+<tr class="memitem:a96df22c38fb947648b2a54647e6a3e0e" id="r_a96df22c38fb947648b2a54647e6a3e0e"><td class="memItemLeft" align="right" valign="top">Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data_1_1_shader_template.html#a96df22c38fb947648b2a54647e6a3e0e">m_shaderTag</a></td></tr>
 <tr class="separator:a96df22c38fb947648b2a54647e6a3e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b581a116f0208f04b1293ceca67d6c" id="r_af6b581a116f0208f04b1293ceca67d6c"><td class="memItemLeft" align="right" valign="top"><a id="af6b581a116f0208f04b1293ceca67d6c" name="af6b581a116f0208f04b1293ceca67d6c"></a>
+<a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data_1_1_shader_template.html#a2bdab1674bdc4ee701196839fbe0c41e">DrawItemType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawItemType</b> = DrawItemType::Raster</td></tr>
+<tr class="separator:af6b581a116f0208f04b1293ceca67d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a template that will be used to generate the shader asset for one pass in the pipeline. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a96df22c38fb947648b2a54647e6a3e0e" name="a96df22c38fb947648b2a54647e6a3e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96df22c38fb947648b2a54647e6a3e0e">&#9670;&#160;</a></span>m_shaderTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Name AZ::RPI::MaterialPipelineSourceData::ShaderTemplate::m_shaderTag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>tag to identify the shader, particularly in lua functors </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Edit/Material/<b>MaterialPipelineSourceData.h</b></li>
 </ul>
 </div><!-- contents -->
@@ -102,7 +127,7 @@ Name&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderTag</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data.html">MaterialPipelineSourceData</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data_1_1_shader_template.html">ShaderTemplate</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

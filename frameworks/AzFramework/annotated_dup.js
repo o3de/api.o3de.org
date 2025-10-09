@@ -639,7 +639,6 @@ var annotated_dup =
       [ "SimulatedBodyConfiguration", "struct_az_physics_1_1_simulated_body_configuration.html", null ],
       [ "StaticRigidBody", "struct_az_physics_1_1_static_rigid_body.html", "struct_az_physics_1_1_static_rigid_body" ],
       [ "StaticRigidBodyConfiguration", "struct_az_physics_1_1_static_rigid_body_configuration.html", "struct_az_physics_1_1_static_rigid_body_configuration" ],
-      [ "SystemConfiguration", "struct_az_physics_1_1_system_configuration.html", "struct_az_physics_1_1_system_configuration" ],
       [ "SystemInterface", "class_az_physics_1_1_system_interface.html", "class_az_physics_1_1_system_interface" ],
       [ "TriggerEvent", "struct_az_physics_1_1_trigger_event.html", "struct_az_physics_1_1_trigger_event" ]
     ] ],

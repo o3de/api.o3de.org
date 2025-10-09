@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -80,6 +80,8 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferData<
 <tr class="separator:a5d91964b8de73b8f77a5ace063311dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a560941241065f9f542e94242a9638be4" id="r_a560941241065f9f542e94242a9638be4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_common_buffer_descriptor.html#a560941241065f9f542e94242a9638be4">m_isUniqueName</a> = false</td></tr>
 <tr class="separator:a560941241065f9f542e94242a9638be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cf0c275fd3cc8c00a177d7d3fdba27" id="r_a31cf0c275fd3cc8c00a177d7d3fdba27"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_common_buffer_descriptor.html#a31cf0c275fd3cc8c00a177d7d3fdba27">m_ownerDeviceIndex</a></td></tr>
+<tr class="separator:a31cf0c275fd3cc8c00a177d7d3fdba27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a560941241065f9f542e94242a9638be4" name="a560941241065f9f542e94242a9638be4"></a>
@@ -97,6 +99,21 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferData<
 
 </div>
 </div>
+<a id="a31cf0c275fd3cc8c00a177d7d3fdba27" name="a31cf0c275fd3cc8c00a177d7d3fdba27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cf0c275fd3cc8c00a177d7d3fdba27">&#9670;&#160;</a></span>m_ownerDeviceIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::optional&lt;int&gt; AZ::RPI::CommonBufferDescriptor::m_ownerDeviceIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If this is set, a cross device buffer will be created The memory will only be allocated on one device, and then imported into the other devices See <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html">RHI::BufferDescriptor</a> for a more detailed description </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Buffer/<b>BufferSystemInterface.h</b></li>
 </ul>
@@ -106,7 +123,7 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferData<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_common_buffer_descriptor.html">CommonBufferDescriptor</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

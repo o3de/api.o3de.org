@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,6 +55,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_h_i_1_1_fence.html',''
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_fence-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AZ::RHI::Fence Class Reference</div></div>
 </div><!--header-->
@@ -81,8 +82,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4c28cf2eaf7e5571bf77e4d6f7efa0f" id="r_aa4c28cf2eaf7e5571bf77e4d6f7efa0f"><td class="memItemLeft" align="right" valign="top"><a id="aa4c28cf2eaf7e5571bf77e4d6f7efa0f" name="aa4c28cf2eaf7e5571bf77e4d6f7efa0f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RHI_MULTI_DEVICE_OBJECT_GETTER</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a>)</td></tr>
 <tr class="separator:aa4c28cf2eaf7e5571bf77e4d6f7efa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e75706059a0f0be04459efff5df0283" id="r_a5e75706059a0f0be04459efff5df0283"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html#a5e75706059a0f0be04459efff5df0283">Init</a> (MultiDevice::DeviceMask deviceMask, FenceState initialState, bool usedForWaitingOnDevice=false)</td></tr>
-<tr class="separator:a5e75706059a0f0be04459efff5df0283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40eac76a34bbe77b47b2d2e6e57a182f" id="r_a40eac76a34bbe77b47b2d2e6e57a182f"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html#a40eac76a34bbe77b47b2d2e6e57a182f">Init</a> (MultiDevice::DeviceMask deviceMask, FenceState initialState, bool usedForWaitingOnDevice=false, AZStd::optional&lt; int &gt; ownerDeviceIndex={})</td></tr>
+<tr class="separator:a40eac76a34bbe77b47b2d2e6e57a182f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bbb79a8f279d2331d7ac8769d45bebf" id="r_a8bbb79a8f279d2331d7ac8769d45bebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html#a8bbb79a8f279d2331d7ac8769d45bebf">Shutdown</a> () override final</td></tr>
 <tr class="memdesc:a8bbb79a8f279d2331d7ac8769d45bebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down all device-specific fences.  <br /></td></tr>
 <tr class="separator:a8bbb79a8f279d2331d7ac8769d45bebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,12 +160,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const<
 <tr class="memitem:aa6c31cd85680f007e5008edea2e1186f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object" id="r_aa6c31cd85680f007e5008edea2e1186f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#aa6c31cd85680f007e5008edea2e1186f">release</a> () const</td></tr>
 <tr class="separator:aa6c31cd85680f007e5008edea2e1186f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">AZ::RHI::MultiDeviceObject</a></td></tr>
-<tr class="memitem:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object" id="r_a70a688c1417dc89244f70a41f8717196"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td class="memTemplItemLeft" align="right" valign="top">static AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html#a70a688c1417dc89244f70a41f8717196">IterateDevices</a> (MultiDevice::DeviceMask deviceMask, T callback)</td></tr>
-<tr class="separator:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4caf115b44acab6b70ab1b8f93c4508a" id="r_a4caf115b44acab6b70ab1b8f93c4508a"><td class="memItemLeft" align="right" valign="top"><a id="a4caf115b44acab6b70ab1b8f93c4508a" name="a4caf115b44acab6b70ab1b8f93c4508a"></a>
+AZStd::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ownerDeviceIndex</b></td></tr>
+<tr class="separator:a4caf115b44acab6b70ab1b8f93c4508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_multi_device_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">AZ::RHI::MultiDeviceObject</a></td></tr>
 <tr class="memitem:a0fde2de86f1c1f0810535537a68e886c inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_multi_device_object" id="r_a0fde2de86f1c1f0810535537a68e886c"><td class="memItemLeft" align="right" valign="top">
 AZStd::unordered_map&lt; int, Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">DeviceObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_deviceObjects</b></td></tr>
@@ -174,12 +174,19 @@ AZStd::unordered_map&lt; int, Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_
 <tr class="memitem:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object" id="r_a2285f323a24b84e7b5ad2249438059b8"><td class="memItemLeft" align="right" valign="top">
 AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
 <tr class="separator:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">AZ::RHI::MultiDeviceObject</a></td></tr>
+<tr class="memitem:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object" id="r_a70a688c1417dc89244f70a41f8717196"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td class="memTemplItemLeft" align="right" valign="top">static AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html#a70a688c1417dc89244f70a41f8717196">IterateDevices</a> (MultiDevice::DeviceMask deviceMask, T callback)</td></tr>
+<tr class="separator:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A multi-device synchronization primitive, holding device-specific Fences, than can be used to insert dependencies between a queue and a host </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5e75706059a0f0be04459efff5df0283" name="a5e75706059a0f0be04459efff5df0283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e75706059a0f0be04459efff5df0283">&#9670;&#160;</a></span>Init()</h2>
+<a id="a40eac76a34bbe77b47b2d2e6e57a182f" name="a40eac76a34bbe77b47b2d2e6e57a182f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40eac76a34bbe77b47b2d2e6e57a182f">&#9670;&#160;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +207,13 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>usedForWaitingOnDevice</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>usedForWaitingOnDevice</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::optional&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>ownerDeviceIndex</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,7 +222,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes the multi-device fence using the provided deviceMask. It creates on device-specific fence for each bit set in the deviceMask and passes on the initial FenceState to each <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">DeviceFence</a>. Set usedForWaitingOnDevice to true if the <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a> shoud be signaled on the CPU and waited for on the device. </p>
+<p>Initializes the multi-device fence using the provided deviceMask. It creates on device-specific fence for each bit set in the deviceMask and passes on the initial FenceState to each <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">DeviceFence</a>. Set usedForWaitingOnDevice to true if the <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a> shoud be signaled on the CPU and waited for on the device. ownerDeviceIndex: If set the <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a> will be only created on the specific device. All other device Fences export the <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a> of the owner device and import it again on their device Setting the owner device is only supported if the <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a881af70524a9da3c63cdc39f9db8f372" title="Whether fences can be shared with other devices.">DeviceFeatures::m_crossDeviceFences</a> is set for all devices in deviceMask </p>
 
 </div>
 </div>
@@ -251,7 +264,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html">Fence</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

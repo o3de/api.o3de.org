@@ -140,7 +140,7 @@ var annotated_dup =
         [ "SourceAndScanFolderDatabaseEntry", "class_az_tools_framework_1_1_asset_database_1_1_source_and_scan_folder_database_entry.html", null ],
         [ "SourceDatabaseEntry", "class_az_tools_framework_1_1_asset_database_1_1_source_database_entry.html", null ],
         [ "SourceFileDependencyEntry", "class_az_tools_framework_1_1_asset_database_1_1_source_file_dependency_entry.html", "class_az_tools_framework_1_1_asset_database_1_1_source_file_dependency_entry" ],
-        [ "StatDatabaseEntry", "class_az_tools_framework_1_1_asset_database_1_1_stat_database_entry.html", null ]
+        [ "StatDatabaseEntry", "struct_az_tools_framework_1_1_asset_database_1_1_stat_database_entry.html", null ]
       ] ],
       [ "AssetEditor", null, [
         [ "AssetEditorNotifications", "class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_notifications.html", null ],
@@ -857,7 +857,6 @@ var annotated_dup =
       [ "TranslationManipulatorsViewCreateInfo", "struct_az_tools_framework_1_1_translation_manipulators_view_create_info.html", null ],
       [ "U32CRCHandler", "class_az_tools_framework_1_1_u32_c_r_c_handler.html", null ],
       [ "UiEditorOnlyEntityHandler", "class_az_tools_framework_1_1_ui_editor_only_entity_handler.html", "class_az_tools_framework_1_1_ui_editor_only_entity_handler" ],
-      [ "UnimplementedSliceEntityOwnershipService", "class_az_tools_framework_1_1_unimplemented_slice_entity_ownership_service.html", null ],
       [ "UuidUtilComponent", "class_az_tools_framework_1_1_uuid_util_component.html", null ],
       [ "VariableVerticesVertexContainer", "class_az_tools_framework_1_1_variable_vertices_vertex_container.html", null ],
       [ "ViewBookmark", "struct_az_tools_framework_1_1_view_bookmark.html", "struct_az_tools_framework_1_1_view_bookmark" ],

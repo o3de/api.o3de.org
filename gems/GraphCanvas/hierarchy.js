@@ -428,6 +428,7 @@ var hierarchy =
     [ "GraphCanvas::BookmarkAnchorComponentSaveDataCallback", "class_graph_canvas_1_1_bookmark_anchor_component_save_data_callback.html", [
       [ "GraphCanvas::BookmarkAnchorComponent", "class_graph_canvas_1_1_bookmark_anchor_component.html", null ]
     ] ],
+    [ "GraphCanvas::BreakpointActionsMenuGroup", "class_graph_canvas_1_1_breakpoint_actions_menu_group.html", null ],
     [ "GraphCanvas::CandyStripeConfiguration", "class_graph_canvas_1_1_candy_stripe_configuration.html", null ],
     [ "GraphCanvas::CategorizerInterface", "class_graph_canvas_1_1_categorizer_interface.html", null ],
     [ "GraphCanvas::ColorUtils", "class_graph_canvas_1_1_color_utils.html", null ],
@@ -756,6 +757,9 @@ var hierarchy =
       [ "GraphCanvas::ContextMenuAction", "class_graph_canvas_1_1_context_menu_action.html", [
         [ "GraphCanvas::AlignmentContextMenuAction", "class_graph_canvas_1_1_alignment_context_menu_action.html", [
           [ "GraphCanvas::AlignSelectionMenuAction", "class_graph_canvas_1_1_align_selection_menu_action.html", null ]
+        ] ],
+        [ "GraphCanvas::BreakpointContextMenuAction", "class_graph_canvas_1_1_breakpoint_context_menu_action.html", [
+          [ "GraphCanvas::AddBreakpointMenuAction", "class_graph_canvas_1_1_add_breakpoint_menu_action.html", null ]
         ] ],
         [ "GraphCanvas::CommentContextMenuAction", "class_graph_canvas_1_1_comment_context_menu_action.html", [
           [ "GraphCanvas::EditCommentMenuAction", "class_graph_canvas_1_1_edit_comment_menu_action.html", null ]

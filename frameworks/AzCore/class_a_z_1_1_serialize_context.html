@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,6 +55,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_serialize_context.html',
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_serialize_context-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AZ::SerializeContext Class Reference</div></div>
 </div><!--header-->
@@ -62,7 +63,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_serialize_context.html',
 
 <p><code>#include &lt;SerializeContext.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a>.</p>
+<p>Inherits <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a>, DataPatchUpgrade, NodeUpgradeSortFunctor, DataPatchUpgradeHandler, DataPatchNameUpgrade public DataPatchUpgrade, and GlobalGenericClassInfo final.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -77,8 +78,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_serialize_context_1_1_equality_compare_helper.html">EqualityCompareHelper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">ErrorHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_per_module_generic_class_info.html">PerModuleGenericClassInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -127,15 +126,18 @@ Public Types</h2></td></tr>
 <tr class="memitem:aede81dbda0b9974aee65f27e5363cd62" id="r_aede81dbda0b9974aee65f27e5363cd62"><td class="memItemLeft" align="right" valign="top"><a id="aede81dbda0b9974aee65f27e5363cd62" name="aede81dbda0b9974aee65f27e5363cd62"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UuidToClassMap</b> = <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>, ClassData &gt;</td></tr>
 <tr class="separator:aede81dbda0b9974aee65f27e5363cd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6f5e992effd0b319d7ae624473cdbd" id="r_a6a6f5e992effd0b319d7ae624473cdbd"><td class="memItemLeft" align="right" valign="top"><a id="a6a6f5e992effd0b319d7ae624473cdbd" name="a6a6f5e992effd0b319d7ae624473cdbd"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenericInfoModuleMap</b> = <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <a class="el" href="class_a_z_1_1_generic_class_info.html">AZ::GenericClassInfo</a> * &gt;</td></tr>
+<tr class="separator:a6a6f5e992effd0b319d7ae624473cdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8d972cb9f673acace9aa2cb7e59830d" id="r_aa8d972cb9f673acace9aa2cb7e59830d"><td class="memItemLeft" align="right" valign="top"><a id="aa8d972cb9f673acace9aa2cb7e59830d" name="aa8d972cb9f673acace9aa2cb7e59830d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
 <tr class="separator:aa8d972cb9f673acace9aa2cb7e59830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b3ab9c0ae4e04d612aa7c5f56ba44a" id="r_a37b3ab9c0ae4e04d612aa7c5f56ba44a"><td class="memItemLeft" align="right" valign="top"><a id="a37b3ab9c0ae4e04d612aa7c5f56ba44a" name="a37b3ab9c0ae4e04d612aa7c5f56ba44a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a>)</td></tr>
-<tr class="separator:a37b3ab9c0ae4e04d612aa7c5f56ba44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0346e942f6cdebd276ba8b026a72db4a" id="r_a0346e942f6cdebd276ba8b026a72db4a"><td class="memItemLeft" align="right" valign="top"><a id="a0346e942f6cdebd276ba8b026a72db4a" name="a0346e942f6cdebd276ba8b026a72db4a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL_API</b> (AZCORE_API, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a>)</td></tr>
+<tr class="separator:a0346e942f6cdebd276ba8b026a72db4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12cfdabe9dd892436f0fd65cc14577ad" id="r_a12cfdabe9dd892436f0fd65cc14577ad"><td class="memItemLeft" align="right" valign="top"><a id="a12cfdabe9dd892436f0fd65cc14577ad" name="a12cfdabe9dd892436f0fd65cc14577ad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
 <tr class="separator:a12cfdabe9dd892436f0fd65cc14577ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,10 +166,120 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditContext</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
 <tr class="memdesc:a0ce23fc5341a0211dc33f53ab3d71943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pointer to the current edit context or NULL if one was not created. <br /></td></tr>
 <tr class="separator:a0ce23fc5341a0211dc33f53ab3d71943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca92cd4933da319a408d418eb8b0d3ae" id="r_aca92cd4933da319a408d418eb8b0d3ae"><td class="memItemLeft" align="right" valign="top"><a id="aca92cd4933da319a408d418eb8b0d3ae" name="aca92cd4933da319a408d418eb8b0d3ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (DataPatchUpgrade, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
+<tr class="separator:aca92cd4933da319a408d418eb8b0d3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5da36c710ac54ae7c16fca0a6b0054" id="r_aea5da36c710ac54ae7c16fca0a6b0054"><td class="memItemLeft" align="right" valign="top"><a id="aea5da36c710ac54ae7c16fca0a6b0054" name="aea5da36c710ac54ae7c16fca0a6b0054"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL_API</b> (AZCORE_API, DataPatchUpgrade)</td></tr>
+<tr class="separator:aea5da36c710ac54ae7c16fca0a6b0054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cfdabe9dd892436f0fd65cc14577ad" id="r_a12cfdabe9dd892436f0fd65cc14577ad"><td class="memItemLeft" align="right" valign="top"><a id="a12cfdabe9dd892436f0fd65cc14577ad" name="a12cfdabe9dd892436f0fd65cc14577ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
+<tr class="separator:a12cfdabe9dd892436f0fd65cc14577ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee92827002757165054f681d161e7fd8" id="r_aee92827002757165054f681d161e7fd8"><td class="memItemLeft" align="right" valign="top"><a id="aee92827002757165054f681d161e7fd8" name="aee92827002757165054f681d161e7fd8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchUpgrade</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">fieldName</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">fromVersion</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">toVersion</a>)</td></tr>
+<tr class="separator:aee92827002757165054f681d161e7fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112c9dabcd077f1bdf90f015a5cbe9e2" id="r_a112c9dabcd077f1bdf90f015a5cbe9e2"><td class="memItemLeft" align="right" valign="top"><a id="a112c9dabcd077f1bdf90f015a5cbe9e2" name="a112c9dabcd077f1bdf90f015a5cbe9e2"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DataPatchUpgrade &amp;<a class="el" href="class_a_z_1_1_e_bus.html">RHS</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a112c9dabcd077f1bdf90f015a5cbe9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dde80d2f54c060fa314a1f71def2ef7" id="r_a0dde80d2f54c060fa314a1f71def2ef7"><td class="memItemLeft" align="right" valign="top"><a id="a0dde80d2f54c060fa314a1f71def2ef7" name="a0dde80d2f54c060fa314a1f71def2ef7"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DataPatchUpgrade &amp;<a class="el" href="class_a_z_1_1_e_bus.html">RHS</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a0dde80d2f54c060fa314a1f71def2ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc2bb6adae9e1c57013b95606f54bb9" id="r_aecc2bb6adae9e1c57013b95606f54bb9"><td class="memItemLeft" align="right" valign="top"><a id="aecc2bb6adae9e1c57013b95606f54bb9" name="aecc2bb6adae9e1c57013b95606f54bb9"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;, SerializeContext::DataElementNode &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:aecc2bb6adae9e1c57013b95606f54bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ff667b83cdc67d64388167c4c6c8c2" id="r_a39ff667b83cdc67d64388167c4c6c8c2"><td class="memItemLeft" align="right" valign="top"><a id="a39ff667b83cdc67d64388167c4c6c8c2" name="a39ff667b83cdc67d64388167c4c6c8c2"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FromVersion</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a39ff667b83cdc67d64388167c4c6c8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e8c6721ffe4d9baaad0dfe1ddf1723" id="r_ad7e8c6721ffe4d9baaad0dfe1ddf1723"><td class="memItemLeft" align="right" valign="top"><a id="ad7e8c6721ffe4d9baaad0dfe1ddf1723" name="ad7e8c6721ffe4d9baaad0dfe1ddf1723"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToVersion</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:ad7e8c6721ffe4d9baaad0dfe1ddf1723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5276d36e2b34bec10282a1de86a8a23" id="r_aa5276d36e2b34bec10282a1de86a8a23"><td class="memItemLeft" align="right" valign="top"><a id="aa5276d36e2b34bec10282a1de86a8a23" name="aa5276d36e2b34bec10282a1de86a8a23"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFieldName</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:aa5276d36e2b34bec10282a1de86a8a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d6f1df6f5ebdadfa473295cbf21ec5" id="r_a62d6f1df6f5ebdadfa473295cbf21ec5"><td class="memItemLeft" align="right" valign="top"><a id="a62d6f1df6f5ebdadfa473295cbf21ec5" name="a62d6f1df6f5ebdadfa473295cbf21ec5"></a>
+<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFieldCRC</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a62d6f1df6f5ebdadfa473295cbf21ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b72a522cc1d2c5459f5e4d4505e7597" id="r_a6b72a522cc1d2c5459f5e4d4505e7597"><td class="memItemLeft" align="right" valign="top"><a id="a6b72a522cc1d2c5459f5e4d4505e7597" name="a6b72a522cc1d2c5459f5e4d4505e7597"></a>
+DataPatchUpgradeType&#160;</td><td class="memItemRight" valign="bottom"><b>GetUpgradeType</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a6b72a522cc1d2c5459f5e4d4505e7597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e638ad7f9cff0a7ebe091b03d0f78c7" id="r_a7e638ad7f9cff0a7ebe091b03d0f78c7"><td class="memItemLeft" align="right" valign="top"><a id="a7e638ad7f9cff0a7ebe091b03d0f78c7" name="a7e638ad7f9cff0a7ebe091b03d0f78c7"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFromType</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a7e638ad7f9cff0a7ebe091b03d0f78c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d0f50e5d3e1a90927efb5cf29fdbbd" id="r_a17d0f50e5d3e1a90927efb5cf29fdbbd"><td class="memItemLeft" align="right" valign="top"><a id="a17d0f50e5d3e1a90927efb5cf29fdbbd" name="a17d0f50e5d3e1a90927efb5cf29fdbbd"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetToType</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a17d0f50e5d3e1a90927efb5cf29fdbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db08778bf0b52cc7da7603cdaed7bf7" id="r_a5db08778bf0b52cc7da7603cdaed7bf7"><td class="memItemLeft" align="right" valign="top"><a id="a5db08778bf0b52cc7da7603cdaed7bf7" name="a5db08778bf0b52cc7da7603cdaed7bf7"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;in) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a5db08778bf0b52cc7da7603cdaed7bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7fe2cd4be0a091fb59a42bff6879dc" id="r_a6e7fe2cd4be0a091fb59a42bff6879dc"><td class="memItemLeft" align="right" valign="top"><a id="a6e7fe2cd4be0a091fb59a42bff6879dc" name="a6e7fe2cd4be0a091fb59a42bff6879dc"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNewName</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a6e7fe2cd4be0a091fb59a42bff6879dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ca9fe10c3693f6b5895586caa60cf6" id="r_a32ca9fe10c3693f6b5895586caa60cf6"><td class="memItemLeft" align="right" valign="top"><a id="a32ca9fe10c3693f6b5895586caa60cf6" name="a32ca9fe10c3693f6b5895586caa60cf6"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DataPatchUpgrade *<a class="el" href="class_a_z_1_1_e_bus.html">LHS</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> DataPatchUpgrade *<a class="el" href="class_a_z_1_1_e_bus.html">RHS</a>)</td></tr>
+<tr class="separator:a32ca9fe10c3693f6b5895586caa60cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53efe0cd526e3ca1bf21e8fdd7a4918f" id="r_a53efe0cd526e3ca1bf21e8fdd7a4918f"><td class="memItemLeft" align="right" valign="top"><a id="a53efe0cd526e3ca1bf21e8fdd7a4918f" name="a53efe0cd526e3ca1bf21e8fdd7a4918f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchUpgradeHandler</b> ()</td></tr>
+<tr class="separator:a53efe0cd526e3ca1bf21e8fdd7a4918f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427d2db2bd00c952ad8cf1fab8a5afa1" id="r_a427d2db2bd00c952ad8cf1fab8a5afa1"><td class="memItemLeft" align="right" valign="top"><a id="a427d2db2bd00c952ad8cf1fab8a5afa1" name="a427d2db2bd00c952ad8cf1fab8a5afa1"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddFieldUpgrade</b> (DataPatchUpgrade *<a class="el" href="class_a_z_1_1_e_bus.html">upgrade</a>)</td></tr>
+<tr class="separator:a427d2db2bd00c952ad8cf1fab8a5afa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796734ff6b3d60115996d07d7f3aaced" id="r_a796734ff6b3d60115996d07d7f3aaced"><td class="memItemLeft" align="right" valign="top"><a id="a796734ff6b3d60115996d07d7f3aaced" name="a796734ff6b3d60115996d07d7f3aaced"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1unordered__map.html">DataPatchFieldUpgrades</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUpgrades</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a796734ff6b3d60115996d07d7f3aaced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d296e2276e45f2b99ef3f9814dd9f5" id="r_ae7d296e2276e45f2b99ef3f9814dd9f5"><td class="memItemLeft" align="right" valign="top"><a id="ae7d296e2276e45f2b99ef3f9814dd9f5" name="ae7d296e2276e45f2b99ef3f9814dd9f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (DataPatchNameUpgrade, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
+<tr class="separator:ae7d296e2276e45f2b99ef3f9814dd9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fa031c19198591d30c669aa7771a51" id="r_ac0fa031c19198591d30c669aa7771a51"><td class="memItemLeft" align="right" valign="top"><a id="ac0fa031c19198591d30c669aa7771a51" name="ac0fa031c19198591d30c669aa7771a51"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL_API</b> (AZCORE_API, DataPatchNameUpgrade)</td></tr>
+<tr class="separator:ac0fa031c19198591d30c669aa7771a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cfdabe9dd892436f0fd65cc14577ad" id="r_a12cfdabe9dd892436f0fd65cc14577ad"><td class="memItemLeft" align="right" valign="top"><a id="a12cfdabe9dd892436f0fd65cc14577ad" name="a12cfdabe9dd892436f0fd65cc14577ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
+<tr class="separator:a12cfdabe9dd892436f0fd65cc14577ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab977007da834b7eee63acbf1ab2c0add" id="r_ab977007da834b7eee63acbf1ab2c0add"><td class="memItemLeft" align="right" valign="top"><a id="ab977007da834b7eee63acbf1ab2c0add" name="ab977007da834b7eee63acbf1ab2c0add"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchNameUpgrade</b> (<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">fromVersion</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">toVersion</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">oldName</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">newName</a>)</td></tr>
+<tr class="separator:ab977007da834b7eee63acbf1ab2c0add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dde80d2f54c060fa314a1f71def2ef7" id="r_a0dde80d2f54c060fa314a1f71def2ef7"><td class="memItemLeft" align="right" valign="top"><a id="a0dde80d2f54c060fa314a1f71def2ef7" name="a0dde80d2f54c060fa314a1f71def2ef7"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DataPatchUpgrade &amp;<a class="el" href="class_a_z_1_1_e_bus.html">RHS</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a0dde80d2f54c060fa314a1f71def2ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a967714a8a94ae8e955c0fdf2755e9" id="r_a56a967714a8a94ae8e955c0fdf2755e9"><td class="memItemLeft" align="right" valign="top"><a id="a56a967714a8a94ae8e955c0fdf2755e9" name="a56a967714a8a94ae8e955c0fdf2755e9"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DataPatchNameUpgrade &amp;<a class="el" href="class_a_z_1_1_e_bus.html">RHS</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a56a967714a8a94ae8e955c0fdf2755e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef78fb94f06434b72f9030f4c9e8e81" id="r_a7ef78fb94f06434b72f9030f4c9e8e81"><td class="memItemLeft" align="right" valign="top"><a id="a7ef78fb94f06434b72f9030f4c9e8e81" name="a7ef78fb94f06434b72f9030f4c9e8e81"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">context</a>, SerializeContext::DataElementNode &amp;node) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="separator:a7ef78fb94f06434b72f9030f4c9e8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd846f608869e17ce98450d20b42941b" id="r_acd846f608869e17ce98450d20b42941b"><td class="memItemLeft" align="right" valign="top"><a id="acd846f608869e17ce98450d20b42941b" name="acd846f608869e17ce98450d20b42941b"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNewName</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="separator:acd846f608869e17ce98450d20b42941b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebff6fc4f8d0e3635bd5e4ab58731e3" id="r_a8ebff6fc4f8d0e3635bd5e4ab58731e3"><td class="memItemLeft" align="right" valign="top"><a id="a8ebff6fc4f8d0e3635bd5e4ab58731e3" name="a8ebff6fc4f8d0e3635bd5e4ab58731e3"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddGenericClassInfo</b> (<a class="el" href="class_a_z_1_1_generic_class_info.html">AZ::GenericClassInfo</a> *<a class="el" href="class_a_z_1_1_e_bus.html">genericClassInfo</a>)</td></tr>
+<tr class="separator:a8ebff6fc4f8d0e3635bd5e4ab58731e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8907b313106a41bbd6b2d98f7df246" id="r_add8907b313106a41bbd6b2d98f7df246"><td class="memItemLeft" align="right" valign="top"><a id="add8907b313106a41bbd6b2d98f7df246" name="add8907b313106a41bbd6b2d98f7df246"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveGenericClassInfo</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">canonicalTypeId</a>)</td></tr>
+<tr class="separator:add8907b313106a41bbd6b2d98f7df246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59efa4ee77eb290f87d3adcbcd72308" id="r_ab59efa4ee77eb290f87d3adcbcd72308"><td class="memItemLeft" align="right" valign="top"><a id="ab59efa4ee77eb290f87d3adcbcd72308" name="ab59efa4ee77eb290f87d3adcbcd72308"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSerializeContext</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> *<a class="el" href="class_a_z_1_1_e_bus.html">serializeContext</a>)</td></tr>
+<tr class="separator:ab59efa4ee77eb290f87d3adcbcd72308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35f2bced05929a91dd822283657f4f8" id="r_ab35f2bced05929a91dd822283657f4f8"><td class="memItemLeft" align="right" valign="top"><a id="ab35f2bced05929a91dd822283657f4f8" name="ab35f2bced05929a91dd822283657f4f8"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterSerializeContext</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> *<a class="el" href="class_a_z_1_1_e_bus.html">serializeContext</a>)</td></tr>
+<tr class="separator:ab35f2bced05929a91dd822283657f4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab37380c1f7f05c086791cd0d3426588" id="r_aab37380c1f7f05c086791cd0d3426588"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:aab37380c1f7f05c086791cd0d3426588"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_serialize_generic_type_info.html">SerializeGenericTypeInfo</a>&lt; T &gt;::ClassInfoType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context.html#aab37380c1f7f05c086791cd0d3426588">CreateGenericClassInfo</a> ()</td></tr>
+<tr class="separator:aab37380c1f7f05c086791cd0d3426588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19486d78f08ef7c491641f793995bf40" id="r_a19486d78f08ef7c491641f793995bf40"><td class="memTemplParams" colspan="2"><a id="a19486d78f08ef7c491641f793995bf40" name="a19486d78f08ef7c491641f793995bf40"></a>
+template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:a19486d78f08ef7c491641f793995bf40"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_generic_class_info.html">AZ::GenericClassInfo</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FindGenericClassInfo</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="memdesc:a19486d78f08ef7c491641f793995bf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="class_a_z_1_1_generic_class_info.html">GenericClassInfo</a> registered with the current module. <br /></td></tr>
+<tr class="separator:a19486d78f08ef7c491641f793995bf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69730cde468159f7bea0070749762ca" id="r_af69730cde468159f7bea0070749762ca"><td class="memItemLeft" align="right" valign="top"><a id="af69730cde468159f7bea0070749762ca" name="af69730cde468159f7bea0070749762ca"></a>
+<a class="el" href="class_a_z_1_1_generic_class_info.html">AZ::GenericClassInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindGenericClassInfo</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">genericTypeId</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:af69730cde468159f7bea0070749762ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872175255867c95536af5550df0ce18e" id="r_a872175255867c95536af5550df0ce18e"><td class="memItemLeft" align="right" valign="top"><a id="a872175255867c95536af5550df0ce18e" name="a872175255867c95536af5550df0ce18e"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cleanup</b> ()</td></tr>
+<tr class="separator:a872175255867c95536af5550df0ce18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_reflect_context"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_reflect_context')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a></td></tr>
-<tr class="memitem:a57dbf7c55dc21d46055cb09a18c8ad35 inherit pub_methods_class_a_z_1_1_reflect_context" id="r_a57dbf7c55dc21d46055cb09a18c8ad35"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a>)</td></tr>
-<tr class="separator:a57dbf7c55dc21d46055cb09a18c8ad35 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770ec61954d40a40f1ede715d575e57c inherit pub_methods_class_a_z_1_1_reflect_context" id="r_a770ec61954d40a40f1ede715d575e57c"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL_API</b> (AZCORE_API, <a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a>)</td></tr>
+<tr class="separator:a770ec61954d40a40f1ede715d575e57c inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad753048d6d9a153c080699bfd399a775 inherit pub_methods_class_a_z_1_1_reflect_context" id="r_ad753048d6d9a153c080699bfd399a775"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
 <tr class="separator:ad753048d6d9a153c080699bfd399a775 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +300,44 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteQueuedOnDemandReflections</b> ()</td></tr>
 <tr class="memdesc:a96830dcb64ecd0cacaf9e895b7b5ec43 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute all queued <a class="el" href="struct_a_z_1_1_on_demand_reflection.html">OnDemandReflection</a> calls. <br /></td></tr>
 <tr class="separator:a96830dcb64ecd0cacaf9e895b7b5ec43 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae3cd90da0536f1e8f409f8534ba2e2d7" id="r_ae3cd90da0536f1e8f409f8534ba2e2d7"><td class="memItemLeft" align="right" valign="top"><a id="ae3cd90da0536f1e8f409f8534ba2e2d7" name="ae3cd90da0536f1e8f409f8534ba2e2d7"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetFieldName</b></td></tr>
+<tr class="separator:ae3cd90da0536f1e8f409f8534ba2e2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68b0759be94ba31224912fc071480ab" id="r_ae68b0759be94ba31224912fc071480ab"><td class="memItemLeft" align="right" valign="top"><a id="ae68b0759be94ba31224912fc071480ab" name="ae68b0759be94ba31224912fc071480ab"></a>
+<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetFieldCRC</b></td></tr>
+<tr class="separator:ae68b0759be94ba31224912fc071480ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1b478da668b738f0e9b8f56a88046e" id="r_ada1b478da668b738f0e9b8f56a88046e"><td class="memItemLeft" align="right" valign="top"><a id="ada1b478da668b738f0e9b8f56a88046e" name="ada1b478da668b738f0e9b8f56a88046e"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fromVersion</b></td></tr>
+<tr class="separator:ada1b478da668b738f0e9b8f56a88046e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803f2527095d17cf2c56e2ce65b0fac3" id="r_a803f2527095d17cf2c56e2ce65b0fac3"><td class="memItemLeft" align="right" valign="top"><a id="a803f2527095d17cf2c56e2ce65b0fac3" name="a803f2527095d17cf2c56e2ce65b0fac3"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_toVersion</b></td></tr>
+<tr class="separator:a803f2527095d17cf2c56e2ce65b0fac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0853fe3cb666f2061790f8b57ad6727e" id="r_a0853fe3cb666f2061790f8b57ad6727e"><td class="memItemLeft" align="right" valign="top"><a id="a0853fe3cb666f2061790f8b57ad6727e" name="a0853fe3cb666f2061790f8b57ad6727e"></a>
+DataPatchUpgradeType&#160;</td><td class="memItemRight" valign="bottom"><b>m_upgradeType</b></td></tr>
+<tr class="separator:a0853fe3cb666f2061790f8b57ad6727e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_reflect_context"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_reflect_context')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a></td></tr>
+<tr class="memitem:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a0491c1dfd7b522a48850c12699345171"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRemoveReflection</b></td></tr>
+<tr class="memdesc:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if all calls in the context should be considered to remove not to add reflection. <br /></td></tr>
+<tr class="separator:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a16791f48dd6ea3320b477b6c3f6bd663"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <a class="el" href="class_a_z_std_1_1weak__ptr.html">AZStd::weak_ptr</a>&lt; Internal::ReflectionFunctionRef &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_onDemandReflection</b></td></tr>
+<tr class="memdesc:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the on demand reflect functions so we can avoid double-reflecting something. <br /></td></tr>
+<tr class="separator:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_ad6cf243a447b9ceaa95ecb70a36744f3"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <a class="el" href="namespace_a_z.html#a6332cfe277dbb34b8392a0f0015a0947">StaticReflectionFunctionPtr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_toProcessOnDemandReflection</b></td></tr>
+<tr class="memdesc:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_a_z_1_1_on_demand_reflection.html">OnDemandReflection</a> functions that need to be called. <br /></td></tr>
+<tr class="separator:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a3b720c1a62aaf44b2f05f5c733abf638"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentlyProcessingTypeIds</b></td></tr>
+<tr class="memdesc:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type ids of the currently reflecting type. Used to prevent circular references. Is a set to prevent recursive circular references. <br /></td></tr>
+<tr class="separator:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c09841f41001a3cb7f0451e19b0629d inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a2c09841f41001a3cb7f0451e19b0629d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_a_z_1_1_e_bus.html">friend</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnDemandReflectionOwner</b></td></tr>
+<tr class="separator:a2c09841f41001a3cb7f0451e19b0629d inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Function to enumerate the hierarchy of an instance using the serialization info.</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="Enumeration"></a></p>
@@ -309,9 +459,9 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td>
 <tr class="memitem:a67051e9480956b67d61d56bbcd0f0f6d" id="r_a67051e9480956b67d61d56bbcd0f0f6d"><td class="memItemLeft" align="right" valign="top"><a id="a67051e9480956b67d61d56bbcd0f0f6d" name="a67051e9480956b67d61d56bbcd0f0f6d"></a>
 <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnderlyingTypeId</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">enumTypeId</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
 <tr class="separator:a67051e9480956b67d61d56bbcd0f0f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb129ad41eebb8e2f8897542979b101" id="r_adbb129ad41eebb8e2f8897542979b101"><td class="memItemLeft" align="right" valign="top"><a id="adbb129ad41eebb8e2f8897542979b101" name="adbb129ad41eebb8e2f8897542979b101"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_per_module_generic_class_info.html">PerModuleGenericClassInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentSerializeContextModule</b> ()</td></tr>
-<tr class="separator:adbb129ad41eebb8e2f8897542979b101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d50eb7769bc3384bc3b594bceb14e94" id="r_a7d50eb7769bc3384bc3b594bceb14e94"><td class="memItemLeft" align="right" valign="top"><a id="a7d50eb7769bc3384bc3b594bceb14e94" name="a7d50eb7769bc3384bc3b594bceb14e94"></a>
+AZCORE_API <a class="el" href="class_a_z_1_1_e_bus.html">GlobalGenericClassInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalSerializeContextModule</b> ()</td></tr>
+<tr class="separator:a7d50eb7769bc3384bc3b594bceb14e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Code to bind classes and variables for serialization.</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="SerializeBind"></a> For details about what can you expose in a class and what options you have <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> </p>
@@ -347,33 +497,11 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ValueType &g
 <tr class="memitem:ad8e7e8513c4a6a4c1e89db85f880b7e5" id="r_ad8e7e8513c4a6a4c1e89db85f880b7e5"><td class="memItemLeft" align="right" valign="top"><a id="ad8e7e8513c4a6a4c1e89db85f880b7e5" name="ad8e7e8513c4a6a4c1e89db85f880b7e5"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClassDeprecate</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">typeUuid</a>, <a class="el" href="class_a_z_1_1_serialize_context.html#a1065bfda2ff2d1eb3fc0f7f3ee3f2b08">VersionConverter</a> <a class="el" href="class_a_z_1_1_e_bus.html">converter</a>=<a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a>)</td></tr>
 <tr class="separator:ad8e7e8513c4a6a4c1e89db85f880b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_reflect_context"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_reflect_context')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a></td></tr>
-<tr class="memitem:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a0491c1dfd7b522a48850c12699345171"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRemoveReflection</b></td></tr>
-<tr class="memdesc:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if all calls in the context should be considered to remove not to add reflection. <br /></td></tr>
-<tr class="separator:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a16791f48dd6ea3320b477b6c3f6bd663"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <a class="el" href="class_a_z_std_1_1weak__ptr.html">AZStd::weak_ptr</a>&lt; Internal::ReflectionFunctionRef &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_onDemandReflection</b></td></tr>
-<tr class="memdesc:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the on demand reflect functions so we can avoid double-reflecting something. <br /></td></tr>
-<tr class="separator:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_ad6cf243a447b9ceaa95ecb70a36744f3"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <a class="el" href="namespace_a_z.html#a6332cfe277dbb34b8392a0f0015a0947">StaticReflectionFunctionPtr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_toProcessOnDemandReflection</b></td></tr>
-<tr class="memdesc:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_a_z_1_1_on_demand_reflection.html">OnDemandReflection</a> functions that need to be called. <br /></td></tr>
-<tr class="separator:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a3b720c1a62aaf44b2f05f5c733abf638"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentlyProcessingTypeIds</b></td></tr>
-<tr class="memdesc:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type ids of the currently reflecting type. Used to prevent circular references. Is a set to prevent recursive circular references. <br /></td></tr>
-<tr class="separator:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c09841f41001a3cb7f0451e19b0629d inherit pro_attribs_class_a_z_1_1_reflect_context" id="r_a2c09841f41001a3cb7f0451e19b0629d"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_a_z_1_1_e_bus.html">friend</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnDemandReflectionOwner</b></td></tr>
-<tr class="separator:a2c09841f41001a3cb7f0451e19b0629d inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Serialize context is a class that manages information about all reflected data structures. You will use it for all related information when you declare you data for serialization. In addition it will handle data version control. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2runner_2work_2api_8o3de_8org_2api_8o3de_8org_2o3de_2_code_2_framework_2_az_core_2_az_core_2_math_2_crc_8h-example.html#_a3">/home/runner/work/api.o3de.org/api.o3de.org/o3de/Code/Framework/AzCore/AzCore/Math/Crc.h</a>.</dd>
+<div class="textblock"><p>Serialize context is a class that manages information about all reflected data structures. You will use it for all related information when you declare you data for serialization. In addition it will handle data version control.</p>
+<p>PerModuleGenericClassInfo tracks module specific reflections of <a class="el" href="class_a_z_1_1_generic_class_info.html">GenericClassInfo</a> for each serializeContext registered with this module(.dll) </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2runner_2work_2api_8o3de_8org_2api_8o3de_8org_2o3de_2_code_2_framework_2_az_core_2_az_core_2_math_2_crc_8h-example.html#_a2">/home/runner/work/api.o3de.org/api.o3de.org/o3de/Code/Framework/AzCore/AzCore/Math/Crc.h</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1a8a0edaa56e7cd6c573d6450b87ef7c" name="a1a8a0edaa56e7cd6c573d6450b87ef7c"></a>
@@ -499,6 +627,26 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T , class...
       </table>
 </div><div class="memdoc">
 <p>When a default object factory can't be used, example a singleton class with private constructors or non default constructors you will have to provide a custom factory. </p>
+
+</div>
+</div>
+<a id="aab37380c1f7f05c086791cd0d3426588" name="aab37380c1f7f05c086791cd0d3426588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab37380c1f7f05c086791cd0d3426588">&#9670;&#160;</a></span>CreateGenericClassInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_a_z_1_1_serialize_generic_type_info.html">SerializeGenericTypeInfo</a>&lt; T &gt;::ClassInfoType * AZ::SerializeContext::CreateGenericClassInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates <a class="el" href="class_a_z_1_1_generic_class_info.html">GenericClassInfo</a> and registers it with the current module if it has not already been registered Returns a pointer to the <a class="el" href="class_a_z_1_1_generic_class_info.html">GenericClassInfo</a> derived class that was created </p>
 
 </div>
 </div>
@@ -720,7 +868,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> EnumType 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

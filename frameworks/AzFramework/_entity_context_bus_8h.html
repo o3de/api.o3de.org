@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,6 +64,7 @@ $(document).ready(function(){initNavTree('_entity_context_bus_8h.html',''); init
 <code>#include &lt;AzCore/Math/Uuid.h&gt;</code><br />
 <code>#include &lt;AzCore/Asset/AssetCommon.h&gt;</code><br />
 <code>#include &lt;AzCore/Component/ComponentBus.h&gt;</code><br />
+<code>#include &lt;AzFramework/AzFrameworkAPI.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -96,9 +97,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>AzFramework::EntityL
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0db8c7a106c2dfa3c1e95f9da3e766a2" id="r_a0db8c7a106c2dfa3c1e95f9da3e766a2"><td class="memItemLeft" align="right" valign="top"><a id="a0db8c7a106c2dfa3c1e95f9da3e766a2" name="a0db8c7a106c2dfa3c1e95f9da3e766a2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_BUDGET</b> (AzFramework)</td></tr>
-<tr class="separator:a0db8c7a106c2dfa3c1e95f9da3e766a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6596131cc5112438580aec2b48098d7" id="r_aa6596131cc5112438580aec2b48098d7"><td class="memItemLeft" align="right" valign="top"><a id="aa6596131cc5112438580aec2b48098d7" name="aa6596131cc5112438580aec2b48098d7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_BUDGET_SHARED</b> (AzFramework)</td></tr>
+<tr class="separator:aa6596131cc5112438580aec2b48098d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0146b2594c2622788a00785a839b770" id="r_ab0146b2594c2622788a00785a839b770"><td class="memItemLeft" align="right" valign="top"><a id="ab0146b2594c2622788a00785a839b770" name="ab0146b2594c2622788a00785a839b770"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_EBUS_MULTI_ADDRESS</b> (AZF_API, <a class="el" href="class_az_framework_1_1_entity_context_requests.html">AzFramework::EntityContextRequests</a>)</td></tr>
+<tr class="separator:ab0146b2594c2622788a00785a839b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2bc5d21260e2e170482b4650500102" id="r_a1b2bc5d21260e2e170482b4650500102"><td class="memItemLeft" align="right" valign="top"><a id="a1b2bc5d21260e2e170482b4650500102" name="a1b2bc5d21260e2e170482b4650500102"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_EBUS_MULTI_ADDRESS</b> (AZF_API, <a class="el" href="class_az_framework_1_1_entity_context_events.html">AzFramework::EntityContextEvents</a>)</td></tr>
+<tr class="separator:a1b2bc5d21260e2e170482b4650500102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e5aaffc081c9326a2bfb6b5d02f6e8" id="r_a44e5aaffc081c9326a2bfb6b5d02f6e8"><td class="memItemLeft" align="right" valign="top"><a id="a44e5aaffc081c9326a2bfb6b5d02f6e8" name="a44e5aaffc081c9326a2bfb6b5d02f6e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_EBUS_MULTI_ADDRESS</b> (AZF_API, <a class="el" href="class_az_framework_1_1_entity_id_context_queries.html">AzFramework::EntityIdContextQueries</a>)</td></tr>
+<tr class="separator:a44e5aaffc081c9326a2bfb6b5d02f6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for buses that dispatch and receive events from an entity context. Entity contexts are collections of entities. Examples of entity contexts are the editor context, game context, a custom context, and so on. </p>
@@ -108,7 +118,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75702505ddfbdd2f20447bb0081139c9.html">Code</a></li><li class="navelem"><a class="el" href="dir_e7e3f0b8e20a8c41ad58732be797221b.html">Framework</a></li><li class="navelem"><a class="el" href="dir_dcb88635fd9569c27ef38925fdc47175.html">AzFramework</a></li><li class="navelem"><a class="el" href="dir_583a736b36cb7e9380e70957e174f219.html">AzFramework</a></li><li class="navelem"><a class="el" href="dir_2006a5b5314941f7bd18f3cb6502bc03.html">Entity</a></li><li class="navelem"><a class="el" href="_entity_context_bus_8h.html">EntityContextBus.h</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

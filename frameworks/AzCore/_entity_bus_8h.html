@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -81,14 +81,14 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:af7cfa4644270307764535b28184288bd" id="r_af7cfa4644270307764535b28184288bd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_entity_system_events.html">EntitySystemEvents</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#af7cfa4644270307764535b28184288bd">AZ::EntitySystemBus</a></td></tr>
 <tr class="separator:af7cfa4644270307764535b28184288bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15657388c6fbc7650fd0025d02cb61e8" id="r_a15657388c6fbc7650fd0025d02cb61e8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_entity_events.html">EntityEvents</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a15657388c6fbc7650fd0025d02cb61e8">AZ::EntityBus</a></td></tr>
-<tr class="separator:a15657388c6fbc7650fd0025d02cb61e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1800dd6091ebd1c194837918489a1c3" id="r_ae1800dd6091ebd1c194837918489a1c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#ae1800dd6091ebd1c194837918489a1c3">AZ::EntityBus</a> = <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_entity_events.html">EntityEvents</a> &gt;</td></tr>
+<tr class="separator:ae1800dd6091ebd1c194837918489a1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a65af0185fde4c27bee3e610c72ae792c" id="r_a65af0185fde4c27bee3e610c72ae792c"><td class="memItemLeft" align="right" valign="top"><a id="a65af0185fde4c27bee3e610c72ae792c" name="a65af0185fde4c27bee3e610c72ae792c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DECLARE_EBUS_EXTERN_DLL_SINGLE_ADDRESS</b> (EntityEvents)</td></tr>
-<tr class="separator:a65af0185fde4c27bee3e610c72ae792c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2ab0044cc7a31893bd1a6d7ae90c71" id="r_a5e2ab0044cc7a31893bd1a6d7ae90c71"><td class="memItemLeft" align="right" valign="top"><a id="a5e2ab0044cc7a31893bd1a6d7ae90c71" name="a5e2ab0044cc7a31893bd1a6d7ae90c71"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DECLARE_EBUS_MULTI_ADDRESS</b> (AZCORE_API, <a class="el" href="class_a_z_1_1_entity_events.html">AZ::EntityEvents</a>)</td></tr>
+<tr class="separator:a5e2ab0044cc7a31893bd1a6d7ae90c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for buses that dispatch notification events concerning the <a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> class. Buses enable entities and components to communicate with each other and with external systems. </p>
@@ -98,7 +98,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75702505ddfbdd2f20447bb0081139c9.html">Code</a></li><li class="navelem"><a class="el" href="dir_e7e3f0b8e20a8c41ad58732be797221b.html">Framework</a></li><li class="navelem"><a class="el" href="dir_d4e5079f3052ac899133e326c057cd21.html">AzCore</a></li><li class="navelem"><a class="el" href="dir_f4fc8a7ffed19b43ff35dcd45e17f976.html">AzCore</a></li><li class="navelem"><a class="el" href="dir_c0f0d5abcd1e5bfc7693ee4d8eaace92.html">Component</a></li><li class="navelem"><a class="el" href="_entity_bus_8h.html">EntityBus.h</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

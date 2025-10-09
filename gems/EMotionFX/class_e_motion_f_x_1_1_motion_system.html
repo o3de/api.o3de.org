@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,6 +71,8 @@ $(document).ready(function(){initNavTree('class_e_motion_f_x_1_1_motion_system.h
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac11798df5891cfff599a0beee200c4aa" id="r_ac11798df5891cfff599a0beee200c4aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_e_motion_f_x_1_1_motion_instance.html">MotionInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_motion_system.html#ac11798df5891cfff599a0beee200c4aa">PlayMotion</a> (<a class="el" href="class_e_motion_f_x_1_1_motion.html">Motion</a> *motion, class <a class="el" href="class_e_motion_f_x_1_1_play_back_info.html">PlayBackInfo</a> *info=nullptr)</td></tr>
 <tr class="separator:ac11798df5891cfff599a0beee200c4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bd00880acc439c9a334c301fc921aa" id="r_a24bd00880acc439c9a334c301fc921aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_e_motion_f_x_1_1_motion_instance.html">MotionInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_motion_system.html#a24bd00880acc439c9a334c301fc921aa">PlayMotion</a> (<a class="el" href="class_e_motion_f_x_1_1_motion_instance.html">MotionInstance</a> *motionInsance, class <a class="el" href="class_e_motion_f_x_1_1_play_back_info.html">PlayBackInfo</a> *info=nullptr)</td></tr>
+<tr class="separator:a24bd00880acc439c9a334c301fc921aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7d58a060f686861640683dacfbeda4" id="r_aff7d58a060f686861640683dacfbeda4"><td class="memItemLeft" align="right" valign="top">virtual uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_motion_system.html#aff7d58a060f686861640683dacfbeda4">GetType</a> () const =0</td></tr>
 <tr class="separator:aff7d58a060f686861640683dacfbeda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae2741b3f9ee7e5088785baeee4741c4" id="r_aae2741b3f9ee7e5088785baeee4741c4"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_e_motion_f_x_1_1_motion_system.html#aae2741b3f9ee7e5088785baeee4741c4">GetTypeString</a> () const =0</td></tr>
@@ -564,7 +566,7 @@ bool isValid2 = orc-&gt;GetMotionSystem()-&gt;IsValidMotionInfo( humanWalk );
 </div>
 </div>
 <a id="ac11798df5891cfff599a0beee200c4aa" name="ac11798df5891cfff599a0beee200c4aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac11798df5891cfff599a0beee200c4aa">&#9670;&#160;</a></span>PlayMotion()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11798df5891cfff599a0beee200c4aa">&#9670;&#160;</a></span>PlayMotion() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,6 +606,51 @@ bool isValid2 = orc-&gt;GetMotionSystem()-&gt;IsValidMotionInfo( humanWalk );
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a created motion instance object. You can use this motion instance object to adjust and retrieve playback information at any time. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_motion_f_x_1_1_play_back_info.html">PlayBackInfo</a> </dd></dl>
+
+</div>
+</div>
+<a id="a24bd00880acc439c9a334c301fc921aa" name="a24bd00880acc439c9a334c301fc921aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bd00880acc439c9a334c301fc921aa">&#9670;&#160;</a></span>PlayMotion() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_e_motion_f_x_1_1_motion_instance.html">MotionInstance</a> * EMotionFX::MotionSystem::PlayMotion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_e_motion_f_x_1_1_motion_instance.html">MotionInstance</a> *&#160;</td>
+          <td class="paramname"><em>motionInsance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class <a class="el" href="class_e_motion_f_x_1_1_play_back_info.html">PlayBackInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start playing the specified motion instance on this actor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motionInsance</td><td>The motion instance to play. </td></tr>
+    <tr><td class="paramname">info</td><td>A pointer to an object containing playback information. This pointer is NOT allowed to be nullptr here. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the played motion instance object or null if the argument was invalid. You can use this motion instance object to adjust and retrieve playback information at any time. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_e_motion_f_x_1_1_play_back_info.html">PlayBackInfo</a> </dd></dl>
 
 </div>
@@ -978,7 +1025,7 @@ bool isValid2 = orc-&gt;GetMotionSystem()-&gt;IsValidMotionInfo( humanWalk );
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>EMotionFX</b></li><li class="navelem"><a class="el" href="class_e_motion_f_x_1_1_motion_system.html">MotionSystem</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:04 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:04 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

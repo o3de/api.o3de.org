@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,6 +60,9 @@ $(document).ready(function(){initNavTree('class_az_tools_framework_1_1_asset_edi
   <div class="headertitle"><div class="title">AzToolsFramework::AssetEditor::AssetEditorWidget Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides ability to create, edit, and save reflected assets.  
+ <a href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget.html#details">More...</a></p>
 
 <p><code>#include &lt;AssetEditorWidget.h&gt;</code></p>
 
@@ -142,15 +145,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentTab</b> (<a
 <tr class="memitem:aff97fd063e34487279f1f1ff38754ddf" id="r_aff97fd063e34487279f1f1ff38754ddf"><td class="memItemLeft" align="right" valign="top"><a id="aff97fd063e34487279f1f1ff38754ddf" name="aff97fd063e34487279f1f1ff38754ddf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTabTitle</b> (<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_tab.html">AssetEditorTab</a> *tab)</td></tr>
 <tr class="separator:aff97fd063e34487279f1f1ff38754ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adacc687e3d5b6517a424612ddec3ec7d" id="r_adacc687e3d5b6517a424612ddec3ec7d"><td class="memItemLeft" align="right" valign="top"><a id="adacc687e3d5b6517a424612ddec3ec7d" name="adacc687e3d5b6517a424612ddec3ec7d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLastSavePath</b> (const AZStd::string &amp;savePath)</td></tr>
-<tr class="separator:adacc687e3d5b6517a424612ddec3ec7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1645e350e5052251a1d3bebef9252843" id="r_a1645e350e5052251a1d3bebef9252843"><td class="memItemLeft" align="right" valign="top"><a id="a1645e350e5052251a1d3bebef9252843" name="a1645e350e5052251a1d3bebef9252843"></a>
-const QString&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastSavePath</b> () const</td></tr>
-<tr class="separator:a1645e350e5052251a1d3bebef9252843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0047118ea57b61ffaf1e94afb99836" id="r_acd0047118ea57b61ffaf1e94afb99836"><td class="memItemLeft" align="right" valign="top"><a id="acd0047118ea57b61ffaf1e94afb99836" name="acd0047118ea57b61ffaf1e94afb99836"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRecentPath</b> (const AZStd::string &amp;recentPath)</td></tr>
-<tr class="separator:acd0047118ea57b61ffaf1e94afb99836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7187aaef104d5d43f28fa9019f0166" id="r_a0e7187aaef104d5d43f28fa9019f0166"><td class="memItemLeft" align="right" valign="top"><a id="a0e7187aaef104d5d43f28fa9019f0166" name="a0e7187aaef104d5d43f28fa9019f0166"></a>
+const QString&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecentPathForAssetType</b> (AZ::Data::AssetType) const</td></tr>
+<tr class="separator:a0e7187aaef104d5d43f28fa9019f0166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6063f35ab2677593de3a0199c93a06de" id="r_a6063f35ab2677593de3a0199c93a06de"><td class="memItemLeft" align="right" valign="top"><a id="a6063f35ab2677593de3a0199c93a06de" name="a6063f35ab2677593de3a0199c93a06de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRecentPath</b> (AZ::Data::AssetType, const AZStd::string &amp;recentPath)</td></tr>
+<tr class="separator:a6063f35ab2677593de3a0199c93a06de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacf397d5fdfc08601e0e44f4e264ba48" id="r_aacf397d5fdfc08601e0e44f4e264ba48"><td class="memItemLeft" align="right" valign="top"><a id="aacf397d5fdfc08601e0e44f4e264ba48" name="aacf397d5fdfc08601e0e44f4e264ba48"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseTab</b> (<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_tab.html">AssetEditorTab</a> *tab)</td></tr>
 <tr class="separator:aacf397d5fdfc08601e0e44f4e264ba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +181,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRecentFileListS
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>AssetEditor</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget.html">AssetEditorWidget</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

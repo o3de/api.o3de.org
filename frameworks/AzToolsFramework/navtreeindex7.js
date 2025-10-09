@@ -60,8 +60,9 @@ var NAVTREEINDEX7 =
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#aa353af7491a002f217b4494c15d97bb6":[2,0,5,15,33,1],
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#abb36644a189910c5a794da5b4b3cf1dc":[2,0,5,15,33,2],
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html":[2,0,5,15,34],
-"class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a29c3e536cec9a3444538573b00b7b9fc":[2,0,5,15,34,1],
+"class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a29c3e536cec9a3444538573b00b7b9fc":[2,0,5,15,34,2],
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a5730d82724f2af05b635fbd37ee23675":[2,0,5,15,34,0],
+"class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a8c9c5288181db576950a668b415a3856":[2,0,5,15,34,1],
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_handler.html":[2,0,5,15,35],
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html":[2,0,5,15,36],
 "class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#a069293f37d242bb35dd679960f5fa5bb":[2,0,5,15,36,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "class_az_tools_framework_1_1_prefab_ui_handler.html#ab712af4dabb16ffe226bcd66a97c3a64":[2,0,5,306,5],
 "class_az_tools_framework_1_1_prefab_ui_handler.html#ac07ddfe8ec288d7c2cc95d08322ed5fa":[2,0,5,306,7],
 "class_az_tools_framework_1_1_prefab_ui_handler.html#ac5d16a48cbd913fbdb156216524b6eb1":[2,0,5,306,6],
-"class_az_tools_framework_1_1_prefab_ui_handler.html#ad7c33b516491ce8f16338f0bccfafae2":[2,0,5,306,0],
-"class_az_tools_framework_1_1_prefab_ui_handler.html#adbf94b03aec7ffd169dc2b6ad56a8c10":[2,0,5,306,4]
+"class_az_tools_framework_1_1_prefab_ui_handler.html#ad7c33b516491ce8f16338f0bccfafae2":[2,0,5,306,0]
 };

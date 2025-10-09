@@ -7,6 +7,7 @@ var class_a_z_1_1_render_1_1_mesh_feature_processor_interface =
     [ "CreateStreamBufferViewsBuilder", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#aa6457eb076ab159e4bf91d766124172a", null ],
     [ "GetCustomMaterials", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#abd75b6cfee00f5058af98271f02e91ad", null ],
     [ "GetDrawPackets", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#af60b2015bd4da34ba2a1a0dcc1c980ca", null ],
+    [ "GetDrawSrg", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a7b70b921bb60680698669676f36698ff", null ],
     [ "GetExcludeFromReflectionCubeMaps", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a760ab0c8d339417dd8ed411fb75d510d", null ],
     [ "GetIsAlwaysDynamic", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a012120855fc52fedd19066f298101f9e", null ],
     [ "GetLightingChannelMask", "class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a2ccc91c34b66e78bbc68b0a37f8ff187", null ],

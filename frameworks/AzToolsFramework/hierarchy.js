@@ -402,7 +402,6 @@ var hierarchy =
       [ "AzToolsFramework::EditorVisibleEntityDataCache", "class_az_tools_framework_1_1_editor_visible_entity_data_cache.html", null ]
     ] ],
     [ "AZ::UserSettings", null, [
-      [ "AzToolsFramework::AssetEditor::AssetEditorWidgetUserSettings", "class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html", null ],
       [ "AzToolsFramework::AssetEditor::AssetEditorWindowSettings", "struct_az_tools_framework_1_1_asset_editor_1_1_asset_editor_window_settings.html", null ],
       [ "AzToolsFramework::LogPanel::SavedState", "class_az_tools_framework_1_1_log_panel_1_1_saved_state.html", null ],
       [ "AzToolsFramework::MainWindowSavedState", "class_az_tools_framework_1_1_main_window_saved_state.html", null ],
@@ -483,12 +482,6 @@ var hierarchy =
       [ "AzToolsFramework::GlobalPaintBrushSettings", "class_az_tools_framework_1_1_global_paint_brush_settings.html", null ]
     ] ],
     [ "AzFramework::PrefabEntityOwnershipService", null, [
-      [ "AzToolsFramework::PrefabEditorEntityOwnershipService", "class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html", null ]
-    ] ],
-    [ "AzFramework::SliceEntityOwnershipServiceRequestBus::Handler", null, [
-      [ "AzToolsFramework::UnimplementedSliceEntityOwnershipService", "class_az_tools_framework_1_1_unimplemented_slice_entity_ownership_service.html", null ]
-    ] ],
-    [ "AzFramework::SliceEntityRequestBus::MultiHandler", null, [
       [ "AzToolsFramework::PrefabEditorEntityOwnershipService", "class_az_tools_framework_1_1_prefab_editor_entity_ownership_service.html", null ]
     ] ],
     [ "AzFramework::ViewportDebugDisplayEventBus::Handler", null, [
@@ -637,7 +630,8 @@ var hierarchy =
       [ "AzToolsFramework::AssetDatabase::SourceAndScanFolderDatabaseEntry", "class_az_tools_framework_1_1_asset_database_1_1_source_and_scan_folder_database_entry.html", null ]
     ] ],
     [ "AzToolsFramework::AssetDatabase::SourceFileDependencyEntry", "class_az_tools_framework_1_1_asset_database_1_1_source_file_dependency_entry.html", null ],
-    [ "AzToolsFramework::AssetDatabase::StatDatabaseEntry", "class_az_tools_framework_1_1_asset_database_1_1_stat_database_entry.html", null ],
+    [ "AzToolsFramework::AssetDatabase::StatDatabaseEntry", "struct_az_tools_framework_1_1_asset_database_1_1_stat_database_entry.html", null ],
+    [ "AzToolsFramework::AssetEditor::AssetEditorWidgetUserSettings", "class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html", null ],
     [ "AzToolsFramework::AssetFileDebugInfo", "class_az_tools_framework_1_1_asset_file_debug_info.html", null ],
     [ "AzToolsFramework::AssetFileDebugInfoList", "class_az_tools_framework_1_1_asset_file_debug_info_list.html", null ],
     [ "AzToolsFramework::AssetFileInfo", "class_az_tools_framework_1_1_asset_file_info.html", null ],

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -132,6 +132,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_bytesPerImage&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_image_subresource_layout.html#ae5f40214e027b4b159be20d231854039">AZ::RHI::DeviceImageSubresourceLayout</a></li>
 <li>m_bytesPerRow&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_image_subresource_layout.html#a5bfbb66c9c9138731be064f3972145b1">AZ::RHI::DeviceImageSubresourceLayout</a></li>
 <li>m_byteStride&#160;:&#160;<a class="el" href="class_a_z_1_1_r_h_i_1_1_stream_buffer_descriptor.html#a947d6c4c2dcf407b11e59cbd7cdc5a0d">AZ::RHI::StreamBufferDescriptor</a></li>
+<li>m_cacheMutex&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_resource_view_cache.html#ab2f43af730888d79ecbd443cb76a40bf">AZ::RHI::ResourceViewCache&lt; ResourceType &gt;</a></li>
 <li>m_canBecomeASubpass&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_data.html#af8c156627d27a86283545753fe87b78c">AZ::RPI::PassData</a></li>
 <li>m_capacityInBytes&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_allocator_1_1_descriptor.html#a8e97c41009624514249b1bc089538850">AZ::RHI::Allocator::Descriptor</a></li>
 <li>m_category&#160;:&#160;<a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html#ad72671d35f6543f45bb68a22ed988fa8">AtomToolsFramework::DynamicNodeConfig</a></li>
@@ -171,6 +172,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_countBuffer&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_indirect_arguments_template.html#abdf24b0a7bb1b5e85af3e752ccfab669">AZ::RHI::IndirectArgumentsTemplate&lt; BufferClass, IndirectBufferViewClass &gt;</a></li>
 <li>m_countBufferByteOffset&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_indirect_arguments_template.html#a35a51fc5e4fe37ff18a8fb4980c574a7">AZ::RHI::IndirectArgumentsTemplate&lt; BufferClass, IndirectBufferViewClass &gt;</a></li>
 <li>m_cpuConstantAddress&#160;:&#160;<a class="el" href="struct_a_z_1_1_d_x12_1_1_shader_resource_group_compiled_data.html#a7cd96ec0cc437e780fb7756dec45681d">AZ::DX12::ShaderResourceGroupCompiledData</a></li>
+<li>m_crossDeviceDeviceMemory&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#aa16e48c829ad14cfa15af19ab5dfe64f">AZ::RHI::DeviceFeatures</a></li>
+<li>m_crossDeviceFences&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a881af70524a9da3c63cdc39f9db8f372">AZ::RHI::DeviceFeatures</a></li>
+<li>m_crossDeviceHostMemory&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a7c8ac4c71cb6050569e3423d08551cdc">AZ::RHI::DeviceFeatures</a></li>
 <li>m_customMinExposure&#160;:&#160;<a class="el" href="struct_a_z_1_1_render_1_1_lut_blend_item.html#ae3f747ee85b3698645d83f18f427629e">AZ::Render::LutBlendItem</a></li>
 <li>m_customName&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#a507c269f8d44996bc735befcda6fe874">AZ::RPI::ModelLod::StreamBufferInfo</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_lod_asset_1_1_mesh_1_1_stream_buffer_info.html#a475ae10e2c815f8ac4b37b479116642f">AZ::RPI::ModelLodAsset::Mesh::StreamBufferInfo</a></li>
 <li>m_customSamplePositions&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a4cca41a499305989b9314cc8cfbde49f">AZ::RHI::DeviceFeatures</a></li>
@@ -371,6 +375,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_materialPipelineTag&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#af4f23494824fa907226e5ad9635bcafe">AZ::RPI::RenderPipelineDescriptor</a></li>
 <li>m_materialPropertiesLayout&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_asset_1_1_material_pipeline_payload.html#abe49afd8cc4b40fd9c988c55a6c761e5">AZ::RPI::MaterialTypeAsset::MaterialPipelinePayload</a></li>
 <li>m_materialShaderCode&#160;:&#160;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad1facdc7c4c60efb300d0c7f607d6189">AZ::RPI::MaterialTypeSourceData</a></li>
+<li>m_materialShaderDefines&#160;:&#160;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad4e52fed9152880c84f8cb5b2e0df41f">AZ::RPI::MaterialTypeSourceData</a></li>
 <li>m_materialType&#160;:&#160;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a140683f3e52099a45cc805f7601635ac">AZ::RPI::MaterialSourceData</a></li>
 <li>m_materialTypeVersion&#160;:&#160;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a6c381db13ba006e862ec8f2405d65cda">AZ::RPI::MaterialSourceData</a></li>
 <li>m_maxBlasCreatedPerFrame&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_ray_tracing_system_descriptor.html#a4d79fdf6744331450b1afe3193b51efc">AZ::RPI::RayTracingSystemDescriptor</a></li>
@@ -434,6 +439,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_overrideBindFlags&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html#a0476c86837fd903e5bf32ba386733c65">AZ::RHI::BufferViewDescriptor</a>, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html#ae12f46dc77d624a9871759d1632aa15e">AZ::RHI::ImageViewDescriptor</a></li>
 <li>m_overrideFormat&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html#a620eb344a2f751a3fa9e11be0146a2b9">AZ::RHI::ImageViewDescriptor</a></li>
 <li>m_overrideStrength&#160;:&#160;<a class="el" href="struct_a_z_1_1_render_1_1_lut_blend_item.html#a4e15f4d0aab4e6dd82b5cfd6982e841d">AZ::Render::LutBlendItem</a></li>
+<li>m_ownerDeviceIndex&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html#a64b2b7d5ee22a3f117fb97759f125f9d">AZ::RHI::BufferDescriptor</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_common_buffer_descriptor.html#a31cf0c275fd3cc8c00a177d7d3fdba27">AZ::RPI::CommonBufferDescriptor</a></li>
 <li>m_ownerPass&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html#a4c05a23056e92414289d8b16684ce348">AZ::RPI::PassAttachment</a></li>
 <li>m_page&#160;:&#160;<a class="el" href="class_a_z_1_1_stable_dynamic_array_1_1iterator.html#a46c9549d3d35072619563b185d370632">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;::iterator</a></li>
 <li>m_pageIndex&#160;:&#160;<a class="el" href="struct_a_z_1_1_stable_dynamic_array_1_1_page.html#ab081c1719abf54f35eab3569013ffd0c">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;::Page</a></li>
@@ -480,6 +486,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_queryTypesMask&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#afa2e6ed1084c4024d4a4c74e8796b6d4">AZ::RHI::DeviceFeatures</a></li>
 <li>m_queueFamilyIndices&#160;:&#160;<a class="el" href="struct_a_z_1_1_vulkan_1_1_create_info_container.html#a4d87d81899ca70c11637159486d5e10e">AZ::Vulkan::CreateInfoContainer&lt; T, ExtT &gt;</a></li>
 <li>m_radius&#160;:&#160;<a class="el" href="struct_a_z_1_1_render_1_1_capsule_light_data.html#ac2969cacc5bb57477200cf3930cdc6b5">AZ::Render::CapsuleLightData</a></li>
+<li>m_rayGenerationRecord&#160;:&#160;<a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_shader_table_descriptor.html#acbc635fb3756a0c4576f75ea944aaccd">AZ::RHI::RayTracingShaderTableDescriptor</a></li>
 <li>m_rayTracing&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#ad8f95cbf43f55fd6d95f8139899625fc">AZ::RHI::DeviceFeatures</a></li>
 <li>m_rayTracingCompactionQueryPoolSize&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_ray_tracing_system_descriptor.html#a0f15e6493ad63ded4973a10e98e9c58d">AZ::RPI::RayTracingSystemDescriptor</a></li>
 <li>m_rayTracingPipelineState&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_dispatch_rays_item.html#a6a00da574b366b47df1dc8804074ab99">AZ::RHI::DeviceDispatchRaysItem</a></li>
@@ -506,6 +513,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_resourcesStageMask&#160;:&#160;<a class="el" href="class_a_z_1_1_metal_1_1_shader_resource_group_visibility.html#acf9401c455f818cd864462c6e33c7ea8">AZ::Metal::ShaderResourceGroupVisibility</a></li>
 <li>m_resourceTable&#160;:&#160;<a class="el" href="class_a_z_1_1_d_x12_1_1_root_parameter_binding.html#aebdb58a015c8fb6a904db32f1e58ace0">AZ::DX12::RootParameterBinding</a></li>
 <li>m_resourceTypeFlags&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics_1_1_heap.html#a97a41d71dfffffec54edfc7025cf9780">AZ::RHI::TransientAttachmentStatistics::Heap</a></li>
+<li>m_resourceViewCache&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_resource_view_cache.html#a692469de1fc45f14b2ade228ec533809">AZ::RHI::ResourceViewCache&lt; ResourceType &gt;</a></li>
 <li>m_result&#160;:&#160;<a class="el" href="struct_a_z_1_1_render_1_1_frame_capture_output_result.html#aeb615852f60a1be3b4d2610eb8d11aec">AZ::Render::FrameCaptureOutputResult</a></li>
 <li>m_rgbIntensity&#160;:&#160;<a class="el" href="struct_a_z_1_1_render_1_1_capsule_light_data.html#aadb985a6c42406a87c8d18ce26f15b41">AZ::Render::CapsuleLightData</a></li>
 <li>m_rootConstants&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_dispatch_item.html#a5ac61a3f3deec475e981e3ceb42411cb">AZ::RHI::DeviceDispatchItem</a>, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_draw_item.html#add47ec998430e37228f5605ace1feae4">AZ::RHI::DeviceDrawItem</a></li>
@@ -541,8 +549,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>m_shaderImageDimensionsNameIndex&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a9fb9fb8a91cc534633f87c8c47a34b01">AZ::RPI::PassAttachmentBinding</a></li>
 <li>m_shaderInputArrayIndex&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#a2fb325c6447224b9e5e4b1881d2b802d">AZ::RPI::PassSlot</a></li>
 <li>m_shaderInputIndex&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a01981153e356ac24724cdee5d61a348e">AZ::RPI::PassAttachmentBinding</a></li>
-<li>m_shaderInputName&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a4fa18b2f27e34b1a7db8941e515624cf">AZ::RPI::PassAttachmentBinding</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#a03b745efc627b6f6410972a85ff88ca5">AZ::RPI::PassSlot</a></li>
+<li>m_shaderInputName&#160;:&#160;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_output_id.html#add99da7a219dfaad4cc24a0c835de04f">AZ::RPI::MaterialPropertyOutputId</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a4fa18b2f27e34b1a7db8941e515624cf">AZ::RPI::PassAttachmentBinding</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_slot.html#a03b745efc627b6f6410972a85ff88ca5">AZ::RPI::PassSlot</a></li>
 <li>m_shaderOptionValues&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_shader_variant_reference_data.html#a58f7a2b8d6758a3a99c3640d6505fac1">AZ::RPI::MaterialTypeSourceData::ShaderVariantReferenceData</a></li>
+<li>m_shaderParameters&#160;:&#160;<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a0df97dec322d8c4bbf824d634f37fa4b">AZ::RPI::MaterialFunctorSourceData</a></li>
 <li>m_shaderReference&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_p_i_1_1_downsample_mip_chain_pass_data.html#a1f22651b88f794f5a00ef7548c0580c1">AZ::RPI::DownsampleMipChainPassData</a></li>
 <li>m_shaderResourceGroup&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_ray_tracing_shader_table_record.html#aee352ca92183c5abc3548a39f723faca">AZ::RHI::RayTracingShaderTableRecord</a></li>
 <li>m_shaderResourceGroupCompilesPerJob&#160;:&#160;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_scheduler_compile_request.html#a4b5387d803c109005f708b603f36e4da">AZ::RHI::FrameSchedulerCompileRequest</a></li>
@@ -712,7 +721,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:00 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:00 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -38,6 +38,7 @@ var hierarchy =
       [ "UiElementComponent", "class_ui_element_component.html", null ],
       [ "UiFaderComponent", "class_ui_fader_component.html", null ],
       [ "UiFlipbookAnimationComponent", "class_ui_flipbook_animation_component.html", null ],
+      [ "UiHierarchyInteractivityToggleComponent", "class_ui_hierarchy_interactivity_toggle_component.html", null ],
       [ "UiImageComponent", "class_ui_image_component.html", null ],
       [ "UiImageSequenceComponent", "class_ui_image_sequence_component.html", null ],
       [ "UiInteractableComponent", "class_ui_interactable_component.html", [
@@ -113,6 +114,7 @@ var hierarchy =
       [ "UiFaderNotifications", "class_ui_fader_notifications.html", null ],
       [ "UiFlipbookAnimationInterface", "class_ui_flipbook_animation_interface.html", null ],
       [ "UiFlipbookAnimationNotifications", "class_ui_flipbook_animation_notifications.html", null ],
+      [ "UiHierarchyInteractivityToggleInterface", "class_ui_hierarchy_interactivity_toggle_interface.html", null ],
       [ "UiImageInterface", "class_ui_image_interface.html", null ],
       [ "UiImageSequenceInterface", "class_ui_image_sequence_interface.html", null ],
       [ "UiIndexableImageInterface", "class_ui_indexable_image_interface.html", null ],
@@ -863,6 +865,9 @@ var hierarchy =
     [ "UiGameEntityContextSliceInstantiationResultsBus::MultiHandler", null, [
       [ "UiSpawnerComponent", "class_ui_spawner_component.html", null ]
     ] ],
+    [ "UiHierarchyInteractivityToggleBus::Handler", null, [
+      [ "UiHierarchyInteractivityToggleComponent", "class_ui_hierarchy_interactivity_toggle_component.html", null ]
+    ] ],
     [ "UiImageBus::Handler", null, [
       [ "UiImageComponent", "class_ui_image_component.html", null ]
     ] ],
@@ -881,6 +886,7 @@ var hierarchy =
       [ "UiDynamicLayoutComponent", "class_ui_dynamic_layout_component.html", null ],
       [ "UiDynamicScrollBoxComponent", "class_ui_dynamic_scroll_box_component.html", null ],
       [ "UiFlipbookAnimationComponent", "class_ui_flipbook_animation_component.html", null ],
+      [ "UiHierarchyInteractivityToggleComponent", "class_ui_hierarchy_interactivity_toggle_component.html", null ],
       [ "UiParticleEmitterComponent", "class_ui_particle_emitter_component.html", null ],
       [ "UiRadioButtonComponent", "class_ui_radio_button_component.html", null ],
       [ "UiScrollBarComponent", "class_ui_scroll_bar_component.html", null ],

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,6 +54,7 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_r_o_s2_editor_system_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_r_o_s2_1_1_r_o_s2_editor_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ROS2::ROS2EditorSystemComponent Class Reference</div></div>
 </div><!--header-->
@@ -64,35 +65,17 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_r_o_s2_editor_system_
 
 <p><code>#include &lt;ROS2EditorSystemComponent.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2::ROS2SystemComponent</a>, and AzToolsFramework::EditorEntityContextNotificationBus::Handler.</p>
+<p>Inherits <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2::ROS2SystemComponent</a>, AzToolsFramework::EditorEvents::Bus::Handler, <a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_requests.html">ROS2::ROS2EditorRequests</a>, and AzToolsFramework::EditorEntityContextNotificationBus::Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b3057a1a8274553bf335ed38622505f" id="r_a5b3057a1a8274553bf335ed38622505f"><td class="memItemLeft" align="right" valign="top"><a id="a5b3057a1a8274553bf335ed38622505f" name="a5b3057a1a8274553bf335ed38622505f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_system_component.html">ROS2EditorSystemComponent</a>, &quot;{34fa5d9a-956b-4655-a6bc-1d57dce8e7a2}&quot;, BaseSystemComponent)</td></tr>
-<tr class="separator:a5b3057a1a8274553bf335ed38622505f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9bd29df86f445348437f329fce5d50" id="r_abf9bd29df86f445348437f329fce5d50"><td class="memItemLeft" align="right" valign="top"><a id="abf9bd29df86f445348437f329fce5d50" name="abf9bd29df86f445348437f329fce5d50"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT_DECL</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_system_component.html">ROS2EditorSystemComponent</a>)</td></tr>
+<tr class="separator:abf9bd29df86f445348437f329fce5d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_o_s2_1_1_r_o_s2_system_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2::ROS2SystemComponent</a></td></tr>
-<tr class="memitem:a5fabb1a410dc88ab84cdf89422605133 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a5fabb1a410dc88ab84cdf89422605133"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2SystemComponent</a>, &quot;{cb28d486-afa4-4a9f-a237-ac5eb42e1c87}&quot;)</td></tr>
-<tr class="separator:a5fabb1a410dc88ab84cdf89422605133 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fb4218c5163a553a5bd40bef58ab61 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a90fb4218c5163a553a5bd40bef58ab61"><td class="memItemLeft" align="right" valign="top">
-std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNode</b> () const override</td></tr>
-<tr class="separator:a90fb4218c5163a553a5bd40bef58ab61 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b9cd82f8f027ab83d215220fefc36e2 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a0b9cd82f8f027ab83d215220fefc36e2"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectOnNodeChanged</b> (NodeChangedEvent::Handler &amp;handler) override</td></tr>
-<tr class="separator:a0b9cd82f8f027ab83d215220fefc36e2 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4540647aaaf316f407d31437c01c433 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_ae4540647aaaf316f407d31437c01c433"><td class="memItemLeft" align="right" valign="top">
-builtin_interfaces::msg::Time&#160;</td><td class="memItemRight" valign="bottom"><b>GetROSTimestamp</b> () const override</td></tr>
-<tr class="separator:ae4540647aaaf316f407d31437c01c433 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83cd974defd4e51c82d295d4b6df3eb3 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a83cd974defd4e51c82d295d4b6df3eb3"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BroadcastTransform</b> (const geometry_msgs::msg::TransformStamped &amp;t, bool isDynamic) override</td></tr>
-<tr class="separator:a83cd974defd4e51c82d295d4b6df3eb3 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757757ad43abe0b8314cd89635bd0152 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a757757ad43abe0b8314cd89635bd0152"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="class_r_o_s2_1_1_r_o_s2_clock.html">ROS2Clock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationClock</b> () const override</td></tr>
-<tr class="separator:a757757ad43abe0b8314cd89635bd0152 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a545aa8d7afe38479fc4fdeac32945 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a92a545aa8d7afe38479fc4fdeac32945"><td class="memItemLeft" align="right" valign="top">
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedSimulationLoopTime</b> () const override</td></tr>
-<tr class="separator:a92a545aa8d7afe38479fc4fdeac32945 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21577a79f2c92d5c0bc0207ee75782c3 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a21577a79f2c92d5c0bc0207ee75782c3"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT_DECL</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2SystemComponent</a>)</td></tr>
+<tr class="separator:a21577a79f2c92d5c0bc0207ee75782c3 inherit pub_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -116,9 +99,37 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;dependent)</td></tr>
 <tr class="separator:a2d5f50d04ce32636d13137b98c938538 inherit pub_static_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a66adbc0ca7264df13d427338265c4834" id="r_a66adbc0ca7264df13d427338265c4834"><td class="memItemLeft" align="right" valign="top">AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_system_component.html#a66adbc0ca7264df13d427338265c4834">CreateROS2FrameEditorComponent</a> (AZ::Entity &amp;entity) override</td></tr>
+<tr class="separator:a66adbc0ca7264df13d427338265c4834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9bc7eaf08301785e47c733da65332b" id="r_a8e9bc7eaf08301785e47c733da65332b"><td class="memItemLeft" align="right" valign="top">AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_system_component.html#a8e9bc7eaf08301785e47c733da65332b">CreateROS2FrameEditorComponent</a> (AZ::Entity &amp;entity, const <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2::ROS2FrameConfiguration</a> &amp;frameConfiguration) override</td></tr>
+<tr class="separator:a8e9bc7eaf08301785e47c733da65332b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_o_s2_1_1_r_o_s2_system_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2::ROS2SystemComponent</a></td></tr>
+<tr class="memitem:a90fb4218c5163a553a5bd40bef58ab61 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a90fb4218c5163a553a5bd40bef58ab61"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a90fb4218c5163a553a5bd40bef58ab61">GetNode</a> () const override</td></tr>
+<tr class="separator:a90fb4218c5163a553a5bd40bef58ab61 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9cd82f8f027ab83d215220fefc36e2 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a0b9cd82f8f027ab83d215220fefc36e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a0b9cd82f8f027ab83d215220fefc36e2">ConnectOnNodeChanged</a> (NodeChangedEvent::Handler &amp;handler) override</td></tr>
+<tr class="separator:a0b9cd82f8f027ab83d215220fefc36e2 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cd974defd4e51c82d295d4b6df3eb3 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a83cd974defd4e51c82d295d4b6df3eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a83cd974defd4e51c82d295d4b6df3eb3">BroadcastTransform</a> (const geometry_msgs::msg::TransformStamped &amp;t, bool isDynamic) override</td></tr>
+<tr class="separator:a83cd974defd4e51c82d295d4b6df3eb3 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344085214fc51f92d1265731d466f529 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a344085214fc51f92d1265731d466f529"><td class="memItemLeft" align="right" valign="top">
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamespacedName</b> (const AZStd::string &amp;ns, const AZStd::string &amp;name) override</td></tr>
+<tr class="separator:a344085214fc51f92d1265731d466f529 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67276aa25ff2b7bb289005d80dc2421a inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a67276aa25ff2b7bb289005d80dc2421a"><td class="memItemLeft" align="right" valign="top">
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>RosifyName</b> (const AZStd::string &amp;input) override</td></tr>
+<tr class="separator:a67276aa25ff2b7bb289005d80dc2421a inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da52e8a094c3f6a7a0247f636ceea74 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a4da52e8a094c3f6a7a0247f636ceea74"><td class="memItemLeft" align="right" valign="top">
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNamespace</b> (const AZStd::string &amp;ros2Namespace) override</td></tr>
+<tr class="separator:a4da52e8a094c3f6a7a0247f636ceea74 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6374fda8fe5f87392556eb3640fc873f inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a6374fda8fe5f87392556eb3640fc873f"><td class="memItemLeft" align="right" valign="top">
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNamespaceField</b> (void *newValue, const AZ::Uuid &amp;valueType) override</td></tr>
+<tr class="separator:a6374fda8fe5f87392556eb3640fc873f inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950aa7b5e619122a6a937bf65e2a3522 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a950aa7b5e619122a6a937bf65e2a3522"><td class="memItemLeft" align="right" valign="top">
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTopic</b> (const AZStd::string &amp;topic) override</td></tr>
+<tr class="separator:a950aa7b5e619122a6a937bf65e2a3522 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3c60b903709b561fbfedc2f8ac1677 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_ade3c60b903709b561fbfedc2f8ac1677"><td class="memItemLeft" align="right" valign="top">
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTopicField</b> (void *newValue, const AZ::Uuid &amp;valueType) override</td></tr>
+<tr class="separator:ade3c60b903709b561fbfedc2f8ac1677 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3afec4ab14d35b9ec23eed9b4fcf59 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a2a3afec4ab14d35b9ec23eed9b4fcf59"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> () override</td></tr>
 <tr class="separator:a2a3afec4ab14d35b9ec23eed9b4fcf59 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,11 +142,117 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () ove
 <tr class="memitem:a18ad2381ae7a23b790c99985bb035ffe inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a18ad2381ae7a23b790c99985bb035ffe"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
 <tr class="separator:a18ad2381ae7a23b790c99985bb035ffe inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1805bc3743bae3719c8ced4078da31f7 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a1805bc3743bae3719c8ced4078da31f7"><td class="memItemLeft" align="right" valign="top">
+AZ::Outcome&lt; AZ::Transform, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransform</b> (const AZStd::string &amp;source, const AZStd::string &amp;target, const builtin_interfaces::msg::Time &amp;time) override</td></tr>
+<tr class="separator:a1805bc3743bae3719c8ced4078da31f7 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242e47d1f23c2e8f7f613cde9bdcf887 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_a242e47d1f23c2e8f7f613cde9bdcf887"><td class="memItemLeft" align="right" valign="top">
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLatestTransform</b> (const AZStd::string &amp;source, const AZStd::string &amp;target) override</td></tr>
+<tr class="separator:a242e47d1f23c2e8f7f613cde9bdcf887 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65368f4725e89d6bae8ccc013d22f34 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component" id="r_aa65368f4725e89d6bae8ccc013d22f34"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PublishTransform</b> (const AZStd::string &amp;source, const AZStd::string &amp;target, const AZ::Transform &amp;transform, bool isDynamic) override</td></tr>
+<tr class="separator:aa65368f4725e89d6bae8ccc013d22f34 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_system_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_o_s2_1_1_r_o_s2_requests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_o_s2_1_1_r_o_s2_requests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2::ROS2Requests</a></td></tr>
+<tr class="memitem:a58cc704483b597fd3b23529c16db3f30 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_requests" id="r_a58cc704483b597fd3b23529c16db3f30"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2Requests</a>, ROS2RequestsTypeId)</td></tr>
+<tr class="separator:a58cc704483b597fd3b23529c16db3f30 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_requests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_o_s2_1_1_r_o_s2_editor_requests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_o_s2_1_1_r_o_s2_editor_requests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_requests.html">ROS2::ROS2EditorRequests</a></td></tr>
+<tr class="memitem:a591f2994e9a2e4e575c6e534a7b09827 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_editor_requests" id="r_a591f2994e9a2e4e575c6e534a7b09827"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_requests.html">ROS2EditorRequests</a>, ROS2EditorRequestsTypeId)</td></tr>
+<tr class="separator:a591f2994e9a2e4e575c6e534a7b09827 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_editor_requests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_r_o_s2_1_1_r_o_s2_requests"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_r_o_s2_1_1_r_o_s2_requests')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2::ROS2Requests</a></td></tr>
+<tr class="memitem:aec37ac28b396b29b98138cfeddde6522 inherit pro_types_class_r_o_s2_1_1_r_o_s2_requests" id="r_aec37ac28b396b29b98138cfeddde6522"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeChangedEvent</b> = AZ::Event&lt; std::shared_ptr&lt; rclcpp::Node &gt; &gt;</td></tr>
+<tr class="separator:aec37ac28b396b29b98138cfeddde6522 inherit pro_types_class_r_o_s2_1_1_r_o_s2_requests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System component for ROS2 editor. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2/Code/Source/SystemComponents/<b>ROS2EditorSystemComponent.h</b></li>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a66adbc0ca7264df13d427338265c4834" name="a66adbc0ca7264df13d427338265c4834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66adbc0ca7264df13d427338265c4834">&#9670;&#160;</a></span>CreateROS2FrameEditorComponent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::Component * ROS2::ROS2EditorSystemComponent::CreateROS2FrameEditorComponent </td>
+          <td>(</td>
+          <td class="paramtype">AZ::Entity &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a new <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>The entity to which the frame component will be added. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created AZ::Component representing the <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a> (or nullptr if failed). </dd></dl>
+
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_requests.html#a02bb311a58bb56a4d130d2013684093f">ROS2::ROS2EditorRequests</a>.</p>
+
+</div>
+</div>
+<a id="a8e9bc7eaf08301785e47c733da65332b" name="a8e9bc7eaf08301785e47c733da65332b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9bc7eaf08301785e47c733da65332b">&#9670;&#160;</a></span>CreateROS2FrameEditorComponent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::Component * ROS2::ROS2EditorSystemComponent::CreateROS2FrameEditorComponent </td>
+          <td>(</td>
+          <td class="paramtype">AZ::Entity &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2::ROS2FrameConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>frameConfiguration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a new <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>The entity to which the frame component will be added. </td></tr>
+    <tr><td class="paramname">frameConfiguration</td><td>The configuration for the <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created AZ::Component representing the <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a> (or nullptr if failed). </dd></dl>
+
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_requests.html#a083add54eb689db9c8ed63a80f3f2272">ROS2::ROS2EditorRequests</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/ROS2/Code/Source/Tools/<b>ROS2EditorSystemComponent.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -143,7 +260,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float del
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_system_component.html">ROS2EditorSystemComponent</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

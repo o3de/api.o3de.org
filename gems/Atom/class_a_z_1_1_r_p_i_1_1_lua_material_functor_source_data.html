@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -88,6 +88,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddMaterialPropertyDependency</b> (Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor.html">MaterialFunctor</a> &gt; functor, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MaterialPropertyIndex</a> index) const</td></tr>
 <tr class="memdesc:aa10585ef8b9c13b4e8f85d0041b57844 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new dependent property to this functor. <br /></td></tr>
 <tr class="separator:aa10585ef8b9c13b4e8f85d0041b57844 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f51b0b84245f62235cbd38f9b0d163 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data" id="r_a55f51b0b84245f62235cbd38f9b0d163"><td class="memItemLeft" align="right" valign="top">
+virtual const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_functor_shader_parameter.html">MaterialFunctorShaderParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterialShaderParameters</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_name_context.html">MaterialNameContext</a> *nameContext) const</td></tr>
+<tr class="memdesc:a55f51b0b84245f62235cbd38f9b0d163 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all shader parameters for this functor that aren't in the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> Properties, adjusted for the name context. <br /></td></tr>
+<tr class="separator:a55f51b0b84245f62235cbd38f9b0d163 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -98,12 +102,19 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="memitem:aec7bef09a12b2ca0c29611fc0fa8e83f inherit pub_static_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data" id="r_aec7bef09a12b2ca0c29611fc0fa8e83f"><td class="memItemLeft" align="right" valign="top">
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:aec7bef09a12b2ca0c29611fc0fa8e83f inherit pub_static_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298274e82e6a57b51bfe25011ddcae1d inherit pub_static_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data" id="r_a298274e82e6a57b51bfe25011ddcae1d"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFunctorShaderParameter</b> (Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor.html">MaterialFunctor</a> &gt; functor, const AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_functor_shader_parameter.html">MaterialFunctorShaderParameter</a> &gt; &amp;shaderParameters)</td></tr>
+<tr class="separator:a298274e82e6a57b51bfe25011ddcae1d inherit pub_static_methods_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_r_p_i_1_1_material_functor_source_data')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html">AZ::RPI::MaterialFunctorSourceData</a></td></tr>
 <tr class="memitem:a17b4aeaff7c2f5eb51197b0a94bd5539 inherit pub_types_class_a_z_1_1_r_p_i_1_1_material_functor_source_data" id="r_a17b4aeaff7c2f5eb51197b0a94bd5539"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a17b4aeaff7c2f5eb51197b0a94bd5539">FunctorResult</a> = Outcome&lt; Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor.html">MaterialFunctor</a> &gt; &gt;</td></tr>
 <tr class="separator:a17b4aeaff7c2f5eb51197b0a94bd5539 inherit pub_types_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_a_z_1_1_r_p_i_1_1_material_functor_source_data')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html">AZ::RPI::MaterialFunctorSourceData</a></td></tr>
+<tr class="memitem:a0df97dec322d8c4bbf824d634f37fa4b inherit pub_attribs_class_a_z_1_1_r_p_i_1_1_material_functor_source_data" id="r_a0df97dec322d8c4bbf824d634f37fa4b"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_functor_shader_parameter.html">MaterialFunctorShaderParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a0df97dec322d8c4bbf824d634f37fa4b">m_shaderParameters</a></td></tr>
+<tr class="memdesc:a0df97dec322d8c4bbf824d634f37fa4b inherit pub_attribs_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> parameters used by this functor that are not defined anywhere in the MaterialProperties.  <br /></td></tr>
+<tr class="separator:a0df97dec322d8c4bbf824d634f37fa4b inherit pub_attribs_class_a_z_1_1_r_p_i_1_1_material_functor_source_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Builds a <a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor.html" title="Materials can use this functor to create custom scripted operations.">LuaMaterialFunctor</a>. Materials can use this functor to create custom scripted operations. </p>
@@ -230,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_source_data.html">LuaMaterialFunctorSourceData</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

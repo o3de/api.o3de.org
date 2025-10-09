@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Maestro Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Maestro Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -78,12 +78,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeyInfo</b> (int k
 <tr class="memitem:aa2554bd42fcac657b249367b9a7c1da2" id="r_aa2554bd42fcac657b249367b9a7c1da2"><td class="memItemLeft" align="right" valign="top"><a id="aa2554bd42fcac657b249367b9a7c1da2" name="aa2554bd42fcac657b249367b9a7c1da2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFlags</b> (int flags) override</td></tr>
 <tr class="separator:aa2554bd42fcac657b249367b9a7c1da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacf749d9b048cbccb1e93ada860c474" id="r_acacf749d9b048cbccb1e93ada860c474"><td class="memItemLeft" align="right" valign="top"><a id="acacf749d9b048cbccb1e93ada860c474" name="acacf749d9b048cbccb1e93ada860c474"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetKey</b> (int keyIndex, IKey *key) override</td></tr>
+<tr class="separator:acacf749d9b048cbccb1e93ada860c474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b058b9c8c3a0d3e2157a1f3aa2b783" id="r_a43b058b9c8c3a0d3e2157a1f3aa2b783"><td class="memItemLeft" align="right" valign="top"><a id="a43b058b9c8c3a0d3e2157a1f3aa2b783" name="a43b058b9c8c3a0d3e2157a1f3aa2b783"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PreloadTextures</b> ()</td></tr>
 <tr class="separator:a43b058b9c8c3a0d3e2157a1f3aa2b783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490810f5cc761b502431b24b10e75070" id="r_a490810f5cc761b502431b24b10e75070"><td class="memItemLeft" align="right" valign="top"><a id="a490810f5cc761b502431b24b10e75070" name="a490810f5cc761b502431b24b10e75070"></a>
-ITexture *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveTexture</b> () const</td></tr>
-<tr class="separator:a490810f5cc761b502431b24b10e75070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b12f7afeaf79cdce41c3bbd1029d389" id="r_a3b12f7afeaf79cdce41c3bbd1029d389"><td class="memItemLeft" align="right" valign="top"><a id="a3b12f7afeaf79cdce41c3bbd1029d389" name="a3b12f7afeaf79cdce41c3bbd1029d389"></a>
+AZ::Data::Instance&lt; AZ::RPI::Image &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveTexture</b> () const</td></tr>
+<tr class="separator:a3b12f7afeaf79cdce41c3bbd1029d389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f6f88ef744435ae8f2211e1f369c3e" id="r_aa0f6f88ef744435ae8f2211e1f369c3e"><td class="memItemLeft" align="right" valign="top"><a id="aa0f6f88ef744435ae8f2211e1f369c3e" name="aa0f6f88ef744435ae8f2211e1f369c3e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveTexture</b> (int keyIndex)</td></tr>
+<tr class="separator:aa0f6f88ef744435ae8f2211e1f369c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89291657e190f64d79c6ef6b36a811c" id="r_aa89291657e190f64d79c6ef6b36a811c"><td class="memItemLeft" align="right" valign="top"><a id="aa89291657e190f64d79c6ef6b36a811c" name="aa89291657e190f64d79c6ef6b36a811c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScreenFaderTrackDefaults</b> ()</td></tr>
 <tr class="separator:aa89291657e190f64d79c6ef6b36a811c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,21 +99,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTextureVisible</b> 
 <tr class="memitem:a05b64cadfdc312498fcbfa051f024603" id="r_a05b64cadfdc312498fcbfa051f024603"><td class="memItemLeft" align="right" valign="top"><a id="a05b64cadfdc312498fcbfa051f024603" name="a05b64cadfdc312498fcbfa051f024603"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextureVisible</b> (bool bVisible)</td></tr>
 <tr class="separator:a05b64cadfdc312498fcbfa051f024603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bdadaa91ece7f34e7734f46c87e2b10" id="r_a3bdadaa91ece7f34e7734f46c87e2b10"><td class="memItemLeft" align="right" valign="top"><a id="a3bdadaa91ece7f34e7734f46c87e2b10" name="a3bdadaa91ece7f34e7734f46c87e2b10"></a>
-Vec4&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawColor</b> () const</td></tr>
-<tr class="separator:a3bdadaa91ece7f34e7734f46c87e2b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18d543129f407461c8e890f17c19a57" id="r_aa18d543129f407461c8e890f17c19a57"><td class="memItemLeft" align="right" valign="top"><a id="aa18d543129f407461c8e890f17c19a57" name="aa18d543129f407461c8e890f17c19a57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawColor</b> (Vec4 vDrawColor)</td></tr>
-<tr class="separator:aa18d543129f407461c8e890f17c19a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805310cf1332cb305a8c122a88bb1d96" id="r_a805310cf1332cb305a8c122a88bb1d96"><td class="memItemLeft" align="right" valign="top"><a id="a805310cf1332cb305a8c122a88bb1d96" name="a805310cf1332cb305a8c122a88bb1d96"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastTextureID</b> () const</td></tr>
-<tr class="separator:a805310cf1332cb305a8c122a88bb1d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2517ec4925c9355b4cabec53ad9eacb" id="r_aa2517ec4925c9355b4cabec53ad9eacb"><td class="memItemLeft" align="right" valign="top"><a id="aa2517ec4925c9355b4cabec53ad9eacb" name="aa2517ec4925c9355b4cabec53ad9eacb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLastTextureID</b> (int nTextureID)</td></tr>
-<tr class="separator:aa2517ec4925c9355b4cabec53ad9eacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a787e2c33163a0e47715b2ba0454c97ff" id="r_a787e2c33163a0e47715b2ba0454c97ff"><td class="memItemLeft" align="right" valign="top"><a id="a787e2c33163a0e47715b2ba0454c97ff" name="a787e2c33163a0e47715b2ba0454c97ff"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveTexture</b> (int index)</td></tr>
-<tr class="separator:a787e2c33163a0e47715b2ba0454c97ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefce009248aa25e1350caa9e5c64086" id="r_adefce009248aa25e1350caa9e5c64086"><td class="memItemLeft" align="right" valign="top"><a id="adefce009248aa25e1350caa9e5c64086" name="adefce009248aa25e1350caa9e5c64086"></a>
+AZ::Vector4&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawColor</b> () const</td></tr>
+<tr class="separator:adefce009248aa25e1350caa9e5c64086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b704fe6bc06f8ab26de46b19c9606b2" id="r_a7b704fe6bc06f8ab26de46b19c9606b2"><td class="memItemLeft" align="right" valign="top"><a id="a7b704fe6bc06f8ab26de46b19c9606b2" name="a7b704fe6bc06f8ab26de46b19c9606b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawColor</b> (AZ::Vector4 vDrawColor)</td></tr>
+<tr class="separator:a7b704fe6bc06f8ab26de46b19c9606b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_maestro_1_1_t_anim_track"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_maestro_1_1_t_anim_track')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_maestro_1_1_t_anim_track.html">Maestro::TAnimTrack&lt; IScreenFaderKey &gt;</a></td></tr>
 <tr class="memitem:a76ff354e24319bea0f78eab72f991053 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_a76ff354e24319bea0f78eab72f991053"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_maestro_1_1_t_anim_track.html">TAnimTrack</a>, AZ::SystemAllocator)</td></tr>
@@ -186,26 +183,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>CloneKey</b> (int srcK
 <tr class="memitem:af1a146d85d4b6a5ac2d4ddb79f80ed39 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_af1a146d85d4b6a5ac2d4ddb79f80ed39"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>CopyKey</b> (IAnimTrack *pFromTrack, int fromKeyIndex) override</td></tr>
 <tr class="separator:af1a146d85d4b6a5ac2d4ddb79f80ed39 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59565195170d7c3718e25fd8899a090 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_ac59565195170d7c3718e25fd8899a090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#ac59565195170d7c3718e25fd8899a090">GetKey</a> (int index, IKey *key) const override</td></tr>
-<tr class="separator:ac59565195170d7c3718e25fd8899a090 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffaab4b5eb90729f88c0645cb478527 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_adffaab4b5eb90729f88c0645cb478527"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#adffaab4b5eb90729f88c0645cb478527">GetKeyTime</a> (int index) const override</td></tr>
-<tr class="separator:adffaab4b5eb90729f88c0645cb478527 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac901e7631779ec3cae0ccd7a718df29c inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_ac901e7631779ec3cae0ccd7a718df29c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#ac901e7631779ec3cae0ccd7a718df29c">GetKey</a> (int keyIndex, IKey *key) const override</td></tr>
+<tr class="separator:ac901e7631779ec3cae0ccd7a718df29c inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bf28a5a6bd22db8a5447c241567ace inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_ae2bf28a5a6bd22db8a5447c241567ace"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#ae2bf28a5a6bd22db8a5447c241567ace">GetKeyTime</a> (int keyIndex) const override</td></tr>
+<tr class="separator:ae2bf28a5a6bd22db8a5447c241567ace inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef490f82141e73170821d43bea768ee inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_acef490f82141e73170821d43bea768ee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#acef490f82141e73170821d43bea768ee">GetMinKeyTimeDelta</a> () const override</td></tr>
 <tr class="separator:acef490f82141e73170821d43bea768ee inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3fd9499a99ef1b50853c76f33465acd inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_ab3fd9499a99ef1b50853c76f33465acd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#ab3fd9499a99ef1b50853c76f33465acd">FindKey</a> (float time) const override</td></tr>
 <tr class="separator:ab3fd9499a99ef1b50853c76f33465acd inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af908b5cd31c042dde10c93f700670a34 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_af908b5cd31c042dde10c93f700670a34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#af908b5cd31c042dde10c93f700670a34">GetKeyFlags</a> (int index) override</td></tr>
-<tr class="separator:af908b5cd31c042dde10c93f700670a34 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532f9c7165265943871f11bd413c26ee inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_a532f9c7165265943871f11bd413c26ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#a532f9c7165265943871f11bd413c26ee">SetKey</a> (int index, IKey *key) override</td></tr>
-<tr class="separator:a532f9c7165265943871f11bd413c26ee inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b138940abe0d0e8f924365a5597fe5c inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_a2b138940abe0d0e8f924365a5597fe5c"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetKeyTime</b> (int index, float time) override</td></tr>
-<tr class="memdesc:a2b138940abe0d0e8f924365a5597fe5c inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time of specified key. <br /></td></tr>
-<tr class="separator:a2b138940abe0d0e8f924365a5597fe5c inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87198e249c9035ef31c00392430ab60b inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_a87198e249c9035ef31c00392430ab60b"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetKeyFlags</b> (int index, int flags) override</td></tr>
-<tr class="memdesc:a87198e249c9035ef31c00392430ab60b inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flags of specified key. <br /></td></tr>
-<tr class="separator:a87198e249c9035ef31c00392430ab60b inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc92809aeab649127a9b442af8d0258 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_a7cc92809aeab649127a9b442af8d0258"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#a7cc92809aeab649127a9b442af8d0258">GetKeyFlags</a> (int keyIndex) override</td></tr>
+<tr class="separator:a7cc92809aeab649127a9b442af8d0258 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7d91bb32609d0dbb4aaa6bf6b00ee8 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_aad7d91bb32609d0dbb4aaa6bf6b00ee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maestro_1_1_t_anim_track.html#aad7d91bb32609d0dbb4aaa6bf6b00ee8">SetKey</a> (int keyIndex, IKey *key) override</td></tr>
+<tr class="separator:aad7d91bb32609d0dbb4aaa6bf6b00ee8 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab84e28d1965921d49db056cd10e5809 inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_aab84e28d1965921d49db056cd10e5809"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetKeyTime</b> (int keyIndex, float time) override</td></tr>
+<tr class="memdesc:aab84e28d1965921d49db056cd10e5809 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time of specified key. <br /></td></tr>
+<tr class="separator:aab84e28d1965921d49db056cd10e5809 inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74db83c58a73d05348c03484523ac67b inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_a74db83c58a73d05348c03484523ac67b"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetKeyFlags</b> (int keyIndex, int flags) override</td></tr>
+<tr class="memdesc:a74db83c58a73d05348c03484523ac67b inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set flags of specified key. <br /></td></tr>
+<tr class="separator:a74db83c58a73d05348c03484523ac67b inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3083518eb811523687f1278f574fb4a inherit pub_methods_class_maestro_1_1_t_anim_track" id="r_af3083518eb811523687f1278f574fb4a"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SortKeys</b> () override</td></tr>
 <tr class="memdesc:af3083518eb811523687f1278f574fb4a inherit pub_methods_class_maestro_1_1_t_anim_track"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort keys in track (after time of keys was modified). <br /></td></tr>
@@ -416,7 +413,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Maestro</b></li><li class="navelem"><a class="el" href="class_maestro_1_1_c_screen_fader_track.html">CScreenFaderTrack</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:09 for Open 3D Engine Maestro Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:09 for Open 3D Engine Maestro Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

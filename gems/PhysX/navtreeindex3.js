@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"struct_phys_x_debug_1_1_color_mappings.html":[1,0,2,0],
 "struct_phys_x_debug_1_1_culling.html":[1,0,2,1],
 "struct_phys_x_debug_1_1_phys_x_visualization_settings.html":[1,0,2,4],
 "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a9d5497e9ecefd591d1f6700b0d1cec15":[1,0,2,4,0],

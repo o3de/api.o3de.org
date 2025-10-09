@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,6 +60,8 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_r_o_s2_requests.html'
 <div class="contents">
 
 <p><code>#include &lt;ROS2Bus.h&gt;</code></p>
+
+<p>Inherited by <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2::ROS2SystemComponent</a><code> [protected]</code>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -69,23 +71,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeChangedEvent</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1606f3db12abec71b396de7ee92d2559" id="r_a1606f3db12abec71b396de7ee92d2559"><td class="memItemLeft" align="right" valign="top"><a id="a1606f3db12abec71b396de7ee92d2559" name="a1606f3db12abec71b396de7ee92d2559"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2Requests</a>, &quot;{a9bdbff6-e644-430d-8096-cdb53c88e8fc}&quot;)</td></tr>
-<tr class="separator:a1606f3db12abec71b396de7ee92d2559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cc704483b597fd3b23529c16db3f30" id="r_a58cc704483b597fd3b23529c16db3f30"><td class="memItemLeft" align="right" valign="top"><a id="a58cc704483b597fd3b23529c16db3f30" name="a58cc704483b597fd3b23529c16db3f30"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2Requests</a>, ROS2RequestsTypeId)</td></tr>
+<tr class="separator:a58cc704483b597fd3b23529c16db3f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3001d65cb28bbe574f2c4a569690ab66" id="r_a3001d65cb28bbe574f2c4a569690ab66"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a3001d65cb28bbe574f2c4a569690ab66">GetNode</a> () const =0</td></tr>
 <tr class="separator:a3001d65cb28bbe574f2c4a569690ab66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af029f9b3fbc2897649529c25cd61ca8e" id="r_af029f9b3fbc2897649529c25cd61ca8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#af029f9b3fbc2897649529c25cd61ca8e">ConnectOnNodeChanged</a> (NodeChangedEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:af029f9b3fbc2897649529c25cd61ca8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d48369f6056cd2da8e01d3225c16853" id="r_a4d48369f6056cd2da8e01d3225c16853"><td class="memItemLeft" align="right" valign="top">virtual builtin_interfaces::msg::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a4d48369f6056cd2da8e01d3225c16853">GetROSTimestamp</a> () const =0</td></tr>
-<tr class="separator:a4d48369f6056cd2da8e01d3225c16853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a815fe0c8dbdbf7bbfd36b2e74b5f2da1" id="r_a815fe0c8dbdbf7bbfd36b2e74b5f2da1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a815fe0c8dbdbf7bbfd36b2e74b5f2da1">BroadcastTransform</a> (const geometry_msgs::msg::TransformStamped &amp;t, bool isDynamic)=0</td></tr>
 <tr class="separator:a815fe0c8dbdbf7bbfd36b2e74b5f2da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e24073ce996f638319cbbdd68396466" id="r_a0e24073ce996f638319cbbdd68396466"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_r_o_s2_1_1_r_o_s2_clock.html">ROS2Clock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a0e24073ce996f638319cbbdd68396466">GetSimulationClock</a> () const =0</td></tr>
-<tr class="separator:a0e24073ce996f638319cbbdd68396466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc8bc89c566152bd1732a804b39c446" id="r_afbc8bc89c566152bd1732a804b39c446"><td class="memItemLeft" align="right" valign="top"><a id="afbc8bc89c566152bd1732a804b39c446" name="afbc8bc89c566152bd1732a804b39c446"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedSimulationLoopTime</b> () const =0</td></tr>
-<tr class="memdesc:afbc8bc89c566152bd1732a804b39c446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an expected loop time of simulation. It is an estimation from past frames. <br /></td></tr>
-<tr class="separator:afbc8bc89c566152bd1732a804b39c446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to the central <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html" title="Central singleton-like System Component for ROS2 Gem.">ROS2SystemComponent</a>. Use this API through ROS2Interface, for example: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> node = ROS2Interface::Get()-&gt;GetNode();</div>
@@ -132,6 +126,8 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedS
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Transforms are already published by each <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component.html">ROS2FrameComponent</a>. Use this function directly only when default behavior of <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component.html">ROS2FrameComponent</a> is not sufficient. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a83cd974defd4e51c82d295d4b6df3eb3">ROS2::ROS2SystemComponent</a>.</p>
+
 </div>
 </div>
 <a id="af029f9b3fbc2897649529c25cd61ca8e" name="af029f9b3fbc2897649529c25cd61ca8e"></a>
@@ -165,6 +161,8 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedS
 </dl>
 <dl class="section note"><dt>Note</dt><dd>callback is active as long as handler is not destroyed. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a0b9cd82f8f027ab83d215220fefc36e2">ROS2::ROS2SystemComponent</a>.</p>
+
 </div>
 </div>
 <a id="a3001d65cb28bbe574f2c4a569690ab66" name="a3001d65cb28bbe574f2c4a569690ab66"></a>
@@ -192,60 +190,7 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedS
 <p>Get a central ROS2 node of the Gem. You can use this node to create publishers and subscribers. </p><dl class="section return"><dt>Returns</dt><dd>The central ROS2 node which holds default publishers for core topics such as /clock and /tf. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Alternatively, you can use your own node along with an executor. </dd></dl>
 
-</div>
-</div>
-<a id="a4d48369f6056cd2da8e01d3225c16853" name="a4d48369f6056cd2da8e01d3225c16853"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d48369f6056cd2da8e01d3225c16853">&#9670;&#160;</a></span>GetROSTimestamp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual builtin_interfaces::msg::Time ROS2::ROS2Requests::GetROSTimestamp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Acquire current time as ROS2 timestamp. Timestamps provide temporal context for messages such as sensor data. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> message = sensor_msgs::msg::PointCloud2();</div>
-<div class="line">message.header.stamp = ROS2Interface::Get()-&gt;GetROSTimestamp();</div>
-</div><!-- fragment --> <dl class="section return"><dt>Returns</dt><dd>Simulation time in ROS2 format. Time source is also valid with non-real time settings. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Make sure to set the use_sim_time parameter for ROS2 nodes which will use the simulation data. </dd></dl>
-
-</div>
-</div>
-<a id="a0e24073ce996f638319cbbdd68396466" name="a0e24073ce996f638319cbbdd68396466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e24073ce996f638319cbbdd68396466">&#9670;&#160;</a></span>GetSimulationClock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const <a class="el" href="class_r_o_s2_1_1_r_o_s2_clock.html">ROS2Clock</a> &amp; ROS2::ROS2Requests::GetSimulationClock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Obtains a simulation clock that is used across simulation. </p><dl class="section return"><dt>Returns</dt><dd>constant reference to currently running clock. </dd></dl>
+<p>Implemented in <a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a90fb4218c5163a553a5bd40bef58ab61">ROS2::ROS2SystemComponent</a>.</p>
 
 </div>
 </div>
@@ -258,7 +203,7 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedS
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2Requests</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

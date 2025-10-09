@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,33 +65,15 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_r_o_s2_system_compone
 
 <p><code>#include &lt;ROS2SystemComponent.h&gt;</code></p>
 
-<p>Inherits AZ::Component, AZ::TickBus::Handler, and ROS2RequestBus::Handler.</p>
+<p>Inherits AZ::Component, AZ::TickBus::Handler, <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2::ROS2Requests</a>, ROS2NamesRequestBus::Handler, and TFInterfaceBus::Handler.</p>
 
 <p>Inherited by <a class="el" href="class_r_o_s2_1_1_r_o_s2_editor_system_component.html">ROS2::ROS2EditorSystemComponent</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5fabb1a410dc88ab84cdf89422605133" id="r_a5fabb1a410dc88ab84cdf89422605133"><td class="memItemLeft" align="right" valign="top"><a id="a5fabb1a410dc88ab84cdf89422605133" name="a5fabb1a410dc88ab84cdf89422605133"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2SystemComponent</a>, &quot;{cb28d486-afa4-4a9f-a237-ac5eb42e1c87}&quot;)</td></tr>
-<tr class="separator:a5fabb1a410dc88ab84cdf89422605133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fb4218c5163a553a5bd40bef58ab61" id="r_a90fb4218c5163a553a5bd40bef58ab61"><td class="memItemLeft" align="right" valign="top"><a id="a90fb4218c5163a553a5bd40bef58ab61" name="a90fb4218c5163a553a5bd40bef58ab61"></a>
-std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNode</b> () const override</td></tr>
-<tr class="separator:a90fb4218c5163a553a5bd40bef58ab61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b9cd82f8f027ab83d215220fefc36e2" id="r_a0b9cd82f8f027ab83d215220fefc36e2"><td class="memItemLeft" align="right" valign="top"><a id="a0b9cd82f8f027ab83d215220fefc36e2" name="a0b9cd82f8f027ab83d215220fefc36e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectOnNodeChanged</b> (NodeChangedEvent::Handler &amp;handler) override</td></tr>
-<tr class="separator:a0b9cd82f8f027ab83d215220fefc36e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4540647aaaf316f407d31437c01c433" id="r_ae4540647aaaf316f407d31437c01c433"><td class="memItemLeft" align="right" valign="top"><a id="ae4540647aaaf316f407d31437c01c433" name="ae4540647aaaf316f407d31437c01c433"></a>
-builtin_interfaces::msg::Time&#160;</td><td class="memItemRight" valign="bottom"><b>GetROSTimestamp</b> () const override</td></tr>
-<tr class="separator:ae4540647aaaf316f407d31437c01c433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83cd974defd4e51c82d295d4b6df3eb3" id="r_a83cd974defd4e51c82d295d4b6df3eb3"><td class="memItemLeft" align="right" valign="top"><a id="a83cd974defd4e51c82d295d4b6df3eb3" name="a83cd974defd4e51c82d295d4b6df3eb3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BroadcastTransform</b> (const geometry_msgs::msg::TransformStamped &amp;t, bool isDynamic) override</td></tr>
-<tr class="separator:a83cd974defd4e51c82d295d4b6df3eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757757ad43abe0b8314cd89635bd0152" id="r_a757757ad43abe0b8314cd89635bd0152"><td class="memItemLeft" align="right" valign="top"><a id="a757757ad43abe0b8314cd89635bd0152" name="a757757ad43abe0b8314cd89635bd0152"></a>
-const <a class="el" href="class_r_o_s2_1_1_r_o_s2_clock.html">ROS2Clock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationClock</b> () const override</td></tr>
-<tr class="separator:a757757ad43abe0b8314cd89635bd0152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a545aa8d7afe38479fc4fdeac32945" id="r_a92a545aa8d7afe38479fc4fdeac32945"><td class="memItemLeft" align="right" valign="top"><a id="a92a545aa8d7afe38479fc4fdeac32945" name="a92a545aa8d7afe38479fc4fdeac32945"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetExpectedSimulationLoopTime</b> () const override</td></tr>
-<tr class="separator:a92a545aa8d7afe38479fc4fdeac32945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21577a79f2c92d5c0bc0207ee75782c3" id="r_a21577a79f2c92d5c0bc0207ee75782c3"><td class="memItemLeft" align="right" valign="top"><a id="a21577a79f2c92d5c0bc0207ee75782c3" name="a21577a79f2c92d5c0bc0207ee75782c3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT_DECL</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2SystemComponent</a>)</td></tr>
+<tr class="separator:a21577a79f2c92d5c0bc0207ee75782c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -113,6 +95,30 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentSe
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a90fb4218c5163a553a5bd40bef58ab61" id="r_a90fb4218c5163a553a5bd40bef58ab61"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a90fb4218c5163a553a5bd40bef58ab61">GetNode</a> () const override</td></tr>
+<tr class="separator:a90fb4218c5163a553a5bd40bef58ab61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9cd82f8f027ab83d215220fefc36e2" id="r_a0b9cd82f8f027ab83d215220fefc36e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a0b9cd82f8f027ab83d215220fefc36e2">ConnectOnNodeChanged</a> (NodeChangedEvent::Handler &amp;handler) override</td></tr>
+<tr class="separator:a0b9cd82f8f027ab83d215220fefc36e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cd974defd4e51c82d295d4b6df3eb3" id="r_a83cd974defd4e51c82d295d4b6df3eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html#a83cd974defd4e51c82d295d4b6df3eb3">BroadcastTransform</a> (const geometry_msgs::msg::TransformStamped &amp;t, bool isDynamic) override</td></tr>
+<tr class="separator:a83cd974defd4e51c82d295d4b6df3eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344085214fc51f92d1265731d466f529" id="r_a344085214fc51f92d1265731d466f529"><td class="memItemLeft" align="right" valign="top"><a id="a344085214fc51f92d1265731d466f529" name="a344085214fc51f92d1265731d466f529"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamespacedName</b> (const AZStd::string &amp;ns, const AZStd::string &amp;name) override</td></tr>
+<tr class="separator:a344085214fc51f92d1265731d466f529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67276aa25ff2b7bb289005d80dc2421a" id="r_a67276aa25ff2b7bb289005d80dc2421a"><td class="memItemLeft" align="right" valign="top"><a id="a67276aa25ff2b7bb289005d80dc2421a" name="a67276aa25ff2b7bb289005d80dc2421a"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>RosifyName</b> (const AZStd::string &amp;input) override</td></tr>
+<tr class="separator:a67276aa25ff2b7bb289005d80dc2421a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da52e8a094c3f6a7a0247f636ceea74" id="r_a4da52e8a094c3f6a7a0247f636ceea74"><td class="memItemLeft" align="right" valign="top"><a id="a4da52e8a094c3f6a7a0247f636ceea74" name="a4da52e8a094c3f6a7a0247f636ceea74"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNamespace</b> (const AZStd::string &amp;ros2Namespace) override</td></tr>
+<tr class="separator:a4da52e8a094c3f6a7a0247f636ceea74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6374fda8fe5f87392556eb3640fc873f" id="r_a6374fda8fe5f87392556eb3640fc873f"><td class="memItemLeft" align="right" valign="top"><a id="a6374fda8fe5f87392556eb3640fc873f" name="a6374fda8fe5f87392556eb3640fc873f"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateNamespaceField</b> (void *newValue, const AZ::Uuid &amp;valueType) override</td></tr>
+<tr class="separator:a6374fda8fe5f87392556eb3640fc873f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950aa7b5e619122a6a937bf65e2a3522" id="r_a950aa7b5e619122a6a937bf65e2a3522"><td class="memItemLeft" align="right" valign="top"><a id="a950aa7b5e619122a6a937bf65e2a3522" name="a950aa7b5e619122a6a937bf65e2a3522"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTopic</b> (const AZStd::string &amp;topic) override</td></tr>
+<tr class="separator:a950aa7b5e619122a6a937bf65e2a3522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3c60b903709b561fbfedc2f8ac1677" id="r_ade3c60b903709b561fbfedc2f8ac1677"><td class="memItemLeft" align="right" valign="top"><a id="ade3c60b903709b561fbfedc2f8ac1677" name="ade3c60b903709b561fbfedc2f8ac1677"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTopicField</b> (void *newValue, const AZ::Uuid &amp;valueType) override</td></tr>
+<tr class="separator:ade3c60b903709b561fbfedc2f8ac1677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3afec4ab14d35b9ec23eed9b4fcf59" id="r_a2a3afec4ab14d35b9ec23eed9b4fcf59"><td class="memItemLeft" align="right" valign="top"><a id="a2a3afec4ab14d35b9ec23eed9b4fcf59" name="a2a3afec4ab14d35b9ec23eed9b4fcf59"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> () override</td></tr>
 <tr class="separator:a2a3afec4ab14d35b9ec23eed9b4fcf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,11 +131,142 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () ove
 <tr class="memitem:a18ad2381ae7a23b790c99985bb035ffe" id="r_a18ad2381ae7a23b790c99985bb035ffe"><td class="memItemLeft" align="right" valign="top"><a id="a18ad2381ae7a23b790c99985bb035ffe" name="a18ad2381ae7a23b790c99985bb035ffe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
 <tr class="separator:a18ad2381ae7a23b790c99985bb035ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1805bc3743bae3719c8ced4078da31f7" id="r_a1805bc3743bae3719c8ced4078da31f7"><td class="memItemLeft" align="right" valign="top"><a id="a1805bc3743bae3719c8ced4078da31f7" name="a1805bc3743bae3719c8ced4078da31f7"></a>
+AZ::Outcome&lt; AZ::Transform, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransform</b> (const AZStd::string &amp;source, const AZStd::string &amp;target, const builtin_interfaces::msg::Time &amp;time) override</td></tr>
+<tr class="separator:a1805bc3743bae3719c8ced4078da31f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242e47d1f23c2e8f7f613cde9bdcf887" id="r_a242e47d1f23c2e8f7f613cde9bdcf887"><td class="memItemLeft" align="right" valign="top"><a id="a242e47d1f23c2e8f7f613cde9bdcf887" name="a242e47d1f23c2e8f7f613cde9bdcf887"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLatestTransform</b> (const AZStd::string &amp;source, const AZStd::string &amp;target) override</td></tr>
+<tr class="separator:a242e47d1f23c2e8f7f613cde9bdcf887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65368f4725e89d6bae8ccc013d22f34" id="r_aa65368f4725e89d6bae8ccc013d22f34"><td class="memItemLeft" align="right" valign="top"><a id="aa65368f4725e89d6bae8ccc013d22f34" name="aa65368f4725e89d6bae8ccc013d22f34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PublishTransform</b> (const AZStd::string &amp;source, const AZStd::string &amp;target, const AZ::Transform &amp;transform, bool isDynamic) override</td></tr>
+<tr class="separator:aa65368f4725e89d6bae8ccc013d22f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_o_s2_1_1_r_o_s2_requests"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_o_s2_1_1_r_o_s2_requests')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2::ROS2Requests</a></td></tr>
+<tr class="memitem:a58cc704483b597fd3b23529c16db3f30 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_requests" id="r_a58cc704483b597fd3b23529c16db3f30"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2Requests</a>, ROS2RequestsTypeId)</td></tr>
+<tr class="separator:a58cc704483b597fd3b23529c16db3f30 inherit pro_methods_class_r_o_s2_1_1_r_o_s2_requests"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_r_o_s2_1_1_r_o_s2_requests"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_r_o_s2_1_1_r_o_s2_requests')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html">ROS2::ROS2Requests</a></td></tr>
+<tr class="memitem:aec37ac28b396b29b98138cfeddde6522 inherit pro_types_class_r_o_s2_1_1_r_o_s2_requests" id="r_aec37ac28b396b29b98138cfeddde6522"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeChangedEvent</b> = AZ::Event&lt; std::shared_ptr&lt; rclcpp::Node &gt; &gt;</td></tr>
+<tr class="separator:aec37ac28b396b29b98138cfeddde6522 inherit pro_types_class_r_o_s2_1_1_r_o_s2_requests"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Central singleton-like System Component for ROS2 Gem. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2/Code/Source/SystemComponents/<b>ROS2SystemComponent.h</b></li>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a83cd974defd4e51c82d295d4b6df3eb3" name="a83cd974defd4e51c82d295d4b6df3eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cd974defd4e51c82d295d4b6df3eb3">&#9670;&#160;</a></span>BroadcastTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ROS2::ROS2SystemComponent::BroadcastTransform </td>
+          <td>(</td>
+          <td class="paramtype">const geometry_msgs::msg::TransformStamped &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isDynamic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Send transformation between ROS2 frames. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>is a <a href="https://docs.ros2.org/latest/api/geometry_msgs/msg/TransformStamped.html">ROS2 TransformStamped message</a>. </td></tr>
+    <tr><td class="paramname">isDynamic</td><td>controls whether a static or dynamic transform is sent. Static transforms are published only once and are to be used when the spatial relationship between two frames does not change. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Transforms are already published by each <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component.html">ROS2FrameComponent</a>. Use this function directly only when default behavior of <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component.html">ROS2FrameComponent</a> is not sufficient. </dd></dl>
+
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a815fe0c8dbdbf7bbfd36b2e74b5f2da1">ROS2::ROS2Requests</a>.</p>
+
+</div>
+</div>
+<a id="a0b9cd82f8f027ab83d215220fefc36e2" name="a0b9cd82f8f027ab83d215220fefc36e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9cd82f8f027ab83d215220fefc36e2">&#9670;&#160;</a></span>ConnectOnNodeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ROS2::ROS2SystemComponent::ConnectOnNodeChanged </td>
+          <td>(</td>
+          <td class="paramtype">NodeChangedEvent::Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Attach handler to ROS2 node change events. You can use this method to correctly initialize SystemComponents that depend on ROS2Node. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>which will be connected to NodeChangedEvent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>callback is active as long as handler is not destroyed. </dd></dl>
+
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#af029f9b3fbc2897649529c25cd61ca8e">ROS2::ROS2Requests</a>.</p>
+
+</div>
+</div>
+<a id="a90fb4218c5163a553a5bd40bef58ab61" name="a90fb4218c5163a553a5bd40bef58ab61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90fb4218c5163a553a5bd40bef58ab61">&#9670;&#160;</a></span>GetNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; rclcpp::Node &gt; ROS2::ROS2SystemComponent::GetNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a central ROS2 node of the Gem. You can use this node to create publishers and subscribers. </p><dl class="section return"><dt>Returns</dt><dd>The central ROS2 node which holds default publishers for core topics such as /clock and /tf. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Alternatively, you can use your own node along with an executor. </dd></dl>
+
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a3001d65cb28bbe574f2c4a569690ab66">ROS2::ROS2Requests</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/ROS2/Code/Source/Clients/<b>ROS2SystemComponent.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -137,7 +274,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float del
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_system_component.html">ROS2SystemComponent</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
