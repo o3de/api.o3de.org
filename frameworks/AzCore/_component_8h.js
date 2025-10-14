@@ -14,6 +14,6 @@ var _component_8h =
     [ "AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE", "_component_8h.html#a270481ec47a42039cf703fe776bc2c7a", null ],
     [ "AZ_COMPONENT_WITH_ALLOCATOR", "_component_8h.html#aa3ea9b6220474b67e742a89440bb5fc3", null ],
     [ "AZ_RTTI_NO_TYPE_INFO_IMPL_VA_OPT_HELPER", "_component_8h.html#ac79098277dfe5a2a36c905f91d87b3a3", null ],
-    [ "ComponentServiceType", "_component_8h.html#a29aa358f4533c51ab248d4576f027e47", null ],
+    [ "ComponentServiceType", "_component_8h.html#a5c23a3d723437c2255a2c2daaf36427f", null ],
     [ "ComponentTypeList", "_component_8h.html#a4642affb3995ae71ed4a44d824a6e2bf", null ]
 ];

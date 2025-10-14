@@ -59,12 +59,12 @@ var NAVTREEINDEX =
 "class_ui_anim_undo_manager.html#ab7846f4cecacab49fb943fd6bd55fe2a",
 "class_ui_compound_spline_track.html#a7603db32a6bddbadfa275aa5125e8cf7",
 "class_ui_editor_inernal_requests.html",
-"class_ui_indexable_image_interface.html#a577a5ed7dad4f801113e2c3716a49887",
-"class_ui_layout_manager_interface.html#a1ed41fc6823aa10b883d1290001bb263",
-"class_ui_renderer.html#aa1cce6a2ee47d352fa9ccb706d830fc5",
-"class_ui_text_input_interface.html",
-"class_viewport_canvas_background.html#a2c5700b0911969a3b7a029e36afb4296",
-"struct_i_ui_anim_track.html#a137a6611b19b6e89ce1a7df2d2d612efa3f23ad7dc6400da41dfb383160572fce"
+"class_ui_image_sequence_interface.html#af93ec244e2890bb394654d12d01cc581a7e96ac57251678c0126d6307ed690032",
+"class_ui_layout_interface.html#ac7d6b7e90bce758b2f0ccaab5a2a7478ad1e80c506f4c89e3c4fb1c1b4867a03c",
+"class_ui_renderer.html#a4f023d913353e4ae0732330c712957c1",
+"class_ui_text_component.html#af0ba893bf41dd7d43f8be7ea3008b1ce",
+"class_viewport_add_guide_interaction.html#ae3d363bbdfe93e032554e282b7a51c3f",
+"struct_i_ui_anim_sequence_owner.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,7 +1,8 @@
 var class_a_z_1_1_r_h_i_1_1_device_fence =
 [
     [ "GetFenceState", "class_a_z_1_1_r_h_i_1_1_device_fence.html#ad52aea2282d4cb56e4a8d6d315eaca31", null ],
-    [ "Init", "class_a_z_1_1_r_h_i_1_1_device_fence.html#a9e0e9cd4edae3d6efb2bafc326c87eef", null ],
+    [ "Init", "class_a_z_1_1_r_h_i_1_1_device_fence.html#a4d12819b9e21e66de50d7f19bd4018fa", null ],
+    [ "InitCrossDevice", "class_a_z_1_1_r_h_i_1_1_device_fence.html#acd90e997d46c2fc149238d27756812fe", null ],
     [ "Reset", "class_a_z_1_1_r_h_i_1_1_device_fence.html#a27953917fab52409f85364d4ef391359", null ],
     [ "SetExternallySignalled", "class_a_z_1_1_r_h_i_1_1_device_fence.html#a627d23d32f8142e5fce6ce4da6e59ab3", null ],
     [ "Shutdown", "class_a_z_1_1_r_h_i_1_1_device_fence.html#a5dc07a2436efea40acb37d643c0b6a3d", null ],

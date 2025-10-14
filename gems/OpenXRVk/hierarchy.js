@@ -6,6 +6,10 @@ var hierarchy =
     [ "AZ::Component", null, [
       [ "OpenXRVk::SystemComponent", "class_open_x_r_vk_1_1_system_component.html", null ],
       [ "OpenXRVk::XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ],
+      [ "OpenXRVk::XRControllerAnimationsComponent", "class_open_x_r_vk_1_1_x_r_controller_animations_component.html", null ],
+      [ "OpenXRVk::XRControllerComponent", "class_open_x_r_vk_1_1_x_r_controller_component.html", null ],
+      [ "OpenXRVk::XRInteractableComponent", "class_open_x_r_vk_1_1_x_r_interactable_component.html", null ],
+      [ "OpenXRVk::XRRayInteractorComponent", "class_open_x_r_vk_1_1_x_r_ray_interactor_component.html", null ],
       [ "OpenXRVkBuilders::OpenXRAssetsBuilderSystemComponent", "class_open_x_r_vk_builders_1_1_open_x_r_assets_builder_system_component.html", null ]
     ] ],
     [ "AZ::Data::AssetBus::Handler", null, [
@@ -16,7 +20,11 @@ var hierarchy =
       [ "OpenXRVk::OpenXRInteractionProfilesAsset", "class_open_x_r_vk_1_1_open_x_r_interaction_profiles_asset.html", null ]
     ] ],
     [ "AZ::TickBus::Handler", null, [
-      [ "OpenXRVk::XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ]
+      [ "OpenXRVk::XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ],
+      [ "OpenXRVk::XRControllerAnimationsComponent", "class_open_x_r_vk_1_1_x_r_controller_animations_component.html", null ],
+      [ "OpenXRVk::XRControllerComponent", "class_open_x_r_vk_1_1_x_r_controller_component.html", null ],
+      [ "OpenXRVk::XRInteractableComponent", "class_open_x_r_vk_1_1_x_r_interactable_component.html", null ],
+      [ "OpenXRVk::XRRayInteractorComponent", "class_open_x_r_vk_1_1_x_r_ray_interactor_component.html", null ]
     ] ],
     [ "AZ::Vulkan::DeviceRequirementBus::Handler", null, [
       [ "OpenXRVk::Instance", "class_open_x_r_vk_1_1_instance.html", null ]
@@ -46,7 +54,8 @@ var hierarchy =
     [ "AzFramework::InputDeviceXRController::ThumbStickDirection", "struct_az_framework_1_1_input_device_x_r_controller_1_1_thumb_stick_direction.html", null ],
     [ "AzFramework::InputDeviceXRController::Trigger", "struct_az_framework_1_1_input_device_x_r_controller_1_1_trigger.html", null ],
     [ "Camera::CameraNotificationBus::Handler", null, [
-      [ "OpenXRVk::XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ]
+      [ "OpenXRVk::XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ],
+      [ "OpenXRVk::XRControllerComponent", "class_open_x_r_vk_1_1_x_r_controller_component.html", null ]
     ] ],
     [ "InputDevice", null, [
       [ "AzFramework::InputDeviceXRController", "class_az_framework_1_1_input_device_x_r_controller.html", null ]
@@ -69,6 +78,10 @@ var hierarchy =
     [ "OpenXRVk::OpenXRInteractionProfileDescriptor", "class_open_x_r_vk_1_1_open_x_r_interaction_profile_descriptor.html", null ],
     [ "OpenXRVk::OpenXRInteractionUserPathDescriptor", "class_open_x_r_vk_1_1_open_x_r_interaction_user_path_descriptor.html", null ],
     [ "OpenXRVk::PoseWithVelocities", "struct_open_x_r_vk_1_1_pose_with_velocities.html", null ],
+    [ "OpenXRVk::XRControllersConfig", "struct_open_x_r_vk_1_1_x_r_controllers_config.html", null ],
+    [ "Physics::RigidBodyNotificationBus::Handler", null, [
+      [ "OpenXRVk::XRInteractableComponent", "class_open_x_r_vk_1_1_x_r_interactable_component.html", null ]
+    ] ],
     [ "XR::Device", null, [
       [ "OpenXRVk::Device", "class_open_x_r_vk_1_1_device.html", null ]
     ] ],

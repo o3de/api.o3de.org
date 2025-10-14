@@ -31,6 +31,7 @@ var class_a_z_1_1_r_h_i_1_1_shader_resource_group_data =
     [ "SetBufferView", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ad1f26c5a6e11430509e2df4405f421cf", null ],
     [ "SetBufferViewArray", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ad2f875cde6da8c53483ccaebec7ae3c0", null ],
     [ "SetBufferViewUnboundedArray", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a012b1ffda7f60130a55f410a3528db90", null ],
+    [ "SetConstant", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a03fc941498f8c7d5357ab1cd61f80c82", null ],
     [ "SetConstant", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#acdc0c22e3529d307079153b26ac43594", null ],
     [ "SetConstant", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#acadd899930146bf9749cdfa8370b84bd", null ],
     [ "SetConstantArray", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#ac59feec4e685e5312a9ab585572b8502", null ],

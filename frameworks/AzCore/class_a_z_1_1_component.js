@@ -3,7 +3,7 @@ var class_a_z_1_1_component =
     [ "Component", "class_a_z_1_1_component.html#a5eb510965b854b25d3f1116bfa31414b", null ],
     [ "~Component", "class_a_z_1_1_component.html#a5faccc3bb9e65300b1c4740135dc4775", null ],
     [ "Activate", "class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe", null ],
-    [ "AZ_TYPE_INFO_WITH_NAME_DECL", "class_a_z_1_1_component.html#a8d87e0f96b89cc385de6e3acc51ce2ac", null ],
+    [ "AZ_TYPE_INFO_WITH_NAME_DECL_API", "class_a_z_1_1_component.html#a5a09254cc8792b3f7d3f17f0e20f7fe6", null ],
     [ "Deactivate", "class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac", null ],
     [ "GetConfiguration", "class_a_z_1_1_component.html#ae737d3f9415acfa4a6d06a31c71cb7bf", null ],
     [ "GetEntity", "class_a_z_1_1_component.html#a926d2c900f99405e857b8b4d35cba2ce", null ],

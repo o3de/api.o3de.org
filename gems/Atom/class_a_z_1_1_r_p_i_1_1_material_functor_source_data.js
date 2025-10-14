@@ -6,5 +6,7 @@ var class_a_z_1_1_r_p_i_1_1_material_functor_source_data =
     [ "FunctorResult", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a17b4aeaff7c2f5eb51197b0a94bd5539", null ],
     [ "AddMaterialPropertyDependency", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#aa10585ef8b9c13b4e8f85d0041b57844", null ],
     [ "GetAssetDependencies", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a7740d648ba0f97142217155a7c62ace9", null ],
-    [ "GetShaderOptionDependencies", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#adb718c616e0d8adaadf1c57392224ce9", null ]
+    [ "GetMaterialShaderParameters", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a55f51b0b84245f62235cbd38f9b0d163", null ],
+    [ "GetShaderOptionDependencies", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#adb718c616e0d8adaadf1c57392224ce9", null ],
+    [ "m_shaderParameters", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html#a0df97dec322d8c4bbf824d634f37fa4b", null ]
 ];

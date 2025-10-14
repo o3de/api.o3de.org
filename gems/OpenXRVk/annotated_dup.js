@@ -27,7 +27,12 @@ var annotated_dup =
       [ "Space", "class_open_x_r_vk_1_1_space.html", "class_open_x_r_vk_1_1_space" ],
       [ "SwapChain", "class_open_x_r_vk_1_1_swap_chain.html", "class_open_x_r_vk_1_1_swap_chain" ],
       [ "SystemComponent", "class_open_x_r_vk_1_1_system_component.html", "class_open_x_r_vk_1_1_system_component" ],
-      [ "XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ]
+      [ "XRCameraMovementComponent", "class_open_x_r_vk_1_1_x_r_camera_movement_component.html", null ],
+      [ "XRControllerAnimationsComponent", "class_open_x_r_vk_1_1_x_r_controller_animations_component.html", null ],
+      [ "XRControllerComponent", "class_open_x_r_vk_1_1_x_r_controller_component.html", null ],
+      [ "XRControllersConfig", "struct_open_x_r_vk_1_1_x_r_controllers_config.html", null ],
+      [ "XRInteractableComponent", "class_open_x_r_vk_1_1_x_r_interactable_component.html", null ],
+      [ "XRRayInteractorComponent", "class_open_x_r_vk_1_1_x_r_ray_interactor_component.html", null ]
     ] ],
     [ "OpenXRVkBuilders", null, [
       [ "OpenXRAssetsBuilder", "class_open_x_r_vk_builders_1_1_open_x_r_assets_builder.html", null ],

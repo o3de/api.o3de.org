@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -78,9 +78,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3151ce7c686b0f4087db0cf80f37afc" id="r_ac3151ce7c686b0f4087db0cf80f37afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#ac3151ce7c686b0f4087db0cf80f37afc">Deactivate</a> () override</td></tr>
 <tr class="memdesc:ac3151ce7c686b0f4087db0cf80f37afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any necessary deactivation.  <br /></td></tr>
 <tr class="separator:ac3151ce7c686b0f4087db0cf80f37afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1910de9cd3cb2809150cdef3faa7d442" id="r_a1910de9cd3cb2809150cdef3faa7d442"><td class="memItemLeft" align="right" valign="top"><a id="a1910de9cd3cb2809150cdef3faa7d442" name="a1910de9cd3cb2809150cdef3faa7d442"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRenderPipelineChanged</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RPI::RenderPipeline</a> *renderPipeline, RPI::SceneNotification::RenderPipelineChangeType changeType) override</td></tr>
-<tr class="separator:a1910de9cd3cb2809150cdef3faa7d442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c1527d78c4520e81583f6a2d82b30e2" id="r_a4c1527d78c4520e81583f6a2d82b30e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">ProceduralGeometryTypeHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a4c1527d78c4520e81583f6a2d82b30e2">RegisterProceduralGeometryType</a> (const AZStd::string &amp;name, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">RPI::Shader</a> &gt; &amp;intersectionShader, const AZStd::string &amp;intersectionShaderName, const AZStd::unordered_map&lt; int, uint32_t &gt; &amp;bindlessBufferIndices={}) override</td></tr>
 <tr class="separator:a4c1527d78c4520e81583f6a2d82b30e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc64da7eb70607245fdd56856330c8c5" id="r_afc64da7eb70607245fdd56856330c8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#afc64da7eb70607245fdd56856330c8c5">SetProceduralGeometryTypeBindlessBufferIndex</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_weak_handle.html">ProceduralGeometryTypeWeakHandle</a> geometryTypeHandle, const AZStd::unordered_map&lt; int, uint32_t &gt; &amp;bindlessBufferIndices) override</td></tr>
@@ -142,10 +139,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMeshReflectionProb
 <tr class="separator:a1237594be2a510c253f5494fa9768414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b447596ced8d07a2b6f99af08456536" id="r_a6b447596ced8d07a2b6f99af08456536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a6b447596ced8d07a2b6f99af08456536">Render</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_render_packet.html">RenderPacket</a> &amp;) override</td></tr>
 <tr class="separator:a6b447596ced8d07a2b6f99af08456536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a193645c2d745b71cd59383a49299d753" id="r_a193645c2d745b71cd59383a49299d753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a193645c2d745b71cd59383a49299d753">BeginFrame</a> () override</td></tr>
-<tr class="separator:a193645c2d745b71cd59383a49299d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd1a91227b40a7a0c25d76194a57054" id="r_a7dd1a91227b40a7a0c25d76194a57054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a7dd1a91227b40a7a0c25d76194a57054">BeginFrame</a> (int deviceIndex) override</td></tr>
+<tr class="separator:a7dd1a91227b40a7a0c25d76194a57054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acce18904cdf17004e32f43e65057d7e7" id="r_acce18904cdf17004e32f43e65057d7e7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#acce18904cdf17004e32f43e65057d7e7">GetRevision</a> () const override</td></tr>
 <tr class="separator:acce18904cdf17004e32f43e65057d7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1c02ea96f4c7fb6c2534c050d6ab4f" id="r_a5a1c02ea96f4c7fb6c2534c050d6ab4f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a5a1c02ea96f4c7fb6c2534c050d6ab4f">GetBuiltRevision</a> (int deviceIndex) const override</td></tr>
+<tr class="memdesc:a5a1c02ea96f4c7fb6c2534c050d6ab4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the revision that was last built on the given device.  <br /></td></tr>
+<tr class="separator:a5a1c02ea96f4c7fb6c2534c050d6ab4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3066777469bf33c233921a820c56f8" id="r_a3d3066777469bf33c233921a820c56f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a3d3066777469bf33c233921a820c56f8">SetBuiltRevision</a> (int deviceIndex, uint32_t revision) override</td></tr>
+<tr class="separator:a3d3066777469bf33c233921a820c56f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6db980cce4405d2afda6aebade89cb9" id="r_ae6db980cce4405d2afda6aebade89cb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#ae6db980cce4405d2afda6aebade89cb9">GetProceduralGeometryTypeRevision</a> () const override</td></tr>
 <tr class="separator:ae6db980cce4405d2afda6aebade89cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cad05560892a66665a6612d4f166a4b" id="r_a0cad05560892a66665a6612d4f166a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RHI::RayTracingBufferPools</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a0cad05560892a66665a6612d4f166a4b">GetBufferPools</a> () override</td></tr>
@@ -185,6 +187,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMeshReflectionProb
 <tr class="memitem:a2a486f31190cdbf28f88b3d9ae09b6d7" id="r_a2a486f31190cdbf28f88b3d9ae09b6d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a2a486f31190cdbf28f88b3d9ae09b6d7">HasGeometry</a> () const override</td></tr>
 <tr class="memdesc:a2a486f31190cdbf28f88b3d9ae09b6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the ray tracing scene contains mesh or procedural geometry.  <br /></td></tr>
 <tr class="separator:a2a486f31190cdbf28f88b3d9ae09b6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a512426609278c5cbce979d373ccc82" id="r_a2a512426609278c5cbce979d373ccc82"><td class="memItemLeft" align="right" valign="top">RHI::MultiDevice::DeviceMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a2a512426609278c5cbce979d373ccc82">GetDeviceMask</a> () const override</td></tr>
+<tr class="separator:a2a512426609278c5cbce979d373ccc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html">AZ::Render::RayTracingFeatureProcessorInterface</a></td></tr>
 <tr class="memitem:a9e13c4bbd9c6547854f876d8406e9128 inherit pub_methods_class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface" id="r_a9e13c4bbd9c6547854f876d8406e9128"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html">AZ::Render::RayTracingFeatureProcessorInterface</a>, &quot;{84C37D5E-3676-4E39-A0E6-CB048E2F7E5E}&quot;, AZ::RPI::FeatureProcessor)</td></tr>
@@ -412,8 +416,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
-<a id="a193645c2d745b71cd59383a49299d753" name="a193645c2d745b71cd59383a49299d753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a193645c2d745b71cd59383a49299d753">&#9670;&#160;</a></span>BeginFrame()</h2>
+<a id="a7dd1a91227b40a7a0c25d76194a57054" name="a7dd1a91227b40a7a0c25d76194a57054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd1a91227b40a7a0c25d76194a57054">&#9670;&#160;</a></span>BeginFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +428,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
         <tr>
           <td class="memname">void AZ::Render::RayTracingFeatureProcessor::BeginFrame </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -436,7 +441,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><div class="memdoc">
 <p>If necessary recreates TLAS buffers and updates the ray tracing SRGs. Should only be called by the <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_acceleration_structure_pass.html" title="This pass builds the RayTracing acceleration structures for a scene.">RayTracingAccelerationStructurePass</a>. </p>
 
-<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a1357a774849fdd0a13312d4d960835df">AZ::Render::RayTracingFeatureProcessorInterface</a>.</p>
+<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#accea1ae339aa2e4c48a6f72f4f31a011">AZ::Render::RayTracingFeatureProcessorInterface</a>.</p>
 
 </div>
 </div>
@@ -609,6 +614,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <p>Retrieves the buffer pools used for ray tracing operations. </p>
 
 <p>Implements <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#ae8f6a8af8330f4bc1b7ad1f3e3655cd6">AZ::Render::RayTracingFeatureProcessorInterface</a>.</p>
+
+</div>
+</div>
+<a id="a5a1c02ea96f4c7fb6c2534c050d6ab4f" name="a5a1c02ea96f4c7fb6c2534c050d6ab4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1c02ea96f4c7fb6c2534c050d6ab4f">&#9670;&#160;</a></span>GetBuiltRevision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AZ::Render::RayTracingFeatureProcessor::GetBuiltRevision </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the revision that was last built on the given device. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#ae2861388f7494f3e07db525f489c6673">AZ::Render::RayTracingFeatureProcessorInterface</a>.</p>
+
+</div>
+</div>
+<a id="a2a512426609278c5cbce979d373ccc82" name="a2a512426609278c5cbce979d373ccc82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a512426609278c5cbce979d373ccc82">&#9670;&#160;</a></span>GetDeviceMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RHI::MultiDevice::DeviceMask AZ::Render::RayTracingFeatureProcessor::GetDeviceMask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the device mask with the devices that build RayTracingAccelerationStructures Only devices present in the mask can use the acceleration structures provided by this FeatureProcessor </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a34321859a94b6ee774cbd076d199da3d">AZ::Render::RayTracingFeatureProcessorInterface</a>.</p>
 
 </div>
 </div>
@@ -1453,6 +1516,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
+<a id="a3d3066777469bf33c233921a820c56f8" name="a3d3066777469bf33c233921a820c56f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3066777469bf33c233921a820c56f8">&#9670;&#160;</a></span>SetBuiltRevision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::Render::RayTracingFeatureProcessor::SetBuiltRevision </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>revision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the last built revision on the device to the given value This should be called by the RaytracingAccelerationStructurePass when the acceleration structures are built </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a0de88b12b06ecd73e53f282354618c50">AZ::Render::RayTracingFeatureProcessorInterface</a>.</p>
+
+</div>
+</div>
 <a id="a60f56a89874167e4ddb40fc72d004274" name="a60f56a89874167e4ddb40fc72d004274"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60f56a89874167e4ddb40fc72d004274">&#9670;&#160;</a></span>SetMeshMaterials()</h2>
 
@@ -1762,7 +1864,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html">RayTracingFeatureProcessor</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

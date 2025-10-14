@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -117,16 +117,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a5878923b7874998a55a4ad6aba0b0966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a332f0d3ac3b3d9436967a460d409c5e7" id="r_a332f0d3ac3b3d9436967a460d409c5e7"><td class="memItemLeft" align="right" valign="top"><a id="a332f0d3ac3b3d9436967a460d409c5e7" name="a332f0d3ac3b3d9436967a460d409c5e7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopSensor</b> ()</td></tr>
-<tr class="memdesc:a332f0d3ac3b3d9436967a460d409c5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops sensor and disconnects event callbacks passed through RSO2::ROS2SensorComponentBase::StartSensor. <br /></td></tr>
+<tr class="memdesc:a332f0d3ac3b3d9436967a460d409c5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops sensor and disconnects event callbacks passed through <a class="el" href="class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#a5878923b7874998a55a4ad6aba0b0966">ROS2::ROS2SensorComponentBase::StartSensor</a>. <br /></td></tr>
 <tr class="separator:a332f0d3ac3b3d9436967a460d409c5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0bb0e9d8c4c4bf1edd436504b8b270a" id="r_af0bb0e9d8c4c4bf1edd436504b8b270a"><td class="memItemLeft" align="right" valign="top"><a id="af0bb0e9d8c4c4bf1edd436504b8b270a" name="af0bb0e9d8c4c4bf1edd436504b8b270a"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamespace</b> () const</td></tr>
 <tr class="memdesc:af0bb0e9d8c4c4bf1edd436504b8b270a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a complete namespace for this sensor topics and frame ids. <br /></td></tr>
 <tr class="separator:af0bb0e9d8c4c4bf1edd436504b8b270a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41b6b5ead301da37cb906ac1fe8d9944" id="r_a41b6b5ead301da37cb906ac1fe8d9944"><td class="memItemLeft" align="right" valign="top"><a id="a41b6b5ead301da37cb906ac1fe8d9944" name="a41b6b5ead301da37cb906ac1fe8d9944"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameID</b> () const</td></tr>
-<tr class="memdesc:a41b6b5ead301da37cb906ac1fe8d9944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this sensor frame ID. The ID contains namespace. <br /></td></tr>
-<tr class="separator:a41b6b5ead301da37cb906ac1fe8d9944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61bc9ca03404beef7dc2acd2cecbf24" id="r_ac61bc9ca03404beef7dc2acd2cecbf24"><td class="memItemLeft" align="right" valign="top"><a id="ac61bc9ca03404beef7dc2acd2cecbf24" name="ac61bc9ca03404beef7dc2acd2cecbf24"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamespacedFrameID</b> () const</td></tr>
+<tr class="memdesc:ac61bc9ca03404beef7dc2acd2cecbf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this sensor frame ID. The ID contains namespace. <br /></td></tr>
+<tr class="separator:ac61bc9ca03404beef7dc2acd2cecbf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -149,7 +149,7 @@ EventSourceT::AdaptedEventHandlerType&#160;</td><td class="memItemRight" valign=
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class EventSourceT&gt;<br />
-class ROS2::ROS2SensorComponentBase&lt; EventSourceT &gt;</div><p>Base sensor component class for all specific sensor implementations. Developer working on the new sensor should derive from this class, defining necessary event source type (EventSourceT template parameter). Available sources are e.g. <a class="el" href="class_r_o_s2_1_1_tick_based_source.html">TickBasedSource</a> or <a class="el" href="class_r_o_s2_1_1_physics_based_source.html">PhysicsBasedSource</a>. Chosen event source is wrapped into <a class="el" href="class_r_o_s2_1_1_event_source_adapter.html">EventSourceAdapter</a>, making it possible to work with specific frequency. Derived implementation should call <a class="el" href="class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#a5878923b7874998a55a4ad6aba0b0966">ROS2::ROS2SensorComponentBase::StartSensor</a> at the end of Activate (or whenever sensor configuration is already set up) and StopSensor in Deactivate. Starting sensor base requires passing two parameters:</p><ul>
+class ROS2::ROS2SensorComponentBase&lt; EventSourceT &gt;</div><p>Base sensor component class for all specific sensor implementations. Developer working on the new sensor should derive from this class, defining necessary event source type (EventSourceT template parameter). Available sources are e.g. <a class="el" href="class_r_o_s2_1_1_tick_based_source.html">TickBasedSource</a> or <a class="el" href="class_r_o_s2_1_1_physics_based_source.html">PhysicsBasedSource</a>. Chosen event source is wrapped into <a class="el" href="class_r_o_s2_1_1_event_source_adapter.html">ROS2::EventSourceAdapter</a>, making it possible to work with specific frequency. Derived implementation should call <a class="el" href="class_r_o_s2_1_1_r_o_s2_sensor_component_base.html#a5878923b7874998a55a4ad6aba0b0966">ROS2::ROS2SensorComponentBase::StartSensor</a> at the end of Activate (or whenever sensor configuration is already set up) and StopSensor in Deactivate. Starting sensor base requires passing two parameters:</p><ul>
 <li>sensor working frequency - how often sensor logic should be processed,</li>
 <li>adapted event callback - what should be done in sensor logic processing. Optionally, user can pass third parameter, which is source event callback - this will be called with source event frequency (check chosen event source implementation). <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_r_o_s2_1_1_tick_based_source.html">ROS2::TickBasedSource</a> </dd>
 <dd>
@@ -218,7 +218,7 @@ template&lt;class EventSourceT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_sensor_component_base.html">ROS2SensorComponentBase</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

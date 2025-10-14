@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,6 +58,11 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_i_time_source.html','
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for time source used by <a class="el" href="class_r_o_s2_1_1_r_o_s2_clock_system_component.html">ROS2ClockSystemComponent</a>.  
+ <a href="class_r_o_s2_1_1_i_time_source.html#details">More...</a></p>
+
+<p><code>#include &lt;ITimeSource.h&gt;</code></p>
+
 <p>Inherited by <a class="el" href="class_r_o_s2_1_1_r_o_s2_time_source.html">ROS2::ROS2TimeSource</a>, <a class="el" href="class_r_o_s2_1_1_real_time_source.html">ROS2::RealTimeSource</a>, and <a class="el" href="class_r_o_s2_1_1_simulation_time_source.html">ROS2::SimulationTimeSource</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -73,7 +78,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b
 <tr class="memitem:ae1263b390ed9f36908a2a8b7d53b1d44" id="r_ae1263b390ed9f36908a2a8b7d53b1d44"><td class="memItemLeft" align="right" valign="top">virtual builtin_interfaces::msg::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_i_time_source.html#ae1263b390ed9f36908a2a8b7d53b1d44">GetROSTimestamp</a> () const =0</td></tr>
 <tr class="separator:ae1263b390ed9f36908a2a8b7d53b1d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for time source used by <a class="el" href="class_r_o_s2_1_1_r_o_s2_clock_system_component.html">ROS2ClockSystemComponent</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a30cb206fc165066d23551c20d0976738" name="a30cb206fc165066d23551c20d0976738"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30cb206fc165066d23551c20d0976738">&#9670;&#160;</a></span>AdjustTime()</h2>
 
@@ -105,7 +112,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An outcome indicating success or failure. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_r_o_s2_1_1_real_time_source.html#af6153b91aabf70474e7c72d72a99b48d">ROS2::RealTimeSource</a>, <a class="el" href="class_r_o_s2_1_1_r_o_s2_time_source.html#a10d114199c7f022476dd043e00d8a712">ROS2::ROS2TimeSource</a>, and <a class="el" href="class_r_o_s2_1_1_simulation_time_source.html#accdf7e0aaf8dd039efc5635473dbf657">ROS2::SimulationTimeSource</a>.</p>
+<p>Implemented in <a class="el" href="class_r_o_s2_1_1_real_time_source.html#af6153b91aabf70474e7c72d72a99b48d">ROS2::RealTimeSource</a>, <a class="el" href="class_r_o_s2_1_1_r_o_s2_time_source.html#a7d5715aefb7b80b1167d992ac6cde862">ROS2::ROS2TimeSource</a>, and <a class="el" href="class_r_o_s2_1_1_simulation_time_source.html#accdf7e0aaf8dd039efc5635473dbf657">ROS2::SimulationTimeSource</a>.</p>
 
 </div>
 </div>
@@ -131,14 +138,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get time as ROS 2 message. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a4d48369f6056cd2da8e01d3225c16853">ROS2Requests::GetROSTimestamp()</a> for more details. </dd></dl>
+<p>Get time as ROS 2 message. </p><dl class="section see"><dt>See also</dt><dd>ROS2Requests::GetROSTimestamp() for more details. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_r_o_s2_1_1_real_time_source.html#a7f4ae83bb874d1822778890d9b7bef39">ROS2::RealTimeSource</a>, <a class="el" href="class_r_o_s2_1_1_r_o_s2_time_source.html#a1785dd5c485c02e6356b552dc960ce64">ROS2::ROS2TimeSource</a>, and <a class="el" href="class_r_o_s2_1_1_simulation_time_source.html#acd6139218a42bb576bca9fccbde93b9e">ROS2::SimulationTimeSource</a>.</p>
+<p>Implemented in <a class="el" href="class_r_o_s2_1_1_real_time_source.html#a7f4ae83bb874d1822778890d9b7bef39">ROS2::RealTimeSource</a>, <a class="el" href="class_r_o_s2_1_1_r_o_s2_time_source.html#aab199b0d0b64e7230b5da5347c3beffe">ROS2::ROS2TimeSource</a>, and <a class="el" href="class_r_o_s2_1_1_simulation_time_source.html#acd6139218a42bb576bca9fccbde93b9e">ROS2::SimulationTimeSource</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2/Code/Include/ROS2/Clock/<b>ITimeSource.h</b></li>
+<li>Gems/ROS2/Code/Source/Clock/<b>ITimeSource.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -146,7 +153,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_i_time_source.html">ITimeSource</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

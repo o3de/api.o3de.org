@@ -6,5 +6,7 @@ var class_az_framework_1_1_window_notifications =
     [ "OnResolutionChanged", "class_az_framework_1_1_window_notifications.html#a9dd540348d564d2a552f2a37f0bc0352", null ],
     [ "OnVsyncIntervalChanged", "class_az_framework_1_1_window_notifications.html#af799bfd193606d73ad96928a21717eba", null ],
     [ "OnWindowClosed", "class_az_framework_1_1_window_notifications.html#a63de683fe1293451bbf6cd5ae8e48500", null ],
-    [ "OnWindowResized", "class_az_framework_1_1_window_notifications.html#a040daf5c3b3c76e5995f29ce000440d0", null ]
+    [ "OnWindowMinimized", "class_az_framework_1_1_window_notifications.html#ae3d3e46416ee76560f8b1bf1794a5efd", null ],
+    [ "OnWindowResized", "class_az_framework_1_1_window_notifications.html#a040daf5c3b3c76e5995f29ce000440d0", null ],
+    [ "OnWindowRestored", "class_az_framework_1_1_window_notifications.html#a3be07302ba22b1d726335782e7e255b7", null ]
 ];

@@ -15,6 +15,7 @@ var annotated_dup =
       [ "concurrency_checker", "class_a_z_std_1_1concurrency__checker.html", null ],
       [ "fixed_vector_set", "class_a_z_std_1_1fixed__vector__set.html", null ],
       [ "lru_cache", "class_a_z_std_1_1lru__cache.html", "class_a_z_std_1_1lru__cache" ],
+      [ "small_vector", "class_a_z_std_1_1small__vector.html", null ],
       [ "vector_set", "class_a_z_std_1_1vector__set.html", null ],
       [ "vector_set_base", "class_a_z_std_1_1vector__set__base.html", null ]
     ] ]

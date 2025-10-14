@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_az_tools_framework_1_1_prefab_ui_handler.html#adbf94b03aec7ffd169dc2b6ad56a8c10":[2,0,5,306,4],
 "class_az_tools_framework_1_1_procedural_prefab_ui_handler.html":[2,0,5,307],
 "class_az_tools_framework_1_1_procedural_prefab_ui_handler.html#aa923b96b0fe1b03eebf56e172aad4249":[2,0,5,307,0],
 "class_az_tools_framework_1_1_property_c_r_c_ctrl.html":[2,0,5,308],
@@ -30,11 +31,12 @@ var NAVTREEINDEX8 =
 "class_az_tools_framework_1_1_property_handler_widget.html":[2,0,5,318],
 "class_az_tools_framework_1_1_property_handler_widget.html#ad6ae01c32d4c38a502a4e0b96e95ec28":[2,0,5,318,0],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html":[2,0,5,319],
-"class_az_tools_framework_1_1_property_handler_widget_interface.html#a0ce42acfb1ce1f762279b1846faabd42":[2,0,5,319,7],
+"class_az_tools_framework_1_1_property_handler_widget_interface.html#a0ce42acfb1ce1f762279b1846faabd42":[2,0,5,319,8],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html#a174e1bd0e10db903c638658dc48edbff":[2,0,5,319,3],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html#a32ea2204ce9442b84903a3da126a3a7d":[2,0,5,319,1],
+"class_az_tools_framework_1_1_property_handler_widget_interface.html#a3a08f9f8e5b31c098cb0e71334909bcd":[2,0,5,319,6],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html#a473278dba9ed608ba745db166319a74a":[2,0,5,319,4],
-"class_az_tools_framework_1_1_property_handler_widget_interface.html#a4b927a9124d67c9d9ebf76fda893329f":[2,0,5,319,6],
+"class_az_tools_framework_1_1_property_handler_widget_interface.html#a4b927a9124d67c9d9ebf76fda893329f":[2,0,5,319,7],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html#a932a5d248660f36bc3d3d20ecdac4f2e":[2,0,5,319,0],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html#a96627af80fb0b9cfb7c8f1825c136d57":[2,0,5,319,2],
 "class_az_tools_framework_1_1_property_handler_widget_interface.html#a971f0ee42dd1584800ece0fdcbdc8fe8":[2,0,5,319,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "class_az_tools_framework_1_1_source_control_notifications.html#adb6adc4393f8b26f1991645b6fd7dc06":[2,0,5,360,1],
 "class_az_tools_framework_1_1_source_control_notifications.html#ae4d0c1e02d7c8b934a04c4a47cb7b64f":[2,0,5,360,0],
 "class_az_tools_framework_1_1_sphere_component_mode.html":[2,0,5,363],
-"class_az_tools_framework_1_1_sphere_viewport_edit.html":[2,0,5,364],
-"class_az_tools_framework_1_1_sphere_viewport_edit.html#a24ebe4bef40f3e58b32a7e3aae03cb90":[2,0,5,364,2],
-"class_az_tools_framework_1_1_sphere_viewport_edit.html#a3902ca12952b0f309605acd465359d53":[2,0,5,364,1]
+"class_az_tools_framework_1_1_sphere_viewport_edit.html":[2,0,5,364]
 };

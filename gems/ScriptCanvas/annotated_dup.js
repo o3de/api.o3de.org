@@ -536,6 +536,9 @@ var annotated_dup =
       [ "ScopedAuxiliaryEntityHandler", "class_script_canvas_1_1_scoped_auxiliary_entity_handler.html", null ],
       [ "ScopedBatchOperation", "class_script_canvas_1_1_scoped_batch_operation.html", null ],
       [ "ScopedDataConnectionEvent", "class_script_canvas_1_1_scoped_data_connection_event.html", null ],
+      [ "ScriptCanvasApplication", "class_script_canvas_1_1_script_canvas_application.html", null ],
+      [ "ScriptCanvasDocument", "class_script_canvas_1_1_script_canvas_document.html", null ],
+      [ "ScriptCanvasDocumentRequests", "class_script_canvas_1_1_script_canvas_document_requests.html", null ],
       [ "ScriptCanvasModule", "class_script_canvas_1_1_script_canvas_module.html", null ],
       [ "ScriptCanvasModuleCommon", "class_script_canvas_1_1_script_canvas_module_common.html", null ],
       [ "ScriptCanvasSettingsRequests", "class_script_canvas_1_1_script_canvas_settings_requests.html", null ],
@@ -902,7 +905,7 @@ var annotated_dup =
       [ "StateTraits", "struct_script_canvas_editor_1_1_state_traits.html", null ],
       [ "StatisticsDialog", "class_script_canvas_editor_1_1_statistics_dialog.html", "class_script_canvas_editor_1_1_statistics_dialog" ],
       [ "SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
-      [ "SystemRequests", "class_script_canvas_editor_1_1_system_requests.html", null ],
+      [ "SystemRequests", "class_script_canvas_editor_1_1_system_requests.html", "class_script_canvas_editor_1_1_system_requests" ],
       [ "TargetManagerModel", "class_script_canvas_editor_1_1_target_manager_model.html", null ],
       [ "TraceMessageComponent", "class_script_canvas_editor_1_1_trace_message_component.html", null ],
       [ "TraceSuppressionRequests", "class_script_canvas_editor_1_1_trace_suppression_requests.html", null ],
@@ -953,5 +956,6 @@ var annotated_dup =
       [ "TranslationFormat", "struct_script_canvas_editor_tools_1_1_translation_format.html", null ],
       [ "TranslationGeneration", "class_script_canvas_editor_tools_1_1_translation_generation.html", "class_script_canvas_editor_tools_1_1_translation_generation" ]
     ] ],
+    [ "ScriptCanvasAssetDragDropHandler", "class_script_canvas_asset_drag_drop_handler.html", "class_script_canvas_asset_drag_drop_handler" ],
     [ "ScriptCanvasModel", "class_script_canvas_model.html", null ]
 ];

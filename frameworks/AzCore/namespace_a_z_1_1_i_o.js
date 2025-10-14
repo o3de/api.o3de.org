@@ -78,11 +78,11 @@ var namespace_a_z_1_1_i_o =
       [ "ModeUpdate", "namespace_a_z_1_1_i_o.html#ad47e72ec86c619fc4165fd0f45e92cd2af65c50b1044224b0b048c05c84fa2dfe", null ],
       [ "ModeCreatePath", "namespace_a_z_1_1_i_o.html#ad47e72ec86c619fc4165fd0f45e92cd2a3313c5b14c94e5986237735b3fbe0ae2", null ]
     ] ],
-    [ "CollectIoHardwareInformation", "namespace_a_z_1_1_i_o.html#a3685c02a28173c6fd95e3e2caf952b41", null ],
-    [ "FileTimeToMSecsSincePosixEpoch", "namespace_a_z_1_1_i_o.html#aac7a9fd16ea1a238cbb6d2bf7cd2f93c", null ],
+    [ "CollectIoHardwareInformation", "namespace_a_z_1_1_i_o.html#a6c3ca5960eaf66be0403c10478275f34", null ],
+    [ "FileTimeToMSecsSincePosixEpoch", "namespace_a_z_1_1_i_o.html#a3138e6e2a6160b1c5cc7e02da35d2238", null ],
     [ "hash_value", "namespace_a_z_1_1_i_o.html#a5158a7039eef3c27879797ec45eab267", null ],
-    [ "NameMatchesFilter", "namespace_a_z_1_1_i_o.html#adc062d2cebc6676b76f52326ef5b472f", null ],
-    [ "RetryOpenStream", "namespace_a_z_1_1_i_o.html#a8c8eed9c5d329cfb5ee4d04ab807e697", null ],
+    [ "NameMatchesFilter", "namespace_a_z_1_1_i_o.html#a49ed3e83d11c88bc47a669afb050f2b7", null ],
+    [ "RetryOpenStream", "namespace_a_z_1_1_i_o.html#ad398908a93506fec4575721523018bda", null ],
     [ "MaxPathLength", "namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6", null ],
     [ "s_fileNotFound", "namespace_a_z_1_1_i_o.html#a2fe969942f6586c2e2969dc2848676f6", null ],
     [ "s_statisticsWindowSize", "namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53", null ]

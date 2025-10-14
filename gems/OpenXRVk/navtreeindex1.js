@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a9cdb3afe9b32d49e7c238e418b5a4c24":[1,0,0,0,3,0,0],
+"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#aa5bc92a4979b7ac8f898fbe3baf3e33d":[1,0,0,0,3,0,24],
+"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#aad4d697285a70c3f4eea8c64952a2efb":[1,0,0,0,3,0,10],
+"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#ab9e9ec9f0e8bc0bc0a88b271722ae599":[1,0,0,0,3,0,18],
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#abb124182d7e480486ad8b0fcfaf9fbe6":[1,0,0,0,3,0,20],
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#ac13586ceaff98a8eeb1bc2b3c6bf079a":[1,0,0,0,3,0,16],
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#ac1f82ccd1c3e7ff759b6d302ffcabedd":[1,0,0,0,3,0,31],
@@ -46,5 +50,6 @@ var NAVTREEINDEX1 =
 "struct_az_framework_1_1_input_device_x_r_controller_1_1_trigger.html#acc97ef2fed59b5d04208e124b13eea56":[1,0,0,0,7,4],
 "struct_open_x_r_vk_1_1_pose_with_velocities.html":[1,0,1,17],
 "struct_open_x_r_vk_1_1_pose_with_velocities.html#a839217e947e8e0421fd46d45a5caa33b":[1,0,1,17,0],
-"struct_open_x_r_vk_1_1_pose_with_velocities.html#ae44b839fb9b3a7120fe14e6c19995f23":[1,0,1,17,1]
+"struct_open_x_r_vk_1_1_pose_with_velocities.html#ae44b839fb9b3a7120fe14e6c19995f23":[1,0,1,17,1],
+"struct_open_x_r_vk_1_1_x_r_controllers_config.html":[1,0,1,26]
 };

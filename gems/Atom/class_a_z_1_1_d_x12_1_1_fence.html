@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,9 +65,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6a1eb868f99a442bf590e5b1af20ec3" id="r_ab6a1eb868f99a442bf590e5b1af20ec3"><td class="memItemLeft" align="right" valign="top"><a id="ab6a1eb868f99a442bf590e5b1af20ec3" name="ab6a1eb868f99a442bf590e5b1af20ec3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_d_x12_1_1_fence.html">Fence</a>, AZ::SystemAllocator)</td></tr>
 <tr class="separator:ab6a1eb868f99a442bf590e5b1af20ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99406af618a04f0162fe9607bfb73d69" id="r_a99406af618a04f0162fe9607bfb73d69"><td class="memItemLeft" align="right" valign="top"><a id="a99406af618a04f0162fe9607bfb73d69" name="a99406af618a04f0162fe9607bfb73d69"></a>
-RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (ID3D12DeviceX *dx12Device, RHI::FenceState initialState)</td></tr>
-<tr class="separator:a99406af618a04f0162fe9607bfb73d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49cfd4437f6a47eb21ec09f618d3c61" id="r_ae49cfd4437f6a47eb21ec09f618d3c61"><td class="memItemLeft" align="right" valign="top"><a id="ae49cfd4437f6a47eb21ec09f618d3c61" name="ae49cfd4437f6a47eb21ec09f618d3c61"></a>
+RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (ID3D12DeviceX *dx12Device, RHI::FenceState initialState, bool usedForCrossDevice=false)</td></tr>
+<tr class="separator:ae49cfd4437f6a47eb21ec09f618d3c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a2b619298a3955b713e2ede2206dac" id="r_a22a2b619298a3955b713e2ede2206dac"><td class="memItemLeft" align="right" valign="top"><a id="a22a2b619298a3955b713e2ede2206dac" name="a22a2b619298a3955b713e2ede2206dac"></a>
+RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>InitCrossDevice</b> (ID3D12DeviceX *dx12Device, <a class="el" href="class_a_z_1_1_d_x12_1_1_fence.html">Fence</a> *originalDeviceFence, ID3D12DeviceX *originalDevice)</td></tr>
+<tr class="separator:a22a2b619298a3955b713e2ede2206dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a129c0e488c8c75f085ef7bedd822418f" id="r_a129c0e488c8c75f085ef7bedd822418f"><td class="memItemLeft" align="right" valign="top"><a id="a129c0e488c8c75f085ef7bedd822418f" name="a129c0e488c8c75f085ef7bedd822418f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
 <tr class="separator:a129c0e488c8c75f085ef7bedd822418f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +110,7 @@ ID3D12Fence *&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> () c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>DX12</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_d_x12_1_1_fence.html">Fence</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

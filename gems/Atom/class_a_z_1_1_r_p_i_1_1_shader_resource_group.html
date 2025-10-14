@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -81,6 +81,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Compile</b> ()</td></
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsQueuedForCompile</b> () const</td></tr>
 <tr class="memdesc:ac7d5da2c43dc50e08d92a42e28d215cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the group is currently queued for compilation. <br /></td></tr>
 <tr class="separator:ac7d5da2c43dc50e08d92a42e28d215cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa826f0ef7b56bd8aaaf48959ea721940" id="r_aa826f0ef7b56bd8aaaf48959ea721940"><td class="memItemLeft" align="right" valign="top"><a id="aa826f0ef7b56bd8aaaf48959ea721940" name="aa826f0ef7b56bd8aaaf48959ea721940"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInitialized</b> () const</td></tr>
+<tr class="separator:aa826f0ef7b56bd8aaaf48959ea721940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48de78b0a620bb0bb363597324f24ed6" id="r_a48de78b0a620bb0bb363597324f24ed6"><td class="memItemLeft" align="right" valign="top"><a id="a48de78b0a620bb0bb363597324f24ed6" name="a48de78b0a620bb0bb363597324f24ed6"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputBufferIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindShaderInputBufferIndex</b> (const Name &amp;name) const</td></tr>
 <tr class="memdesc:a48de78b0a620bb0bb363597324f24ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the shader input index from the shader input name for each type of resource. <br /></td></tr>
@@ -297,6 +300,13 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6b00a22087097a8311211df2ec8ab667"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputConstantIndex</a> inputIndex, const T &amp;value)</td></tr>
 <tr class="separator:a6b00a22087097a8311211df2ec8ab667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f684b66fed0da0beb7dd20030ff019" id="r_ae8f684b66fed0da0beb7dd20030ff019"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae8f684b66fed0da0beb7dd20030ff019"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#ae8f684b66fed0da0beb7dd20030ff019">SetConstant</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_input_name_index.html">RHI::ShaderInputNameIndex</a> &amp;inputIndex, const AZStd::unordered_map&lt; int, T &gt; &amp;values)</td></tr>
+<tr class="separator:ae8f684b66fed0da0beb7dd20030ff019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8844e8b0758a3edb079570ca33b0cb1a" id="r_a8844e8b0758a3edb079570ca33b0cb1a"><td class="memTemplParams" colspan="2"><a id="a8844e8b0758a3edb079570ca33b0cb1a" name="a8844e8b0758a3edb079570ca33b0cb1a"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8844e8b0758a3edb079570ca33b0cb1a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputConstantIndex</a> &amp;inputIndex, const AZStd::unordered_map&lt; int, T &gt; &amp;values)</td></tr>
+<tr class="separator:a8844e8b0758a3edb079570ca33b0cb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a418dae382f6836e0f6c2f444f0fa2a74" id="r_a418dae382f6836e0f6c2f444f0fa2a74"><td class="memTemplParams" colspan="2"><a id="a418dae382f6836e0f6c2f444f0fa2a74" name="a418dae382f6836e0f6c2f444f0fa2a74"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a418dae382f6836e0f6c2f444f0fa2a74"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstantMatrixRows</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_input_name_index.html">RHI::ShaderInputNameIndex</a> &amp;inputIndex, const T &amp;value, uint32_t rowCount)</td></tr>
@@ -626,6 +636,37 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ae8f684b66fed0da0beb7dd20030ff019" name="ae8f684b66fed0da0beb7dd20030ff019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f684b66fed0da0beb7dd20030ff019">&#9670;&#160;</a></span>SetConstant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RPI::ShaderResourceGroup::SetConstant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_input_name_index.html">RHI::ShaderInputNameIndex</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::unordered_map&lt; int, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assign a device-specific value of type T to the constant shader input. Note that the corresponding <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a5912232cafac2a927fa93002e3778e98">GetConstant()</a> - function returns only the value of one device. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Shader/<b>ShaderResourceGroup.h</b></li>
 </ul>
@@ -635,7 +676,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

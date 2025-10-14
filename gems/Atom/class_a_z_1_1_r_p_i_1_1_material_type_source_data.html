@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -145,9 +145,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SortProperties</b> ()
 <tr class="separator:a4a72037c44990b05067a80c66c20102a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae882d05b620f58afe9de2294e29b6678" id="r_ae882d05b620f58afe9de2294e29b6678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ae882d05b620f58afe9de2294e29b6678">EnumerateProperties</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#afbc12af803053e19b9457e4017db15a5">EnumeratePropertiesCallback</a> &amp;callback) const</td></tr>
 <tr class="separator:ae882d05b620f58afe9de2294e29b6678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0de3ea5d97447889626a8a8c84b7c5f" id="r_ac0de3ea5d97447889626a8a8c84b7c5f"><td class="memItemLeft" align="right" valign="top"><a id="ac0de3ea5d97447889626a8a8c84b7c5f" name="ac0de3ea5d97447889626a8a8c84b7c5f"></a>
-Outcome&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMaterialTypeAsset</b> (Data::AssetId assetId, AZStd::string_view materialTypeSourceFilePath=&quot;&quot;, bool elevateWarnings=true) const</td></tr>
-<tr class="memdesc:ac0de3ea5d97447889626a8a8c84b7c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> for use at runtime. This is only valid for material types with the "direct" format (see <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ab715d7129d4f1e18c85bc7517c0d648c" title="See enum Format.">GetFormat()</a>). <br /></td></tr>
+<tr class="memitem:aab9577f03411ebe3484109364335d124" id="r_aab9577f03411ebe3484109364335d124"><td class="memItemLeft" align="right" valign="top"><a id="aab9577f03411ebe3484109364335d124" name="aab9577f03411ebe3484109364335d124"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMaterialShaderParameterLayout</b> () const</td></tr>
+<tr class="memdesc:aab9577f03411ebe3484109364335d124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_shader_parameter_layout.html">MaterialShaderParameterLayout</a> from the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">Material</a> Properties with relevance for a shader. <br /></td></tr>
+<tr class="separator:aab9577f03411ebe3484109364335d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0de3ea5d97447889626a8a8c84b7c5f" id="r_ac0de3ea5d97447889626a8a8c84b7c5f"><td class="memItemLeft" align="right" valign="top">Outcome&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ac0de3ea5d97447889626a8a8c84b7c5f">CreateMaterialTypeAsset</a> (Data::AssetId assetId, AZStd::string_view materialTypeSourceFilePath=&quot;&quot;, bool elevateWarnings=true) const</td></tr>
 <tr class="separator:ac0de3ea5d97447889626a8a8c84b7c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a076b6f3e3dcbf940183fbd9c13f39988" id="r_a076b6f3e3dcbf940183fbd9c13f39988"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a076b6f3e3dcbf940183fbd9c13f39988">UpgradeLegacyFormat</a> ()</td></tr>
 <tr class="separator:a076b6f3e3dcbf940183fbd9c13f39988"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +194,8 @@ VersionUpdates&#160;</td><td class="memItemRight" valign="bottom"><b>m_versionUp
 <tr class="separator:a892448bae50b715c03e020f6b2d43e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3fc40c9025112a2b2368c1747aab00c" id="r_af3fc40c9025112a2b2368c1747aab00c"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#af3fc40c9025112a2b2368c1747aab00c">m_lightingModel</a></td></tr>
 <tr class="separator:af3fc40c9025112a2b2368c1747aab00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e52fed9152880c84f8cb5b2e0df41f" id="r_ad4e52fed9152880c84f8cb5b2e0df41f"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad4e52fed9152880c84f8cb5b2e0df41f">m_materialShaderDefines</a></td></tr>
+<tr class="separator:ad4e52fed9152880c84f8cb5b2e0df41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1facdc7c4c60efb300d0c7f607d6189" id="r_ad1facdc7c4c60efb300d0c7f607d6189"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad1facdc7c4c60efb300d0c7f607d6189">m_materialShaderCode</a></td></tr>
 <tr class="separator:ad1facdc7c4c60efb300d0c7f607d6189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f1270ebb4a567c222f66cde3b4afa3" id="r_aa9f1270ebb4a567c222f66cde3b4afa3"><td class="memItemLeft" align="right" valign="top"><a id="aa9f1270ebb4a567c222f66cde3b4afa3" name="aa9f1270ebb4a567c222f66cde3b4afa3"></a>
@@ -347,6 +351,41 @@ static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>I
 
 </div>
 </div>
+<a id="ac0de3ea5d97447889626a8a8c84b7c5f" name="ac0de3ea5d97447889626a8a8c84b7c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0de3ea5d97447889626a8a8c84b7c5f">&#9670;&#160;</a></span>CreateMaterialTypeAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Outcome&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> &gt; &gt; AZ::RPI::MaterialTypeSourceData::CreateMaterialTypeAsset </td>
+          <td>(</td>
+          <td class="paramtype">Data::AssetId&#160;</td>
+          <td class="paramname"><em>assetId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>materialTypeSourceFilePath</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>elevateWarnings</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_asset.html">MaterialTypeAsset</a> for use at runtime. This is only valid for material types with the "direct" format (see <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ab715d7129d4f1e18c85bc7517c0d648c" title="See enum Format.">GetFormat()</a>). </p>
+
+</div>
+</div>
 <a id="ae882d05b620f58afe9de2294e29b6678" name="ae882d05b620f58afe9de2294e29b6678"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae882d05b620f58afe9de2294e29b6678">&#9670;&#160;</a></span>EnumerateProperties()</h2>
 
@@ -484,6 +523,21 @@ static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>I
 
 </div>
 </div>
+<a id="ad4e52fed9152880c84f8cb5b2e0df41f" name="ad4e52fed9152880c84f8cb5b2e0df41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e52fed9152880c84f8cb5b2e0df41f">&#9670;&#160;</a></span>m_materialShaderDefines</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string AZ::RPI::MaterialTypeSourceData::m_materialShaderDefines</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This indicates a .azsli file that contains only material-specific shader definitions, which will be included. in the final shader before any other files. The build system will automatically combine this code with .materialpipeline shader code for use in each available render pipeline. This is relevant for "abstract" material type files (see <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ab715d7129d4f1e18c85bc7517c0d648c" title="See enum Format.">GetFormat()</a>). </p>
+
+</div>
+</div>
 <a id="afeb8198df91d8faabe30d6d9b4d47278" name="afeb8198df91d8faabe30d6d9b4d47278"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afeb8198df91d8faabe30d6d9b4d47278">&#9670;&#160;</a></span>m_pipelineData</h2>
 
@@ -508,7 +562,7 @@ static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>I
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

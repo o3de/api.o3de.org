@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,10 +70,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acda2983670fd45d85124cb5020e3c094" id="r_acda2983670fd45d85124cb5020e3c094"><td class="memItemLeft" align="right" valign="top"><a id="acda2983670fd45d85124cb5020e3c094" name="acda2983670fd45d85124cb5020e3c094"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_simulation_interfaces_1_1_simulation_manager_requests.html">SimulationManagerRequests</a>, SimulationManagerRequestsTypeId)</td></tr>
 <tr class="separator:acda2983670fd45d85124cb5020e3c094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dfdb5f65f881541fc758cb6953719d7" id="r_a1dfdb5f65f881541fc758cb6953719d7"><td class="memItemLeft" align="right" valign="top"><a id="a1dfdb5f65f881541fc758cb6953719d7" name="a1dfdb5f65f881541fc758cb6953719d7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadLevel</b> (ReloadLevelCallback completionCallback)=0</td></tr>
-<tr class="memdesc:a1dfdb5f65f881541fc758cb6953719d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload level and remove all spawned simulation entities. <br /></td></tr>
-<tr class="separator:a1dfdb5f65f881541fc758cb6953719d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc6877e0816a9f5d03d2d838afb41a8" id="r_a6fc6877e0816a9f5d03d2d838afb41a8"><td class="memItemLeft" align="right" valign="top"><a id="a6fc6877e0816a9f5d03d2d838afb41a8" name="a6fc6877e0816a9f5d03d2d838afb41a8"></a>
+virtual AZ::Outcome&lt; void, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResetSimulation</b> (ReloadLevelCallback completionCallback)=0</td></tr>
+<tr class="memdesc:a6fc6877e0816a9f5d03d2d838afb41a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload level and remove all spawned simulation entities. <br /></td></tr>
+<tr class="separator:a6fc6877e0816a9f5d03d2d838afb41a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab97432be95bf4c21cf9aaf8e2b1e96f2" id="r_ab97432be95bf4c21cf9aaf8e2b1e96f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_requests.html#ab97432be95bf4c21cf9aaf8e2b1e96f2">SetSimulationPaused</a> (bool paused)=0</td></tr>
 <tr class="separator:ab97432be95bf4c21cf9aaf8e2b1e96f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae5eb849fbf49ad687c6b47a99280ddb" id="r_aae5eb849fbf49ad687c6b47a99280ddb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_requests.html#aae5eb849fbf49ad687c6b47a99280ddb">StepSimulation</a> (AZ::u64 steps)=0</td></tr>
@@ -90,8 +90,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelStepSim
 <tr class="separator:a0e7918b5af1f6a6e70a42396240d611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee8a9ee9fe1fde96fa9d5f32d65bd3a" id="r_a8ee8a9ee9fe1fde96fa9d5f32d65bd3a"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; void, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_requests.html#a8ee8a9ee9fe1fde96fa9d5f32d65bd3a">SetSimulationState</a> (SimulationState stateToSet)=0</td></tr>
 <tr class="separator:a8ee8a9ee9fe1fde96fa9d5f32d65bd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840952c2ed5b03889665ea06ff1ee46c" id="r_a840952c2ed5b03889665ea06ff1ee46c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_requests.html#a840952c2ed5b03889665ea06ff1ee46c">EntitiesOperationsPossible</a> ()=0</td></tr>
+<tr class="separator:a840952c2ed5b03889665ea06ff1ee46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a840952c2ed5b03889665ea06ff1ee46c" name="a840952c2ed5b03889665ea06ff1ee46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840952c2ed5b03889665ea06ff1ee46c">&#9670;&#160;</a></span>EntitiesOperationsPossible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SimulationInterfaces::SimulationManagerRequests::EntitiesOperationsPossible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if it possible to work with entities. These operations should be possible only if world is loaded </p><dl class="section return"><dt>Returns</dt><dd>bool indicating if simulator is ready for taking requests related to spawning/despawning setting entity state etc </dd></dl>
+
+</div>
+</div>
 <a id="a0e7918b5af1f6a6e70a42396240d611e" name="a0e7918b5af1f6a6e70a42396240d611e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e7918b5af1f6a6e70a42396240d611e">&#9670;&#160;</a></span>GetSimulationState()</h2>
 
@@ -266,7 +294,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelStepSim
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>SimulationInterfaces</b></li><li class="navelem"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_requests.html">SimulationManagerRequests</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:13 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:14 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

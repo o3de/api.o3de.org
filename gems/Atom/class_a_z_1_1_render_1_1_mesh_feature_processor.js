@@ -8,6 +8,7 @@ var class_a_z_1_1_render_1_1_mesh_feature_processor =
     [ "Deactivate", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#ab823aa25800f903992e7c633c3654508", null ],
     [ "GetCustomMaterials", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#a33c40768fb0d7668fe9aa517513dfda3", null ],
     [ "GetDrawPackets", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#ac5e4ca07de78535299e913676021da2f", null ],
+    [ "GetDrawSrg", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#ab0d6fecaf8d1c5b3d7613c0a0b91b476", null ],
     [ "GetExcludeFromReflectionCubeMaps", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#a6bb51158272f50ec35444dc4cf027f0f", null ],
     [ "GetIsAlwaysDynamic", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#a0ce9345c111358b8c3e720488b6768b6", null ],
     [ "GetLightingChannelMask", "class_a_z_1_1_render_1_1_mesh_feature_processor.html#a4ad7ed8a22ceabd3be535f14684330b1", null ],

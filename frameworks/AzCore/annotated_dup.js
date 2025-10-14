@@ -290,6 +290,9 @@ var annotated_dup =
         [ "StaticInstance", "struct_a_z_1_1_serialize_1_1_static_instance.html", null ]
       ] ],
       [ "Settings", null, [
+        [ "Platform", null, [
+          [ "CommandLineConverter", "class_a_z_1_1_settings_1_1_platform_1_1_command_line_converter.html", null ]
+        ] ],
         [ "CommandLineArgument", "struct_a_z_1_1_settings_1_1_command_line_argument.html", null ],
         [ "CommandLineParserSettings", "struct_a_z_1_1_settings_1_1_command_line_parser_settings.html", "struct_a_z_1_1_settings_1_1_command_line_parser_settings" ],
         [ "ConfigParserSettings", "struct_a_z_1_1_settings_1_1_config_parser_settings.html", "struct_a_z_1_1_settings_1_1_config_parser_settings" ],
@@ -754,6 +757,7 @@ var annotated_dup =
       [ "SerializeGenericTypeInfo< Data::Asset< T > >", "struct_a_z_1_1_serialize_generic_type_info_3_01_data_1_1_asset_3_01_t_01_4_01_4.html", "struct_a_z_1_1_serialize_generic_type_info_3_01_data_1_1_asset_3_01_t_01_4_01_4" ],
       [ "SerializeTypeInfo", "struct_a_z_1_1_serialize_type_info.html", null ],
       [ "SetResult", "struct_a_z_1_1_set_result.html", null ],
+      [ "SettingsRegistryConstants", "struct_a_z_1_1_settings_registry_constants.html", null ],
       [ "SettingsRegistryImpl", "class_a_z_1_1_settings_registry_impl.html", "class_a_z_1_1_settings_registry_impl" ],
       [ "SettingsRegistryInterface", "class_a_z_1_1_settings_registry_interface.html", "class_a_z_1_1_settings_registry_interface" ],
       [ "SettingsRegistryOriginTracker", "class_a_z_1_1_settings_registry_origin_tracker.html", "class_a_z_1_1_settings_registry_origin_tracker" ],

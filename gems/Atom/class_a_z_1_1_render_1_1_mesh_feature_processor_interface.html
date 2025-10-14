@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -184,6 +184,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransform<
 <tr class="separator:aa6457eb076ab159e4bf91d766124172a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4225e5ff1715553d8cbc769bbd8da62" id="r_ae4225e5ff1715553d8cbc769bbd8da62"><td class="memItemLeft" align="right" valign="top">virtual DispatchDrawItemList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#ae4225e5ff1715553d8cbc769bbd8da62">BuildDispatchDrawItemList</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const uint32_t lodIndex, const uint32_t meshIndex, const RHI::DrawListMask drawListTagsFilter, const RHI::DrawFilterMask materialPipelineFilter, <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a7b9030d0cb8e149982ab6426a66a7698">DispatchArgumentsSetupCB</a> dispatchArgumentsSetupCB) const =0</td></tr>
 <tr class="separator:ae4225e5ff1715553d8cbc769bbd8da62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b70b921bb60680698669676f36698ff" id="r_a7b70b921bb60680698669676f36698ff"><td class="memItemLeft" align="right" valign="top">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a7b70b921bb60680698669676f36698ff">GetDrawSrg</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, uint32_t lodIndex, uint32_t subMeshIndex, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, RHI::DrawFilterMask materialPipelineMask) const =0</td></tr>
+<tr class="separator:a7b70b921bb60680698669676f36698ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a></td></tr>
 <tr class="memitem:a011d9c30a4429e37a8e21a0b6087935e inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor" id="r_a011d9c30a4429e37a8e21a0b6087935e"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a>, &quot;{B8027170-C65C-4237-964D-B557FC9D7575}&quot;)</td></tr>
@@ -453,6 +455,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <p>This function provides insight into what materials, shaders, etc. are actively being used to render the model. Useful for custom feature processors that work in tandem with the <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html" title="This feature processor handles static and dynamic non-skinned meshes.">MeshFeatureProcessor</a>. </p>
 
 <p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ac5e4ca07de78535299e913676021da2f">AZ::Render::MeshFeatureProcessor</a>.</p>
+
+</div>
+</div>
+<a id="a7b70b921bb60680698669676f36698ff" name="a7b70b921bb60680698669676f36698ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b70b921bb60680698669676f36698ff">&#9670;&#160;</a></span>GetDrawSrg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt; &amp; AZ::Render::MeshFeatureProcessorInterface::GetDrawSrg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>meshHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lodIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>subMeshIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a>&#160;</td>
+          <td class="paramname"><em>drawListTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RHI::DrawFilterMask&#160;</td>
+          <td class="paramname"><em>materialPipelineMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the DrawSrg from the first DrawItem that matches @drawListTag and its material pipeline matches @materialPipelineMask. The search is done only within the DrawItems of the subMesh identifiable by the tuple (@meshHandle, @lodIndex, @subMeshIndex). <br  />
+ </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ab0d6fecaf8d1c5b3d7613c0a0b91b476">AZ::Render::MeshFeatureProcessor</a>.</p>
 
 </div>
 </div>
@@ -1488,7 +1548,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">MeshFeatureProcessorInterface</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

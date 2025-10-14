@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"class_m_core_1_1_halton_sequence.html#add1c3727802a33a74f0bad9fa5351b67":[0,0,5,36,1],
+"class_m_core_1_1_halton_sequence.html#ae3c07a7cd837359a6a5335fb37e2dec6":[0,0,5,36,2],
+"class_m_core_1_1_halton_sequence.html#af7682235ed84e54418cc3ff966befdf2":[0,0,5,36,12],
+"class_m_core_1_1_i_d_generator.html":[0,0,5,37],
+"class_m_core_1_1_i_d_generator.html#a895071bb20ec266eae31df2b0adf8d74":[0,0,5,37,0],
+"class_m_core_1_1_initializer.html":[0,0,5,38],
+"class_m_core_1_1_initializer.html#aaeecdef937f10a2c9ae767af13ff38d2":[0,0,5,38,2],
+"class_m_core_1_1_initializer.html#ade5c1a32838b9b2650ad61f685a0ed3b":[0,0,5,38,1],
 "class_m_core_1_1_lcg_random.html":[0,0,5,39],
 "class_m_core_1_1_lock_guard.html":[0,0,5,40],
 "class_m_core_1_1_lock_guard_recursive.html":[0,0,5,41],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "functions_eval.html":[0,3,5],
 "functions_f.html":[0,3,0,5],
 "functions_func.html":[0,3,1],
-"functions_func.html":[0,3,1,0],
-"functions_func_b.html":[0,3,1,1],
-"functions_func_c.html":[0,3,1,2],
-"functions_func_d.html":[0,3,1,3],
-"functions_func_e.html":[0,3,1,4],
-"functions_func_f.html":[0,3,1,5],
-"functions_func_g.html":[0,3,1,6],
-"functions_func_h.html":[0,3,1,7],
-"functions_func_i.html":[0,3,1,8]
+"functions_func.html":[0,3,1,0]
 };

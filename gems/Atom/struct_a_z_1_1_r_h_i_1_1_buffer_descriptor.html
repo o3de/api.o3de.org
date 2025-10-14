@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -96,6 +96,8 @@ BufferBindFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_bindFlag
 HardwareQueueClassMask&#160;</td><td class="memItemRight" valign="bottom"><b>m_sharedQueueMask</b> = HardwareQueueClassMask::All</td></tr>
 <tr class="memdesc:a09fe90191487ba7b14ddcbf9f64ec57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mask of queue classes supporting shared access of this resource. <br /></td></tr>
 <tr class="separator:a09fe90191487ba7b14ddcbf9f64ec57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b2b7d5ee22a3f117fb97759f125f9d" id="r_a64b2b7d5ee22a3f117fb97759f125f9d"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html#a64b2b7d5ee22a3f117fb97759f125f9d">m_ownerDeviceIndex</a></td></tr>
+<tr class="separator:a64b2b7d5ee22a3f117fb97759f125f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A buffer corresponds to a region of linear memory and used for rendering operations. Its lifecycle is managed by buffer pools. </p>
@@ -131,6 +133,21 @@ HardwareQueueClassMask&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 
 </div>
 </div>
+<a id="a64b2b7d5ee22a3f117fb97759f125f9d" name="a64b2b7d5ee22a3f117fb97759f125f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b2b7d5ee22a3f117fb97759f125f9d">&#9670;&#160;</a></span>m_ownerDeviceIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::optional&lt;int&gt; AZ::RHI::BufferDescriptor::m_ownerDeviceIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Settings for enabling cross device buffers If set the <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a> will only be allocated on the owner device On all other devices the <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a> from the owner device will be exported and then imported again on their own devices Check <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#aa16e48c829ad14cfa15af19ab5dfe64f" title="Whether device memory can be shared with other devices.">DeviceFeatures::m_crossDeviceDeviceMemory</a> and <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a7c8ac4c71cb6050569e3423d08551cdc" title="Whether host memory can be shared with other devices.">DeviceFeatures::m_crossDeviceHostMemory</a> before setting the owner device All devices the buffer will be created for must have the respective device feature </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI.Reflect/<b>BufferDescriptor.h</b></li>
 </ul>
@@ -140,7 +157,7 @@ HardwareQueueClassMask&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html">BufferDescriptor</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

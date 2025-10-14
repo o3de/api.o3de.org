@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,8 +60,6 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_r_o_s2_frame_componen
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;ROS2FrameBus.h&gt;</code></p>
-
 <p>Inherits AZ::ComponentBus.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -72,24 +70,21 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = AZ::
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a35ef70be50a602787d8481f195a143db" id="r_a35ef70be50a602787d8481f195a143db"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a35ef70be50a602787d8481f195a143db">GetFrameID</a> () const =0</td></tr>
-<tr class="separator:a35ef70be50a602787d8481f195a143db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac33cfc61d433c3eb0b4a34d4781888" id="r_a9ac33cfc61d433c3eb0b4a34d4781888"><td class="memItemLeft" align="right" valign="top">virtual AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a9ac33cfc61d433c3eb0b4a34d4781888">GetJointName</a> () const =0</td></tr>
-<tr class="separator:a9ac33cfc61d433c3eb0b4a34d4781888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397001a9cbc012d9118d1181435e2396" id="r_a397001a9cbc012d9118d1181435e2396"><td class="memItemLeft" align="right" valign="top"><a id="a397001a9cbc012d9118d1181435e2396" name="a397001a9cbc012d9118d1181435e2396"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html">ROS2FrameComponentRequests</a>, ROS2FrameComponentRequestsTypeId)</td></tr>
+<tr class="separator:a397001a9cbc012d9118d1181435e2396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75607583a7710bed884ac98dc605cdd9" id="r_a75607583a7710bed884ac98dc605cdd9"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a75607583a7710bed884ac98dc605cdd9">GetNamespace</a> () const =0</td></tr>
 <tr class="separator:a75607583a7710bed884ac98dc605cdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aa50ab86ca9688c66e741fc3ba276b8" id="r_a2aa50ab86ca9688c66e741fc3ba276b8"><td class="memItemLeft" align="right" valign="top">virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a2aa50ab86ca9688c66e741fc3ba276b8">GetFrameParent</a> () const =0</td></tr>
-<tr class="separator:a2aa50ab86ca9688c66e741fc3ba276b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd854d9746f2f0ee0363155597776b42" id="r_afd854d9746f2f0ee0363155597776b42"><td class="memItemLeft" align="right" valign="top">virtual AZStd::set&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#afd854d9746f2f0ee0363155597776b42">GetFrameChildren</a> () const =0</td></tr>
-<tr class="separator:afd854d9746f2f0ee0363155597776b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb78a1a80dfcb13b8467cbc254e8cccc" id="r_aeb78a1a80dfcb13b8467cbc254e8cccc"><td class="memItemLeft" align="right" valign="top"><a id="aeb78a1a80dfcb13b8467cbc254e8cccc" name="aeb78a1a80dfcb13b8467cbc254e8cccc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateNamespace</b> (const AZStd::string &amp;parentNamespace)=0</td></tr>
-<tr class="memdesc:aeb78a1a80dfcb13b8467cbc254e8cccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the parent namespace and effective namespace. <br /></td></tr>
-<tr class="separator:aeb78a1a80dfcb13b8467cbc254e8cccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bc59bb00ecc1bae9aa455ae2c8d8fc1" id="r_a3bc59bb00ecc1bae9aa455ae2c8d8fc1"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a3bc59bb00ecc1bae9aa455ae2c8d8fc1">GetGlobalFrameName</a> () const =0</td></tr>
-<tr class="separator:a3bc59bb00ecc1bae9aa455ae2c8d8fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9128b7edc784faa3ca997137cc56ff9" id="r_af9128b7edc784faa3ca997137cc56ff9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#af9128b7edc784faa3ca997137cc56ff9">IsTopLevel</a> () const =0</td></tr>
-<tr class="separator:af9128b7edc784faa3ca997137cc56ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5248f4ab5c8be5de9d11b5bbf535ff4" id="r_ae5248f4ab5c8be5de9d11b5bbf535ff4"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#ae5248f4ab5c8be5de9d11b5bbf535ff4">GetNamespacedFrameID</a> () const =0</td></tr>
+<tr class="separator:ae5248f4ab5c8be5de9d11b5bbf535ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a02660b1bc5decd0eb3e1beb7dc247" id="r_a33a02660b1bc5decd0eb3e1beb7dc247"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a33a02660b1bc5decd0eb3e1beb7dc247">GetNamespacedJointName</a> () const =0</td></tr>
+<tr class="separator:a33a02660b1bc5decd0eb3e1beb7dc247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb8a979bdbc1c6438442a6fd5a810fb" id="r_a0cb8a979bdbc1c6438442a6fd5a810fb"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a0cb8a979bdbc1c6438442a6fd5a810fb">GetJointName</a> () const =0</td></tr>
+<tr class="separator:a0cb8a979bdbc1c6438442a6fd5a810fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8320c8d3d9027908b85499d41e4fed" id="r_a7e8320c8d3d9027908b85499d41e4fed"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a7e8320c8d3d9027908b85499d41e4fed">GetFrameName</a> () const =0</td></tr>
+<tr class="separator:a7e8320c8d3d9027908b85499d41e4fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfebbb35ea32c6f7e445ce1b5d337a9" id="r_a7bfebbb35ea32c6f7e445ce1b5d337a9"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a7bfebbb35ea32c6f7e445ce1b5d337a9">GetGlobalFrameID</a> () const =0</td></tr>
+<tr class="separator:a7bfebbb35ea32c6f7e445ce1b5d337a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -100,11 +95,9 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
 <tr class="separator:ac1ceee6f0d96a8abf16d5f9a0734e0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface for the <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>. Used to change and get information about the <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd854d9746f2f0ee0363155597776b42" name="afd854d9746f2f0ee0363155597776b42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd854d9746f2f0ee0363155597776b42">&#9670;&#160;</a></span>GetFrameChildren()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7e8320c8d3d9027908b85499d41e4fed" name="a7e8320c8d3d9027908b85499d41e4fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8320c8d3d9027908b85499d41e4fed">&#9670;&#160;</a></span>GetFrameName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +106,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual AZStd::set&lt; AZ::EntityId &gt; ROS2::ROS2FrameComponentRequests::GetFrameChildren </td>
+          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetFrameName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -125,12 +118,12 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Find all frame children of the frame. </p><dl class="section return"><dt>Returns</dt><dd>set of all entityIds of children. Empty if no children or the frameEntityId is invalid. </dd></dl>
+<p>Get the frame name without namespace </p><dl class="section return"><dt>Returns</dt><dd>The frame name without namespace prefix </dd></dl>
 
 </div>
 </div>
-<a id="a35ef70be50a602787d8481f195a143db" name="a35ef70be50a602787d8481f195a143db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ef70be50a602787d8481f195a143db">&#9670;&#160;</a></span>GetFrameID()</h2>
+<a id="a7bfebbb35ea32c6f7e445ce1b5d337a9" name="a7bfebbb35ea32c6f7e445ce1b5d337a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bfebbb35ea32c6f7e445ce1b5d337a9">&#9670;&#160;</a></span>GetGlobalFrameID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +132,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetFrameID </td>
+          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetGlobalFrameID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -151,12 +144,12 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a frame id, which is needed for any ROS2 message with a Header </p><dl class="section return"><dt>Returns</dt><dd>Frame id which includes the namespace, ready to send in a ROS2 message </dd></dl>
+<p>Global frame name in ros2 ecosystem with namespace. It is configurable through Settings Registry at /O3DE/ROS2/GlobalFrameName If not configured, it defaults to "odom". If empty, root frame is not published by the simulator. It is typically "odom", "map", "world", "myRobot/odom" </p>
 
 </div>
 </div>
-<a id="a2aa50ab86ca9688c66e741fc3ba276b8" name="a2aa50ab86ca9688c66e741fc3ba276b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aa50ab86ca9688c66e741fc3ba276b8">&#9670;&#160;</a></span>GetFrameParent()</h2>
+<a id="a0cb8a979bdbc1c6438442a6fd5a810fb" name="a0cb8a979bdbc1c6438442a6fd5a810fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb8a979bdbc1c6438442a6fd5a810fb">&#9670;&#160;</a></span>GetJointName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +158,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual AZ::EntityId ROS2::ROS2FrameComponentRequests::GetFrameParent </td>
+          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetJointName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -177,60 +170,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Find the parent frame of the entity. </p><dl class="section return"><dt>Returns</dt><dd>entityId of the parent frame or an invalid entityId if the frame is top level. </dd></dl>
-
-</div>
-</div>
-<a id="a3bc59bb00ecc1bae9aa455ae2c8d8fc1" name="a3bc59bb00ecc1bae9aa455ae2c8d8fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bc59bb00ecc1bae9aa455ae2c8d8fc1">&#9670;&#160;</a></span>GetGlobalFrameName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetGlobalFrameName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Global frame name in ros2 ecosystem. </p><dl class="section return"><dt>Returns</dt><dd>The name of the global frame with namespace attached. It is typically "odom", "map", "world". </dd></dl>
-
-</div>
-</div>
-<a id="a9ac33cfc61d433c3eb0b4a34d4781888" name="a9ac33cfc61d433c3eb0b4a34d4781888"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ac33cfc61d433c3eb0b4a34d4781888">&#9670;&#160;</a></span>GetJointName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZ::Name ROS2::ROS2FrameComponentRequests::GetJointName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the joint name including the namespace </p><dl class="section note"><dt>Note</dt><dd>Supplementary metadata for Joint components, necessary in some cases for joints addressed by name in ROS 2 </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The namespaced joint name, ready to send in a ROS2 message </dd></dl>
+<p>Get the joint name without namespace </p><dl class="section return"><dt>Returns</dt><dd>The joint name without namespace prefix </dd></dl>
 
 </div>
 </div>
@@ -260,8 +200,8 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="af9128b7edc784faa3ca997137cc56ff9" name="af9128b7edc784faa3ca997137cc56ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9128b7edc784faa3ca997137cc56ff9">&#9670;&#160;</a></span>IsTopLevel()</h2>
+<a id="ae5248f4ab5c8be5de9d11b5bbf535ff4" name="ae5248f4ab5c8be5de9d11b5bbf535ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5248f4ab5c8be5de9d11b5bbf535ff4">&#9670;&#160;</a></span>GetNamespacedFrameID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +210,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool ROS2::ROS2FrameComponentRequests::IsTopLevel </td>
+          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetNamespacedFrameID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -282,12 +222,39 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if the ROS 2 frame is top level. </p><dl class="section return"><dt>Returns</dt><dd>true if the ROS 2 Frame component has no frame parent. </dd></dl>
+<p>Get a frame id, which is needed for any ROS2 message with a Header </p><dl class="section return"><dt>Returns</dt><dd>Frame id which includes the namespace, ready to send in a ROS2 message </dd></dl>
+
+</div>
+</div>
+<a id="a33a02660b1bc5decd0eb3e1beb7dc247" name="a33a02660b1bc5decd0eb3e1beb7dc247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a02660b1bc5decd0eb3e1beb7dc247">&#9670;&#160;</a></span>GetNamespacedJointName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::string ROS2::ROS2FrameComponentRequests::GetNamespacedJointName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the joint name including the namespace </p><dl class="section note"><dt>Note</dt><dd>Supplementary metadata for Joint components, necessary in some cases for joints addressed by name in ROS 2 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The namespaced joint name, ready to send in a ROS2 message </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2/Code/Include/ROS2/Frame/<b>ROS2FrameBus.h</b></li>
+<li>Gems/ROS2/Code/Include/ROS2/Frame/<b>ROS2FrameComponentBus.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -295,7 +262,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html">ROS2FrameComponentRequests</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

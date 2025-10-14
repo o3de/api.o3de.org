@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,42 +54,46 @@ $(document).ready(function(){initNavTree('class_az_tools_framework_1_1_asset_edi
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">AzToolsFramework::AssetEditor::AssetEditorWidgetUserSettings Class Reference</div></div>
+  <div class="headertitle"><div class="title">AzToolsFramework::AssetEditor::AssetEditorWidgetUserSettings Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits AZ::UserSettings.</p>
+<p>Stores the recent used folder and file settings used by the Asset Editor.  
+ <a href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html#details">More...</a></p>
+
+<p><code>#include &lt;AssetEditorWidget.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a243612a0d4f42dd0655f1e1f5f52015d" id="r_a243612a0d4f42dd0655f1e1f5f52015d"><td class="memItemLeft" align="right" valign="top"><a id="a243612a0d4f42dd0655f1e1f5f52015d" name="a243612a0d4f42dd0655f1e1f5f52015d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html">AssetEditorWidgetUserSettings</a>, &quot;{382FE424-4541-4D93-9BA4-DE17A6DF8676}&quot;, AZ::UserSettings)</td></tr>
-<tr class="separator:a243612a0d4f42dd0655f1e1f5f52015d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6c38d2b82cc5596259d1611d1754ad" id="r_a3b6c38d2b82cc5596259d1611d1754ad"><td class="memItemLeft" align="right" valign="top"><a id="a3b6c38d2b82cc5596259d1611d1754ad" name="a3b6c38d2b82cc5596259d1611d1754ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html">AssetEditorWidgetUserSettings</a>, &quot;{382FE424-4541-4D93-9BA4-DE17A6DF8676}&quot;)</td></tr>
+<tr class="separator:a3b6c38d2b82cc5596259d1611d1754ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ec627e060cc1937c78bcedb2f30945" id="r_a76ec627e060cc1937c78bcedb2f30945"><td class="memItemLeft" align="right" valign="top"><a id="a76ec627e060cc1937c78bcedb2f30945" name="a76ec627e060cc1937c78bcedb2f30945"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html">AssetEditorWidgetUserSettings</a>, AZ::SystemAllocator)</td></tr>
 <tr class="separator:a76ec627e060cc1937c78bcedb2f30945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad451accd44e2c9cd8d205f27b2cd2d49" id="r_ad451accd44e2c9cd8d205f27b2cd2d49"><td class="memItemLeft" align="right" valign="top"><a id="ad451accd44e2c9cd8d205f27b2cd2d49" name="ad451accd44e2c9cd8d205f27b2cd2d49"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRecentPath</b> (const AZStd::string &amp;recentPath)</td></tr>
-<tr class="separator:ad451accd44e2c9cd8d205f27b2cd2d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1e6236806d901377daf4195b6aa4e6" id="r_aaa1e6236806d901377daf4195b6aa4e6"><td class="memItemLeft" align="right" valign="top"><a id="aaa1e6236806d901377daf4195b6aa4e6" name="aaa1e6236806d901377daf4195b6aa4e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRecentPath</b> (AZ::Data::AssetType, const AZStd::string &amp;recentPath)</td></tr>
+<tr class="separator:aaa1e6236806d901377daf4195b6aa4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaba44a51d44d68c52efad59cdf02626" id="r_afaba44a51d44d68c52efad59cdf02626"><td class="memItemLeft" align="right" valign="top"><a id="afaba44a51d44d68c52efad59cdf02626" name="afaba44a51d44d68c52efad59cdf02626"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:afaba44a51d44d68c52efad59cdf02626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee5e8fa71abd81df9f729515d7ec8a4" id="r_afee5e8fa71abd81df9f729515d7ec8a4"><td class="memItemLeft" align="right" valign="top"><a id="afee5e8fa71abd81df9f729515d7ec8a4" name="afee5e8fa71abd81df9f729515d7ec8a4"></a>
+const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecentPathForAssetType</b> (AZ::Data::AssetType assetType) const</td></tr>
+<tr class="separator:afee5e8fa71abd81df9f729515d7ec8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43501a41136109747830d536a7c7fc54" id="r_a43501a41136109747830d536a7c7fc54"><td class="memItemLeft" align="right" valign="top"><a id="a43501a41136109747830d536a7c7fc54" name="a43501a41136109747830d536a7c7fc54"></a>
+const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecentFiles</b> () const</td></tr>
+<tr class="separator:a43501a41136109747830d536a7c7fc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad47c30a19cdb1ea4c2760e5cdaf7284e" id="r_ad47c30a19cdb1ea4c2760e5cdaf7284e"><td class="memItemLeft" align="right" valign="top"><a id="ad47c30a19cdb1ea4c2760e5cdaf7284e" name="ad47c30a19cdb1ea4c2760e5cdaf7284e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:ad47c30a19cdb1ea4c2760e5cdaf7284e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a67db8c7ff281b6f9a0d750e64e987171" id="r_a67db8c7ff281b6f9a0d750e64e987171"><td class="memItemLeft" align="right" valign="top"><a id="a67db8c7ff281b6f9a0d750e64e987171" name="a67db8c7ff281b6f9a0d750e64e987171"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastSavePath</b></td></tr>
-<tr class="separator:a67db8c7ff281b6f9a0d750e64e987171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71bea1c96017f44ad81d9c3124cae81a" id="r_a71bea1c96017f44ad81d9c3124cae81a"><td class="memItemLeft" align="right" valign="top"><a id="a71bea1c96017f44ad81d9c3124cae81a" name="a71bea1c96017f44ad81d9c3124cae81a"></a>
-AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_recentPaths</b></td></tr>
-<tr class="separator:a71bea1c96017f44ad81d9c3124cae81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores the recent used folder and file settings used by the Asset Editor. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetEditor/<b>AssetEditorWidget.h</b></li>
 </ul>
 </div><!-- contents -->
@@ -98,7 +102,7 @@ AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>AssetEditor</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html">AssetEditorWidgetUserSettings</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

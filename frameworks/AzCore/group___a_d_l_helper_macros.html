@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -93,7 +93,7 @@ Macros</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These helper macros can be used to specialize a function for a specific type, to fix ADL issues. For example in the standard the iter_swap function takes template arguments. If we use another STL implementation and we call one of its functions which is not ADL safe there will be ambiguity. </p><div class="fragment"><div class="line"><a class="code hl_namespace" href="namespace_a_z_std.html">AZStd</a> { <span class="keyword">template</span>&lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt; <span class="keywordtype">void</span> iter_swap(A&amp; a, B&amp; b) {...} }</div>
 <div class="line">OtherStl { <span class="keyword">template</span>&lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt; <span class="keywordtype">void</span> iter_swap(A&amp; a, B&amp; b) {...} }</div>
-<div class="ttc" id="anamespace_a_z_std_html"><div class="ttname"><a href="namespace_a_z_std.html">AZStd</a></div><div class="ttdoc">AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...</div><div class="ttdef"><b>Definition</b> AssetCommon.h:1254</div></div>
+<div class="ttc" id="anamespace_a_z_std_html"><div class="ttname"><a href="namespace_a_z_std.html">AZStd</a></div><div class="ttdoc">AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...</div><div class="ttdef"><b>Definition</b> AssetCommon.h:1248</div></div>
 </div><!-- fragment --><p> Then we have a iterator from <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a>, let's say AZStd::vector&lt;int&gt;::iterator and we call a sort function from OtherStl... </p><div class="fragment"><div class="line">OtherStl::sort(azstdVectorInt.begin(),azstdVectorInt.end(),std::less&lt;int&gt;);</div>
 </div><!-- fragment --><p> Now this code is all fine and will work fine, but if OtherStl::sort looks like </p><div class="fragment"><div class="line"><span class="keyword">namespace </span>OtherStl</div>
 <div class="line">{</div>
@@ -112,7 +112,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -90,6 +90,8 @@ virtual Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><b>MapToSou
 <tr class="separator:a3a984d18705a177a47dbb36209d20118 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab149f1958fb9df4f30328a3b25969348 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_ab149f1958fb9df4f30328a3b25969348"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ab149f1958fb9df4f30328a3b25969348">ConnectMessageHandler</a> (MessageEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:ab149f1958fb9df4f30328a3b25969348 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5f81ba3bf02dbed165fd5aca93a252 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_adb5f81ba3bf02dbed165fd5aca93a252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#adb5f81ba3bf02dbed165fd5aca93a252">ConnectFilterHandler</a> (FilterEvent::Handler &amp;handler)</td></tr>
+<tr class="separator:adb5f81ba3bf02dbed165fd5aca93a252 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcebb571f79b679105d0c23f0ac74a32 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_afcebb571f79b679105d0c23f0ac74a32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#afcebb571f79b679105d0c23f0ac74a32">SetRouter</a> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html">RoutingAdapter</a> *router, const Dom::Path &amp;route)</td></tr>
 <tr class="separator:afcebb571f79b679105d0c23f0ac74a32 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b0679e6d13b08ab40ffe3fc509a6afb inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_a4b0679e6d13b08ab40ffe3fc509a6afb"><td class="memItemLeft" align="right" valign="top">Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4b0679e6d13b08ab40ffe3fc509a6afb">SendAdapterMessage</a> (const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;message)</td></tr>
@@ -125,6 +127,10 @@ Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><b>GetRowPath</b> (
 <tr class="separator:ab1cb4e7f1eb6b98224d5c9f3ec367d5e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_ac356f0634ebfbbd553c5899c5320025e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e">NotifyContentsChanged</a> (const Dom::Patch &amp;patch)</td></tr>
 <tr class="separator:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cc5c7d641b654c3c34d33adc12ee0f inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_ac0cc5c7d641b654c3c34d33adc12ee0f"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyFilterChanged</b> (const AZStd::string &amp;filter)</td></tr>
+<tr class="memdesc:ac0cc5c7d641b654c3c34d33adc12ee0f inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses may call this to notify the view that this adapter's content has been filtered. <br /></td></tr>
+<tr class="separator:ac0cc5c7d641b654c3c34d33adc12ee0f inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -160,6 +166,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ChangedEvent</b> = E
 <tr class="memitem:a037f31721c72af8e5c43a4bce683bedd inherit pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_a037f31721c72af8e5c43a4bce683bedd"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MessageEvent</b> = Event&lt; const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;, Dom::Value &amp; &gt;</td></tr>
 <tr class="separator:a037f31721c72af8e5c43a4bce683bedd inherit pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1de5b23dfeecca329f820799175d984 inherit pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_ac1de5b23dfeecca329f820799175d984"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FilterEvent</b> = Event&lt; const AZStd::string &amp; &gt;</td></tr>
+<tr class="separator:ac1de5b23dfeecca329f820799175d984 inherit pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
 <tr class="memitem:a492fc2718dd1cbcedca3d7746be82f82 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter" id="r_a492fc2718dd1cbcedca3d7746be82f82"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a492fc2718dd1cbcedca3d7746be82f82">IsDebugModeEnabled</a> ()</td></tr>
 <tr class="separator:a492fc2718dd1cbcedca3d7746be82f82 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +239,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRow</b> (con
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AZ</b></li><li class="navelem"><b>DocumentPropertyEditor</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_meta_adapter.html">MetaAdapter</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

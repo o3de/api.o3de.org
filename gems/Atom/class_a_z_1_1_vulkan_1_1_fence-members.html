@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,8 +69,10 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_vulkan_1_1_fence.html','
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>GetFenceBase</b>() const (defined in <a class="el" href="class_a_z_1_1_vulkan_1_1_fence.html">AZ::Vulkan::Fence</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_vulkan_1_1_fence.html">AZ::Vulkan::Fence</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#ad52aea2282d4cb56e4a8d6d315eaca31">GetFenceState</a>() const</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">AZ::RHI::DeviceFence</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af772df30acc23650ce9396d3220ae496">GetName</a>() const</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#a9e0e9cd4edae3d6efb2bafc326c87eef">Init</a>(Device &amp;device, FenceState initialState, bool usedForWaitingOnDevice=false)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">AZ::RHI::DeviceFence</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#a4d12819b9e21e66de50d7f19bd4018fa">Init</a>(Device &amp;device, FenceState initialState, FenceFlags flags=FenceFlags::None)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">AZ::RHI::DeviceFence</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a80ab91a69f8f962f519c29f6529cac51">AZ::RHI::DeviceObject::Init</a>(Device &amp;device)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">AZ::RHI::DeviceObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html#acd90e997d46c2fc149238d27756812fe">InitCrossDevice</a>(Device &amp;device, RHI::Ptr&lt; DeviceFence &gt; originalDeviceFence)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">AZ::RHI::DeviceFence</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>IsCrossDevice</b>() const (defined in <a class="el" href="class_a_z_1_1_vulkan_1_1_fence.html">AZ::Vulkan::Fence</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_vulkan_1_1_fence.html">AZ::Vulkan::Fence</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a084b1f4b7301a8ac485d8d90c3d76f79">IsInitialized</a>() const</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">AZ::RHI::DeviceObject</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>m_useCount</b> (defined in <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_waitThread</b> (defined in <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">AZ::RHI::DeviceFence</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_fence.html">AZ::RHI::DeviceFence</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -98,7 +100,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_vulkan_1_1_fence.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:00 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

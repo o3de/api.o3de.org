@@ -1,6 +1,7 @@
 var class_az_framework_1_1_input_device_id =
 [
     [ "InputDeviceId", "class_az_framework_1_1_input_device_id.html#a6e494e5b9af5860d75eb822f0454a205", null ],
+    [ "InputDeviceId", "class_az_framework_1_1_input_device_id.html#a110899c5f1ff3c73b6e48599883206bf", null ],
     [ "~InputDeviceId", "class_az_framework_1_1_input_device_id.html#ac0114ae485a42b302516079d69da0348", null ],
     [ "GetIndex", "class_az_framework_1_1_input_device_id.html#a02a54eff3818e0d4045d28d00c90bfc1", null ],
     [ "GetName", "class_az_framework_1_1_input_device_id.html#a5f973338547fb1a7d476316af5d6c526", null ],

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -77,8 +77,17 @@ Public Member Functions</h2></td></tr>
 ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBuffers</b> (MultiDevice::DeviceMask deviceMask, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas_descriptor.html">RayTracingBlasDescriptor</a> *descriptor, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
 <tr class="memdesc:aaa884b1dcec4af871f60ca545755d2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the internal BLAS buffers from the descriptor. <br /></td></tr>
 <tr class="separator:aaa884b1dcec4af871f60ca545755d2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb32a8e863e5dc580a2de0f79092a42e" id="r_abb32a8e863e5dc580a2de0f79092a42e"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html#abb32a8e863e5dc580a2de0f79092a42e">CreateCompactedBuffers</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a> &amp;sourceBlas, const AZStd::unordered_map&lt; int, uint64_t &gt; &amp;compactedSizes, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
-<tr class="separator:abb32a8e863e5dc580a2de0f79092a42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953d2cb361f1e60b95ed872ca20552bd" id="r_a953d2cb361f1e60b95ed872ca20552bd"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html#a953d2cb361f1e60b95ed872ca20552bd">CreateCompactedBuffers</a> (MultiDevice::DeviceMask deviceMask, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a> &amp;sourceBlas, const AZStd::unordered_map&lt; int, uint64_t &gt; &amp;compactedSizes, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
+<tr class="separator:a953d2cb361f1e60b95ed872ca20552bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c285d52a5f5c7c5f6c0e37d12028fa" id="r_af5c285d52a5f5c7c5f6c0e37d12028fa"><td class="memItemLeft" align="right" valign="top"><a id="af5c285d52a5f5c7c5f6c0e37d12028fa" name="af5c285d52a5f5c7c5f6c0e37d12028fa"></a>
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>AddDevice</b> (int deviceIndex, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
+<tr class="separator:af5c285d52a5f5c7c5f6c0e37d12028fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa712e518e74ba4c6b7a733d869653fe7" id="r_aa712e518e74ba4c6b7a733d869653fe7"><td class="memItemLeft" align="right" valign="top"><a id="aa712e518e74ba4c6b7a733d869653fe7" name="aa712e518e74ba4c6b7a733d869653fe7"></a>
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>AddDeviceCompacted</b> (int deviceIndex, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a> &amp;sourceBlas, uint64_t compactedSize, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a> &amp;rayTracingBufferPools)</td></tr>
+<tr class="separator:aa712e518e74ba4c6b7a733d869653fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bcec45b7e08a8bab8655f69be2fa03e" id="r_a5bcec45b7e08a8bab8655f69be2fa03e"><td class="memItemLeft" align="right" valign="top"><a id="a5bcec45b7e08a8bab8655f69be2fa03e" name="a5bcec45b7e08a8bab8655f69be2fa03e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDevice</b> (int deviceIndex)</td></tr>
+<tr class="separator:a5bcec45b7e08a8bab8655f69be2fa03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13471e1d43899b06f447a504f5b4c199" id="r_a13471e1d43899b06f447a504f5b4c199"><td class="memItemLeft" align="right" valign="top"><a id="a13471e1d43899b06f447a504f5b4c199" name="a13471e1d43899b06f447a504f5b4c199"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
 <tr class="memdesc:a13471e1d43899b06f447a504f5b4c199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a> has been initialized. <br /></td></tr>
@@ -162,8 +171,8 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a></p>
 <p>A <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a> is created from the information in the <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas_descriptor.html">RayTracingBlasDescriptor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abb32a8e863e5dc580a2de0f79092a42e" name="abb32a8e863e5dc580a2de0f79092a42e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb32a8e863e5dc580a2de0f79092a42e">&#9670;&#160;</a></span>CreateCompactedBuffers()</h2>
+<a id="a953d2cb361f1e60b95ed872ca20552bd" name="a953d2cb361f1e60b95ed872ca20552bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953d2cb361f1e60b95ed872ca20552bd">&#9670;&#160;</a></span>CreateCompactedBuffers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,6 +180,12 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
         <tr>
           <td class="memname">ResultCode AZ::RHI::RayTracingBlas::CreateCompactedBuffers </td>
           <td>(</td>
+          <td class="paramtype">MultiDevice::DeviceMask&#160;</td>
+          <td class="paramname"><em>deviceMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a> &amp;&#160;</td>
           <td class="paramname"><em>sourceBlas</em>, </td>
         </tr>
@@ -206,7 +221,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_blas.html">RayTracingBlas</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

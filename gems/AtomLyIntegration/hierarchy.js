@@ -92,6 +92,7 @@ var hierarchy =
       [ "AZ::Render::MaterialConsumerRequests", "class_a_z_1_1_render_1_1_material_consumer_requests.html", null ],
       [ "AZ::Render::MeshComponentNotifications", "class_a_z_1_1_render_1_1_mesh_component_notifications.html", null ],
       [ "AZ::Render::MeshComponentRequests", "class_a_z_1_1_render_1_1_mesh_component_requests.html", null ],
+      [ "AZ::Render::MotionBlurRequests", "class_a_z_1_1_render_1_1_motion_blur_requests.html", null ],
       [ "AZ::Render::PaniniProjectionRequests", "class_a_z_1_1_render_1_1_panini_projection_requests.html", null ],
       [ "AZ::Render::PhysicalSkyRequests", "class_a_z_1_1_render_1_1_physical_sky_requests.html", null ],
       [ "AZ::Render::PostFxLayerRequests", "class_a_z_1_1_render_1_1_post_fx_layer_requests.html", null ],
@@ -123,6 +124,7 @@ var hierarchy =
       [ "AZ::Render::LookModificationComponentConfig", "class_a_z_1_1_render_1_1_look_modification_component_config.html", null ],
       [ "AZ::Render::MaterialComponentConfig", "class_a_z_1_1_render_1_1_material_component_config.html", null ],
       [ "AZ::Render::MeshComponentConfig", "class_a_z_1_1_render_1_1_mesh_component_config.html", null ],
+      [ "AZ::Render::MotionBlurComponentConfig", "class_a_z_1_1_render_1_1_motion_blur_component_config.html", null ],
       [ "AZ::Render::OcclusionCullingPlaneComponentConfig", "class_a_z_1_1_render_1_1_occlusion_culling_plane_component_config.html", null ],
       [ "AZ::Render::PaniniProjectionComponentConfig", "class_a_z_1_1_render_1_1_panini_projection_component_config.html", null ],
       [ "AZ::Render::PhysicalSkyComponentConfig", "class_a_z_1_1_render_1_1_physical_sky_component_config.html", null ],
@@ -207,6 +209,7 @@ var hierarchy =
     [ "AZ::Render::EditorStateMaskRenderer", "class_a_z_1_1_render_1_1_editor_state_mask_renderer.html", null ],
     [ "AZ::Render::EditorStateMeshDrawPacket", "class_a_z_1_1_render_1_1_editor_state_mesh_draw_packet.html", null ],
     [ "AZ::Render::EditorStatePassSystem", "class_a_z_1_1_render_1_1_editor_state_pass_system.html", null ],
+    [ "AZ::Render::EditorSubMeshStatsForLod", "struct_a_z_1_1_render_1_1_editor_sub_mesh_stats_for_lod.html", null ],
     [ "AZ::Render::LightDelegateInterface", "class_a_z_1_1_render_1_1_light_delegate_interface.html", [
       [ "AZ::Render::LightDelegateBase< CapsuleLightFeatureProcessorInterface >", "class_a_z_1_1_render_1_1_light_delegate_base.html", [
         [ "AZ::Render::CapsuleLightDelegate", "class_a_z_1_1_render_1_1_capsule_light_delegate.html", null ]
@@ -361,6 +364,7 @@ var hierarchy =
       [ "AZ::Render::LookModificationComponent", "class_a_z_1_1_render_1_1_look_modification_component.html", null ],
       [ "AZ::Render::MaterialComponent", "class_a_z_1_1_render_1_1_material_component.html", null ],
       [ "AZ::Render::MeshComponent", "class_a_z_1_1_render_1_1_mesh_component.html", null ],
+      [ "AZ::Render::MotionBlurComponent", "class_a_z_1_1_render_1_1_motion_blur_component.html", null ],
       [ "AZ::Render::OcclusionCullingPlaneComponent", "class_a_z_1_1_render_1_1_occlusion_culling_plane_component.html", null ],
       [ "AZ::Render::PaniniProjectionComponent", "class_a_z_1_1_render_1_1_panini_projection_component.html", null ],
       [ "AZ::Render::PhysicalSkyComponent", "class_a_z_1_1_render_1_1_physical_sky_component.html", null ],
@@ -436,15 +440,16 @@ var hierarchy =
       [ "AZ::Render::EditorCommonFeaturesSystemComponent", "class_a_z_1_1_render_1_1_editor_common_features_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::Components:: EditorComponentAdapter", null, [
-      [ "AZ::Render::RayTracingDebugEditorComponent", "class_a_z_1_1_render_1_1_ray_tracing_debug_editor_component.html", null ]
-    ] ],
-    [ "AzToolsFramework::Components:: EditorComponentAdapter", null, [
       [ "AZ::Render::EditorChromaticAberrationComponent", "class_a_z_1_1_render_1_1_editor_chromatic_aberration_component.html", null ],
       [ "AZ::Render::EditorFilmGrainComponent", "class_a_z_1_1_render_1_1_editor_film_grain_component.html", null ],
       [ "AZ::Render::EditorHDRColorGradingComponent", "class_a_z_1_1_render_1_1_editor_h_d_r_color_grading_component.html", null ],
+      [ "AZ::Render::EditorMotionBlurComponent", "class_a_z_1_1_render_1_1_editor_motion_blur_component.html", null ],
       [ "AZ::Render::EditorPaniniProjectionComponent", "class_a_z_1_1_render_1_1_editor_panini_projection_component.html", null ],
       [ "AZ::Render::EditorVignetteComponent", "class_a_z_1_1_render_1_1_editor_vignette_component.html", null ],
       [ "AZ::Render::EditorWhiteBalanceComponent", "class_a_z_1_1_render_1_1_editor_white_balance_component.html", null ]
+    ] ],
+    [ "AzToolsFramework::Components:: EditorComponentAdapter", null, [
+      [ "AZ::Render::RayTracingDebugEditorComponent", "class_a_z_1_1_render_1_1_ray_tracing_debug_editor_component.html", null ]
     ] ],
     [ "AzToolsFramework::Components::EditorComponentAdapter", null, [
       [ "AZ::Render::EditorBloomComponent", "class_a_z_1_1_render_1_1_editor_bloom_component.html", null ],
@@ -701,6 +706,9 @@ var hierarchy =
     [ "MeshHandleStateRequestBus::Handler", null, [
       [ "AZ::Render::AtomActorInstance", "class_a_z_1_1_render_1_1_atom_actor_instance.html", null ],
       [ "AZ::Render::MeshComponentController", "class_a_z_1_1_render_1_1_mesh_component_controller.html", null ]
+    ] ],
+    [ "MotionBlurRequestBus::Handler", null, [
+      [ "AZ::Render::MotionBlurComponentController", "class_a_z_1_1_render_1_1_motion_blur_component_controller.html", null ]
     ] ],
     [ "PaniniProjectionRequestBus::Handler", null, [
       [ "AZ::Render::PaniniProjectionComponentController", "class_a_z_1_1_render_1_1_panini_projection_component_controller.html", null ]

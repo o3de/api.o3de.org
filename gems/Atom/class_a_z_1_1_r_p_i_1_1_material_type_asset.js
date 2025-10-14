@@ -10,11 +10,11 @@ var class_a_z_1_1_r_p_i_1_1_material_type_asset =
     [ "GetMaterialSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#ae1184220e66289f29d49ec00b605481f", null ],
     [ "GetMaterialSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a5ac12a680303c1cf86e09ff7e233b805", null ],
     [ "GetMaterialSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a86f648e9e74597e1f0eea6aa0f5dbec1", null ],
-    [ "GetObjectSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a8b39537f784219bca6f203cda9e570a9", null ],
-    [ "GetObjectSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#ac4c3fa2aa016c8217563236bad8d8cb0", null ],
-    [ "GetObjectSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a6948c5ebad504b81c992ce40155f9251", null ],
+    [ "GetObjectSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#ad419a01a86cca365696915910d822adf", null ],
+    [ "GetObjectSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a30dbfe8ef7025ba56d582c7b6d150c1e", null ],
+    [ "GetObjectSrgLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#af8897aaac682ad38e16a4a7a0a523f00", null ],
     [ "GetShaderAssetForMaterialSrg", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a2b6f2e08c1e3ad85a601b17ef2f26790", null ],
-    [ "GetShaderAssetForObjectSrg", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a1a33985592fc0185031c89ffce970774", null ],
+    [ "GetShaderAssetForObjectSrg", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a5ab1fa64da00414bb28165b1717f16f1", null ],
     [ "GetUvNameMap", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a447a58c37de0f0485fcf7841783f1fb0", null ],
     [ "GetVersion", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html#a88f3afd91c73310f7da77236a8c8137b", null ]
 ];

@@ -16,6 +16,7 @@ var class_e_motion_f_x_1_1_motion_system =
     [ "GetType", "class_e_motion_f_x_1_1_motion_system.html#aff7d58a060f686861640683dacfbeda4", null ],
     [ "GetTypeString", "class_e_motion_f_x_1_1_motion_system.html#aae2741b3f9ee7e5088785baeee4741c4", null ],
     [ "PlayMotion", "class_e_motion_f_x_1_1_motion_system.html#ac11798df5891cfff599a0beee200c4aa", null ],
+    [ "PlayMotion", "class_e_motion_f_x_1_1_motion_system.html#a24bd00880acc439c9a334c301fc921aa", null ],
     [ "RemoveMotion", "class_e_motion_f_x_1_1_motion_system.html#a9a743482920511ac79a6e3a2ddb1b67b", null ],
     [ "RemoveMotion", "class_e_motion_f_x_1_1_motion_system.html#a3f05a0a6f76ffed807cfc83ebb711e1f", null ],
     [ "RemoveMotionInstance", "class_e_motion_f_x_1_1_motion_system.html#af9ca21416882fda227c266b844a7003e", null ],

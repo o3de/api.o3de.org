@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,9 +69,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f274a7cc5be0232485d42363d6d5d81" id="r_a7f274a7cc5be0232485d42363d6d5d81"><td class="memItemLeft" align="right" valign="top"><a id="a7f274a7cc5be0232485d42363d6d5d81" name="a7f274a7cc5be0232485d42363d6d5d81"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_generic_asset_handler.html">GenericAssetHandler</a>&lt; AssetType &gt;, &quot;{8B36B3E8-8C0B-4297-BDA2-1648C155C78E}&quot;, GenericAssetHandlerBase)</td></tr>
 <tr class="separator:a7f274a7cc5be0232485d42363d6d5d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411326f7f81941cdfe04f369190fed21" id="r_a411326f7f81941cdfe04f369190fed21"><td class="memItemLeft" align="right" valign="top"><a id="a411326f7f81941cdfe04f369190fed21" name="a411326f7f81941cdfe04f369190fed21"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GenericAssetHandler</b> (const char *displayName, const char *group, const char *extension, const AZ::Uuid &amp;componentTypeId=AZ::Uuid::CreateNull(), AZ::SerializeContext *serializeContext=nullptr)</td></tr>
-<tr class="separator:a411326f7f81941cdfe04f369190fed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac143036ffb92b1be48d5978ce38aac" id="r_afac143036ffb92b1be48d5978ce38aac"><td class="memItemLeft" align="right" valign="top"><a id="afac143036ffb92b1be48d5978ce38aac" name="afac143036ffb92b1be48d5978ce38aac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GenericAssetHandler</b> (const char *displayName, const char *group, const char *extension, const AZ::Uuid &amp;componentTypeId=AZ::Uuid::CreateNull(), AZ::SerializeContext *serializeContext=nullptr, const AZ::DataStream::StreamType streamType=AZ::ObjectStream::ST_XML)</td></tr>
+<tr class="separator:afac143036ffb92b1be48d5978ce38aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade17fb6853ec80e3309477ece8d7e685" id="r_ade17fb6853ec80e3309477ece8d7e685"><td class="memItemLeft" align="right" valign="top"><a id="ade17fb6853ec80e3309477ece8d7e685" name="ade17fb6853ec80e3309477ece8d7e685"></a>
 AZ::Data::AssetPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAsset</b> (const AZ::Data::AssetId &amp;, const AZ::Data::AssetType &amp;) override</td></tr>
 <tr class="separator:ade17fb6853ec80e3309477ece8d7e685"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +136,9 @@ AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>m_componentTypeId
 <tr class="memitem:a71a608f66e80c0f69dd98079c67d4dda" id="r_a71a608f66e80c0f69dd98079c67d4dda"><td class="memItemLeft" align="right" valign="top"><a id="a71a608f66e80c0f69dd98079c67d4dda" name="a71a608f66e80c0f69dd98079c67d4dda"></a>
 AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b></td></tr>
 <tr class="separator:a71a608f66e80c0f69dd98079c67d4dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f303dccef984c327daf4eebe339d9f" id="r_a89f303dccef984c327daf4eebe339d9f"><td class="memItemLeft" align="right" valign="top"><a id="a89f303dccef984c327daf4eebe339d9f" name="a89f303dccef984c327daf4eebe339d9f"></a>
+AZ::DataStream::StreamType&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamType</b></td></tr>
+<tr class="separator:a89f303dccef984c327daf4eebe339d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Asset/<b>GenericAssetHandler.h</b></li>
@@ -146,7 +149,7 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_framework.html">AzFramework</a></li><li class="navelem"><a class="el" href="class_az_framework_1_1_generic_asset_handler.html">GenericAssetHandler</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

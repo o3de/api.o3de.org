@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,12 +53,14 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_h_i_1_1_resource_view.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_resource_view-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AZ::RHI::ResourceView Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;Resource.h&gt;</code></p>
+<p><code>#include &lt;ResourceView.h&gt;</code></p>
 
 <p>Inherits <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a>.</p>
 
@@ -66,15 +68,19 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_h_i_1_1_resource_view.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a040c4472e3170fb24afe1c1e26576d58" id="r_a040c4472e3170fb24afe1c1e26576d58"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html#a040c4472e3170fb24afe1c1e26576d58">GetResource</a> () const =0</td></tr>
-<tr class="memdesc:a040c4472e3170fb24afe1c1e26576d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resource associated with this view.  <br /></td></tr>
-<tr class="separator:a040c4472e3170fb24afe1c1e26576d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf31d1d62fcb8b7e1e5e23601263e13" id="r_aecf31d1d62fcb8b7e1e5e23601263e13"><td class="memItemLeft" align="right" valign="top"><a id="aecf31d1d62fcb8b7e1e5e23601263e13" name="aecf31d1d62fcb8b7e1e5e23601263e13"></a>
-virtual const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_resource_view.html">DeviceResourceView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceResourceView</b> (int deviceIndex) const =0</td></tr>
-<tr class="separator:aecf31d1d62fcb8b7e1e5e23601263e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd141d41de0c6c294da2a66de3c01e45" id="r_abd141d41de0c6c294da2a66de3c01e45"><td class="memItemLeft" align="right" valign="top"><a id="abd141d41de0c6c294da2a66de3c01e45" name="abd141d41de0c6c294da2a66de3c01e45"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html">ResourceView</a>, &quot;{D7442960-531D-4DCC-B60D-FD26FF75BE51}&quot;, Object)</td></tr>
 <tr class="separator:abd141d41de0c6c294da2a66de3c01e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de05cebf35f14b45c22bad16779a732" id="r_a5de05cebf35f14b45c22bad16779a732"><td class="memItemLeft" align="right" valign="top"><a id="a5de05cebf35f14b45c22bad16779a732" name="a5de05cebf35f14b45c22bad16779a732"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceView</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">RHI::Resource</a> *resource, MultiDevice::DeviceMask deviceMask)</td></tr>
+<tr class="separator:a5de05cebf35f14b45c22bad16779a732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c6d930d29e540d8323409a16568a48" id="r_ac0c6d930d29e540d8323409a16568a48"><td class="memItemLeft" align="right" valign="top"><a id="ac0c6d930d29e540d8323409a16568a48" name="ac0c6d930d29e540d8323409a16568a48"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetResource</b> () const</td></tr>
+<tr class="memdesc:ac0c6d930d29e540d8323409a16568a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resource associated with this view. <br /></td></tr>
+<tr class="separator:ac0c6d930d29e540d8323409a16568a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf31d1d62fcb8b7e1e5e23601263e13" id="r_aecf31d1d62fcb8b7e1e5e23601263e13"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_resource_view.html">DeviceResourceView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html#aecf31d1d62fcb8b7e1e5e23601263e13">GetDeviceResourceView</a> (int deviceIndex) const =0</td></tr>
+<tr class="memdesc:aecf31d1d62fcb8b7e1e5e23601263e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for the two derived classes to return a <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_resource_view.html">DeviceResourceView</a>.  <br /></td></tr>
+<tr class="separator:aecf31d1d62fcb8b7e1e5e23601263e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
 <tr class="memitem:a012597da80a60928f8f647bed014be73 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object" id="r_a012597da80a60928f8f647bed014be73"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">Object</a>, &quot;{E43378F1-2331-4173-94B8-990ED20E6003}&quot;)</td></tr>
@@ -92,24 +98,36 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>use_count</b> ()<
 <tr class="memdesc:a40cab6a10612d7fdf473957d9f5b8d9d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current use count of the object. <br /></td></tr>
 <tr class="separator:a40cab6a10612d7fdf473957d9f5b8d9d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a" id="r_a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a"><td class="memTemplParams" colspan="2">template&lt;typename View , typename ViewDescriptor &gt; </td></tr>
+<tr class="memitem:a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a"><td class="memTemplItemLeft" align="right" valign="top">const RHI::Ptr&lt; View &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html#a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a">GetDeviceResourceView</a> (int deviceIndex, const ViewDescriptor &amp;viewDescriptor) const</td></tr>
+<tr class="separator:a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
 <tr class="memitem:ab56999d6c99f7e7c7c9fbc76a45ff9d4 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object" id="r_ab56999d6c99f7e7c7c9fbc76a45ff9d4"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const</td></tr>
 <tr class="separator:ab56999d6c99f7e7c7c9fbc76a45ff9d4 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c31cd85680f007e5008edea2e1186f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object" id="r_aa6c31cd85680f007e5008edea2e1186f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#aa6c31cd85680f007e5008edea2e1186f">release</a> () const</td></tr>
 <tr class="separator:aa6c31cd85680f007e5008edea2e1186f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0ebbdc315d2466b93b663656f9d9ab44" id="r_a0ebbdc315d2466b93b663656f9d9ab44"><td class="memItemLeft" align="right" valign="top"><a id="a0ebbdc315d2466b93b663656f9d9ab44" name="a0ebbdc315d2466b93b663656f9d9ab44"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Resource</b></td></tr>
+<tr class="separator:a0ebbdc315d2466b93b663656f9d9ab44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
 <tr class="memitem:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object" id="r_a2285f323a24b84e7b5ad2249438059b8"><td class="memItemLeft" align="right" valign="top">
 AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
 <tr class="separator:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html">ResourceView</a> is a base class for multi-device buffer and image views for polymorphic usage of views in a generic way. </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html">ResourceView</a> is a base class for multi-device buffer and image views for polymorphic usage of views in a generic way. As the handling of the device-specific ResourceViews is more elaborate, this does not inherit from <a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">MultiDeviceObject</a> but manages the DeviceResourceViews on its own </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a040c4472e3170fb24afe1c1e26576d58" name="a040c4472e3170fb24afe1c1e26576d58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040c4472e3170fb24afe1c1e26576d58">&#9670;&#160;</a></span>GetResource()</h2>
+<a id="aecf31d1d62fcb8b7e1e5e23601263e13" name="aecf31d1d62fcb8b7e1e5e23601263e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf31d1d62fcb8b7e1e5e23601263e13">&#9670;&#160;</a></span>GetDeviceResourceView() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,9 +136,10 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a> * AZ::RHI::ResourceView::GetResource </td>
+          <td class="memname">virtual const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_resource_view.html">DeviceResourceView</a> * AZ::RHI::ResourceView::GetDeviceResourceView </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -131,14 +150,53 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 </table>
 </div><div class="memdoc">
 
-<p>Returns the resource associated with this view. </p>
+<p>Interface for the two derived classes to return a <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_resource_view.html">DeviceResourceView</a>. </p>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html#a6b1a2d7714377ca8618e5e5df664904f">AZ::RHI::BufferView</a>, and <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html#a3d68206f4ac473cdfea14db38b5e33bd">AZ::RHI::ImageView</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html#a53bb34f55d96e936315d9976748a4cc4">AZ::RHI::BufferView</a>, and <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html#aec28460a69fc4f7cab5a350b60b5d6d4">AZ::RHI::ImageView</a>.</p>
+
+</div>
+</div>
+<a id="a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a" name="a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6e8ca3a3c9aadfd0c9b6e4c1903c1a">&#9670;&#160;</a></span>GetDeviceResourceView() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename View , typename ViewDescriptor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RHI::Ptr&lt; View &gt; AZ::RHI::ResourceView::GetDeviceResourceView </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ViewDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>viewDescriptor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Templated method for both <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_image_view.html">DeviceImageView</a> and <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_buffer_view.html">DeviceBufferView</a> that either creates and caches or return the corresponding <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_resource_view.html">DeviceResourceView</a> </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/Atom/RHI/Code/Include/Atom/RHI/<b>Resource.h</b></li>
+<li>Gems/Atom/RHI/Code/Include/Atom/RHI/<b>ResourceView.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -146,7 +204,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html">ResourceView</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

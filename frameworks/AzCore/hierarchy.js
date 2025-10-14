@@ -857,12 +857,10 @@ var hierarchy =
     [ "AZ::Serialize::IDataContainer::IAssociativeDataContainer::KeyPtrDeleter", "struct_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container_1_1_key_ptr_deleter.html", null ],
     [ "AZ::Serialize::StaticInstance< T >", "struct_a_z_1_1_serialize_1_1_static_instance.html", null ],
     [ "AZ::SerializeContext::ClassBuilder", "class_a_z_1_1_serialize_context_1_1_class_builder.html", null ],
-    [ "AZ::SerializeContext::DataPatchTypeUpgrade< FromT, ToT >", "class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html", null ],
     [ "AZ::SerializeContext::DbgStackEntry", "struct_a_z_1_1_serialize_context_1_1_dbg_stack_entry.html", null ],
     [ "AZ::SerializeContext::EnumBuilder", "class_a_z_1_1_serialize_context_1_1_enum_builder.html", null ],
     [ "AZ::SerializeContext::EqualityCompareHelper< T >", "struct_a_z_1_1_serialize_context_1_1_equality_compare_helper.html", null ],
     [ "AZ::SerializeContext::ErrorHandler", "class_a_z_1_1_serialize_context_1_1_error_handler.html", null ],
-    [ "AZ::SerializeContext::PerModuleGenericClassInfo", "class_a_z_1_1_serialize_context_1_1_per_module_generic_class_info.html", null ],
     [ "AZ::SerializeGenericTypeInfo< ValueType >", "struct_a_z_1_1_serialize_generic_type_info.html", null ],
     [ "AZ::SerializeGenericTypeInfo< AZ::Outcome< t_Success, t_Failure > >", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_1_1_outcome_3_01t___success_00_01t___failure_01_4_01_4.html", null ],
     [ "AZ::SerializeGenericTypeInfo< AZStd::array< T, Size > >", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1array_3_01_t_00_01_size_01_4_01_4.html", null ],
@@ -896,8 +894,10 @@ var hierarchy =
     [ "AZ::Settings::ConfigParserSettings", "struct_a_z_1_1_settings_1_1_config_parser_settings.html", null ],
     [ "AZ::Settings::ConfigParserSettings::ConfigEntry", "struct_a_z_1_1_settings_1_1_config_parser_settings_1_1_config_entry.html", null ],
     [ "AZ::Settings::ConfigParserSettings::ConfigKeyValuePair", "struct_a_z_1_1_settings_1_1_config_parser_settings_1_1_config_key_value_pair.html", null ],
+    [ "AZ::Settings::Platform::CommandLineConverter", "class_a_z_1_1_settings_1_1_platform_1_1_command_line_converter.html", null ],
     [ "AZ::Settings::TextParserSettings", "struct_a_z_1_1_settings_1_1_text_parser_settings.html", null ],
     [ "AZ::SettingsRegistryConsoleUtils::ConsoleFunctorHandle", "struct_a_z_1_1_settings_registry_console_utils_1_1_console_functor_handle.html", null ],
+    [ "AZ::SettingsRegistryConstants", "struct_a_z_1_1_settings_registry_constants.html", null ],
     [ "AZ::SettingsRegistryInterface", "class_a_z_1_1_settings_registry_interface.html", [
       [ "AZ::MockSettingsRegistry", "class_a_z_1_1_mock_settings_registry.html", null ],
       [ "AZ::SettingsRegistryImpl", "class_a_z_1_1_settings_registry_impl.html", null ]
@@ -1238,7 +1238,7 @@ var hierarchy =
       [ "AZStd::unordered_set< AZ::Data::AssetId >", "class_a_z_std_1_1unordered__set.html", null ],
       [ "AZStd::unordered_set< AZ::Uuid >", "class_a_z_std_1_1unordered__set.html", null ],
       [ "AZStd::unordered_set< size_t >", "class_a_z_std_1_1unordered__set.html", null ],
-      [ "AZStd::unordered_set< AZ::SerializeContext::PerModuleGenericClassInfo * >", "class_a_z_std_1_1unordered__set.html", null ],
+      [ "AZStd::unordered_set< GlobalGenericClassInfo * >", "class_a_z_std_1_1unordered__set.html", null ],
       [ "AZStd::unordered_set< SerializeContext * >", "class_a_z_std_1_1unordered__set.html", null ],
       [ "AZStd::unordered_set< SliceInstance >", "class_a_z_std_1_1unordered__set.html", null ],
       [ "AZStd::unordered_set< AZ::EntityId >", "class_a_z_std_1_1unordered__set.html", null ],
@@ -1560,8 +1560,6 @@ var hierarchy =
     [ "AZStd::bitset< 32 >", "class_a_z_std_1_1bitset.html", null ],
     [ "AZStd::bitset< 64 >", "class_a_z_std_1_1bitset.html", null ],
     [ "AZStd::bitset< BitsetSize >", "class_a_z_std_1_1bitset.html", null ],
-    [ "AZStd::ClassNames< char >", "struct_a_z_std_1_1_class_names.html", null ],
-    [ "AZStd::ClassNames< wchar_t >", "struct_a_z_std_1_1_class_names.html", null ],
     [ "AZStd::Internal::common_reference_base< T... >", null, [
       [ "AZStd::common_reference< T >", "struct_a_z_std_1_1common__reference.html", null ]
     ] ],
@@ -1585,6 +1583,16 @@ var hierarchy =
     [ "Data::AssetBus::MultiHandler", null, [
       [ "AZ::ScriptSystemComponent", "class_a_z_1_1_script_system_component.html", null ],
       [ "AZ::SliceComponent", "class_a_z_1_1_slice_component.html", null ]
+    ] ],
+    [ "DataPatchNameUpgrade public DataPatchUpgrade", null, [
+      [ "AZ::SerializeContext", "class_a_z_1_1_serialize_context.html", null ]
+    ] ],
+    [ "DataPatchUpgrade", null, [
+      [ "AZ::SerializeContext", "class_a_z_1_1_serialize_context.html", null ],
+      [ "AZ::SerializeContext::DataPatchTypeUpgrade< FromT, ToT >", "class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html", null ]
+    ] ],
+    [ "DataPatchUpgradeHandler", null, [
+      [ "AZ::SerializeContext", "class_a_z_1_1_serialize_context.html", null ]
     ] ],
     [ "AZStd::delegate< bool(HSM &sm, const Event &e)>", "class_a_z_std_1_1delegate.html", null ],
     [ "AZStd::deque< AZ::IO::BlockCache::Section >", "class_a_z_std_1_1deque.html", null ],
@@ -1678,11 +1686,6 @@ var hierarchy =
     [ "AZStd::function< void(ScriptContextDebug *, const Breakpoint *)>", "class_a_z_std_1_1function.html", null ],
     [ "AZStd::function< void(size_t)>", "class_a_z_std_1_1function.html", null ],
     [ "AZStd::function< void(T &)>", "class_a_z_std_1_1function.html", null ],
-    [ "AZ::Internal::GenericAttributes< ClassBuilderBase >", null, [
-      [ "AZ::Internal::ClassBuilderBase", null, [
-        [ "AZ::BehaviorContext::ClassBuilder< T >", "struct_a_z_1_1_behavior_context_1_1_class_builder.html", null ]
-      ] ]
-    ] ],
     [ "AZ::Internal::GenericAttributes< EBusBuilderBase >", null, [
       [ "AZ::Internal::EBusAttributes", null, [
         [ "AZ::Internal::EBusBuilderBase", null, [
@@ -1695,6 +1698,9 @@ var hierarchy =
     ] ],
     [ "AZ::Internal::GenericAttributes< GlobalPropertyBuilder >", null, [
       [ "AZ::BehaviorContext::GlobalPropertyBuilder", "struct_a_z_1_1_behavior_context_1_1_global_property_builder.html", null ]
+    ] ],
+    [ "GlobalGenericClassInfo final", null, [
+      [ "AZ::SerializeContext", "class_a_z_1_1_serialize_context.html", null ]
     ] ],
     [ "AZStd::hash< const T[N]>", "struct_a_z_std_1_1hash.html", [
       [ "AZStd::hash< T[N] >", "struct_a_z_std_1_1hash_3_01_t_0f_n_0e_01_4.html", null ]
@@ -1773,6 +1779,9 @@ var hierarchy =
     [ "nedalloc::nedpool_t", "structnedalloc_1_1nedpool__t.html", null ],
     [ "nedalloc::threadcache_t", "structnedalloc_1_1threadcache__t.html", null ],
     [ "nedalloc::threadcacheblk_t", "structnedalloc_1_1threadcacheblk__t.html", null ],
+    [ "NodeUpgradeSortFunctor", null, [
+      [ "AZ::SerializeContext", "class_a_z_1_1_serialize_context.html", null ]
+    ] ],
     [ "AZ::OrderedEvent< Params... >", "class_a_z_1_1_ordered_event.html", null ],
     [ "AZ::OrderedEventHandler< Params... >", "class_a_z_1_1_ordered_event_handler.html", null ],
     [ "AZStd::pair< AZ::BehaviorMethod *, AZ::BehaviorClass * >", "struct_a_z_std_1_1pair.html", null ],
@@ -1948,6 +1957,7 @@ var hierarchy =
     [ "AZStd::vector< bool >", "class_a_z_std_1_1vector.html", null ],
     [ "AZStd::vector< BusForwarderEvent >", "class_a_z_std_1_1vector.html", null ],
     [ "AZStd::vector< CallstackLine, OSStdAllocator >", "class_a_z_std_1_1vector.html", null ],
+    [ "AZStd::vector< char * >", "class_a_z_std_1_1vector.html", null ],
     [ "AZStd::vector< char >", "class_a_z_std_1_1vector.html", null ],
     [ "AZStd::vector< ClassElement >", "class_a_z_std_1_1vector.html", null ],
     [ "AZStd::vector< CommandArgument >", "class_a_z_std_1_1vector.html", null ],

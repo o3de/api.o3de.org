@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,10 +82,8 @@ DrawListMask&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListMa
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItemCount</b> () const</td></tr>
 <tr class="memdesc:a7d58e88bddaca8b405dbbc60fe6ccdd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of draw items stored in the packet. <br /></td></tr>
 <tr class="separator:a7d58e88bddaca8b405dbbc60fe6ccdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d5db310e0efccf64f84d0d291e60b58" id="r_a1d5db310e0efccf64f84d0d291e60b58"><td class="memItemLeft" align="right" valign="top"><a id="a1d5db310e0efccf64f84d0d291e60b58" name="a1d5db310e0efccf64f84d0d291e60b58"></a>
-s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListIndex</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> drawListTag) const</td></tr>
-<tr class="memdesc:a1d5db310e0efccf64f84d0d291e60b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index associated with the given DrawListTag. <br /></td></tr>
-<tr class="separator:a1d5db310e0efccf64f84d0d291e60b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dec31944629d2d4ac3c4c94a1b69225" id="r_a0dec31944629d2d4ac3c4c94a1b69225"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a0dec31944629d2d4ac3c4c94a1b69225">GetDrawListIndex</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> drawListTag, DrawFilterMask materialPipelineMask=DrawFilterMaskDefaultValue) const</td></tr>
+<tr class="separator:a0dec31944629d2d4ac3c4c94a1b69225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41febd244ce17ea49d50017d7926610d" id="r_a41febd244ce17ea49d50017d7926610d"><td class="memItemLeft" align="right" valign="top"><a id="a41febd244ce17ea49d50017d7926610d" name="a41febd244ce17ea49d50017d7926610d"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItem</b> (size_t index)</td></tr>
 <tr class="memdesc:a41febd244ce17ea49d50017d7926610d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_draw_item.html">DeviceDrawItem</a> at the given index. <br /></td></tr>
@@ -93,13 +91,11 @@ s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListIndex</b> (
 <tr class="memitem:a9b3b63dfed09e42b81eb84b35a620c09" id="r_a9b3b63dfed09e42b81eb84b35a620c09"><td class="memItemLeft" align="right" valign="top"><a id="a9b3b63dfed09e42b81eb84b35a620c09" name="a9b3b63dfed09e42b81eb84b35a620c09"></a>
 const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItem</b> (size_t index) const</td></tr>
 <tr class="separator:a9b3b63dfed09e42b81eb84b35a620c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acefc9b69fe3f75e5ae3f3921cc316924" id="r_acefc9b69fe3f75e5ae3f3921cc316924"><td class="memItemLeft" align="right" valign="top"><a id="acefc9b69fe3f75e5ae3f3921cc316924" name="acefc9b69fe3f75e5ae3f3921cc316924"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItem</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> drawListTag)</td></tr>
-<tr class="memdesc:acefc9b69fe3f75e5ae3f3921cc316924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_draw_item.html">DeviceDrawItem</a> associated with the given DrawListTag. <br /></td></tr>
-<tr class="separator:acefc9b69fe3f75e5ae3f3921cc316924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d13beb42ff5e1e7861542e299d2cee" id="r_a36d13beb42ff5e1e7861542e299d2cee"><td class="memItemLeft" align="right" valign="top"><a id="a36d13beb42ff5e1e7861542e299d2cee" name="a36d13beb42ff5e1e7861542e299d2cee"></a>
-const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItem</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> drawListTag) const</td></tr>
-<tr class="separator:a36d13beb42ff5e1e7861542e299d2cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44299649decddf567589a096455afbf0" id="r_a44299649decddf567589a096455afbf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a44299649decddf567589a096455afbf0">GetDrawItem</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> drawListTag, DrawFilterMask materialPipelineMask=DrawFilterMaskDefaultValue)</td></tr>
+<tr class="separator:a44299649decddf567589a096455afbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be0821a141c8e4d7b6b71b6e92f7bb3" id="r_a4be0821a141c8e4d7b6b71b6e92f7bb3"><td class="memItemLeft" align="right" valign="top"><a id="a4be0821a141c8e4d7b6b71b6e92f7bb3" name="a4be0821a141c8e4d7b6b71b6e92f7bb3"></a>
+const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItem</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> drawListTag, DrawFilterMask materialPipelineMask=DrawFilterMaskDefaultValue) const</td></tr>
+<tr class="separator:a4be0821a141c8e4d7b6b71b6e92f7bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f50d4dcaef3d3953f9945ac6e30ecb6" id="r_a5f50d4dcaef3d3953f9945ac6e30ecb6"><td class="memItemLeft" align="right" valign="top"><a id="a5f50d4dcaef3d3953f9945ac6e30ecb6" name="a5f50d4dcaef3d3953f9945ac6e30ecb6"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html">DrawItemProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItemProperties</b> (size_t index) const</td></tr>
 <tr class="memdesc:a5f50d4dcaef3d3953f9945ac6e30ecb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the draw item and its properties associated with the provided index. <br /></td></tr>
@@ -169,6 +165,64 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPacketBuilder</b
 
 </div>
 </div>
+<a id="a44299649decddf567589a096455afbf0" name="a44299649decddf567589a096455afbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44299649decddf567589a096455afbf0">&#9670;&#160;</a></span>GetDrawItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> * AZ::RHI::DrawPacket::GetDrawItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a>&#160;</td>
+          <td class="paramname"><em>drawListTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DrawFilterMask&#160;</td>
+          <td class="paramname"><em>materialPipelineMask</em> = <code>DrawFilterMaskDefaultValue</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the first <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> that matches the given DrawListTag, and the given DrawFilterMask. REMARK: When more than one MaterialPipelines are active, they may have Shaders with the same DrawListTag. In these cases there will be one <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> for each MaterialPipeline. </p>
+
+</div>
+</div>
+<a id="a0dec31944629d2d4ac3c4c94a1b69225" name="a0dec31944629d2d4ac3c4c94a1b69225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dec31944629d2d4ac3c4c94a1b69225">&#9670;&#160;</a></span>GetDrawListIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">s32 AZ::RHI::DrawPacket::GetDrawListIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a>&#160;</td>
+          <td class="paramname"><em>drawListTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DrawFilterMask&#160;</td>
+          <td class="paramname"><em>materialPipelineMask</em> = <code>DrawFilterMaskDefaultValue</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the index of the first <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> that matches the given DrawListTag, and the given DrawFilterMask. REMARK: When more than one MaterialPipelines are active, they may have Shaders with the same DrawListTag. In these cases there will be one <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">DrawItem</a> for each MaterialPipeline. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/<b>DrawPacket.h</b></li>
 </ul>
@@ -178,7 +232,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPacketBuilder</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">DrawPacket</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

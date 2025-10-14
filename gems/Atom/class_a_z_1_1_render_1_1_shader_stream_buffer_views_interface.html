@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,18 +63,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3f0f12c128870f3622600652ba82d9d" id="r_ad3f0f12c128870f3622600652ba82d9d"><td class="memItemLeft" align="right" valign="top"><a id="ad3f0f12c128870f3622600652ba82d9d" name="ad3f0f12c128870f3622600652ba82d9d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html">AZ::Render::ShaderStreamBufferViewsInterface</a>, &quot;{3A80C85C-DD3A-4A1D-B564-291EB463CD0B}&quot;)</td></tr>
 <tr class="separator:ad3f0f12c128870f3622600652ba82d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b19d489b785d7cbdafda1c54f96202" id="r_a26b19d489b785d7cbdafda1c54f96202"><td class="memItemLeft" align="right" valign="top"><a id="a26b19d489b785d7cbdafda1c54f96202" name="a26b19d489b785d7cbdafda1c54f96202"></a>
-virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexBufferView</b> () const =0</td></tr>
-<tr class="memdesc:a26b19d489b785d7cbdafda1c54f96202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Shader-bindable <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> for the Vertex Indices from a particular mesh. <br /></td></tr>
-<tr class="separator:a26b19d489b785d7cbdafda1c54f96202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6486db3691055eabb900dd815be0b4a0" id="r_a6486db3691055eabb900dd815be0b4a0"><td class="memItemLeft" align="right" valign="top"><a id="a6486db3691055eabb900dd815be0b4a0" name="a6486db3691055eabb900dd815be0b4a0"></a>
-virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamBufferView</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;shaderSemantic) const =0</td></tr>
-<tr class="memdesc:a6486db3691055eabb900dd815be0b4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Shader-bindable <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> for a Vertex Stream, identifiable by @shaderSemantic, from a particular mesh. <br /></td></tr>
-<tr class="separator:a6486db3691055eabb900dd815be0b4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad63b31808a85c1c1297da247f9afc1b6" id="r_ad63b31808a85c1c1297da247f9afc1b6"><td class="memItemLeft" align="right" valign="top"><a id="ad63b31808a85c1c1297da247f9afc1b6" name="ad63b31808a85c1c1297da247f9afc1b6"></a>
-virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamBufferView</b> (const char *semanticName) const =0</td></tr>
-<tr class="memdesc:ad63b31808a85c1c1297da247f9afc1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above, but provides the convenience of finding the vertex stream by name, like "POSITION" or "UV1", etc. <br /></td></tr>
-<tr class="separator:ad63b31808a85c1c1297da247f9afc1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ab9b262f55bee6dd213e91dd62d4a5" id="r_af1ab9b262f55bee6dd213e91dd62d4a5"><td class="memItemLeft" align="right" valign="top">virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#af1ab9b262f55bee6dd213e91dd62d4a5">GetVertexIndicesBufferView</a> () const =0</td></tr>
+<tr class="separator:af1ab9b262f55bee6dd213e91dd62d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff372b10bb6498f5cb5e6f3e016e45a" id="r_abff372b10bb6498f5cb5e6f3e016e45a"><td class="memItemLeft" align="right" valign="top">virtual const AZ::RHI::IndexBufferView &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#abff372b10bb6498f5cb5e6f3e016e45a">GetVertexIndicesIndexBufferView</a> () const =0</td></tr>
+<tr class="separator:abff372b10bb6498f5cb5e6f3e016e45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbc07953403314bd9b08e32c1ffee7b" id="r_abdbc07953403314bd9b08e32c1ffee7b"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#abdbc07953403314bd9b08e32c1ffee7b">GetVertexIndicesBindlessReadIndex</a> (int deviceIndex) const =0</td></tr>
+<tr class="separator:abdbc07953403314bd9b08e32c1ffee7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319004835aebfeb2b816ef3dde49731e" id="r_a319004835aebfeb2b816ef3dde49731e"><td class="memItemLeft" align="right" valign="top">virtual AZStd::unordered_map&lt; int, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#a319004835aebfeb2b816ef3dde49731e">GetVertexIndicesBindlessReadIndex</a> () const =0</td></tr>
+<tr class="separator:a319004835aebfeb2b816ef3dde49731e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce5ea04a6cddd958894f4dbfac6edb5" id="r_a5ce5ea04a6cddd958894f4dbfac6edb5"><td class="memItemLeft" align="right" valign="top"><a id="a5ce5ea04a6cddd958894f4dbfac6edb5" name="a5ce5ea04a6cddd958894f4dbfac6edb5"></a>
+virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferView</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;shaderSemantic) const =0</td></tr>
+<tr class="memdesc:a5ce5ea04a6cddd958894f4dbfac6edb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Shader-bindable <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> for a Vertex Stream, identifiable by @shaderSemantic, from a particular mesh. <br /></td></tr>
+<tr class="separator:a5ce5ea04a6cddd958894f4dbfac6edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56155030949396e4b589ea4103b73666" id="r_a56155030949396e4b589ea4103b73666"><td class="memItemLeft" align="right" valign="top"><a id="a56155030949396e4b589ea4103b73666" name="a56155030949396e4b589ea4103b73666"></a>
+virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferView</b> (const char *semanticName) const =0</td></tr>
+<tr class="memdesc:a56155030949396e4b589ea4103b73666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above, but provides the convenience of finding the vertex stream by name, like "POSITION" or "UV1", etc. <br /></td></tr>
+<tr class="separator:a56155030949396e4b589ea4103b73666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a2216fddf3f3c543d8f7615c24de23" id="r_a38a2216fddf3f3c543d8f7615c24de23"><td class="memItemLeft" align="right" valign="top">virtual const AZ::RHI::StreamBufferView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#a38a2216fddf3f3c543d8f7615c24de23">GetStreamBufferView</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;shaderSemantic) const =0</td></tr>
+<tr class="separator:a38a2216fddf3f3c543d8f7615c24de23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae445cd0d59f273c7af2ab3f2da90ce65" id="r_ae445cd0d59f273c7af2ab3f2da90ce65"><td class="memItemLeft" align="right" valign="top"><a id="ae445cd0d59f273c7af2ab3f2da90ce65" name="ae445cd0d59f273c7af2ab3f2da90ce65"></a>
+virtual const AZ::RHI::StreamBufferView *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamBufferView</b> (const char *semanticName) const =0</td></tr>
+<tr class="memdesc:ae445cd0d59f273c7af2ab3f2da90ce65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above, but provides the convenience of finding the vertex stream by name, like "POSITION" or "UV1", etc. <br /></td></tr>
+<tr class="separator:ae445cd0d59f273c7af2ab3f2da90ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f4a9de02ea5247ed53c95df16a9392" id="r_a55f4a9de02ea5247ed53c95df16a9392"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#a55f4a9de02ea5247ed53c95df16a9392">GetStreamBufferViewBindlessReadIndex</a> (int deviceIndex, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;shaderSemantic) const =0</td></tr>
+<tr class="separator:a55f4a9de02ea5247ed53c95df16a9392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df6a0b9ce4b856e45d64e6a0b6f6c92" id="r_a4df6a0b9ce4b856e45d64e6a0b6f6c92"><td class="memItemLeft" align="right" valign="top"><a id="a4df6a0b9ce4b856e45d64e6a0b6f6c92" name="a4df6a0b9ce4b856e45d64e6a0b6f6c92"></a>
+virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamBufferViewBindlessReadIndex</b> (int deviceIndex, const char *semanticName) const =0</td></tr>
+<tr class="separator:a4df6a0b9ce4b856e45d64e6a0b6f6c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bdf1a9838f144f2697a71db1f426a0" id="r_ae0bdf1a9838f144f2697a71db1f426a0"><td class="memItemLeft" align="right" valign="top">virtual AZStd::unordered_map&lt; int, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#ae0bdf1a9838f144f2697a71db1f426a0">GetStreamBufferViewBindlessReadIndex</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;shaderSemantic) const =0</td></tr>
+<tr class="separator:ae0bdf1a9838f144f2697a71db1f426a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e36332152a1c52d714a3241917502ee" id="r_a5e36332152a1c52d714a3241917502ee"><td class="memItemLeft" align="right" valign="top"><a id="a5e36332152a1c52d714a3241917502ee" name="a5e36332152a1c52d714a3241917502ee"></a>
+virtual AZStd::unordered_map&lt; int, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamBufferViewBindlessReadIndex</b> (const char *semanticName) const =0</td></tr>
+<tr class="separator:a5e36332152a1c52d714a3241917502ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d36080b82457f94fd2fdfd288cb846" id="r_a77d36080b82457f94fd2fdfd288cb846"><td class="memItemLeft" align="right" valign="top"><a id="a77d36080b82457f94fd2fdfd288cb846" name="a77d36080b82457f94fd2fdfd288cb846"></a>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetLodIndex</b> () const =0</td></tr>
 <tr class="memdesc:a77d36080b82457f94fd2fdfd288cb846"><td class="mdescLeft">&#160;</td><td class="mdescRight">For informational purposes. Returns the LOD Index of the Mesh. <br /></td></tr>
@@ -83,6 +103,204 @@ virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetLodInd
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetMeshIndex</b> () const =0</td></tr>
 <tr class="separator:a3d2ee89a1a2de7b64745844b24ccafb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a38a2216fddf3f3c543d8f7615c24de23" name="a38a2216fddf3f3c543d8f7615c24de23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a2216fddf3f3c543d8f7615c24de23">&#9670;&#160;</a></span>GetStreamBufferView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const AZ::RHI::StreamBufferView * AZ::Render::ShaderStreamBufferViewsInterface::GetStreamBufferView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;&#160;</td>
+          <td class="paramname"><em>shaderSemantic</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the StreamBufferView for a Vertex Stream, identifiable by @shaderSemantic, from a particular mesh. This is useful to know the actual byte offset, byte count, etc related to the sub mesh(Mesh Index). if the semantic is not fund, it returns nullptr. </p>
+
+</div>
+</div>
+<a id="ae0bdf1a9838f144f2697a71db1f426a0" name="ae0bdf1a9838f144f2697a71db1f426a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0bdf1a9838f144f2697a71db1f426a0">&#9670;&#160;</a></span>GetStreamBufferViewBindlessReadIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::unordered_map&lt; int, uint32_t &gt; AZ::Render::ShaderStreamBufferViewsInterface::GetStreamBufferViewBindlessReadIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;&#160;</td>
+          <td class="paramname"><em>shaderSemantic</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as above, but conveniently returns all the indices across all available devices in an unordered_map. </p>
+
+</div>
+</div>
+<a id="a55f4a9de02ea5247ed53c95df16a9392" name="a55f4a9de02ea5247ed53c95df16a9392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f4a9de02ea5247ed53c95df16a9392">&#9670;&#160;</a></span>GetStreamBufferViewBindlessReadIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t AZ::Render::ShaderStreamBufferViewsInterface::GetStreamBufferViewBindlessReadIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">AZ::RHI::ShaderSemantic</a> &amp;&#160;</td>
+          <td class="paramname"><em>shaderSemantic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A shortcut to get the Read Index from the BindlessSrg for a particular BufferView identifiable by its shader semantic. Alternatively, you could get the same index by getting it directly from the <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> returned by <a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html#a5ce5ea04a6cddd958894f4dbfac6edb5" title="Returns the Shader-bindable RHI::BufferView for a Vertex Stream, identifiable by @shaderSemantic,...">GetBufferView()</a>. </p>
+
+</div>
+</div>
+<a id="a319004835aebfeb2b816ef3dde49731e" name="a319004835aebfeb2b816ef3dde49731e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319004835aebfeb2b816ef3dde49731e">&#9670;&#160;</a></span>GetVertexIndicesBindlessReadIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::unordered_map&lt; int, uint32_t &gt; AZ::Render::ShaderStreamBufferViewsInterface::GetVertexIndicesBindlessReadIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as above, but conveniently returns all the indices across all available devices in an unordered_map. </p>
+
+</div>
+</div>
+<a id="abdbc07953403314bd9b08e32c1ffee7b" name="abdbc07953403314bd9b08e32c1ffee7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdbc07953403314bd9b08e32c1ffee7b">&#9670;&#160;</a></span>GetVertexIndicesBindlessReadIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t AZ::Render::ShaderStreamBufferViewsInterface::GetVertexIndicesBindlessReadIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A shortcut to get the Read Index from the BindlessSrg for the IndexBufferView. Alternatively, you could get the same index by getting it directly from the <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> returned by GetIndexBufferView() </p>
+
+</div>
+</div>
+<a id="af1ab9b262f55bee6dd213e91dd62d4a5" name="af1ab9b262f55bee6dd213e91dd62d4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ab9b262f55bee6dd213e91dd62d4a5">&#9670;&#160;</a></span>GetVertexIndicesBufferView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const AZ::RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">AZ::RHI::BufferView</a> &gt; &amp; AZ::Render::ShaderStreamBufferViewsInterface::GetVertexIndicesBufferView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the Shader-bindable <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> for the Vertex Indices from a particular mesh. REMARK: If the BindlessSrg is enabled, which typically is, this buffer view is already bound as a ByteAddressBuffer </p>
+
+</div>
+</div>
+<a id="abff372b10bb6498f5cb5e6f3e016e45a" name="abff372b10bb6498f5cb5e6f3e016e45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff372b10bb6498f5cb5e6f3e016e45a">&#9670;&#160;</a></span>GetVertexIndicesIndexBufferView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const AZ::RHI::IndexBufferView &amp; AZ::Render::ShaderStreamBufferViewsInterface::GetVertexIndicesIndexBufferView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the IndexBufferView from the Vertex Indices, which is useful to know the actual byte offset, byte count, etc related to the sub mesh(Mesh Index). <br  />
+ </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Mesh/<b>StreamBufferViewsBuilderInterface.h</b></li>
 </ul>
@@ -92,7 +310,7 @@ virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetMeshIn
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_shader_stream_buffer_views_interface.html">ShaderStreamBufferViewsInterface</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -109,6 +109,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsQueuedForCompile</b
 <tr class="memitem:ad3d63d35b11aebf3173dcc92bfd24224 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_ad3d63d35b11aebf3173dcc92bfd24224"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a>, &quot;{613AED98-48FD-4453-98F8-6956D2133489}&quot;, MultiDeviceObject)</td></tr>
 <tr class="separator:ad3d63d35b11aebf3173dcc92bfd24224 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a13cc1b5bc3e320a57614ae0b18960 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_a13a13cc1b5bc3e320a57614ae0b18960"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RHI_MULTI_DEVICE_OBJECT_GETTER</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">Resource</a>)</td></tr>
+<tr class="separator:a13a13cc1b5bc3e320a57614ae0b18960 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b60cc6d03bd5ebe07ac9eef62e80554 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_a4b60cc6d03bd5ebe07ac9eef62e80554"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAttachment</b> () const</td></tr>
 <tr class="memdesc:a4b60cc6d03bd5ebe07ac9eef62e80554 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the resource is currently an attachment on a frame graph. <br /></td></tr>
@@ -126,6 +129,16 @@ const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_attachment.html">FrameAt
 <tr class="separator:a863bf26d10bb9e8dd0d21c7fa07f3be0 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafbe70601546c2f72a1ef33b68cb4745 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_aafbe70601546c2f72a1ef33b68cb4745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html#aafbe70601546c2f72a1ef33b68cb4745">InvalidateViews</a> ()</td></tr>
 <tr class="separator:aafbe70601546c2f72a1ef33b68cb4745 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada948c6e7e01eafc2eb1a0abeda575fb inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_ada948c6e7e01eafc2eb1a0abeda575fb"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInResourceCache</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">ImageViewDescriptor</a> &amp;imageViewDescriptor)</td></tr>
+<tr class="memdesc:ada948c6e7e01eafc2eb1a0abeda575fb inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html">ResourceView</a> is in the cache. <br /></td></tr>
+<tr class="separator:ada948c6e7e01eafc2eb1a0abeda575fb inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e08ba3013d68b791185c49fced2b94 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_a85e08ba3013d68b791185c49fced2b94"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInResourceCache</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html">BufferViewDescriptor</a> &amp;bufferViewDescriptor)</td></tr>
+<tr class="separator:a85e08ba3013d68b791185c49fced2b94 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebaa2dc5e3c0456c244e5c23c8a93d56 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_aebaa2dc5e3c0456c244e5c23c8a93d56"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EraseResourceView</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_view.html">ResourceView</a> *resourceView) const</td></tr>
+<tr class="separator:aebaa2dc5e3c0456c244e5c23c8a93d56 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">AZ::RHI::MultiDeviceObject</a></td></tr>
 <tr class="memitem:aa5ec0e3d35e9e6f6106d00cc161b6efd inherit pub_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object" id="r_aa5ec0e3d35e9e6f6106d00cc161b6efd"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">MultiDeviceObject</a>, &quot;{17D34F71-944C-4AF5-9823-627474C4C0A6}&quot;, Object)</td></tr>
@@ -167,6 +180,14 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object" id="r_a70a688c1417dc89244f70a41f8717196"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td class="memTemplItemLeft" align="right" valign="top">static AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html#a70a688c1417dc89244f70a41f8717196">IterateDevices</a> (MultiDevice::DeviceMask deviceMask, T callback)</td></tr>
 <tr class="separator:a70a688c1417dc89244f70a41f8717196 inherit pub_static_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html">AZ::RHI::Resource</a></td></tr>
+<tr class="memitem:afcaba3f2de4e9de3b60490c86743a8b3 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_afcaba3f2de4e9de3b60490c86743a8b3"><td class="memItemLeft" align="right" valign="top">
+Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_view.html">ImageView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceView</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">ImageViewDescriptor</a> &amp;imageViewDescriptor) const</td></tr>
+<tr class="memdesc:afcaba3f2de4e9de3b60490c86743a8b3 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns view based on the descriptor and keeps a raw pointer in a local cache. <br /></td></tr>
+<tr class="separator:afcaba3f2de4e9de3b60490c86743a8b3 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dee916b15149d412b20c85234a7537b inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource" id="r_a3dee916b15149d412b20c85234a7537b"><td class="memItemLeft" align="right" valign="top">
+Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceView</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html">BufferViewDescriptor</a> &amp;bufferViewDescriptor) const</td></tr>
+<tr class="separator:a3dee916b15149d412b20c85234a7537b inherit pro_methods_class_a_z_1_1_r_h_i_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_multi_device_object.html">AZ::RHI::MultiDeviceObject</a></td></tr>
 <tr class="memitem:a45c4c2f2b5d303d8662ccd440648bf6f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_multi_device_object" id="r_a45c4c2f2b5d303d8662ccd440648bf6f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (MultiDevice::DeviceMask deviceMask)</td></tr>
@@ -274,7 +295,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html">ShaderResourceGroup</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

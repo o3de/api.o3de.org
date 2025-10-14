@@ -17,6 +17,7 @@ var class_a_z_1_1_r_p_i_1_1_material_type_source_data =
     ] ],
     [ "AddProperty", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a9c9942f7d5b7387a56819c173b90a036", null ],
     [ "AddPropertyGroup", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#aa804aa13178fba4788ee7edb7f353119", null ],
+    [ "CreateMaterialShaderParameterLayout", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#aab9577f03411ebe3484109364335d124", null ],
     [ "CreateMaterialTypeAsset", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ac0de3ea5d97447889626a8a8c84b7c5f", null ],
     [ "EnumerateProperties", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ae882d05b620f58afe9de2294e29b6678", null ],
     [ "EnumeratePropertyGroups", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a4a72037c44990b05067a80c66c20102a", null ],
@@ -34,6 +35,7 @@ var class_a_z_1_1_r_p_i_1_1_material_type_source_data =
     [ "m_lightingModel", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#af3fc40c9025112a2b2368c1747aab00c", null ],
     [ "m_materialFunctorSourceData", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad98480bdf5e00aa6df5ad60d07d77688", null ],
     [ "m_materialShaderCode", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad1facdc7c4c60efb300d0c7f607d6189", null ],
+    [ "m_materialShaderDefines", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#ad4e52fed9152880c84f8cb5b2e0df41f", null ],
     [ "m_pipelineData", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#afeb8198df91d8faabe30d6d9b4d47278", null ],
     [ "m_shaderCollection", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#aa9f1270ebb4a567c222f66cde3b4afa3", null ],
     [ "m_version", "class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a0f7cd9a911187cc1f9421a90752117e9", null ]

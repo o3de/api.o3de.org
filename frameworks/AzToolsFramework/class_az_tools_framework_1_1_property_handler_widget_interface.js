@@ -6,6 +6,7 @@ var class_az_tools_framework_1_1_property_handler_widget_interface =
     [ "GetWidget", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a174e1bd0e10db903c638658dc48edbff", null ],
     [ "IsDefaultHandler", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a473278dba9ed608ba745db166319a74a", null ],
     [ "ResetToDefaults", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a971f0ee42dd1584800ece0fdcbdc8fe8", null ],
+    [ "SetFilter", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a3a08f9f8e5b31c098cb0e71334909bcd", null ],
     [ "SetValueFromDom", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a4b927a9124d67c9d9ebf76fda893329f", null ],
     [ "ShouldHandleType", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a0ce42acfb1ce1f762279b1846faabd42", null ]
 ];

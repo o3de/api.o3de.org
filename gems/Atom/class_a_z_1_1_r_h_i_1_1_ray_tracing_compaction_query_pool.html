@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -79,9 +79,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2348f7121269ae38f1e083d714374e1" id="r_ae2348f7121269ae38f1e083d714374e1"><td class="memItemLeft" align="right" valign="top"><a id="ae2348f7121269ae38f1e083d714374e1" name="ae2348f7121269ae38f1e083d714374e1"></a>
 ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_ray_tracing_compaction_query_pool_descriptor.html">RayTracingCompactionQueryPoolDescriptor</a> desc)</td></tr>
 <tr class="separator:ae2348f7121269ae38f1e083d714374e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af844642523463d9f04865bc66a755073" id="r_af844642523463d9f04865bc66a755073"><td class="memItemLeft" align="right" valign="top"><a id="af844642523463d9f04865bc66a755073" name="af844642523463d9f04865bc66a755073"></a>
-ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>InitQuery</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_compaction_query.html">RayTracingCompactionQuery</a> *query)</td></tr>
-<tr class="separator:af844642523463d9f04865bc66a755073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78472eaa69c65d40f5a4919395eb3b96" id="r_a78472eaa69c65d40f5a4919395eb3b96"><td class="memItemLeft" align="right" valign="top"><a id="a78472eaa69c65d40f5a4919395eb3b96" name="a78472eaa69c65d40f5a4919395eb3b96"></a>
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>InitQuery</b> (MultiDevice::DeviceMask deviceMask, <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_compaction_query.html">RayTracingCompactionQuery</a> *query)</td></tr>
+<tr class="separator:a78472eaa69c65d40f5a4919395eb3b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f444bd1011d28cfe91df2432408b34" id="r_a28f444bd1011d28cfe91df2432408b34"><td class="memItemLeft" align="right" valign="top"><a id="a28f444bd1011d28cfe91df2432408b34" name="a28f444bd1011d28cfe91df2432408b34"></a>
+ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>AddDeviceToQuery</b> (int deviceIndex, <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_compaction_query.html">RayTracingCompactionQuery</a> *query)</td></tr>
+<tr class="separator:a28f444bd1011d28cfe91df2432408b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e3c54e613bbda7f256407bb36b39bc" id="r_a84e3c54e613bbda7f256407bb36b39bc"><td class="memItemLeft" align="right" valign="top"><a id="a84e3c54e613bbda7f256407bb36b39bc" name="a84e3c54e613bbda7f256407bb36b39bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDeviceFromQuery</b> (int deviceIndex, <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_compaction_query.html">RayTracingCompactionQuery</a> *query)</td></tr>
+<tr class="separator:a84e3c54e613bbda7f256407bb36b39bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed619768fb5f03686349b1f2f8612c8e" id="r_aed619768fb5f03686349b1f2f8612c8e"><td class="memItemLeft" align="right" valign="top"><a id="aed619768fb5f03686349b1f2f8612c8e" name="aed619768fb5f03686349b1f2f8612c8e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginFrame</b> (int frame)</td></tr>
 <tr class="separator:aed619768fb5f03686349b1f2f8612c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +177,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_compaction_query_pool.html">RayTracingCompactionQueryPool</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

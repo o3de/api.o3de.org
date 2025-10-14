@@ -11,7 +11,6 @@ var hierarchy =
           [ "CopyDependencyBuilder::FontBuilderWorker", "class_copy_dependency_builder_1_1_font_builder_worker.html", null ]
         ] ]
       ] ],
-      [ "LevelBuilder::LevelBuilderWorker", "class_level_builder_1_1_level_builder_worker.html", null ],
       [ "LuaBuilder::LuaBuilderWorker", "class_lua_builder_1_1_lua_builder_worker.html", null ],
       [ "SliceBuilder::SliceBuilderWorker", "class_slice_builder_1_1_slice_builder_worker.html", null ],
       [ "TranslationBuilder::TranslationBuilderWorker", "class_translation_builder_1_1_translation_builder_worker.html", null ]
@@ -63,7 +62,6 @@ var hierarchy =
     [ "AZ::Component", null, [
       [ "BenchmarkAssetBuilder::BenchmarkAssetBuilderComponent", "class_benchmark_asset_builder_1_1_benchmark_asset_builder_component.html", null ],
       [ "CopyDependencyBuilder::CopyDependencyBuilderComponent", "class_copy_dependency_builder_1_1_copy_dependency_builder_component.html", null ],
-      [ "LevelBuilder::LevelBuilderComponent", "class_level_builder_1_1_level_builder_component.html", null ],
       [ "LmbrCentral::AssetSystemDebugComponent", "class_lmbr_central_1_1_asset_system_debug_component.html", null ],
       [ "LmbrCentral::AudioAreaEnvironmentComponent", "class_lmbr_central_1_1_audio_area_environment_component.html", null ],
       [ "LmbrCentral::AudioEnvironmentComponent", "class_lmbr_central_1_1_audio_environment_component.html", null ],
@@ -98,10 +96,8 @@ var hierarchy =
       [ "LmbrCentral::LookAtComponent", "class_lmbr_central_1_1_look_at_component.html", null ],
       [ "LmbrCentral::PolygonPrismShapeComponent", "class_lmbr_central_1_1_polygon_prism_shape_component.html", null ],
       [ "LmbrCentral::QuadShapeComponent", "class_lmbr_central_1_1_quad_shape_component.html", null ],
-      [ "LmbrCentral::RandomTimedSpawnerComponent", "class_lmbr_central_1_1_random_timed_spawner_component.html", null ],
       [ "LmbrCentral::ReferenceShapeComponent", "class_lmbr_central_1_1_reference_shape_component.html", null ],
       [ "LmbrCentral::SimpleStateComponent", "class_lmbr_central_1_1_simple_state_component.html", null ],
-      [ "LmbrCentral::SpawnerComponent", "class_lmbr_central_1_1_spawner_component.html", null ],
       [ "LmbrCentral::SphereShapeComponent", "class_lmbr_central_1_1_sphere_shape_component.html", null ],
       [ "LmbrCentral::SplineComponent", "class_lmbr_central_1_1_spline_component.html", null ],
       [ "LmbrCentral::TagComponent", "class_lmbr_central_1_1_tag_component.html", null ],
@@ -137,14 +133,11 @@ var hierarchy =
       [ "LmbrCentral::LookAtComponentRequests", "class_lmbr_central_1_1_look_at_component_requests.html", null ],
       [ "LmbrCentral::PolygonPrismShapeComponentNotification", "class_lmbr_central_1_1_polygon_prism_shape_component_notification.html", null ],
       [ "LmbrCentral::QuadShapeComponentRequests", "class_lmbr_central_1_1_quad_shape_component_requests.html", null ],
-      [ "LmbrCentral::RandomTimedSpawnerComponentRequests", "class_lmbr_central_1_1_random_timed_spawner_component_requests.html", null ],
       [ "LmbrCentral::ReferenceShapeRequests", "class_lmbr_central_1_1_reference_shape_requests.html", null ],
       [ "LmbrCentral::ShapeComponentNotifications", "class_lmbr_central_1_1_shape_component_notifications.html", null ],
       [ "LmbrCentral::SimpleStateComponentNotifications", "class_lmbr_central_1_1_simple_state_component_notifications.html", null ],
       [ "LmbrCentral::SimpleStateComponentRequests", "class_lmbr_central_1_1_simple_state_component_requests.html", null ],
       [ "LmbrCentral::SkeletalHierarchyRequests", "class_lmbr_central_1_1_skeletal_hierarchy_requests.html", null ],
-      [ "LmbrCentral::SpawnerComponentNotifications", "class_lmbr_central_1_1_spawner_component_notifications.html", null ],
-      [ "LmbrCentral::SpawnerComponentRequests", "class_lmbr_central_1_1_spawner_component_requests.html", null ],
       [ "LmbrCentral::SphereShapeComponentRequests", "class_lmbr_central_1_1_sphere_shape_component_requests.html", null ],
       [ "LmbrCentral::SplineAttributeNotifications", "class_lmbr_central_1_1_spline_attribute_notifications.html", null ],
       [ "LmbrCentral::SplineComponentNotification", "class_lmbr_central_1_1_spline_component_notification.html", null ],
@@ -162,11 +155,7 @@ var hierarchy =
         [ "LmbrCentral::PolygonPrismShapeConfig", "class_lmbr_central_1_1_polygon_prism_shape_config.html", null ],
         [ "LmbrCentral::QuadShapeConfig", "class_lmbr_central_1_1_quad_shape_config.html", null ],
         [ "LmbrCentral::SphereShapeConfig", "class_lmbr_central_1_1_sphere_shape_config.html", null ]
-      ] ],
-      [ "LmbrCentral::SpawnerConfig", "class_lmbr_central_1_1_spawner_config.html", null ]
-    ] ],
-    [ "AZ::Data::AssetBus::Handler", null, [
-      [ "LmbrCentral::SpawnerComponent", "class_lmbr_central_1_1_spawner_component.html", null ]
+      ] ]
     ] ],
     [ "AZ::Data::AssetBus::MultiHandler", null, [
       [ "LmbrCentral::DependencyMonitor", "class_lmbr_central_1_1_dependency_monitor.html", null ]
@@ -206,7 +195,6 @@ var hierarchy =
       [ "LmbrCentral::AudioMultiPositionComponent", "class_lmbr_central_1_1_audio_multi_position_component.html", null ],
       [ "LmbrCentral::CompoundShapeComponent", "class_lmbr_central_1_1_compound_shape_component.html", null ],
       [ "LmbrCentral::DependencyMonitor", "class_lmbr_central_1_1_dependency_monitor.html", null ],
-      [ "LmbrCentral::SpawnerComponent", "class_lmbr_central_1_1_spawner_component.html", null ],
       [ "LmbrCentral::State", "class_lmbr_central_1_1_state.html", null ]
     ] ],
     [ "AZ::EntityComponentBus", null, [
@@ -229,8 +217,7 @@ var hierarchy =
     ] ],
     [ "AZ::TickBus::Handler", null, [
       [ "LmbrCentral::EditorLookAtComponent", "class_lmbr_central_1_1_editor_look_at_component.html", null ],
-      [ "LmbrCentral::LookAtComponent", "class_lmbr_central_1_1_look_at_component.html", null ],
-      [ "LmbrCentral::RandomTimedSpawnerComponent", "class_lmbr_central_1_1_random_timed_spawner_component.html", null ]
+      [ "LmbrCentral::LookAtComponent", "class_lmbr_central_1_1_look_at_component.html", null ]
     ] ],
     [ "AZ::TransformNotificationBus::Handler", null, [
       [ "LmbrCentral::AudioProxyComponent", "class_lmbr_central_1_1_audio_proxy_component.html", null ],
@@ -308,9 +295,6 @@ var hierarchy =
     [ "AzFramework::LevelSystemLifecycleNotificationBus::Handler", null, [
       [ "LmbrCentral::AudioSystemComponent", "class_lmbr_central_1_1_audio_system_component.html", null ]
     ] ],
-    [ "AzFramework::SliceInstantiationResultBus::MultiHandler", null, [
-      [ "LmbrCentral::SpawnerComponent", "class_lmbr_central_1_1_spawner_component.html", null ]
-    ] ],
     [ "AZStd::hash< AZ::GameplayNotificationId >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_gameplay_notification_id_01_4.html", null ],
     [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
       [ "LmbrCentral::LmbrCentralEditorModule", "class_lmbr_central_1_1_lmbr_central_editor_module.html", null ]
@@ -345,8 +329,6 @@ var hierarchy =
       [ "LmbrCentral::EditorBaseShapeComponent", "class_lmbr_central_1_1_editor_base_shape_component.html", null ],
       [ "LmbrCentral::EditorCommentComponent", "class_lmbr_central_1_1_editor_comment_component.html", null ],
       [ "LmbrCentral::EditorLookAtComponent", "class_lmbr_central_1_1_editor_look_at_component.html", null ],
-      [ "LmbrCentral::EditorRandomTimedSpawnerComponent", "class_lmbr_central_1_1_editor_random_timed_spawner_component.html", null ],
-      [ "LmbrCentral::EditorSpawnerComponent", "class_lmbr_central_1_1_editor_spawner_component.html", null ],
       [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ],
       [ "LmbrCentral::EditorTagComponent", "class_lmbr_central_1_1_editor_tag_component.html", null ],
       [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ]
@@ -442,9 +424,6 @@ var hierarchy =
     [ "LmbrCentral::IntersectionTestDataCache< ShapeConfiguration >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::OpenBundleInfo", "struct_lmbr_central_1_1_open_bundle_info.html", null ],
     [ "LmbrCentral::PolygonPrismMesh", "struct_lmbr_central_1_1_polygon_prism_mesh.html", null ],
-    [ "LmbrCentral::RandomTimedSpawnerConfiguration", "class_lmbr_central_1_1_random_timed_spawner_configuration.html", [
-      [ "LmbrCentral::EditorRandomTimedSpawnerConfiguration", "class_lmbr_central_1_1_editor_random_timed_spawner_configuration.html", null ]
-    ] ],
     [ "LmbrCentral::ReflectScriptableEvents", "struct_lmbr_central_1_1_reflect_scriptable_events.html", null ],
     [ "LmbrCentral::ShapeComponentGeneric", "struct_lmbr_central_1_1_shape_component_generic.html", null ],
     [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [
@@ -476,10 +455,6 @@ var hierarchy =
     ] ],
     [ "QuadShapeComponentRequestBus::Handler", null, [
       [ "LmbrCentral::QuadShape", "class_lmbr_central_1_1_quad_shape.html", null ]
-    ] ],
-    [ "RandomTimedSpawnerComponentRequestBus::Handler", null, [
-      [ "LmbrCentral::EditorRandomTimedSpawnerComponent", "class_lmbr_central_1_1_editor_random_timed_spawner_component.html", null ],
-      [ "LmbrCentral::RandomTimedSpawnerComponent", "class_lmbr_central_1_1_random_timed_spawner_component.html", null ]
     ] ],
     [ "ReferenceShapeRequestBus::Handler", null, [
       [ "LmbrCentral::ReferenceShapeComponent", "class_lmbr_central_1_1_reference_shape_component.html", null ]
@@ -513,9 +488,6 @@ var hierarchy =
       [ "LmbrCentral::SimpleStateComponent", "class_lmbr_central_1_1_simple_state_component.html", null ]
     ] ],
     [ "SliceBuilder::SliceBuilderSettings", "class_slice_builder_1_1_slice_builder_settings.html", null ],
-    [ "SpawnerComponentRequestBus::Handler", null, [
-      [ "LmbrCentral::SpawnerComponent", "class_lmbr_central_1_1_spawner_component.html", null ]
-    ] ],
     [ "SphereShapeComponentRequestsBus::Handler", null, [
       [ "LmbrCentral::SphereShape", "class_lmbr_central_1_1_sphere_shape.html", null ]
     ] ],

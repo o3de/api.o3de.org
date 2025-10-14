@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -83,6 +83,12 @@ RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (
 <tr class="memitem:a076e7af15117ba392d245c7cc5700e93" id="r_a076e7af15117ba392d245c7cc5700e93"><td class="memItemLeft" align="right" valign="top"><a id="a076e7af15117ba392d245c7cc5700e93" name="a076e7af15117ba392d245c7cc5700e93"></a>
 RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (<a class="el" href="class_a_z_1_1_vulkan_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_a_z_1_1_vulkan_1_1_buffer_memory_1_1_descriptor.html">Descriptor</a> &amp;descriptor)</td></tr>
 <tr class="separator:a076e7af15117ba392d245c7cc5700e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5930c2134c7e5da021f209840c03f00" id="r_ab5930c2134c7e5da021f209840c03f00"><td class="memItemLeft" align="right" valign="top"><a id="ab5930c2134c7e5da021f209840c03f00" name="ab5930c2134c7e5da021f209840c03f00"></a>
+RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>InitWithExternalHostMemory</b> (<a class="el" href="class_a_z_1_1_vulkan_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_a_z_1_1_vulkan_1_1_buffer_memory_1_1_descriptor.html">Descriptor</a> &amp;descriptor)</td></tr>
+<tr class="separator:ab5930c2134c7e5da021f209840c03f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e50465d7873f3189dcbd534640b580" id="r_a21e50465d7873f3189dcbd534640b580"><td class="memItemLeft" align="right" valign="top"><a id="a21e50465d7873f3189dcbd534640b580" name="a21e50465d7873f3189dcbd534640b580"></a>
+RHI::ResultCode&#160;</td><td class="memItemRight" valign="bottom"><b>InitWithExternalHostMemory</b> (<a class="el" href="class_a_z_1_1_vulkan_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_a_z_1_1_vulkan_1_1_buffer_memory_1_1_descriptor.html">Descriptor</a> &amp;descriptor, void *allocatedHostMemory, size_t allocatedMemoryHostSize)</td></tr>
+<tr class="separator:a21e50465d7873f3189dcbd534640b580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6f65a4c2d56948275ae9e5ef7a1ba5" id="r_a1d6f65a4c2d56948275ae9e5ef7a1ba5"><td class="memItemLeft" align="right" valign="top"><a id="a1d6f65a4c2d56948275ae9e5ef7a1ba5" name="a1d6f65a4c2d56948275ae9e5ef7a1ba5"></a>
 CpuVirtualAddress&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b> (size_t offset, size_t size, RHI::HostMemoryAccess hostAccess)</td></tr>
 <tr class="separator:a1d6f65a4c2d56948275ae9e5ef7a1ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +119,12 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () cons
 <tr class="memitem:a789495b3346265cf70ce2f23f362683b" id="r_a789495b3346265cf70ce2f23f362683b"><td class="memItemLeft" align="right" valign="top"><a id="a789495b3346265cf70ce2f23f362683b" name="a789495b3346265cf70ce2f23f362683b"></a>
 const <a class="el" href="class_a_z_1_1_vulkan_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryView</b> () const</td></tr>
 <tr class="separator:a789495b3346265cf70ce2f23f362683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88145f3584f0b12424795578d28d5c6" id="r_ab88145f3584f0b12424795578d28d5c6"><td class="memItemLeft" align="right" valign="top"><a id="ab88145f3584f0b12424795578d28d5c6" name="ab88145f3584f0b12424795578d28d5c6"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocatedHostMemory</b> () const</td></tr>
+<tr class="separator:ab88145f3584f0b12424795578d28d5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4886005ccf88f905d82cd7238adf12c" id="r_aa4886005ccf88f905d82cd7238adf12c"><td class="memItemLeft" align="right" valign="top"><a id="aa4886005ccf88f905d82cd7238adf12c" name="aa4886005ccf88f905d82cd7238adf12c"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocatedHostMemorySize</b> () const</td></tr>
+<tr class="separator:aa4886005ccf88f905d82cd7238adf12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_device_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">AZ::RHI::DeviceObject</a></td></tr>
 <tr class="memitem:af8ebb6e0733cffe3f3d2b61f8c9b47df inherit pub_methods_class_a_z_1_1_r_h_i_1_1_device_object" id="r_af8ebb6e0733cffe3f3d2b61f8c9b47df"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">DeviceObject</a>, &quot;{17D34F71-944C-4AF5-9823-627474C4C0A6}&quot;, Object)</td></tr>
@@ -178,7 +190,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Vulkan</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_vulkan_1_1_buffer_memory.html">BufferMemory</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:00 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

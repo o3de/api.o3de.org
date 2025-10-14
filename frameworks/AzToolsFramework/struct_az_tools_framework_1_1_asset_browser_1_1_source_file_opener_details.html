@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,9 +71,9 @@ typedef AZStd::function&lt; void(const char *, const AZ::Uuid &amp;)&gt;&#160;</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aba95c3f3a92da384f4b30db11e104b81" id="r_aba95c3f3a92da384f4b30db11e104b81"><td class="memItemLeft" align="right" valign="top"><a id="aba95c3f3a92da384f4b30db11e104b81" name="aba95c3f3a92da384f4b30db11e104b81"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileOpenerDetails</b> (const char *identifier, const char *displayText, QIcon icon, <a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a5cdc16fb29d161ed521721f73c83a1ad">SourceFileOpenerFunctionType</a> functionToCall)</td></tr>
-<tr class="separator:aba95c3f3a92da384f4b30db11e104b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333508ef5f11246fdf12df62d1de0d35" id="r_a333508ef5f11246fdf12df62d1de0d35"><td class="memItemLeft" align="right" valign="top"><a id="a333508ef5f11246fdf12df62d1de0d35" name="a333508ef5f11246fdf12df62d1de0d35"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileOpenerDetails</b> (const char *identifier, const char *displayText, QIcon icon, <a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a5cdc16fb29d161ed521721f73c83a1ad">SourceFileOpenerFunctionType</a> functionToCall, bool isPrioritized=false)</td></tr>
+<tr class="separator:a333508ef5f11246fdf12df62d1de0d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -89,6 +89,8 @@ QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconToUse</b></td>
 <tr class="separator:abb3a683618109ef195ab63a7d0cef5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a275671517a0aad92bed38f08114a35" id="r_a7a275671517a0aad92bed38f08114a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a5cdc16fb29d161ed521721f73c83a1ad">SourceFileOpenerFunctionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a7a275671517a0aad92bed38f08114a35">m_opener</a></td></tr>
 <tr class="separator:a7a275671517a0aad92bed38f08114a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283f2335b2a10a8a420f0013fae522b3" id="r_a283f2335b2a10a8a420f0013fae522b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html#a283f2335b2a10a8a420f0013fae522b3">m_isPrioritized</a> = false</td></tr>
+<tr class="separator:a283f2335b2a10a8a420f0013fae522b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This struct is used to respond about being able to open source files. See AssetBrowserInteractionNotifications::OpenSourceFileInEditor below </p>
@@ -105,6 +107,21 @@ QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconToUse</b></td>
       </table>
 </div><div class="memdoc">
 <p>m_displayText is used when more than one listener offers to open this kind of file and we need the user to pick which one they want. They will be offered all the available openers in a menu which shows this text, and the one they pick will get its SourceFileOpenerFunctionType called. </p>
+
+</div>
+</div>
+<a id="a283f2335b2a10a8a420f0013fae522b3" name="a283f2335b2a10a8a420f0013fae522b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283f2335b2a10a8a420f0013fae522b3">&#9670;&#160;</a></span>m_isPrioritized</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::AssetBrowser::SourceFileOpenerDetails::m_isPrioritized = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indicates whether this opener should be prioritized when multiple openers are available If set to true, this opener will take precedence over others </p>
 
 </div>
 </div>
@@ -132,7 +149,7 @@ QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconToUse</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>AssetBrowser</b></li><li class="navelem"><a class="el" href="struct_az_tools_framework_1_1_asset_browser_1_1_source_file_opener_details.html">SourceFileOpenerDetails</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:54:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:14:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

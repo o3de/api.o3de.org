@@ -12,6 +12,7 @@ var class_phys_x_1_1_articulation_joint_requests =
     [ "GetMaxJointVelocity", "class_phys_x_1_1_articulation_joint_requests.html#aa7d2c99fc8fbe412f7561f5ab18a1dbc", null ],
     [ "GetMotion", "class_phys_x_1_1_articulation_joint_requests.html#a66c77bc76ea4de08dc8a78736bab0840", null ],
     [ "IsAccelerationDrive", "class_phys_x_1_1_articulation_joint_requests.html#a82990a0ef6535ceac7b908bffeb2d751", null ],
+    [ "IsRootArticulation", "class_phys_x_1_1_articulation_joint_requests.html#a2094d704b917a07f7280ca8cb10dccd3", null ],
     [ "SetDriveDamping", "class_phys_x_1_1_articulation_joint_requests.html#abffb8895b524a6a40d6166bd1104899a", null ],
     [ "SetDriveStiffness", "class_phys_x_1_1_articulation_joint_requests.html#add1ca5d8c4c10121c48b1d79f8ef22b9", null ],
     [ "SetDriveTarget", "class_phys_x_1_1_articulation_joint_requests.html#a0b28cf94550d1ff0a2820014dc284269", null ],

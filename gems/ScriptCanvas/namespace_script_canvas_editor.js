@@ -226,7 +226,7 @@ var namespace_script_canvas_editor =
     [ "StateTraits", "struct_script_canvas_editor_1_1_state_traits.html", null ],
     [ "StatisticsDialog", "class_script_canvas_editor_1_1_statistics_dialog.html", "class_script_canvas_editor_1_1_statistics_dialog" ],
     [ "SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
-    [ "SystemRequests", "class_script_canvas_editor_1_1_system_requests.html", null ],
+    [ "SystemRequests", "class_script_canvas_editor_1_1_system_requests.html", "class_script_canvas_editor_1_1_system_requests" ],
     [ "TargetManagerModel", "class_script_canvas_editor_1_1_target_manager_model.html", null ],
     [ "TraceMessageComponent", "class_script_canvas_editor_1_1_trace_message_component.html", null ],
     [ "TraceSuppressionRequests", "class_script_canvas_editor_1_1_trace_suppression_requests.html", null ],

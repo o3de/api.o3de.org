@@ -9,6 +9,16 @@ var hierarchy =
     [ "AssetRegistryRequestBus::MultiHandler", null, [
       [ "ScriptCanvas::AssetRegistry", "class_script_canvas_1_1_asset_registry.html", null ]
     ] ],
+    [ "AtomToolsFramework::AtomToolsDocument", null, [
+      [ "ScriptCanvas::ScriptCanvasDocument", "class_script_canvas_1_1_script_canvas_document.html", null ]
+    ] ],
+    [ "AtomToolsFramework::AtomToolsDocumentApplication", null, [
+      [ "ScriptCanvas::ScriptCanvasApplication", "class_script_canvas_1_1_script_canvas_application.html", null ]
+    ] ],
+    [ "AtomToolsFramework::AtomToolsDocumentNotificationBus::Handler", null, [
+      [ "ScriptCanvas::ScriptCanvasApplication", "class_script_canvas_1_1_script_canvas_application.html", null ],
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
     [ "AutomationRequestBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
     ] ],
@@ -204,6 +214,7 @@ var hierarchy =
       [ "ScriptCanvas::NodelingNotifications", "class_script_canvas_1_1_nodeling_notifications.html", null ],
       [ "ScriptCanvas::NodelingRequests", "class_script_canvas_1_1_nodeling_requests.html", null ],
       [ "ScriptCanvas::RequestByNodeIdTraits", "struct_script_canvas_1_1_request_by_node_id_traits.html", null ],
+      [ "ScriptCanvas::ScriptCanvasDocumentRequests", "class_script_canvas_1_1_script_canvas_document_requests.html", null ],
       [ "ScriptCanvas::ScriptCanvasSettingsRequests", "class_script_canvas_1_1_script_canvas_settings_requests.html", null ],
       [ "ScriptCanvas::StatusRequests", "class_script_canvas_1_1_status_requests.html", null ],
       [ "ScriptCanvas::SystemRequests", "class_script_canvas_1_1_system_requests.html", null ],
@@ -278,6 +289,9 @@ var hierarchy =
       [ "ScriptCanvas::Graph", "class_script_canvas_1_1_graph.html", null ],
       [ "ScriptCanvas::RuntimeComponent", "class_script_canvas_1_1_runtime_component.html", null ],
       [ "ScriptCanvasEditor::Reporter", "class_script_canvas_editor_1_1_reporter.html", null ]
+    ] ],
+    [ "AZ::EntityId", null, [
+      [ "ScriptCanvas::TaggedParent< BreakpointTag, AZ::EntityId >", "struct_script_canvas_1_1_tagged_parent.html", null ]
     ] ],
     [ "AZ::Module", null, [
       [ "ScriptCanvas::ScriptCanvasModuleCommon", "class_script_canvas_1_1_script_canvas_module_common.html", [
@@ -364,6 +378,9 @@ var hierarchy =
       [ "ScriptCanvas::Nodeables::Spawning::DespawnNodeable", "class_script_canvas_1_1_nodeables_1_1_spawning_1_1_despawn_nodeable.html", null ],
       [ "ScriptCanvas::Nodeables::Spawning::SpawnNodeable", "class_script_canvas_1_1_nodeables_1_1_spawning_1_1_spawn_nodeable.html", null ]
     ] ],
+    [ "AzQtComponents::DragAndDropEventsBus::Handler", null, [
+      [ "ScriptCanvasAssetDragDropHandler", "class_script_canvas_asset_drag_drop_handler.html", null ]
+    ] ],
     [ "AzQtComponents::StyledDialog", null, [
       [ "ScriptCanvasEditor::InterpreterWidget", "class_script_canvas_editor_1_1_interpreter_widget.html", null ],
       [ "ScriptCanvasEditor::UpgradeHelper", "class_script_canvas_editor_1_1_upgrade_helper.html", null ],
@@ -447,6 +464,9 @@ var hierarchy =
     [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
+    [ "AzToolsFramework::AssetBrowser::AssetBrowserComponentNotificationBus::Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
     [ "AzToolsFramework::AssetBrowser::AssetBrowserFilterModel", null, [
       [ "ScriptCanvasEditor::ScriptCanvasAssetBrowserModel", "class_script_canvas_editor_1_1_script_canvas_asset_browser_model.html", null ],
       [ "ScriptCanvasEditor::UnitTestBrowserFilterModel", "class_script_canvas_editor_1_1_unit_test_browser_filter_model.html", null ]
@@ -467,14 +487,15 @@ var hierarchy =
     ] ],
     [ "AzToolsFramework::EditorEntityContextNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ],
-      [ "ScriptCanvasEditor::LiveLoggingWindowSession", "class_script_canvas_editor_1_1_live_logging_window_session.html", null ],
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
-      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
       [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
       [ "ScriptCanvasEditor::VariableConfigurationWidget", "class_script_canvas_editor_1_1_variable_configuration_widget.html", null ],
       [ "ScriptCanvasEditor::VariableDockWidget", "class_script_canvas_editor_1_1_variable_dock_widget.html", null ]
+    ] ],
+    [ "AzToolsFramework::EditorWindowRequestBus::Handler", null, [
+      [ "ScriptCanvas::ScriptCanvasApplication", "class_script_canvas_1_1_script_canvas_application.html", null ]
     ] ],
     [ "AzToolsFramework::IPropertyEditorNotify", null, [
       [ "ScriptCanvasEditor::InterpreterWidget", "class_script_canvas_editor_1_1_interpreter_widget.html", null ],
@@ -585,6 +606,9 @@ var hierarchy =
     ] ],
     [ "EditorSceneVariableManagerRequestBus::Handler", null, [
       [ "ScriptCanvasEditor::EditorGraphVariableManagerComponent", "class_script_canvas_editor_1_1_editor_graph_variable_manager_component.html", null ]
+    ] ],
+    [ "EditorScriptCanvasComponentRequestBus::Handler", null, [
+      [ "ScriptCanvasEditor::EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ]
     ] ],
     [ "EndpointNotificationBus::Handler", null, [
       [ "ScriptCanvas::Nodes::Core::ForEach", "class_script_canvas_1_1_nodes_1_1_core_1_1_for_each.html", null ]
@@ -1243,7 +1267,6 @@ var hierarchy =
         [ "ScriptCanvas::NodeStateChange", "struct_script_canvas_1_1_node_state_change.html", null ]
       ] ],
       [ "ScriptCanvas::Signal", "struct_script_canvas_1_1_signal.html", [
-        [ "ScriptCanvas::TaggedParent< BreakpointTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
         [ "ScriptCanvas::TaggedParent< InputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
         [ "ScriptCanvas::TaggedParent< OutputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ]
       ] ],
@@ -1283,7 +1306,7 @@ var hierarchy =
     [ "ScriptCanvas::Library::LibraryDefinition", "struct_script_canvas_1_1_library_1_1_library_definition.html", null ],
     [ "ScriptCanvas::LoggableEvent", "struct_script_canvas_1_1_loggable_event.html", [
       [ "ScriptCanvas::TaggedDataValue< VariableChangeTag >", "struct_script_canvas_1_1_tagged_data_value.html", null ],
-      [ "ScriptCanvas::TaggedParent< BreakpointTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
+      [ "ScriptCanvas::TaggedParent< BreakpointTag, AZ::EntityId >", "struct_script_canvas_1_1_tagged_parent.html", null ],
       [ "ScriptCanvas::TaggedParent< InputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
       [ "ScriptCanvas::TaggedParent< OutputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
       [ "ScriptCanvas::ExecutionThreadBeginning", "struct_script_canvas_1_1_execution_thread_beginning.html", null ],
@@ -1510,6 +1533,9 @@ var hierarchy =
     [ "ScriptCanvasBuilder::SharedHandlers", "struct_script_canvas_builder_1_1_shared_handlers.html", null ],
     [ "ScriptCanvasCommandLineRequestBus::Handler", null, [
       [ "ScriptCanvasEditor::Widget::CommandListDataModel", "class_script_canvas_editor_1_1_widget_1_1_command_list_data_model.html", null ]
+    ] ],
+    [ "ScriptCanvasDocumentRequestBus::Handler", null, [
+      [ "ScriptCanvas::ScriptCanvasDocument", "class_script_canvas_1_1_script_canvas_document.html", null ]
     ] ],
     [ "ScriptCanvasEditor::CategoryInformation", "struct_script_canvas_editor_1_1_category_information.html", null ],
     [ "ScriptCanvasEditor::CreateNodeResult", "struct_script_canvas_editor_1_1_create_node_result.html", null ],

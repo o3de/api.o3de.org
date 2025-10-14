@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -383,6 +383,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_scoped_data_connection_event.html">ScopedDataConnectionEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_script_canvas_application.html">ScriptCanvasApplication</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_script_canvas_document.html">ScriptCanvasDocument</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_script_canvas_document_requests.html">ScriptCanvasDocumentRequests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_script_canvas_module.html">ScriptCanvasModule</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ScriptCanvas::Module class coordinates with the application to reflect classes and create system components.  <a href="class_script_canvas_1_1_script_canvas_module.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,6 +507,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ad8d6d9bd6931130bc5b2fec8348fd3e7" id="r_ad8d6d9bd6931130bc5b2fec8348fd3e7"><td class="memItemLeft" align="right" valign="top"><a id="ad8d6d9bd6931130bc5b2fec8348fd3e7" name="ad8d6d9bd6931130bc5b2fec8348fd3e7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvasDocumentRequestBus</b> = AZ::EBus&lt; <a class="el" href="class_script_canvas_1_1_script_canvas_document_requests.html">ScriptCanvasDocumentRequests</a> &gt;</td></tr>
+<tr class="separator:ad8d6d9bd6931130bc5b2fec8348fd3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7226552ac64c3b731a74ebf3ac62a82e" id="r_a7226552ac64c3b731a74ebf3ac62a82e"><td class="memItemLeft" align="right" valign="top"><a id="a7226552ac64c3b731a74ebf3ac62a82e" name="a7226552ac64c3b731a74ebf3ac62a82e"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>AssetRegistryRequestBus</b> = AZ::EBus&lt; <a class="el" href="class_script_canvas_1_1_asset_registry_requests.html">AssetRegistryRequests</a> &gt;</td></tr>
 <tr class="separator:a7226552ac64c3b731a74ebf3ac62a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -592,15 +601,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EBusHandlerNodeReque
 <tr class="memitem:a94df0ee387d631aab5ce8f84aa3f4c6f" id="r_a94df0ee387d631aab5ce8f84aa3f4c6f"><td class="memItemLeft" align="right" valign="top"><a id="a94df0ee387d631aab5ce8f84aa3f4c6f" name="a94df0ee387d631aab5ce8f84aa3f4c6f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>Timestamp</b> = AZ::u64</td></tr>
 <tr class="separator:a94df0ee387d631aab5ce8f84aa3f4c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92fdc99e13f8efdfd83611f39785fe2" id="r_ac92fdc99e13f8efdfd83611f39785fe2"><td class="memItemLeft" align="right" valign="top"><a id="ac92fdc99e13f8efdfd83611f39785fe2" name="ac92fdc99e13f8efdfd83611f39785fe2"></a>
+<tr class="memitem:a9faad6558a770d0e24b047404d0cb39d" id="r_a9faad6558a770d0e24b047404d0cb39d"><td class="memItemLeft" align="right" valign="top"><a id="a9faad6558a770d0e24b047404d0cb39d" name="a9faad6558a770d0e24b047404d0cb39d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveGraphStatusMap</b> = AZStd::unordered_map&lt; AZ::Data::AssetId, <a class="el" href="struct_script_canvas_1_1_active_graph_status.html">ActiveGraphStatus</a> &gt;</td></tr>
-<tr class="separator:ac92fdc99e13f8efdfd83611f39785fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ab36bdd53ae2767d6641f7ac0926dc" id="r_a37ab36bdd53ae2767d6641f7ac0926dc"><td class="memItemLeft" align="right" valign="top"><a id="a37ab36bdd53ae2767d6641f7ac0926dc" name="a37ab36bdd53ae2767d6641f7ac0926dc"></a>
+<tr class="separator:a9faad6558a770d0e24b047404d0cb39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39196f844ef853e516d2fa0beea0fdbb" id="r_a39196f844ef853e516d2fa0beea0fdbb"><td class="memItemLeft" align="right" valign="top"><a id="a39196f844ef853e516d2fa0beea0fdbb" name="a39196f844ef853e516d2fa0beea0fdbb"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityActiveGraphStatusMap</b> = AZStd::unordered_map&lt; <a class="el" href="struct_script_canvas_1_1_graph_identifier.html">GraphIdentifier</a>, <a class="el" href="struct_script_canvas_1_1_active_graph_status.html">ActiveGraphStatus</a> &gt;</td></tr>
-<tr class="separator:a37ab36bdd53ae2767d6641f7ac0926dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf46bbc8d85790c9cc1060b01c37c37" id="r_afbf46bbc8d85790c9cc1060b01c37c37"><td class="memItemLeft" align="right" valign="top"><a id="afbf46bbc8d85790c9cc1060b01c37c37" name="afbf46bbc8d85790c9cc1060b01c37c37"></a>
+<tr class="separator:a39196f844ef853e516d2fa0beea0fdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab602b295c33d439d484312634a54b3c6" id="r_ab602b295c33d439d484312634a54b3c6"><td class="memItemLeft" align="right" valign="top"><a id="ab602b295c33d439d484312634a54b3c6" name="ab602b295c33d439d484312634a54b3c6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveEntityStatusMap</b> = AZStd::unordered_map&lt; AZ::EntityId, <a class="el" href="struct_script_canvas_1_1_active_entity_status.html">ActiveEntityStatus</a> &gt;</td></tr>
-<tr class="separator:afbf46bbc8d85790c9cc1060b01c37c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab602b295c33d439d484312634a54b3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e2fc03092f784010a2ae6b3973638b3" id="r_a2e2fc03092f784010a2ae6b3973638b3"><td class="memItemLeft" align="right" valign="top"><a id="a2e2fc03092f784010a2ae6b3973638b3" name="a2e2fc03092f784010a2ae6b3973638b3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveEntitiesAndGraphs</b> = AZStd::pair&lt; ActiveEntityStatusMap, ActiveGraphStatusMap &gt;</td></tr>
 <tr class="separator:a2e2fc03092f784010a2ae6b3973638b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,9 +619,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SlotDataMap</b> = AZ
 <tr class="memitem:a554cd2097151d6304ffea227398ee853" id="r_a554cd2097151d6304ffea227398ee853"><td class="memItemLeft" align="right" valign="top"><a id="a554cd2097151d6304ffea227398ee853" name="a554cd2097151d6304ffea227398ee853"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>VariableValues</b> = AZStd::unordered_map&lt; <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>, AZStd::pair&lt; AZStd::string, <a class="el" href="struct_script_canvas_1_1_datum_value.html">DatumValue</a> &gt; &gt;</td></tr>
 <tr class="separator:a554cd2097151d6304ffea227398ee853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4cc2bdc0fff51180e43f46247c745e4" id="r_ab4cc2bdc0fff51180e43f46247c745e4"><td class="memItemLeft" align="right" valign="top"><a id="ab4cc2bdc0fff51180e43f46247c745e4" name="ab4cc2bdc0fff51180e43f46247c745e4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Breakpoint</b> = <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">TaggedParent</a>&lt; <a class="el" href="struct_script_canvas_1_1_breakpoint_tag.html">BreakpointTag</a>, <a class="el" href="struct_script_canvas_1_1_signal.html">Signal</a> &gt;</td></tr>
-<tr class="separator:ab4cc2bdc0fff51180e43f46247c745e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62fdacf74825cc8a668109e37a8a850" id="r_ac62fdacf74825cc8a668109e37a8a850"><td class="memItemLeft" align="right" valign="top"><a id="ac62fdacf74825cc8a668109e37a8a850" name="ac62fdacf74825cc8a668109e37a8a850"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Breakpoint</b> = <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">TaggedParent</a>&lt; <a class="el" href="struct_script_canvas_1_1_breakpoint_tag.html">BreakpointTag</a>, AZ::EntityId &gt;</td></tr>
+<tr class="separator:ac62fdacf74825cc8a668109e37a8a850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba5a9b4d7e1a571957cc65343a592e2" id="r_afba5a9b4d7e1a571957cc65343a592e2"><td class="memItemLeft" align="right" valign="top"><a id="afba5a9b4d7e1a571957cc65343a592e2" name="afba5a9b4d7e1a571957cc65343a592e2"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionThreadEnd</b> = <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">TaggedParent</a>&lt; <a class="el" href="struct_script_canvas_1_1_execution_thread_end_tag.html">ExecutionThreadEndTag</a>, <a class="el" href="struct_script_canvas_1_1_graph_info.html">GraphInfo</a> &gt;</td></tr>
 <tr class="separator:afba5a9b4d7e1a571957cc65343a592e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1122,9 +1131,6 @@ AZStd::vector&lt; AZ::ComponentDescriptor * &gt;&#160;</td><td class="memItemRig
 AZ::EnvironmentVariable&lt; <a class="el" href="struct_script_canvas_1_1_node_registry.html">NodeRegistry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeRegistry</b> ()</td></tr>
 <tr class="memdesc:a02f282983c1ce86b379741adfc32e9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated, following is to support backward compatibility. <br /></td></tr>
 <tr class="separator:a02f282983c1ce86b379741adfc32e9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bc0a5f606fa3681617bc6ad8d988730" id="r_a1bc0a5f606fa3681617bc6ad8d988730"><td class="memItemLeft" align="right" valign="top"><a id="a1bc0a5f606fa3681617bc6ad8d988730" name="a1bc0a5f606fa3681617bc6ad8d988730"></a>
-static constexpr AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteToolsKey</b> (&quot;ScriptCanvasRemoteTools&quot;)</td></tr>
-<tr class="separator:a1bc0a5f606fa3681617bc6ad8d988730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264e58ddd55e87e02f1977b09d48c693" id="r_a264e58ddd55e87e02f1977b09d48c693"><td class="memItemLeft" align="right" valign="top"><a id="a264e58ddd55e87e02f1977b09d48c693" name="a264e58ddd55e87e02f1977b09d48c693"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MergeUpdateSlotReport</b> (const AZ::EntityId &amp;scriptCanvasNodeId, <a class="el" href="struct_script_canvas_1_1_graph_update_report.html">GraphUpdateReport</a> &amp;report, const <a class="el" href="struct_script_canvas_1_1_node_update_report.html">NodeUpdateReport</a> &amp;source)</td></tr>
 <tr class="separator:a264e58ddd55e87e02f1977b09d48c693"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1182,12 +1188,6 @@ constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_E
 <tr class="memitem:a9c2dae701eda5cea1f386717a1b245ed" id="r_a9c2dae701eda5cea1f386717a1b245ed"><td class="memItemLeft" align="right" valign="top"><a id="a9c2dae701eda5cea1f386717a1b245ed" name="a9c2dae701eda5cea1f386717a1b245ed"></a>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_nodeRegistryName</b> = &quot;ScriptCanvasNodeRegistry&quot;</td></tr>
 <tr class="separator:a9c2dae701eda5cea1f386717a1b245ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b4251e553cd993fe965fa744b56c5d" id="r_af8b4251e553cd993fe965fa744b56c5d"><td class="memItemLeft" align="right" valign="top"><a id="af8b4251e553cd993fe965fa744b56c5d" name="af8b4251e553cd993fe965fa744b56c5d"></a>
-static const AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteToolsName</b> = AZ::Name::FromStringLiteral(&quot;ScriptCanvasRemoteTools&quot;, nullptr)</td></tr>
-<tr class="separator:af8b4251e553cd993fe965fa744b56c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee7f1c07975bc2c42fbb32c31ea680a" id="r_afee7f1c07975bc2c42fbb32c31ea680a"><td class="memItemLeft" align="right" valign="top"><a id="afee7f1c07975bc2c42fbb32c31ea680a" name="afee7f1c07975bc2c42fbb32c31ea680a"></a>
-static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteToolsPort</b> = 45641</td></tr>
-<tr class="separator:afee7f1c07975bc2c42fbb32c31ea680a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The EditContext and other facilities give script users, especially <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> users the ability to create and initialize objects that cannot be easily created with a sequence of C++ code. Some Editor facilities give users access to private variables in objects that cannot be modified or initialized directly via their public C++ interface.</p>
@@ -1242,7 +1242,7 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:12 for Open 3D Engine ScriptCanvas Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:12 for Open 3D Engine ScriptCanvas Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

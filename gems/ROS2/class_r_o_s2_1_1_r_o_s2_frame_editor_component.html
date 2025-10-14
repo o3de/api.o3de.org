@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,17 +61,13 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_r_o_s2_frame_editor_c
 
 <p><code>#include &lt;ROS2FrameEditorComponent.h&gt;</code></p>
 
-<p>Inherits AzToolsFramework::Components::EditorComponentBase, ROS2FrameComponentBus::Handler, and AZ::EntityBus::Handler.</p>
+<p>Inherits AzToolsFramework::Components::EditorComponentBase, ROS2FrameEditorComponentBus::Handler, ROS2FrameComponentBus::Handler, AZ::EntityBus::Handler, and <a class="el" href="class_r_o_s2_1_1_r_o_s_frame_interface.html">ROS2::ROSFrameInterface</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0cb7f027a24e500d859ee4f589eebb3" id="r_aa0cb7f027a24e500d859ee4f589eebb3"><td class="memItemLeft" align="right" valign="top"><a id="aa0cb7f027a24e500d859ee4f589eebb3" name="aa0cb7f027a24e500d859ee4f589eebb3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>, &quot;{f76d6f29-73c3-40b2-bcc2-47fc824c25df}&quot;, AzToolsFramework::Components::EditorComponentBase)</td></tr>
-<tr class="separator:aa0cb7f027a24e500d859ee4f589eebb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb83859aaf6346f05f198f902ae6f900" id="r_afb83859aaf6346f05f198f902ae6f900"><td class="memItemLeft" align="right" valign="top"><a id="afb83859aaf6346f05f198f902ae6f900" name="afb83859aaf6346f05f198f902ae6f900"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ROS2FrameEditorComponent</b> (const AZStd::string &amp;frameId)</td></tr>
-<tr class="memdesc:afb83859aaf6346f05f198f902ae6f900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize to a specific frame id. <br /></td></tr>
-<tr class="separator:afb83859aaf6346f05f198f902ae6f900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8acefd32747d5a051e974affaeb8166" id="r_ad8acefd32747d5a051e974affaeb8166"><td class="memItemLeft" align="right" valign="top"><a id="ad8acefd32747d5a051e974affaeb8166" name="ad8acefd32747d5a051e974affaeb8166"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_EDITOR_COMPONENT</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a>, ROS2FrameEditorComponentTypeId, AzToolsFramework::Components::EditorComponentBase, <a class="el" href="class_r_o_s2_1_1_r_o_s_frame_interface.html">ROSFrameInterface</a>)</td></tr>
+<tr class="separator:ad8acefd32747d5a051e974affaeb8166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed94ffa6d55033ac261eacd0ac62e4e" id="r_a2ed94ffa6d55033ac261eacd0ac62e4e"><td class="memItemLeft" align="right" valign="top"><a id="a2ed94ffa6d55033ac261eacd0ac62e4e" name="a2ed94ffa6d55033ac261eacd0ac62e4e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ROS2FrameEditorComponent</b> (const <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2FrameConfiguration</a> ros2FrameConfiguration)</td></tr>
 <tr class="separator:a2ed94ffa6d55033ac261eacd0ac62e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,41 +83,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () ove
 <tr class="memitem:acbdc25b40dc21422a676302fc518f71d" id="r_acbdc25b40dc21422a676302fc518f71d"><td class="memItemLeft" align="right" valign="top"><a id="acbdc25b40dc21422a676302fc518f71d" name="acbdc25b40dc21422a676302fc518f71d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildGameEntity</b> (AZ::Entity *gameEntity) override</td></tr>
 <tr class="separator:acbdc25b40dc21422a676302fc518f71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646c66b027a7fabb6fade8aea130fe87" id="r_a646c66b027a7fabb6fade8aea130fe87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a646c66b027a7fabb6fade8aea130fe87">SetFrameID</a> (const AZStd::string &amp;frameId)</td></tr>
-<tr class="separator:a646c66b027a7fabb6fade8aea130fe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a024df9893b6353983f678460bdb5c9e4" id="r_a024df9893b6353983f678460bdb5c9e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a024df9893b6353983f678460bdb5c9e4">SetJointName</a> (const AZStd::string &amp;jointName)</td></tr>
-<tr class="separator:a024df9893b6353983f678460bdb5c9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43c1d0fe55e246a4363fb68f580072e1" id="r_a43c1d0fe55e246a4363fb68f580072e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a43c1d0fe55e246a4363fb68f580072e1">UpdateNamespaceConfiguration</a> (const AZStd::string &amp;ros2Namespace, const <a class="el" href="struct_r_o_s2_1_1_namespace_configuration.html#a1b56d5215135a934b8441a1e7b0bbdb5">NamespaceConfiguration::NamespaceStrategy</a> &amp;strategy)</td></tr>
-<tr class="separator:a43c1d0fe55e246a4363fb68f580072e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f2b8ac32d0fff20d0e46c8967d07888" id="r_a1f2b8ac32d0fff20d0e46c8967d07888"><td class="memItemLeft" align="right" valign="top"><a id="a1f2b8ac32d0fff20d0e46c8967d07888" name="a1f2b8ac32d0fff20d0e46c8967d07888"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameID</b> () const override</td></tr>
-<tr class="separator:a1f2b8ac32d0fff20d0e46c8967d07888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f36e9937bd1c73043d4c19ba3f2ec35" id="r_a1f36e9937bd1c73043d4c19ba3f2ec35"><td class="memItemLeft" align="right" valign="top"><a id="a1f36e9937bd1c73043d4c19ba3f2ec35" name="a1f36e9937bd1c73043d4c19ba3f2ec35"></a>
-AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><b>GetJointName</b> () const override</td></tr>
-<tr class="separator:a1f36e9937bd1c73043d4c19ba3f2ec35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08ab0eda0e8a2dc8ec1c29d816d977d" id="r_ae08ab0eda0e8a2dc8ec1c29d816d977d"><td class="memItemLeft" align="right" valign="top"><a id="ae08ab0eda0e8a2dc8ec1c29d816d977d" name="ae08ab0eda0e8a2dc8ec1c29d816d977d"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNamespace</b> () const override</td></tr>
-<tr class="separator:ae08ab0eda0e8a2dc8ec1c29d816d977d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55957873a069fda4804037b1a49d0db8" id="r_a55957873a069fda4804037b1a49d0db8"><td class="memItemLeft" align="right" valign="top"><a id="a55957873a069fda4804037b1a49d0db8" name="a55957873a069fda4804037b1a49d0db8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateNamespace</b> (const AZStd::string &amp;parentNamespace) override</td></tr>
-<tr class="separator:a55957873a069fda4804037b1a49d0db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0eaf9609f9a4bb5ed31a4f51ffd3150" id="r_aa0eaf9609f9a4bb5ed31a4f51ffd3150"><td class="memItemLeft" align="right" valign="top"><a id="aa0eaf9609f9a4bb5ed31a4f51ffd3150" name="aa0eaf9609f9a4bb5ed31a4f51ffd3150"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalFrameName</b> () const override</td></tr>
-<tr class="separator:aa0eaf9609f9a4bb5ed31a4f51ffd3150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4a6533bbb3152b202c2f1cf09b4791" id="r_a4d4a6533bbb3152b202c2f1cf09b4791"><td class="memItemLeft" align="right" valign="top"><a id="a4d4a6533bbb3152b202c2f1cf09b4791" name="a4d4a6533bbb3152b202c2f1cf09b4791"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTopLevel</b> () const override</td></tr>
-<tr class="memdesc:a4d4a6533bbb3152b202c2f1cf09b4791"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this entity does not have a parent entity with ROS2. <br /></td></tr>
-<tr class="separator:a4d4a6533bbb3152b202c2f1cf09b4791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a08b35036b39b0e05cca5bb20a3b5d1" id="r_a7a08b35036b39b0e05cca5bb20a3b5d1"><td class="memItemLeft" align="right" valign="top"><a id="a7a08b35036b39b0e05cca5bb20a3b5d1" name="a7a08b35036b39b0e05cca5bb20a3b5d1"></a>
-AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameParent</b> () const override</td></tr>
-<tr class="separator:a7a08b35036b39b0e05cca5bb20a3b5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2f97ad5a86f3596b0c74f10b060adc" id="r_a0c2f97ad5a86f3596b0c74f10b060adc"><td class="memItemLeft" align="right" valign="top"><a id="a0c2f97ad5a86f3596b0c74f10b060adc" name="a0c2f97ad5a86f3596b0c74f10b060adc"></a>
-AZStd::set&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameChildren</b> () const override</td></tr>
-<tr class="separator:a0c2f97ad5a86f3596b0c74f10b060adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e5f300fb93603207e0cc56ec4c4fee" id="r_a21e5f300fb93603207e0cc56ec4c4fee"><td class="memItemLeft" align="right" valign="top"><a id="a21e5f300fb93603207e0cc56ec4c4fee" name="a21e5f300fb93603207e0cc56ec4c4fee"></a>
-<a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2FrameConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetConfiguration</b> () const</td></tr>
-<tr class="memdesc:a21e5f300fb93603207e0cc56ec4c4fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configuration of this component. <br /></td></tr>
-<tr class="separator:a21e5f300fb93603207e0cc56ec4c4fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ad23d9dc353ec59c15970f33880728" id="r_a20ad23d9dc353ec59c15970f33880728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2FrameConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a20ad23d9dc353ec59c15970f33880728">GetConfiguration</a> () const override</td></tr>
+<tr class="memdesc:a20ad23d9dc353ec59c15970f33880728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for configuration, always available.  <br /></td></tr>
+<tr class="separator:a20ad23d9dc353ec59c15970f33880728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc95d9f54a334f0e2850f1ef85d470ef" id="r_adc95d9f54a334f0e2850f1ef85d470ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#adc95d9f54a334f0e2850f1ef85d470ef">SetConfiguration</a> (const <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2FrameConfiguration</a> &amp;config) override</td></tr>
+<tr class="memdesc:adc95d9f54a334f0e2850f1ef85d470ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows setting configuration , only for disabled components.  <br /></td></tr>
+<tr class="separator:adc95d9f54a334f0e2850f1ef85d470ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_o_s2_1_1_r_o_s_frame_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_o_s2_1_1_r_o_s_frame_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_r_o_s2_1_1_r_o_s_frame_interface.html">ROS2::ROSFrameInterface</a></td></tr>
+<tr class="memitem:aa5491edc8b9f57be1bd9b3dd254abfed inherit pub_methods_class_r_o_s2_1_1_r_o_s_frame_interface" id="r_aa5491edc8b9f57be1bd9b3dd254abfed"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_r_o_s2_1_1_r_o_s_frame_interface.html">ROSFrameInterface</a>, ROSFrameInterfaceTypeId)</td></tr>
+<tr class="separator:aa5491edc8b9f57be1bd9b3dd254abfed inherit pub_methods_class_r_o_s2_1_1_r_o_s_frame_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -141,92 +112,67 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This component marks a reference frame for ROS 2 ecosystem. It serves as sensor data frame of reference and is responsible, through <a class="el" href="class_r_o_s2_1_1_r_o_s2_transform.html">ROS2Transform</a>, for publishing ros2 static and dynamic transforms (/tf_static, /tf). It also facilitates namespace handling. An entity can only have a single ROS2Frame on each level. Many ROS 2 Components require this component. </p><dl class="section note"><dt>Note</dt><dd>A robot should have this component on every level of entity hierarchy (for each joint, fixed or dynamic) </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a646c66b027a7fabb6fade8aea130fe87" name="a646c66b027a7fabb6fade8aea130fe87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a646c66b027a7fabb6fade8aea130fe87">&#9670;&#160;</a></span>SetFrameID()</h2>
+<a id="a20ad23d9dc353ec59c15970f33880728" name="a20ad23d9dc353ec59c15970f33880728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ad23d9dc353ec59c15970f33880728">&#9670;&#160;</a></span>GetConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ROS2::ROS2FrameEditorComponent::SetFrameID </td>
+          <td class="memname"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2FrameConfiguration</a> ROS2::ROS2FrameEditorComponent::GetConfiguration </td>
           <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>frameId</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Set the frame id. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frameId</td><td>frameId to be set in the configuration. </td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p>Getter for configuration, always available. </p>
+
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s_frame_interface.html#a79c57a627df48708f535666115736718">ROS2::ROSFrameInterface</a>.</p>
 
 </div>
 </div>
-<a id="a024df9893b6353983f678460bdb5c9e4" name="a024df9893b6353983f678460bdb5c9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a024df9893b6353983f678460bdb5c9e4">&#9670;&#160;</a></span>SetJointName()</h2>
+<a id="adc95d9f54a334f0e2850f1ef85d470ef" name="adc95d9f54a334f0e2850f1ef85d470ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc95d9f54a334f0e2850f1ef85d470ef">&#9670;&#160;</a></span>SetConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ROS2::ROS2FrameEditorComponent::SetJointName </td>
+          <td class="memname">void ROS2::ROS2FrameEditorComponent::SetConfiguration </td>
           <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>jointName</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_configuration.html">ROS2FrameConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Set the joint name </p><dl class="section note"><dt>Note</dt><dd>May be populated during URDF import or set by the user in the Editor view </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jointName</td><td>joint name without the namespace (the namespace prefix is added automatically). </td></tr>
-  </table>
-  </dd>
-</dl>
 
-</div>
-</div>
-<a id="a43c1d0fe55e246a4363fb68f580072e1" name="a43c1d0fe55e246a4363fb68f580072e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43c1d0fe55e246a4363fb68f580072e1">&#9670;&#160;</a></span>UpdateNamespaceConfiguration()</h2>
+<p>Allows setting configuration , only for disabled components. </p>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ROS2::ROS2FrameEditorComponent::UpdateNamespaceConfiguration </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>ros2Namespace</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_r_o_s2_1_1_namespace_configuration.html#a1b56d5215135a934b8441a1e7b0bbdb5">NamespaceConfiguration::NamespaceStrategy</a> &amp;&#160;</td>
-          <td class="paramname"><em>strategy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Updates the namespace and namespace strategy of the underlying namespace configuration </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ros2Namespace</td><td>Namespace to set. </td></tr>
-    <tr><td class="paramname">strategy</td><td>Namespace strategy to use. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Implements <a class="el" href="class_r_o_s2_1_1_r_o_s_frame_interface.html#a28da3022b0b0a0b2127cc276efb3c283">ROS2::ROSFrameInterface</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2/Code/Include/ROS2/Frame/<b>ROS2FrameEditorComponent.h</b></li>
+<li>Gems/ROS2/Code/Source/Frame/<b>ROS2FrameEditorComponent.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -234,7 +180,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_editor_component.html">ROS2FrameEditorComponent</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 16:55:11 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Oct 9 2025 16:15:10 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
