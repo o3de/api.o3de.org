@@ -48,6 +48,7 @@ var namespace_a_z_1_1_i_o =
     [ "RapidXMLStreamWriter", "class_a_z_1_1_i_o_1_1_rapid_x_m_l_stream_writer.html", "class_a_z_1_1_i_o_1_1_rapid_x_m_l_stream_writer" ],
     [ "ReadSplitter", "class_a_z_1_1_i_o_1_1_read_splitter.html", "class_a_z_1_1_i_o_1_1_read_splitter" ],
     [ "ReadSplitterConfig", "struct_a_z_1_1_i_o_1_1_read_splitter_config.html", "struct_a_z_1_1_i_o_1_1_read_splitter_config" ],
+    [ "RecentlyUsedIndex", "class_a_z_1_1_i_o_1_1_recently_used_index.html", "class_a_z_1_1_i_o_1_1_recently_used_index" ],
     [ "RequestPath", "class_a_z_1_1_i_o_1_1_request_path.html", null ],
     [ "Result", "class_a_z_1_1_i_o_1_1_result.html", null ],
     [ "Scheduler", "class_a_z_1_1_i_o_1_1_scheduler.html", "class_a_z_1_1_i_o_1_1_scheduler" ],

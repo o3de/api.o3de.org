@@ -490,6 +490,7 @@ var hierarchy =
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
       [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
       [ "ScriptCanvasEditor::VariableConfigurationWidget", "class_script_canvas_editor_1_1_variable_configuration_widget.html", null ],
       [ "ScriptCanvasEditor::VariableDockWidget", "class_script_canvas_editor_1_1_variable_dock_widget.html", null ]

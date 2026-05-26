@@ -9,11 +9,13 @@ var class_simulation_interfaces_1_1_simulation_entity_manager_requests =
     [ "GetEntityInfo", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a6d4ae929a78cdf849998f26070cd4afc", null ],
     [ "GetEntityRoot", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a905d41f573abf3512c8582a8ed39935f", null ],
     [ "GetEntityState", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a1aebc2bfcdd1254869724bfed7bd2792", null ],
+    [ "GetSimulatedBodyNameById", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a516ac0debc2da0059e2b72b42c6ecb2c", null ],
     [ "GetSpawnables", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a931ff458995fe8e654b65f3b0a14f6a4", null ],
     [ "RegisterNewSimulatedBody", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a11ddb674b327779862d9f2b1cbdfb609", null ],
     [ "ResetAllEntitiesToInitialState", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#adf948de15755e580a0a6b8f18c919e4f", null ],
     [ "SetEntityInfo", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#ae7f3cf0b41c3dd74cbc908414740f260", null ],
     [ "SetEntityState", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#acc01779e36de7004aaf94980b7b03eb1", null ],
+    [ "SpawnEntities", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#adeef01c11f1115a8e3df158ba46840da", null ],
     [ "SpawnEntity", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a9e86363738a95dc50a1575ce29657ce6", null ],
     [ "UnregisterSimulatedBody", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a38fa3b36c689ccf1b5730ab73ce7e9fa", null ]
 ];

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -118,7 +118,7 @@ AZ_FORCE_INLINE constexpr size_type&#160;</td><td class="memItemRight" valign="b
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class Node, AZStd::size_t NumNodes&gt;<br />
-class AZStd::static_pool_allocator&lt; Node, NumNodes &gt;</div><p>Declares a static buffer of Node[NumNodes], and them pools them. This is perfect allocator for pooling list or hash table nodes. Internally the buffer is allocated using aligned_storage. </p><dl class="section note"><dt>Note</dt><dd>This is not thread safe allocator. </dd>
+class AZStd::static_pool_allocator&lt; Node, NumNodes &gt;</div><p>Declares a static buffer of Node[NumNodes], and them pools them. This is perfect allocator for pooling list or hash table nodes. Internally the buffer is allocated using <a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>. </p><dl class="section note"><dt>Note</dt><dd>This is not thread safe allocator. </dd>
 <dd>
 be careful if you use this on the stack, since many platforms do NOT support alignment more than 16 bytes. In such cases you will need to do it manually. </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
@@ -130,7 +130,7 @@ be careful if you use this on the stack, since many platforms do NOT support ali
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1static__pool__allocator.html">static_pool_allocator</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:48 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:24 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

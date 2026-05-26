@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,7 +62,7 @@ $(document).ready(function(){initNavTree('class_e_m_studio_1_1_track_data_widget
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits QOpenGLWidget, and QOpenGLFunctions.</p>
+<p>Inherits QWidget.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
@@ -87,15 +87,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c0e92bcde2dd752aec2bf3e62e04e2b" id="r_a8c0e92bcde2dd752aec2bf3e62e04e2b"><td class="memItemLeft" align="right" valign="top"><a id="a8c0e92bcde2dd752aec2bf3e62e04e2b" name="a8c0e92bcde2dd752aec2bf3e62e04e2b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TrackDataWidget</b> (<a class="el" href="class_e_m_studio_1_1_time_view_plugin.html">TimeViewPlugin</a> *plugin, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:a8c0e92bcde2dd752aec2bf3e62e04e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edb750e6e67fc0c9ec9242f0415f09e" id="r_a0edb750e6e67fc0c9ec9242f0415f09e"><td class="memItemLeft" align="right" valign="top"><a id="a0edb750e6e67fc0c9ec9242f0415f09e" name="a0edb750e6e67fc0c9ec9242f0415f09e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeGL</b> () override</td></tr>
-<tr class="separator:a0edb750e6e67fc0c9ec9242f0415f09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedc7e1251b0a13b2939665a0c249a43f" id="r_aedc7e1251b0a13b2939665a0c249a43f"><td class="memItemLeft" align="right" valign="top"><a id="aedc7e1251b0a13b2939665a0c249a43f" name="aedc7e1251b0a13b2939665a0c249a43f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeGL</b> (int w, int h) override</td></tr>
-<tr class="separator:aedc7e1251b0a13b2939665a0c249a43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c439a7b4c9d5deb5075b8204000d6c" id="r_a99c439a7b4c9d5deb5075b8204000d6c"><td class="memItemLeft" align="right" valign="top"><a id="a99c439a7b4c9d5deb5075b8204000d6c" name="a99c439a7b4c9d5deb5075b8204000d6c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintGL</b> () override</td></tr>
-<tr class="separator:a99c439a7b4c9d5deb5075b8204000d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9639df089d97c486b2e363cda50bc380" id="r_a9639df089d97c486b2e363cda50bc380"><td class="memItemLeft" align="right" valign="top"><a id="a9639df089d97c486b2e363cda50bc380" name="a9639df089d97c486b2e363cda50bc380"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="separator:a9639df089d97c486b2e363cda50bc380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6b1428d85674a3cfb5337879e25289" id="r_aac6b1428d85674a3cfb5337879e25289"><td class="memItemLeft" align="right" valign="top"><a id="aac6b1428d85674a3cfb5337879e25289" name="aac6b1428d85674a3cfb5337879e25289"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:aac6b1428d85674a3cfb5337879e25289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7685c071a8093284a69ea709010a9b1" id="r_ae7685c071a8093284a69ea709010a9b1"><td class="memItemLeft" align="right" valign="top"><a id="ae7685c071a8093284a69ea709010a9b1" name="ae7685c071a8093284a69ea709010a9b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTrack</b> (size_t trackIndex)</td></tr>
 <tr class="separator:ae7685c071a8093284a69ea709010a9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +151,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TimeViewToolBar</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>EMStudio</b></li><li class="navelem"><a class="el" href="class_e_m_studio_1_1_track_data_widget.html">TrackDataWidget</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:04 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:42 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

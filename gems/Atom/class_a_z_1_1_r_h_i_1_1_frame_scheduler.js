@@ -7,7 +7,6 @@ var class_a_z_1_1_r_h_i_1_1_frame_scheduler =
     [ "GetAttachmentDatabase", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#ae5ecd4437cc1379d9f2ed92487b6f419", null ],
     [ "GetCpuFrameTime", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#ae0c65a01bc8a9552208769bbf20e7460", null ],
     [ "GetMemoryStatistics", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#ac864a879fc97e9e51e4891194c7ff86a", null ],
-    [ "GetPhysicalDeviceDescriptor", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#aea4231ca406a990b977e3cc8f48d24ca", null ],
     [ "GetRootScopeId", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#ab65221d490b455a1f7d39f8e5a0e4f2c", null ],
     [ "GetTransientAttachmentPoolDescriptor", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#a90cf5615d3c10fd016340d1d02e25c90", null ],
     [ "GetTransientAttachmentStatistics", "class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#a3f7cbd1be70b398c12406710d1104fa3", null ],

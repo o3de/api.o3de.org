@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"class_az_tools_framework_1_1_sphere_viewport_edit.html":[2,0,5,364],
 "class_az_tools_framework_1_1_sphere_viewport_edit.html#a24ebe4bef40f3e58b32a7e3aae03cb90":[2,0,5,364,2],
 "class_az_tools_framework_1_1_sphere_viewport_edit.html#a3902ca12952b0f309605acd465359d53":[2,0,5,364,1],
 "class_az_tools_framework_1_1_sphere_viewport_edit.html#a7f2a61704a3c0a650050ce9364217683":[2,0,5,364,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html":[2,0,5,21,6],
 "class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html#a83a1485c5f7caaa9b6f080e51bbcafe1":[2,0,5,21,6,0],
 "class_az_tools_framework_1_1_viewport_interaction_1_1_main_editor_viewport_interaction_requests.html#afb7560e2d59fb4f9575f55cc2d4ae321":[2,0,5,21,6,1],
-"class_az_tools_framework_1_1_viewport_interaction_1_1_mouse_viewport_requests.html":[2,0,5,21,11],
-"class_az_tools_framework_1_1_viewport_interaction_1_1_mouse_viewport_requests.html#ae8ffd7d7a2e2fa79f761c564eee2e877":[2,0,5,21,11,0]
+"class_az_tools_framework_1_1_viewport_interaction_1_1_mouse_viewport_requests.html":[2,0,5,21,11]
 };

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -359,6 +359,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity.html">Entity</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity_active_system_component.html">EntityActiveSystemComponent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The System <a class="el" href="class_a_z_1_1_component.html">Component</a> that handles and defines <a class="el" href="class_a_z_1_1_entity.html">Entity</a> Activation Layers.  <a href="class_a_z_1_1_entity_active_system_component.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity_active_system_requests.html">EntityActiveSystemRequests</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_entity_component_id_pair.html">EntityComponentIdPair</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1297,6 +1302,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4a5a81cc09a211244e333c93127b7d74" id="r_a4a5a81cc09a211244e333c93127b7d74"><td class="memItemLeft" align="right" valign="top"><a id="a4a5a81cc09a211244e333c93127b7d74" name="a4a5a81cc09a211244e333c93127b7d74"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CustomExportCallbackFunc</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="struct_a_z_1_1_exported_component.html">ExportedComponent</a>(<a class="el" href="class_a_z_1_1_component.html">AZ::Component</a> *<a class="el" href="class_a_z_1_1_e_bus.html">thisComponent</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1unordered__set.html">PlatformTagSet</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">tags</a>)&gt;</td></tr>
 <tr class="separator:a4a5a81cc09a211244e333c93127b7d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76377c929f9e9651ba3bf7c4af0b70e" id="r_ab76377c929f9e9651ba3bf7c4af0b70e"><td class="memItemLeft" align="right" valign="top"><a id="ab76377c929f9e9651ba3bf7c4af0b70e" name="ab76377c929f9e9651ba3bf7c4af0b70e"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EntityActiveSystemRequestBus</b> = <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_entity_active_system_requests.html">EntityActiveSystemRequests</a> &gt;</td></tr>
+<tr class="separator:ab76377c929f9e9651ba3bf7c4af0b70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7cfa4644270307764535b28184288bd" id="r_af7cfa4644270307764535b28184288bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">typedef</a> <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_entity_system_events.html">EntitySystemEvents</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#af7cfa4644270307764535b28184288bd">EntitySystemBus</a></td></tr>
 <tr class="separator:af7cfa4644270307764535b28184288bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1800dd6091ebd1c194837918489a1c3" id="r_ae1800dd6091ebd1c194837918489a1c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#ae1800dd6091ebd1c194837918489a1c3">EntityBus</a> = <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_entity_events.html">EntityEvents</a> &gt;</td></tr>
@@ -2177,14 +2185,13 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </
 <tr class="separator:aa877d9d28fce9d949175203bd94cdb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a662631478fbc0e6ef76a5add3d630" id="r_a90a662631478fbc0e6ef76a5add3d630"><td class="memItemLeft" align="right" valign="top"><a id="a90a662631478fbc0e6ef76a5add3d630" name="a90a662631478fbc0e6ef76a5add3d630"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">float</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LerpInverse</b> (<a class="el" href="class_a_z_1_1_e_bus.html">float</a> a, <a class="el" href="class_a_z_1_1_e_bus.html">float</a> b, <a class="el" href="class_a_z_1_1_e_bus.html">float</a> value)</td></tr>
-<tr class="memdesc:a90a662631478fbc0e6ef76a5add3d630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a value t where Lerp(a, b, t) == value (or 0 if a == b). <br /></td></tr>
 <tr class="separator:a90a662631478fbc0e6ef76a5add3d630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b87bcf178715e152b4182c8545a7c73" id="r_a2b87bcf178715e152b4182c8545a7c73"><td class="memItemLeft" align="right" valign="top"><a id="a2b87bcf178715e152b4182c8545a7c73" name="a2b87bcf178715e152b4182c8545a7c73"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">double</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LerpInverse</b> (<a class="el" href="class_a_z_1_1_e_bus.html">double</a> a, <a class="el" href="class_a_z_1_1_e_bus.html">double</a> b, <a class="el" href="class_a_z_1_1_e_bus.html">double</a> value)</td></tr>
 <tr class="separator:a2b87bcf178715e152b4182c8545a7c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca708505d4d8ea0b8cd4b3803feee1b" id="r_a9ca708505d4d8ea0b8cd4b3803feee1b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </td></tr>
-<tr class="memitem:a9ca708505d4d8ea0b8cd4b3803feee1b"><td class="memTemplItemLeft" align="right" valign="top">AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a9ca708505d4d8ea0b8cd4b3803feee1b">SmoothCriticallyDamped</a> (T &amp;value, T &amp;<a class="el" href="class_a_z_1_1_e_bus.html">valueRate</a>, <a class="el" href="class_a_z_1_1_e_bus.html">float</a> <a class="el" href="class_a_z_1_1_e_bus.html">timeDelta</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> T &amp;target, <a class="el" href="class_a_z_1_1_e_bus.html">float</a> <a class="el" href="class_a_z_1_1_e_bus.html">smoothTime</a>)</td></tr>
-<tr class="separator:a9ca708505d4d8ea0b8cd4b3803feee1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e737921cb95c26e95ba7e0e7bcd96c" id="r_aa9e737921cb95c26e95ba7e0e7bcd96c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:aa9e737921cb95c26e95ba7e0e7bcd96c"><td class="memTemplItemLeft" align="right" valign="top">AZ_POP_DISABLE_WARNING AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#aa9e737921cb95c26e95ba7e0e7bcd96c">SmoothCriticallyDamped</a> (T &amp;value, T &amp;<a class="el" href="class_a_z_1_1_e_bus.html">valueRate</a>, <a class="el" href="class_a_z_1_1_e_bus.html">float</a> <a class="el" href="class_a_z_1_1_e_bus.html">timeDelta</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> T &amp;target, <a class="el" href="class_a_z_1_1_e_bus.html">float</a> <a class="el" href="class_a_z_1_1_e_bus.html">smoothTime</a>)</td></tr>
+<tr class="separator:aa9e737921cb95c26e95ba7e0e7bcd96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2090acb88b0b9ab8e3d7fe7dfc565d75" id="r_a2090acb88b0b9ab8e3d7fe7dfc565d75"><td class="memTemplParams" colspan="2"><a id="a2090acb88b0b9ab8e3d7fe7dfc565d75" name="a2090acb88b0b9ab8e3d7fe7dfc565d75"></a>
 template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:a2090acb88b0b9ab8e3d7fe7dfc565d75"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> AZStd::enable_if_t&lt; AZStd::is_integral&lt; T &gt;::value, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsEven</b> (T a)</td></tr>
@@ -3125,6 +3132,15 @@ Variables</h2></td></tr>
 <tr class="memitem:afaa69d0dd866e3f3bcfbc89e94b97a6e" id="r_afaa69d0dd866e3f3bcfbc89e94b97a6e"><td class="memItemLeft" align="right" valign="top"><a id="afaa69d0dd866e3f3bcfbc89e94b97a6e" name="afaa69d0dd866e3f3bcfbc89e94b97a6e"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">const</a> ComponentId&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidComponentId</b> = 0</td></tr>
 <tr class="separator:afaa69d0dd866e3f3bcfbc89e94b97a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7288f944e050139729f06e7d21c3b9d1" id="r_a7288f944e050139729f06e7d21c3b9d1"><td class="memItemLeft" align="right" valign="top"><a id="a7288f944e050139729f06e7d21c3b9d1" name="a7288f944e050139729f06e7d21c3b9d1"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><b>ENTITY_ACTIVE_TYPE_INDEX</b> = 0</td></tr>
+<tr class="separator:a7288f944e050139729f06e7d21c3b9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae809517e9d8c339a27d14d276f81373d" id="r_ae809517e9d8c339a27d14d276f81373d"><td class="memItemLeft" align="right" valign="top"><a id="ae809517e9d8c339a27d14d276f81373d" name="ae809517e9d8c339a27d14d276f81373d"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ENTITY_ACTIVE_TYPE_NAME</b> = AZ_CRC_CE(&quot;Entity&quot;)</td></tr>
+<tr class="separator:ae809517e9d8c339a27d14d276f81373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06efe5d117cd26967f342491d27477f" id="r_ab06efe5d117cd26967f342491d27477f"><td class="memItemLeft" align="right" valign="top"><a id="ab06efe5d117cd26967f342491d27477f" name="ab06efe5d117cd26967f342491d27477f"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PARENT_ACTIVE_TYPE_NAME</b> = AZ_CRC_CE(&quot;Parent&quot;)</td></tr>
+<tr class="separator:ab06efe5d117cd26967f342491d27477f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d483764a6d41b67c3bcd2d4e382456e" id="r_a3d483764a6d41b67c3bcd2d4e382456e"><td class="memItemLeft" align="right" valign="top"><a id="a3d483764a6d41b67c3bcd2d4e382456e" name="a3d483764a6d41b67c3bcd2d4e382456e"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TransformComponentTypeId</b> { <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>(&quot;{22B10178-39<a class="el" href="class_a_z_1_1_e_bus.html">B6</a>-4<a class="el" href="class_a_z_1_1_e_bus.html">C12</a>-<a class="el" href="class_a_z_1_1_e_bus.html">BB37</a>-77<a class="el" href="class_a_z_1_1_e_bus.html">DB45FDD3B6</a>}&quot;) }</td></tr>
 <tr class="memdesc:a3d483764a6d41b67c3bcd2d4e382456e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The typeId of game component AzFramework::TransformComponent. <br /></td></tr>
@@ -3348,6 +3364,9 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td>
 <tr class="memitem:ac38ffc2df8e72aafa1c906ab722ecdba" id="r_ac38ffc2df8e72aafa1c906ab722ecdba"><td class="memItemLeft" align="right" valign="top"><a id="ac38ffc2df8e72aafa1c906ab722ecdba" name="ac38ffc2df8e72aafa1c906ab722ecdba"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><b>c_serializeMaxNumBaseClasses</b> = 3</td></tr>
 <tr class="separator:ac38ffc2df8e72aafa1c906ab722ecdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020870ae4816bd6f0c2919a33a3f6a9c" id="r_a020870ae4816bd6f0c2919a33a3f6a9c"><td class="memItemLeft" align="right" valign="top"><a id="a020870ae4816bd6f0c2919a33a3f6a9c" name="a020870ae4816bd6f0c2919a33a3f6a9c"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TaskExecutorServiceCrc</b> = AZ_CRC_CE(&quot;TaskExecutorService&quot;)</td></tr>
+<tr class="separator:a020870ae4816bd6f0c2919a33a3f6a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc33173d48eca26f6c5e1fa922204ce" id="r_a2fc33173d48eca26f6c5e1fa922204ce"><td class="memItemLeft" align="right" valign="top"><a id="a2fc33173d48eca26f6c5e1fa922204ce" name="a2fc33173d48eca26f6c5e1fa922204ce"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#ad49ae84c220453bc7b80048c9da51896">PlatformID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>g_currentPlatform</b> = PlatformID::PLATFORM_ANDROID_64</td></tr>
 <tr class="separator:a2fc33173d48eca26f6c5e1fa922204ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6117,8 +6136,8 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 
 </div>
 </div>
-<a id="a9ca708505d4d8ea0b8cd4b3803feee1b" name="a9ca708505d4d8ea0b8cd4b3803feee1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca708505d4d8ea0b8cd4b3803feee1b">&#9670;&#160;</a></span>SmoothCriticallyDamped()</h2>
+<a id="aa9e737921cb95c26e95ba7e0e7bcd96c" name="aa9e737921cb95c26e95ba7e0e7bcd96c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e737921cb95c26e95ba7e0e7bcd96c">&#9670;&#160;</a></span>SmoothCriticallyDamped()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6126,7 +6145,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_e_bus.html">void</a> AZ::SmoothCriticallyDamped </td>
+          <td class="memname">AZ_POP_DISABLE_WARNING AZ_MATH_INLINE <a class="el" href="class_a_z_1_1_e_bus.html">void</a> AZ::SmoothCriticallyDamped </td>
           <td>(</td>
           <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -6807,7 +6826,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

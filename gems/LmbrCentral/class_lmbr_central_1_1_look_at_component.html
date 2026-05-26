@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine LmbrCentral Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine LmbrCentral Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -85,15 +85,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b>
 <tr class="memitem:a18f2dbffce50ab1b828b1bf9cd63452e" id="r_a18f2dbffce50ab1b828b1bf9cd63452e"><td class="memItemLeft" align="right" valign="top"><a id="a18f2dbffce50ab1b828b1bf9cd63452e" name="a18f2dbffce50ab1b828b1bf9cd63452e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</b> (const AZ::EntityId &amp;entityId) override</td></tr>
 <tr class="separator:a18f2dbffce50ab1b828b1bf9cd63452e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839b1c00df49e2cc3d0f16797c99dfb8" id="r_a839b1c00df49e2cc3d0f16797c99dfb8"><td class="memItemLeft" align="right" valign="top"><a id="a839b1c00df49e2cc3d0f16797c99dfb8" name="a839b1c00df49e2cc3d0f16797c99dfb8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTarget</b> (AZ::EntityId targetEntity) override</td></tr>
-<tr class="separator:a839b1c00df49e2cc3d0f16797c99dfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40af8049e014a385a74342633a832e7d" id="r_a40af8049e014a385a74342633a832e7d"><td class="memItemLeft" align="right" valign="top"><a id="a40af8049e014a385a74342633a832e7d" name="a40af8049e014a385a74342633a832e7d"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetTarget</b> () const</td></tr>
+<tr class="separator:a40af8049e014a385a74342633a832e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd69de6715504cc5e156e15ad9d9bcf5" id="r_afd69de6715504cc5e156e15ad9d9bcf5"><td class="memItemLeft" align="right" valign="top"><a id="afd69de6715504cc5e156e15ad9d9bcf5" name="afd69de6715504cc5e156e15ad9d9bcf5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTarget</b> (const AZ::EntityId &amp;targetEntity) override</td></tr>
+<tr class="separator:afd69de6715504cc5e156e15ad9d9bcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53bacdb66e514d127d6711a0c213dcf" id="r_ae53bacdb66e514d127d6711a0c213dcf"><td class="memItemLeft" align="right" valign="top"><a id="ae53bacdb66e514d127d6711a0c213dcf" name="ae53bacdb66e514d127d6711a0c213dcf"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetTargetPosition</b> () const override</td></tr>
+<tr class="separator:ae53bacdb66e514d127d6711a0c213dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c904006519b0bf950445c57afe5fab" id="r_ad5c904006519b0bf950445c57afe5fab"><td class="memItemLeft" align="right" valign="top"><a id="ad5c904006519b0bf950445c57afe5fab" name="ad5c904006519b0bf950445c57afe5fab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTargetPosition</b> (const AZ::Vector3 &amp;targetPosition) override</td></tr>
 <tr class="separator:ad5c904006519b0bf950445c57afe5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09a1ca51ab8b99321f44c44b28b123c" id="r_ac09a1ca51ab8b99321f44c44b28b123c"><td class="memItemLeft" align="right" valign="top"><a id="ac09a1ca51ab8b99321f44c44b28b123c" name="ac09a1ca51ab8b99321f44c44b28b123c"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLookAtTransform</b> () const override</td></tr>
+<tr class="separator:ac09a1ca51ab8b99321f44c44b28b123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad112e182e8ce65f6261771f91adb86a0" id="r_ad112e182e8ce65f6261771f91adb86a0"><td class="memItemLeft" align="right" valign="top"><a id="ad112e182e8ce65f6261771f91adb86a0" name="ad112e182e8ce65f6261771f91adb86a0"></a>
+AZ::Transform::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>GetAxis</b> () const override</td></tr>
+<tr class="separator:ad112e182e8ce65f6261771f91adb86a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf6c05bd52d74e663f7c81423205788" id="r_adaf6c05bd52d74e663f7c81423205788"><td class="memItemLeft" align="right" valign="top"><a id="adaf6c05bd52d74e663f7c81423205788" name="adaf6c05bd52d74e663f7c81423205788"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAxis</b> (AZ::Transform::Axis axis) override</td></tr>
 <tr class="separator:adaf6c05bd52d74e663f7c81423205788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a2e18768c47b627d0b174c2b81582f" id="r_ae0a2e18768c47b627d0b174c2b81582f"><td class="memItemLeft" align="right" valign="top"><a id="ae0a2e18768c47b627d0b174c2b81582f" name="ae0a2e18768c47b627d0b174c2b81582f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStrength</b> () const override</td></tr>
+<tr class="separator:ae0a2e18768c47b627d0b174c2b81582f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d8d3a3485404204fddb2254ad915dc" id="r_a42d8d3a3485404204fddb2254ad915dc"><td class="memItemLeft" align="right" valign="top"><a id="a42d8d3a3485404204fddb2254ad915dc" name="a42d8d3a3485404204fddb2254ad915dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStrength</b> (const float strength) override</td></tr>
+<tr class="separator:a42d8d3a3485404204fddb2254ad915dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa186b721da0d11472b9b039ccdbcdca0" id="r_aa186b721da0d11472b9b039ccdbcdca0"><td class="memItemLeft" align="right" valign="top"><a id="aa186b721da0d11472b9b039ccdbcdca0" name="aa186b721da0d11472b9b039ccdbcdca0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFixatePitch</b> () const override</td></tr>
+<tr class="separator:aa186b721da0d11472b9b039ccdbcdca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b0a93c6cf39998723c28c9a633721e" id="r_a85b0a93c6cf39998723c28c9a633721e"><td class="memItemLeft" align="right" valign="top"><a id="a85b0a93c6cf39998723c28c9a633721e" name="a85b0a93c6cf39998723c28c9a633721e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFixatePitch</b> (const bool fixatePitch) override</td></tr>
+<tr class="separator:a85b0a93c6cf39998723c28c9a633721e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045c9ece467d47d40f4a920bc1513cf2" id="r_a045c9ece467d47d40f4a920bc1513cf2"><td class="memItemLeft" align="right" valign="top"><a id="a045c9ece467d47d40f4a920bc1513cf2" name="a045c9ece467d47d40f4a920bc1513cf2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFixateRoll</b> () const override</td></tr>
+<tr class="separator:a045c9ece467d47d40f4a920bc1513cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974ddf06e26fe6283b26c9b4770735ee" id="r_a974ddf06e26fe6283b26c9b4770735ee"><td class="memItemLeft" align="right" valign="top"><a id="a974ddf06e26fe6283b26c9b4770735ee" name="a974ddf06e26fe6283b26c9b4770735ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFixateRoll</b> (const bool fixateRoll) override</td></tr>
+<tr class="separator:a974ddf06e26fe6283b26c9b4770735ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ca876a8b1e1db00247d5d06d02bcb4" id="r_a82ca876a8b1e1db00247d5d06d02bcb4"><td class="memItemLeft" align="right" valign="top"><a id="a82ca876a8b1e1db00247d5d06d02bcb4" name="a82ca876a8b1e1db00247d5d06d02bcb4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFixateYaw</b> () const override</td></tr>
+<tr class="separator:a82ca876a8b1e1db00247d5d06d02bcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca30578c50bb2b5fc44884c9bfa97511" id="r_aca30578c50bb2b5fc44884c9bfa97511"><td class="memItemLeft" align="right" valign="top"><a id="aca30578c50bb2b5fc44884c9bfa97511" name="aca30578c50bb2b5fc44884c9bfa97511"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFixateYaw</b> (const bool fixateYaw) override</td></tr>
+<tr class="separator:aca30578c50bb2b5fc44884c9bfa97511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6f19ea9e67094ecfec0f11d17da494" id="r_aff6f19ea9e67094ecfec0f11d17da494"><td class="memItemLeft" align="right" valign="top"><a id="aff6f19ea9e67094ecfec0f11d17da494" name="aff6f19ea9e67094ecfec0f11d17da494"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnabled</b> () const override</td></tr>
+<tr class="separator:aff6f19ea9e67094ecfec0f11d17da494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af723fa04da3c599048f1c8ee15a1a537" id="r_af723fa04da3c599048f1c8ee15a1a537"><td class="memItemLeft" align="right" valign="top"><a id="af723fa04da3c599048f1c8ee15a1a537" name="af723fa04da3c599048f1c8ee15a1a537"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnabled</b> (const bool enabled) override</td></tr>
+<tr class="separator:af723fa04da3c599048f1c8ee15a1a537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e113f52416aff2050c0131fb681e1c2" id="r_a7e113f52416aff2050c0131fb681e1c2"><td class="memItemLeft" align="right" valign="top"><a id="a7e113f52416aff2050c0131fb681e1c2" name="a7e113f52416aff2050c0131fb681e1c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplyLookAtTransform</b> () const override</td></tr>
+<tr class="separator:a7e113f52416aff2050c0131fb681e1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c06d058b982a6755732e8ca8e5f84d" id="r_ab6c06d058b982a6755732e8ca8e5f84d"><td class="memItemLeft" align="right" valign="top"><a id="ab6c06d058b982a6755732e8ca8e5f84d" name="ab6c06d058b982a6755732e8ca8e5f84d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetApplyLookAtTransform</b> (const bool applyLookAtTransform) override</td></tr>
+<tr class="separator:ab6c06d058b982a6755732e8ca8e5f84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -125,7 +173,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EditorLookAtComponen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lmbr_central.html">LmbrCentral</a></li><li class="navelem"><a class="el" href="class_lmbr_central_1_1_look_at_component.html">LookAtComponent</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:07 for Open 3D Engine LmbrCentral Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:44 for Open 3D Engine LmbrCentral Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -3,6 +3,7 @@ title: O3DE Gem API reference
 description: Reference index for Gems shipped with Open 3D Engine.
 ---
 
+* [AFR](/docs/api/gems/AFR)
 * [AWSCore](/docs/api/gems/AWSCore)
 * [Achievements](/docs/api/gems/Achievements)
 * [Archive](/docs/api/gems/Archive)
@@ -53,6 +54,7 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [Multiplayer](/docs/api/gems/Multiplayer)
 * [MultiplayerCompression](/docs/api/gems/MultiplayerCompression)
 * [NvCloth](/docs/api/gems/NvCloth)
+* [OpenParticleSystem](/docs/api/gems/OpenParticleSystem)
 * [OpenXRVk](/docs/api/gems/OpenXRVk)
 * [PhysX](/docs/api/gems/PhysX)
 * [Prefab](/docs/api/gems/Prefab)
@@ -79,6 +81,7 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [ScriptEvents](/docs/api/gems/ScriptEvents)
 * [ScriptedEntityTweener](/docs/api/gems/ScriptedEntityTweener)
 * [SimulationInterfaces](/docs/api/gems/SimulationInterfaces)
+* [SkyAtmosphere](/docs/api/gems/SkyAtmosphere)
 * [Stars](/docs/api/gems/Stars)
 * [StartingPointCamera](/docs/api/gems/StartingPointCamera)
 * [StartingPointInput](/docs/api/gems/StartingPointInput)

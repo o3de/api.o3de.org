@@ -2,6 +2,7 @@ var class_a_z_1_1_null_1_1_command_list =
 [
     [ "BeginPredication", "class_a_z_1_1_null_1_1_command_list.html#a8f47559a958b18f04a60cde83f40140b", null ],
     [ "BuildBottomLevelAccelerationStructure", "class_a_z_1_1_null_1_1_command_list.html#a26cc6aa37d09993a1422ea02d19bca63", null ],
+    [ "BuildClusterAccelerationStructures", "class_a_z_1_1_null_1_1_command_list.html#ad0a781145553f0ceb19e04de3437d1e4", null ],
     [ "CompactBottomLevelAccelerationStructure", "class_a_z_1_1_null_1_1_command_list.html#adc976546c5ca7a8fcef5993e6579f0ce", null ],
     [ "EndPredication", "class_a_z_1_1_null_1_1_command_list.html#ac6cbcbe254dc898d22170d3175279d91", null ],
     [ "SetFragmentShadingRate", "class_a_z_1_1_null_1_1_command_list.html#a8addb67cb0df23e37d22d7bae0d86e55", null ],

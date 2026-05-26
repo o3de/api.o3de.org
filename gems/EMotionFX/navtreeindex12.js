@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"class_m_core_1_1_halton_sequence.html#aa3d369c1e7831d70ac4fd087e7ecbee7":[0,0,5,36,5],
+"class_m_core_1_1_halton_sequence.html#ab4bab7baa52c2d368360605357784e15":[0,0,5,36,10],
 "class_m_core_1_1_halton_sequence.html#add1c3727802a33a74f0bad9fa5351b67":[0,0,5,36,1],
 "class_m_core_1_1_halton_sequence.html#ae3c07a7cd837359a6a5335fb37e2dec6":[0,0,5,36,2],
 "class_m_core_1_1_halton_sequence.html#af7682235ed84e54418cc3ff966befdf2":[0,0,5,36,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "functions_e.html":[0,3,0,4],
 "functions_enum.html":[0,3,4],
 "functions_eval.html":[0,3,5],
-"functions_f.html":[0,3,0,5],
-"functions_func.html":[0,3,1],
-"functions_func.html":[0,3,1,0]
+"functions_f.html":[0,3,0,5]
 };

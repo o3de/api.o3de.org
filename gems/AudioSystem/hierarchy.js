@@ -264,8 +264,5 @@ var hierarchy =
     ] ],
     [ "Ui::InspectorPanel", null, [
       [ "AudioControls::CInspectorPanel", "class_audio_controls_1_1_c_inspector_panel.html", null ]
-    ] ],
-    [ "Ui::MainWindow", null, [
-      [ "AudioControls::CAudioControlsEditorWindow", "class_audio_controls_1_1_c_audio_controls_editor_window.html", null ]
     ] ]
 ];

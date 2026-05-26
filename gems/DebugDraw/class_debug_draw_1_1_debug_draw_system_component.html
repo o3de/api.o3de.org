@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine DebugDraw Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine DebugDraw Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -221,12 +221,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRaytracingData</b>
 <tr class="memitem:a58be98b5b777b67b8ccc80fbc711240a" id="r_a58be98b5b777b67b8ccc80fbc711240a"><td class="memItemLeft" align="right" valign="top"><a id="a58be98b5b777b67b8ccc80fbc711240a" name="a58be98b5b777b67b8ccc80fbc711240a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRaytracingData</b> (<a class="el" href="struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_obb_element_wrapper.html">DebugDrawObbElementWrapper</a> &amp;element)</td></tr>
 <tr class="separator:a58be98b5b777b67b8ccc80fbc711240a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a229b84a511e7136372a7587ba5981d6b" id="r_a229b84a511e7136372a7587ba5981d6b"><td class="memItemLeft" align="right" valign="top"><a id="a229b84a511e7136372a7587ba5981d6b" name="a229b84a511e7136372a7587ba5981d6b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveRaytracingData</b> (const <a class="el" href="struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_sphere_element_wrapper.html">DebugDrawSphereElementWrapper</a> &amp;element)</td></tr>
-<tr class="separator:a229b84a511e7136372a7587ba5981d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518fa40ce515bc6d40fd8177c35701f3" id="r_a518fa40ce515bc6d40fd8177c35701f3"><td class="memItemLeft" align="right" valign="top"><a id="a518fa40ce515bc6d40fd8177c35701f3" name="a518fa40ce515bc6d40fd8177c35701f3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveRaytracingData</b> (const <a class="el" href="struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_obb_element_wrapper.html">DebugDrawObbElementWrapper</a> &amp;element)</td></tr>
-<tr class="separator:a518fa40ce515bc6d40fd8177c35701f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eaca11838d8c352cf10e081aa72a3ca" id="r_a5eaca11838d8c352cf10e081aa72a3ca"><td class="memItemLeft" align="right" valign="top"><a id="a5eaca11838d8c352cf10e081aa72a3ca" name="a5eaca11838d8c352cf10e081aa72a3ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveRaytracingData</b> (<a class="el" href="struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_sphere_element_wrapper.html">DebugDrawSphereElementWrapper</a> &amp;element)</td></tr>
+<tr class="separator:a5eaca11838d8c352cf10e081aa72a3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2b71376ed2442b045f66a1d3bb83b1" id="r_a8d2b71376ed2442b045f66a1d3bb83b1"><td class="memItemLeft" align="right" valign="top"><a id="a8d2b71376ed2442b045f66a1d3bb83b1" name="a8d2b71376ed2442b045f66a1d3bb83b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveRaytracingData</b> (<a class="el" href="struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_obb_element_wrapper.html">DebugDrawObbElementWrapper</a> &amp;element)</td></tr>
+<tr class="separator:a8d2b71376ed2442b045f66a1d3bb83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -278,6 +278,9 @@ AZStd::vector&lt; AZ::Color &gt;&#160;</td><td class="memItemRight" valign="bott
 <tr class="memitem:a8f5237a215d57e6237e3b82e953741f1" id="r_a8f5237a215d57e6237e3b82e953741f1"><td class="memItemLeft" align="right" valign="top"><a id="a8f5237a215d57e6237e3b82e953741f1" name="a8f5237a215d57e6237e3b82e953741f1"></a>
 AZ::Render::RayTracingFeatureProcessorInterface *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rayTracingFeatureProcessor</b> = nullptr</td></tr>
 <tr class="separator:a8f5237a215d57e6237e3b82e953741f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68089f157fa6dc7a4eb78c18e65dbe81" id="r_a68089f157fa6dc7a4eb78c18e65dbe81"><td class="memItemLeft" align="right" valign="top"><a id="a68089f157fa6dc7a4eb78c18e65dbe81" name="a68089f157fa6dc7a4eb78c18e65dbe81"></a>
+AZ::Render::MeshFeatureProcessorInterface *&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshFeatureProcessor</b> = nullptr</td></tr>
+<tr class="separator:a68089f157fa6dc7a4eb78c18e65dbe81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af231f93b50767ecb5872cb723073d1c2" id="r_af231f93b50767ecb5872cb723073d1c2"><td class="memItemLeft" align="right" valign="top"><a id="af231f93b50767ecb5872cb723073d1c2" name="af231f93b50767ecb5872cb723073d1c2"></a>
 AZ::RPI::Ptr&lt; AZ::RPI::Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_spheresRayTracingIndicesBuffer</b></td></tr>
 <tr class="separator:af231f93b50767ecb5872cb723073d1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,7 +303,7 @@ AZ::Render::RayTracingFeatureProcessorInterface::ProceduralGeometryTypeHandle&#1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>DebugDraw</b></li><li class="navelem"><a class="el" href="class_debug_draw_1_1_debug_draw_system_component.html">DebugDrawSystemComponent</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:02 for Open 3D Engine DebugDraw Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:39 for Open 3D Engine DebugDraw Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

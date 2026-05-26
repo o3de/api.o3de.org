@@ -5,6 +5,7 @@ var class_a_z_1_1_d_x12_1_1_command_list =
     [ "TileMapRequest", "struct_a_z_1_1_d_x12_1_1_command_list_1_1_tile_map_request.html", null ],
     [ "BeginPredication", "class_a_z_1_1_d_x12_1_1_command_list.html#ac8de9a984c919c542ffae48911341ff6", null ],
     [ "BuildBottomLevelAccelerationStructure", "class_a_z_1_1_d_x12_1_1_command_list.html#a89019891405816b12ba09cc4e5720de4", null ],
+    [ "BuildClusterAccelerationStructures", "class_a_z_1_1_d_x12_1_1_command_list.html#af23a6ef24d01d5e892f5f6f6aaa6c45f", null ],
     [ "CompactBottomLevelAccelerationStructure", "class_a_z_1_1_d_x12_1_1_command_list.html#a3365a37c6c987bf2855cea31a8c6524d", null ],
     [ "EndPredication", "class_a_z_1_1_d_x12_1_1_command_list.html#aa3e0a2d627f6fc876f41f367b814d837", null ],
     [ "SetFragmentShadingRate", "class_a_z_1_1_d_x12_1_1_command_list.html#a14f0e014ca949be6cb5748634c5cbfb5", null ],

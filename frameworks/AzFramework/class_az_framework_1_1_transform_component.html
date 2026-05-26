@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,6 +54,7 @@ $(document).ready(function(){initNavTree('class_az_framework_1_1_transform_compo
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -129,8 +130,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldTM</b> (const
 <tr class="memitem:a105ee8355ab93f6b98b3cad82f9e9a73" id="r_a105ee8355ab93f6b98b3cad82f9e9a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_transform_component.html#a105ee8355ab93f6b98b3cad82f9e9a73">SetParentRelative</a> (AZ::EntityId id) override</td></tr>
 <tr class="separator:a105ee8355ab93f6b98b3cad82f9e9a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a07f40f20030bd8ad31063b0fff1bf0ec" id="r_a07f40f20030bd8ad31063b0fff1bf0ec"><td class="memItemLeft" align="right" valign="top"><a id="a07f40f20030bd8ad31063b0fff1bf0ec" name="a07f40f20030bd8ad31063b0fff1bf0ec"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>s_parentActiveTypeIndex</b></td></tr>
+<tr class="memdesc:a07f40f20030bd8ad31063b0fff1bf0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to what active type index position the "Parent" type is for Entity Activation Handling. <br /></td></tr>
+<tr class="separator:a07f40f20030bd8ad31063b0fff1bf0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a99832477437ae42eb1fa1437538ad35a" id="r_a99832477437ae42eb1fa1437538ad35a"><td class="memItemLeft" align="right" valign="top"><a id="a99832477437ae42eb1fa1437538ad35a" name="a99832477437ae42eb1fa1437538ad35a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> () override</td></tr>
+<tr class="separator:a99832477437ae42eb1fa1437538ad35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a5a8e8ccad5b164a6df135707145ecd" id="r_a4a5a8e8ccad5b164a6df135707145ecd"><td class="memItemLeft" align="right" valign="top"><a id="a4a5a8e8ccad5b164a6df135707145ecd" name="a4a5a8e8ccad5b164a6df135707145ecd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
 <tr class="separator:a4a5a8e8ccad5b164a6df135707145ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +271,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOnParentChangedBeh
 <tr class="memitem:a366fee264f8fd69d2bc36913cc3460b1" id="r_a366fee264f8fd69d2bc36913cc3460b1"><td class="memItemLeft" align="right" valign="top"><a id="a366fee264f8fd69d2bc36913cc3460b1" name="a366fee264f8fd69d2bc36913cc3460b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParentImpl</b> (AZ::EntityId parentId, bool isKeepWorldTM)</td></tr>
 <tr class="separator:a366fee264f8fd69d2bc36913cc3460b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f33076eb64f93e2e66f144ccb76da7" id="r_ab7f33076eb64f93e2e66f144ccb76da7"><td class="memItemLeft" align="right" valign="top"><a id="ab7f33076eb64f93e2e66f144ccb76da7" name="ab7f33076eb64f93e2e66f144ccb76da7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessParentEntity</b> (const AZ::EntityId &amp;parentEntityId)</td></tr>
+<tr class="separator:ab7f33076eb64f93e2e66f144ccb76da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87be5d864d988658ceeb02de038d0a19" id="r_a87be5d864d988658ceeb02de038d0a19"><td class="memItemLeft" align="right" valign="top"><a id="a87be5d864d988658ceeb02de038d0a19" name="a87be5d864d988658ceeb02de038d0a19"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalTMImpl</b> (const AZ::Transform &amp;tm)</td></tr>
 <tr class="separator:a87be5d864d988658ceeb02de038d0a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,17 +299,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GatherChildren</b> (A
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a96a00f6eb0645e7998be5199ac52f366" id="r_a96a00f6eb0645e7998be5199ac52f366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_transform_component.html#a96a00f6eb0645e7998be5199ac52f366">OnTransformChanged</a> (const AZ::Transform &amp;parentLocalTM, const AZ::Transform &amp;parentWorldTM) override</td></tr>
 <tr class="separator:a96a00f6eb0645e7998be5199ac52f366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80b8c76a19e093ae1276147934f3e3a1" id="r_a80b8c76a19e093ae1276147934f3e3a1"><td class="memItemLeft" align="right" valign="top"><a id="a80b8c76a19e093ae1276147934f3e3a1" name="a80b8c76a19e093ae1276147934f3e3a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b> (const AZ::EntityId &amp;parentEntityId) override</td></tr>
-<tr class="memdesc:a80b8c76a19e093ae1276147934f3e3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the parent entity activates. <br /></td></tr>
+<tr class="memitem:a80b8c76a19e093ae1276147934f3e3a1" id="r_a80b8c76a19e093ae1276147934f3e3a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_transform_component.html#a80b8c76a19e093ae1276147934f3e3a1">OnEntityActivated</a> (const AZ::EntityId &amp;parentEntityId) override</td></tr>
 <tr class="separator:a80b8c76a19e093ae1276147934f3e3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f0f1c34522db98202b85ddf03b4eda" id="r_a69f0f1c34522db98202b85ddf03b4eda"><td class="memItemLeft" align="right" valign="top"><a id="a69f0f1c34522db98202b85ddf03b4eda" name="a69f0f1c34522db98202b85ddf03b4eda"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</b> (const AZ::EntityId &amp;parentEntityId) override</td></tr>
-<tr class="memdesc:a69f0f1c34522db98202b85ddf03b4eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the parent entity deactivates. <br /></td></tr>
 <tr class="separator:a69f0f1c34522db98202b85ddf03b4eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94e58d180f0a208f9ef16fcab428ab7" id="r_aa94e58d180f0a208f9ef16fcab428ab7"><td class="memItemLeft" align="right" valign="top"><a id="aa94e58d180f0a208f9ef16fcab428ab7" name="aa94e58d180f0a208f9ef16fcab428ab7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDestruction</b> (const AZ::EntityId &amp;parentEntityId) override</td></tr>
+<tr class="separator:aa94e58d180f0a208f9ef16fcab428ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a673a7377644c158e8c9e780b8d40832b" id="r_a673a7377644c158e8c9e780b8d40832b"><td class="memItemLeft" align="right" valign="top"><a id="a673a7377644c158e8c9e780b8d40832b" name="a673a7377644c158e8c9e780b8d40832b"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentActiveIndex</b> ()</td></tr>
+<tr class="separator:a673a7377644c158e8c9e780b8d40832b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28e9375b5d09be4aea0d633c0cc7e29" id="r_aa28e9375b5d09be4aea0d633c0cc7e29"><td class="memItemLeft" align="right" valign="top"><a id="aa28e9375b5d09be4aea0d633c0cc7e29" name="aa28e9375b5d09be4aea0d633c0cc7e29"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
 <tr class="memdesc:aa28e9375b5d09be4aea0d633c0cc7e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">ComponentDescriptor::GetProvidedServices <br /></td></tr>
@@ -327,6 +344,10 @@ AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>m_localTM</b
 AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>m_worldTM</b> = AZ::Transform::CreateIdentity()</td></tr>
 <tr class="memdesc:ace9f59eb194ac7852d55c90e73eb5491"><td class="mdescLeft">&#160;</td><td class="mdescRight">World transform including parent transform (same as localTM if no parent). <br /></td></tr>
 <tr class="separator:ace9f59eb194ac7852d55c90e73eb5491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab457b8eb0244a5e5d4760d761df0665b" id="r_ab457b8eb0244a5e5d4760d761df0665b"><td class="memItemLeft" align="right" valign="top"><a id="ab457b8eb0244a5e5d4760d761df0665b" name="ab457b8eb0244a5e5d4760d761df0665b"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityId</b></td></tr>
+<tr class="memdesc:ab457b8eb0244a5e5d4760d761df0665b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored for Deconstructor event/bus firing. <br /></td></tr>
+<tr class="separator:ab457b8eb0244a5e5d4760d761df0665b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf86e8ed6b77dbc7ad802538fa82cbb" id="r_abcf86e8ed6b77dbc7ad802538fa82cbb"><td class="memItemLeft" align="right" valign="top"><a id="abcf86e8ed6b77dbc7ad802538fa82cbb" name="abcf86e8ed6b77dbc7ad802538fa82cbb"></a>
 AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentId</b></td></tr>
 <tr class="memdesc:abcf86e8ed6b77dbc7ad802538fa82cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If valid, this transform is parented to m_parentId. <br /></td></tr>
@@ -350,7 +371,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentActive</b> = 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_onNewParentKeepWorldTM</b> = true</td></tr>
 <tr class="memdesc:a6828422de5b61dacdbd7576022f22c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, recompute localTM instead of worldTM when parent becomes active. <br /></td></tr>
 <tr class="separator:a6828422de5b61dacdbd7576022f22c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ece23e046c88142c4eb96e940b936bb" id="r_a2ece23e046c88142c4eb96e940b936bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_transform_component.html#a2ece23e046c88142c4eb96e940b936bb">m_isStatic</a> = false</td></tr>
+<tr class="memitem:a2ece23e046c88142c4eb96e940b936bb" id="r_a2ece23e046c88142c4eb96e940b936bb"><td class="memItemLeft" align="right" valign="top"><a id="a2ece23e046c88142c4eb96e940b936bb" name="a2ece23e046c88142c4eb96e940b936bb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isStatic</b> = false</td></tr>
+<tr class="memdesc:a2ece23e046c88142c4eb96e940b936bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the transform is static and doesn't move while entity is active. <br /></td></tr>
 <tr class="separator:a2ece23e046c88142c4eb96e940b936bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace71176d2c8f1e6944d39ac640e7b34a" id="r_ace71176d2c8f1e6944d39ac640e7b34a"><td class="memItemLeft" align="right" valign="top"><a id="ace71176d2c8f1e6944d39ac640e7b34a" name="ace71176d2c8f1e6944d39ac640e7b34a"></a>
 AZ::OnParentChangedBehavior&#160;</td><td class="memItemRight" valign="bottom"><b>m_onParentChangedBehavior</b> = AZ::OnParentChangedBehavior::Update</td></tr>
@@ -366,6 +389,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AzToolsFramework::Co
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fundamental component that describes the entity in 3D space. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a80b8c76a19e093ae1276147934f3e3a1" name="a80b8c76a19e093ae1276147934f3e3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b8c76a19e093ae1276147934f3e3a1">&#9670;&#160;</a></span>OnEntityActivated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::TransformComponent::OnEntityActivated </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>parentEntityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when the parent entity activates. Called when the parent entity is going to be destroyed. </p>
+
+</div>
+</div>
 <a id="a96a00f6eb0645e7998be5199ac52f366" name="a96a00f6eb0645e7998be5199ac52f366"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96a00f6eb0645e7998be5199ac52f366">&#9670;&#160;</a></span>OnTransformChanged()</h2>
 
@@ -457,30 +507,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AzToolsFramework::Co
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2ece23e046c88142c4eb96e940b936bb" name="a2ece23e046c88142c4eb96e940b936bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ece23e046c88142c4eb96e940b936bb">&#9670;&#160;</a></span>m_isStatic</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzFramework::TransformComponent::m_isStatic = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>If true, the transform is static and doesn't move while entity is active. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Components/<b>TransformComponent.h</b></li>
 </ul>
@@ -490,7 +516,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AzToolsFramework::Co
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_framework.html">AzFramework</a></li><li class="navelem"><a class="el" href="class_az_framework_1_1_transform_component.html">TransformComponent</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:27 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

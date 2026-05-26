@@ -5,6 +5,7 @@ var class_a_z_1_1_i_o_1_1_streamer_context =
     [ "GetNewExternalRequest", "class_a_z_1_1_i_o_1_1_streamer_context.html#a88ad9c409e8fa46f06b51cfe5d98bb8a", null ],
     [ "GetNewExternalRequestBatch", "class_a_z_1_1_i_o_1_1_streamer_context.html#acdb53c4b062735923debecff40b89f4a", null ],
     [ "GetNumPreparedRequests", "class_a_z_1_1_i_o_1_1_streamer_context.html#a72efef5f79742b9a1d0e8a85d6ae3f0b", null ],
+    [ "GetOutstandingTaskCount", "class_a_z_1_1_i_o_1_1_streamer_context.html#aa4f1e3bb098eafa2409d4305f2783da2", null ],
     [ "GetPreparedRequests", "class_a_z_1_1_i_o_1_1_streamer_context.html#a149273bc40c6fc3ed22e9a012d0651b2", null ],
     [ "GetPreparedRequests", "class_a_z_1_1_i_o_1_1_streamer_context.html#ab8d6e340295bbc86397b60b9ffd9eaa5", null ],
     [ "GetStreamerThreadSynchronizer", "class_a_z_1_1_i_o_1_1_streamer_context.html#a70978ad052a271e427606d45fecc34ff", null ],

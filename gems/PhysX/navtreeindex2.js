@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"class_phys_x_1_1_rigid_body_component.html":[1,0,1,162],
 "class_phys_x_1_1_rigid_body_configuration.html":[1,0,1,163],
 "class_phys_x_1_1_rigid_body_configuration.html#a984c2d55513234fb2f84ed312f432911":[1,0,1,163,0],
 "class_phys_x_1_1_rigid_body_configuration.html#af205339be3e5a5babf050e55440fc117":[1,0,1,163,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "struct_phys_x_1_1_region_params.html":[1,0,1,160],
 "struct_phys_x_1_1_scene_query_helpers_1_1_unbounded_overlap_callback.html":[1,0,1,6,1],
 "struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html":[1,0,1,7,0,0],
-"struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html#a58353222278fd58bf2ecffb8dd396721":[1,0,1,7,0,0,0],
-"struct_phys_x_1_1_utils_1_1_prefab_info.html":[1,0,1,7,2]
+"struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html#a58353222278fd58bf2ecffb8dd396721":[1,0,1,7,0,0,0]
 };

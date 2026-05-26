@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -81,6 +81,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteAllEnti
 <tr class="separator:a931ff458995fe8e654b65f3b0a14f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e86363738a95dc50a1575ce29657ce6" id="r_a9e86363738a95dc50a1575ce29657ce6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a9e86363738a95dc50a1575ce29657ce6">SpawnEntity</a> (const AZStd::string &amp;name, const AZStd::string &amp;uri, const AZStd::string &amp;entityNamespace, const AZ::Transform &amp;initialPose, const bool allowRename, PreInsertionCb preinsertionCb, SpawnCompletedCb completedCb)=0</td></tr>
 <tr class="separator:a9e86363738a95dc50a1575ce29657ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeef01c11f1115a8e3df158ba46840da" id="r_adeef01c11f1115a8e3df158ba46840da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#adeef01c11f1115a8e3df158ba46840da">SpawnEntities</a> (const AZStd::vector&lt; <a class="el" href="struct_simulation_interfaces_1_1_spawning_entity.html">SpawningEntity</a> &gt; &amp;spawningEntities, BatchSpawnCompletedCb completedCb)=0</td></tr>
+<tr class="separator:adeef01c11f1115a8e3df158ba46840da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf948de15755e580a0a6b8f18c919e4f" id="r_adf948de15755e580a0a6b8f18c919e4f"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; void, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#adf948de15755e580a0a6b8f18c919e4f">ResetAllEntitiesToInitialState</a> ()=0</td></tr>
 <tr class="separator:adf948de15755e580a0a6b8f18c919e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ddb674b327779862d9f2b1cbdfb609" id="r_a11ddb674b327779862d9f2b1cbdfb609"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; AZStd::string, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a11ddb674b327779862d9f2b1cbdfb609">RegisterNewSimulatedBody</a> (const AZStd::string &amp;proposedName, const AZ::EntityId &amp;entityId)=0</td></tr>
@@ -97,6 +99,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteAllEnti
 <tr class="separator:afe7ed59f1b5af4e15182fb4f47c95c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a905d41f573abf3512c8582a8ed39935f" id="r_a905d41f573abf3512c8582a8ed39935f"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; AZ::EntityId, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a905d41f573abf3512c8582a8ed39935f">GetEntityRoot</a> (const AZStd::string &amp;name)=0</td></tr>
 <tr class="separator:a905d41f573abf3512c8582a8ed39935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516ac0debc2da0059e2b72b42c6ecb2c" id="r_a516ac0debc2da0059e2b72b42c6ecb2c"><td class="memItemLeft" align="right" valign="top">virtual AZ::Outcome&lt; AZStd::string, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#a516ac0debc2da0059e2b72b42c6ecb2c">GetSimulatedBodyNameById</a> (const AZ::EntityId &amp;entityId)=0</td></tr>
+<tr class="separator:a516ac0debc2da0059e2b72b42c6ecb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6caa97e8ab54d002ec9a9fdfcccb448d" name="a6caa97e8ab54d002ec9a9fdfcccb448d"></a>
@@ -355,6 +359,39 @@ Get a list of entities that match the filter.</h1>
 
 </div>
 </div>
+<a id="a516ac0debc2da0059e2b72b42c6ecb2c" name="a516ac0debc2da0059e2b72b42c6ecb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516ac0debc2da0059e2b72b42c6ecb2c">&#9670;&#160;</a></span>GetSimulatedBodyNameById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Outcome&lt; AZStd::string, <a class="el" href="struct_simulation_interfaces_1_1_failed_result.html">FailedResult</a> &gt; SimulationInterfaces::SimulationEntityManagerRequests::GetSimulatedBodyNameById </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get simulation interfaces name of the entity with given id. Mapping id to name is the same as in method <a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html#afe7ed59f1b5af4e15182fb4f47c95c81">GetEntityId</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityId</td><td>id of requested entity </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>name of the simulation entity if exists, Failure otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a931ff458995fe8e654b65f3b0a14f6a4" name="a931ff458995fe8e654b65f3b0a14f6a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a931ff458995fe8e654b65f3b0a14f6a4">&#9670;&#160;</a></span>GetSpawnables()</h2>
 
@@ -531,6 +568,43 @@ Get a list of entities that match the filter.</h1>
 
 </div>
 </div>
+<a id="adeef01c11f1115a8e3df158ba46840da" name="adeef01c11f1115a8e3df158ba46840da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeef01c11f1115a8e3df158ba46840da">&#9670;&#160;</a></span>SpawnEntities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SimulationInterfaces::SimulationEntityManagerRequests::SpawnEntities </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; <a class="el" href="struct_simulation_interfaces_1_1_spawning_entity.html">SpawningEntity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>spawningEntities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BatchSpawnCompletedCb&#160;</td>
+          <td class="paramname"><em>completedCb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Callback for when all requested entities have either been spawned and registered or failed. Results are returned in the same order as the input requests. </p>
+
+</div>
+</div>
 <a id="a9e86363738a95dc50a1575ce29657ce6" name="a9e86363738a95dc50a1575ce29657ce6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e86363738a95dc50a1575ce29657ce6">&#9670;&#160;</a></span>SpawnEntity()</h2>
 
@@ -640,7 +714,7 @@ Get a list of entities that match the filter.</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>SimulationInterfaces</b></li><li class="navelem"><a class="el" href="class_simulation_interfaces_1_1_simulation_entity_manager_requests.html">SimulationEntityManagerRequests</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:14 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:52 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

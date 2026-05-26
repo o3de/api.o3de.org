@@ -271,6 +271,9 @@ var hierarchy =
       [ "LyShine::UiPrimitive", "struct_ly_shine_1_1_ui_primitive.html", null ],
       [ "UiElementComponent", "class_ui_element_component.html", null ]
     ] ],
+    [ "AzToolsFramework:: PropertyHandler", null, [
+      [ "LyShineEditor::CanvasAssetPropertyHandler", "class_ly_shine_editor_1_1_canvas_asset_property_handler.html", null ]
+    ] ],
     [ "AzToolsFramework::AssetBrowser::AssetBrowserEntryFilter", null, [
       [ "UISliceLibraryFilter", "class_u_i_slice_library_filter.html", null ]
     ] ],
@@ -320,7 +323,6 @@ var hierarchy =
         [ "PropertyHandlerOffset", "class_property_handler_offset.html", null ]
       ] ],
       [ "LegacyVectorPropertyHandlerBase< TypeBeingHandled >", "class_legacy_vector_property_handler_base.html", null ],
-      [ "LyShineEditor::CanvasAssetPropertyHandler", "class_ly_shine_editor_1_1_canvas_asset_property_handler.html", null ],
       [ "PropertyHandlerAnchor", "class_property_handler_anchor.html", null ],
       [ "PropertyHandlerChar", "class_property_handler_char.html", null ],
       [ "PropertyHandlerDirectory", "class_property_handler_directory.html", null ],

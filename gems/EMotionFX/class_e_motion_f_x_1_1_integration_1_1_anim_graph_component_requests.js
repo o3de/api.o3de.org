@@ -35,5 +35,7 @@ var class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests =
     [ "SetParameterVector2", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests.html#a2acae2f2f713d580e9f967cc03c4500c", null ],
     [ "SetParameterVector3", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests.html#acf311e8aa6e0f2e7deea0a33355473ad", null ],
     [ "SetVisualizeEnabled", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests.html#a20e26dc90f843c9e305b946b9857fed4", null ],
+    [ "StartAnimGraph", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests.html#ab24e0053cecbc51e9e42cfb5a55315d6", null ],
+    [ "StopAnimGraph", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests.html#ae7c5ced03e3a3300356c80842e44bb43", null ],
     [ "SyncAnimGraph", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component_requests.html#ab8b76fbbaeca98111560918f79e31d48", null ]
 ];

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,7 +62,7 @@ $(document).ready(function(){initNavTree('class_e_m_studio_1_1_node_graph_widget
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits QOpenGLWidget, and QOpenGLFunctions.</p>
+<p>Inherits QWidget.</p>
 
 <p>Inherited by <a class="el" href="class_e_m_studio_1_1_blend_graph_widget.html">EMStudio::BlendGraphWidget</a>.</p>
 <table class="memberdecls">
@@ -77,9 +77,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac98f9e59a4958685921b283463c948c8" id="r_ac98f9e59a4958685921b283463c948c8"><td class="memItemLeft" align="right" valign="top"><a id="ac98f9e59a4958685921b283463c948c8" name="ac98f9e59a4958685921b283463c948c8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NodeGraphWidget</b> (<a class="el" href="class_e_m_studio_1_1_anim_graph_plugin.html">AnimGraphPlugin</a> *plugin, <a class="el" href="class_e_m_studio_1_1_node_graph.html">NodeGraph</a> *activeGraph=nullptr, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:ac98f9e59a4958685921b283463c948c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18f8c7852c83f02d47138e1adbadb268" id="r_a18f8c7852c83f02d47138e1adbadb268"><td class="memItemLeft" align="right" valign="top"><a id="a18f8c7852c83f02d47138e1adbadb268" name="a18f8c7852c83f02d47138e1adbadb268"></a>
-<a class="el" href="class_e_m_studio_1_1_anim_graph_plugin.html">AnimGraphPlugin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlugin</b> ()</td></tr>
-<tr class="separator:a18f8c7852c83f02d47138e1adbadb268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53e7405e07672e3531675eeefded274" id="r_ab53e7405e07672e3531675eeefded274"><td class="memItemLeft" align="right" valign="top"><a id="ab53e7405e07672e3531675eeefded274" name="ab53e7405e07672e3531675eeefded274"></a>
+<a class="el" href="class_e_m_studio_1_1_anim_graph_plugin.html">AnimGraphPlugin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlugin</b> () const</td></tr>
+<tr class="separator:ab53e7405e07672e3531675eeefded274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeff5ebabad4c4f45dc7c399115edad0" id="r_afeff5ebabad4c4f45dc7c399115edad0"><td class="memItemLeft" align="right" valign="top"><a id="afeff5ebabad4c4f45dc7c399115edad0" name="afeff5ebabad4c4f45dc7c399115edad0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveGraph</b> (<a class="el" href="class_e_m_studio_1_1_node_graph.html">NodeGraph</a> *graph)</td></tr>
 <tr class="separator:afeff5ebabad4c4f45dc7c399115edad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +182,9 @@ static constexpr uint32&#160;</td><td class="memItemRight" valign="bottom"><b>s_
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a91489dfc70ce13d5d831ab2b1e1642a3" id="r_a91489dfc70ce13d5d831ab2b1e1642a3"><td class="memItemLeft" align="right" valign="top"><a id="a91489dfc70ce13d5d831ab2b1e1642a3" name="a91489dfc70ce13d5d831ab2b1e1642a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="separator:a91489dfc70ce13d5d831ab2b1e1642a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28979acd4a4736af142e5c1d498cb04e" id="r_a28979acd4a4736af142e5c1d498cb04e"><td class="memItemLeft" align="right" valign="top"><a id="a28979acd4a4736af142e5c1d498cb04e" name="a28979acd4a4736af142e5c1d498cb04e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
 <tr class="separator:a28979acd4a4736af142e5c1d498cb04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,15 +215,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>focusInEvent</b> (QFo
 <tr class="memitem:a782beecd5b1cef32bb40135b33b3beaa" id="r_a782beecd5b1cef32bb40135b33b3beaa"><td class="memItemLeft" align="right" valign="top"><a id="a782beecd5b1cef32bb40135b33b3beaa" name="a782beecd5b1cef32bb40135b33b3beaa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>focusOutEvent</b> (QFocusEvent *event) override</td></tr>
 <tr class="separator:a782beecd5b1cef32bb40135b33b3beaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4df15bce7539cdf7c6c8859b849a1a" id="r_a0d4df15bce7539cdf7c6c8859b849a1a"><td class="memItemLeft" align="right" valign="top"><a id="a0d4df15bce7539cdf7c6c8859b849a1a" name="a0d4df15bce7539cdf7c6c8859b849a1a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeGL</b> () override</td></tr>
-<tr class="separator:a0d4df15bce7539cdf7c6c8859b849a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae964f588100bf410833ba687d32cb4a7" id="r_ae964f588100bf410833ba687d32cb4a7"><td class="memItemLeft" align="right" valign="top"><a id="ae964f588100bf410833ba687d32cb4a7" name="ae964f588100bf410833ba687d32cb4a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintGL</b> () override</td></tr>
-<tr class="separator:ae964f588100bf410833ba687d32cb4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21dc1ad79edf13e24c2d5a8fb11bc1c1" id="r_a21dc1ad79edf13e24c2d5a8fb11bc1c1"><td class="memItemLeft" align="right" valign="top"><a id="a21dc1ad79edf13e24c2d5a8fb11bc1c1" name="a21dc1ad79edf13e24c2d5a8fb11bc1c1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeGL</b> (int w, int h) override</td></tr>
-<tr class="separator:a21dc1ad79edf13e24c2d5a8fb11bc1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4326592f9e74ebebf786f220df854bbc" id="r_a4326592f9e74ebebf786f220df854bbc"><td class="memItemLeft" align="right" valign="top"><a id="a4326592f9e74ebebf786f220df854bbc" name="a4326592f9e74ebebf786f220df854bbc"></a>
 <a class="el" href="class_e_m_studio_1_1_graph_node.html">GraphNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMouseCursor</b> (const QPoint &amp;localMousePos, const QPoint &amp;globalMousePos)</td></tr>
 <tr class="separator:a4326592f9e74ebebf786f220df854bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,7 +330,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_titleBarText</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>EMStudio</b></li><li class="navelem"><a class="el" href="class_e_m_studio_1_1_node_graph_widget.html">NodeGraphWidget</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:04 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:42 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

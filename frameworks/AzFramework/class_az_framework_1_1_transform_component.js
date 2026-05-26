@@ -8,7 +8,6 @@ var class_az_framework_1_1_transform_component =
     [ "GetProvidedServices", "class_az_framework_1_1_transform_component.html#aa28e9375b5d09be4aea0d633c0cc7e29", null ],
     [ "GetWorldTM", "class_az_framework_1_1_transform_component.html#a1b914609321e4523e5edef34515acaa5", null ],
     [ "OnEntityActivated", "class_az_framework_1_1_transform_component.html#a80b8c76a19e093ae1276147934f3e3a1", null ],
-    [ "OnEntityDeactivated", "class_az_framework_1_1_transform_component.html#a69f0f1c34522db98202b85ddf03b4eda", null ],
     [ "OnTransformChanged", "class_az_framework_1_1_transform_component.html#a96a00f6eb0645e7998be5199ac52f366", null ],
     [ "Reflect", "class_az_framework_1_1_transform_component.html#ad91430543cb0b00deea9bbf0d0ecb82c", null ],
     [ "SetLocalTM", "class_az_framework_1_1_transform_component.html#a82b441eb0603ae1292450481ca5466ce", null ],
@@ -16,6 +15,7 @@ var class_az_framework_1_1_transform_component =
     [ "SetParentRelative", "class_az_framework_1_1_transform_component.html#a105ee8355ab93f6b98b3cad82f9e9a73", null ],
     [ "SetWorldTM", "class_az_framework_1_1_transform_component.html#adb42890103583a2b3a4b0a3029ec9eab", null ],
     [ "m_childChangedEvent", "class_az_framework_1_1_transform_component.html#ae40e1800c184187f7074c0d14ebc3e31", null ],
+    [ "m_entityId", "class_az_framework_1_1_transform_component.html#ab457b8eb0244a5e5d4760d761df0665b", null ],
     [ "m_isStatic", "class_az_framework_1_1_transform_component.html#a2ece23e046c88142c4eb96e940b936bb", null ],
     [ "m_localTM", "class_az_framework_1_1_transform_component.html#ad63854209afdeb3955c881d083f0464c", null ],
     [ "m_notificationBus", "class_az_framework_1_1_transform_component.html#ad877799746bae18636459647d919d5fa", null ],
@@ -26,5 +26,6 @@ var class_az_framework_1_1_transform_component =
     [ "m_parentId", "class_az_framework_1_1_transform_component.html#abcf86e8ed6b77dbc7ad802538fa82cbb", null ],
     [ "m_parentTM", "class_az_framework_1_1_transform_component.html#a9b55fd4c2c5853bd67dae6457b3bd7d7", null ],
     [ "m_transformChangedEvent", "class_az_framework_1_1_transform_component.html#a039e8da034191f3e5f7d5f2cb63ed9ae", null ],
-    [ "m_worldTM", "class_az_framework_1_1_transform_component.html#ace9f59eb194ac7852d55c90e73eb5491", null ]
+    [ "m_worldTM", "class_az_framework_1_1_transform_component.html#ace9f59eb194ac7852d55c90e73eb5491", null ],
+    [ "s_parentActiveTypeIndex", "class_az_framework_1_1_transform_component.html#a07f40f20030bd8ad31063b0fff1bf0ec", null ]
 ];

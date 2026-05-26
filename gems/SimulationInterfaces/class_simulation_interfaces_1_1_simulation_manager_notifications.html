@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,7 +54,7 @@ $(document).ready(function(){initNavTree('class_simulation_interfaces_1_1_simula
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_simulation_interfaces_1_1_simulation_manager_notifications-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SimulationInterfaces::SimulationManagerNotifications Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">SimulationInterfaces::SimulationManagerNotifications Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -63,12 +63,47 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a562621b3babda484b88fd4a1f02ec982" id="r_a562621b3babda484b88fd4a1f02ec982"><td class="memItemLeft" align="right" valign="top"><a id="a562621b3babda484b88fd4a1f02ec982" name="a562621b3babda484b88fd4a1f02ec982"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_simulation_interfaces_1_1_simulation_manager_notifications.html">SimulationManagerNotifications</a>, SimulationManagerNotificationsTypeId)</td></tr>
 <tr class="separator:a562621b3babda484b88fd4a1f02ec982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629033f98b9a32a8d484e928efe3cbf7" id="r_a629033f98b9a32a8d484e928efe3cbf7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_notifications.html#a629033f98b9a32a8d484e928efe3cbf7">OnSimulationStepFinish</a> (const AZ::u64 remainingSteps)=0</td></tr>
-<tr class="separator:a629033f98b9a32a8d484e928efe3cbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5ddb3ef7bee72ef2aa566c42606f67" id="r_a7f5ddb3ef7bee72ef2aa566c42606f67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_notifications.html#a7f5ddb3ef7bee72ef2aa566c42606f67">OnSimulationStepFinish</a> (const AZ::u64 remainingSteps)</td></tr>
+<tr class="memdesc:a7f5ddb3ef7bee72ef2aa566c42606f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both methods set as virtual with default implementation to not force users to define both callbacks if not needed.  <br /></td></tr>
+<tr class="separator:a7f5ddb3ef7bee72ef2aa566c42606f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa176ceedce7000ed8a971989cbf359e" id="r_aaa176ceedce7000ed8a971989cbf359e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_notifications.html#aaa176ceedce7000ed8a971989cbf359e">OnSimulationStateChange</a> (const SimulationState &amp;setState)</td></tr>
+<tr class="separator:aaa176ceedce7000ed8a971989cbf359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a629033f98b9a32a8d484e928efe3cbf7" name="a629033f98b9a32a8d484e928efe3cbf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a629033f98b9a32a8d484e928efe3cbf7">&#9670;&#160;</a></span>OnSimulationStepFinish()</h2>
+<a id="aaa176ceedce7000ed8a971989cbf359e" name="aaa176ceedce7000ed8a971989cbf359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa176ceedce7000ed8a971989cbf359e">&#9670;&#160;</a></span>OnSimulationStateChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SimulationInterfaces::SimulationManagerNotifications::OnSimulationStateChange </td>
+          <td>(</td>
+          <td class="paramtype">const SimulationState &amp;&#160;</td>
+          <td class="paramname"><em>setState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Notify about simulation state change </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">setState</td><td>- id of the state that was set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f5ddb3ef7bee72ef2aa566c42606f67" name="a7f5ddb3ef7bee72ef2aa566c42606f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5ddb3ef7bee72ef2aa566c42606f67">&#9670;&#160;</a></span>OnSimulationStepFinish()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -86,10 +121,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Both methods set as virtual with default implementation to not force users to define both callbacks if not needed. </p>
 <p>Notify about simulation step finish </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">remainingSteps</td><td>- remaining steps to pause simulation </td></tr>
@@ -108,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>SimulationInterfaces</b></li><li class="navelem"><a class="el" href="class_simulation_interfaces_1_1_simulation_manager_notifications.html">SimulationManagerNotifications</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:14 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:52 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

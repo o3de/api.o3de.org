@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -91,10 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4c31a6bc0cc7f93a1cd6f1a8ffdacf2" id="r_ad4c31a6bc0cc7f93a1cd6f1a8ffdacf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html#ad4c31a6bc0cc7f93a1cd6f1a8ffdacf2">SendMsg</a> (AZ::u32 typeId, AZ::u32 serial, const void *dataBuffer, AZ::u32 dataLength) override</td></tr>
 <tr class="memdesc:ad4c31a6bc0cc7f93a1cd6f1a8ffdacf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message across the connection by message id.  <br /></td></tr>
 <tr class="separator:ad4c31a6bc0cc7f93a1cd6f1a8ffdacf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4caff662fa752e777ee4ccab716e9ab2" id="r_a4caff662fa752e777ee4ccab716e9ab2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html#a4caff662fa752e777ee4ccab716e9ab2">SendRequest</a> (AZ::u32 typeId, const void *dataBuffer, AZ::u32 dataLength, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">TMessageCallback</a> handler) override</td></tr>
+<tr class="memitem:a4caff662fa752e777ee4ccab716e9ab2" id="r_a4caff662fa752e777ee4ccab716e9ab2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html#a4caff662fa752e777ee4ccab716e9ab2">SendRequest</a> (AZ::u32 typeId, const void *dataBuffer, AZ::u32 dataLength, <a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">TMessageCallback</a> handler) override</td></tr>
 <tr class="memdesc:a4caff662fa752e777ee4ccab716e9ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message and wait for the response.  <br /></td></tr>
 <tr class="separator:a4caff662fa752e777ee4ccab716e9ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5aadae7b729136a5ba1de22ff86c84" id="r_abd5aadae7b729136a5ba1de22ff86c84"><td class="memItemLeft" align="right" valign="top">SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html#abd5aadae7b729136a5ba1de22ff86c84">AddMessageHandler</a> (AZ::u32 typeId, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">TMessageCallback</a> callback) override</td></tr>
+<tr class="memitem:abd5aadae7b729136a5ba1de22ff86c84" id="r_abd5aadae7b729136a5ba1de22ff86c84"><td class="memItemLeft" align="right" valign="top">SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html#abd5aadae7b729136a5ba1de22ff86c84">AddMessageHandler</a> (AZ::u32 typeId, <a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">TMessageCallback</a> callback) override</td></tr>
 <tr class="separator:abd5aadae7b729136a5ba1de22ff86c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9d92ba040c34c8eb4cbb3992c90ec0" id="r_a6c9d92ba040c34c8eb4cbb3992c90ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html#a6c9d92ba040c34c8eb4cbb3992c90ec0">RemoveMessageHandler</a> (AZ::u32 typeId, TMessageCallbackHandle callbackHandle) override</td></tr>
 <tr class="memdesc:a6c9d92ba040c34c8eb4cbb3992c90ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove callback for specific typeId (allows multiple callbacks per id)  <br /></td></tr>
@@ -158,7 +158,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisconnectThread</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ListenThread</b> ()</td></tr>
 <tr class="separator:a811d79053566d686628b362e1d294820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40b25e802d8f4675a25352f6b880dd85" id="r_a40b25e802d8f4675a25352f6b880dd85"><td class="memItemLeft" align="right" valign="top"><a id="a40b25e802d8f4675a25352f6b880dd85" name="a40b25e802d8f4675a25352f6b880dd85"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SendRequest</b> (AZ::u32 typeId, AZ::u32 serial, const void *dataBuffer, AZ::u32 dataLength, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">TMessageCallback</a> handler)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SendRequest</b> (AZ::u32 typeId, AZ::u32 serial, const void *dataBuffer, AZ::u32 dataLength, <a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">TMessageCallback</a> handler)</td></tr>
 <tr class="separator:a40b25e802d8f4675a25352f6b880dd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78780d41d0e7715b0d963fcb3127e092" id="r_a78780d41d0e7715b0d963fcb3127e092"><td class="memItemLeft" align="right" valign="top"><a id="a78780d41d0e7715b0d963fcb3127e092" name="a78780d41d0e7715b0d963fcb3127e092"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueMessageForSend</b> (AZ::u32 typeId, AZ::u32 serial, const void *dataBuffer, AZ::u32 dataLength)</td></tr>
@@ -170,7 +170,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeMessageHandler<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeResponseHandler</b> (AZ::u32 typeId, AZ::u32 serial, const void *dataBuffer, AZ::u32 dataLength)</td></tr>
 <tr class="separator:ab49995f300dc6b7ea34ea203baf7baa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a957cca2a1e930fd26a2587065ec378f2" id="r_a957cca2a1e930fd26a2587065ec378f2"><td class="memItemLeft" align="right" valign="top"><a id="a957cca2a1e930fd26a2587065ec378f2" name="a957cca2a1e930fd26a2587065ec378f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddResponseHandler</b> (AZ::u32 typeId, AZ::u32 serial, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">SocketConnection::TMessageCallback</a> callback)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddResponseHandler</b> (AZ::u32 typeId, AZ::u32 serial, <a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">SocketConnection::TMessageCallback</a> callback)</td></tr>
 <tr class="separator:a957cca2a1e930fd26a2587065ec378f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a216169be2991bf42dea3ff38b17b3" id="r_a99a216169be2991bf42dea3ff38b17b3"><td class="memItemLeft" align="right" valign="top"><a id="a99a216169be2991bf42dea3ff38b17b3" name="a99a216169be2991bf42dea3ff38b17b3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveResponseHandler</b> (AZ::u32 typeId, AZ::u32 serial)</td></tr>
@@ -201,8 +201,11 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ae8e3ace203e2653bf7eb6c383bd116a3 inherit pub_types_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5138cabb52d70d734ab002ae7d8bb6 inherit pub_types_class_az_framework_1_1_socket_connection" id="r_a4c5138cabb52d70d734ab002ae7d8bb6"><td class="memItemLeft" align="right" valign="top">typedef AZStd::function&lt; void(AZ::u32, AZ::u32, const void *, AZ::u32)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">TMessageCallback</a></td></tr>
-<tr class="separator:a4c5138cabb52d70d734ab002ae7d8bb6 inherit pub_types_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a5a1caaca69ba9a907f556f188ac7e inherit pub_types_class_az_framework_1_1_socket_connection" id="r_a08a5a1caaca69ba9a907f556f188ac7e"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>KeepAliveCallback</b> = AZStd::function&lt; void(bool)&gt;</td></tr>
+<tr class="separator:a08a5a1caaca69ba9a907f556f188ac7e inherit pub_types_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef88dfe64788a454d0dbbf1573d5b52 inherit pub_types_class_az_framework_1_1_socket_connection" id="r_a8ef88dfe64788a454d0dbbf1573d5b52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">TMessageCallback</a> = AZStd::function&lt; void(AZ::u32, AZ::u32, const void *, AZ::u32)&gt;</td></tr>
+<tr class="separator:a8ef88dfe64788a454d0dbbf1573d5b52 inherit pub_types_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9666a65ec6cc70baf2208a04628e61cf inherit pub_types_class_az_framework_1_1_socket_connection" id="r_a9666a65ec6cc70baf2208a04628e61cf"><td class="memItemLeft" align="right" valign="top">
 typedef AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>TMessageCallbackHandle</b></td></tr>
 <tr class="separator:a9666a65ec6cc70baf2208a04628e61cf inherit pub_types_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +217,11 @@ static <a class="el" href="class_az_framework_1_1_socket_connection.html">Socket
 <tr class="memitem:a26848832c98bfd697e51147f536d5958 inherit pub_static_methods_class_az_framework_1_1_socket_connection" id="r_a26848832c98bfd697e51147f536d5958"><td class="memItemLeft" align="right" valign="top">
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b> (<a class="el" href="class_az_framework_1_1_socket_connection.html">SocketConnection</a> *instance)</td></tr>
 <tr class="separator:a26848832c98bfd697e51147f536d5958 inherit pub_static_methods_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab605e2d4c6ac6621ea5a7b0f02d0c4ac inherit pub_static_methods_class_az_framework_1_1_socket_connection" id="r_ab605e2d4c6ac6621ea5a7b0f02d0c4ac"><td class="memItemLeft" align="right" valign="top">static KeepAliveCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_socket_connection.html#ab605e2d4c6ac6621ea5a7b0f02d0c4ac">GetKeepAliveCallback</a> ()</td></tr>
+<tr class="separator:ab605e2d4c6ac6621ea5a7b0f02d0c4ac inherit pub_static_methods_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84dfcccadabfb9a60af441da96153eb inherit pub_static_methods_class_az_framework_1_1_socket_connection" id="r_ae84dfcccadabfb9a60af441da96153eb"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetKeepAliveCallback</b> (KeepAliveCallback callback)</td></tr>
+<tr class="separator:ae84dfcccadabfb9a60af441da96153eb inherit pub_static_methods_class_az_framework_1_1_socket_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_az_framework_1_1_socket_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_az_framework_1_1_socket_connection')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_az_framework_1_1_socket_connection.html">AzFramework::SocketConnection</a></td></tr>
 <tr class="memitem:a08ec4a11b7af6ac6b68e977d523a6488 inherit pub_static_attribs_class_az_framework_1_1_socket_connection" id="r_a08ec4a11b7af6ac6b68e977d523a6488"><td class="memItemLeft" align="right" valign="top">
 static const TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>s_invalidCallbackHandle</b> = 0</td></tr>
@@ -240,7 +248,7 @@ static const TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">TMessageCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">TMessageCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -674,7 +682,7 @@ static const TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">TMessageCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_socket_connection.html#a8ef88dfe64788a454d0dbbf1573d5b52">TMessageCallback</a>&#160;</td>
           <td class="paramname"><em>handler</em>&#160;</td>
         </tr>
         <tr>
@@ -705,7 +713,7 @@ static const TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_framework.html">AzFramework</a></li><li class="navelem"><b>AssetSystem</b></li><li class="navelem"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection.html">AssetProcessorConnection</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:27 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

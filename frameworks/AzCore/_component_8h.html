@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -111,6 +111,8 @@ Macros</h2></td></tr>
 <tr class="separator:a5659f2fc2a97800d4b7c25c3d55b6f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065fd06be0c3fc8026ddab4c881d2db2" id="r_a065fd06be0c3fc8026ddab4c881d2db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_component_8h.html#a065fd06be0c3fc8026ddab4c881d2db2">AZ_COMPONENT_DECL</a>(_ComponentClass)</td></tr>
 <tr class="separator:a065fd06be0c3fc8026ddab4c881d2db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f0e29f54a7950e14e98a1a6b83cd27" id="r_a22f0e29f54a7950e14e98a1a6b83cd27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_component_8h.html#a22f0e29f54a7950e14e98a1a6b83cd27">AZ_COMPONENT_DECL_API</a>(_Api,  _ComponentClass)</td></tr>
+<tr class="separator:a22f0e29f54a7950e14e98a1a6b83cd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade82865e6e9c4a8283a80d248fdd2525" id="r_ade82865e6e9c4a8283a80d248fdd2525"><td class="memItemLeft" align="right" valign="top"><a id="ade82865e6e9c4a8283a80d248fdd2525" name="ade82865e6e9c4a8283a80d248fdd2525"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT_MACRO_CALL_II</b>(macro, ...)&#160;&#160;&#160;macro(__VA_ARGS__)</td></tr>
 <tr class="separator:ade82865e6e9c4a8283a80d248fdd2525"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,8 +210,8 @@ Functions</h2></td></tr>
 <div class="line">        } \</div>
 <div class="line">        <span class="keywordflow">return</span> aznew DescriptorType; \</div>
 <div class="line">    }</div>
-<div class="ttc" id="aclass_a_z_1_1_component_descriptor_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html">AZ::ComponentDescriptor</a></div><div class="ttdef"><b>Definition</b> Component.h:529</div></div>
-<div class="ttc" id="aclass_a_z_1_1_component_descriptor_html_a3298bf0d70b3377daf9f287e73920c7d"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html#a3298bf0d70b3377daf9f287e73920c7d">AZ::ComponentDescriptor::GetDescriptor</a></div><div class="ttdeci">virtual ComponentDescriptor * GetDescriptor()</div><div class="ttdef"><b>Definition</b> Component.h:618</div></div>
+<div class="ttc" id="aclass_a_z_1_1_component_descriptor_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html">AZ::ComponentDescriptor</a></div><div class="ttdef"><b>Definition</b> Component.h:536</div></div>
+<div class="ttc" id="aclass_a_z_1_1_component_descriptor_html_a3298bf0d70b3377daf9f287e73920c7d"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html#a3298bf0d70b3377daf9f287e73920c7d">AZ::ComponentDescriptor::GetDescriptor</a></div><div class="ttdeci">virtual ComponentDescriptor * GetDescriptor()</div><div class="ttdef"><b>Definition</b> Component.h:625</div></div>
 <div class="ttc" id="aclass_a_z_1_1_component_descriptor_html_a7c867f16a64cedf90598c0048444df5b"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html#a7c867f16a64cedf90598c0048444df5b">AZ::ComponentDescriptor::GetName</a></div><div class="ttdeci">virtual const char * GetName() const =0</div></div>
 <div class="ttc" id="aclass_a_z_std_1_1basic__string__view_html"><div class="ttname"><a href="class_a_z_std_1_1basic__string__view.html">AZStd::basic_string_view</a></div><div class="ttdef"><b>Definition</b> string_view.h:622</div></div>
 <div class="ttc" id="astruct_a_z_1_1_uuid_html"><div class="ttname"><a href="struct_a_z_1_1_uuid.html">AZ::Uuid</a></div><div class="ttdef"><b>Definition</b> Uuid.h:25</div></div>
@@ -387,6 +389,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a22f0e29f54a7950e14e98a1a6b83cd27" name="a22f0e29f54a7950e14e98a1a6b83cd27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f0e29f54a7950e14e98a1a6b83cd27">&#9670;&#160;</a></span>AZ_COMPONENT_DECL_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AZ_COMPONENT_DECL_API</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_Api, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_ComponentClass&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    AZ_TYPE_INFO_WITH_NAME_DECL_API(_Api, _ComponentClass) \</div>
+<div class="line">    AZ_RTTI_NO_TYPE_INFO_DECL() \</div>
+<div class="line">    AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE(AZ_USE_FIRST_ARG(AZ_UNWRAP(_ComponentClass))) \</div>
+<div class="line">    AZ_COMPONENT_BASE_DECL() \</div>
+<div class="line">    AZ_CLASS_ALLOCATOR_DECL</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a67bbda1cbc1c96f4489dcff3ca143749" name="a67bbda1cbc1c96f4489dcff3ca143749"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67bbda1cbc1c96f4489dcff3ca143749">&#9670;&#160;</a></span>AZ_COMPONENT_IMPL_INLINE_WITH_ALLOCATOR</h2>
 
@@ -528,7 +563,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault</a>&lt;_ComponentClass&gt;;           \</div>
 <div class="line">    <span class="keyword">using </span>DescriptorType = <a class="code hl_class" href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault&lt;_ComponentClass&gt;</a>;</div>
-<div class="ttc" id="aclass_a_z_1_1_component_descriptor_default_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault</a></div><div class="ttdef"><b>Definition</b> Component.h:718</div></div>
+<div class="ttc" id="aclass_a_z_1_1_component_descriptor_default_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault</a></div><div class="ttdef"><b>Definition</b> Component.h:725</div></div>
 </div><!-- fragment --><p>Declares a descriptor class. Unless you are implementing very advanced internal functionality, we recommend using AZ_COMPONENT instead of this macro. This macro enables you to implement a static function in the Component class instead of writing a descriptor. It defines a CreateDescriptorFunction that you can call to register a descriptor. (Only one descriptor can exist per environment.) This macro fails silently if you implement the functions with the wrong signatures. </p>
 
 </div>
@@ -638,7 +673,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75702505ddfbdd2f20447bb0081139c9.html">Code</a></li><li class="navelem"><a class="el" href="dir_e7e3f0b8e20a8c41ad58732be797221b.html">Framework</a></li><li class="navelem"><a class="el" href="dir_d4e5079f3052ac899133e326c057cd21.html">AzCore</a></li><li class="navelem"><a class="el" href="dir_f4fc8a7ffed19b43ff35dcd45e17f976.html">AzCore</a></li><li class="navelem"><a class="el" href="dir_c0f0d5abcd1e5bfc7693ee4d8eaace92.html">Component</a></li><li class="navelem"><a class="el" href="_component_8h.html">Component.h</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:42 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

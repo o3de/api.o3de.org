@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine LmbrCentral Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine LmbrCentral Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,7 +54,7 @@ $(document).ready(function(){initNavTree('class_lmbr_central_1_1_look_at_compone
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_lmbr_central_1_1_look_at_component_requests-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">LmbrCentral::LookAtComponentRequests Class Reference</div></div>
+  <div class="headertitle"><div class="title">LmbrCentral::LookAtComponentRequests Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -62,18 +62,82 @@ $(document).ready(function(){initNavTree('class_lmbr_central_1_1_look_at_compone
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f6fa789ceac98a43577cc4a19a8a24a" id="r_a5f6fa789ceac98a43577cc4a19a8a24a"><td class="memItemLeft" align="right" valign="top"><a id="a5f6fa789ceac98a43577cc4a19a8a24a" name="a5f6fa789ceac98a43577cc4a19a8a24a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTarget</b> (AZ::EntityId targetEntity)</td></tr>
-<tr class="memdesc:a5f6fa789ceac98a43577cc4a19a8a24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the target entity to look at. <br /></td></tr>
-<tr class="separator:a5f6fa789ceac98a43577cc4a19a8a24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed171fd1f338cbc9a9c35c6912a1fb0" id="r_a9ed171fd1f338cbc9a9c35c6912a1fb0"><td class="memItemLeft" align="right" valign="top"><a id="a9ed171fd1f338cbc9a9c35c6912a1fb0" name="a9ed171fd1f338cbc9a9c35c6912a1fb0"></a>
+virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetTarget</b> () const =0</td></tr>
+<tr class="memdesc:a9ed171fd1f338cbc9a9c35c6912a1fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target entity being looked at. <br /></td></tr>
+<tr class="separator:a9ed171fd1f338cbc9a9c35c6912a1fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa626d574cdaad3bb6a8451f80c531ea8" id="r_aa626d574cdaad3bb6a8451f80c531ea8"><td class="memItemLeft" align="right" valign="top"><a id="aa626d574cdaad3bb6a8451f80c531ea8" name="aa626d574cdaad3bb6a8451f80c531ea8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTarget</b> (const AZ::EntityId &amp;targetEntity)</td></tr>
+<tr class="memdesc:aa626d574cdaad3bb6a8451f80c531ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the target entity to look at. <br /></td></tr>
+<tr class="separator:aa626d574cdaad3bb6a8451f80c531ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf93194c53aa1a3f7634e1106fc6860" id="r_a7bf93194c53aa1a3f7634e1106fc6860"><td class="memItemLeft" align="right" valign="top"><a id="a7bf93194c53aa1a3f7634e1106fc6860" name="a7bf93194c53aa1a3f7634e1106fc6860"></a>
+virtual AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetTargetPosition</b> () const =0</td></tr>
+<tr class="memdesc:a7bf93194c53aa1a3f7634e1106fc6860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target position being looked at. <br /></td></tr>
+<tr class="separator:a7bf93194c53aa1a3f7634e1106fc6860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab779c5b8d30e2b8d8a6890d42e55fa6b" id="r_ab779c5b8d30e2b8d8a6890d42e55fa6b"><td class="memItemLeft" align="right" valign="top"><a id="ab779c5b8d30e2b8d8a6890d42e55fa6b" name="ab779c5b8d30e2b8d8a6890d42e55fa6b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTargetPosition</b> (const AZ::Vector3 &amp;position)</td></tr>
 <tr class="memdesc:ab779c5b8d30e2b8d8a6890d42e55fa6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the target position to look at. <br /></td></tr>
 <tr class="separator:ab779c5b8d30e2b8d8a6890d42e55fa6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09291bb05c0f854527d84f060dfedba6" id="r_a09291bb05c0f854527d84f060dfedba6"><td class="memItemLeft" align="right" valign="top"><a id="a09291bb05c0f854527d84f060dfedba6" name="a09291bb05c0f854527d84f060dfedba6"></a>
+virtual AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLookAtTransform</b> () const =0</td></tr>
+<tr class="memdesc:a09291bb05c0f854527d84f060dfedba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target Look At transform. <br /></td></tr>
+<tr class="separator:a09291bb05c0f854527d84f060dfedba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9babec5493ed5f7748164bf3c271be8c" id="r_a9babec5493ed5f7748164bf3c271be8c"><td class="memItemLeft" align="right" valign="top"><a id="a9babec5493ed5f7748164bf3c271be8c" name="a9babec5493ed5f7748164bf3c271be8c"></a>
+virtual AZ::Transform::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>GetAxis</b> () const =0</td></tr>
+<tr class="memdesc:a9babec5493ed5f7748164bf3c271be8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference forward axis. <br /></td></tr>
+<tr class="separator:a9babec5493ed5f7748164bf3c271be8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4959f95c2aad8838b158c1f7d8892f40" id="r_a4959f95c2aad8838b158c1f7d8892f40"><td class="memItemLeft" align="right" valign="top"><a id="a4959f95c2aad8838b158c1f7d8892f40" name="a4959f95c2aad8838b158c1f7d8892f40"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAxis</b> (AZ::Transform::Axis axis=AZ::Transform::Axis::ZPositive)</td></tr>
 <tr class="memdesc:a4959f95c2aad8838b158c1f7d8892f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the reference forward axis. <br /></td></tr>
 <tr class="separator:a4959f95c2aad8838b158c1f7d8892f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb17187ed999035bc07cd2029e11ae9a" id="r_afb17187ed999035bc07cd2029e11ae9a"><td class="memItemLeft" align="right" valign="top"><a id="afb17187ed999035bc07cd2029e11ae9a" name="afb17187ed999035bc07cd2029e11ae9a"></a>
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStrength</b> () const =0</td></tr>
+<tr class="memdesc:afb17187ed999035bc07cd2029e11ae9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the strength / quickness of the look at rotation. <br /></td></tr>
+<tr class="separator:afb17187ed999035bc07cd2029e11ae9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f58f48e4323c377a445e85a6eb1b51f" id="r_a6f58f48e4323c377a445e85a6eb1b51f"><td class="memItemLeft" align="right" valign="top"><a id="a6f58f48e4323c377a445e85a6eb1b51f" name="a6f58f48e4323c377a445e85a6eb1b51f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStrength</b> (const float strength)</td></tr>
+<tr class="memdesc:a6f58f48e4323c377a445e85a6eb1b51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the strength / quickness of the look at rotation. <br /></td></tr>
+<tr class="separator:a6f58f48e4323c377a445e85a6eb1b51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3bd28848f45e55be7bba305d977b77" id="r_a8a3bd28848f45e55be7bba305d977b77"><td class="memItemLeft" align="right" valign="top"><a id="a8a3bd28848f45e55be7bba305d977b77" name="a8a3bd28848f45e55be7bba305d977b77"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFixatePitch</b> () const =0</td></tr>
+<tr class="memdesc:a8a3bd28848f45e55be7bba305d977b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the pitch is fixated. <br /></td></tr>
+<tr class="separator:a8a3bd28848f45e55be7bba305d977b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6d8ae62d6cca513937841a104fd402" id="r_aed6d8ae62d6cca513937841a104fd402"><td class="memItemLeft" align="right" valign="top"><a id="aed6d8ae62d6cca513937841a104fd402" name="aed6d8ae62d6cca513937841a104fd402"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFixatePitch</b> (const bool fixatePitch)</td></tr>
+<tr class="memdesc:aed6d8ae62d6cca513937841a104fd402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the pitch is fixated. <br /></td></tr>
+<tr class="separator:aed6d8ae62d6cca513937841a104fd402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384e12d778cdc2ecc129c4d08fbef7ba" id="r_a384e12d778cdc2ecc129c4d08fbef7ba"><td class="memItemLeft" align="right" valign="top"><a id="a384e12d778cdc2ecc129c4d08fbef7ba" name="a384e12d778cdc2ecc129c4d08fbef7ba"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFixateRoll</b> () const =0</td></tr>
+<tr class="memdesc:a384e12d778cdc2ecc129c4d08fbef7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the roll is fixated. <br /></td></tr>
+<tr class="separator:a384e12d778cdc2ecc129c4d08fbef7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1366eb12c113f72a516be2c2d9b2d75" id="r_aa1366eb12c113f72a516be2c2d9b2d75"><td class="memItemLeft" align="right" valign="top"><a id="aa1366eb12c113f72a516be2c2d9b2d75" name="aa1366eb12c113f72a516be2c2d9b2d75"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFixateRoll</b> (const bool fixateRoll)</td></tr>
+<tr class="memdesc:aa1366eb12c113f72a516be2c2d9b2d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the roll is fixated. <br /></td></tr>
+<tr class="separator:aa1366eb12c113f72a516be2c2d9b2d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e62ed8942f99519668d17c856509f28" id="r_a2e62ed8942f99519668d17c856509f28"><td class="memItemLeft" align="right" valign="top"><a id="a2e62ed8942f99519668d17c856509f28" name="a2e62ed8942f99519668d17c856509f28"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFixateYaw</b> () const =0</td></tr>
+<tr class="memdesc:a2e62ed8942f99519668d17c856509f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the yaw is fixated. <br /></td></tr>
+<tr class="separator:a2e62ed8942f99519668d17c856509f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefaa0aae0a99f62cd11565d8c150373f" id="r_aefaa0aae0a99f62cd11565d8c150373f"><td class="memItemLeft" align="right" valign="top"><a id="aefaa0aae0a99f62cd11565d8c150373f" name="aefaa0aae0a99f62cd11565d8c150373f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFixateYaw</b> (const bool fixateYaw)</td></tr>
+<tr class="memdesc:aefaa0aae0a99f62cd11565d8c150373f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the yaw is fixated. <br /></td></tr>
+<tr class="separator:aefaa0aae0a99f62cd11565d8c150373f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0376241c1af9439d847f4018997afcd" id="r_af0376241c1af9439d847f4018997afcd"><td class="memItemLeft" align="right" valign="top"><a id="af0376241c1af9439d847f4018997afcd" name="af0376241c1af9439d847f4018997afcd"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnabled</b> () const =0</td></tr>
+<tr class="memdesc:af0376241c1af9439d847f4018997afcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the Look At component is enabled. <br /></td></tr>
+<tr class="separator:af0376241c1af9439d847f4018997afcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c4891cfe34ee6c0337978d93e04878" id="r_ad4c4891cfe34ee6c0337978d93e04878"><td class="memItemLeft" align="right" valign="top"><a id="ad4c4891cfe34ee6c0337978d93e04878" name="ad4c4891cfe34ee6c0337978d93e04878"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnabled</b> (bool enabled)</td></tr>
+<tr class="memdesc:ad4c4891cfe34ee6c0337978d93e04878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the Look At component is enabled. <br /></td></tr>
+<tr class="separator:ad4c4891cfe34ee6c0337978d93e04878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab678991176770fd54841fc22245344ab" id="r_ab678991176770fd54841fc22245344ab"><td class="memItemLeft" align="right" valign="top"><a id="ab678991176770fd54841fc22245344ab" name="ab678991176770fd54841fc22245344ab"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplyLookAtTransform</b> () const =0</td></tr>
+<tr class="memdesc:ab678991176770fd54841fc22245344ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether the Look At transform is applied. <br /></td></tr>
+<tr class="separator:ab678991176770fd54841fc22245344ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203c5eb3bf3987fea88db887027a9c0b" id="r_a203c5eb3bf3987fea88db887027a9c0b"><td class="memItemLeft" align="right" valign="top"><a id="a203c5eb3bf3987fea88db887027a9c0b" name="a203c5eb3bf3987fea88db887027a9c0b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetApplyLookAtTransform</b> (bool applyLookAtTransform)</td></tr>
+<tr class="memdesc:a203c5eb3bf3987fea88db887027a9c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the Look At transform is applied. <br /></td></tr>
+<tr class="separator:a203c5eb3bf3987fea88db887027a9c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/LmbrCentral/Code/Source/Scripting/<b>LookAtComponent.h</b></li>
@@ -84,7 +148,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAxis</b> (
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lmbr_central.html">LmbrCentral</a></li><li class="navelem"><a class="el" href="class_lmbr_central_1_1_look_at_component_requests.html">LookAtComponentRequests</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:07 for Open 3D Engine LmbrCentral Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:44 for Open 3D Engine LmbrCentral Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

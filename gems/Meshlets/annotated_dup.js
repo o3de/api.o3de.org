@@ -1,8 +1,5 @@
 var annotated_dup =
 [
-    [ "AtomSampleViewer", null, [
-      [ "MeshletsExampleComponent", "class_atom_sample_viewer_1_1_meshlets_example_component.html", null ]
-    ] ],
     [ "AZ", null, [
       [ "Meshlets", null, [
         [ "GeneratorMesh", "struct_a_z_1_1_meshlets_1_1_generator_mesh.html", null ],
@@ -29,11 +26,5 @@ var annotated_dup =
         [ "SrgBufferDescriptor", "struct_a_z_1_1_meshlets_1_1_srg_buffer_descriptor.html", "struct_a_z_1_1_meshlets_1_1_srg_buffer_descriptor" ],
         [ "UtilityClass", "class_a_z_1_1_meshlets_1_1_utility_class.html", "class_a_z_1_1_meshlets_1_1_utility_class" ]
       ] ]
-    ] ],
-    [ "meshopt_Bounds", "structmeshopt___bounds.html", null ],
-    [ "meshopt_Meshlet", "structmeshopt___meshlet.html", null ],
-    [ "meshopt_OverdrawStatistics", "structmeshopt___overdraw_statistics.html", null ],
-    [ "meshopt_Stream", "structmeshopt___stream.html", null ],
-    [ "meshopt_VertexCacheStatistics", "structmeshopt___vertex_cache_statistics.html", null ],
-    [ "meshopt_VertexFetchStatistics", "structmeshopt___vertex_fetch_statistics.html", null ]
+    ] ]
 ];

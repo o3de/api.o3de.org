@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine EMotionFX Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -179,9 +179,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVirtualFinalNode</
 <tr class="memitem:ac98f9e59a4958685921b283463c948c8 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget" id="r_ac98f9e59a4958685921b283463c948c8"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>NodeGraphWidget</b> (<a class="el" href="class_e_m_studio_1_1_anim_graph_plugin.html">AnimGraphPlugin</a> *plugin, <a class="el" href="class_e_m_studio_1_1_node_graph.html">NodeGraph</a> *activeGraph=nullptr, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:ac98f9e59a4958685921b283463c948c8 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18f8c7852c83f02d47138e1adbadb268 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a18f8c7852c83f02d47138e1adbadb268"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_e_m_studio_1_1_anim_graph_plugin.html">AnimGraphPlugin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlugin</b> ()</td></tr>
-<tr class="separator:a18f8c7852c83f02d47138e1adbadb268 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53e7405e07672e3531675eeefded274 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget" id="r_ab53e7405e07672e3531675eeefded274"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_e_m_studio_1_1_anim_graph_plugin.html">AnimGraphPlugin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlugin</b> () const</td></tr>
+<tr class="separator:ab53e7405e07672e3531675eeefded274 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeff5ebabad4c4f45dc7c399115edad0 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget" id="r_afeff5ebabad4c4f45dc7c399115edad0"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveGraph</b> (<a class="el" href="class_e_m_studio_1_1_node_graph.html">NodeGraph</a> *graph)</td></tr>
 <tr class="separator:afeff5ebabad4c4f45dc7c399115edad0 inherit pub_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +264,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContextMenuEvent</b
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) override</td></tr>
 <tr class="separator:a6cef1fda80bf21fd90ec1163cf085250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_e_m_studio_1_1_node_graph_widget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_e_m_studio_1_1_node_graph_widget')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_e_m_studio_1_1_node_graph_widget.html">EMStudio::NodeGraphWidget</a></td></tr>
+<tr class="memitem:a91489dfc70ce13d5d831ab2b1e1642a3 inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a91489dfc70ce13d5d831ab2b1e1642a3"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="separator:a91489dfc70ce13d5d831ab2b1e1642a3 inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28979acd4a4736af142e5c1d498cb04e inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a28979acd4a4736af142e5c1d498cb04e"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
 <tr class="separator:a28979acd4a4736af142e5c1d498cb04e inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,15 +297,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>focusInEvent</b> (QFo
 <tr class="memitem:a782beecd5b1cef32bb40135b33b3beaa inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a782beecd5b1cef32bb40135b33b3beaa"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>focusOutEvent</b> (QFocusEvent *event) override</td></tr>
 <tr class="separator:a782beecd5b1cef32bb40135b33b3beaa inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4df15bce7539cdf7c6c8859b849a1a inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a0d4df15bce7539cdf7c6c8859b849a1a"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeGL</b> () override</td></tr>
-<tr class="separator:a0d4df15bce7539cdf7c6c8859b849a1a inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae964f588100bf410833ba687d32cb4a7 inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_ae964f588100bf410833ba687d32cb4a7"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintGL</b> () override</td></tr>
-<tr class="separator:ae964f588100bf410833ba687d32cb4a7 inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21dc1ad79edf13e24c2d5a8fb11bc1c1 inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a21dc1ad79edf13e24c2d5a8fb11bc1c1"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeGL</b> (int w, int h) override</td></tr>
-<tr class="separator:a21dc1ad79edf13e24c2d5a8fb11bc1c1 inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4326592f9e74ebebf786f220df854bbc inherit pro_methods_class_e_m_studio_1_1_node_graph_widget" id="r_a4326592f9e74ebebf786f220df854bbc"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_e_m_studio_1_1_graph_node.html">GraphNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMouseCursor</b> (const QPoint &amp;localMousePos, const QPoint &amp;globalMousePos)</td></tr>
 <tr class="separator:a4326592f9e74ebebf786f220df854bbc inherit pro_methods_class_e_m_studio_1_1_node_graph_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1035,7 +1029,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_titleBarText</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>EMStudio</b></li><li class="navelem"><a class="el" href="class_e_m_studio_1_1_blend_graph_widget.html">BlendGraphWidget</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:04 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:41 for Open 3D Engine EMotionFX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

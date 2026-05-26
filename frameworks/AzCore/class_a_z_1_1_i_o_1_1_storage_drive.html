@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,6 +53,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_i_o_1_1_storage_drive.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
@@ -68,7 +69,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_i_o_1_1_storage_drive.ht
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa98210bcdf1b120319bf2f10a60c1356" id="r_aa98210bcdf1b120319bf2f10a60c1356"><td class="memItemLeft" align="right" valign="top"><a id="aa98210bcdf1b120319bf2f10a60c1356" name="aa98210bcdf1b120319bf2f10a60c1356"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StorageDrive</b> (<a class="el" href="class_a_z_1_1_e_bus.html">u32</a> <a class="el" href="class_a_z_1_1_e_bus.html">maxFileHandles</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StorageDrive</b> (u32 <a class="el" href="class_a_z_1_1_e_bus.html">maxFileHandles</a>)</td></tr>
 <tr class="separator:aa98210bcdf1b120319bf2f10a60c1356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad51dde13bddf338d18994f634b95bb2d" id="r_ad51dde13bddf338d18994f634b95bb2d"><td class="memItemLeft" align="right" valign="top"><a id="ad51dde13bddf338d18994f634b95bb2d" name="ad51dde13bddf338d18994f634b95bb2d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html">StorageDrive</a>)</td></tr>
@@ -102,11 +103,17 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetContext</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">context</a>)</td></tr>
 <tr class="separator:aee6fdc1ce65576fbd3dd01a766d9fc13 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a90f015cbb02d2d3b981f908a4881b1a8" id="r_a90f015cbb02d2d3b981f908a4881b1a8"><td class="memItemLeft" align="right" valign="top"><a id="a90f015cbb02d2d3b981f908a4881b1a8" name="a90f015cbb02d2d3b981f908a4881b1a8"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RecentlyUsedFileIndex</b> = <a class="el" href="class_a_z_1_1_i_o_1_1_recently_used_index.html">RecentlyUsedIndex</a>&lt; u32 &gt;</td></tr>
+<tr class="separator:a90f015cbb02d2d3b981f908a4881b1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5b9a655925f8f39244b3c23df358d337" id="r_a5b9a655925f8f39244b3c23df358d337"><td class="memItemLeft" align="right" valign="top"><a id="a5b9a655925f8f39244b3c23df358d337" name="a5b9a655925f8f39244b3c23df358d337"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindFileInCache</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">filePath</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
-<tr class="separator:a5b9a655925f8f39244b3c23df358d337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b842f180adf20908a3c8e328c9ee28" id="r_a45b842f180adf20908a3c8e328c9ee28"><td class="memItemLeft" align="right" valign="top"><a id="a45b842f180adf20908a3c8e328c9ee28" name="a45b842f180adf20908a3c8e328c9ee28"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>FindFileInCache</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">filePath</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="separator:a45b842f180adf20908a3c8e328c9ee28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad064b6878d267202d7370493ded28a4f" id="r_ad064b6878d267202d7370493ded28a4f"><td class="memItemLeft" align="right" valign="top"><a id="ad064b6878d267202d7370493ded28a4f" name="ad064b6878d267202d7370493ded28a4f"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *<a class="el" href="class_a_z_1_1_e_bus.html">request</a>)</td></tr>
 <tr class="separator:ad064b6878d267202d7370493ded28a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,10 +160,9 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingRequests</b></td></tr>
 <tr class="memdesc:a71152555819087b9e665fb22cfe2aae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">File requests that are queued for processing. <br /></td></tr>
 <tr class="separator:a71152555819087b9e665fb22cfe2aae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3801e41871c2296000bdc482409f54bc" id="r_a3801e41871c2296000bdc482409f54bc"><td class="memItemLeft" align="right" valign="top"><a id="a3801e41871c2296000bdc482409f54bc" name="a3801e41871c2296000bdc482409f54bc"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; AZStd::chrono::steady_clock::time_point &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileLastUsed</b></td></tr>
-<tr class="memdesc:a3801e41871c2296000bdc482409f54bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last time a file handle was used to access a file. The handle is stored in m_fileHandles. <br /></td></tr>
-<tr class="separator:a3801e41871c2296000bdc482409f54bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca32868dbadaafd95412d75189e3ee1" id="r_a9ca32868dbadaafd95412d75189e3ee1"><td class="memItemLeft" align="right" valign="top"><a id="a9ca32868dbadaafd95412d75189e3ee1" name="a9ca32868dbadaafd95412d75189e3ee1"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_recently_used_index.html">RecentlyUsedFileIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_recentlyUsed</b></td></tr>
+<tr class="separator:a9ca32868dbadaafd95412d75189e3ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e70e06189b9dc4e1cda400284817348" id="r_a3e70e06189b9dc4e1cda400284817348"><td class="memItemLeft" align="right" valign="top"><a id="a3e70e06189b9dc4e1cda400284817348" name="a3e70e06189b9dc4e1cda400284817348"></a>
 <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filePaths</b></td></tr>
 <tr class="memdesc:a3e70e06189b9dc4e1cda400284817348"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file path to the file handle. The handle is stored in m_fileHandles. <br /></td></tr>
@@ -169,10 +175,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_a_z_1_1_e_bus.html">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeOffset</b> = 0</td></tr>
 <tr class="memdesc:afd2a84e6fd18e4190d1d37b2e0b3b696"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset into the file that's cached by the active cache slot. <br /></td></tr>
 <tr class="separator:afd2a84e6fd18e4190d1d37b2e0b3b696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c5e3646f5af922f2b896f1db9d15b1" id="r_ad8c5e3646f5af922f2b896f1db9d15b1"><td class="memItemLeft" align="right" valign="top"><a id="ad8c5e3646f5af922f2b896f1db9d15b1" name="ad8c5e3646f5af922f2b896f1db9d15b1"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeCacheSlot</b> = <a class="el" href="namespace_a_z_1_1_i_o.html#a2fe969942f6586c2e2969dc2848676f6">s_fileNotFound</a></td></tr>
-<tr class="memdesc:ad8c5e3646f5af922f2b896f1db9d15b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index into m_fileHandles for the file that's currently being read. <br /></td></tr>
-<tr class="separator:ad8c5e3646f5af922f2b896f1db9d15b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71162cff731fb9368879804207ef374" id="r_ae71162cff731fb9368879804207ef374"><td class="memItemLeft" align="right" valign="top"><a id="ae71162cff731fb9368879804207ef374" name="ae71162cff731fb9368879804207ef374"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeCacheSlot</b> = InvalidFileIndex</td></tr>
+<tr class="memdesc:ae71162cff731fb9368879804207ef374"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index into m_fileHandles for the file that's currently being read. <br /></td></tr>
+<tr class="separator:ae71162cff731fb9368879804207ef374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">AZ::IO::StreamStackEntry</a></td></tr>
 <tr class="memitem:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry" id="r_a1b380a8ce0080b376ffc8c7dc03641ac"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
@@ -195,6 +201,9 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:aaf041f0f12f7a6ab1cbd597b7c7975f8" id="r_aaf041f0f12f7a6ab1cbd597b7c7975f8"><td class="memItemLeft" align="right" valign="top"><a id="aaf041f0f12f7a6ab1cbd597b7c7975f8" name="aaf041f0f12f7a6ab1cbd597b7c7975f8"></a>
 <a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> s32&#160;</td><td class="memItemRight" valign="bottom"><b>s_maxRequests</b> = 1</td></tr>
 <tr class="separator:aaf041f0f12f7a6ab1cbd597b7c7975f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc235f0e6703415ac65559680534dd10" id="r_adc235f0e6703415ac65559680534dd10"><td class="memItemLeft" align="right" valign="top"><a id="adc235f0e6703415ac65559680534dd10" name="adc235f0e6703415ac65559680534dd10"></a>
+<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> u32&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidFileIndex</b> = AZStd::numeric_limits&lt;u32&gt;::max()</td></tr>
+<tr class="separator:adc235f0e6703415ac65559680534dd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform agnostic version of a storage drive, such as hdd, ssd, dvd, etc. This stream stack entry is responsible for accessing a storage drive to retrieve file information and data. This entry is designed as a catch-all for any reads that weren't handled by platform specific implementations or the virtual file system. It should by the last entry in the stack as it will not forward calls to the next entry. </p>
@@ -441,7 +450,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html">StorageDrive</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:43 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

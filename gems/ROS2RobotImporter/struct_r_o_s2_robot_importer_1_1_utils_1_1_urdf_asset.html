@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,18 +65,18 @@ $(document).ready(function(){initNavTree('struct_r_o_s2_robot_importer_1_1_utils
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2846cf6c74acc1c6cfe6840883a49ca8" id="r_a2846cf6c74acc1c6cfe6840883a49ca8"><td class="memItemLeft" align="right" valign="top"><a id="a2846cf6c74acc1c6cfe6840883a49ca8" name="a2846cf6c74acc1c6cfe6840883a49ca8"></a>
-AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_urdfPath</b></td></tr>
-<tr class="memdesc:a2846cf6c74acc1c6cfe6840883a49ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unresolved URDF path to mesh, eg <code>package://meshes/bar_link.dae</code>. <br /></td></tr>
-<tr class="separator:a2846cf6c74acc1c6cfe6840883a49ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c9453b20b43eafd2db8a948b4cd992" id="r_a77c9453b20b43eafd2db8a948b4cd992"><td class="memItemLeft" align="right" valign="top"><a id="a77c9453b20b43eafd2db8a948b4cd992" name="a77c9453b20b43eafd2db8a948b4cd992"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_modelUri</b></td></tr>
+<tr class="memdesc:a77c9453b20b43eafd2db8a948b4cd992"><td class="mdescLeft">&#160;</td><td class="mdescRight">The model URI associated with the asset. <br /></td></tr>
+<tr class="separator:a77c9453b20b43eafd2db8a948b4cd992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7468d00bf18dcfbb79ed43a73aad988a" id="r_a7468d00bf18dcfbb79ed43a73aad988a"><td class="memItemLeft" align="right" valign="top"><a id="a7468d00bf18dcfbb79ed43a73aad988a" name="a7468d00bf18dcfbb79ed43a73aad988a"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetUri</b></td></tr>
+<tr class="memdesc:a7468d00bf18dcfbb79ed43a73aad988a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unresolved path to asset, eg <code>package://meshes/bar_link.dae</code>. <br /></td></tr>
+<tr class="separator:a7468d00bf18dcfbb79ed43a73aad988a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76de02e16c2948b71beda2fc3617a7d5" id="r_a76de02e16c2948b71beda2fc3617a7d5"><td class="memItemLeft" align="right" valign="top"><a id="a76de02e16c2948b71beda2fc3617a7d5" name="a76de02e16c2948b71beda2fc3617a7d5"></a>
 AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_resolvedUrdfPath</b></td></tr>
 <tr class="memdesc:a76de02e16c2948b71beda2fc3617a7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved URDF path, points to the valid mesh in the filesystem, eg &lsquo;/home/user/ros_ws/src/foo_robot/meshes/bar_link.dae&rsquo;. <br /></td></tr>
 <tr class="separator:a76de02e16c2948b71beda2fc3617a7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9521f870fb4a382053ed4218eb273aa9" id="r_a9521f870fb4a382053ed4218eb273aa9"><td class="memItemLeft" align="right" valign="top"><a id="a9521f870fb4a382053ed4218eb273aa9" name="a9521f870fb4a382053ed4218eb273aa9"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_unresolvedFileName</b></td></tr>
-<tr class="memdesc:a9521f870fb4a382053ed4218eb273aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unresolved file name, points to the valid mesh in the filesystem. <br /></td></tr>
-<tr class="separator:a9521f870fb4a382053ed4218eb273aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf916ff10eb01521e41a18ee082e4deb" id="r_aaf916ff10eb01521e41a18ee082e4deb"><td class="memItemLeft" align="right" valign="top"><a id="aaf916ff10eb01521e41a18ee082e4deb" name="aaf916ff10eb01521e41a18ee082e4deb"></a>
 AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_urdfFileCRC</b></td></tr>
 <tr class="memdesc:aaf916ff10eb01521e41a18ee082e4deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checksum of the file located pointed by <code>m_resolvedUrdfPath</code>. <br /></td></tr>
@@ -85,10 +85,10 @@ AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_urdfFileCRC</b
 CopyStatus&#160;</td><td class="memItemRight" valign="bottom"><b>m_copyStatus</b> = Waiting</td></tr>
 <tr class="memdesc:a3c2a39837f633c4fbd7157e756613d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the copy process. <br /></td></tr>
 <tr class="separator:a3c2a39837f633c4fbd7157e756613d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a943299b720db4f0fad28f5870dec5ae0" id="r_a943299b720db4f0fad28f5870dec5ae0"><td class="memItemLeft" align="right" valign="top"><a id="a943299b720db4f0fad28f5870dec5ae0" name="a943299b720db4f0fad28f5870dec5ae0"></a>
-ReferencedAssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetReferenceType</b></td></tr>
-<tr class="memdesc:a943299b720db4f0fad28f5870dec5ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of asset reference(s) - mesh, texture, etc. <br /></td></tr>
-<tr class="separator:a943299b720db4f0fad28f5870dec5ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b52ce2ad339c67551cbdaa086d397e" id="r_a94b52ce2ad339c67551cbdaa086d397e"><td class="memItemLeft" align="right" valign="top"><a id="a94b52ce2ad339c67551cbdaa086d397e" name="a94b52ce2ad339c67551cbdaa086d397e"></a>
+ReferencedAssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetType</b></td></tr>
+<tr class="memdesc:a94b52ce2ad339c67551cbdaa086d397e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of asset reference(s) - mesh, texture, etc. <br /></td></tr>
+<tr class="separator:a94b52ce2ad339c67551cbdaa086d397e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef942486e4834d3a8632c92df91c35a" id="r_afef942486e4834d3a8632c92df91c35a"><td class="memItemLeft" align="right" valign="top"><a id="afef942486e4834d3a8632c92df91c35a" name="afef942486e4834d3a8632c92df91c35a"></a>
 <a class="el" href="struct_r_o_s2_robot_importer_1_1_utils_1_1_available_asset.html">AvailableAsset</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_availableAssetInfo</b></td></tr>
 <tr class="memdesc:afef942486e4834d3a8632c92df91c35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Found O3DE asset. <br /></td></tr>
@@ -105,7 +105,7 @@ ReferencedAssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_asse
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2RobotImporter</b></li><li class="navelem"><b>Utils</b></li><li class="navelem"><a class="el" href="struct_r_o_s2_robot_importer_1_1_utils_1_1_urdf_asset.html">UrdfAsset</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:11 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,6 +70,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b516cc62af857cf55ad0de84cbf87cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0135d3953f4f3f750cf02631da0e73" id="r_a9c0135d3953f4f3f750cf02631da0e73"><td class="memItemLeft" align="right" valign="top">virtual TemplateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#a9c0135d3953f4f3f750cf02631da0e73">LoadTemplateFromFile</a> (AZ::IO::PathView filePath)=0</td></tr>
 <tr class="separator:a9c0135d3953f4f3f750cf02631da0e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1a42b125e024043793f7d14765ce40" id="r_a5a1a42b125e024043793f7d14765ce40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#a5a1a42b125e024043793f7d14765ce40">ReloadTemplateFromFile</a> (AZ::IO::PathView relativePath)=0</td></tr>
+<tr class="separator:a5a1a42b125e024043793f7d14765ce40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5f9645d86ac21041632677f1f32373f" id="r_ab5f9645d86ac21041632677f1f32373f"><td class="memItemLeft" align="right" valign="top">virtual TemplateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#ab5f9645d86ac21041632677f1f32373f">LoadTemplateFromString</a> (AZStd::string_view content, AZ::IO::PathView originPath=GeneratePath())=0</td></tr>
 <tr class="separator:ab5f9645d86ac21041632677f1f32373f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28ccf12a9bf26b5e7c73f26762c9a17" id="r_aa28ccf12a9bf26b5e7c73f26762c9a17"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#aa28ccf12a9bf26b5e7c73f26762c9a17">SaveTemplate</a> (TemplateId templateId)=0</td></tr>
@@ -237,6 +239,40 @@ static AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Genera
 
 </div>
 </div>
+<a id="a5a1a42b125e024043793f7d14765ce40" name="a5a1a42b125e024043793f7d14765ce40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1a42b125e024043793f7d14765ce40">&#9670;&#160;</a></span>ReloadTemplateFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::PrefabLoaderInterface::ReloadTemplateFromFile </td>
+          <td>(</td>
+          <td class="paramtype">AZ::IO::PathView&#160;</td>
+          <td class="paramname"><em>relativePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reloads Prefab <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> from given file path and updates values that are changed in the source file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relativePath</td><td>A Prefab <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> relative file path. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#ab924d1d78b81937924ab6276754f1f61">AzToolsFramework::Prefab::PrefabLoader</a>.</p>
+
+</div>
+</div>
 <a id="aa28ccf12a9bf26b5e7c73f26762c9a17" name="aa28ccf12a9bf26b5e7c73f26762c9a17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa28ccf12a9bf26b5e7c73f26762c9a17">&#9670;&#160;</a></span>SaveTemplate()</h2>
 
@@ -373,7 +409,7 @@ static AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Genera
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>Prefab</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html">PrefabLoaderInterface</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:53 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

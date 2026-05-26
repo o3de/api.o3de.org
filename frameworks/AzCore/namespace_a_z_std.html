@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,6 +67,8 @@ $(document).ready(function(){initNavTree('namespace_a_z_std.html',''); initResiz
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1adopt__lock__t.html">adopt_lock_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1allocator.html">allocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1087,10 +1089,14 @@ template&lt;class T &gt; </td></tr>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a2b7f5da7f2ab5a4966a40366d73c0f7e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>add_rvalue_reference_t</b> = typename add_rvalue_reference&lt; T &gt;::type</td></tr>
 <tr class="separator:a2b7f5da7f2ab5a4966a40366d73c0f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96cddfb6b6e95e3d6880a18c8ecf3813" id="r_a96cddfb6b6e95e3d6880a18c8ecf3813"><td class="memTemplParams" colspan="2"><a id="a96cddfb6b6e95e3d6880a18c8ecf3813" name="a96cddfb6b6e95e3d6880a18c8ecf3813"></a>
-template&lt;typename T , size_t Alignment = alignof(T)&gt; </td></tr>
-<tr class="memitem:a96cddfb6b6e95e3d6880a18c8ecf3813"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>aligned_storage_for_t</b> = std::aligned_storage_t&lt; sizeof(T), Alignment &gt;</td></tr>
-<tr class="separator:a96cddfb6b6e95e3d6880a18c8ecf3813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43bf45e4ec24666d7a9504ffc1a2e92" id="r_ae43bf45e4ec24666d7a9504ffc1a2e92"><td class="memTemplParams" colspan="2"><a id="ae43bf45e4ec24666d7a9504ffc1a2e92" name="ae43bf45e4ec24666d7a9504ffc1a2e92"></a>
+template&lt;size_t Len, size_t Align = alignof(max_align_t)&gt; </td></tr>
+<tr class="memitem:ae43bf45e4ec24666d7a9504ffc1a2e92"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>aligned_storage_t</b> = typename <a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>&lt; Len, Align &gt;::type</td></tr>
+<tr class="separator:ae43bf45e4ec24666d7a9504ffc1a2e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd3cf6e3cddb4a2405c87c246356050" id="r_adfd3cf6e3cddb4a2405c87c246356050"><td class="memTemplParams" colspan="2"><a id="adfd3cf6e3cddb4a2405c87c246356050" name="adfd3cf6e3cddb4a2405c87c246356050"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adfd3cf6e3cddb4a2405c87c246356050"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>aligned_storage_for_t</b> = aligned_storage_t&lt; sizeof(T), alignof(T)&gt;</td></tr>
+<tr class="separator:adfd3cf6e3cddb4a2405c87c246356050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad54ab5cd33cb441526b1ced3e44748b7" id="r_ad54ab5cd33cb441526b1ced3e44748b7"><td class="memTemplParams" colspan="2"><a id="ad54ab5cd33cb441526b1ced3e44748b7" name="ad54ab5cd33cb441526b1ced3e44748b7"></a>
 template&lt;class... T&gt; </td></tr>
 <tr class="memitem:ad54ab5cd33cb441526b1ced3e44748b7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>common_reference_t</b> = typename <a class="el" href="struct_a_z_std_1_1common__reference.html">common_reference</a>&lt; T... &gt;::type</td></tr>
@@ -6391,7 +6397,7 @@ template&lt;class S , class I &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:43 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
