@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,6 +53,7 @@ $(document).ready(function(){initNavTree('class_az_framework_1_1_remote_storage_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
@@ -87,6 +88,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCompletionEstim
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CollectStatistics</b> (AZStd::vector&lt; AZ::IO::Statistic &gt; &amp;statistics) const override</td></tr>
 <tr class="separator:a9f3ff9cef7ff44182f87b25e3308b0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:aefba5d7e333d474f88ca9bc2bc67005a" id="r_aefba5d7e333d474f88ca9bc2bc67005a"><td class="memItemLeft" align="right" valign="top"><a id="aefba5d7e333d474f88ca9bc2bc67005a" name="aefba5d7e333d474f88ca9bc2bc67005a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RecentlyUsedFileIndex</b> = AZ::IO::RecentlyUsedIndex&lt; AZ::u32 &gt;</td></tr>
+<tr class="separator:aefba5d7e333d474f88ca9bc2bc67005a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a531c79eb9d44f92343dbb991fec30e8a" id="r_a531c79eb9d44f92343dbb991fec30e8a"><td class="memItemLeft" align="right" valign="top"><a id="a531c79eb9d44f92343dbb991fec30e8a" name="a531c79eb9d44f92343dbb991fec30e8a"></a>
@@ -101,9 +108,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FileExistsRequest</b>
 <tr class="memitem:a2d0bd60b26c457afe615f7af0e0da919" id="r_a2d0bd60b26c457afe615f7af0e0da919"><td class="memItemLeft" align="right" valign="top"><a id="a2d0bd60b26c457afe615f7af0e0da919" name="a2d0bd60b26c457afe615f7af0e0da919"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FileMetaDataRetrievalRequest</b> (AZ::IO::FileRequest *request)</td></tr>
 <tr class="separator:a2d0bd60b26c457afe615f7af0e0da919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184b103f0e5a61d07ad0d6ad0bab65aa" id="r_a184b103f0e5a61d07ad0d6ad0bab65aa"><td class="memItemLeft" align="right" valign="top"><a id="a184b103f0e5a61d07ad0d6ad0bab65aa" name="a184b103f0e5a61d07ad0d6ad0bab65aa"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindFileInCache</b> (const AZ::IO::RequestPath &amp;filePath) const</td></tr>
-<tr class="separator:a184b103f0e5a61d07ad0d6ad0bab65aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fefeb751291affac6768fd89406e524" id="r_a6fefeb751291affac6768fd89406e524"><td class="memItemLeft" align="right" valign="top"><a id="a6fefeb751291affac6768fd89406e524" name="a6fefeb751291affac6768fd89406e524"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>FindFileInCache</b> (const AZ::IO::RequestPath &amp;filePath) const</td></tr>
+<tr class="separator:a6fefeb751291affac6768fd89406e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbfe438640d3e3750f083c0a6bece1f5" id="r_afbfe438640d3e3750f083c0a6bece1f5"><td class="memItemLeft" align="right" valign="top"><a id="afbfe438640d3e3750f083c0a6bece1f5" name="afbfe438640d3e3750f083c0a6bece1f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EstimateCompletionTimeForRequest</b> (AZ::IO::FileRequest *request, AZStd::chrono::steady_clock::time_point &amp;startTime, const AZ::IO::RequestPath *&amp;activeFile) const</td></tr>
 <tr class="separator:afbfe438640d3e3750f083c0a6bece1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +147,9 @@ AZ::IO::AverageWindow&lt; AZ::u64, float, AZ::IO::s_statisticsWindowSize &gt;&#1
 <tr class="memitem:a2624687492ffcb943fb2f50a7e3781db" id="r_a2624687492ffcb943fb2f50a7e3781db"><td class="memItemLeft" align="right" valign="top"><a id="a2624687492ffcb943fb2f50a7e3781db" name="a2624687492ffcb943fb2f50a7e3781db"></a>
 AZStd::deque&lt; AZ::IO::FileRequest * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingRequests</b></td></tr>
 <tr class="separator:a2624687492ffcb943fb2f50a7e3781db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b91ee1cbf1f131eeba0f6a969d7d58" id="r_aa3b91ee1cbf1f131eeba0f6a969d7d58"><td class="memItemLeft" align="right" valign="top"><a id="aa3b91ee1cbf1f131eeba0f6a969d7d58" name="aa3b91ee1cbf1f131eeba0f6a969d7d58"></a>
-AZStd::vector&lt; AZStd::chrono::steady_clock::time_point &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileLastUsed</b></td></tr>
-<tr class="separator:aa3b91ee1cbf1f131eeba0f6a969d7d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36f3e5f263009972d6886914ea6c4d6" id="r_ad36f3e5f263009972d6886914ea6c4d6"><td class="memItemLeft" align="right" valign="top"><a id="ad36f3e5f263009972d6886914ea6c4d6" name="ad36f3e5f263009972d6886914ea6c4d6"></a>
+RecentlyUsedFileIndex&#160;</td><td class="memItemRight" valign="bottom"><b>m_recentlyUsed</b></td></tr>
+<tr class="separator:ad36f3e5f263009972d6886914ea6c4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5efd9b132dda1cf56c42426cc6ae41e3" id="r_a5efd9b132dda1cf56c42426cc6ae41e3"><td class="memItemLeft" align="right" valign="top"><a id="a5efd9b132dda1cf56c42426cc6ae41e3" name="a5efd9b132dda1cf56c42426cc6ae41e3"></a>
 AZStd::vector&lt; AZ::IO::RequestPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filePaths</b></td></tr>
 <tr class="separator:a5efd9b132dda1cf56c42426cc6ae41e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +162,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeCacheSlot</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a372f424c3eca449dede0e57db7ebdcc3" id="r_a372f424c3eca449dede0e57db7ebdcc3"><td class="memItemLeft" align="right" valign="top"><a id="a372f424c3eca449dede0e57db7ebdcc3" name="a372f424c3eca449dede0e57db7ebdcc3"></a>
+static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidFileIndex</b> = AZStd::numeric_limits&lt;AZ::u32&gt;::max()</td></tr>
+<tr class="separator:a372f424c3eca449dede0e57db7ebdcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04a89adda5cb28a6f9ad95f1f419c7" id="r_a3c04a89adda5cb28a6f9ad95f1f419c7"><td class="memItemLeft" align="right" valign="top"><a id="a3c04a89adda5cb28a6f9ad95f1f419c7" name="a3c04a89adda5cb28a6f9ad95f1f419c7"></a>
 static constexpr AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>s_maxRequests</b> = 1</td></tr>
 <tr class="separator:a3c04a89adda5cb28a6f9ad95f1f419c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +178,7 @@ static constexpr AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_framework.html">AzFramework</a></li><li class="navelem"><a class="el" href="class_az_framework_1_1_remote_storage_drive.html">RemoteStorageDrive</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:27 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

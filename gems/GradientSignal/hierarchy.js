@@ -342,6 +342,9 @@ var hierarchy =
     [ "PosterizeGradientRequestBus::Handler", null, [
       [ "GradientSignal::PosterizeGradientComponent", "class_gradient_signal_1_1_posterize_gradient_component.html", null ]
     ] ],
+    [ "QDialog", null, [
+      [ "GradientSignal::ImageCreatorUtils::CreateImageDialog", "class_gradient_signal_1_1_image_creator_utils_1_1_create_image_dialog.html", null ]
+    ] ],
     [ "QObject", null, [
       [ "GradientSignal::StreamingImagePropertyHandler", "class_gradient_signal_1_1_streaming_image_property_handler.html", null ]
     ] ],

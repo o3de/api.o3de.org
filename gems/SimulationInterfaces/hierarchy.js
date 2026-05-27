@@ -78,75 +78,57 @@ var hierarchy =
     [ "NamedPoseManagerRequestBus::Handler", null, [
       [ "SimulationInterfaces::NamedPoseManager", "class_simulation_interfaces_1_1_named_pose_manager.html", null ]
     ] ],
-    [ "ROS2SimulationInterfaces::IROS2HandlerBase", "class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base.html", [
-      [ "ROS2SimulationInterfaces::ROS2ActionBase< simulation_interfaces::action::SimulateSteps >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_action_base.html", [
-        [ "ROS2SimulationInterfaces::SimulateStepsActionServerHandler", "class_r_o_s2_simulation_interfaces_1_1_simulate_steps_action_server_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::DeleteEntity >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::DeleteEntityServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_delete_entity_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetAvailableWorlds >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetAvailableWorldsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_available_worlds_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetCurrentWorld >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetCurrentWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_current_world_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetEntities >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetEntitiesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entities_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetEntitiesStates >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetEntitiesStatesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entities_states_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetEntityBounds >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetEntityBoundsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_bounds_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetEntityInfo >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetEntityInfoServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_info_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetEntityState >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetEntityStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_state_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetNamedPoseBounds >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetNamedPoseBoundsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_named_pose_bounds_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetNamedPoses >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetNamedPosesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_named_poses_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetSimulationState >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetSimulationStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_simulation_state_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetSimulatorFeatures >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetSimulatorFeaturesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_simulator_features_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::GetSpawnables >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::GetSpawnablesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_spawnables_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::LoadWorld >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::LoadWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::ResetSimulation >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::ResetSimulationServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_reset_simulation_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::SetEntityInfo >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::SetEntityInfoServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_entity_info_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::SetEntityState >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::SetEntityStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_entity_state_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::SetSimulationState >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::SetSimulationStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_simulation_state_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::SpawnEntity >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::SpawnEntityServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_spawn_entity_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::StepSimulation >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::StepSimulationServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_step_simulation_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< simulation_interfaces::srv::UnloadWorld >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", [
-        [ "ROS2SimulationInterfaces::UnloadWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_unload_world_service_handler.html", null ]
-      ] ],
-      [ "ROS2SimulationInterfaces::ROS2ActionBase< RosActionType >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_action_base.html", null ],
-      [ "ROS2SimulationInterfaces::ROS2ServiceBase< RosServiceType >", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html", null ]
+    [ "ROS2::ROS2ActionBase", null, [
+      [ "ROS2SimulationInterfaces::SimulateStepsActionServerHandler", "class_r_o_s2_simulation_interfaces_1_1_simulate_steps_action_server_handler.html", null ]
+    ] ],
+    [ "ROS2::ROS2ServiceBase", null, [
+      [ "ROS2SimulationInterfaces::DeleteEntityServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_delete_entity_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetAvailableWorldsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_available_worlds_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetCurrentWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_current_world_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntitiesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entities_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntitiesStatesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entities_states_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntityBoundsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_bounds_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntityInfoServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_info_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntityStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetNamedPoseBoundsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_named_pose_bounds_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetNamedPosesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_named_poses_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetSimulationStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_simulation_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetSimulatorFeaturesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_simulator_features_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetSpawnablesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_spawnables_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::LoadWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::ResetSimulationServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_reset_simulation_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SetEntityInfoServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_entity_info_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SetEntityStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_entity_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SetSimulationStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_simulation_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SpawnEntitiesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_spawn_entities_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SpawnEntityServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_spawn_entity_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::StepSimulationServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_step_simulation_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::UnloadWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_unload_world_service_handler.html", null ]
+    ] ],
+    [ "ROS2SimulationInterfaces::ISimulationFeaturesBase", "class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base.html", [
+      [ "ROS2SimulationInterfaces::DeleteEntityServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_delete_entity_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetAvailableWorldsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_available_worlds_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetCurrentWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_current_world_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntitiesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entities_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntitiesStatesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entities_states_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntityBoundsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_bounds_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntityInfoServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_info_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetEntityStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_entity_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetNamedPoseBoundsServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_named_pose_bounds_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetNamedPosesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_named_poses_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetSimulationStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_simulation_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetSimulatorFeaturesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_simulator_features_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::GetSpawnablesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_get_spawnables_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::LoadWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::ResetSimulationServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_reset_simulation_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SetEntityInfoServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_entity_info_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SetEntityStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_entity_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SetSimulationStateServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_set_simulation_state_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SimulateStepsActionServerHandler", "class_r_o_s2_simulation_interfaces_1_1_simulate_steps_action_server_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SpawnEntitiesServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_spawn_entities_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::SpawnEntityServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_spawn_entity_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::StepSimulationServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_step_simulation_service_handler.html", null ],
+      [ "ROS2SimulationInterfaces::UnloadWorldServiceHandler", "class_r_o_s2_simulation_interfaces_1_1_unload_world_service_handler.html", null ]
     ] ],
     [ "ROS2SimulationInterfaces::ROS2SimulationInterfacesRequests", "class_r_o_s2_simulation_interfaces_1_1_r_o_s2_simulation_interfaces_requests.html", null ],
     [ "ROS2SimulationInterfacesRequestBus::Handler", null, [
@@ -158,6 +140,7 @@ var hierarchy =
     [ "SimulationFeaturesAggregatorRequestBus::Handler", null, [
       [ "SimulationInterfaces::SimulationFeaturesAggregator", "class_simulation_interfaces_1_1_simulation_features_aggregator.html", null ]
     ] ],
+    [ "SimulationInterfaces::BatchSpawnResult", "struct_simulation_interfaces_1_1_batch_spawn_result.html", null ],
     [ "SimulationInterfaces::Bounds", "struct_simulation_interfaces_1_1_bounds.html", null ],
     [ "SimulationInterfaces::EntityFilters", "struct_simulation_interfaces_1_1_entity_filters.html", null ],
     [ "SimulationInterfaces::EntityInfo", "struct_simulation_interfaces_1_1_entity_info.html", null ],
@@ -179,6 +162,7 @@ var hierarchy =
     ] ],
     [ "SimulationInterfaces::SimulationManagerRequests", "class_simulation_interfaces_1_1_simulation_manager_requests.html", null ],
     [ "SimulationInterfaces::Spawnable", "struct_simulation_interfaces_1_1_spawnable.html", null ],
+    [ "SimulationInterfaces::SpawningEntity", "struct_simulation_interfaces_1_1_spawning_entity.html", null ],
     [ "SimulationInterfaces::TagFilter", "struct_simulation_interfaces_1_1_tag_filter.html", null ],
     [ "SimulationInterfaces::WorldResource", "struct_simulation_interfaces_1_1_world_resource.html", null ],
     [ "SimulationManagerRequestBus::Handler", null, [

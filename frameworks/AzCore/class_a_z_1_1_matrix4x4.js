@@ -38,6 +38,7 @@ var class_a_z_1_1_matrix4x4 =
     [ "operator-", "class_a_z_1_1_matrix4x4.html#a94d9860a324be450616d985aabf4f22c", null ],
     [ "operator-", "class_a_z_1_1_matrix4x4.html#ac2a2467989ca577a989c57b5e3a2c256", null ],
     [ "operator/", "class_a_z_1_1_matrix4x4.html#a734391b9933c91e53ba245f781ac7ad4", null ],
+    [ "operator[]", "class_a_z_1_1_matrix4x4.html#ab55de95d4dc05ff5320277bd07ce8854", null ],
     [ "Reflect", "class_a_z_1_1_matrix4x4.html#ab244b37b080d6d070ae47e36c7b13ca2", null ],
     [ "RetrieveScale", "class_a_z_1_1_matrix4x4.html#a582e9f6d344b5a85adce7ae775639aad", null ],
     [ "RetrieveScaleSq", "class_a_z_1_1_matrix4x4.html#ab1b789b7930c3dc269af77a491562662", null ],

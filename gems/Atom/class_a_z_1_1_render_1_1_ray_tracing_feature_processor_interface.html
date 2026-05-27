@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -87,18 +87,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_blas_instance.html">SubMeshBlasInstance</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains material data for a single subMesh.  <a href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a91f91a5901eb1882f67e8a2ee1aa748c" id="r_a91f91a5901eb1882f67e8a2ee1aa748c"><td class="memItemLeft" align="right" valign="top"><a id="a91f91a5901eb1882f67e8a2ee1aa748c" name="a91f91a5901eb1882f67e8a2ee1aa748c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SubMeshVector</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh.html">SubMesh</a> &gt;</td></tr>
 <tr class="separator:a91f91a5901eb1882f67e8a2ee1aa748c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98f4c3f6dd9479e1706bb0a7d7f7c6f" id="r_ab98f4c3f6dd9479e1706bb0a7d7f7c6f"><td class="memItemLeft" align="right" valign="top"><a id="ab98f4c3f6dd9479e1706bb0a7d7f7c6f" name="ab98f4c3f6dd9479e1706bb0a7d7f7c6f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SubMeshMaterialVector</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a> &gt;</td></tr>
-<tr class="separator:ab98f4c3f6dd9479e1706bb0a7d7f7c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda88d32c8f6311fd0d78145ddb5c39f" id="r_adda88d32c8f6311fd0d78145ddb5c39f"><td class="memItemLeft" align="right" valign="top"><a id="adda88d32c8f6311fd0d78145ddb5c39f" name="adda88d32c8f6311fd0d78145ddb5c39f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVector</b> = AZStd::vector&lt; uint32_t &gt;</td></tr>
 <tr class="separator:adda88d32c8f6311fd0d78145ddb5c39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,14 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af68ad448f11213b1aea46ef91119d145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52b9f5e1c0819d52a3d18f77c6399c2" id="r_ab52b9f5e1c0819d52a3d18f77c6399c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#ab52b9f5e1c0819d52a3d18f77c6399c2">SetProceduralGeometryTypeBindlessBufferIndex</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_weak_handle.html">ProceduralGeometryTypeWeakHandle</a> geometryTypeHandle, const AZStd::unordered_map&lt; int, uint32_t &gt; &amp;bindlessBufferIndices)=0</td></tr>
 <tr class="separator:ab52b9f5e1c0819d52a3d18f77c6399c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8eabb9be9ef5eff2bef19a2e8da026" id="r_a6c8eabb9be9ef5eff2bef19a2e8da026"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a6c8eabb9be9ef5eff2bef19a2e8da026">AddProceduralGeometry</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_weak_handle.html">ProceduralGeometryTypeWeakHandle</a> geometryTypeHandle, const Uuid &amp;uuid, const Aabb &amp;aabb, const <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a> &amp;material, RHI::RayTracingAccelerationStructureInstanceInclusionMask instanceMask, uint32_t localInstanceIndex)=0</td></tr>
-<tr class="separator:a6c8eabb9be9ef5eff2bef19a2e8da026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8751b3dce3ea5f7627556869333feb" id="r_a0e8751b3dce3ea5f7627556869333feb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a0e8751b3dce3ea5f7627556869333feb">AddProceduralGeometry</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_weak_handle.html">ProceduralGeometryTypeWeakHandle</a> geometryTypeHandle, const Uuid &amp;uuid, const Aabb &amp;aabb, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> &amp;meshInfoHandle, RHI::RayTracingAccelerationStructureInstanceInclusionMask instanceMask, uint32_t localInstanceIndex)=0</td></tr>
+<tr class="separator:a0e8751b3dce3ea5f7627556869333feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3af8d91b19cd70567d7ead1b51cf0c45" id="r_a3af8d91b19cd70567d7ead1b51cf0c45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a3af8d91b19cd70567d7ead1b51cf0c45">SetProceduralGeometryTransform</a> (const Uuid &amp;uuid, const Transform &amp;transform, const Vector3 &amp;nonUniformScale=Vector3::CreateOne())=0</td></tr>
 <tr class="separator:a3af8d91b19cd70567d7ead1b51cf0c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ed74b7a7475e0b135dcaf4df02d0cb0" id="r_a6ed74b7a7475e0b135dcaf4df02d0cb0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a6ed74b7a7475e0b135dcaf4df02d0cb0">SetProceduralGeometryLocalInstanceIndex</a> (const Uuid &amp;uuid, uint32_t localInstanceIndex)=0</td></tr>
 <tr class="separator:a6ed74b7a7475e0b135dcaf4df02d0cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9833f09e49600fca7f3ee02cf19da1a" id="r_aa9833f09e49600fca7f3ee02cf19da1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#aa9833f09e49600fca7f3ee02cf19da1a">SetProceduralGeometryMaterial</a> (const Uuid &amp;uuid, const <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a> &amp;material)=0</td></tr>
-<tr class="separator:aa9833f09e49600fca7f3ee02cf19da1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693a3936a1b3e61a84b1095b1d847091" id="r_a693a3936a1b3e61a84b1095b1d847091"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a693a3936a1b3e61a84b1095b1d847091">RemoveProceduralGeometry</a> (const Uuid &amp;uuid)=0</td></tr>
 <tr class="separator:a693a3936a1b3e61a84b1095b1d847091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4a128c58bea7bf17a0c9cc3ada96b4" id="r_afe4a128c58bea7bf17a0c9cc3ada96b4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#afe4a128c58bea7bf17a0c9cc3ada96b4">GetProceduralGeometryCount</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_weak_handle.html">ProceduralGeometryTypeWeakHandle</a> geometryTypeHandle) const =0</td></tr>
@@ -150,13 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae5896cd885e0eeea13bc8f0719ecf283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07cc45c7879962575ec40360b8ecbfd1" id="r_a07cc45c7879962575ec40360b8ecbfd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a07cc45c7879962575ec40360b8ecbfd1">SetMeshTransform</a> (const AZ::Uuid &amp;uuid, const AZ::Transform transform, const AZ::Vector3 nonUniformScale)=0</td></tr>
 <tr class="separator:a07cc45c7879962575ec40360b8ecbfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f895c7f83eac9647888645a2e4797f1" id="r_a6f895c7f83eac9647888645a2e4797f1"><td class="memItemLeft" align="right" valign="top"><a id="a6f895c7f83eac9647888645a2e4797f1" name="a6f895c7f83eac9647888645a2e4797f1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMeshReflectionProbe</b> (const AZ::Uuid &amp;uuid, const <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_mesh_1_1_reflection_probe.html">Mesh::ReflectionProbe</a> &amp;reflectionProbe)=0</td></tr>
-<tr class="memdesc:a6f895c7f83eac9647888645a2e4797f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the reflection probe for a mesh. <br /></td></tr>
-<tr class="separator:a6f895c7f83eac9647888645a2e4797f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0dca53cc85f9a67b0eafd0988fecb30" id="r_ad0dca53cc85f9a67b0eafd0988fecb30"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#ad0dca53cc85f9a67b0eafd0988fecb30">SetMeshMaterials</a> (const AZ::Uuid &amp;uuid, const SubMeshMaterialVector &amp;subMeshMaterials)=0</td></tr>
-<tr class="memdesc:ad0dca53cc85f9a67b0eafd0988fecb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material for a mesh.  <br /></td></tr>
-<tr class="separator:ad0dca53cc85f9a67b0eafd0988fecb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5beb2f1b95c32817a97138468b229a1e" id="r_a5beb2f1b95c32817a97138468b229a1e"><td class="memItemLeft" align="right" valign="top">virtual const SubMeshVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a5beb2f1b95c32817a97138468b229a1e">GetSubMeshes</a> () const =0</td></tr>
 <tr class="memdesc:a5beb2f1b95c32817a97138468b229a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the map of all subMeshes in the scene.  <br /></td></tr>
 <tr class="separator:a5beb2f1b95c32817a97138468b229a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,9 +154,6 @@ virtual const <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_p
 <tr class="memitem:a9b49552aae703104603a1169d625806c" id="r_a9b49552aae703104603a1169d625806c"><td class="memItemLeft" align="right" valign="top">virtual Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a9b49552aae703104603a1169d625806c">GetRayTracingSceneSrg</a> () const =0</td></tr>
 <tr class="memdesc:a9b49552aae703104603a1169d625806c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the RayTracingSceneSrg.  <br /></td></tr>
 <tr class="separator:a9b49552aae703104603a1169d625806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9d2c1b9263de00864a92500ba1d591" id="r_a7e9d2c1b9263de00864a92500ba1d591"><td class="memItemLeft" align="right" valign="top">virtual Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a7e9d2c1b9263de00864a92500ba1d591">GetRayTracingMaterialSrg</a> () const =0</td></tr>
-<tr class="memdesc:a7e9d2c1b9263de00864a92500ba1d591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the RayTracingMaterialSrg.  <br /></td></tr>
-<tr class="separator:a7e9d2c1b9263de00864a92500ba1d591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6185dec8820aa4498ad1a443c34d07a8" id="r_a6185dec8820aa4498ad1a443c34d07a8"><td class="memItemLeft" align="right" valign="top">virtual const RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tlas.html">RHI::RayTracingTlas</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a6185dec8820aa4498ad1a443c34d07a8">GetTlas</a> () const =0</td></tr>
 <tr class="memdesc:a6185dec8820aa4498ad1a443c34d07a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the RayTracingTlas.  <br /></td></tr>
 <tr class="separator:a6185dec8820aa4498ad1a443c34d07a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,12 +193,6 @@ virtual RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_tla
 <tr class="memitem:a249dc6af51e62035fe246ba9e7847b11" id="r_a249dc6af51e62035fe246ba9e7847b11"><td class="memItemLeft" align="right" valign="top">virtual RHI::AttachmentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a249dc6af51e62035fe246ba9e7847b11">GetTlasAttachmentId</a> () const =0</td></tr>
 <tr class="memdesc:a249dc6af51e62035fe246ba9e7847b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the attachmentId of the Tlas for this scene.  <br /></td></tr>
 <tr class="separator:a249dc6af51e62035fe246ba9e7847b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f41d030090898bab63f27c88ca7ae68" id="r_a8f41d030090898bab63f27c88ca7ae68"><td class="memItemLeft" align="right" valign="top">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">RPI::Buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a8f41d030090898bab63f27c88ca7ae68">GetMeshInfoGpuBuffer</a> () const =0</td></tr>
-<tr class="memdesc:a8f41d030090898bab63f27c88ca7ae68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the GPU buffer containing information for all ray tracing meshes.  <br /></td></tr>
-<tr class="separator:a8f41d030090898bab63f27c88ca7ae68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae968b8a46f1614cdff88d8054814d125" id="r_ae968b8a46f1614cdff88d8054814d125"><td class="memItemLeft" align="right" valign="top">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">RPI::Buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#ae968b8a46f1614cdff88d8054814d125">GetMaterialInfoGpuBuffer</a> () const =0</td></tr>
-<tr class="memdesc:ae968b8a46f1614cdff88d8054814d125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the GPU buffer containing information for all ray tracing materials.  <br /></td></tr>
-<tr class="separator:ae968b8a46f1614cdff88d8054814d125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accea1ae339aa2e4c48a6f72f4f31a011" id="r_accea1ae339aa2e4c48a6f72f4f31a011"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#accea1ae339aa2e4c48a6f72f4f31a011">BeginFrame</a> (int deviceIndex)=0</td></tr>
 <tr class="separator:accea1ae339aa2e4c48a6f72f4f31a011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a51ca7b4684fc0545382d296ad6401d" id="r_a3a51ca7b4684fc0545382d296ad6401d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html#a3a51ca7b4684fc0545382d296ad6401d">UpdateRayTracingSrgs</a> ()=0</td></tr>
@@ -347,8 +323,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
-<a id="a6c8eabb9be9ef5eff2bef19a2e8da026" name="a6c8eabb9be9ef5eff2bef19a2e8da026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c8eabb9be9ef5eff2bef19a2e8da026">&#9670;&#160;</a></span>AddProceduralGeometry()</h2>
+<a id="a0e8751b3dce3ea5f7627556869333feb" name="a0e8751b3dce3ea5f7627556869333feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8751b3dce3ea5f7627556869333feb">&#9670;&#160;</a></span>AddProceduralGeometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,8 +353,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a> &amp;&#160;</td>
-          <td class="paramname"><em>material</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>meshInfoHandle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -409,14 +385,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
     <tr><td class="paramname">geometryTypeHandle</td><td>A weak handle of a procedural geometry type (obtained by calling <code>.GetWeakHandle()</code> on the handle returned by <code>RegisterProceduralGeometryType</code>. </td></tr>
     <tr><td class="paramname">uuid</td><td>The Uuid this geometry instance should be associated with. </td></tr>
     <tr><td class="paramname">aabb</td><td>The axis-aligned bounding box of this geometry instance. </td></tr>
-    <tr><td class="paramname">material</td><td>The material of this geometry instance. </td></tr>
+    <tr><td class="paramname">meshInfoHandle</td><td>The meshInfo-handle pointing to the MeshInfo and FallbackPBRMaterial entry for this geometry instance. </td></tr>
     <tr><td class="paramname">instanceMask</td><td>Used to include/exclude mesh instances from TraceRay() calls. </td></tr>
     <tr><td class="paramname">localInstanceIndex</td><td>An index which can be queried in the intersection shader with <code>GetLocalInstanceIndex()</code> and can be used together with <code>GetBindlessBufferIndex()</code> to access per-instance geometry data. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a0e8bd7568cde2bec24d16d905e79fbdd">AZ::Render::RayTracingFeatureProcessor</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a2f5e40f73d9446dbb9b32887e5db6f4e">AZ::Render::RayTracingFeatureProcessor</a>.</p>
 
 </div>
 </div>
@@ -623,64 +599,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
-<a id="ae968b8a46f1614cdff88d8054814d125" name="ae968b8a46f1614cdff88d8054814d125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae968b8a46f1614cdff88d8054814d125">&#9670;&#160;</a></span>GetMaterialInfoGpuBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">RPI::Buffer</a> &gt; AZ::Render::RayTracingFeatureProcessorInterface::GetMaterialInfoGpuBuffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves the GPU buffer containing information for all ray tracing materials. </p>
-
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a1237594be2a510c253f5494fa9768414">AZ::Render::RayTracingFeatureProcessor</a>.</p>
-
-</div>
-</div>
-<a id="a8f41d030090898bab63f27c88ca7ae68" name="a8f41d030090898bab63f27c88ca7ae68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f41d030090898bab63f27c88ca7ae68">&#9670;&#160;</a></span>GetMeshInfoGpuBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">RPI::Buffer</a> &gt; AZ::Render::RayTracingFeatureProcessorInterface::GetMeshInfoGpuBuffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves the GPU buffer containing information for all ray tracing meshes. </p>
-
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a861d97872a33c522288523eeac126a13">AZ::Render::RayTracingFeatureProcessor</a>.</p>
-
-</div>
-</div>
 <a id="aa170abf495f0fbfa5b030471c3b75196" name="aa170abf495f0fbfa5b030471c3b75196"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa170abf495f0fbfa5b030471c3b75196">&#9670;&#160;</a></span>GetProceduralGeometries()</h2>
 
@@ -799,35 +717,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <p>Retrieves the list of all procedural geometry types in the scene. </p>
 
 <p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#afb32eec4d1451a07808d4b77d47ac27d">AZ::Render::RayTracingFeatureProcessor</a>.</p>
-
-</div>
-</div>
-<a id="a7e9d2c1b9263de00864a92500ba1d591" name="a7e9d2c1b9263de00864a92500ba1d591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e9d2c1b9263de00864a92500ba1d591">&#9670;&#160;</a></span>GetRayTracingMaterialSrg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt; AZ::Render::RayTracingFeatureProcessorInterface::GetRayTracingMaterialSrg </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves the RayTracingMaterialSrg. </p>
-
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a9d1783083a9b79d0a7b5003c35e1ae76">AZ::Render::RayTracingFeatureProcessor</a>.</p>
 
 </div>
 </div>
@@ -1388,46 +1277,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
-<a id="ad0dca53cc85f9a67b0eafd0988fecb30" name="ad0dca53cc85f9a67b0eafd0988fecb30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0dca53cc85f9a67b0eafd0988fecb30">&#9670;&#160;</a></span>SetMeshMaterials()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AZ::Render::RayTracingFeatureProcessorInterface::SetMeshMaterials </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
-          <td class="paramname"><em>uuid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const SubMeshMaterialVector &amp;&#160;</td>
-          <td class="paramname"><em>subMeshMaterials</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the material for a mesh. </p>
-
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a60f56a89874167e4ddb40fc72d004274">AZ::Render::RayTracingFeatureProcessor</a>.</p>
-
-</div>
-</div>
 <a id="a07cc45c7879962575ec40360b8ecbfd1" name="a07cc45c7879962575ec40360b8ecbfd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07cc45c7879962575ec40360b8ecbfd1">&#9670;&#160;</a></span>SetMeshTransform()</h2>
 
@@ -1515,51 +1364,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </dl>
 
 <p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#af3f22f1f6a6f7836d697e728c1a3f16e">AZ::Render::RayTracingFeatureProcessor</a>.</p>
-
-</div>
-</div>
-<a id="aa9833f09e49600fca7f3ee02cf19da1a" name="aa9833f09e49600fca7f3ee02cf19da1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9833f09e49600fca7f3ee02cf19da1a">&#9670;&#160;</a></span>SetProceduralGeometryMaterial()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AZ::Render::RayTracingFeatureProcessorInterface::SetProceduralGeometryMaterial </td>
-          <td>(</td>
-          <td class="paramtype">const Uuid &amp;&#160;</td>
-          <td class="paramname"><em>uuid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a> &amp;&#160;</td>
-          <td class="paramname"><em>material</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the material of a procedural geometry instance. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uuid</td><td>The Uuid of the procedural geometry which must have been added with <code>AddProceduralGeometry</code> before. </td></tr>
-    <tr><td class="paramname">material</td><td>The material of the procedural geometry instance. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a888f7ab82b780f36da8d2b4174a55dd0">AZ::Render::RayTracingFeatureProcessor</a>.</p>
 
 </div>
 </div>
@@ -1697,7 +1501,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html">RayTracingFeatureProcessorInterface</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:36 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_az_tools_framework_1_1_prefab_ui_handler.html#ad7c33b516491ce8f16338f0bccfafae2":[2,0,5,306,0],
 "class_az_tools_framework_1_1_prefab_ui_handler.html#adbf94b03aec7ffd169dc2b6ad56a8c10":[2,0,5,306,4],
 "class_az_tools_framework_1_1_procedural_prefab_ui_handler.html":[2,0,5,307],
 "class_az_tools_framework_1_1_procedural_prefab_ui_handler.html#aa923b96b0fe1b03eebf56e172aad4249":[2,0,5,307,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "class_az_tools_framework_1_1_source_control_notifications.html":[2,0,5,360],
 "class_az_tools_framework_1_1_source_control_notifications.html#adb6adc4393f8b26f1991645b6fd7dc06":[2,0,5,360,1],
 "class_az_tools_framework_1_1_source_control_notifications.html#ae4d0c1e02d7c8b934a04c4a47cb7b64f":[2,0,5,360,0],
-"class_az_tools_framework_1_1_sphere_component_mode.html":[2,0,5,363],
-"class_az_tools_framework_1_1_sphere_viewport_edit.html":[2,0,5,364]
+"class_az_tools_framework_1_1_sphere_component_mode.html":[2,0,5,363]
 };

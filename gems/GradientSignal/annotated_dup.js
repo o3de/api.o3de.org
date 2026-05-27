@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "GradientSignal", null, [
       [ "ImageCreatorUtils", null, [
+        [ "CreateImageDialog", "class_gradient_signal_1_1_image_creator_utils_1_1_create_image_dialog.html", null ],
         [ "PaintableImageAssetHelper", "class_gradient_signal_1_1_image_creator_utils_1_1_paintable_image_asset_helper.html", "class_gradient_signal_1_1_image_creator_utils_1_1_paintable_image_asset_helper" ],
         [ "PaintableImageAssetHelperBase", "class_gradient_signal_1_1_image_creator_utils_1_1_paintable_image_asset_helper_base.html", "class_gradient_signal_1_1_image_creator_utils_1_1_paintable_image_asset_helper_base" ]
       ] ],

@@ -22,6 +22,11 @@ var annotated_dup =
       [ "XmlFormattedAssetBuilderWorker", "class_copy_dependency_builder_1_1_xml_formatted_asset_builder_worker.html", null ]
     ] ],
     [ "LmbrCentral", "namespace_lmbr_central.html", [
+      [ "GenericAssetBuilder", null, [
+        [ "GenericAssetBuilderComponent", "class_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_component.html", null ],
+        [ "GenericAssetBuilderRegistration", "struct_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_registration.html", "struct_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_registration" ],
+        [ "GenericAssetBuilderWorker", "class_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_worker.html", "class_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_worker" ]
+      ] ],
       [ "AssetSystemDebugComponent", "class_lmbr_central_1_1_asset_system_debug_component.html", "class_lmbr_central_1_1_asset_system_debug_component" ],
       [ "AttachmentComponentNotifications", "class_lmbr_central_1_1_attachment_component_notifications.html", "class_lmbr_central_1_1_attachment_component_notifications" ],
       [ "AttachmentComponentRequests", "class_lmbr_central_1_1_attachment_component_requests.html", "class_lmbr_central_1_1_attachment_component_requests" ],

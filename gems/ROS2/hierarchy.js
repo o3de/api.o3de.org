@@ -74,6 +74,11 @@ var hierarchy =
     ] ],
     [ "ROS2::EventSourceAdapter< EventSourceT >", "class_r_o_s2_1_1_event_source_adapter.html", null ],
     [ "ROS2::FollowingCameraConfiguration", "struct_r_o_s2_1_1_following_camera_configuration.html", null ],
+    [ "ROS2::IROS2HandlerBase", "class_r_o_s2_1_1_i_r_o_s2_handler_base.html", [
+      [ "ROS2::ROS2ActionBase< RosActionType >", "class_r_o_s2_1_1_r_o_s2_action_base.html", null ],
+      [ "ROS2::ROS2ServiceBase< RosServiceType >", "class_r_o_s2_1_1_r_o_s2_service_base.html", null ],
+      [ "ROS2::ROS2TopicSubscriptionBase< RosMessageType >", "class_r_o_s2_1_1_r_o_s2_topic_subscription_base.html", null ]
+    ] ],
     [ "ROS2::ITimeSource", "class_r_o_s2_1_1_i_time_source.html", [
       [ "ROS2::ROS2TimeSource", "class_r_o_s2_1_1_r_o_s2_time_source.html", null ],
       [ "ROS2::RealTimeSource", "class_r_o_s2_1_1_real_time_source.html", null ],

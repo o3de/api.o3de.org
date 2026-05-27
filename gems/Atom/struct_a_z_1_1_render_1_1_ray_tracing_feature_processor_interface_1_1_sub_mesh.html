@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,6 +52,7 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_render_1_1_ray_tracing_
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh-members.html">List of all members</a>  </div>
@@ -64,68 +65,32 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_render_1_1_ray_tracing_
 
 <p><code>#include &lt;RayTracingFeatureProcessorInterface.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a61b27b4edb0ee7787a697e096e30edf9" id="r_a61b27b4edb0ee7787a697e096e30edf9"><td class="memItemLeft" align="right" valign="top"><a id="a61b27b4edb0ee7787a697e096e30edf9" name="a61b27b4edb0ee7787a697e096e30edf9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsClusterMesh</b> () const</td></tr>
+<tr class="separator:a61b27b4edb0ee7787a697e096e30edf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a26d51f07e8ff899303067a6d49c2be0c" id="r_a26d51f07e8ff899303067a6d49c2be0c"><td class="memItemLeft" align="right" valign="top"><a id="a26d51f07e8ff899303067a6d49c2be0c" name="a26d51f07e8ff899303067a6d49c2be0c"></a>
-RHI::VertexFormat&#160;</td><td class="memItemRight" valign="bottom"><b>m_positionFormat</b> = RHI::VertexFormat::Unknown</td></tr>
-<tr class="separator:a26d51f07e8ff899303067a6d49c2be0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f93247a61ff37d2866bb81bfeb3da1f" id="r_a5f93247a61ff37d2866bb81bfeb3da1f"><td class="memItemLeft" align="right" valign="top"><a id="a5f93247a61ff37d2866bb81bfeb3da1f" name="a5f93247a61ff37d2866bb81bfeb3da1f"></a>
-RHI::StreamBufferView&#160;</td><td class="memItemRight" valign="bottom"><b>m_positionVertexBufferView</b></td></tr>
-<tr class="separator:a5f93247a61ff37d2866bb81bfeb3da1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affbd80ba46ac72f14082f182820b95d4" id="r_affbd80ba46ac72f14082f182820b95d4"><td class="memItemLeft" align="right" valign="top"><a id="affbd80ba46ac72f14082f182820b95d4" name="affbd80ba46ac72f14082f182820b95d4"></a>
-RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_positionShaderBufferView</b></td></tr>
-<tr class="separator:affbd80ba46ac72f14082f182820b95d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543f61d06cc6f112eb8c5e3df8bec635" id="r_a543f61d06cc6f112eb8c5e3df8bec635"><td class="memItemLeft" align="right" valign="top"><a id="a543f61d06cc6f112eb8c5e3df8bec635" name="a543f61d06cc6f112eb8c5e3df8bec635"></a>
-RHI::VertexFormat&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalFormat</b> = RHI::VertexFormat::Unknown</td></tr>
-<tr class="separator:a543f61d06cc6f112eb8c5e3df8bec635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91914302f33cc8a750c12fb59c98d78c" id="r_a91914302f33cc8a750c12fb59c98d78c"><td class="memItemLeft" align="right" valign="top"><a id="a91914302f33cc8a750c12fb59c98d78c" name="a91914302f33cc8a750c12fb59c98d78c"></a>
-RHI::StreamBufferView&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalVertexBufferView</b></td></tr>
-<tr class="separator:a91914302f33cc8a750c12fb59c98d78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3145462061d532aaec1e0ebb3ebfb2c3" id="r_a3145462061d532aaec1e0ebb3ebfb2c3"><td class="memItemLeft" align="right" valign="top"><a id="a3145462061d532aaec1e0ebb3ebfb2c3" name="a3145462061d532aaec1e0ebb3ebfb2c3"></a>
-RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_normalShaderBufferView</b></td></tr>
-<tr class="separator:a3145462061d532aaec1e0ebb3ebfb2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d1dfb769232aad282eb3fa4b8619b3" id="r_a11d1dfb769232aad282eb3fa4b8619b3"><td class="memItemLeft" align="right" valign="top"><a id="a11d1dfb769232aad282eb3fa4b8619b3" name="a11d1dfb769232aad282eb3fa4b8619b3"></a>
-RHI::VertexFormat&#160;</td><td class="memItemRight" valign="bottom"><b>m_tangentFormat</b> = RHI::VertexFormat::Unknown</td></tr>
-<tr class="separator:a11d1dfb769232aad282eb3fa4b8619b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab01e322daca77f974e03d89f5a47706d" id="r_ab01e322daca77f974e03d89f5a47706d"><td class="memItemLeft" align="right" valign="top"><a id="ab01e322daca77f974e03d89f5a47706d" name="ab01e322daca77f974e03d89f5a47706d"></a>
-RHI::StreamBufferView&#160;</td><td class="memItemRight" valign="bottom"><b>m_tangentVertexBufferView</b></td></tr>
-<tr class="separator:ab01e322daca77f974e03d89f5a47706d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b48da09f791c0cf3d1f2b78e2fb8b2" id="r_a31b48da09f791c0cf3d1f2b78e2fb8b2"><td class="memItemLeft" align="right" valign="top"><a id="a31b48da09f791c0cf3d1f2b78e2fb8b2" name="a31b48da09f791c0cf3d1f2b78e2fb8b2"></a>
-RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_tangentShaderBufferView</b></td></tr>
-<tr class="separator:a31b48da09f791c0cf3d1f2b78e2fb8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6c16275f21aa3aafee1f75a1a28c98" id="r_a0b6c16275f21aa3aafee1f75a1a28c98"><td class="memItemLeft" align="right" valign="top"><a id="a0b6c16275f21aa3aafee1f75a1a28c98" name="a0b6c16275f21aa3aafee1f75a1a28c98"></a>
-RHI::VertexFormat&#160;</td><td class="memItemRight" valign="bottom"><b>m_bitangentFormat</b> = RHI::VertexFormat::Unknown</td></tr>
-<tr class="separator:a0b6c16275f21aa3aafee1f75a1a28c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96196ab6590c11eea1bfd99cb79e1a35" id="r_a96196ab6590c11eea1bfd99cb79e1a35"><td class="memItemLeft" align="right" valign="top"><a id="a96196ab6590c11eea1bfd99cb79e1a35" name="a96196ab6590c11eea1bfd99cb79e1a35"></a>
-RHI::StreamBufferView&#160;</td><td class="memItemRight" valign="bottom"><b>m_bitangentVertexBufferView</b></td></tr>
-<tr class="separator:a96196ab6590c11eea1bfd99cb79e1a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f2d299afea6ba9695eb428c02923aee" id="r_a1f2d299afea6ba9695eb428c02923aee"><td class="memItemLeft" align="right" valign="top"><a id="a1f2d299afea6ba9695eb428c02923aee" name="a1f2d299afea6ba9695eb428c02923aee"></a>
-RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_bitangentShaderBufferView</b></td></tr>
-<tr class="separator:a1f2d299afea6ba9695eb428c02923aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8445ab857514685a2ffef487174b7cc" id="r_aa8445ab857514685a2ffef487174b7cc"><td class="memItemLeft" align="right" valign="top"><a id="aa8445ab857514685a2ffef487174b7cc" name="aa8445ab857514685a2ffef487174b7cc"></a>
-RHI::VertexFormat&#160;</td><td class="memItemRight" valign="bottom"><b>m_uvFormat</b> = RHI::VertexFormat::Unknown</td></tr>
-<tr class="separator:aa8445ab857514685a2ffef487174b7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c55dee0333798a92d3c94b7c5d9da0" id="r_a58c55dee0333798a92d3c94b7c5d9da0"><td class="memItemLeft" align="right" valign="top"><a id="a58c55dee0333798a92d3c94b7c5d9da0" name="a58c55dee0333798a92d3c94b7c5d9da0"></a>
-RHI::StreamBufferView&#160;</td><td class="memItemRight" valign="bottom"><b>m_uvVertexBufferView</b></td></tr>
-<tr class="separator:a58c55dee0333798a92d3c94b7c5d9da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c501d0fc7466d92d06c6a79a3eb6b93" id="r_a9c501d0fc7466d92d06c6a79a3eb6b93"><td class="memItemLeft" align="right" valign="top"><a id="a9c501d0fc7466d92d06c6a79a3eb6b93" name="a9c501d0fc7466d92d06c6a79a3eb6b93"></a>
-RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_uvShaderBufferView</b></td></tr>
-<tr class="separator:a9c501d0fc7466d92d06c6a79a3eb6b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c7e86e55bec72ca903eb280cf60e28" id="r_a34c7e86e55bec72ca903eb280cf60e28"><td class="memItemLeft" align="right" valign="top"><a id="a34c7e86e55bec72ca903eb280cf60e28" name="a34c7e86e55bec72ca903eb280cf60e28"></a>
-RHI::IndexBufferView&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexBufferView</b></td></tr>
-<tr class="separator:a34c7e86e55bec72ca903eb280cf60e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b99fe1107186e9f3a04022f34fa30a8" id="r_a0b99fe1107186e9f3a04022f34fa30a8"><td class="memItemLeft" align="right" valign="top"><a id="a0b99fe1107186e9f3a04022f34fa30a8" name="a0b99fe1107186e9f3a04022f34fa30a8"></a>
-RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">RHI::BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexShaderBufferView</b></td></tr>
-<tr class="separator:a0b99fe1107186e9f3a04022f34fa30a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac03f67f72af0a8f5fbc8f7fe7cddc53e" id="r_ac03f67f72af0a8f5fbc8f7fe7cddc53e"><td class="memItemLeft" align="right" valign="top"><a id="ac03f67f72af0a8f5fbc8f7fe7cddc53e" name="ac03f67f72af0a8f5fbc8f7fe7cddc53e"></a>
-RayTracingSubMeshBufferFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferFlags</b> = RayTracingSubMeshBufferFlags::None</td></tr>
-<tr class="separator:ac03f67f72af0a8f5fbc8f7fe7cddc53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1292c32554b1ea92fa93c2fdfcd564b" id="r_ac1292c32554b1ea92fa93c2fdfcd564b"><td class="memItemLeft" align="right" valign="top"><a id="ac1292c32554b1ea92fa93c2fdfcd564b" name="ac1292c32554b1ea92fa93c2fdfcd564b"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshInfoHandle</b></td></tr>
+<tr class="separator:ac1292c32554b1ea92fa93c2fdfcd564b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb09e9f3094f877523cff4fa5a336b6" id="r_adcb09e9f3094f877523cff4fa5a336b6"><td class="memItemLeft" align="right" valign="top"><a id="adcb09e9f3094f877523cff4fa5a336b6" name="adcb09e9f3094f877523cff4fa5a336b6"></a>
 AZStd::pair&lt; Data::AssetId, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_blasInstanceId</b></td></tr>
 <tr class="separator:adcb09e9f3094f877523cff4fa5a336b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a995db70028932652f99da58f47ce3d48" id="r_a995db70028932652f99da58f47ce3d48"><td class="memItemLeft" align="right" valign="top"><a id="a995db70028932652f99da58f47ce3d48" name="a995db70028932652f99da58f47ce3d48"></a>
-<a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh_material.html">SubMeshMaterial</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_material</b></td></tr>
-<tr class="separator:a995db70028932652f99da58f47ce3d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085efe106c8ab095b9da736b5bbb835d" id="r_a085efe106c8ab095b9da736b5bbb835d"><td class="memItemLeft" align="right" valign="top"><a id="a085efe106c8ab095b9da736b5bbb835d" name="a085efe106c8ab095b9da736b5bbb835d"></a>
+AZ::Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">AZ::RPI::Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_material</b></td></tr>
+<tr class="separator:a085efe106c8ab095b9da736b5bbb835d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776546c78e20e4e03c4ac0cc590e8d46" id="r_a776546c78e20e4e03c4ac0cc590e8d46"><td class="memItemLeft" align="right" valign="top"><a id="a776546c78e20e4e03c4ac0cc590e8d46" name="a776546c78e20e4e03c4ac0cc590e8d46"></a>
+Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod.html">RPI::ModelLod</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_modelLod</b></td></tr>
+<tr class="separator:a776546c78e20e4e03c4ac0cc590e8d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e89a10e377728b8ff3e8005d56174f" id="r_a42e89a10e377728b8ff3e8005d56174f"><td class="memItemLeft" align="right" valign="top"><a id="a42e89a10e377728b8ff3e8005d56174f" name="a42e89a10e377728b8ff3e8005d56174f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_modelLodMeshIndex</b></td></tr>
+<tr class="separator:a42e89a10e377728b8ff3e8005d56174f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704bbae228f35187531882fe329694a1" id="r_a704bbae228f35187531882fe329694a1"><td class="memItemLeft" align="right" valign="top"><a id="a704bbae228f35187531882fe329694a1" name="a704bbae228f35187531882fe329694a1"></a>
+AZStd::optional&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_ray_tracing_cluster_blas_descriptor.html">RHI::RayTracingClusterBlasDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_clusterBlasDescriptor</b></td></tr>
+<tr class="separator:a704bbae228f35187531882fe329694a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49121c191a602bdfadd9fb3e0898dfb0" id="r_a49121c191a602bdfadd9fb3e0898dfb0"><td class="memItemLeft" align="right" valign="top"><a id="a49121c191a602bdfadd9fb3e0898dfb0" name="a49121c191a602bdfadd9fb3e0898dfb0"></a>
 <a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_mesh.html">Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mesh</b> = nullptr</td></tr>
 <tr class="separator:a49121c191a602bdfadd9fb3e0898dfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +112,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RayTracingFeaturePro
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface.html">RayTracingFeatureProcessorInterface</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_interface_1_1_sub_mesh.html">SubMesh</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:36 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

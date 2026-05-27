@@ -26,13 +26,9 @@ var hierarchy =
     [ "AZ::Module", null, [
       [ "AZ::Meshlets::MeshletsModuleInterface", "class_a_z_1_1_meshlets_1_1_meshlets_module_interface.html", null ]
     ] ],
-    [ "AZ::Render::Bootstrap::DefaultWindowNotificationBus::Handler", null, [
-      [ "AtomSampleViewer::MeshletsExampleComponent", "class_atom_sample_viewer_1_1_meshlets_example_component.html", null ]
-    ] ],
     [ "AZ::TickBus::Handler", null, [
       [ "AZ::Meshlets::MeshletsFeatureProcessor", "class_a_z_1_1_meshlets_1_1_meshlets_feature_processor.html", null ],
-      [ "AZ::Meshlets::MeshletsSystemComponent", "class_a_z_1_1_meshlets_1_1_meshlets_system_component.html", null ],
-      [ "AtomSampleViewer::MeshletsExampleComponent", "class_atom_sample_viewer_1_1_meshlets_example_component.html", null ]
+      [ "AZ::Meshlets::MeshletsSystemComponent", "class_a_z_1_1_meshlets_1_1_meshlets_system_component.html", null ]
     ] ],
     [ "AZStd::intrusive_base", null, [
       [ "AZ::Meshlets::SharedBufferAllocation", "class_a_z_1_1_meshlets_1_1_shared_buffer_allocation.html", null ]
@@ -40,21 +36,12 @@ var hierarchy =
     [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
       [ "AZ::Meshlets::MeshletsEditorSystemComponent", "class_a_z_1_1_meshlets_1_1_meshlets_editor_system_component.html", null ]
     ] ],
-    [ "CommonSampleComponentBase", null, [
-      [ "AtomSampleViewer::MeshletsExampleComponent", "class_atom_sample_viewer_1_1_meshlets_example_component.html", null ]
-    ] ],
     [ "Data::InstanceData", null, [
       [ "AZ::Meshlets::MeshletsDispatchItem", "class_a_z_1_1_meshlets_1_1_meshlets_dispatch_item.html", null ]
     ] ],
     [ "MeshletsRequestBus::Handler", null, [
       [ "AZ::Meshlets::MeshletsSystemComponent", "class_a_z_1_1_meshlets_1_1_meshlets_system_component.html", null ]
     ] ],
-    [ "meshopt_Bounds", "structmeshopt___bounds.html", null ],
-    [ "meshopt_Meshlet", "structmeshopt___meshlet.html", null ],
-    [ "meshopt_OverdrawStatistics", "structmeshopt___overdraw_statistics.html", null ],
-    [ "meshopt_Stream", "structmeshopt___stream.html", null ],
-    [ "meshopt_VertexCacheStatistics", "structmeshopt___vertex_cache_statistics.html", null ],
-    [ "meshopt_VertexFetchStatistics", "structmeshopt___vertex_fetch_statistics.html", null ],
     [ "RPI::ComputePass", null, [
       [ "AZ::Meshlets::MultiDispatchComputePass", "class_a_z_1_1_meshlets_1_1_multi_dispatch_compute_pass.html", null ]
     ] ],

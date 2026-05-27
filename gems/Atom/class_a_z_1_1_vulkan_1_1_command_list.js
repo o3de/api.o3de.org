@@ -5,6 +5,7 @@ var class_a_z_1_1_vulkan_1_1_command_list =
     [ "ResourceClearRequest", "struct_a_z_1_1_vulkan_1_1_command_list_1_1_resource_clear_request.html", null ],
     [ "BeginPredication", "class_a_z_1_1_vulkan_1_1_command_list.html#a227b6b7ca7aafa968526f63a9df57c50", null ],
     [ "BuildBottomLevelAccelerationStructure", "class_a_z_1_1_vulkan_1_1_command_list.html#a4fe3ff9215781f61c62aa0831554c9c0", null ],
+    [ "BuildClusterAccelerationStructures", "class_a_z_1_1_vulkan_1_1_command_list.html#aa9a8b753a74dd48bd5822c6a18190073", null ],
     [ "CompactBottomLevelAccelerationStructure", "class_a_z_1_1_vulkan_1_1_command_list.html#a396f6e22fcf62477970cb8bd0aaa23bc", null ],
     [ "EndPredication", "class_a_z_1_1_vulkan_1_1_command_list.html#a4c5e3fc844af05c2a28796d8c3d637fb", null ],
     [ "SetFragmentShadingRate", "class_a_z_1_1_vulkan_1_1_command_list.html#a14aea6456d1b98556291dec6b5f743b8", null ],

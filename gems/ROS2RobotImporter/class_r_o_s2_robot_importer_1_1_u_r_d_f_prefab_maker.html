@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,8 +71,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a58ef635c7ab7a0bf8db6e4722ddddbaf" id="r_a58ef635c7ab7a0bf8db6e4722ddddbaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html#a58ef635c7ab7a0bf8db6e4722ddddbaf">URDFPrefabMaker</a> (const AZStd::string &amp;modelFilePath, const sdf::Root *root, AZStd::string prefabPath, const AZStd::shared_ptr&lt; Utils::UrdfAssetMap &gt; sdfAssetsMapping, bool useArticulations=false, AZStd::optional&lt; AZ::Transform &gt; spawnPosition=AZStd::nullopt)</td></tr>
-<tr class="separator:a58ef635c7ab7a0bf8db6e4722ddddbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f586204acea6657de5b2f23a29a997" id="r_ab7f586204acea6657de5b2f23a29a997"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html#ab7f586204acea6657de5b2f23a29a997">URDFPrefabMaker</a> (const sdf::Root *root, AZStd::string prefabPath, const AZStd::shared_ptr&lt; Utils::UrdfAssetMap &gt; sdfAssetsMapping, bool useArticulations=false, AZStd::optional&lt; AZ::Transform &gt; spawnPosition=AZStd::nullopt)</td></tr>
+<tr class="separator:ab7f586204acea6657de5b2f23a29a997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cabd0d7a7c68c7d6420d6763976e062" id="r_a5cabd0d7a7c68c7d6420d6763976e062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html#a64b4bbc5b1110d13da8733ac84f99e7c">CreatePrefabTemplateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html#a5cabd0d7a7c68c7d6420d6763976e062">CreatePrefabFromUrdfOrSdf</a> ()</td></tr>
 <tr class="separator:a5cabd0d7a7c68c7d6420d6763976e062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad234bce71154d7219e5e9d758a662e00" id="r_ad234bce71154d7219e5e9d758a662e00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html#a64b4bbc5b1110d13da8733ac84f99e7c">CreatePrefabTemplateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html#ad234bce71154d7219e5e9d758a662e00">CreatePrefabTemplateFromUrdfOrSdf</a> ()</td></tr>
@@ -101,8 +101,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a58ef635c7ab7a0bf8db6e4722ddddbaf" name="a58ef635c7ab7a0bf8db6e4722ddddbaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58ef635c7ab7a0bf8db6e4722ddddbaf">&#9670;&#160;</a></span>URDFPrefabMaker()</h2>
+<a id="ab7f586204acea6657de5b2f23a29a997" name="ab7f586204acea6657de5b2f23a29a997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f586204acea6657de5b2f23a29a997">&#9670;&#160;</a></span>URDFPrefabMaker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -110,12 +110,6 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">ROS2RobotImporter::URDFPrefabMaker::URDFPrefabMaker </td>
           <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>modelFilePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const sdf::Root *&#160;</td>
           <td class="paramname"><em>root</em>, </td>
         </tr>
@@ -152,7 +146,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Construct PrefabMaker from arguments. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">modelFilePath</td><td>path to the source URDF/SDF model or world. </td></tr>
     <tr><td class="paramname">root</td><td>parsed SDF root object. </td></tr>
     <tr><td class="paramname">prefabPath</td><td>path to the prefab which will be created as a result of import. </td></tr>
     <tr><td class="paramname">urdfAssetsMapping</td><td>prepared mapping of SDF meshes to Assets. </td></tr>
@@ -245,7 +238,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2RobotImporter</b></li><li class="navelem"><a class="el" href="class_r_o_s2_robot_importer_1_1_u_r_d_f_prefab_maker.html">URDFPrefabMaker</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:11 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

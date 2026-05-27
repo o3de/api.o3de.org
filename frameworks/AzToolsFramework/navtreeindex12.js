@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"struct_az_tools_framework_1_1_trace_logger_1_1_log_message.html":[2,0,5,382,0],
 "struct_az_tools_framework_1_1_translation_manipulators_view_create_info.html":[2,0,5,384],
 "struct_az_tools_framework_1_1_view_bookmark.html":[2,0,5,389],
 "struct_az_tools_framework_1_1_view_bookmark.html#affcc8bd6eef8622339359cac407d3eca":[2,0,5,389,0],

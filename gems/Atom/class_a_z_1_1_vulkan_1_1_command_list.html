@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -116,15 +116,21 @@ VkCommandBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>GetNativeC
 <tr class="memitem:a5cbcff70438943621eba4b0469e32b7c" id="r_a5cbcff70438943621eba4b0469e32b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_vulkan_1_1_command_list.html#a5cbcff70438943621eba4b0469e32b7c">UpdateBottomLevelAccelerationStructure</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> &amp;rayTracingBlas) override</td></tr>
 <tr class="memdesc:a5cbcff70438943621eba4b0469e32b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a Bottom Level Acceleration Structure (BLAS) for ray tracing operations, which is made up of DeviceRayTracingGeometry entries.  <br /></td></tr>
 <tr class="separator:a5cbcff70438943621eba4b0469e32b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a8b753a74dd48bd5822c6a18190073" id="r_aa9a8b753a74dd48bd5822c6a18190073"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_vulkan_1_1_command_list.html#aa9a8b753a74dd48bd5822c6a18190073">BuildClusterAccelerationStructures</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_cluster_blas.html">RHI::DeviceRayTracingClusterBlas</a> &amp;rayTracingClusterBlas) override</td></tr>
+<tr class="memdesc:aa9a8b753a74dd48bd5822c6a18190073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a Cluster Level Acceleration Structure (CLAS) for ray tracing operations.  <br /></td></tr>
+<tr class="separator:aa9a8b753a74dd48bd5822c6a18190073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6a0df70b0a2f509f8eeb34463dce32" id="r_a6c6a0df70b0a2f509f8eeb34463dce32"><td class="memItemLeft" align="right" valign="top"><a id="a6c6a0df70b0a2f509f8eeb34463dce32" name="a6c6a0df70b0a2f509f8eeb34463dce32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildClusterBottomLevelAccelerationStructures</b> (const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_cluster_blas.html">RHI::DeviceRayTracingClusterBlas</a> * &gt; &amp;clusterBlasList) override</td></tr>
+<tr class="separator:a6c6a0df70b0a2f509f8eeb34463dce32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279a6f3319348584eee6e4385df49c45" id="r_a279a6f3319348584eee6e4385df49c45"><td class="memItemLeft" align="right" valign="top"><a id="a279a6f3319348584eee6e4385df49c45" name="a279a6f3319348584eee6e4385df49c45"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryBlasCompactionSizes</b> (const AZStd::vector&lt; AZStd::pair&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> *, <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_compaction_query.html">RHI::DeviceRayTracingCompactionQuery</a> * &gt; &gt; &amp;blasToQuery) override</td></tr>
 <tr class="separator:a279a6f3319348584eee6e4385df49c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396f6e22fcf62477970cb8bd0aaa23bc" id="r_a396f6e22fcf62477970cb8bd0aaa23bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_vulkan_1_1_command_list.html#a396f6e22fcf62477970cb8bd0aaa23bc">CompactBottomLevelAccelerationStructure</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> &amp;sourceBlas, const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> &amp;compactBlas) override</td></tr>
 <tr class="memdesc:a396f6e22fcf62477970cb8bd0aaa23bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the given sourceBlas into the compactBlas.  <br /></td></tr>
 <tr class="separator:a396f6e22fcf62477970cb8bd0aaa23bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72703ca089ffc86424318d11f3f08060" id="r_a72703ca089ffc86424318d11f3f08060"><td class="memItemLeft" align="right" valign="top"><a id="a72703ca089ffc86424318d11f3f08060" name="a72703ca089ffc86424318d11f3f08060"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildTopLevelAccelerationStructure</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_tlas.html">RHI::DeviceRayTracingTlas</a> &amp;rayTracingTlas, const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> * &gt; &amp;changedBlasList) override</td></tr>
-<tr class="separator:a72703ca089ffc86424318d11f3f08060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51f563b106a9e6ec8faf3c73a5fed0a" id="r_ae51f563b106a9e6ec8faf3c73a5fed0a"><td class="memItemLeft" align="right" valign="top"><a id="ae51f563b106a9e6ec8faf3c73a5fed0a" name="ae51f563b106a9e6ec8faf3c73a5fed0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildTopLevelAccelerationStructure</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_tlas.html">RHI::DeviceRayTracingTlas</a> &amp;rayTracingTlas, const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> * &gt; &amp;changedBlasList, const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_cluster_blas.html">RHI::DeviceRayTracingClusterBlas</a> * &gt; &amp;changedClusterBlasList) override</td></tr>
+<tr class="separator:ae51f563b106a9e6ec8faf3c73a5fed0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14aea6456d1b98556291dec6b5f743b8" id="r_a14aea6456d1b98556291dec6b5f743b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_vulkan_1_1_command_list.html#a14aea6456d1b98556291dec6b5f743b8">SetFragmentShadingRate</a> (RHI::ShadingRate rate, const RHI::ShadingRateCombinators &amp;combinators=<a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#af05407cce41629f6be1d869587377a87">DefaultShadingRateCombinators</a>) override</td></tr>
 <tr class="separator:a14aea6456d1b98556291dec6b5f743b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad8cab48cef556347af0bf23ac00bf8" id="r_adad8cab48cef556347af0bf23ac00bf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_vulkan_1_1_command_list.html#adad8cab48cef556347af0bf23ac00bf8">Shutdown</a> () override</td></tr>
@@ -184,12 +190,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScissor</b> (const
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetViewport</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_viewport.html">Viewport</a> &amp;viewport)</td></tr>
 <tr class="memdesc:a884bb22c35145fb507c5245586450ef0 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a viewport to the raster stage of the graphics pipe. <br /></td></tr>
 <tr class="separator:a884bb22c35145fb507c5245586450ef0 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7871ba0bafb64c49ba59e98c988edf2b inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list" id="r_a7871ba0bafb64c49ba59e98c988edf2b"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildClusterBottomLevelAccelerationStructures</b> (const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_cluster_blas.html">RHI::DeviceRayTracingClusterBlas</a> * &gt; &amp;clusterBlasList)=0</td></tr>
+<tr class="memdesc:a7871ba0bafb64c49ba59e98c988edf2b inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a list of Cluster Bottom Level Acceleration Structures (cluster-BLAS) for ray tracing operations. <br /></td></tr>
+<tr class="separator:a7871ba0bafb64c49ba59e98c988edf2b inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae601e72b21b5699e0524dc44f7cbea58 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list" id="r_ae601e72b21b5699e0524dc44f7cbea58"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryBlasCompactionSizes</b> (const AZStd::vector&lt; AZStd::pair&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> *, <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_compaction_query.html">RHI::DeviceRayTracingCompactionQuery</a> * &gt; &gt; &amp;blasToQuery)=0</td></tr>
 <tr class="memdesc:ae601e72b21b5699e0524dc44f7cbea58 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts queries for the size of the compacted Blas. <br /></td></tr>
 <tr class="separator:ae601e72b21b5699e0524dc44f7cbea58 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71660632c9678ec96799c9e888dbf916 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list" id="r_a71660632c9678ec96799c9e888dbf916"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a71660632c9678ec96799c9e888dbf916">BuildTopLevelAccelerationStructure</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_tlas.html">RHI::DeviceRayTracingTlas</a> &amp;rayTracingTlas, const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> * &gt; &amp;changedBlasList)=0</td></tr>
-<tr class="separator:a71660632c9678ec96799c9e888dbf916 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84cf9ec0f57f4156f3d0b67adac9d119 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list" id="r_a84cf9ec0f57f4156f3d0b67adac9d119"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a84cf9ec0f57f4156f3d0b67adac9d119">BuildTopLevelAccelerationStructure</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_tlas.html">RHI::DeviceRayTracingTlas</a> &amp;rayTracingTlas, const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_blas.html">RHI::DeviceRayTracingBlas</a> * &gt; &amp;changedBlasList, const AZStd::vector&lt; const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_cluster_blas.html">RHI::DeviceRayTracingClusterBlas</a> * &gt; &amp;changedClusterBlasList)=0</td></tr>
+<tr class="separator:a84cf9ec0f57f4156f3d0b67adac9d119 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f1c946e3ca181786b4be458eeef5bd4 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list" id="r_a5f1c946e3ca181786b4be458eeef5bd4"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSubmitRange</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range.html">SubmitRange</a> &amp;submitRange)</td></tr>
 <tr class="memdesc:a5f1c946e3ca181786b4be458eeef5bd4 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the submit range for this command list. <br /></td></tr>
@@ -336,6 +346,36 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <p>Builds a Bottom Level Acceleration Structure (BLAS) for ray tracing operations, which is made up of DeviceRayTracingGeometry entries. </p>
 
 <p>Implements <a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#ad1e07bef69aa7858ce87c5f2b82b921c">AZ::RHI::CommandList</a>.</p>
+
+</div>
+</div>
+<a id="aa9a8b753a74dd48bd5822c6a18190073" name="aa9a8b753a74dd48bd5822c6a18190073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a8b753a74dd48bd5822c6a18190073">&#9670;&#160;</a></span>BuildClusterAccelerationStructures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::Vulkan::CommandList::BuildClusterAccelerationStructures </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_ray_tracing_cluster_blas.html">RHI::DeviceRayTracingClusterBlas</a> &amp;&#160;</td>
+          <td class="paramname"><em>rayTracingClusterBlas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds a Cluster Level Acceleration Structure (CLAS) for ray tracing operations. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a54e3a13344e8acc61e2e9f65d46d0c72">AZ::RHI::CommandList</a>.</p>
 
 </div>
 </div>
@@ -823,7 +863,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Vulkan</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_vulkan_1_1_command_list.html">CommandList</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:00 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:37 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

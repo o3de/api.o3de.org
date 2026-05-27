@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine SimulationInterfaces Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,73 +58,30 @@ $(document).ready(function(){initNavTree('class_r_o_s2_simulation_interfaces_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html">ROS2SimulationInterfaces::ROS2ServiceBase&lt; simulation_interfaces::srv::LoadWorld &gt;</a>.</p>
+<p>Inherits ROS2::ROS2ServiceBase&lt; simulation_interfaces::srv::LoadWorld &gt;, and <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base.html">ROS2SimulationInterfaces::ISimulationFeaturesBase</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a918ad2d4dc5fe911f6a09e93e4257fef" id="r_a918ad2d4dc5fe911f6a09e93e4257fef"><td class="memItemLeft" align="right" valign="top">AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html#a918ad2d4dc5fe911f6a09e93e4257fef">GetTypeName</a> () const override</td></tr>
+<tr class="memitem:a918ad2d4dc5fe911f6a09e93e4257fef" id="r_a918ad2d4dc5fe911f6a09e93e4257fef"><td class="memItemLeft" align="right" valign="top"><a id="a918ad2d4dc5fe911f6a09e93e4257fef" name="a918ad2d4dc5fe911f6a09e93e4257fef"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeName</b> () const override</td></tr>
 <tr class="separator:a918ad2d4dc5fe911f6a09e93e4257fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a442f33dac72ca3a54269804102a577e7" id="r_a442f33dac72ca3a54269804102a577e7"><td class="memItemLeft" align="right" valign="top">AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html#a442f33dac72ca3a54269804102a577e7">GetDefaultName</a> () const override</td></tr>
+<tr class="memitem:a442f33dac72ca3a54269804102a577e7" id="r_a442f33dac72ca3a54269804102a577e7"><td class="memItemLeft" align="right" valign="top"><a id="a442f33dac72ca3a54269804102a577e7" name="a442f33dac72ca3a54269804102a577e7"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultName</b> () const override</td></tr>
 <tr class="separator:a442f33dac72ca3a54269804102a577e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f1df7b91eedc9d10569ba2c0f548be" id="r_a87f1df7b91eedc9d10569ba2c0f548be"><td class="memItemLeft" align="right" valign="top">AZStd::unordered_set&lt; SimulationFeatureType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html#a87f1df7b91eedc9d10569ba2c0f548be">GetProvidedFeatures</a> () override</td></tr>
 <tr class="separator:a87f1df7b91eedc9d10569ba2c0f548be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30780824af3aa482e05db61e4a7f86ac" id="r_a30780824af3aa482e05db61e4a7f86ac"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; Response &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html#a30780824af3aa482e05db61e4a7f86ac">HandleServiceRequest</a> (const std::shared_ptr&lt; rmw_request_id_t &gt; header, const Request &amp;request) override</td></tr>
-<tr class="memdesc:a30780824af3aa482e05db61e4a7f86ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when a service request is received.  <br /></td></tr>
+<tr class="memitem:a30780824af3aa482e05db61e4a7f86ac" id="r_a30780824af3aa482e05db61e4a7f86ac"><td class="memItemLeft" align="right" valign="top"><a id="a30780824af3aa482e05db61e4a7f86ac" name="a30780824af3aa482e05db61e4a7f86ac"></a>
+AZStd::optional&lt; Response &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HandleServiceRequest</b> (const std::shared_ptr&lt; rmw_request_id_t &gt; header, const Request &amp;request) override</td></tr>
 <tr class="separator:a30780824af3aa482e05db61e4a7f86ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html">ROS2SimulationInterfaces::ROS2ServiceBase&lt; simulation_interfaces::srv::LoadWorld &gt;</a></td></tr>
-<tr class="memitem:ad9a330610dd3ae3209c224327c30b18a inherit pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base" id="r_ad9a330610dd3ae3209c224327c30b18a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html#ad9a330610dd3ae3209c224327c30b18a">Initialize</a> (rclcpp::Node::SharedPtr &amp;node) override</td></tr>
-<tr class="separator:ad9a330610dd3ae3209c224327c30b18a inherit pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0670e55e8305094bb504915140ed0be9 inherit pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base" id="r_a0670e55e8305094bb504915140ed0be9"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SendResponse</b> (Response response)</td></tr>
-<tr class="separator:a0670e55e8305094bb504915140ed0be9 inherit pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c9bac248cd511a1b954b638699c120 inherit pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base" id="r_a86c9bac248cd511a1b954b638699c120"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html#a86c9bac248cd511a1b954b638699c120">IsValid</a> () override</td></tr>
-<tr class="separator:a86c9bac248cd511a1b954b638699c120 inherit pub_methods_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html">ROS2SimulationInterfaces::ROS2ServiceBase&lt; simulation_interfaces::srv::LoadWorld &gt;</a></td></tr>
-<tr class="memitem:a5eb58385e540ef2f87a184dd53b6042c inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base" id="r_a5eb58385e540ef2f87a184dd53b6042c"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Request</b> = typename RosServiceType::Request</td></tr>
-<tr class="separator:a5eb58385e540ef2f87a184dd53b6042c inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a975964245c0a946bf789c0e91d9b69f6 inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base" id="r_a975964245c0a946bf789c0e91d9b69f6"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Response</b> = typename RosServiceType::Response</td></tr>
-<tr class="separator:a975964245c0a946bf789c0e91d9b69f6 inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82defbb4c018360eabaa3958337af605 inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base" id="r_a82defbb4c018360eabaa3958337af605"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceHandle</b> = std::shared_ptr&lt; rclcpp::Service&lt; simulation_interfaces::srv::LoadWorld &gt; &gt;</td></tr>
-<tr class="separator:a82defbb4c018360eabaa3958337af605 inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base.html">ROS2SimulationInterfaces::IROS2HandlerBase</a></td></tr>
-<tr class="memitem:adf8f7176a4bf24ec974f66d0e0f9523e inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base" id="r_adf8f7176a4bf24ec974f66d0e0f9523e"><td class="memItemLeft" align="right" valign="top">
+<tr class="inherit_header pub_types_class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base.html">ROS2SimulationInterfaces::ISimulationFeaturesBase</a></td></tr>
+<tr class="memitem:a041ccda33b4d84a8f4e5567777888ce3 inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base" id="r_a041ccda33b4d84a8f4e5567777888ce3"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SimulationFeatureType</b> = ROS2SimulationInterfaces::SimulationFeatureType</td></tr>
-<tr class="separator:adf8f7176a4bf24ec974f66d0e0f9523e inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a041ccda33b4d84a8f4e5567777888ce3 inherit pub_types_class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a442f33dac72ca3a54269804102a577e7" name="a442f33dac72ca3a54269804102a577e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a442f33dac72ca3a54269804102a577e7">&#9670;&#160;</a></span>GetDefaultName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::string_view ROS2SimulationInterfaces::LoadWorldServiceHandler::GetDefaultName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base.html">ROS2SimulationInterfaces::IROS2HandlerBase</a>.</p>
-
-</div>
-</div>
 <a id="a87f1df7b91eedc9d10569ba2c0f548be" name="a87f1df7b91eedc9d10569ba2c0f548be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87f1df7b91eedc9d10569ba2c0f548be">&#9670;&#160;</a></span>GetProvidedFeatures()</h2>
 
@@ -147,76 +104,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SimulationFeatureTyp
   </tr>
 </table>
 </div><div class="memdoc">
-<p>return features id defined by the handler, ids must follow the definition inside standard: </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/ros-simulation/simulation_interfaces/blob/main/msg/SimulatorFeatures.msg">https://github.com/ros-simulation/simulation_interfaces/blob/main/msg/SimulatorFeatures.msg</a> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html#ad15f50b86d93008883cdb6ac6b5aa118">ROS2SimulationInterfaces::ROS2ServiceBase&lt; simulation_interfaces::srv::LoadWorld &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a918ad2d4dc5fe911f6a09e93e4257fef" name="a918ad2d4dc5fe911f6a09e93e4257fef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a918ad2d4dc5fe911f6a09e93e4257fef">&#9670;&#160;</a></span>GetTypeName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::string_view ROS2SimulationInterfaces::LoadWorldServiceHandler::GetTypeName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_i_r_o_s2_handler_base.html">ROS2SimulationInterfaces::IROS2HandlerBase</a>.</p>
-
-</div>
-</div>
-<a id="a30780824af3aa482e05db61e4a7f86ac" name="a30780824af3aa482e05db61e4a7f86ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30780824af3aa482e05db61e4a7f86ac">&#9670;&#160;</a></span>HandleServiceRequest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::optional&lt; Response &gt; ROS2SimulationInterfaces::LoadWorldServiceHandler::HandleServiceRequest </td>
-          <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; rmw_request_id_t &gt;&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Request &amp;&#160;</td>
-          <td class="paramname"><em>request</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This function is called when a service request is received. </p>
-
-<p>Implements <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_r_o_s2_service_base.html#a3aa9e2618f650c6305ffcfb9a6177a45">ROS2SimulationInterfaces::ROS2ServiceBase&lt; simulation_interfaces::srv::LoadWorld &gt;</a>.</p>
+<p>Implements <a class="el" href="class_r_o_s2_simulation_interfaces_1_1_i_simulation_features_base.html">ROS2SimulationInterfaces::ISimulationFeaturesBase</a>.</p>
 
 </div>
 </div>
@@ -229,7 +118,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SimulationFeatureTyp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2SimulationInterfaces</b></li><li class="navelem"><a class="el" href="class_r_o_s2_simulation_interfaces_1_1_load_world_service_handler.html">LoadWorldServiceHandler</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:14 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:52 for Open 3D Engine SimulationInterfaces Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

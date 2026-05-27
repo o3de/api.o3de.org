@@ -11,6 +11,7 @@ var hierarchy =
           [ "CopyDependencyBuilder::FontBuilderWorker", "class_copy_dependency_builder_1_1_font_builder_worker.html", null ]
         ] ]
       ] ],
+      [ "LmbrCentral::GenericAssetBuilder::GenericAssetBuilderWorker", "class_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_worker.html", null ],
       [ "LuaBuilder::LuaBuilderWorker", "class_lua_builder_1_1_lua_builder_worker.html", null ],
       [ "SliceBuilder::SliceBuilderWorker", "class_slice_builder_1_1_slice_builder_worker.html", null ],
       [ "TranslationBuilder::TranslationBuilderWorker", "class_translation_builder_1_1_translation_builder_worker.html", null ]
@@ -91,6 +92,7 @@ var hierarchy =
         [ "LmbrCentral::SphereShapeDebugDisplayComponent", "class_lmbr_central_1_1_sphere_shape_debug_display_component.html", null ],
         [ "LmbrCentral::TubeShapeDebugDisplayComponent", "class_lmbr_central_1_1_tube_shape_debug_display_component.html", null ]
       ] ],
+      [ "LmbrCentral::GenericAssetBuilder::GenericAssetBuilderComponent", "class_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_component.html", null ],
       [ "LmbrCentral::GeometrySystemComponent", "class_lmbr_central_1_1_geometry_system_component.html", null ],
       [ "LmbrCentral::LmbrCentralSystemComponent", "class_lmbr_central_1_1_lmbr_central_system_component.html", null ],
       [ "LmbrCentral::LookAtComponent", "class_lmbr_central_1_1_look_at_component.html", null ],
@@ -421,6 +423,7 @@ var hierarchy =
       [ "LmbrCentral::EditorTagComponent", "class_lmbr_central_1_1_editor_tag_component.html", null ]
     ] ],
     [ "LmbrCentral::EditorTubeShapeComponentMode::TubeManipulatorState", "struct_lmbr_central_1_1_editor_tube_shape_component_mode_1_1_tube_manipulator_state.html", null ],
+    [ "LmbrCentral::GenericAssetBuilder::GenericAssetBuilderRegistration", "struct_lmbr_central_1_1_generic_asset_builder_1_1_generic_asset_builder_registration.html", null ],
     [ "LmbrCentral::IntersectionTestDataCache< ShapeConfiguration >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::OpenBundleInfo", "struct_lmbr_central_1_1_open_bundle_info.html", null ],
     [ "LmbrCentral::PolygonPrismMesh", "struct_lmbr_central_1_1_polygon_prism_mesh.html", null ],

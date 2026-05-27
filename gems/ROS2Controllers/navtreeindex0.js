@@ -219,7 +219,7 @@ var NAVTREEINDEX0 =
 "struct_r_o_s2_controllers_1_1_control_configuration.html#a40c020b2bfa92b351009504e2af8c8cfa502ccb557e3c905251761f63402bb6e0":[0,0,0,6,0,1],
 "struct_r_o_s2_controllers_1_1_control_configuration.html#a40c020b2bfa92b351009504e2af8c8cfaa80d865c12c4d5d9986c33ae4390e1f6":[0,0,0,6,0,0],
 "struct_r_o_s2_controllers_1_1_joint_info.html":[0,0,0,14],
-"struct_r_o_s2_controllers_1_1_joint_info.html#abd33e09334ca727ca5a5f3bbe7f5faee":[0,0,0,14,0],
+"struct_r_o_s2_controllers_1_1_joint_info.html#a45e904d1797d1da07acf7b1e94cd62c6":[0,0,0,14,0],
 "struct_r_o_s2_controllers_1_1_joint_motor_controller_configuration.html":[0,0,0,16],
 "struct_r_o_s2_controllers_1_1_joint_motor_controller_configuration.html#aa2a6f4cf3d91a39b228230732019a497":[0,0,0,16,1],
 "struct_r_o_s2_controllers_1_1_joint_motor_controller_configuration.html#ada8f71cdce148781dffd7a7dd0abbb41":[0,0,0,16,0],

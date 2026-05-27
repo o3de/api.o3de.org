@@ -47,9 +47,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_a_z_1_1_render_1_1_directional_light_requests.html#a8a5148f1f9693d6ebf6724e1c9011e01",
-"class_a_z_1_1_render_1_1_grid_component_notifications.html#aec7cc68563cd44f7abb1528a9b0bcdc9",
-"class_a_z_1_1_render_1_1_simple_point_light_delegate.html#a127671fb607b101e3eb38706dc398bb7",
-"struct_a_z_1_1_render_1_1_area_light_component_config.html#a8d50ebb08728ab1d6426e40ffd1961ec"
+"class_a_z_1_1_render_1_1_grid_component_requests.html",
+"class_a_z_1_1_render_1_1_simple_point_light_delegate.html#a308f10db0c1f7639361e53edf5e1a222",
+"struct_a_z_1_1_render_1_1_editor_material_component_util_1_1_material_edit_data.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

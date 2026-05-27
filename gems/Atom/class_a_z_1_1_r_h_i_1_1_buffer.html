@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,13 +82,17 @@ const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html">Buffe
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_frame_attachment.html">BufferFrameAttachment</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameAttachment</b> () const</td></tr>
 <tr class="memdesc:adf971c6cd17159a799247c1d7ed9a1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer frame attachment if the buffer is currently attached. <br /></td></tr>
 <tr class="separator:adf971c6cd17159a799247c1d7ed9a1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84e0a3ddc146c36dc958d0bc2cbd6730" id="r_a84e0a3ddc146c36dc958d0bc2cbd6730"><td class="memItemLeft" align="right" valign="top"><a id="a84e0a3ddc146c36dc958d0bc2cbd6730" name="a84e0a3ddc146c36dc958d0bc2cbd6730"></a>
-Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferView</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html">BufferViewDescriptor</a> &amp;bufferViewDescriptor)</td></tr>
-<tr class="separator:a84e0a3ddc146c36dc958d0bc2cbd6730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4e0fdf5c61b67cdd1e2918388c0664" id="r_a0e4e0fdf5c61b67cdd1e2918388c0664"><td class="memItemLeft" align="right" valign="top"><a id="a0e4e0fdf5c61b67cdd1e2918388c0664" name="a0e4e0fdf5c61b67cdd1e2918388c0664"></a>
+Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html">BufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferView</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html">BufferViewDescriptor</a> &amp;bufferViewDescriptor) const</td></tr>
+<tr class="separator:a0e4e0fdf5c61b67cdd1e2918388c0664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f31f0334c3763b1aea54c83e5922c9a" id="r_a7f31f0334c3763b1aea54c83e5922c9a"><td class="memItemLeft" align="right" valign="top"><a id="a7f31f0334c3763b1aea54c83e5922c9a" name="a7f31f0334c3763b1aea54c83e5922c9a"></a>
 const HashValue64&#160;</td><td class="memItemRight" valign="bottom"><b>GetHash</b> () const</td></tr>
 <tr class="memdesc:a7f31f0334c3763b1aea54c83e5922c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hash associated with the <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a>. <br /></td></tr>
 <tr class="separator:a7f31f0334c3763b1aea54c83e5922c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae314df04dd584082c411a1ab3cf840d2" id="r_ae314df04dd584082c411a1ab3cf840d2"><td class="memItemLeft" align="right" valign="top"><a id="ae314df04dd584082c411a1ab3cf840d2" name="ae314df04dd584082c411a1ab3cf840d2"></a>
+AZStd::unordered_map&lt; int, uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceAddress</b> () const</td></tr>
+<tr class="memdesc:ae314df04dd584082c411a1ab3cf840d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the GPU address of this <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a> for each device. <br /></td></tr>
+<tr class="separator:ae314df04dd584082c411a1ab3cf840d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670370658aa26a49f3dc3a2aade92344" id="r_a670370658aa26a49f3dc3a2aade92344"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html#a670370658aa26a49f3dc3a2aade92344">Shutdown</a> () override final</td></tr>
 <tr class="memdesc:a670370658aa26a49f3dc3a2aade92344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the resource by detaching it from its parent pool.  <br /></td></tr>
 <tr class="separator:a670370658aa26a49f3dc3a2aade92344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,7 +272,7 @@ AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:36 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

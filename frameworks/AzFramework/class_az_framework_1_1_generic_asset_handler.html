@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,9 +69,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f274a7cc5be0232485d42363d6d5d81" id="r_a7f274a7cc5be0232485d42363d6d5d81"><td class="memItemLeft" align="right" valign="top"><a id="a7f274a7cc5be0232485d42363d6d5d81" name="a7f274a7cc5be0232485d42363d6d5d81"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_generic_asset_handler.html">GenericAssetHandler</a>&lt; AssetType &gt;, &quot;{8B36B3E8-8C0B-4297-BDA2-1648C155C78E}&quot;, GenericAssetHandlerBase)</td></tr>
 <tr class="separator:a7f274a7cc5be0232485d42363d6d5d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac143036ffb92b1be48d5978ce38aac" id="r_afac143036ffb92b1be48d5978ce38aac"><td class="memItemLeft" align="right" valign="top"><a id="afac143036ffb92b1be48d5978ce38aac" name="afac143036ffb92b1be48d5978ce38aac"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GenericAssetHandler</b> (const char *displayName, const char *group, const char *extension, const AZ::Uuid &amp;componentTypeId=AZ::Uuid::CreateNull(), AZ::SerializeContext *serializeContext=nullptr, const AZ::DataStream::StreamType streamType=AZ::ObjectStream::ST_XML)</td></tr>
-<tr class="separator:afac143036ffb92b1be48d5978ce38aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d35e3b653e896314edadebe743645c" id="r_af1d35e3b653e896314edadebe743645c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_generic_asset_handler.html#af1d35e3b653e896314edadebe743645c">GenericAssetHandler</a> (const char *displayName, const char *group, const char *extension, const AZ::Uuid &amp;componentTypeId=AZ::Uuid::CreateNull(), AZ::SerializeContext *serializeContext=nullptr, const AZ::DataStream::StreamType streamType=AZ::ObjectStream::ST_XML, const bool autoProcessToCache=false)</td></tr>
+<tr class="separator:af1d35e3b653e896314edadebe743645c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae963e9dccd330a30ab161fefbf1942" id="r_aeae963e9dccd330a30ab161fefbf1942"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_generic_asset_handler.html#aeae963e9dccd330a30ab161fefbf1942">AutoBuildAssetToCache</a> () override</td></tr>
+<tr class="separator:aeae963e9dccd330a30ab161fefbf1942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1aee6f6a4ff64b61572c4284186c0fe" id="r_ac1aee6f6a4ff64b61572c4284186c0fe"><td class="memItemLeft" align="right" valign="top"><a id="ac1aee6f6a4ff64b61572c4284186c0fe" name="ac1aee6f6a4ff64b61572c4284186c0fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoBuildAssetToCache</b> (bool autoBuild)</td></tr>
+<tr class="separator:ac1aee6f6a4ff64b61572c4284186c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade17fb6853ec80e3309477ece8d7e685" id="r_ade17fb6853ec80e3309477ece8d7e685"><td class="memItemLeft" align="right" valign="top"><a id="ade17fb6853ec80e3309477ece8d7e685" name="ade17fb6853ec80e3309477ece8d7e685"></a>
 AZ::Data::AssetPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAsset</b> (const AZ::Data::AssetId &amp;, const AZ::Data::AssetType &amp;) override</td></tr>
 <tr class="separator:ade17fb6853ec80e3309477ece8d7e685"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +122,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetTypeExtension
 <tr class="memitem:aec3d157a2fe43fd6e6ca2b34db55cd87 inherit pub_methods_class_az_framework_1_1_generic_asset_handler_base" id="r_aec3d157a2fe43fd6e6ca2b34db55cd87"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_generic_asset_handler_base.html">GenericAssetHandlerBase</a>, &quot;{B153B8B5-25CC-4BB7-A2BD-9A47ECF4123C}&quot;, AZ::Data::AssetHandler)</td></tr>
 <tr class="separator:aec3d157a2fe43fd6e6ca2b34db55cd87 inherit pub_methods_class_az_framework_1_1_generic_asset_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258512ca617e60489af86bbf0b01de8a inherit pub_methods_class_az_framework_1_1_generic_asset_handler_base" id="r_a258512ca617e60489af86bbf0b01de8a"><td class="memItemLeft" align="right" valign="top">
+AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>AssetMissingInCatalog</b> (const AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &amp;asset) override</td></tr>
+<tr class="separator:a258512ca617e60489af86bbf0b01de8a inherit pub_methods_class_az_framework_1_1_generic_asset_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -130,6 +137,9 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_group</b><
 <tr class="memitem:a6fa359d573eb09a63d4a7dda82abec38" id="r_a6fa359d573eb09a63d4a7dda82abec38"><td class="memItemLeft" align="right" valign="top"><a id="a6fa359d573eb09a63d4a7dda82abec38" name="a6fa359d573eb09a63d4a7dda82abec38"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_extension</b></td></tr>
 <tr class="separator:a6fa359d573eb09a63d4a7dda82abec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a29bf009456b3dba1a16940900c39a" id="r_ab7a29bf009456b3dba1a16940900c39a"><td class="memItemLeft" align="right" valign="top"><a id="ab7a29bf009456b3dba1a16940900c39a" name="ab7a29bf009456b3dba1a16940900c39a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoProcessAsset</b> = false</td></tr>
+<tr class="separator:ab7a29bf009456b3dba1a16940900c39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779bc187bed9d4456d91c34b195ae684" id="r_a779bc187bed9d4456d91c34b195ae684"><td class="memItemLeft" align="right" valign="top"><a id="a779bc187bed9d4456d91c34b195ae684" name="a779bc187bed9d4456d91c34b195ae684"></a>
 AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>m_componentTypeId</b> = AZ::Uuid::CreateNull()</td></tr>
 <tr class="separator:a779bc187bed9d4456d91c34b195ae684"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +150,116 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 AZ::DataStream::StreamType&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamType</b></td></tr>
 <tr class="separator:a89f303dccef984c327daf4eebe339d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af1d35e3b653e896314edadebe743645c" name="af1d35e3b653e896314edadebe743645c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d35e3b653e896314edadebe743645c">&#9670;&#160;</a></span>GenericAssetHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename AssetType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_az_framework_1_1_generic_asset_handler.html">AzFramework::GenericAssetHandler</a>&lt; AssetType &gt;::GenericAssetHandler </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>displayName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>extension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Uuid &amp;&#160;</td>
+          <td class="paramname"><em>componentTypeId</em> = <code>AZ::Uuid::CreateNull()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::SerializeContext *&#160;</td>
+          <td class="paramname"><em>serializeContext</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::DataStream::StreamType&#160;</td>
+          <td class="paramname"><em>streamType</em> = <code>AZ::ObjectStream::ST_XML</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>autoProcessToCache</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Construct your generic asset handler. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">displayName</td><td>The name of the asset type to show in the user-facing guis and logs </td></tr>
+    <tr><td class="paramname">extension</td><td>The file extension to associate with this asset type. JUST the extension without a dot. </td></tr>
+    <tr><td class="paramname">componentTypeId</td><td>If this asset type is meant to be automatically added as a component to entities when dragged and dropped into the level, specify the component typeid here. This should be the typeid of the component that should be added. </td></tr>
+    <tr><td class="paramname">streamType</td><td>The type of stream to use when saving this asset. (Default is ObjectStream XML) </td></tr>
+    <tr><td class="paramname">autoProcessToCache</td><td>If true, the asset system will automatically process this asset into the cache using the asset processor, and automatically extract dependencies for it. if False, you're expected to do that work yourself, by either making a RC COPY rule in the asset processor setreg, or make your own Asset Builder (Custom) to handle extreme custom cases. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeae963e9dccd330a30ab161fefbf1942" name="aeae963e9dccd330a30ab161fefbf1942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae963e9dccd330a30ab161fefbf1942">&#9670;&#160;</a></span>AutoBuildAssetToCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename AssetType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_az_framework_1_1_generic_asset_handler.html">AzFramework::GenericAssetHandler</a>&lt; AssetType &gt;::AutoBuildAssetToCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overridden in <a class="el" href="class_az_framework_1_1_generic_asset_handler.html">GenericAssetHandler</a> to return whether or not the asset should be auto processed into the cache. This is based on what the constructor sets. </p>
+
+<p>Implements <a class="el" href="class_az_framework_1_1_generic_asset_handler_base.html#a9c2efa396bbc338c774b52d7f565ad5a">AzFramework::GenericAssetHandlerBase</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Asset/<b>GenericAssetHandler.h</b></li>
 </ul>
@@ -149,7 +269,7 @@ AZ::DataStream::StreamType&#160;</td><td class="memItemRight" valign="bottom"><b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_framework.html">AzFramework</a></li><li class="navelem"><a class="el" href="class_az_framework_1_1_generic_asset_handler.html">GenericAssetHandler</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:50 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:26 for Open 3D Engine AzFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

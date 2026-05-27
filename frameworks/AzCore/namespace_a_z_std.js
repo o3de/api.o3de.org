@@ -1,6 +1,7 @@
 var namespace_a_z_std =
 [
     [ "adopt_lock_t", "struct_a_z_std_1_1adopt__lock__t.html", null ],
+    [ "aligned_storage", "struct_a_z_std_1_1aligned__storage.html", "struct_a_z_std_1_1aligned__storage" ],
     [ "allocator", "class_a_z_std_1_1allocator.html", null ],
     [ "allocator_ref", "class_a_z_std_1_1allocator__ref.html", null ],
     [ "allocator_traits", "struct_a_z_std_1_1allocator__traits.html", "struct_a_z_std_1_1allocator__traits" ],

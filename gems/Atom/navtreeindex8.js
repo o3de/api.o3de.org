@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"class_a_z_1_1_r_p_i_1_1_asset_creator.html#a8e9b542ff427b8e606fc2414188607b2":[4,0,1,7,9,2],
+"class_a_z_1_1_r_p_i_1_1_asset_creator.html#a9f55015e7512f0329476b9ea7d6532f1":[4,0,1,7,9,0],
+"class_a_z_1_1_r_p_i_1_1_asset_creator.html#accb50cedb8700c42c74f20255434a509":[4,0,1,7,9,6],
+"class_a_z_1_1_r_p_i_1_1_asset_handler.html":[4,0,1,7,10],
+"class_a_z_1_1_r_p_i_1_1_asset_init_events.html":[4,0,1,7,11],
+"class_a_z_1_1_r_p_i_1_1_asset_init_events.html#ac68278db91bde675625d969f59b30814":[4,0,1,7,11,0],
+"class_a_z_1_1_r_p_i_1_1_asset_tag_interface.html":[4,0,1,7,13],
+"class_a_z_1_1_r_p_i_1_1_asset_tag_interface.html#a0ec29915387a3fdf79f14bb7401dfc0b":[4,0,1,7,13,3],
 "class_a_z_1_1_r_p_i_1_1_asset_tag_interface.html#a6945c38bd4b49d7ad3143e04f4850082":[4,0,1,7,13,2],
 "class_a_z_1_1_r_p_i_1_1_asset_tag_interface.html#a885ab926e215c5ea67d538ef8e6266d9":[4,0,1,7,13,1],
 "class_a_z_1_1_r_p_i_1_1_asset_tag_interface.html#a8d437184f22aaa440ea5120e8b7baed7":[4,0,1,7,13,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "class_a_z_1_1_r_p_i_1_1_image.html#af7a3d6ca00e6cc5d861cf9c98c111c1f":[4,0,1,7,66,6],
 "class_a_z_1_1_r_p_i_1_1_image.html#af9129546bed9356000c98f9f8c143332":[4,0,1,7,66,2],
 "class_a_z_1_1_r_p_i_1_1_image_asset.html":[4,0,1,7,67],
-"class_a_z_1_1_r_p_i_1_1_image_asset.html#a1bfe4e4568fd070e3cf014c70c8e4976":[4,0,1,7,67,0],
-"class_a_z_1_1_r_p_i_1_1_image_asset.html#ae55183147f5cd12a29cb16f785a9a0ff":[4,0,1,7,67,1],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html":[4,0,1,7,68],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html#a1525ed3869127525016855aa46c66567":[4,0,1,7,68,0],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html#a2c628b57ad8128d71b21f451cff95b0e":[4,0,1,7,68,2],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html#a398abd0a348f941663fc9680efab1788":[4,0,1,7,68,1],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html":[4,0,1,7,69],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html#a302547457653b13c853824833f1ec7d2":[4,0,1,7,69,6],
-"class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html#a3bf020daa9a48b293cbed529a9eefb59":[4,0,1,7,69,2]
+"class_a_z_1_1_r_p_i_1_1_image_asset.html#a1bfe4e4568fd070e3cf014c70c8e4976":[4,0,1,7,67,0]
 };

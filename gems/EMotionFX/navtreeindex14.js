@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"struct_e_motion_f_x_1_1_motion_data_1_1_save_settings.html":[0,0,3,260,4],
+"struct_e_motion_f_x_1_1_motion_data_1_1_static_float_data.html":[0,0,3,260,5],
 "struct_e_motion_f_x_1_1_motion_data_1_1_static_joint_data.html":[0,0,3,260,6],
 "struct_e_motion_f_x_1_1_motion_data_sample_settings.html":[0,0,3,263],
 "struct_e_motion_f_x_1_1_motion_instance_1_1_play_state_in.html":[0,0,3,268,0],

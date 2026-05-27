@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,7 +59,9 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_h_i_1_1_command_list.h
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#adad078bdc22de3c0597d5e1e34442097">BeginPredication</a>(const DeviceBuffer &amp;buffer, uint64_t offset, PredicationOp operation)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#ad1e07bef69aa7858ce87c5f2b82b921c">BuildBottomLevelAccelerationStructure</a>(const RHI::DeviceRayTracingBlas &amp;rayTracingBlas)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a71660632c9678ec96799c9e888dbf916">BuildTopLevelAccelerationStructure</a>(const RHI::DeviceRayTracingTlas &amp;rayTracingTlas, const AZStd::vector&lt; const RHI::DeviceRayTracingBlas * &gt; &amp;changedBlasList)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a54e3a13344e8acc61e2e9f65d46d0c72">BuildClusterAccelerationStructures</a>(const RHI::DeviceRayTracingClusterBlas &amp;rayTracingClusterBlas)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a7871ba0bafb64c49ba59e98c988edf2b">BuildClusterBottomLevelAccelerationStructures</a>(const AZStd::vector&lt; const RHI::DeviceRayTracingClusterBlas * &gt; &amp;clusterBlasList)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#a84cf9ec0f57f4156f3d0b67adac9d119">BuildTopLevelAccelerationStructure</a>(const RHI::DeviceRayTracingTlas &amp;rayTracingTlas, const AZStd::vector&lt; const RHI::DeviceRayTracingBlas * &gt; &amp;changedBlasList, const AZStd::vector&lt; const RHI::DeviceRayTracingClusterBlas * &gt; &amp;changedClusterBlasList)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#ac6305665f896389bc35b01ac9cc310d6">CompactBottomLevelAccelerationStructure</a>(const RHI::DeviceRayTracingBlas &amp;sourceBlas, const RHI::DeviceRayTracingBlas &amp;compactBlas)=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#af05407cce41629f6be1d869587377a87">DefaultShadingRateCombinators</a></td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html#aae674b89230981625c053a6f43273da1">EndPredication</a>()=0</td><td class="entry"><a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">AZ::RHI::CommandList</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -85,7 +87,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_h_i_1_1_command_list.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:59 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:36 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

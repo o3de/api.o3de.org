@@ -1297,7 +1297,7 @@ var hierarchy =
       [ "EMStudio::SolidColorIconEngine", "class_e_m_studio_1_1_solid_color_icon_engine.html", null ]
     ] ],
     [ "QItemSelectionModel", null, [
-      [ "EMStudio::SelectionProxyModel", "class_e_m_studio_1_1_selection_proxy_model.html", null ],
+      [ "EMStudio::AnimGraphSelectionProxyModel", "class_e_m_studio_1_1_anim_graph_selection_proxy_model.html", null ],
       [ "EMotionFX::SelectionProxyModel", "class_e_motion_f_x_1_1_selection_proxy_model.html", null ]
     ] ],
     [ "QLineEdit", null, [
@@ -1370,18 +1370,6 @@ var hierarchy =
       [ "MysticQt::KeyboardShortcutManager", "class_mystic_qt_1_1_keyboard_shortcut_manager.html", null ],
       [ "MysticQt::RecentFiles", "class_mystic_qt_1_1_recent_files.html", null ]
     ] ],
-    [ "QOpenGLFunctions", null, [
-      [ "EMStudio::NodeGraphWidget", "class_e_m_studio_1_1_node_graph_widget.html", [
-        [ "EMStudio::BlendGraphWidget", "class_e_m_studio_1_1_blend_graph_widget.html", null ]
-      ] ],
-      [ "EMStudio::TrackDataHeaderWidget", "class_e_m_studio_1_1_track_data_header_widget.html", null ],
-      [ "EMStudio::TrackDataWidget", "class_e_m_studio_1_1_track_data_widget.html", null ]
-    ] ],
-    [ "QOpenGLWidget", null, [
-      [ "EMStudio::NodeGraphWidget", "class_e_m_studio_1_1_node_graph_widget.html", null ],
-      [ "EMStudio::TrackDataHeaderWidget", "class_e_m_studio_1_1_track_data_header_widget.html", null ],
-      [ "EMStudio::TrackDataWidget", "class_e_m_studio_1_1_track_data_widget.html", null ]
-    ] ],
     [ "QPushButton", null, [
       [ "EMotionFX::AddColliderButton", "class_e_motion_f_x_1_1_add_collider_button.html", null ],
       [ "EMotionFX::AddCollidersButton", "class_e_motion_f_x_1_1_add_colliders_button.html", null ],
@@ -1442,6 +1430,9 @@ var hierarchy =
       [ "EMStudio::NavigateWidget", "class_e_m_studio_1_1_navigate_widget.html", null ],
       [ "EMStudio::NavigationLinkWidget", "class_e_m_studio_1_1_navigation_link_widget.html", null ],
       [ "EMStudio::NoSelectionWidget", "class_e_m_studio_1_1_no_selection_widget.html", null ],
+      [ "EMStudio::NodeGraphWidget", "class_e_m_studio_1_1_node_graph_widget.html", [
+        [ "EMStudio::BlendGraphWidget", "class_e_m_studio_1_1_blend_graph_widget.html", null ]
+      ] ],
       [ "EMStudio::NodeHierarchyWidget", "class_e_m_studio_1_1_node_hierarchy_widget.html", null ],
       [ "EMStudio::NodePaletteWidget", "class_e_m_studio_1_1_node_palette_widget.html", null ],
       [ "EMStudio::NotificationWindow", "class_e_m_studio_1_1_notification_window.html", null ],
@@ -1450,6 +1441,8 @@ var hierarchy =
       [ "EMStudio::ParameterWindow", "class_e_m_studio_1_1_parameter_window.html", null ],
       [ "EMStudio::SimulatedObjectSelectionWidget", "class_e_m_studio_1_1_simulated_object_selection_widget.html", null ],
       [ "EMStudio::TimeInfoWidget", "class_e_m_studio_1_1_time_info_widget.html", null ],
+      [ "EMStudio::TrackDataHeaderWidget", "class_e_m_studio_1_1_track_data_header_widget.html", null ],
+      [ "EMStudio::TrackDataWidget", "class_e_m_studio_1_1_track_data_widget.html", null ],
       [ "EMStudio::TrackHeaderWidget", "class_e_m_studio_1_1_track_header_widget.html", null ],
       [ "EMStudio::VisimeWidget", "class_e_m_studio_1_1_visime_widget.html", null ],
       [ "EMotionFX::ActorGoalNodePicker", "class_e_motion_f_x_1_1_actor_goal_node_picker.html", null ],

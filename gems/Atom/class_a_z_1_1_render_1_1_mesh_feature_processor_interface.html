@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -186,6 +186,30 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransform<
 <tr class="separator:ae4225e5ff1715553d8cbc769bbd8da62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b70b921bb60680698669676f36698ff" id="r_a7b70b921bb60680698669676f36698ff"><td class="memItemLeft" align="right" valign="top">virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">RPI::ShaderResourceGroup</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a7b70b921bb60680698669676f36698ff">GetDrawSrg</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, uint32_t lodIndex, uint32_t subMeshIndex, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, RHI::DrawFilterMask materialPipelineMask) const =0</td></tr>
 <tr class="separator:a7b70b921bb60680698669676f36698ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13366b65ff194e2e80145b96d807b7d" id="r_ad13366b65ff194e2e80145b96d807b7d"><td class="memItemLeft" align="right" valign="top"><a id="ad13366b65ff194e2e80145b96d807b7d" name="ad13366b65ff194e2e80145b96d807b7d"></a>
+virtual const RHI::Ptr&lt; <a class="el" href="struct_a_z_1_1_render_1_1_mesh_info_entry.html">MeshInfoEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMeshInfoEntry</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> handle)=0</td></tr>
+<tr class="separator:ad13366b65ff194e2e80145b96d807b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391599574863a8e26836259637a36692" id="r_a391599574863a8e26836259637a36692"><td class="memItemLeft" align="right" valign="top"><a id="a391599574863a8e26836259637a36692" name="a391599574863a8e26836259637a36692"></a>
+virtual <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AcquireMeshInfoEntry</b> ()=0</td></tr>
+<tr class="separator:a391599574863a8e26836259637a36692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fd38833b76dc3887c28ee782068870" id="r_a01fd38833b76dc3887c28ee782068870"><td class="memItemLeft" align="right" valign="top"><a id="a01fd38833b76dc3887c28ee782068870" name="a01fd38833b76dc3887c28ee782068870"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseMeshInfoEntry</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> handle)=0</td></tr>
+<tr class="separator:a01fd38833b76dc3887c28ee782068870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592aace2fbbef104de72e2b384ca459e" id="r_a592aace2fbbef104de72e2b384ca459e"><td class="memItemLeft" align="right" valign="top"><a id="a592aace2fbbef104de72e2b384ca459e" name="a592aace2fbbef104de72e2b384ca459e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMeshInfoEntry</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> handle, AZStd::function&lt; bool(<a class="el" href="struct_a_z_1_1_render_1_1_mesh_info_entry.html">MeshInfoEntry</a> *)&gt; updateFunction)=0</td></tr>
+<tr class="separator:a592aace2fbbef104de72e2b384ca459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef6ae8097fa4ed8f5ce208c37b40dbd" id="r_afef6ae8097fa4ed8f5ce208c37b40dbd"><td class="memItemLeft" align="right" valign="top"><a id="afef6ae8097fa4ed8f5ce208c37b40dbd" name="afef6ae8097fa4ed8f5ce208c37b40dbd"></a>
+virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">RPI::Buffer</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMeshInfoBuffer</b> () const =0</td></tr>
+<tr class="separator:afef6ae8097fa4ed8f5ce208c37b40dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61d9538ad8a816637942bdfcc91cd31" id="r_af61d9538ad8a816637942bdfcc91cd31"><td class="memItemLeft" align="right" valign="top"><a id="af61d9538ad8a816637942bdfcc91cd31" name="af61d9538ad8a816637942bdfcc91cd31"></a>
+virtual const RHI::Ptr&lt; <a class="el" href="struct_a_z_1_1_render_1_1_fallback_p_b_r_1_1_material_entry.html">FallbackPBR::MaterialEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFallbackPBRMaterialEntry</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> handle)=0</td></tr>
+<tr class="separator:af61d9538ad8a816637942bdfcc91cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62290cd604066a91529400c605f0a5c0" id="r_a62290cd604066a91529400c605f0a5c0"><td class="memItemLeft" align="right" valign="top"><a id="a62290cd604066a91529400c605f0a5c0" name="a62290cd604066a91529400c605f0a5c0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFallbackPBRMaterialEntry</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">MeshInfoHandle</a> handle, AZStd::function&lt; bool(<a class="el" href="struct_a_z_1_1_render_1_1_fallback_p_b_r_1_1_material_entry.html">FallbackPBR::MaterialEntry</a> *)&gt; updateFunction)=0</td></tr>
+<tr class="separator:a62290cd604066a91529400c605f0a5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fe5312a7ef4d94c0d02a4da643ba8d" id="r_a62fe5312a7ef4d94c0d02a4da643ba8d"><td class="memItemLeft" align="right" valign="top"><a id="a62fe5312a7ef4d94c0d02a4da643ba8d" name="a62fe5312a7ef4d94c0d02a4da643ba8d"></a>
+virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html">RPI::Buffer</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFallbackPBRMaterialBuffer</b> () const =0</td></tr>
+<tr class="separator:a62fe5312a7ef4d94c0d02a4da643ba8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a></td></tr>
 <tr class="memitem:a011d9c30a4429e37a8e21a0b6087935e inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor" id="r_a011d9c30a4429e37a8e21a0b6087935e"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a>, &quot;{B8027170-C65C-4237-964D-B557FC9D7575}&quot;)</td></tr>
@@ -1548,7 +1572,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">MeshFeatureProcessorInterface</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:58 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:35 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

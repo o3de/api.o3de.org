@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine LyShine Gem API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine LyShine Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -92,12 +92,12 @@ virtual EUiAnimCurveType&#160;</td><td class="memItemRight" valign="bottom"><b>G
 <tr class="memitem:a6cbde46823e7d0bf257f64a57e1132e0" id="r_a6cbde46823e7d0bf257f64a57e1132e0"><td class="memItemLeft" align="right" valign="top"><a id="a6cbde46823e7d0bf257f64a57e1132e0" name="a6cbde46823e7d0bf257f64a57e1132e0"></a>
 virtual EUiAnimValue&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueType</b> ()=0</td></tr>
 <tr class="separator:a6cbde46823e7d0bf257f64a57e1132e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad02b7706bd6188cddbcc9ee5bee5554e" id="r_ad02b7706bd6188cddbcc9ee5bee5554e"><td class="memItemLeft" align="right" valign="top"><a id="ad02b7706bd6188cddbcc9ee5bee5554e" name="ad02b7706bd6188cddbcc9ee5bee5554e"></a>
-virtual ColorB&#160;</td><td class="memItemRight" valign="bottom"><b>GetCustomColor</b> () const =0</td></tr>
-<tr class="separator:ad02b7706bd6188cddbcc9ee5bee5554e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a396b6eddb00558984200f7a0215e25a9" id="r_a396b6eddb00558984200f7a0215e25a9"><td class="memItemLeft" align="right" valign="top"><a id="a396b6eddb00558984200f7a0215e25a9" name="a396b6eddb00558984200f7a0215e25a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomColor</b> (ColorB color)=0</td></tr>
-<tr class="separator:a396b6eddb00558984200f7a0215e25a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7dfc200ea58b72007317dde82cfdcd4" id="r_ae7dfc200ea58b72007317dde82cfdcd4"><td class="memItemLeft" align="right" valign="top"><a id="ae7dfc200ea58b72007317dde82cfdcd4" name="ae7dfc200ea58b72007317dde82cfdcd4"></a>
+virtual AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>GetCustomColor</b> () const =0</td></tr>
+<tr class="separator:ae7dfc200ea58b72007317dde82cfdcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a71d3beb77defde900c449c576a2608" id="r_a1a71d3beb77defde900c449c576a2608"><td class="memItemLeft" align="right" valign="top"><a id="a1a71d3beb77defde900c449c576a2608" name="a1a71d3beb77defde900c449c576a2608"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomColor</b> (const AZ::Color &amp;color)=0</td></tr>
+<tr class="separator:a1a71d3beb77defde900c449c576a2608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92fa399317ff06d90557b98ccbbb89c" id="r_ac92fa399317ff06d90557b98ccbbb89c"><td class="memItemLeft" align="right" valign="top"><a id="ac92fa399317ff06d90557b98ccbbb89c" name="ac92fa399317ff06d90557b98ccbbb89c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCustomColor</b> () const =0</td></tr>
 <tr class="separator:ac92fa399317ff06d90557b98ccbbb89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +190,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> 
 <tr class="memitem:ad4a61d7d03421d57072b74ca84ac3f81" id="r_ad4a61d7d03421d57072b74ca84ac3f81"><td class="memItemLeft" align="right" valign="top"><a id="ad4a61d7d03421d57072b74ca84ac3f81" name="ad4a61d7d03421d57072b74ca84ac3f81"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (float time, Vec4 &amp;value)=0</td></tr>
 <tr class="separator:ad4a61d7d03421d57072b74ca84ac3f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70940d72116d8d34d56c35bf31d562b8" id="r_a70940d72116d8d34d56c35bf31d562b8"><td class="memItemLeft" align="right" valign="top"><a id="a70940d72116d8d34d56c35bf31d562b8" name="a70940d72116d8d34d56c35bf31d562b8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (float time, Quat &amp;value)=0</td></tr>
-<tr class="separator:a70940d72116d8d34d56c35bf31d562b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe94f8017c9b0849be9d71ea4387ef2" id="r_adbe94f8017c9b0849be9d71ea4387ef2"><td class="memItemLeft" align="right" valign="top"><a id="adbe94f8017c9b0849be9d71ea4387ef2" name="adbe94f8017c9b0849be9d71ea4387ef2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (float time, AZ::Quaternion &amp;value)=0</td></tr>
+<tr class="separator:adbe94f8017c9b0849be9d71ea4387ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90f9e58df2f9e5bcc485378ebbdcc9cb" id="r_a90f9e58df2f9e5bcc485378ebbdcc9cb"><td class="memItemLeft" align="right" valign="top"><a id="a90f9e58df2f9e5bcc485378ebbdcc9cb" name="a90f9e58df2f9e5bcc485378ebbdcc9cb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (float time, bool &amp;value)=0</td></tr>
 <tr class="separator:a90f9e58df2f9e5bcc485378ebbdcc9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,9 +217,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> 
 <tr class="memitem:ac36d2cb354d8edc86b03195d015d8889" id="r_ac36d2cb354d8edc86b03195d015d8889"><td class="memItemLeft" align="right" valign="top"><a id="ac36d2cb354d8edc86b03195d015d8889" name="ac36d2cb354d8edc86b03195d015d8889"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (float time, const Vec4 &amp;value, bool bDefault=false)=0</td></tr>
 <tr class="separator:ac36d2cb354d8edc86b03195d015d8889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed414c9b095c60135065aa2383ed635b" id="r_aed414c9b095c60135065aa2383ed635b"><td class="memItemLeft" align="right" valign="top"><a id="aed414c9b095c60135065aa2383ed635b" name="aed414c9b095c60135065aa2383ed635b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (float time, const Quat &amp;value, bool bDefault=false)=0</td></tr>
-<tr class="separator:aed414c9b095c60135065aa2383ed635b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa984567a51e675b072932108aab91ba7" id="r_aa984567a51e675b072932108aab91ba7"><td class="memItemLeft" align="right" valign="top"><a id="aa984567a51e675b072932108aab91ba7" name="aa984567a51e675b072932108aab91ba7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (float time, const AZ::Quaternion &amp;value, bool bDefault=false)=0</td></tr>
+<tr class="separator:aa984567a51e675b072932108aab91ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f9965afa94e54b4ea659a582ba213c2" id="r_a4f9965afa94e54b4ea659a582ba213c2"><td class="memItemLeft" align="right" valign="top"><a id="a4f9965afa94e54b4ea659a582ba213c2" name="a4f9965afa94e54b4ea659a582ba213c2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (float time, const bool &amp;value, bool bDefault=false)=0</td></tr>
 <tr class="separator:a4f9965afa94e54b4ea659a582ba213c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1066,7 +1066,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnimationL
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_i_ui_anim_track.html">IUiAnimTrack</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:15:08 for Open 3D Engine LyShine Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:45 for Open 3D Engine LyShine Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

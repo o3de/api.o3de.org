@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"class_a_z_1_1_r_p_i_1_1_scene.html#ada04c6c9e69b5b9c2504e045d0607597":[4,0,1,7,228,12],
+"class_a_z_1_1_r_p_i_1_1_scene.html#adb4e2daf22e5f658b878f13b82cd742b":[4,0,1,7,228,2],
+"class_a_z_1_1_r_p_i_1_1_scene.html#addf5fad151b0e5848da92534c7a10067":[4,0,1,7,228,6],
+"class_a_z_1_1_r_p_i_1_1_scene.html#ae98877820e28c75901f4a1658346ad47":[4,0,1,7,228,5],
+"class_a_z_1_1_r_p_i_1_1_scene.html#aeeb2ce19bbf90732fd74183b2caef344":[4,0,1,7,228,8],
+"class_a_z_1_1_r_p_i_1_1_scene.html#afdd1fab899430e9ea9277f7301585596":[4,0,1,7,228,9],
+"class_a_z_1_1_r_p_i_1_1_scene_notification.html":[4,0,1,7,230],
+"class_a_z_1_1_r_p_i_1_1_scene_notification.html#a22fbe63532c0f5b71698e7b8d28bc802":[4,0,1,7,230,2],
 "class_a_z_1_1_r_p_i_1_1_scene_notification.html#a24987f8ed7f0857d5c230495213ebe89":[4,0,1,7,230,3],
 "class_a_z_1_1_r_p_i_1_1_scene_notification.html#a512a344bec6e924d01cdd284c83ddeab":[4,0,1,7,230,1],
 "class_a_z_1_1_r_p_i_1_1_scene_notification.html#a6687ceb35697f14034c67086ab7ecb1f":[4,0,1,7,230,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html#a50f34bc08e3e62ad422de3b58be1c75b":[4,0,1,7,252,1],
 "class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html#ab268f605ae5c6b87e779fe72d3a7c8d5":[4,0,1,7,252,0],
 "class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html#af6a9d7ecf12b8e042905f4940b2b4d87":[4,0,1,7,252,2],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html":[4,0,1,7,253],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html#a0d763cbfd6f19cb0801a2d62d0567e22":[4,0,1,7,253,0],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html#aa15f849190e8687602f377c582206f64":[4,0,1,7,253,1],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html#abbabf52d643c7a43189ca17cd1e3393e":[4,0,1,7,253,3],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html#ad4cff8c7b029f0998da515bd936b2869":[4,0,1,7,253,2],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_handler.html":[4,0,1,7,254],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_async_loader.html":[4,0,1,7,255],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_finder_notification.html":[4,0,1,7,256],
-"class_a_z_1_1_r_p_i_1_1_shader_variant_tree_asset.html":[4,0,1,7,262]
+"class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html":[4,0,1,7,253]
 };

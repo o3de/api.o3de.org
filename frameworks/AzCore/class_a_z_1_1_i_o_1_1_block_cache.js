@@ -12,7 +12,6 @@ var class_a_z_1_1_i_o_1_1_block_cache =
     [ "QueueRequest", "class_a_z_1_1_i_o_1_1_block_cache.html#aa2fc76a0abddfc7e5fa91c654f9e3649", null ],
     [ "UpdateCompletionEstimates", "class_a_z_1_1_i_o_1_1_block_cache.html#a4e01bff374e44d4d7fe5f59bcd71e361", null ],
     [ "UpdateStatus", "class_a_z_1_1_i_o_1_1_block_cache.html#a168b711bbb54cc283e406887639d22f1", null ],
-    [ "m_blockLastTouched", "class_a_z_1_1_i_o_1_1_block_cache.html#a3b2b3963da3dba1794e9ffe8f08dabba", null ],
     [ "m_cachedOffsets", "class_a_z_1_1_i_o_1_1_block_cache.html#a76ac3ddd92bcedca9f137774a95c40d8", null ],
     [ "m_cachedPaths", "class_a_z_1_1_i_o_1_1_block_cache.html#aa2150360b8e037f2b22e55460ae1f3b8", null ],
     [ "m_delayedSections", "class_a_z_1_1_i_o_1_1_block_cache.html#a5d45f5fa9bc858c5913a9847bf61d3d7", null ],

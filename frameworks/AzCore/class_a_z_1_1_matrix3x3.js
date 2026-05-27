@@ -34,6 +34,7 @@ var class_a_z_1_1_matrix3x3 =
     [ "operator-", "class_a_z_1_1_matrix3x3.html#ae8bb501e3208fc1b6a4c4e7f1fd0f86c", null ],
     [ "operator-", "class_a_z_1_1_matrix3x3.html#a25f6f7fa97b8275955a8f8198f4020dc", null ],
     [ "operator/", "class_a_z_1_1_matrix3x3.html#a155d80c7e844d0f870b4be73244332bd", null ],
+    [ "operator[]", "class_a_z_1_1_matrix3x3.html#a09fd9a52dfd63e747aa183a04123d05e", null ],
     [ "Orthogonalize", "class_a_z_1_1_matrix3x3.html#a53f9044a1eba7abcc534d4b8031e1b0d", null ],
     [ "Reflect", "class_a_z_1_1_matrix3x3.html#a130bc5e8e3bb3b605fb322bfe03a248f", null ],
     [ "RetrieveScale", "class_a_z_1_1_matrix3x3.html#a578fbc4f1835280185a76ffadd83ba5e", null ],

@@ -10,6 +10,7 @@ var hierarchy =
     [ "AZ::Component", null, [
       [ "TestAssetBuilder::TestAssetBuilderComponent", "class_test_asset_builder_1_1_test_asset_builder_component.html", null ],
       [ "TestAssetBuilder::TestDependencyBuilderComponent", "class_test_asset_builder_1_1_test_dependency_builder_component.html", null ],
+      [ "TestAssetBuilder::TestGenericAssetBuilderComponent", "class_test_asset_builder_1_1_test_generic_asset_builder_component.html", null ],
       [ "TestAssetBuilder::TestIntermediateAssetBuilderComponent", "class_test_asset_builder_1_1_test_intermediate_asset_builder_component.html", null ]
     ] ],
     [ "AZ::Data::AssetCatalog", null, [
@@ -17,6 +18,8 @@ var hierarchy =
     ] ],
     [ "AZ::Data::AssetData", null, [
       [ "TestAssetBuilder::TestAsset", "class_test_asset_builder_1_1_test_asset.html", null ],
-      [ "TestAssetBuilder::TestDependentAsset", "struct_test_asset_builder_1_1_test_dependent_asset.html", null ]
+      [ "TestAssetBuilder::TestDependentAsset", "struct_test_asset_builder_1_1_test_dependent_asset.html", null ],
+      [ "TestAssetBuilder::TestGenericAsset", "class_test_asset_builder_1_1_test_generic_asset.html", null ],
+      [ "TestAssetBuilder::TestGenericAssetRef", "class_test_asset_builder_1_1_test_generic_asset_ref.html", null ]
     ] ]
 ];

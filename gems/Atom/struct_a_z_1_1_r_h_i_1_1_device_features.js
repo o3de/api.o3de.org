@@ -20,6 +20,7 @@ var struct_a_z_1_1_r_h_i_1_1_device_features =
     [ "m_predication", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a749372ebd6b88864c89b1b60cd4e23f3", null ],
     [ "m_queryTypesMask", "struct_a_z_1_1_r_h_i_1_1_device_features.html#afa2e6ed1084c4024d4a4c74e8796b6d4", null ],
     [ "m_rayTracing", "struct_a_z_1_1_r_h_i_1_1_device_features.html#ad8f95cbf43f55fd6d95f8139899625fc", null ],
+    [ "m_rayTracingClas", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a0abd861e9bdf8bbda5a1cb9529c9880d", null ],
     [ "m_shadingRateMask", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a04480a5ccf164052f6a544251559d500", null ],
     [ "m_shadingRateTypeMask", "struct_a_z_1_1_r_h_i_1_1_device_features.html#aed4a6364bf6ae8164408c88437c9a6a8", null ],
     [ "m_signalFenceFromCPU", "struct_a_z_1_1_r_h_i_1_1_device_features.html#a41441af20317070b4f6124cc85b6b68c", null ],

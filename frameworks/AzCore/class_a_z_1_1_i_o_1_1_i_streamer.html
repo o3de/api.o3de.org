@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;25.10.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -1638,7 +1638,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets a callback function that will trigger when the provided request completes. The callback will be triggered from within the <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a>'s stack on a different thread. While in the callback function <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a> can't continue processing requests so it's recommended to keep the callback short, for instance by setting an atomic value to be picked up by another thread like the main thread or to queue a job (function) to complete the work. Note avoid storing a copy of the owning FileRequestPtr in a lambda provided as the callback. This will result in the same request storing a copy of itself indirectly, which means the reference counter can never reach zero due to the circular dependency and results in a resource leak. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets a callback function that will trigger when the provided request completes. The callback will be triggered from within <a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> on a different thread than the caller thread. Note avoid storing a copy of the owning FileRequestPtr in a lambda provided as the callback. This will result in the same request storing a copy of itself indirectly, which means the reference counter can never reach zero due to the circular dependency and results in a resource leak. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The request that will get the callback assigned. </td></tr>
     <tr><td class="paramname">callback</td><td>A function with the signature "void(FileRequestHandle request);" </td></tr>
@@ -1688,7 +1688,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html">IStreamer</a></li>
-    <li class="footer">Generated on Thu Oct 9 2025 16:14:43 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
