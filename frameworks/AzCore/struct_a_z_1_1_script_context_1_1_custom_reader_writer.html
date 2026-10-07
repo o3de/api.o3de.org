@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,31 +68,31 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_script_context_1_1_cust
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5009babc67052de7a699674600fa9bd5" id="r_a5009babc67052de7a699674600fa9bd5"><td class="memItemLeft" align="right" valign="top"><a id="a5009babc67052de7a699674600fa9bd5" name="a5009babc67052de7a699674600fa9bd5"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CustomToLua</b> = <a class="el" href="class_a_z_1_1_e_bus.html">void</a>(*)(<a class="el" href="class_a_z_1_1_e_bus.html">lua_State</a> *lua, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> &amp;value)</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CustomToLua</b> = void(*)(lua_State *lua, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> &amp;value)</td></tr>
 <tr class="separator:a5009babc67052de7a699674600fa9bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebfc16040da779b22020428799928809" id="r_aebfc16040da779b22020428799928809"><td class="memItemLeft" align="right" valign="top"><a id="aebfc16040da779b22020428799928809" name="aebfc16040da779b22020428799928809"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TempStackAllocate</b> = <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *(*)(size_t byteSize, size_t alignment, <a class="el" href="class_a_z_1_1_e_bus.html">int</a> flags)</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TempStackAllocate</b> = void *(*)(size_t byteSize, size_t alignment, int flags)</td></tr>
 <tr class="separator:aebfc16040da779b22020428799928809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61dbae1ae44d6136fb63aaeec862a055" id="r_a61dbae1ae44d6136fb63aaeec862a055"><td class="memItemLeft" align="right" valign="top"><a id="a61dbae1ae44d6136fb63aaeec862a055" name="a61dbae1ae44d6136fb63aaeec862a055"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CustomFromLua</b> = <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>(*)(<a class="el" href="class_a_z_1_1_e_bus.html">lua_State</a> *lua, <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">statckIndex</a>, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> &amp;value, BehaviorClass *<a class="el" href="class_a_z_1_1_e_bus.html">valueClass</a>, <a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">StackVariableAllocator</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stackTempAllocator</a>)</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CustomFromLua</b> = bool(*)(lua_State *lua, int statckIndex, <a class="el" href="struct_a_z_1_1_behavior_argument.html">BehaviorArgument</a> &amp;value, BehaviorClass *valueClass, StackVariableAllocator *stackTempAllocator)</td></tr>
 <tr class="separator:a61dbae1ae44d6136fb63aaeec862a055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a629195d0a493bfa176d1759ef50474ba" id="r_a629195d0a493bfa176d1759ef50474ba"><td class="memItemLeft" align="right" valign="top"><a id="a629195d0a493bfa176d1759ef50474ba" name="a629195d0a493bfa176d1759ef50474ba"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_a_z_1_1_script_context_1_1_custom_reader_writer.html">CustomReaderWriter</a>,&quot;{ea18a980-<a class="el" href="class_a_z_1_1_e_bus.html">de83</a>-4<a class="el" href="class_a_z_1_1_e_bus.html">f1c</a>-<a class="el" href="class_a_z_1_1_e_bus.html">bf5b</a>-1658584<a class="el" href="class_a_z_1_1_e_bus.html">ebe2d</a>}&quot;)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_a_z_1_1_script_context_1_1_custom_reader_writer.html">CustomReaderWriter</a>,&quot;{ea18a980-de83-4f1c-bf5b-1658584ebe2d}&quot;)</td></tr>
 <tr class="separator:a629195d0a493bfa176d1759ef50474ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb2926b04661e8549892b3f934eb5f6" id="r_afbb2926b04661e8549892b3f934eb5f6"><td class="memItemLeft" align="right" valign="top"><a id="afbb2926b04661e8549892b3f934eb5f6" name="afbb2926b04661e8549892b3f934eb5f6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CustomReaderWriter</b> (<a class="el" href="class_a_z_1_1_e_bus.html">CustomToLua</a> <a class="el" href="class_a_z_1_1_e_bus.html">write</a>, <a class="el" href="class_a_z_1_1_e_bus.html">CustomFromLua</a> <a class="el" href="class_a_z_1_1_e_bus.html">read</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CustomReaderWriter</b> (CustomToLua write, CustomFromLua read)</td></tr>
 <tr class="separator:afbb2926b04661e8549892b3f934eb5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a729b67fbb0ed27fad2d6e7f003479404" id="r_a729b67fbb0ed27fad2d6e7f003479404"><td class="memItemLeft" align="right" valign="top"><a id="a729b67fbb0ed27fad2d6e7f003479404" name="a729b67fbb0ed27fad2d6e7f003479404"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">CustomToLua</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_toLua</b></td></tr>
+CustomToLua&#160;</td><td class="memItemRight" valign="bottom"><b>m_toLua</b></td></tr>
 <tr class="separator:a729b67fbb0ed27fad2d6e7f003479404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20d82790f4b5bd3040c6e9e44ae0e533" id="r_a20d82790f4b5bd3040c6e9e44ae0e533"><td class="memItemLeft" align="right" valign="top"><a id="a20d82790f4b5bd3040c6e9e44ae0e533" name="a20d82790f4b5bd3040c6e9e44ae0e533"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">CustomFromLua</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fromLua</b></td></tr>
+CustomFromLua&#160;</td><td class="memItemRight" valign="bottom"><b>m_fromLua</b></td></tr>
 <tr class="separator:a20d82790f4b5bd3040c6e9e44ae0e533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -107,7 +107,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_script_context.html">ScriptContext</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_script_context_1_1_custom_reader_writer.html">CustomReaderWriter</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

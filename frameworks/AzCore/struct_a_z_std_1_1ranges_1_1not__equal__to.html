@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,10 +67,11 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>is_transparent</b> =
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96baee4409c2616e3e4f6ea67b52e589" id="r_a96baee4409c2616e3e4f6ea67b52e589"><td class="memTemplParams" colspan="2"><a id="a96baee4409c2616e3e4f6ea67b52e589" name="a96baee4409c2616e3e4f6ea67b52e589"></a>
-template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a96baee4409c2616e3e4f6ea67b52e589"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;&amp;t, U &amp;&amp;u) const -&gt; enable_if_t&lt; equality_comparable_with&lt; T, U &gt;, decltype(!<a class="el" href="struct_a_z_std_1_1ranges_1_1equal__to.html">ranges::equal_to</a>{}(AZStd::forward&lt; T &gt;(t), AZStd::forward&lt; U &gt;(u)))&gt;</td></tr>
-<tr class="separator:a96baee4409c2616e3e4f6ea67b52e589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaee8fa3a408b71c0eea97aca7ec3943" id="r_afaee8fa3a408b71c0eea97aca7ec3943"><td class="memTemplParams" colspan="2"><a id="afaee8fa3a408b71c0eea97aca7ec3943" name="afaee8fa3a408b71c0eea97aca7ec3943"></a>
+template&lt;class T , class U &gt; <br />
+requires equality_comparable_with&lt;T, U&gt;</td></tr>
+<tr class="memitem:afaee8fa3a408b71c0eea97aca7ec3943"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;&amp;t, U &amp;&amp;u) const -&gt; decltype(!<a class="el" href="struct_a_z_std_1_1ranges_1_1equal__to.html">ranges::equal_to</a>{}(AZStd::forward&lt; T &gt;(t), AZStd::forward&lt; U &gt;(u)))</td></tr>
+<tr class="separator:afaee8fa3a408b71c0eea97aca7ec3943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/<b>ranges_functional.h</b></li>
@@ -81,7 +82,7 @@ template&lt;class T , class U &gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="struct_a_z_std_1_1ranges_1_1not__equal__to.html">not_equal_to</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

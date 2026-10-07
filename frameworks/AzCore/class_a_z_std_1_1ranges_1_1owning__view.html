@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Open 3D Engine AzCore API Reference: AZStd::ranges::owning_view&lt; R, class &gt; Class Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZStd::ranges::owning_view&lt; R &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -51,9 +51,85 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1owning__vie
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="headertitle"><div class="title">AZStd::ranges::owning_view&lt; R, class &gt; Class Template Reference</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_a_z_std_1_1ranges_1_1owning__view-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">AZStd::ranges::owning_view&lt; R &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; owning_view&lt; R &gt; &gt;</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a70b73a223017d26f26a0dd6f7c42f552" id="r_a70b73a223017d26f26a0dd6f7c42f552"><td class="memItemLeft" align="right" valign="top"><a id="a70b73a223017d26f26a0dd6f7c42f552" name="a70b73a223017d26f26a0dd6f7c42f552"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>owning_view</b> (R &amp;&amp;t)</td></tr>
+<tr class="separator:a70b73a223017d26f26a0dd6f7c42f552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4a41a69cb08213a9d18ea6070f842b" id="r_afc4a41a69cb08213a9d18ea6070f842b"><td class="memItemLeft" align="right" valign="top"><a id="afc4a41a69cb08213a9d18ea6070f842b" name="afc4a41a69cb08213a9d18ea6070f842b"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>owning_view</b> (<a class="el" href="class_a_z_std_1_1ranges_1_1owning__view.html">owning_view</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:afc4a41a69cb08213a9d18ea6070f842b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032e5460a46dab16600bd1b38633b233" id="r_a032e5460a46dab16600bd1b38633b233"><td class="memItemLeft" align="right" valign="top"><a id="a032e5460a46dab16600bd1b38633b233" name="a032e5460a46dab16600bd1b38633b233"></a>
+constexpr <a class="el" href="class_a_z_std_1_1ranges_1_1owning__view.html">owning_view</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1ranges_1_1owning__view.html">owning_view</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a032e5460a46dab16600bd1b38633b233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56010d6242d366aef555209b505ab833" id="r_a56010d6242d366aef555209b505ab833"><td class="memItemLeft" align="right" valign="top"><a id="a56010d6242d366aef555209b505ab833" name="a56010d6242d366aef555209b505ab833"></a>
+constexpr R &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () &amp;noexcept</td></tr>
+<tr class="separator:a56010d6242d366aef555209b505ab833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7653c058b71ad483d8f1d86572220" id="r_a4ce7653c058b71ad483d8f1d86572220"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7653c058b71ad483d8f1d86572220" name="a4ce7653c058b71ad483d8f1d86572220"></a>
+constexpr const R &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () const &amp;noexcept</td></tr>
+<tr class="separator:a4ce7653c058b71ad483d8f1d86572220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d10dfef311e268de59eb2468671574" id="r_a76d10dfef311e268de59eb2468671574"><td class="memItemLeft" align="right" valign="top"><a id="a76d10dfef311e268de59eb2468671574" name="a76d10dfef311e268de59eb2468671574"></a>
+constexpr R &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () &amp;&amp;noexcept</td></tr>
+<tr class="separator:a76d10dfef311e268de59eb2468671574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3e5dde1db8d8a742281d3a2ca18c72" id="r_a5c3e5dde1db8d8a742281d3a2ca18c72"><td class="memItemLeft" align="right" valign="top"><a id="a5c3e5dde1db8d8a742281d3a2ca18c72" name="a5c3e5dde1db8d8a742281d3a2ca18c72"></a>
+constexpr const R &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () const &amp;&amp;noexcept</td></tr>
+<tr class="separator:a5c3e5dde1db8d8a742281d3a2ca18c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b677fbbee4d3de991f25bb5d39a033" id="r_ab3b677fbbee4d3de991f25bb5d39a033"><td class="memItemLeft" align="right" valign="top"><a id="ab3b677fbbee4d3de991f25bb5d39a033" name="ab3b677fbbee4d3de991f25bb5d39a033"></a>
+constexpr iterator_t&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:ab3b677fbbee4d3de991f25bb5d39a033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8a5fcb5cd3771ca69961b560ce9f12" id="r_a2b8a5fcb5cd3771ca69961b560ce9f12"><td class="memItemLeft" align="right" valign="top"><a id="a2b8a5fcb5cd3771ca69961b560ce9f12" name="a2b8a5fcb5cd3771ca69961b560ce9f12"></a>
+constexpr sentinel_t&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a2b8a5fcb5cd3771ca69961b560ce9f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6176c14941f073575c082abd8f44966a" id="r_a6176c14941f073575c082abd8f44966a"><td class="memTemplParams" colspan="2"><a id="a6176c14941f073575c082abd8f44966a" name="a6176c14941f073575c082abd8f44966a"></a>
+template&lt;class Rn  = R&gt; <br />
+requires range&lt;const R&gt;</td></tr>
+<tr class="memitem:a6176c14941f073575c082abd8f44966a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>begin</b> () const -&gt; decltype(ranges::begin(declval&lt; Rn &gt;()))</td></tr>
+<tr class="separator:a6176c14941f073575c082abd8f44966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03644b76b4ce6d6fef6b7026a0f3c81a" id="r_a03644b76b4ce6d6fef6b7026a0f3c81a"><td class="memTemplParams" colspan="2"><a id="a03644b76b4ce6d6fef6b7026a0f3c81a" name="a03644b76b4ce6d6fef6b7026a0f3c81a"></a>
+template&lt;class Rn  = R&gt; <br />
+requires range&lt;const R&gt;</td></tr>
+<tr class="memitem:a03644b76b4ce6d6fef6b7026a0f3c81a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>end</b> () const -&gt; decltype(ranges::end(declval&lt; Rn &gt;()))</td></tr>
+<tr class="separator:a03644b76b4ce6d6fef6b7026a0f3c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69f51320ce66face4b76620f4817213" id="r_ab69f51320ce66face4b76620f4817213"><td class="memTemplParams" colspan="2"><a id="ab69f51320ce66face4b76620f4817213" name="ab69f51320ce66face4b76620f4817213"></a>
+template&lt;class Rn  = R&gt; <br />
+requires requires { ranges::empty(declval&lt;Rn&gt;()); }</td></tr>
+<tr class="memitem:ab69f51320ce66face4b76620f4817213"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>empty</b> ()</td></tr>
+<tr class="separator:ab69f51320ce66face4b76620f4817213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6981efcc2ad7e38c64e31376a90a7cef" id="r_a6981efcc2ad7e38c64e31376a90a7cef"><td class="memTemplParams" colspan="2"><a id="a6981efcc2ad7e38c64e31376a90a7cef" name="a6981efcc2ad7e38c64e31376a90a7cef"></a>
+template&lt;class Rn  = R&gt; <br />
+requires requires { ranges::empty(declval&lt;Rn&gt;()); }</td></tr>
+<tr class="memitem:a6981efcc2ad7e38c64e31376a90a7cef"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:a6981efcc2ad7e38c64e31376a90a7cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6672ae4b6d0dcde893539aac37634f80" id="r_a6672ae4b6d0dcde893539aac37634f80"><td class="memTemplParams" colspan="2"><a id="a6672ae4b6d0dcde893539aac37634f80" name="a6672ae4b6d0dcde893539aac37634f80"></a>
+template&lt;class Rn  = R&gt; <br />
+requires sized_range&lt;R&gt;</td></tr>
+<tr class="memitem:a6672ae4b6d0dcde893539aac37634f80"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () -&gt; decltype(ranges::size(declval&lt; Rn &gt;()))</td></tr>
+<tr class="separator:a6672ae4b6d0dcde893539aac37634f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248692404bc6b9136e1fecff70778340" id="r_a248692404bc6b9136e1fecff70778340"><td class="memTemplParams" colspan="2"><a id="a248692404bc6b9136e1fecff70778340" name="a248692404bc6b9136e1fecff70778340"></a>
+template&lt;class Rn  = R&gt; <br />
+requires sized_range&lt;const R&gt;</td></tr>
+<tr class="memitem:a248692404bc6b9136e1fecff70778340"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const -&gt; decltype(ranges::size(declval&lt; Rn &gt;()))</td></tr>
+<tr class="separator:a248692404bc6b9136e1fecff70778340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9b71a0da1201d805e92235e01b02fc" id="r_a1b9b71a0da1201d805e92235e01b02fc"><td class="memTemplParams" colspan="2"><a id="a1b9b71a0da1201d805e92235e01b02fc" name="a1b9b71a0da1201d805e92235e01b02fc"></a>
+template&lt;class Rn  = R&gt; <br />
+requires contiguous_range&lt;R&gt;</td></tr>
+<tr class="memitem:a1b9b71a0da1201d805e92235e01b02fc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () -&gt; decltype(ranges::data(declval&lt; Rn &gt;()))</td></tr>
+<tr class="separator:a1b9b71a0da1201d805e92235e01b02fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd4bc1f17bda8880f8ae704d8df176a" id="r_a4dd4bc1f17bda8880f8ae704d8df176a"><td class="memTemplParams" colspan="2"><a id="a4dd4bc1f17bda8880f8ae704d8df176a" name="a4dd4bc1f17bda8880f8ae704d8df176a"></a>
+template&lt;class Rn  = R&gt; <br />
+requires contiguous_range&lt;const R&gt;</td></tr>
+<tr class="memitem:a4dd4bc1f17bda8880f8ae704d8df176a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () const -&gt; decltype(ranges::data(declval&lt; Rn &gt;()))</td></tr>
+<tr class="separator:a4dd4bc1f17bda8880f8ae704d8df176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/<b>owning_view.h</b></li>
 </ul>
@@ -63,7 +139,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1owning__vie
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ranges_1_1owning__view.html">owning_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

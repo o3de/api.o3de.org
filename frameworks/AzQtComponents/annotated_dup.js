@@ -10,7 +10,7 @@ var annotated_dup =
         [ "GroupGuard", "class_az_qt_components_1_1_config_helpers_1_1_group_guard.html", null ]
       ] ],
       [ "internal", null, [
-        [ "SpinBoxLineEdit", "class_az_qt_components_1_1internal_1_1_spin_box_line_edit.html", null ]
+        [ "SpinBoxLineEdit", "class_az_qt_components_1_1internal_1_1_spin_box_line_edit.html", "class_az_qt_components_1_1internal_1_1_spin_box_line_edit" ]
       ] ],
       [ "AssetFolderListView", "class_az_qt_components_1_1_asset_folder_list_view.html", null ],
       [ "AssetFolderTableView", "class_az_qt_components_1_1_asset_folder_table_view.html", null ],
@@ -68,7 +68,6 @@ var annotated_dup =
       [ "FilterTextButton", "class_az_qt_components_1_1_filter_text_button.html", null ],
       [ "FixedWidthMessageBox", "class_az_qt_components_1_1_fixed_width_message_box.html", null ],
       [ "GammaEdit", "class_az_qt_components_1_1_gamma_edit.html", null ],
-      [ "GlobalEventFilter", "class_az_qt_components_1_1_global_event_filter.html", null ],
       [ "GradientSlider", "class_az_qt_components_1_1_gradient_slider.html", null ],
       [ "HelpButton", "class_az_qt_components_1_1_help_button.html", null ],
       [ "HSLSliders", "class_az_qt_components_1_1_h_s_l_sliders.html", null ],
@@ -79,6 +78,7 @@ var annotated_dup =
       [ "InteractiveWindowMover", "class_az_qt_components_1_1_interactive_window_mover.html", null ],
       [ "InteractiveWindowResizer", "class_az_qt_components_1_1_interactive_window_resizer.html", null ],
       [ "LineEdit", "class_az_qt_components_1_1_line_edit.html", "class_az_qt_components_1_1_line_edit" ],
+      [ "LineEditRevertHandler", "class_az_qt_components_1_1_line_edit_revert_handler.html", "class_az_qt_components_1_1_line_edit_revert_handler" ],
       [ "LogicalTabOrderingWidget", "class_az_qt_components_1_1_logical_tab_ordering_widget.html", null ],
       [ "MappedPoint", "struct_az_qt_components_1_1_mapped_point.html", null ],
       [ "Menu", "class_az_qt_components_1_1_menu.html", "class_az_qt_components_1_1_menu" ],
@@ -96,7 +96,6 @@ var annotated_dup =
       [ "PushButton", "class_az_qt_components_1_1_push_button.html", "class_az_qt_components_1_1_push_button" ],
       [ "QuickPaletteCard", "class_az_qt_components_1_1_quick_palette_card.html", null ],
       [ "RadioButton", "class_az_qt_components_1_1_radio_button.html", "class_az_qt_components_1_1_radio_button" ],
-      [ "RepolishMinimizer", "class_az_qt_components_1_1_repolish_minimizer.html", null ],
       [ "RGBALowRangeValidator", "class_az_qt_components_1_1_r_g_b_a_low_range_validator.html", "class_az_qt_components_1_1_r_g_b_a_low_range_validator" ],
       [ "RGBColorValidator", "class_az_qt_components_1_1_r_g_b_color_validator.html", "class_az_qt_components_1_1_r_g_b_color_validator" ],
       [ "RGBSliders", "class_az_qt_components_1_1_r_g_b_sliders.html", null ],
@@ -123,7 +122,7 @@ var annotated_dup =
       [ "StyledDetailsTableModel", "class_az_qt_components_1_1_styled_details_table_model.html", "class_az_qt_components_1_1_styled_details_table_model" ],
       [ "StyledDetailsTableView", "class_az_qt_components_1_1_styled_details_table_view.html", null ],
       [ "StyledDialog", "class_az_qt_components_1_1_styled_dialog.html", null ],
-      [ "StyledDockWidget", "class_az_qt_components_1_1_styled_dock_widget.html", "class_az_qt_components_1_1_styled_dock_widget" ],
+      [ "StyledDockWidget", "class_az_qt_components_1_1_styled_dock_widget.html", null ],
       [ "StyledDoubleSpinBox", "class_az_qt_components_1_1_styled_double_spin_box.html", null ],
       [ "StyledLineEdit", "class_az_qt_components_1_1_styled_line_edit.html", null ],
       [ "StyledSliderPrivate", "class_az_qt_components_1_1_styled_slider_private.html", null ],
@@ -146,9 +145,6 @@ var annotated_dup =
       [ "TagWidgetContainer", "class_az_qt_components_1_1_tag_widget_container.html", null ],
       [ "Text", "class_az_qt_components_1_1_text.html", "class_az_qt_components_1_1_text" ],
       [ "TitleBar", "class_az_qt_components_1_1_title_bar.html", "class_az_qt_components_1_1_title_bar" ],
-      [ "TitleBarOverdrawHandler", "class_az_qt_components_1_1_title_bar_overdraw_handler.html", null ],
-      [ "TitleBarOverdrawHandlerWindows", "class_az_qt_components_1_1_title_bar_overdraw_handler_windows.html", null ],
-      [ "TitleBarOverdrawScreenHandler", "class_az_qt_components_1_1_title_bar_overdraw_screen_handler.html", null ],
       [ "ToastConfiguration", "class_az_qt_components_1_1_toast_configuration.html", null ],
       [ "ToastNotification", "class_az_qt_components_1_1_toast_notification.html", null ],
       [ "ToolBar", "class_az_qt_components_1_1_tool_bar.html", "class_az_qt_components_1_1_tool_bar" ],

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,7 +67,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_i_o_1_1_compressor_z_std
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac175ecb8f4b6889e42aa26335adb7213" id="r_ac175ecb8f4b6889e42aa26335adb7213"><td class="memItemLeft" align="right" valign="top"><a id="ac175ecb8f4b6889e42aa26335adb7213" name="ac175ecb8f4b6889e42aa26335adb7213"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SeekPointArray</b> = <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_compressor_z_std_seek_point.html">CompressorZStdSeekPoint</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SeekPointArray</b> = <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_compressor_z_std_seek_point.html">CompressorZStdSeekPoint</a> &gt;</td></tr>
 <tr class="separator:ac175ecb8f4b6889e42aa26335adb7213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -76,7 +76,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std_data.html">CompressorZStdData</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">AZ::SystemAllocator</a>)</td></tr>
 <tr class="separator:ab7ff24dd7a60bc8d78187a494df0d700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ceb491ff27164d37e64f3118f50fe18" id="r_a9ceb491ff27164d37e64f3118f50fe18"><td class="memItemLeft" align="right" valign="top"><a id="a9ceb491ff27164d37e64f3118f50fe18" name="a9ceb491ff27164d37e64f3118f50fe18"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CompressorZStdData</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *<a class="el" href="class_a_z_1_1_e_bus.html">zstdMemAllocator</a>=0)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CompressorZStdData</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *zstdMemAllocator=0)</td></tr>
 <tr class="separator:a9ceb491ff27164d37e64f3118f50fe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -85,19 +85,19 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_a_z_1_1_z_std.html">ZStd</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_zstd</b></td></tr>
 <tr class="separator:af7aaa11b053936ef4367274d9df4fa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cff3db18679a900b761d44f7f78fd6f" id="r_a7cff3db18679a900b761d44f7f78fd6f"><td class="memItemLeft" align="right" valign="top"><a id="a7cff3db18679a900b761d44f7f78fd6f" name="a7cff3db18679a900b761d44f7f78fd6f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">AZ::u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressNextOffset</b> {}</td></tr>
+AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressNextOffset</b> {}</td></tr>
 <tr class="memdesc:a7cff3db18679a900b761d44f7f78fd6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next offset in the compressed stream for decompressing. <br /></td></tr>
 <tr class="separator:a7cff3db18679a900b761d44f7f78fd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a254cb022df54455f036f65074e754bbb" id="r_a254cb022df54455f036f65074e754bbb"><td class="memItemLeft" align="right" valign="top"><a id="a254cb022df54455f036f65074e754bbb" name="a254cb022df54455f036f65074e754bbb"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">AZ::u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressLastOffset</b> {}</td></tr>
+AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressLastOffset</b> {}</td></tr>
 <tr class="memdesc:a254cb022df54455f036f65074e754bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last valid offset in the compressed stream of the compressed data. Used only when we decompress. <br /></td></tr>
 <tr class="separator:a254cb022df54455f036f65074e754bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f7cf454be62decedca49072c76938c" id="r_a53f7cf454be62decedca49072c76938c"><td class="memItemLeft" align="right" valign="top"><a id="a53f7cf454be62decedca49072c76938c" name="a53f7cf454be62decedca49072c76938c"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressedCache</b> {}</td></tr>
+unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressedCache</b> {}</td></tr>
 <tr class="memdesc:a53f7cf454be62decedca49072c76938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompressed stream cache. <br /></td></tr>
 <tr class="separator:a53f7cf454be62decedca49072c76938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a505441fb65b9ac1584c8ff2ce2e1e4b3" id="r_a505441fb65b9ac1584c8ff2ce2e1e4b3"><td class="memItemLeft" align="right" valign="top"><a id="a505441fb65b9ac1584c8ff2ce2e1e4b3" name="a505441fb65b9ac1584c8ff2ce2e1e4b3"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressedCacheDataSize</b> {}</td></tr>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressedCacheDataSize</b> {}</td></tr>
 <tr class="memdesc:a505441fb65b9ac1584c8ff2ce2e1e4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of valid bytes in the decompressed cache. <br /></td></tr>
 <tr class="separator:a505441fb65b9ac1584c8ff2ce2e1e4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b408ec981dcb56b6a66976e650c06d3" id="r_a5b408ec981dcb56b6a66976e650c06d3"><td class="memItemLeft" align="right" valign="top"><a id="a5b408ec981dcb56b6a66976e650c06d3" name="a5b408ec981dcb56b6a66976e650c06d3"></a>
@@ -108,11 +108,11 @@ Public Attributes</h2></td></tr>
 union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb447d4c064d3637fe3337a280766e8" id="r_aedb447d4c064d3637fe3337a280766e8"><td class="memItemLeft" >
-&#160;&#160;&#160;<a class="el" href="class_a_z_1_1_e_bus.html">AZ::u64</a>&#160;&#160;&#160;<b>m_decompressedCacheOffset</b> {}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+&#160;&#160;&#160;AZ::u64&#160;&#160;&#160;<b>m_decompressedCacheOffset</b> {}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memdesc:aedb447d4c064d3637fe3337a280766e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when decompressing. Decompressed cache is the data offset in the uncompressed data stream. <br /></td></tr>
 <tr class="separator:aedb447d4c064d3637fe3337a280766e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8853b2ad30ed740288aa341003f6d694" id="r_a8853b2ad30ed740288aa341003f6d694"><td class="memItemLeft" >
-&#160;&#160;&#160;<a class="el" href="class_a_z_1_1_e_bus.html">AZ::u64</a>&#160;&#160;&#160;<b>m_autoSeekSize</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+&#160;&#160;&#160;AZ::u64&#160;&#160;&#160;<b>m_autoSeekSize</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memdesc:a8853b2ad30ed740288aa341003f6d694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when compressing to define auto seek point window. <br /></td></tr>
 <tr class="separator:a8853b2ad30ed740288aa341003f6d694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8e27ef00b2f5dd31eace89945da66f" id="r_a9f8e27ef00b2f5dd31eace89945da66f"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
@@ -126,7 +126,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html">Compressor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_compressor</b></td></tr>
 <tr class="separator:a16d8511d5bc304b22aad75d4e7d34b86 inherit pub_attribs_class_a_z_1_1_i_o_1_1_compressor_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c445d262d15b578b39c5da14c4b6448 inherit pub_attribs_class_a_z_1_1_i_o_1_1_compressor_data" id="r_a8c445d262d15b578b39c5da14c4b6448"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_a_z_1_1_e_bus.html">AZ::u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_uncompressedSize</b></td></tr>
+AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uncompressedSize</b></td></tr>
 <tr class="separator:a8c445d262d15b578b39c5da14c4b6448 inherit pub_attribs_class_a_z_1_1_i_o_1_1_compressor_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -140,7 +140,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std_data.html">CompressorZStdData</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

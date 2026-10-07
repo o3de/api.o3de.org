@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,7 +59,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1single__vie
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits enable_if_t&lt; move_constructible&lt; T &gt; &amp;&amp;is_object_v&lt; T &gt;, view_interface&lt; single_view&lt; T &gt; &gt; &gt;.</p>
+<p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; single_view&lt; T &gt; &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -69,10 +69,11 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>single_view</b> 
 <tr class="memitem:a8abe65e435dccb9bf1d2b31064f30d44" id="r_a8abe65e435dccb9bf1d2b31064f30d44"><td class="memItemLeft" align="right" valign="top"><a id="a8abe65e435dccb9bf1d2b31064f30d44" name="a8abe65e435dccb9bf1d2b31064f30d44"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>single_view</b> (T &amp;&amp;t)</td></tr>
 <tr class="separator:a8abe65e435dccb9bf1d2b31064f30d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3114a8b9dd936258e9a687e56b266801" id="r_a3114a8b9dd936258e9a687e56b266801"><td class="memTemplParams" colspan="2"><a id="a3114a8b9dd936258e9a687e56b266801" name="a3114a8b9dd936258e9a687e56b266801"></a>
-template&lt;class... Args, enable_if_t&lt; constructible_from&lt; T, Args... &gt; &gt; *  = nullptr&gt; </td></tr>
-<tr class="memitem:a3114a8b9dd936258e9a687e56b266801"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>single_view</b> (in_place_t, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a3114a8b9dd936258e9a687e56b266801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400a2d58cfeca469022bb2d1e5e9d06c" id="r_a400a2d58cfeca469022bb2d1e5e9d06c"><td class="memTemplParams" colspan="2"><a id="a400a2d58cfeca469022bb2d1e5e9d06c" name="a400a2d58cfeca469022bb2d1e5e9d06c"></a>
+template&lt;class... Args&gt; <br />
+requires constructible_from&lt;T, Args...&gt;</td></tr>
+<tr class="memitem:a400a2d58cfeca469022bb2d1e5e9d06c"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>single_view</b> (in_place_t, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a400a2d58cfeca469022bb2d1e5e9d06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7ec2148be58f1c02fffd73000606e5" id="r_a0e7ec2148be58f1c02fffd73000606e5"><td class="memItemLeft" align="right" valign="top"><a id="a0e7ec2148be58f1c02fffd73000606e5" name="a0e7ec2148be58f1c02fffd73000606e5"></a>
 constexpr T *&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () noexcept</td></tr>
 <tr class="separator:a0e7ec2148be58f1c02fffd73000606e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +108,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>si
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ranges_1_1single__view.html">single_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

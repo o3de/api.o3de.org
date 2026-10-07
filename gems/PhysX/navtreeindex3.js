@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html":[1,0,1,7,0,0],
+"struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html#a58353222278fd58bf2ecffb8dd396721":[1,0,1,7,0,0,0],
 "struct_phys_x_1_1_utils_1_1_prefab_info.html":[1,0,1,7,2],
 "struct_phys_x_debug_1_1_color_mappings.html":[1,0,2,0],
 "struct_phys_x_debug_1_1_culling.html":[1,0,2,1],

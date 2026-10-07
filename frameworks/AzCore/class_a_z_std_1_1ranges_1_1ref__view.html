@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Open 3D Engine AzCore API Reference: AZStd::ranges::ref_view&lt; R, class &gt; Class Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZStd::ranges::ref_view&lt; R &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -51,9 +51,47 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1ref__view.h
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="headertitle"><div class="title">AZStd::ranges::ref_view&lt; R, class &gt; Class Template Reference</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_a_z_std_1_1ranges_1_1ref__view-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">AZStd::ranges::ref_view&lt; R &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; ref_view&lt; R &gt; &gt;</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a12dd6def41bce5f339364ee37d5ae5d7" id="r_a12dd6def41bce5f339364ee37d5ae5d7"><td class="memTemplParams" colspan="2"><a id="a12dd6def41bce5f339364ee37d5ae5d7" name="a12dd6def41bce5f339364ee37d5ae5d7"></a>
+template&lt;Internal::different_from&lt; <a class="el" href="class_a_z_std_1_1ranges_1_1ref__view.html">ref_view</a> &gt; T&gt; <br />
+requires convertible_to&lt;T, R&amp;&gt; &amp;&amp; requires { bindable_to_range(declval&lt;T&gt;()); }</td></tr>
+<tr class="memitem:a12dd6def41bce5f339364ee37d5ae5d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ref_view</b> (T &amp;&amp;t)</td></tr>
+<tr class="separator:a12dd6def41bce5f339364ee37d5ae5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8957d3533cf1b5eaa3d18711ab1eca" id="r_a0f8957d3533cf1b5eaa3d18711ab1eca"><td class="memItemLeft" align="right" valign="top"><a id="a0f8957d3533cf1b5eaa3d18711ab1eca" name="a0f8957d3533cf1b5eaa3d18711ab1eca"></a>
+constexpr R &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () const</td></tr>
+<tr class="separator:a0f8957d3533cf1b5eaa3d18711ab1eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76923916226831bd1bd86a8d3dff8678" id="r_a76923916226831bd1bd86a8d3dff8678"><td class="memItemLeft" align="right" valign="top"><a id="a76923916226831bd1bd86a8d3dff8678" name="a76923916226831bd1bd86a8d3dff8678"></a>
+constexpr iterator_t&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:a76923916226831bd1bd86a8d3dff8678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4054f107b8d387b5ff0548054ec27d3" id="r_ae4054f107b8d387b5ff0548054ec27d3"><td class="memItemLeft" align="right" valign="top"><a id="ae4054f107b8d387b5ff0548054ec27d3" name="ae4054f107b8d387b5ff0548054ec27d3"></a>
+constexpr sentinel_t&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:ae4054f107b8d387b5ff0548054ec27d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5984bd9f8aab4e8a0c76ac8b422410e" id="r_ac5984bd9f8aab4e8a0c76ac8b422410e"><td class="memTemplParams" colspan="2"><a id="ac5984bd9f8aab4e8a0c76ac8b422410e" name="ac5984bd9f8aab4e8a0c76ac8b422410e"></a>
+template&lt;class Rn  = R&gt; <br />
+requires requires { ranges::empty(*declval&lt;Rn*&gt;()); }</td></tr>
+<tr class="memitem:ac5984bd9f8aab4e8a0c76ac8b422410e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:ac5984bd9f8aab4e8a0c76ac8b422410e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771a82b3bab23d6b7a434aac363fdd31" id="r_a771a82b3bab23d6b7a434aac363fdd31"><td class="memTemplParams" colspan="2"><a id="a771a82b3bab23d6b7a434aac363fdd31" name="a771a82b3bab23d6b7a434aac363fdd31"></a>
+template&lt;class Rn  = R&gt; <br />
+requires sized_range&lt;R&gt;</td></tr>
+<tr class="memitem:a771a82b3bab23d6b7a434aac363fdd31"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const -&gt; decltype(ranges::size(*declval&lt; Rn * &gt;()))</td></tr>
+<tr class="separator:a771a82b3bab23d6b7a434aac363fdd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dc625a35cfe1db2bf920041433a2b5" id="r_a71dc625a35cfe1db2bf920041433a2b5"><td class="memTemplParams" colspan="2"><a id="a71dc625a35cfe1db2bf920041433a2b5" name="a71dc625a35cfe1db2bf920041433a2b5"></a>
+template&lt;class Rn  = R&gt; <br />
+requires contiguous_range&lt;R&gt;</td></tr>
+<tr class="memitem:a71dc625a35cfe1db2bf920041433a2b5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>data</b> () const -&gt; decltype(ranges::data(*declval&lt; Rn * &gt;()))</td></tr>
+<tr class="separator:a71dc625a35cfe1db2bf920041433a2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/<b>ref_view.h</b></li>
 </ul>
@@ -63,7 +101,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1ref__view.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ranges_1_1ref__view.html">ref_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

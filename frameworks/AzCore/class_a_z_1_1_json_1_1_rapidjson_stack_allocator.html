@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,22 +65,22 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_json_1_1_rapidjson_stack
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af184342ce3bc78610820ef5465f16f9b" id="r_af184342ce3bc78610820ef5465f16f9b"><td class="memItemLeft" align="right" valign="top"><a id="af184342ce3bc78610820ef5465f16f9b" name="af184342ce3bc78610820ef5465f16f9b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Malloc</b> (size_t size)</td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>Malloc</b> (size_t size)</td></tr>
 <tr class="separator:af184342ce3bc78610820ef5465f16f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a970cb7075c4f10fd6e8eb4cf953f87e9" id="r_a970cb7075c4f10fd6e8eb4cf953f87e9"><td class="memItemLeft" align="right" valign="top"><a id="a970cb7075c4f10fd6e8eb4cf953f87e9" name="a970cb7075c4f10fd6e8eb4cf953f87e9"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Realloc</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">ptr</a>, size_t <a class="el" href="class_a_z_1_1_e_bus.html">originalSize</a>, size_t newSize)</td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>Realloc</b> (void *ptr, size_t originalSize, size_t newSize)</td></tr>
 <tr class="separator:a970cb7075c4f10fd6e8eb4cf953f87e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d97eddea4d84fa9b39caa7610ec2e9b" id="r_a2d97eddea4d84fa9b39caa7610ec2e9b"><td class="memItemLeft" align="right" valign="top"><a id="a2d97eddea4d84fa9b39caa7610ec2e9b" name="a2d97eddea4d84fa9b39caa7610ec2e9b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Free</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Free</b> (void *)</td></tr>
 <tr class="separator:a2d97eddea4d84fa9b39caa7610ec2e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a84f8662f42082372ea2fc63a2a6feb55" id="r_a84f8662f42082372ea2fc63a2a6feb55"><td class="memItemLeft" align="right" valign="top"><a id="a84f8662f42082372ea2fc63a2a6feb55" name="a84f8662f42082372ea2fc63a2a6feb55"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kNeedFree</b> = <a class="el" href="class_a_z_1_1_e_bus.html">false</a></td></tr>
+static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>kNeedFree</b> = false</td></tr>
 <tr class="memdesc:a84f8662f42082372ea2fc63a2a6feb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack allocator doesn't support freeing allocated memory at all. <br /></td></tr>
 <tr class="separator:a84f8662f42082372ea2fc63a2a6feb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -96,7 +96,7 @@ class AZ::Json::RapidjsonStackAllocator&lt; SizeN, AlignN &gt;</div><p>Allocator
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Json</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_json_1_1_rapidjson_stack_allocator.html">RapidjsonStackAllocator</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

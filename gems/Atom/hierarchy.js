@@ -478,6 +478,9 @@ var hierarchy =
       [ "AtomToolsFramework::AtomToolsFrameworkModule", "class_atom_tools_framework_1_1_atom_tools_framework_module.html", null ]
     ] ],
     [ "AZ::Render::AcesParameterOverrides", "struct_a_z_1_1_render_1_1_aces_parameter_overrides.html", null ],
+    [ "AZ::Render::AoSettingsInterface", "class_a_z_1_1_render_1_1_ao_settings_interface.html", [
+      [ "AZ::Render::AoSettings", "class_a_z_1_1_render_1_1_ao_settings.html", null ]
+    ] ],
     [ "AZ::Render::AsyncLoadTracker< FeatureProcessorHandle >", "class_a_z_1_1_render_1_1_async_load_tracker.html", null ],
     [ "AZ::Render::AuxGeomBufferData", "struct_a_z_1_1_render_1_1_aux_geom_buffer_data.html", null ],
     [ "AZ::Render::AuxGeomDynamicVertex", "struct_a_z_1_1_render_1_1_aux_geom_dynamic_vertex.html", null ],
@@ -499,6 +502,8 @@ var hierarchy =
     ] ],
     [ "AZ::Render::CustomMaterialInfo", "struct_a_z_1_1_render_1_1_custom_material_info.html", null ],
     [ "AZ::Render::DecalData", "struct_a_z_1_1_render_1_1_decal_data.html", null ],
+    [ "AZ::Render::DecalTextureArray::PackingLayout", "struct_a_z_1_1_render_1_1_decal_texture_array_1_1_packing_layout.html", null ],
+    [ "AZ::Render::DecalTextureArray::PackingLayout::MapLayout", "struct_a_z_1_1_render_1_1_decal_texture_array_1_1_packing_layout_1_1_map_layout.html", null ],
     [ "AZ::Render::DeferredDrawPacketManager", "class_a_z_1_1_render_1_1_deferred_draw_packet_manager.html", null ],
     [ "AZ::Render::DeferredFogSettingsInterface", "class_a_z_1_1_render_1_1_deferred_fog_settings_interface.html", [
       [ "AZ::Render::DeferredFogSettings", "class_a_z_1_1_render_1_1_deferred_fog_settings.html", null ]
@@ -612,6 +617,7 @@ var hierarchy =
     [ "AZ::Render::PointLightData", "struct_a_z_1_1_render_1_1_point_light_data.html", null ],
     [ "AZ::Render::PolygonLightData", "struct_a_z_1_1_render_1_1_polygon_light_data.html", null ],
     [ "AZ::Render::PostProcessBase", "class_a_z_1_1_render_1_1_post_process_base.html", [
+      [ "AZ::Render::AoSettings", "class_a_z_1_1_render_1_1_ao_settings.html", null ],
       [ "AZ::Render::BloomSettings", "class_a_z_1_1_render_1_1_bloom_settings.html", null ],
       [ "AZ::Render::ChromaticAberrationSettings", "class_a_z_1_1_render_1_1_chromatic_aberration_settings.html", null ],
       [ "AZ::Render::DeferredFogSettings", "class_a_z_1_1_render_1_1_deferred_fog_settings.html", null ],
@@ -623,14 +629,15 @@ var hierarchy =
       [ "AZ::Render::MotionBlurSettings", "class_a_z_1_1_render_1_1_motion_blur_settings.html", null ],
       [ "AZ::Render::PaniniProjectionSettings", "class_a_z_1_1_render_1_1_panini_projection_settings.html", null ],
       [ "AZ::Render::PostProcessSettings", "class_a_z_1_1_render_1_1_post_process_settings.html", null ],
-      [ "AZ::Render::SsaoSettings", "class_a_z_1_1_render_1_1_ssao_settings.html", null ],
       [ "AZ::Render::VignetteSettings", "class_a_z_1_1_render_1_1_vignette_settings.html", null ],
       [ "AZ::Render::WhiteBalanceSettings", "class_a_z_1_1_render_1_1_white_balance_settings.html", null ]
     ] ],
     [ "AZ::Render::PostProcessingShaderOptionBase", "class_a_z_1_1_render_1_1_post_processing_shader_option_base.html", [
       [ "AZ::Render::DepthOfFieldBokehBlurPass", "class_a_z_1_1_render_1_1_depth_of_field_bokeh_blur_pass.html", null ],
       [ "AZ::Render::DepthOfFieldCompositePass", "class_a_z_1_1_render_1_1_depth_of_field_composite_pass.html", null ],
+      [ "AZ::Render::GtaoComputePass", "class_a_z_1_1_render_1_1_gtao_compute_pass.html", null ],
       [ "AZ::Render::LookModificationCompositePass", "class_a_z_1_1_render_1_1_look_modification_composite_pass.html", null ],
+      [ "AZ::Render::MotionBlurPass", "class_a_z_1_1_render_1_1_motion_blur_pass.html", null ],
       [ "AZ::Render::OutputTransformPass", "class_a_z_1_1_render_1_1_output_transform_pass.html", null ]
     ] ],
     [ "AZ::Render::PostProcessSettingsInterface", "class_a_z_1_1_render_1_1_post_process_settings_interface.html", [
@@ -687,9 +694,6 @@ var hierarchy =
       [ "AZ::Render::SpotLightUtils::special_", "struct_a_z_1_1_render_1_1_spot_light_utils_1_1special__.html", null ]
     ] ],
     [ "AZ::Render::SpotLightUtils::int_< typename >", "struct_a_z_1_1_render_1_1_spot_light_utils_1_1int__.html", null ],
-    [ "AZ::Render::SsaoSettingsInterface", "class_a_z_1_1_render_1_1_ssao_settings_interface.html", [
-      [ "AZ::Render::SsaoSettings", "class_a_z_1_1_render_1_1_ssao_settings.html", null ]
-    ] ],
     [ "AZ::Render::SSROptions", "struct_a_z_1_1_render_1_1_s_s_r_options.html", null ],
     [ "AZ::Render::StreamBufferViewsBuilderInterface", "class_a_z_1_1_render_1_1_stream_buffer_views_builder_interface.html", [
       [ "AZ::Render::ShaderStreamBufferViewsBuilder", "class_a_z_1_1_render_1_1_shader_stream_buffer_views_builder.html", null ]
@@ -1380,6 +1384,7 @@ var hierarchy =
           [ "AZ::Render::FastDepthAwareBlurHorPass", "class_a_z_1_1_render_1_1_fast_depth_aware_blur_hor_pass.html", null ],
           [ "AZ::Render::FastDepthAwareBlurVerPass", "class_a_z_1_1_render_1_1_fast_depth_aware_blur_ver_pass.html", null ],
           [ "AZ::Render::FilmGrainPass", "class_a_z_1_1_render_1_1_film_grain_pass.html", null ],
+          [ "AZ::Render::GtaoComputePass", "class_a_z_1_1_render_1_1_gtao_compute_pass.html", null ],
           [ "AZ::Render::LightCullingPass", "class_a_z_1_1_render_1_1_light_culling_pass.html", null ],
           [ "AZ::Render::LightCullingRemap", "class_a_z_1_1_render_1_1_light_culling_remap.html", null ],
           [ "AZ::Render::LightCullingTilePreparePass", "class_a_z_1_1_render_1_1_light_culling_tile_prepare_pass.html", null ],
@@ -1949,6 +1954,9 @@ var hierarchy =
       [ "AZ::RPI::AssetHandler< AnyAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::AnyAssetHandler", "class_a_z_1_1_r_p_i_1_1_any_asset_handler.html", null ]
       ] ],
+      [ "AZ::RPI::AssetHandler< BufferAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
+        [ "AZ::RPI::BufferAssetHandler", "class_a_z_1_1_r_p_i_1_1_buffer_asset_handler.html", null ]
+      ] ],
       [ "AZ::RPI::AssetHandler< ImageMipChainAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::ImageMipChainAssetHandler", "class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset_handler.html", null ]
       ] ],
@@ -2101,6 +2109,7 @@ var hierarchy =
           [ "AZ::RPI::EnvironmentCubeMapPass", "class_a_z_1_1_r_p_i_1_1_environment_cube_map_pass.html", null ],
           [ "AZ::RPI::RenderToTexturePass", "class_a_z_1_1_r_p_i_1_1_render_to_texture_pass.html", null ],
           [ "AZ::RPI::SwapChainPass", "class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html", null ],
+          [ "AZ::Render::AoParentPass", "class_a_z_1_1_render_1_1_ao_parent_pass.html", null ],
           [ "AZ::Render::BloomBlurPass", "class_a_z_1_1_render_1_1_bloom_blur_pass.html", null ],
           [ "AZ::Render::BloomCompositePass", "class_a_z_1_1_render_1_1_bloom_composite_pass.html", null ],
           [ "AZ::Render::BloomParentPass", "class_a_z_1_1_render_1_1_bloom_parent_pass.html", null ],
@@ -2109,6 +2118,7 @@ var hierarchy =
           [ "AZ::Render::DepthOfFieldReadBackFocusDepthPass", "class_a_z_1_1_render_1_1_depth_of_field_read_back_focus_depth_pass.html", null ],
           [ "AZ::Render::DisplayMapperPass", "class_a_z_1_1_render_1_1_display_mapper_pass.html", null ],
           [ "AZ::Render::EsmShadowmapsPass", "class_a_z_1_1_render_1_1_esm_shadowmaps_pass.html", null ],
+          [ "AZ::Render::GtaoParentPass", "class_a_z_1_1_render_1_1_gtao_parent_pass.html", null ],
           [ "AZ::Render::LookModificationPass", "class_a_z_1_1_render_1_1_look_modification_pass.html", null ],
           [ "AZ::Render::NewDepthOfFieldParentPass", "class_a_z_1_1_render_1_1_new_depth_of_field_parent_pass.html", null ],
           [ "AZ::Render::ProjectedShadowmapsPass", "class_a_z_1_1_render_1_1_projected_shadowmaps_pass.html", null ],
@@ -2246,22 +2256,6 @@ var hierarchy =
     [ "ComponentConfig", null, [
       [ "AZ::Debug::CameraComponentConfig", "class_a_z_1_1_debug_1_1_camera_component_config.html", null ]
     ] ],
-    [ "D3D12MA::ALLOCATION_CALLBACKS", "struct_d3_d12_m_a_1_1_a_l_l_o_c_a_t_i_o_n___c_a_l_l_b_a_c_k_s.html", null ],
-    [ "D3D12MA::ALLOCATION_DESC", "struct_d3_d12_m_a_1_1_a_l_l_o_c_a_t_i_o_n___d_e_s_c.html", null ],
-    [ "D3D12MA::ALLOCATOR_DESC", "struct_d3_d12_m_a_1_1_a_l_l_o_c_a_t_o_r___d_e_s_c.html", null ],
-    [ "D3D12MA::Budget", "struct_d3_d12_m_a_1_1_budget.html", null ],
-    [ "D3D12MA::DEFRAGMENTATION_DESC", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___d_e_s_c.html", null ],
-    [ "D3D12MA::DEFRAGMENTATION_MOVE", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___m_o_v_e.html", null ],
-    [ "D3D12MA::DEFRAGMENTATION_PASS_MOVE_INFO", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___p_a_s_s___m_o_v_e___i_n_f_o.html", null ],
-    [ "D3D12MA::DEFRAGMENTATION_STATS", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___s_t_a_t_s.html", null ],
-    [ "D3D12MA::DetailedStatistics", "struct_d3_d12_m_a_1_1_detailed_statistics.html", null ],
-    [ "D3D12MA::POOL_DESC", "struct_d3_d12_m_a_1_1_p_o_o_l___d_e_s_c.html", null ],
-    [ "D3D12MA::Statistics", "struct_d3_d12_m_a_1_1_statistics.html", null ],
-    [ "D3D12MA::TotalStatistics", "struct_d3_d12_m_a_1_1_total_statistics.html", null ],
-    [ "D3D12MA::VIRTUAL_ALLOCATION_DESC", "struct_d3_d12_m_a_1_1_v_i_r_t_u_a_l___a_l_l_o_c_a_t_i_o_n___d_e_s_c.html", null ],
-    [ "D3D12MA::VIRTUAL_ALLOCATION_INFO", "struct_d3_d12_m_a_1_1_v_i_r_t_u_a_l___a_l_l_o_c_a_t_i_o_n___i_n_f_o.html", null ],
-    [ "D3D12MA::VIRTUAL_BLOCK_DESC", "struct_d3_d12_m_a_1_1_v_i_r_t_u_a_l___b_l_o_c_k___d_e_s_c.html", null ],
-    [ "D3D12MA::VirtualAllocation", "struct_d3_d12_m_a_1_1_virtual_allocation.html", null ],
     [ "Data::AssetBus::Handler", null, [
       [ "AZ::RPI::AssetUtils::AsyncAssetLoader", "class_a_z_1_1_r_p_i_1_1_asset_utils_1_1_async_asset_loader.html", null ],
       [ "AZ::RPI::ImageAttachmentPreviewPass", "class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html", null ],
@@ -2509,7 +2503,7 @@ var hierarchy =
     [ "ImGuiSystemRequestBus::Handler", null, [
       [ "AZ::Render::ImGuiSystemComponent", "class_a_z_1_1_render_1_1_im_gui_system_component.html", null ]
     ] ],
-    [ "AZ::Render::IndexableList< AZStd::pair< AZ::RHI::Size, AZ::Render::DecalTextureArray > >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
+    [ "AZ::Render::IndexableList< AZStd::pair< AZ::Render::DecalTextureArray::PackingLayout, AZ::Render::DecalTextureArray > >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
     [ "AZ::Render::IndexableList< MaterialData >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
     [ "AZ::Render::IndexedDataVector< AZ::Render::DirectionalLightData >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
     [ "AZ::Render::IndexedDataVector< AZ::Render::DirectionalLightFeatureProcessor::ShadowProperty >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
@@ -2529,13 +2523,6 @@ var hierarchy =
     [ "AZ::RHI::interval_map< uint64_t, PipelineAccessFlags >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
     [ "AZ::RHI::interval_map< uint64_t, QueueId >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
     [ "AZ::RHI::interval_map< uint64_t, T >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
-    [ "IUnknownImpl", null, [
-      [ "D3D12MA::Allocation", "class_d3_d12_m_a_1_1_allocation.html", null ],
-      [ "D3D12MA::Allocator", "class_d3_d12_m_a_1_1_allocator.html", null ],
-      [ "D3D12MA::DefragmentationContext", "class_d3_d12_m_a_1_1_defragmentation_context.html", null ],
-      [ "D3D12MA::Pool", "class_d3_d12_m_a_1_1_pool.html", null ],
-      [ "D3D12MA::VirtualBlock", "class_d3_d12_m_a_1_1_virtual_block.html", null ]
-    ] ],
     [ "ImageProcessingAtom::IWindowFunction< double >", "class_image_processing_atom_1_1_i_window_function.html", null ],
     [ "MaskedOcclusionCulling", "class_masked_occlusion_culling.html", [
       [ "MaskedOcclusionCullingPrivate", "class_masked_occlusion_culling_private.html", null ]

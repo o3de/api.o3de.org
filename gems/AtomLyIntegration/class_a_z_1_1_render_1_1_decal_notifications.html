@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -75,6 +75,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27fe8d93d68662bc323296b351066fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6117e9b3bbd025531327b6452afd6aa5" id="r_a6117e9b3bbd025531327b6452afd6aa5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_notifications.html#a6117e9b3bbd025531327b6452afd6aa5">OnNormalMapOpacityChanged</a> (float opacity)</td></tr>
 <tr class="separator:a6117e9b3bbd025531327b6452afd6aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfb6668137cbb08abd1ca48e3c8e9a2" id="r_a1cfb6668137cbb08abd1ca48e3c8e9a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_notifications.html#a1cfb6668137cbb08abd1ca48e3c8e9a2">OnMaxDrawDistanceChanged</a> (float maxDrawDistance)</td></tr>
+<tr class="separator:a1cfb6668137cbb08abd1ca48e3c8e9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac34340d17c4c030df109722c9be08ec" id="r_aac34340d17c4c030df109722c9be08ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_notifications.html#aac34340d17c4c030df109722c9be08ec">OnSortKeyChanged</a> (uint8_t sortKey)</td></tr>
 <tr class="separator:aac34340d17c4c030df109722c9be08ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13f5eb4b2d02e89710b6592cbc11496f" id="r_a13f5eb4b2d02e89710b6592cbc11496f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_notifications.html#a13f5eb4b2d02e89710b6592cbc11496f">OnMaterialChanged</a> (Data::Asset&lt; RPI::MaterialAsset &gt; materialAsset)</td></tr>
@@ -209,6 +211,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1cfb6668137cbb08abd1ca48e3c8e9a2" name="a1cfb6668137cbb08abd1ca48e3c8e9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfb6668137cbb08abd1ca48e3c8e9a2">&#9670;&#160;</a></span>OnMaxDrawDistanceChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::DecalNotifications::OnMaxDrawDistanceChanged </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxDrawDistance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Signals that the max draw distance has changed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxDrawDistance</td><td>Distance from the camera beyond which the decal stops rendering. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6117e9b3bbd025531327b6452afd6aa5" name="a6117e9b3bbd025531327b6452afd6aa5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6117e9b3bbd025531327b6452afd6aa5">&#9670;&#160;</a></span>OnNormalMapOpacityChanged()</h2>
 
@@ -314,7 +348,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_decal_notifications.html">DecalNotifications</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:38 for Open 3D Engine AtomLyIntegration Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:40 for Open 3D Engine AtomLyIntegration Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

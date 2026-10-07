@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -79,7 +79,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa08ff6ed30a2128abbaa45baa8abf62b" id="r_aa08ff6ed30a2128abbaa45baa8abf62b"><td class="memItemLeft" align="right" valign="top"><a id="aa08ff6ed30a2128abbaa45baa8abf62b" name="aa08ff6ed30a2128abbaa45baa8abf62b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">typedef</a> <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">void</a>(<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, size_t, size_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OutOfMemoryCBType</b></td></tr>
+typedef <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *allocator, size_t, size_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OutOfMemoryCBType</b></td></tr>
 <tr class="separator:aa08ff6ed30a2128abbaa45baa8abf62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -87,104 +87,104 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca430e98d09578265bab70342ed75ab2" id="r_aca430e98d09578265bab70342ed75ab2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_allocator_manager_1_1_allocator_lock.html">AllocatorLock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_manager.html#aca430e98d09578265bab70342ed75ab2">LockAllocators</a> ()</td></tr>
 <tr class="separator:aca430e98d09578265bab70342ed75ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d18942f993686692807fe40d8fdccd" id="r_a48d18942f993686692807fe40d8fdccd"><td class="memItemLeft" align="right" valign="top"><a id="a48d18942f993686692807fe40d8fdccd" name="a48d18942f993686692807fe40d8fdccd"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">AZ_FORCE_INLINE</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumAllocators</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+AZ_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumAllocators</b> () const</td></tr>
 <tr class="separator:a48d18942f993686692807fe40d8fdccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2661dbfddfb722c57986da516b2a4ca2" id="r_a2661dbfddfb722c57986da516b2a4ca2"><td class="memItemLeft" align="right" valign="top"><a id="a2661dbfddfb722c57986da516b2a4ca2" name="a2661dbfddfb722c57986da516b2a4ca2"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">AZ_FORCE_INLINE</a> <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocator</b> (<a class="el" href="class_a_z_1_1_e_bus.html">int</a> index)</td></tr>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocator</b> (int index)</td></tr>
 <tr class="separator:a2661dbfddfb722c57986da516b2a4ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7470aeb79adbcec8dd69b269b91dbe36" id="r_a7470aeb79adbcec8dd69b269b91dbe36"><td class="memItemLeft" align="right" valign="top"><a id="a7470aeb79adbcec8dd69b269b91dbe36" name="a7470aeb79adbcec8dd69b269b91dbe36"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GarbageCollect</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GarbageCollect</b> ()</td></tr>
 <tr class="memdesc:a7470aeb79adbcec8dd69b269b91dbe36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls all registered allocators garbage collect function. <br /></td></tr>
 <tr class="separator:a7470aeb79adbcec8dd69b269b91dbe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3566d8b24a95263cda8e01b45f3764" id="r_a1a3566d8b24a95263cda8e01b45f3764"><td class="memItemLeft" align="right" valign="top"><a id="a1a3566d8b24a95263cda8e01b45f3764" name="a1a3566d8b24a95263cda8e01b45f3764"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddOutOfMemoryListener</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1function.html">OutOfMemoryCBType</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">cb</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddOutOfMemoryListener</b> (const <a class="el" href="class_a_z_std_1_1function.html">OutOfMemoryCBType</a> &amp;cb)</td></tr>
 <tr class="memdesc:a1a3566d8b24a95263cda8e01b45f3764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add out of memory listener. True if add was successful, false if listener was already added. <br /></td></tr>
 <tr class="separator:a1a3566d8b24a95263cda8e01b45f3764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4027ba493b359a643102b56f13f0aa05" id="r_a4027ba493b359a643102b56f13f0aa05"><td class="memItemLeft" align="right" valign="top"><a id="a4027ba493b359a643102b56f13f0aa05" name="a4027ba493b359a643102b56f13f0aa05"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveOutOfMemoryListener</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveOutOfMemoryListener</b> ()</td></tr>
 <tr class="memdesc:a4027ba493b359a643102b56f13f0aa05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove out of memory listener. <br /></td></tr>
 <tr class="separator:a4027ba493b359a643102b56f13f0aa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f36168afe24905e80ea6837fffb3d9" id="r_a65f36168afe24905e80ea6837fffb3d9"><td class="memItemLeft" align="right" valign="top"><a id="a65f36168afe24905e80ea6837fffb3d9" name="a65f36168afe24905e80ea6837fffb3d9"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultTrackingMode</b> (<a class="el" href="class_a_z_1_1_e_bus.html">AZ::Debug::AllocationRecords::Mode</a> <a class="el" href="class_a_z_1_1_e_bus.html">mode</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultTrackingMode</b> (AZ::Debug::AllocationRecords::Mode mode)</td></tr>
 <tr class="memdesc:a65f36168afe24905e80ea6837fffb3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default memory track mode for all allocators created after this point. <br /></td></tr>
 <tr class="separator:a65f36168afe24905e80ea6837fffb3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe4acec3a6334068152553004591b44" id="r_aebe4acec3a6334068152553004591b44"><td class="memItemLeft" align="right" valign="top"><a id="aebe4acec3a6334068152553004591b44" name="aebe4acec3a6334068152553004591b44"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">AZ::Debug::AllocationRecords::Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTrackingMode</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+AZ::Debug::AllocationRecords::Mode&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTrackingMode</b> () const</td></tr>
 <tr class="separator:aebe4acec3a6334068152553004591b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95fe03a8266225cca509496033096aa8" id="r_a95fe03a8266225cca509496033096aa8"><td class="memItemLeft" align="right" valign="top"><a id="a95fe03a8266225cca509496033096aa8" name="a95fe03a8266225cca509496033096aa8"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetTrackingMode</b> (<a class="el" href="class_a_z_1_1_e_bus.html">AZ::Debug::AllocationRecords::Mode</a> <a class="el" href="class_a_z_1_1_e_bus.html">mode</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTrackingMode</b> (AZ::Debug::AllocationRecords::Mode mode)</td></tr>
 <tr class="memdesc:a95fe03a8266225cca509496033096aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set memory track mode for all allocators already created. <br /></td></tr>
 <tr class="separator:a95fe03a8266225cca509496033096aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa952ac905fbf19eb6f865c71b6a08db7" id="r_aa952ac905fbf19eb6f865c71b6a08db7"><td class="memItemLeft" align="right" valign="top"><a id="aa952ac905fbf19eb6f865c71b6a08db7" name="aa952ac905fbf19eb6f865c71b6a08db7"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetAllocatorLeaking</b> (<a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">allowLeaking</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAllocatorLeaking</b> (bool allowLeaking)</td></tr>
 <tr class="memdesc:aa952ac905fbf19eb6f865c71b6a08db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Especially for great code and engines... <br /></td></tr>
 <tr class="separator:aa952ac905fbf19eb6f865c71b6a08db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894b397a15caf16c78944ed098b9eeaf" id="r_a894b397a15caf16c78944ed098b9eeaf"><td class="memItemLeft" align="right" valign="top"><a id="a894b397a15caf16c78944ed098b9eeaf" name="a894b397a15caf16c78944ed098b9eeaf"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EnterProfilingMode</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnterProfilingMode</b> ()</td></tr>
 <tr class="memdesc:a894b397a15caf16c78944ed098b9eeaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter or exit profiling mode; calls to Enter must be matched with calls to Exit. <br /></td></tr>
 <tr class="separator:a894b397a15caf16c78944ed098b9eeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45693967c3ab5de6176ee22866f7c4db" id="r_a45693967c3ab5de6176ee22866f7c4db"><td class="memItemLeft" align="right" valign="top"><a id="a45693967c3ab5de6176ee22866f7c4db" name="a45693967c3ab5de6176ee22866f7c4db"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ExitProfilingMode</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExitProfilingMode</b> ()</td></tr>
 <tr class="separator:a45693967c3ab5de6176ee22866f7c4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be4a1e3ea281e405ee16368eeb236a4" id="r_a2be4a1e3ea281e405ee16368eeb236a4"><td class="memItemLeft" align="right" valign="top"><a id="a2be4a1e3ea281e405ee16368eeb236a4" name="a2be4a1e3ea281e405ee16368eeb236a4"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultProfilingState</b> (<a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">newState</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultProfilingState</b> (bool newState)</td></tr>
 <tr class="separator:a2be4a1e3ea281e405ee16368eeb236a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1412004beb3cb2db094fa05d6ef92031" id="r_a1412004beb3cb2db094fa05d6ef92031"><td class="memItemLeft" align="right" valign="top"><a id="a1412004beb3cb2db094fa05d6ef92031" name="a1412004beb3cb2db094fa05d6ef92031"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultProfilingState</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultProfilingState</b> () const</td></tr>
 <tr class="separator:a1412004beb3cb2db094fa05d6ef92031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190a03ca58db935887ce6667f0206cc4" id="r_a190a03ca58db935887ce6667f0206cc4"><td class="memItemLeft" align="right" valign="top"><a id="a190a03ca58db935887ce6667f0206cc4" name="a190a03ca58db935887ce6667f0206cc4"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DumpAllocators</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DumpAllocators</b> ()</td></tr>
 <tr class="memdesc:a190a03ca58db935887ce6667f0206cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs allocator usage to the console, and also stores the values in m_dumpInfo for viewing in the crash dump. <br /></td></tr>
 <tr class="separator:a190a03ca58db935887ce6667f0206cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1495be74a70fa6612d779d6f336f625f" id="r_a1495be74a70fa6612d779d6f336f625f"><td class="memItemLeft" align="right" valign="top"><a id="a1495be74a70fa6612d779d6f336f625f" name="a1495be74a70fa6612d779d6f336f625f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetTrackingForAllocator</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">allocatorName</a>, <a class="el" href="class_a_z_1_1_e_bus.html">AZ::Debug::AllocationRecords::Mode</a> <a class="el" href="class_a_z_1_1_e_bus.html">recordMode</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTrackingForAllocator</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> allocatorName, AZ::Debug::AllocationRecords::Mode recordMode)</td></tr>
 <tr class="separator:a1495be74a70fa6612d779d6f336f625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ebd3ac85d026e43c4135cbc8b3b995" id="r_a56ebd3ac85d026e43c4135cbc8b3b995"><td class="memItemLeft" align="right" valign="top"><a id="a56ebd3ac85d026e43c4135cbc8b3b995" name="a56ebd3ac85d026e43c4135cbc8b3b995"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTrackingForAllocator</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">allocatorName</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTrackingForAllocator</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> allocatorName)</td></tr>
 <tr class="separator:a56ebd3ac85d026e43c4135cbc8b3b995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a838b5fab6f264798581c9cbbf8db0a" id="r_a2a838b5fab6f264798581c9cbbf8db0a"><td class="memItemLeft" align="right" valign="top"><a id="a2a838b5fab6f264798581c9cbbf8db0a" name="a2a838b5fab6f264798581c9cbbf8db0a"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocatorStats</b> (size_t &amp;<a class="el" href="class_a_z_1_1_e_bus.html">usedBytes</a>, size_t &amp;<a class="el" href="class_a_z_1_1_e_bus.html">reservedBytes</a>, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_allocator_manager_1_1_allocator_stats.html">AllocatorStats</a> &gt; *<a class="el" href="class_a_z_1_1_e_bus.html">outStats</a>=<a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocatorStats</b> (size_t &amp;usedBytes, size_t &amp;reservedBytes, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_allocator_manager_1_1_allocator_stats.html">AllocatorStats</a> &gt; *outStats=nullptr)</td></tr>
 <tr class="separator:a2a838b5fab6f264798581c9cbbf8db0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49483a987446c7047dd7e1ca6ecdde1f" id="r_a49483a987446c7047dd7e1ca6ecdde1f"><td class="memItemLeft" align="right" valign="top"><a id="a49483a987446c7047dd7e1ca6ecdde1f" name="a49483a987446c7047dd7e1ca6ecdde1f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetMemoryBreak</b> (<a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">slot</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="struct_a_z_1_1_allocator_manager_1_1_memory_break.html">MemoryBreak</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">mb</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMemoryBreak</b> (int slot, const <a class="el" href="struct_a_z_1_1_allocator_manager_1_1_memory_break.html">MemoryBreak</a> &amp;mb)</td></tr>
 <tr class="memdesc:a49483a987446c7047dd7e1ca6ecdde1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a memory break on a specific slot (0 to MaxNumMemoryBreaks). Code will trigger and DebugBreak. <br /></td></tr>
 <tr class="separator:a49483a987446c7047dd7e1ca6ecdde1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a351fe32774239704cdb29b7b3afb799f" id="r_a351fe32774239704cdb29b7b3afb799f"><td class="memItemLeft" align="right" valign="top"><a id="a351fe32774239704cdb29b7b3afb799f" name="a351fe32774239704cdb29b7b3afb799f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResetMemoryBreak</b> (<a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">slot</a>=-1)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetMemoryBreak</b> (int slot=-1)</td></tr>
 <tr class="memdesc:a351fe32774239704cdb29b7b3afb799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset a memory break. -1 all slots, otherwise (0 to MaxNumMemoryBreaks) <br /></td></tr>
 <tr class="separator:a351fe32774239704cdb29b7b3afb799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94207c91ffa85ec6aae72ac7a9533f82" id="r_a94207c91ffa85ec6aae72ac7a9533f82"><td class="memItemLeft" align="right" valign="top"><a id="a94207c91ffa85ec6aae72ac7a9533f82" name="a94207c91ffa85ec6aae72ac7a9533f82"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *<a class="el" href="class_a_z_1_1_e_bus.html">alloc</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *alloc)</td></tr>
 <tr class="separator:a94207c91ffa85ec6aae72ac7a9533f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6cfd51b521deabbc17bd65ef9b2cde" id="r_a8a6cfd51b521deabbc17bd65ef9b2cde"><td class="memItemLeft" align="right" valign="top"><a id="a8a6cfd51b521deabbc17bd65ef9b2cde" name="a8a6cfd51b521deabbc17bd65ef9b2cde"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnRegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *<a class="el" href="class_a_z_1_1_e_bus.html">alloc</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnRegisterAllocator</b> (<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *alloc)</td></tr>
 <tr class="separator:a8a6cfd51b521deabbc17bd65ef9b2cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a54c73a0b4b8586e787f0f3b0b0f355ce" id="r_a54c73a0b4b8586e787f0f3b0b0f355ce"><td class="memItemLeft" align="right" valign="top"><a id="a54c73a0b4b8586e787f0f3b0b0f355ce" name="a54c73a0b4b8586e787f0f3b0b0f355ce"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_allocator_manager.html">AllocatorManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
+static <a class="el" href="class_a_z_1_1_allocator_manager.html">AllocatorManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
 <tr class="separator:a54c73a0b4b8586e787f0f3b0b0f355ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f559786d4ed96ed07fe5ca3cb0fa542" id="r_a8f559786d4ed96ed07fe5ca3cb0fa542"><td class="memItemLeft" align="right" valign="top"><a id="a8f559786d4ed96ed07fe5ca3cb0fa542" name="a8f559786d4ed96ed07fe5ca3cb0fa542"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> ()</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> ()</td></tr>
 <tr class="separator:a8f559786d4ed96ed07fe5ca3cb0fa542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae398aefe3b1df869c950e3163599dab3" id="r_ae398aefe3b1df869c950e3163599dab3"><td class="memItemLeft" align="right" valign="top"><a id="ae398aefe3b1df869c950e3163599dab3" name="ae398aefe3b1df869c950e3163599dab3"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> ()</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> ()</td></tr>
 <tr class="separator:ae398aefe3b1df869c950e3163599dab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a6244ab2e8398da941ce080d1cd65b218" id="r_a6244ab2e8398da941ce080d1cd65b218"><td class="memItemLeft" align="right" valign="top"><a id="a6244ab2e8398da941ce080d1cd65b218" name="a6244ab2e8398da941ce080d1cd65b218"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MaxNumMemoryBreaks</b> = 5</td></tr>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxNumMemoryBreaks</b> = 5</td></tr>
 <tr class="separator:a6244ab2e8398da941ce080d1cd65b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a622d07319288ee4e6eb4abc014918157" id="r_a622d07319288ee4e6eb4abc014918157"><td class="memItemLeft" align="right" valign="top"><a id="a622d07319288ee4e6eb4abc014918157" name="a622d07319288ee4e6eb4abc014918157"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AllocatorBase</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>AllocatorBase</b></td></tr>
 <tr class="separator:a622d07319288ee4e6eb4abc014918157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae67bbc09c01e4489563671e6deb2eed3" id="r_ae67bbc09c01e4489563671e6deb2eed3"><td class="memItemLeft" align="right" valign="top"><a id="ae67bbc09c01e4489563671e6deb2eed3" name="ae67bbc09c01e4489563671e6deb2eed3"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::AllocationRecords</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Debug::AllocationRecords</b></td></tr>
 <tr class="separator:ae67bbc09c01e4489563671e6deb2eed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -218,7 +218,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_allocator_manager.html">AllocatorManager</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

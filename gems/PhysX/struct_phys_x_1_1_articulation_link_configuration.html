@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine PhysX Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine PhysX Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -83,6 +83,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9706bcebe3b633a4c75c868212d72fbe" id="r_a9706bcebe3b633a4c75c868212d72fbe"><td class="memItemLeft" align="right" valign="top"><a id="a9706bcebe3b633a4c75c868212d72fbe" name="a9706bcebe3b633a4c75c868212d72fbe"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_phys_x_1_1_articulation_link_configuration.html">ArticulationLinkConfiguration</a>, &quot;{56268154-037A-4BB2-A7EE-E1E76B7D2F8E}&quot;, AzPhysics::SimulatedBodyConfiguration)</td></tr>
 <tr class="separator:a9706bcebe3b633a4c75c868212d72fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cbcfb4a65dd46f1fa5c5d48e58da93" id="r_a54cbcfb4a65dd46f1fa5c5d48e58da93"><td class="memItemLeft" align="right" valign="top"><a id="a54cbcfb4a65dd46f1fa5c5d48e58da93" name="a54cbcfb4a65dd46f1fa5c5d48e58da93"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetInertiaVisibility</b> () const</td></tr>
+<tr class="separator:a54cbcfb4a65dd46f1fa5c5d48e58da93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dca039beb4cf67e9aedd3f330f8bc78" id="r_a5dca039beb4cf67e9aedd3f330f8bc78"><td class="memItemLeft" align="right" valign="top"><a id="a5dca039beb4cf67e9aedd3f330f8bc78" name="a5dca039beb4cf67e9aedd3f330f8bc78"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNotRootArticulation</b> () const</td></tr>
 <tr class="separator:a5dca039beb4cf67e9aedd3f330f8bc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +143,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_startAsleep</b> = f
 <tr class="memitem:a1515eabc1ec8580249c905930d953b67" id="r_a1515eabc1ec8580249c905930d953b67"><td class="memItemLeft" align="right" valign="top"><a id="a1515eabc1ec8580249c905930d953b67" name="a1515eabc1ec8580249c905930d953b67"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_gravityEnabled</b> = true</td></tr>
 <tr class="separator:a1515eabc1ec8580249c905930d953b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a0cef2994ff71a8229f5c3e97f09b0" id="r_af7a0cef2994ff71a8229f5c3e97f09b0"><td class="memItemLeft" align="right" valign="top"><a id="af7a0cef2994ff71a8229f5c3e97f09b0" name="af7a0cef2994ff71a8229f5c3e97f09b0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_computeInertiaTensor</b> = false</td></tr>
+<tr class="memdesc:af7a0cef2994ff71a8229f5c3e97f09b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, inertia is auto-computed from collider shapes. <br /></td></tr>
+<tr class="separator:af7a0cef2994ff71a8229f5c3e97f09b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ddf279a585c4645ad2f601e7acce2d" id="r_a08ddf279a585c4645ad2f601e7acce2d"><td class="memItemLeft" align="right" valign="top">AZ::Matrix3x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_phys_x_1_1_articulation_link_configuration.html#a08ddf279a585c4645ad2f601e7acce2d">m_inertiaTensor</a> = AZ::Matrix3x3::CreateIdentity()</td></tr>
+<tr class="separator:a08ddf279a585c4645ad2f601e7acce2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4de036c82139bfe8b25998da2a8bda29" id="r_a4de036c82139bfe8b25998da2a8bda29"><td class="memItemLeft" align="right" valign="top"><a id="a4de036c82139bfe8b25998da2a8bda29" name="a4de036c82139bfe8b25998da2a8bda29"></a>
 AZ::u8&#160;</td><td class="memItemRight" valign="bottom"><b>m_solverPositionIterations</b> = 4</td></tr>
 <tr class="memdesc:a4de036c82139bfe8b25998da2a8bda29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher values can improve stability at the cost of performance. <br /></td></tr>
@@ -207,6 +216,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRootArticulation<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration used to Add Articulations to a Scene. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a08ddf279a585c4645ad2f601e7acce2d" name="a08ddf279a585c4645ad2f601e7acce2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ddf279a585c4645ad2f601e7acce2d">&#9670;&#160;</a></span>m_inertiaTensor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::Matrix3x3 PhysX::ArticulationLinkConfiguration::m_inertiaTensor = AZ::Matrix3x3::CreateIdentity()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inertia tensor used when m_computeInertiaTensor is false. Defaults to identity matrix matching PhysX PxRigidBody default. </p>
+
+</div>
+</div>
 <a id="a8992509c638562fb5e7fbeb7b82919f7" name="a8992509c638562fb5e7fbeb7b82919f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8992509c638562fb5e7fbeb7b82919f7">&#9670;&#160;</a></span>m_LeadLocalRotation</h2>
 
@@ -252,7 +276,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRootArticulation<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>PhysX</b></li><li class="navelem"><a class="el" href="struct_phys_x_1_1_articulation_link_configuration.html">ArticulationLinkConfiguration</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:48 for Open 3D Engine PhysX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:50 for Open 3D Engine PhysX Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

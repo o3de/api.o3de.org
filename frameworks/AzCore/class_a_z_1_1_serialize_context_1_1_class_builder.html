@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,32 +65,32 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
 <tr class="separator:a73cba99cdbd897600872a8e413834315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea7ca088955ac8ddbf9b5977cdf56813" id="r_aea7ca088955ac8ddbf9b5977cdf56813"><td class="memTemplParams" colspan="2"><a id="aea7ca088955ac8ddbf9b5977cdf56813" name="aea7ca088955ac8ddbf9b5977cdf56813"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ClassType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> &gt; </td></tr>
-<tr class="memitem:aea7ca088955ac8ddbf9b5977cdf56813"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Field</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> ClassType::*address, AZStd::initializer_list&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AttributePair</a> &gt; <a class="el" href="class_a_z_1_1_e_bus.html">attributeIds</a>={})</td></tr>
+template&lt;class ClassType , class FieldType &gt; </td></tr>
+<tr class="memitem:aea7ca088955ac8ddbf9b5977cdf56813"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Field</b> (const char *name, FieldType ClassType::*address, AZStd::initializer_list&lt; AttributePair &gt; attributeIds={})</td></tr>
 <tr class="memdesc:aea7ca088955ac8ddbf9b5977cdf56813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare class field with address of the variable in the class. <br /></td></tr>
 <tr class="separator:aea7ca088955ac8ddbf9b5977cdf56813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed505939aa5bd8988fb10b33f8920421" id="r_aed505939aa5bd8988fb10b33f8920421"><td class="memTemplParams" colspan="2"><a id="aed505939aa5bd8988fb10b33f8920421" name="aed505939aa5bd8988fb10b33f8920421"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FromT</a> , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">ToT</a> &gt; </td></tr>
-<tr class="memitem:aed505939aa5bd8988fb10b33f8920421"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TypeChange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">fieldName</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">fromVersion</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">toVersion</a>, <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">ToT</a>(<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">FromT</a> &amp;)&gt; <a class="el" href="class_a_z_1_1_e_bus.html">upgradeFunc</a>)</td></tr>
+template&lt;class FromT , class ToT &gt; </td></tr>
+<tr class="memitem:aed505939aa5bd8988fb10b33f8920421"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TypeChange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> fieldName, unsigned int fromVersion, unsigned int toVersion, <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; ToT(const FromT &amp;)&gt; upgradeFunc)</td></tr>
 <tr class="separator:aed505939aa5bd8988fb10b33f8920421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a946d37e8273f8222822467ca3014b676" id="r_a946d37e8273f8222822467ca3014b676"><td class="memItemLeft" align="right" valign="top"><a id="a946d37e8273f8222822467ca3014b676" name="a946d37e8273f8222822467ca3014b676"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NameChange</b> (<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">fromVersion</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">toVersion</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">oldFieldName</a>, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">newFieldName</a>)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NameChange</b> (unsigned int fromVersion, unsigned int toVersion, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> oldFieldName, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> newFieldName)</td></tr>
 <tr class="separator:a946d37e8273f8222822467ca3014b676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699fee1b26942a1c1c1de553d07a93e4" id="r_a699fee1b26942a1c1c1de553d07a93e4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ClassType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> BaseType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> &gt; </td></tr>
-<tr class="memitem:a699fee1b26942a1c1c1de553d07a93e4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a699fee1b26942a1c1c1de553d07a93e4">FieldFromBase</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> BaseType::*address)</td></tr>
+<tr class="memitem:a699fee1b26942a1c1c1de553d07a93e4" id="r_a699fee1b26942a1c1c1de553d07a93e4"><td class="memTemplParams" colspan="2">template&lt;class ClassType , class BaseType , class FieldType &gt; </td></tr>
+<tr class="memitem:a699fee1b26942a1c1c1de553d07a93e4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a699fee1b26942a1c1c1de553d07a93e4">FieldFromBase</a> (const char *name, FieldType BaseType::*address)</td></tr>
 <tr class="separator:a699fee1b26942a1c1c1de553d07a93e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c18ee7851eb9c2aa0ee75f44cc5be4" id="r_a27c18ee7851eb9c2aa0ee75f44cc5be4"><td class="memItemLeft" align="right" valign="top"><a id="a27c18ee7851eb9c2aa0ee75f44cc5be4" name="a27c18ee7851eb9c2aa0ee75f44cc5be4"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b> (<a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">version</a>, <a class="el" href="class_a_z_1_1_serialize_context.html#a1065bfda2ff2d1eb3fc0f7f3ee3f2b08">VersionConverter</a> <a class="el" href="class_a_z_1_1_e_bus.html">converter</a>=<a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a>)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b> (unsigned int version, <a class="el" href="class_a_z_1_1_serialize_context.html#a1065bfda2ff2d1eb3fc0f7f3ee3f2b08">VersionConverter</a> converter=nullptr)</td></tr>
 <tr class="memdesc:a27c18ee7851eb9c2aa0ee75f44cc5be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add version control to the structure with optional converter. If not controlled a version of 0 is assigned. <br /></td></tr>
 <tr class="separator:a27c18ee7851eb9c2aa0ee75f44cc5be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b918e0abdc7cb4596f4ca222912ad0f" id="r_a3b918e0abdc7cb4596f4ca222912ad0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a3b918e0abdc7cb4596f4ca222912ad0f">Serializer</a> (Serialize::IDataSerializerPtr <a class="el" href="class_a_z_1_1_e_bus.html">serializer</a>)</td></tr>
+<tr class="memitem:a3b918e0abdc7cb4596f4ca222912ad0f" id="r_a3b918e0abdc7cb4596f4ca222912ad0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a3b918e0abdc7cb4596f4ca222912ad0f">Serializer</a> (Serialize::IDataSerializerPtr serializer)</td></tr>
 <tr class="separator:a3b918e0abdc7cb4596f4ca222912ad0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52194cfc2a3ca3c98e37248d7b8da06e" id="r_a52194cfc2a3ca3c98e37248d7b8da06e"><td class="memItemLeft" align="right" valign="top"><a id="a52194cfc2a3ca3c98e37248d7b8da06e" name="a52194cfc2a3ca3c98e37248d7b8da06e"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Serializer</b> (IDataSerializer *<a class="el" href="class_a_z_1_1_e_bus.html">serializer</a>)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Serializer</b> (IDataSerializer *serializer)</td></tr>
 <tr class="memdesc:a52194cfc2a3ca3c98e37248d7b8da06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For data types (usually base types) or types that we handle the full serialize, implement this interface. <br /></td></tr>
 <tr class="separator:a52194cfc2a3ca3c98e37248d7b8da06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7b0d8747ad380c8fe3212dc92a356c5" id="r_ac7b0d8747ad380c8fe3212dc92a356c5"><td class="memTemplParams" colspan="2"><a id="ac7b0d8747ad380c8fe3212dc92a356c5" name="ac7b0d8747ad380c8fe3212dc92a356c5"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">SerializerImplementation</a> &gt; </td></tr>
+template&lt;typename SerializerImplementation &gt; </td></tr>
 <tr class="memitem:ac7b0d8747ad380c8fe3212dc92a356c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Serializer</b> ()</td></tr>
 <tr class="memdesc:ac7b0d8747ad380c8fe3212dc92a356c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of specific serializer implementation. <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a52194cfc2a3ca3c98e37248d7b8da06e">Serializer(IDataSerializer*)</a> <br /></td></tr>
 <tr class="separator:ac7b0d8747ad380c8fe3212dc92a356c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,54 +98,54 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeWithNoData</b> ()</td></tr>
 <tr class="memdesc:a4543b084e0a3c15318e8bf11fee15df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For class type that are empty, we want the serializer to create on load, but have no child elements. <br /></td></tr>
 <tr class="separator:a4543b084e0a3c15318e8bf11fee15df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da61215c647de0dfa9732d44c43ab37" id="r_a0da61215c647de0dfa9732d44c43ab37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a0da61215c647de0dfa9732d44c43ab37">EventHandler</a> (IEventHandler *<a class="el" href="class_a_z_1_1_e_bus.html">eventHandler</a>)</td></tr>
+<tr class="memitem:a0da61215c647de0dfa9732d44c43ab37" id="r_a0da61215c647de0dfa9732d44c43ab37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a0da61215c647de0dfa9732d44c43ab37">EventHandler</a> (IEventHandler *eventHandler)</td></tr>
 <tr class="separator:a0da61215c647de0dfa9732d44c43ab37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b2e67565226721278e90d9c43d2a973" id="r_a0b2e67565226721278e90d9c43d2a973"><td class="memTemplParams" colspan="2"><a id="a0b2e67565226721278e90d9c43d2a973" name="a0b2e67565226721278e90d9c43d2a973"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">EventHandlerImplementation</a> &gt; </td></tr>
+template&lt;typename EventHandlerImplementation &gt; </td></tr>
 <tr class="memitem:a0b2e67565226721278e90d9c43d2a973"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EventHandler</b> ()</td></tr>
 <tr class="memdesc:a0b2e67565226721278e90d9c43d2a973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of specific event handler implementation. <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a52194cfc2a3ca3c98e37248d7b8da06e">Serializer(IDataSerializer*)</a> <br /></td></tr>
 <tr class="separator:a0b2e67565226721278e90d9c43d2a973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae980d87a22581cca483443999ab572ab" id="r_ae980d87a22581cca483443999ab572ab"><td class="memItemLeft" align="right" valign="top"><a id="ae980d87a22581cca483443999ab572ab" name="ae980d87a22581cca483443999ab572ab"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>DataContainer</b> (IDataContainer *<a class="el" href="class_a_z_1_1_e_bus.html">dataContainer</a>)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>DataContainer</b> (IDataContainer *dataContainer)</td></tr>
 <tr class="memdesc:ae980d87a22581cca483443999ab572ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a DataContainer structure for manipulating contained data in custom ways. <br /></td></tr>
 <tr class="separator:ae980d87a22581cca483443999ab572ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad75702d8fc596e0230d62519ee94cd75" id="r_ad75702d8fc596e0230d62519ee94cd75"><td class="memTemplParams" colspan="2"><a id="ad75702d8fc596e0230d62519ee94cd75" name="ad75702d8fc596e0230d62519ee94cd75"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">DataContainerType</a> &gt; </td></tr>
+template&lt;typename DataContainerType &gt; </td></tr>
 <tr class="memitem:ad75702d8fc596e0230d62519ee94cd75"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DataContainer</b> ()</td></tr>
 <tr class="memdesc:ad75702d8fc596e0230d62519ee94cd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of the specific data container implementation. <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#ae980d87a22581cca483443999ab572ab">DataContainer(IDataContainer*)</a> <br /></td></tr>
 <tr class="separator:ad75702d8fc596e0230d62519ee94cd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1972216b8d08efb9d88bbf46b3e01297" id="r_a1972216b8d08efb9d88bbf46b3e01297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a1972216b8d08efb9d88bbf46b3e01297">PersistentId</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a1a8a0edaa56e7cd6c573d6450b87ef7c">ClassPersistentId</a> <a class="el" href="class_a_z_1_1_e_bus.html">persistentId</a>)</td></tr>
+<tr class="memitem:a1972216b8d08efb9d88bbf46b3e01297" id="r_a1972216b8d08efb9d88bbf46b3e01297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a1972216b8d08efb9d88bbf46b3e01297">PersistentId</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a1a8a0edaa56e7cd6c573d6450b87ef7c">ClassPersistentId</a> persistentId)</td></tr>
 <tr class="separator:a1972216b8d08efb9d88bbf46b3e01297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7a5b98a7460bd90f39f07a3b4b8cb4" id="r_aca7a5b98a7460bd90f39f07a3b4b8cb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#aca7a5b98a7460bd90f39f07a3b4b8cb4">SerializerDoSave</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#add833238065f6fad4032440170567e0e">ClassDoSave</a> <a class="el" href="class_a_z_1_1_e_bus.html">isSave</a>)</td></tr>
+<tr class="memitem:aca7a5b98a7460bd90f39f07a3b4b8cb4" id="r_aca7a5b98a7460bd90f39f07a3b4b8cb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#aca7a5b98a7460bd90f39f07a3b4b8cb4">SerializerDoSave</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#add833238065f6fad4032440170567e0e">ClassDoSave</a> isSave)</td></tr>
 <tr class="separator:aca7a5b98a7460bd90f39f07a3b4b8cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f477ae2a6aa7dfeb6dd32cb02ffe01e" id="r_a8f477ae2a6aa7dfeb6dd32cb02ffe01e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td></tr>
-<tr class="memitem:a8f477ae2a6aa7dfeb6dd32cb02ffe01e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a8f477ae2a6aa7dfeb6dd32cb02ffe01e">Attribute</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *id, T &amp;&amp;value)</td></tr>
+<tr class="memitem:a8f477ae2a6aa7dfeb6dd32cb02ffe01e" id="r_a8f477ae2a6aa7dfeb6dd32cb02ffe01e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8f477ae2a6aa7dfeb6dd32cb02ffe01e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a8f477ae2a6aa7dfeb6dd32cb02ffe01e">Attribute</a> (const char *id, T &amp;&amp;value)</td></tr>
 <tr class="separator:a8f477ae2a6aa7dfeb6dd32cb02ffe01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fe84a49b2acf9bf622d736e4872cf8e" id="r_a9fe84a49b2acf9bf622d736e4872cf8e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td></tr>
-<tr class="memitem:a9fe84a49b2acf9bf622d736e4872cf8e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a9fe84a49b2acf9bf622d736e4872cf8e">Attribute</a> (<a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> <a class="el" href="class_a_z_1_1_e_bus.html">idCrc</a>, T &amp;&amp;value)</td></tr>
+<tr class="memitem:a9fe84a49b2acf9bf622d736e4872cf8e" id="r_a9fe84a49b2acf9bf622d736e4872cf8e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9fe84a49b2acf9bf622d736e4872cf8e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a9fe84a49b2acf9bf622d736e4872cf8e">Attribute</a> (<a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> idCrc, T &amp;&amp;value)</td></tr>
 <tr class="separator:a9fe84a49b2acf9bf622d736e4872cf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115b8448a9365b224df6020ce0d7c154" id="r_a115b8448a9365b224df6020ce0d7c154"><td class="memTemplParams" colspan="2"><a id="a115b8448a9365b224df6020ce0d7c154" name="a115b8448a9365b224df6020ce0d7c154"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ClassType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> &gt; </td></tr>
-<tr class="memitem:a115b8448a9365b224df6020ce0d7c154"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Field</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> ClassType::*<a class="el" href="class_a_z_1_1_e_bus.html">member</a>, AZStd::initializer_list&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AttributePair</a> &gt; <a class="el" href="class_a_z_1_1_e_bus.html">attributes</a>)</td></tr>
+template&lt;class ClassType , class FieldType &gt; </td></tr>
+<tr class="memitem:a115b8448a9365b224df6020ce0d7c154"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Field</b> (const char *name, FieldType ClassType::*member, AZStd::initializer_list&lt; AttributePair &gt; attributes)</td></tr>
 <tr class="separator:a115b8448a9365b224df6020ce0d7c154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dcfc24b24553cf8299c723bb188f994" id="r_a1dcfc24b24553cf8299c723bb188f994"><td class="memTemplParams" colspan="2"><a id="a1dcfc24b24553cf8299c723bb188f994" name="a1dcfc24b24553cf8299c723bb188f994"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FromT</a> , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">ToT</a> &gt; </td></tr>
-<tr class="memitem:a1dcfc24b24553cf8299c723bb188f994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TypeChange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">fieldName</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">fromVersion</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">toVersion</a>, <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">ToT</a>(<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">FromT</a> &amp;)&gt; <a class="el" href="class_a_z_1_1_e_bus.html">upgradeFunc</a>)</td></tr>
+template&lt;class FromT , class ToT &gt; </td></tr>
+<tr class="memitem:a1dcfc24b24553cf8299c723bb188f994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TypeChange</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> fieldName, unsigned int fromVersion, unsigned int toVersion, <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; ToT(const FromT &amp;)&gt; upgradeFunc)</td></tr>
 <tr class="memdesc:a1dcfc24b24553cf8299c723bb188f994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a type change between serialized versions of a field. <br /></td></tr>
 <tr class="separator:a1dcfc24b24553cf8299c723bb188f994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b2c0cde5c2fb44e0cd76e86946135f" id="r_a03b2c0cde5c2fb44e0cd76e86946135f"><td class="memTemplParams" colspan="2"><a id="a03b2c0cde5c2fb44e0cd76e86946135f" name="a03b2c0cde5c2fb44e0cd76e86946135f"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ClassType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> BaseType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> &gt; </td></tr>
-<tr class="memitem:a03b2c0cde5c2fb44e0cd76e86946135f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FieldFromBase</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> BaseType::*<a class="el" href="class_a_z_1_1_e_bus.html">member</a>)</td></tr>
+template&lt;class ClassType , class BaseType , class FieldType &gt; </td></tr>
+<tr class="memitem:a03b2c0cde5c2fb44e0cd76e86946135f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FieldFromBase</b> (const char *name, FieldType BaseType::*member)</td></tr>
 <tr class="separator:a03b2c0cde5c2fb44e0cd76e86946135f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5c5ddf3469478c003549814a5360c1" id="r_afd5c5ddf3469478c003549814a5360c1"><td class="memTemplParams" colspan="2"><a id="afd5c5ddf3469478c003549814a5360c1" name="afd5c5ddf3469478c003549814a5360c1"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td></tr>
-<tr class="memitem:afd5c5ddf3469478c003549814a5360c1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> <a class="el" href="class_a_z_1_1_e_bus.html">idCrc</a>, T &amp;&amp;value)</td></tr>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:afd5c5ddf3469478c003549814a5360c1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">SerializeContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> idCrc, T &amp;&amp;value)</td></tr>
 <tr class="separator:afd5c5ddf3469478c003549814a5360c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ac1a4a60afcc9ac44490da767240b61ad" id="r_ac1a4a60afcc9ac44490da767240b61ad"><td class="memItemLeft" align="right" valign="top"><a id="ac1a4a60afcc9ac44490da767240b61ad" name="ac1a4a60afcc9ac44490da767240b61ad"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeContext</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeContext</b></td></tr>
 <tr class="separator:ac1a4a60afcc9ac44490da767240b61ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -155,7 +155,7 @@ Friends</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div>
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -163,7 +163,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> * AZ::SerializeContext::ClassBuilder::Attribute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -194,7 +194,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> * AZ::SerializeContext::ClassBuilder::Attribute </td>
@@ -244,18 +244,18 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ClassType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> BaseType , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> &gt; </div>
+template&lt;class ClassType , class BaseType , class FieldType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> * AZ::SerializeContext::ClassBuilder::FieldFromBase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">FieldType</a> BaseType::*&#160;</td>
+          <td class="paramtype">FieldType BaseType::*&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -335,7 +335,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> ClassType , 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

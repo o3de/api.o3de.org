@@ -4,6 +4,7 @@ var struct_az_physics_1_1_scene_configuration =
     [ "m_enableActiveActors", "struct_az_physics_1_1_scene_configuration.html#a22dde9a727ce07d2fd68c4f115e29f43", null ],
     [ "m_enableCcd", "struct_az_physics_1_1_scene_configuration.html#af144c2f0c8adedaaa430318799581482", null ],
     [ "m_enableCcdResweep", "struct_az_physics_1_1_scene_configuration.html#a2c7598ca42e13d116e9064e7d0f7ce9f", null ],
+    [ "m_enableEnhancedDeterminism", "struct_az_physics_1_1_scene_configuration.html#a8ce334c382628c68a266fa5962ae344c", null ],
     [ "m_enablePcm", "struct_az_physics_1_1_scene_configuration.html#ac19771210a40a2b89c419f110e98299e", null ],
     [ "m_kinematicFiltering", "struct_az_physics_1_1_scene_configuration.html#a3e5be6dda90a182462612c38b6d6d080", null ],
     [ "m_kinematicStaticFiltering", "struct_az_physics_1_1_scene_configuration.html#ad506e76e5adf4ae3a5259387ec1a31dd", null ],

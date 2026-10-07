@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,15 +65,39 @@ $(document).ready(function(){initNavTree('class_r_o_s2_robot_importer_1_1_visual
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d9bc91653e2442cbf88eaebbaae282e" id="r_a9d9bc91653e2442cbf88eaebbaae282e"><td class="memItemLeft" align="right" valign="top"><a id="a9d9bc91653e2442cbf88eaebbaae282e" name="a9d9bc91653e2442cbf88eaebbaae282e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VisualsMaker</b> (const AZStd::shared_ptr&lt; Utils::UrdfAssetMap &gt; &amp;urdfAssetsMapping)</td></tr>
-<tr class="separator:a9d9bc91653e2442cbf88eaebbaae282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673e5fd6935cbdc5bfe34e344eea4e10" id="r_a673e5fd6935cbdc5bfe34e344eea4e10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_visuals_maker.html#a673e5fd6935cbdc5bfe34e344eea4e10">VisualsMaker</a> (const ImportSessionId sessionId)</td></tr>
+<tr class="separator:a673e5fd6935cbdc5bfe34e344eea4e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad3a9f09430075e03669f2a8886929e0" id="r_aad3a9f09430075e03669f2a8886929e0"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_visuals_maker.html#aad3a9f09430075e03669f2a8886929e0">AddVisuals</a> (const sdf::Link *link, const AZStd::string &amp;modelUri, AZ::EntityId entityId) const</td></tr>
 <tr class="separator:aad3a9f09430075e03669f2a8886929e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Populates a given entity with all the contents of the &lt;visual&gt; tag in robot description. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a673e5fd6935cbdc5bfe34e344eea4e10" name="a673e5fd6935cbdc5bfe34e344eea4e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673e5fd6935cbdc5bfe34e344eea4e10">&#9670;&#160;</a></span>VisualsMaker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ROS2RobotImporter::VisualsMaker::VisualsMaker </td>
+          <td>(</td>
+          <td class="paramtype">const ImportSessionId&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct the class with given session id. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionId</td><td>id of current import session, allowing communication with asset and status busses. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aad3a9f09430075e03669f2a8886929e0" name="aad3a9f09430075e03669f2a8886929e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad3a9f09430075e03669f2a8886929e0">&#9670;&#160;</a></span>AddVisuals()</h2>
 
@@ -107,7 +131,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add zero, one or many visual elements to a given entity (depending on link content). Note that a sub-entity will be added to hold each visual (since they can have different transforms). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">link</td><td>A parsed URDF tree link node which could hold information about visuals. </td></tr>
+    <tr><td class="paramname">link</td><td>A parsed SDF link node which could hold information about visuals. </td></tr>
     <tr><td class="paramname">modelUri</td><td>The URI of the model to use for the visual. </td></tr>
     <tr><td class="paramname">entityId</td><td>A non-active entity which will be affected. </td></tr>
   </table>
@@ -118,7 +142,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2RobotImporter/Code/Source/RobotImporter/URDF/<b>VisualsMaker.h</b></li>
+<li>Gems/ROS2RobotImporter/Code/Source/RobotImporter/Building/Makers/<b>VisualsMaker.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -126,7 +150,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2RobotImporter</b></li><li class="navelem"><a class="el" href="class_r_o_s2_robot_importer_1_1_visuals_maker.html">VisualsMaker</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:51 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

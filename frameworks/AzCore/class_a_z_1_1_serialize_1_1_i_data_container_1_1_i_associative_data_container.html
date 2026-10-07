@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -92,34 +92,34 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL_API</b> (AZCORE_API, <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container.html">IAssociativeDataContainer</a>)</td></tr>
 <tr class="separator:a8f6c03ec3a1478e55da60501107a95a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5ca85977b945a71e159ff471958a38" id="r_a1c5ca85977b945a71e159ff471958a38"><td class="memItemLeft" align="right" valign="top"><a id="a1c5ca85977b945a71e159ff471958a38" name="a1c5ca85977b945a71e159ff471958a38"></a>
-<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">void</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateKey</b> ()</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateKey</b> ()</td></tr>
 <tr class="memdesc:a1c5ca85977b945a71e159ff471958a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a key that can be used for associative container operations. <br /></td></tr>
 <tr class="separator:a1c5ca85977b945a71e159ff471958a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f477a739da3b9471c5201441f08f71" id="r_ad6f477a739da3b9471c5201441f08f71"><td class="memItemLeft" align="right" valign="top"><a id="ad6f477a739da3b9471c5201441f08f71" name="ad6f477a739da3b9471c5201441f08f71"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementByKey</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">instance</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> ClassElement *<a class="el" href="class_a_z_1_1_e_bus.html">classElement</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *key) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementByKey</b> (void *instance, const ClassElement *classElement, const void *key) const =0</td></tr>
 <tr class="memdesc:ad6f477a739da3b9471c5201441f08f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an element's address by its key. Not used for serialization. <br /></td></tr>
 <tr class="separator:ad6f477a739da3b9471c5201441f08f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9197fafe4d158d8d2dc3e438c61064d8" id="r_a9197fafe4d158d8d2dc3e438c61064d8"><td class="memItemLeft" align="right" valign="top"><a id="a9197fafe4d158d8d2dc3e438c61064d8" name="a9197fafe4d158d8d2dc3e438c61064d8"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetElementKey</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">element</a>, <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *key) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElementKey</b> (void *element, void *key) const =0</td></tr>
 <tr class="memdesc:a9197fafe4d158d8d2dc3e438c61064d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates element with key (for associative containers). Not used for serialization. <br /></td></tr>
 <tr class="separator:a9197fafe4d158d8d2dc3e438c61064d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a9ca22c8913e88469e75c31fd6a940e" id="r_a3a9ca22c8913e88469e75c31fd6a940e"><td class="memItemLeft" align="right" valign="top"><a id="a3a9ca22c8913e88469e75c31fd6a940e" name="a3a9ca22c8913e88469e75c31fd6a940e"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueByKey</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">instance</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *key) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueByKey</b> (void *instance, const void *key) const =0</td></tr>
 <tr class="memdesc:a3a9ca22c8913e88469e75c31fd6a940e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mapped value's address by its key. If there is no mapped value (like in a set&lt;&gt;) the value returned is the key itself. <br /></td></tr>
 <tr class="separator:a3a9ca22c8913e88469e75c31fd6a940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a620dd6b2948f25cc2cfa26800cd89ab3" id="r_a620dd6b2948f25cc2cfa26800cd89ab3"><td class="memItemLeft" align="right" valign="top"><a id="a620dd6b2948f25cc2cfa26800cd89ab3" name="a620dd6b2948f25cc2cfa26800cd89ab3"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container.html#a1ccd85b0377f49be3c2eab69b375a50c">AssociativeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssociativeType</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+virtual <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container.html#a1ccd85b0377f49be3c2eab69b375a50c">AssociativeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssociativeType</b> () const =0</td></tr>
 <tr class="memdesc:a620dd6b2948f25cc2cfa26800cd89ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the type structure(Set vs. Map, Ordered vs. Hash Table) represented by the AssociativeDataContainer. <br /></td></tr>
 <tr class="separator:a620dd6b2948f25cc2cfa26800cd89ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7a8a510de62b96cb52e58a793ddc0b15" id="r_a7a8a510de62b96cb52e58a793ddc0b15"><td class="memItemLeft" align="right" valign="top"><a id="a7a8a510de62b96cb52e58a793ddc0b15" name="a7a8a510de62b96cb52e58a793ddc0b15"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateKey</b> ()=0</td></tr>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateKey</b> ()=0</td></tr>
 <tr class="memdesc:a7a8a510de62b96cb52e58a793ddc0b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a key and get its address. Used by CreateKey. <br /></td></tr>
 <tr class="separator:a7a8a510de62b96cb52e58a793ddc0b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed890e267c525c65b0b8e4f34271e91" id="r_a7ed890e267c525c65b0b8e4f34271e91"><td class="memItemLeft" align="right" valign="top"><a id="a7ed890e267c525c65b0b8e4f34271e91" name="a7ed890e267c525c65b0b8e4f34271e91"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FreeKey</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *key)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FreeKey</b> (void *key)=0</td></tr>
 <tr class="memdesc:a7ed890e267c525c65b0b8e4f34271e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates a key created by ReserveKey. Used by CreateKey. <br /></td></tr>
 <tr class="separator:a7ed890e267c525c65b0b8e4f34271e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -136,7 +136,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">enum</a> <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container.html#a1ccd85b0377f49be3c2eab69b375a50c">AZ::Serialize::IDataContainer::IAssociativeDataContainer::AssociativeType</a></td>
+          <td class="memname">enum class <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container.html#a1ccd85b0377f49be3c2eab69b375a50c">AZ::Serialize::IDataContainer::IAssociativeDataContainer::AssociativeType</a></td>
         </tr>
       </table>
   </td>
@@ -158,7 +158,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Serialize</b></li><li class="navelem"><b>IDataContainer</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container_1_1_i_associative_data_container.html">IAssociativeDataContainer</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

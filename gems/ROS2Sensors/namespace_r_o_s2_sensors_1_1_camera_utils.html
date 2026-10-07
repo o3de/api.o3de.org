@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2Sensors Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2Sensors Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,7 +52,9 @@ $(document).ready(function(){initNavTree('namespace_r_o_s2_sensors_1_1_camera_ut
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ROS2Sensors::CameraUtils Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -60,6 +62,19 @@ $(document).ready(function(){initNavTree('namespace_r_o_s2_sensors_1_1_camera_ut
 <p>Namespace contains utility functions for camera.  
 <a href="namespace_r_o_s2_sensors_1_1_camera_utils.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aed0a911a8f26091acc1ee67b8e62e909" id="r_aed0a911a8f26091acc1ee67b8e62e909"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#aed0a911a8f26091acc1ee67b8e62e909">ImageEncoding</a> : AZ::u8 { <br />
+&#160;&#160;<b>RGBA8</b>
+, <b>RGB8</b>
+, <b>Mono8</b>
+, <b>Mono16</b>
+, <br />
+&#160;&#160;<b>Depth32FC1</b>
+<br />
+ }</td></tr>
+<tr class="separator:aed0a911a8f26091acc1ee67b8e62e909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad028e7be9632a73eb072693b6d604a2d" id="r_ad028e7be9632a73eb072693b6d604a2d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#ad028e7be9632a73eb072693b6d604a2d">GetAspectRatio</a> (float width, float height)</td></tr>
@@ -68,10 +83,41 @@ Functions</h2></td></tr>
 <tr class="separator:ac638846d707fcf8f06846629203c6dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e178a02517ee31e5c92ed5c728f9599" id="r_a9e178a02517ee31e5c92ed5c728f9599"><td class="memItemLeft" align="right" valign="top">AZ::Matrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#a9e178a02517ee31e5c92ed5c728f9599">MakeClipMatrix</a> (int width, int height, float verticalFieldOfViewDeg, float nearDist=0.1f, float farDist=100.0f)</td></tr>
 <tr class="separator:a9e178a02517ee31e5c92ed5c728f9599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad31cc103b5acd527f89db19e7c423bdc" id="r_ad31cc103b5acd527f89db19e7c423bdc"><td class="memItemLeft" align="right" valign="top">const AZStd::unordered_map&lt; <a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#aed0a911a8f26091acc1ee67b8e62e909">ImageEncoding</a>, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#ad31cc103b5acd527f89db19e7c423bdc">ImageEncodingNames</a></td></tr>
+<tr class="separator:ad31cc103b5acd527f89db19e7c423bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d999c552b1b03782d7fadcb8f82c9cd" id="r_a0d999c552b1b03782d7fadcb8f82c9cd"><td class="memItemLeft" align="right" valign="top">const AZStd::unordered_map&lt; AZStd::string, <a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#aed0a911a8f26091acc1ee67b8e62e909">ImageEncoding</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#a0d999c552b1b03782d7fadcb8f82c9cd">ImageEncodingFromName</a></td></tr>
+<tr class="separator:a0d999c552b1b03782d7fadcb8f82c9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace contains utility functions for camera. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aed0a911a8f26091acc1ee67b8e62e909" name="aed0a911a8f26091acc1ee67b8e62e909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0a911a8f26091acc1ee67b8e62e909">&#9670;&#160;</a></span>ImageEncoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#aed0a911a8f26091acc1ee67b8e62e909">ROS2Sensors::CameraUtils::ImageEncoding</a> : AZ::u8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Available image encodings </p><dl class="section note"><dt>Note</dt><dd>Append new entries; the values are serialized by <a class="el" href="struct_r_o_s2_sensors_1_1_encoding_conversion.html">EncodingConversion</a>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ad028e7be9632a73eb072693b6d604a2d" name="ad028e7be9632a73eb072693b6d604a2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad028e7be9632a73eb072693b6d604a2d">&#9670;&#160;</a></span>GetAspectRatio()</h2>
 
@@ -208,13 +254,66 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0d999c552b1b03782d7fadcb8f82c9cd" name="a0d999c552b1b03782d7fadcb8f82c9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d999c552b1b03782d7fadcb8f82c9cd">&#9670;&#160;</a></span>ImageEncodingFromName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZStd::unordered_map&lt;AZStd::string, <a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#aed0a911a8f26091acc1ee67b8e62e909">ImageEncoding</a>&gt; ROS2Sensors::CameraUtils::ImageEncodingFromName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        { <span class="stringliteral">&quot;rgba8&quot;</span>, ImageEncoding::RGBA8 },   { <span class="stringliteral">&quot;rgb8&quot;</span>, ImageEncoding::RGB8 },     { <span class="stringliteral">&quot;mono8&quot;</span>, ImageEncoding::Mono8 },</div>
+<div class="line">        { <span class="stringliteral">&quot;mono16&quot;</span>, ImageEncoding::Mono16 }, { <span class="stringliteral">&quot;32FC1&quot;</span>, ImageEncoding::Depth32FC1 },</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad31cc103b5acd527f89db19e7c423bdc" name="ad31cc103b5acd527f89db19e7c423bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31cc103b5acd527f89db19e7c423bdc">&#9670;&#160;</a></span>ImageEncodingNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZStd::unordered_map&lt;<a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html#aed0a911a8f26091acc1ee67b8e62e909">ImageEncoding</a>, const char*&gt; ROS2Sensors::CameraUtils::ImageEncodingNames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        { ImageEncoding::RGBA8, <span class="stringliteral">&quot;rgba8&quot;</span> },   { ImageEncoding::RGB8, <span class="stringliteral">&quot;rgb8&quot;</span> },     { ImageEncoding::Mono8, <span class="stringliteral">&quot;mono8&quot;</span> },</div>
+<div class="line">        { ImageEncoding::Mono16, <span class="stringliteral">&quot;mono16&quot;</span> }, { ImageEncoding::Depth32FC1, <span class="stringliteral">&quot;32FC1&quot;</span> },</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2Sensors</b></li><li class="navelem"><a class="el" href="namespace_r_o_s2_sensors_1_1_camera_utils.html">CameraUtils</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2Sensors Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:51 for Open 3D Engine ROS2Sensors Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

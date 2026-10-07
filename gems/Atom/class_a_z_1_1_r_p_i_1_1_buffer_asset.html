@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,6 +52,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_buffer_asset.h
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -66,6 +67,14 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_buffer_asset.h
 
 <p>Inherits AZ::Data::AssetData.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af5c9fab0586ed8da79b7c6b31aa7f725" id="r_af5c9fab0586ed8da79b7c6b31aa7f725"><td class="memItemLeft" align="right" valign="top"><a id="af5c9fab0586ed8da79b7c6b31aa7f725" name="af5c9fab0586ed8da79b7c6b31aa7f725"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>CompressionFormat</b> : uint8_t { <b>Uncompressed</b>
+, <b>Index</b>
+, <b>Vertex</b>
+ }</td></tr>
+<tr class="separator:af5c9fab0586ed8da79b7c6b31aa7f725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acece8fbb36455894990d4f66151b1c45" id="r_acece8fbb36455894990d4f66151b1c45"><td class="memItemLeft" align="right" valign="top"><a id="acece8fbb36455894990d4f66151b1c45" name="acece8fbb36455894990d4f66151b1c45"></a>
@@ -90,6 +99,9 @@ CommonBufferPoolType&#160;</td><td class="memItemRight" valign="bottom"><b>GetCo
 <tr class="memitem:a9e0db8287be3a55033a1fe663511ebf0" id="r_a9e0db8287be3a55033a1fe663511ebf0"><td class="memItemLeft" align="right" valign="top"><a id="a9e0db8287be3a55033a1fe663511ebf0" name="a9e0db8287be3a55033a1fe663511ebf0"></a>
 const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:a9e0db8287be3a55033a1fe663511ebf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f4913267f91ec94c6008eab24c578e" id="r_ab0f4913267f91ec94c6008eab24c578e"><td class="memItemLeft" align="right" valign="top"><a id="ab0f4913267f91ec94c6008eab24c578e" name="ab0f4913267f91ec94c6008eab24c578e"></a>
+const CompressionFormat&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompressionFormat</b> () const</td></tr>
+<tr class="separator:ab0f4913267f91ec94c6008eab24c578e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -120,6 +132,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a2293f2c2e0065b00955a4d7b79fb401f" id="r_a2293f2c2e0065b00955a4d7b79fb401f"><td class="memItemLeft" align="right" valign="top"><a id="a2293f2c2e0065b00955a4d7b79fb401f" name="a2293f2c2e0065b00955a4d7b79fb401f"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>BufferAssetCreator</b></td></tr>
 <tr class="separator:a2293f2c2e0065b00955a4d7b79fb401f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a2dd18da186f5700909f9b24bb7023" id="r_a17a2dd18da186f5700909f9b24bb7023"><td class="memItemLeft" align="right" valign="top"><a id="a17a2dd18da186f5700909f9b24bb7023" name="a17a2dd18da186f5700909f9b24bb7023"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>BufferAssetHandler</b></td></tr>
+<tr class="separator:a17a2dd18da186f5700909f9b24bb7023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An asset representation of a buffer meant to be uploaded to the GPU. For example: vertex buffer, index buffer, etc </p>
@@ -132,7 +147,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BufferAssetCreator</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset.html">BufferAsset</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:36 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:38 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

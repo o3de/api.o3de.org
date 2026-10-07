@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzQtComponents API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzQtComponents API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -138,6 +138,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRedoAvailable</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setInitialValueWasSetting</b> (bool b)</td></tr>
 <tr class="memdesc:a6d1a49643ad5847f0a0ed665d32b2f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the initial value was initialized. False prompts reinitialization. <br /></td></tr>
 <tr class="separator:a6d1a49643ad5847f0a0ed665d32b2f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f05b0dcd818cd1a8384f9796db1437" id="r_a04f05b0dcd818cd1a8384f9796db1437"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_spin_box.html#a04f05b0dcd818cd1a8384f9796db1437">hasInProgressEdit</a> () const</td></tr>
+<tr class="separator:a04f05b0dcd818cd1a8384f9796db1437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -157,6 +159,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2edb42a2cbc85625a65ab7ab980275d8" id="r_a2edb42a2cbc85625a65ab7ab980275d8"><td class="memItemLeft" align="right" valign="top"><a id="a2edb42a2cbc85625a65ab7ab980275d8" name="a2edb42a2cbc85625a65ab7ab980275d8"></a>
 static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>s_watcherReferenceCount</b></td></tr>
 <tr class="separator:a2edb42a2cbc85625a65ab7ab980275d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cd30e1d1597b25cf406707a7aaa59a" id="r_a83cd30e1d1597b25cf406707a7aaa59a"><td class="memItemLeft" align="right" valign="top"><a id="a83cd30e1d1597b25cf406707a7aaa59a" name="a83cd30e1d1597b25cf406707a7aaa59a"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_draggableLabelName</b> = &quot;SpinboxDragLabel&quot;</td></tr>
+<tr class="separator:a83cd30e1d1597b25cf406707a7aaa59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -181,6 +186,9 @@ static AZ_POP_DISABLE_WARNING void&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:af74b781eaaecc33aa71885de3480459c" id="r_af74b781eaaecc33aa71885de3480459c"><td class="memItemLeft" align="right" valign="top"><a id="af74b781eaaecc33aa71885de3480459c" name="af74b781eaaecc33aa71885de3480459c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>uninitializeWatcher</b> ()</td></tr>
 <tr class="separator:af74b781eaaecc33aa71885de3480459c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc82fe42508660c30bd0d0b8c9808305" id="r_adc82fe42508660c30bd0d0b8c9808305"><td class="memItemLeft" align="right" valign="top"><a id="adc82fe42508660c30bd0d0b8c9808305" name="adc82fe42508660c30bd0d0b8c9808305"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>registerLabelToWatcher</b> (QLabel *label, bool shouldRegister)</td></tr>
+<tr class="separator:adc82fe42508660c30bd0d0b8c9808305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abae1bd59b83593b0667e36621d5ef10e" id="r_abae1bd59b83593b0667e36621d5ef10e"><td class="memItemLeft" align="right" valign="top"><a id="abae1bd59b83593b0667e36621d5ef10e" name="abae1bd59b83593b0667e36621d5ef10e"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawSpinBox</b> (const QProxyStyle *style, const QStyleOption *option, QPainter *painter, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_spin_box_1_1_config.html">Config</a> &amp;config)</td></tr>
 <tr class="separator:abae1bd59b83593b0667e36621d5ef10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +213,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a32fc2c95098c17797fc1687b3a7efc72" id="r_a32fc2c95098c17797fc1687b3a7efc72"><td class="memItemLeft" align="right" valign="top"><a id="a32fc2c95098c17797fc1687b3a7efc72" name="a32fc2c95098c17797fc1687b3a7efc72"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastValue</b> = 0</td></tr>
 <tr class="separator:a32fc2c95098c17797fc1687b3a7efc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c7d94c88d0f7c3c4fd2e921293d716" id="r_a12c7d94c88d0f7c3c4fd2e921293d716"><td class="memItemLeft" align="right" valign="top"><a id="a12c7d94c88d0f7c3c4fd2e921293d716" name="a12c7d94c88d0f7c3c4fd2e921293d716"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_valueOnFocusIn</b> = 0</td></tr>
+<tr class="separator:a12c7d94c88d0f7c3c4fd2e921293d716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e832c890807064e00d1eca3f3faffa3" id="r_a1e832c890807064e00d1eca3f3faffa3"><td class="memItemLeft" align="right" valign="top"><a id="a1e832c890807064e00d1eca3f3faffa3" name="a1e832c890807064e00d1eca3f3faffa3"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastSuffix</b></td></tr>
 <tr class="separator:a1e832c890807064e00d1eca3f3faffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,6 +301,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSpinBox</b></t
 
 </div>
 </div>
+<a id="a04f05b0dcd818cd1a8384f9796db1437" name="a04f05b0dcd818cd1a8384f9796db1437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f05b0dcd818cd1a8384f9796db1437">&#9670;&#160;</a></span>hasInProgressEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzQtComponents::SpinBox::hasInProgressEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true when the current spinbox value differs from the value captured at focus-in, meaning the user has an uncommitted local edit. </p>
+
+</div>
+</div>
 <a id="ab5c792eeea573653d9d4a8172165a48b" name="ab5c792eeea573653d9d4a8172165a48b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5c792eeea573653d9d4a8172165a48b">&#9670;&#160;</a></span>loadConfig()</h2>
 
@@ -351,7 +380,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSpinBox</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_qt_components.html">AzQtComponents</a></li><li class="navelem"><a class="el" href="class_az_qt_components_1_1_spin_box.html">SpinBox</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:28 for Open 3D Engine AzQtComponents API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:29 for Open 3D Engine AzQtComponents API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

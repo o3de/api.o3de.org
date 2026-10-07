@@ -7,7 +7,6 @@ var class_az_framework_1_1_transform_component =
     [ "GetParentId", "class_az_framework_1_1_transform_component.html#a3e800cda89aa2805b778bd5b5842b86f", null ],
     [ "GetProvidedServices", "class_az_framework_1_1_transform_component.html#aa28e9375b5d09be4aea0d633c0cc7e29", null ],
     [ "GetWorldTM", "class_az_framework_1_1_transform_component.html#a1b914609321e4523e5edef34515acaa5", null ],
-    [ "OnEntityActivated", "class_az_framework_1_1_transform_component.html#a80b8c76a19e093ae1276147934f3e3a1", null ],
     [ "OnTransformChanged", "class_az_framework_1_1_transform_component.html#a96a00f6eb0645e7998be5199ac52f366", null ],
     [ "Reflect", "class_az_framework_1_1_transform_component.html#ad91430543cb0b00deea9bbf0d0ecb82c", null ],
     [ "SetLocalTM", "class_az_framework_1_1_transform_component.html#a82b441eb0603ae1292450481ca5466ce", null ],

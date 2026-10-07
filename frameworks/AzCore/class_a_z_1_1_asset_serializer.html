@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,31 +66,31 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_asset_serializer.html','
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a161544a1391cacc9b9544aa97215c45d" id="r_a161544a1391cacc9b9544aa97215c45d"><td class="memItemLeft" align="right" valign="top"><a id="a161544a1391cacc9b9544aa97215c45d" name="a161544a1391cacc9b9544aa97215c45d"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">classPtr</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">isDataBigEndian</a>=<a class="el" href="class_a_z_1_1_e_bus.html">false</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (const void *classPtr, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, bool isDataBigEndian=false) override</td></tr>
 <tr class="separator:a161544a1391cacc9b9544aa97215c45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6006d03577b0bf0d14597d43db09dda0" id="r_a6006d03577b0bf0d14597d43db09dda0"><td class="memItemLeft" align="right" valign="top"><a id="a6006d03577b0bf0d14597d43db09dda0" name="a6006d03577b0bf0d14597d43db09dda0"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DataToText</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;in, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;out, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">isDataBigEndian</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DataToText</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;in, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;out, bool isDataBigEndian) override</td></tr>
 <tr class="separator:a6006d03577b0bf0d14597d43db09dda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ec830c05aef56a05d75fbf7d534e007" id="r_a2ec830c05aef56a05d75fbf7d534e007"><td class="memItemLeft" align="right" valign="top"><a id="a2ec830c05aef56a05d75fbf7d534e007" name="a2ec830c05aef56a05d75fbf7d534e007"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>TextToData</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *<a class="el" href="class_a_z_1_1_e_bus.html">text</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">textVersion</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">isDataBigEndian</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>TextToData</b> (const char *text, unsigned int textVersion, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, bool isDataBigEndian) override</td></tr>
 <tr class="separator:a2ec830c05aef56a05d75fbf7d534e007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb39b8ce1a96d480a65175a95af3487" id="r_a5cb39b8ce1a96d480a65175a95af3487"><td class="memItemLeft" align="right" valign="top"><a id="a5cb39b8ce1a96d480a65175a95af3487" name="a5cb39b8ce1a96d480a65175a95af3487"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">classPtr</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">version</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">isDataBigEndian</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (void *classPtr, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, unsigned int version, bool isDataBigEndian) override</td></tr>
 <tr class="separator:a5cb39b8ce1a96d480a65175a95af3487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a6c733ac5357634a4bb6e0eca58b05" id="r_a95a6c733ac5357634a4bb6e0eca58b05"><td class="memItemLeft" align="right" valign="top"><a id="a95a6c733ac5357634a4bb6e0eca58b05" name="a95a6c733ac5357634a4bb6e0eca58b05"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadWithFilter</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">classPtr</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">version</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1function.html">Data::AssetFilterCB</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">assetFilterCallback</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">isDataBigEndian</a>=<a class="el" href="class_a_z_1_1_e_bus.html">false</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadWithFilter</b> (void *classPtr, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, unsigned int version, const <a class="el" href="class_a_z_std_1_1function.html">Data::AssetFilterCB</a> &amp;assetFilterCallback, bool isDataBigEndian=false)</td></tr>
 <tr class="separator:a95a6c733ac5357634a4bb6e0eca58b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48adbf82801651ecbaa9e15bb742af2f" id="r_a48adbf82801651ecbaa9e15bb742af2f"><td class="memItemLeft" align="right" valign="top"><a id="a48adbf82801651ecbaa9e15bb742af2f" name="a48adbf82801651ecbaa9e15bb742af2f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">sourcePtr</a>, <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">destPtr</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> (const void *sourcePtr, void *destPtr)</td></tr>
 <tr class="separator:a48adbf82801651ecbaa9e15bb742af2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d0bf027625c6cbbe8659fb1a7fcec24" id="r_a7d0bf027625c6cbbe8659fb1a7fcec24"><td class="memItemLeft" align="right" valign="top"><a id="a7d0bf027625c6cbbe8659fb1a7fcec24" name="a7d0bf027625c6cbbe8659fb1a7fcec24"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompareValueData</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">lhs</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">rhs</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CompareValueData</b> (const void *lhs, const void *rhs) override</td></tr>
 <tr class="separator:a7d0bf027625c6cbbe8659fb1a7fcec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a01127aec693488571a8107d0afabe460" id="r_a01127aec693488571a8107d0afabe460"><td class="memItemLeft" align="right" valign="top"><a id="a01127aec693488571a8107d0afabe460" name="a01127aec693488571a8107d0afabe460"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_asset_serializer.html">AssetSerializer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_serializer</b></td></tr>
+static <a class="el" href="class_a_z_1_1_asset_serializer.html">AssetSerializer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_serializer</b></td></tr>
 <tr class="separator:a01127aec693488571a8107d0afabe460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -104,7 +104,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_asset_serializer.html">AssetSerializer</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

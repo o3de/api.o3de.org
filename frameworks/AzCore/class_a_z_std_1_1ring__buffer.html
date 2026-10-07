@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -108,10 +108,10 @@ typedef AZStd::reverse_iterator&lt; <a class="el" href="class_a_z_std_1_1ring__b
 typedef AZStd::reverse_iterator&lt; <a class="el" href="class_a_z_std_1_1ring__buffer_1_1const__iterator__impl.html">const_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b></td></tr>
 <tr class="separator:a31ff9fb7f69772329b240a9afc18039b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39ce3c342073532e47d3089bbd3088d" id="r_ac39ce3c342073532e47d3089bbd3088d"><td class="memItemLeft" align="right" valign="top"><a id="ac39ce3c342073532e47d3089bbd3088d" name="ac39ce3c342073532e47d3089bbd3088d"></a>
-typedef <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; pointer, size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_range</b></td></tr>
+typedef AZStd::pair&lt; pointer, size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_range</b></td></tr>
 <tr class="separator:ac39ce3c342073532e47d3089bbd3088d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3f76af20cd4453009dc80c4b26f10b" id="r_a2f3f76af20cd4453009dc80c4b26f10b"><td class="memItemLeft" align="right" valign="top"><a id="a2f3f76af20cd4453009dc80c4b26f10b" name="a2f3f76af20cd4453009dc80c4b26f10b"></a>
-typedef <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; const_pointer, size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_array_range</b></td></tr>
+typedef AZStd::pair&lt; const_pointer, size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_array_range</b></td></tr>
 <tr class="separator:a2f3f76af20cd4453009dc80c4b26f10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596ff9f79cae82e8a2565ca19b969e51" id="r_a596ff9f79cae82e8a2565ca19b969e51"><td class="memItemLeft" align="right" valign="top"><a id="a596ff9f79cae82e8a2565ca19b969e51" name="a596ff9f79cae82e8a2565ca19b969e51"></a>
 typedef value_type&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b></td></tr>
@@ -195,17 +195,17 @@ AZ_FORCE_INLINE const_reference&#160;</td><td class="memItemRight" valign="botto
 AZ_FORCE_INLINE const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const</td></tr>
 <tr class="separator:a3f1d49d170cbbd40864e2d00bb33bab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a7f401f96407bcea45249d9345ba086" id="r_a6a7f401f96407bcea45249d9345ba086"><td class="memItemLeft" align="right" valign="top"><a id="a6a7f401f96407bcea45249d9345ba086" name="a6a7f401f96407bcea45249d9345ba086"></a>
-AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">array_range</a>&#160;</td><td class="memItemRight" valign="bottom"><b>array_one</b> ()</td></tr>
+AZ_FORCE_INLINE array_range&#160;</td><td class="memItemRight" valign="bottom"><b>array_one</b> ()</td></tr>
 <tr class="memdesc:a6a7f401f96407bcea45249d9345ba086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first continuous array of the internal buffer. <br /></td></tr>
 <tr class="separator:a6a7f401f96407bcea45249d9345ba086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8ccb85d33e743e481825a78f18e239" id="r_aab8ccb85d33e743e481825a78f18e239"><td class="memItemLeft" align="right" valign="top"><a id="aab8ccb85d33e743e481825a78f18e239" name="aab8ccb85d33e743e481825a78f18e239"></a>
-AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">array_range</a>&#160;</td><td class="memItemRight" valign="bottom"><b>array_two</b> ()</td></tr>
+AZ_FORCE_INLINE array_range&#160;</td><td class="memItemRight" valign="bottom"><b>array_two</b> ()</td></tr>
 <tr class="separator:aab8ccb85d33e743e481825a78f18e239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e56878970dc49c5f2fca9f31a5cd17d" id="r_a5e56878970dc49c5f2fca9f31a5cd17d"><td class="memItemLeft" align="right" valign="top"><a id="a5e56878970dc49c5f2fca9f31a5cd17d" name="a5e56878970dc49c5f2fca9f31a5cd17d"></a>
-AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">const_array_range</a>&#160;</td><td class="memItemRight" valign="bottom"><b>array_one</b> () const</td></tr>
+AZ_FORCE_INLINE const_array_range&#160;</td><td class="memItemRight" valign="bottom"><b>array_one</b> () const</td></tr>
 <tr class="separator:a5e56878970dc49c5f2fca9f31a5cd17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e803c9f8c84d22fa5d67dc8a36408f" id="r_af9e803c9f8c84d22fa5d67dc8a36408f"><td class="memItemLeft" align="right" valign="top"><a id="af9e803c9f8c84d22fa5d67dc8a36408f" name="af9e803c9f8c84d22fa5d67dc8a36408f"></a>
-AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">const_array_range</a>&#160;</td><td class="memItemRight" valign="bottom"><b>array_two</b> () const</td></tr>
+AZ_FORCE_INLINE const_array_range&#160;</td><td class="memItemRight" valign="bottom"><b>array_two</b> () const</td></tr>
 <tr class="separator:af9e803c9f8c84d22fa5d67dc8a36408f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ed31025f8e99dde9985030d3faf8da" id="r_ae2ed31025f8e99dde9985030d3faf8da"><td class="memItemLeft" align="right" valign="top"><a id="ae2ed31025f8e99dde9985030d3faf8da" name="ae2ed31025f8e99dde9985030d3faf8da"></a>
 pointer&#160;</td><td class="memItemRight" valign="bottom"><b>linearize</b> ()</td></tr>
@@ -324,7 +324,7 @@ class AZStd::ring_buffer&lt; T, Allocator &gt;</div><p>Ring buffer container, ba
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ring__buffer.html">ring_buffer</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:24 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

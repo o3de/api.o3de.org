@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -84,29 +84,29 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a9688374566970ff4faced09d47c119f4" id="r_a9688374566970ff4faced09d47c119f4"><td class="memItemLeft" align="right" valign="top"><a id="a9688374566970ff4faced09d47c119f4" name="a9688374566970ff4faced09d47c119f4"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeprecatedTypeNameCallback</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">void</a>(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>)&gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeprecatedTypeNameCallback</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>)&gt;</td></tr>
 <tr class="separator:a9688374566970ff4faced09d47c119f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abb8dfb5db36c739111d09e261ed66932" id="r_abb8dfb5db36c739111d09e261ed66932"><td class="memTemplParams" colspan="2"><a id="abb8dfb5db36c739111d09e261ed66932" name="abb8dfb5db36c739111d09e261ed66932"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">Functor</a> &gt; </td></tr>
-<tr class="memitem:abb8dfb5db36c739111d09e261ed66932"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VisitDeprecatedNameOrCurrentName</b> (<a class="el" href="class_a_z_1_1_e_bus.html">Functor</a> &amp;&amp;<a class="el" href="class_a_z_1_1_e_bus.html">visitCallback</a>)</td></tr>
+template&lt;class T , class Functor &gt; </td></tr>
+<tr class="memitem:abb8dfb5db36c739111d09e261ed66932"><td class="memTemplItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VisitDeprecatedNameOrCurrentName</b> (Functor &amp;&amp;visitCallback)</td></tr>
 <tr class="separator:abb8dfb5db36c739111d09e261ed66932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6939a409521dce2e48d1ec7901f9176a" id="r_a6939a409521dce2e48d1ec7901f9176a"><td class="memTemplParams" colspan="2"><a id="a6939a409521dce2e48d1ec7901f9176a" name="a6939a409521dce2e48d1ec7901f9176a"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td></tr>
-<tr class="memitem:a6939a409521dce2e48d1ec7901f9176a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AggregateTypeNameOld</b> (<a class="el" href="class_a_z_1_1_e_bus.html">char</a> *<a class="el" href="class_a_z_1_1_e_bus.html">buffer</a>, size_t <a class="el" href="class_a_z_1_1_e_bus.html">bufferSize</a>)</td></tr>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6939a409521dce2e48d1ec7901f9176a"><td class="memTemplItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AggregateTypeNameOld</b> (char *buffer, size_t bufferSize)</td></tr>
 <tr class="separator:a6939a409521dce2e48d1ec7901f9176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a80a84bd2ab4f02a66cd6141b29cce9d0" id="r_a80a84bd2ab4f02a66cd6141b29cce9d0"><td class="memTemplParams" colspan="2"><a id="a80a84bd2ab4f02a66cd6141b29cce9d0" name="a80a84bd2ab4f02a66cd6141b29cce9d0"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T , <a class="el" href="class_a_z_1_1_e_bus.html">class</a>  = void&gt; </td></tr>
-<tr class="memitem:a80a84bd2ab4f02a66cd6141b29cce9d0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HasDeprecatedTypeNameVisitor_v</b> = <a class="el" href="class_a_z_1_1_e_bus.html">false</a></td></tr>
+template&lt;class T , class  = void&gt; </td></tr>
+<tr class="memitem:a80a84bd2ab4f02a66cd6141b29cce9d0"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HasDeprecatedTypeNameVisitor_v</b> = false</td></tr>
 <tr class="separator:a80a84bd2ab4f02a66cd6141b29cce9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebcdf701db4bbbffb62a18d835256d7" id="r_a8ebcdf701db4bbbffb62a18d835256d7"><td class="memTemplParams" colspan="2"><a id="a8ebcdf701db4bbbffb62a18d835256d7" name="a8ebcdf701db4bbbffb62a18d835256d7"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td></tr>
-<tr class="memitem:a8ebcdf701db4bbbffb62a18d835256d7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="struct_a_z_1_1_deprecated_type_names_1_1_az_deprecated_type_name_visitor.html">AzDeprecatedTypeNameVisitor</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DeprecatedTypeNameVisitor</b> {}</td></tr>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8ebcdf701db4bbbffb62a18d835256d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_a_z_1_1_deprecated_type_names_1_1_az_deprecated_type_name_visitor.html">AzDeprecatedTypeNameVisitor</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DeprecatedTypeNameVisitor</b> {}</td></tr>
 <tr class="separator:a8ebcdf701db4bbbffb62a18d835256d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -117,7 +117,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_deprecated_type_names.html">DeprecatedTypeNames</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,14 @@
 var annotated_dup =
 [
     [ "WhiteBox", null, [
+      [ "Api", null, [
+        [ "Detail", "namespace_white_box_1_1_api_1_1_detail.html", [
+          [ "V2", "struct_white_box_1_1_api_1_1_detail_1_1_v2.html", null ]
+        ] ]
+      ] ],
+      [ "Csg", null, [
+        [ "TriangleMesh", "struct_white_box_1_1_csg_1_1_triangle_mesh.html", "struct_white_box_1_1_csg_1_1_triangle_mesh" ]
+      ] ],
       [ "Pipeline", null, [
         [ "WhiteBoxMeshAsset", "class_white_box_1_1_pipeline_1_1_white_box_mesh_asset.html", null ],
         [ "WhiteBoxMeshAssetHandler", "class_white_box_1_1_pipeline_1_1_white_box_mesh_asset_handler.html", null ]
@@ -19,6 +27,8 @@ var annotated_dup =
       [ "BoundShapePolygon", "class_white_box_1_1_bound_shape_polygon.html", null ],
       [ "Buffer", "class_white_box_1_1_buffer.html", "class_white_box_1_1_buffer" ],
       [ "DefaultMode", "class_white_box_1_1_default_mode.html", "class_white_box_1_1_default_mode" ],
+      [ "DrawShapeMode", "class_white_box_1_1_draw_shape_mode.html", "class_white_box_1_1_draw_shape_mode" ],
+      [ "DrawStairInfo", "struct_white_box_1_1_draw_stair_info.html", "struct_white_box_1_1_draw_stair_info" ],
       [ "EdgeBound", "struct_white_box_1_1_edge_bound.html", null ],
       [ "EdgeBoundWithHandle", "struct_white_box_1_1_edge_bound_with_handle.html", null ],
       [ "EdgeIntersection", "struct_white_box_1_1_edge_intersection.html", null ],
@@ -34,6 +44,7 @@ var annotated_dup =
       [ "EditorWhiteBoxComponentNotifications", "class_white_box_1_1_editor_white_box_component_notifications.html", "class_white_box_1_1_editor_white_box_component_notifications" ],
       [ "EditorWhiteBoxComponentRequests", "class_white_box_1_1_editor_white_box_component_requests.html", "class_white_box_1_1_editor_white_box_component_requests" ],
       [ "EditorWhiteBoxDefaultModeRequests", "class_white_box_1_1_editor_white_box_default_mode_requests.html", "class_white_box_1_1_editor_white_box_default_mode_requests" ],
+      [ "EditorWhiteBoxDrawShapeModeRequests", "class_white_box_1_1_editor_white_box_draw_shape_mode_requests.html", "class_white_box_1_1_editor_white_box_draw_shape_mode_requests" ],
       [ "EditorWhiteBoxEdgeModifierNotifications", "class_white_box_1_1_editor_white_box_edge_modifier_notifications.html", "class_white_box_1_1_editor_white_box_edge_modifier_notifications" ],
       [ "EditorWhiteBoxMeshAsset", "class_white_box_1_1_editor_white_box_mesh_asset.html", "class_white_box_1_1_editor_white_box_mesh_asset" ],
       [ "EditorWhiteBoxPolygonModifierNotifications", "class_white_box_1_1_editor_white_box_polygon_modifier_notifications.html", "class_white_box_1_1_editor_white_box_polygon_modifier_notifications" ],
@@ -47,6 +58,8 @@ var annotated_dup =
       [ "ManipulatorBoundPolygon", "class_white_box_1_1_manipulator_bound_polygon.html", null ],
       [ "ManipulatorViewEdge", "class_white_box_1_1_manipulator_view_edge.html", "class_white_box_1_1_manipulator_view_edge" ],
       [ "ManipulatorViewPolygon", "class_white_box_1_1_manipulator_view_polygon.html", "class_white_box_1_1_manipulator_view_polygon" ],
+      [ "ModeMouseInteraction", "struct_white_box_1_1_mode_mouse_interaction.html", null ],
+      [ "NumericInputState", "struct_white_box_1_1_numeric_input_state.html", "struct_white_box_1_1_numeric_input_state" ],
       [ "PolygonBound", "struct_white_box_1_1_polygon_bound.html", null ],
       [ "PolygonBoundWithHandle", "struct_white_box_1_1_polygon_bound_with_handle.html", null ],
       [ "PolygonIntersection", "struct_white_box_1_1_polygon_intersection.html", "struct_white_box_1_1_polygon_intersection" ],

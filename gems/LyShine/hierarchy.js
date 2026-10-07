@@ -283,6 +283,9 @@ var hierarchy =
     [ "AzToolsFramework::AssetBrowser::AssetBrowserModelNotificationBus::Handler", null, [
       [ "EditorWindow", "class_editor_window.html", null ]
     ] ],
+    [ "AzToolsFramework::ComponentPaletteWidget", null, [
+      [ "UiComponentPaletteWidget", "class_ui_component_palette_widget.html", null ]
+    ] ],
     [ "AzToolsFramework::EditorEntityContextNotificationBus::Handler", null, [
       [ "LyShineEditor::LyShineEditorSystemComponent", "class_ly_shine_editor_1_1_ly_shine_editor_system_component.html", null ]
     ] ],
