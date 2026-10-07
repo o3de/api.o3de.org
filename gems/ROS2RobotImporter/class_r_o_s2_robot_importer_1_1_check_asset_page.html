@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,10 +65,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c30fb9026e841d3fda95fc35b4d0328" id="r_a6c30fb9026e841d3fda95fc35b4d0328"><td class="memItemLeft" align="right" valign="top"><a id="a6c30fb9026e841d3fda95fc35b4d0328" name="a6c30fb9026e841d3fda95fc35b4d0328"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CheckAssetPage</b> (QWizard *parent)</td></tr>
 <tr class="separator:a6c30fb9026e841d3fda95fc35b4d0328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad0a9a4785b9d2fb337afadd9a25d13" id="r_a7ad0a9a4785b9d2fb337afadd9a25d13"><td class="memItemLeft" align="right" valign="top"><a id="a7ad0a9a4785b9d2fb337afadd9a25d13" name="a7ad0a9a4785b9d2fb337afadd9a25d13"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportAsset</b> (const AZStd::string unresolvedFileName, const <a class="el" href="struct_r_o_s2_robot_importer_1_1_utils_1_1_urdf_asset.html">Utils::UrdfAsset</a> &amp;urdfAsset, const QString &amp;type)</td></tr>
-<tr class="memdesc:a7ad0a9a4785b9d2fb337afadd9a25d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function reports assets that will be copied/processed by asset processor. <br /></td></tr>
-<tr class="separator:a7ad0a9a4785b9d2fb337afadd9a25d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77ba92ae7db3e4583a326de93e66bbe" id="r_af77ba92ae7db3e4583a326de93e66bbe"><td class="memItemLeft" align="right" valign="top"><a id="af77ba92ae7db3e4583a326de93e66bbe" name="af77ba92ae7db3e4583a326de93e66bbe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportAsset</b> (const AZStd::string unresolvedFileName, const <a class="el" href="struct_r_o_s2_robot_importer_1_1_assets_1_1_referenced_asset.html">Assets::ReferencedAsset</a> &amp;referencedAsset, const QString &amp;type)</td></tr>
+<tr class="memdesc:af77ba92ae7db3e4583a326de93e66bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function reports assets that will be copied/processed by asset processor. <br /></td></tr>
+<tr class="separator:af77ba92ae7db3e4583a326de93e66bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3571cd81b68de89350d9226584ab84cc" id="r_a3571cd81b68de89350d9226584ab84cc"><td class="memItemLeft" align="right" valign="top"><a id="a3571cd81b68de89350d9226584ab84cc" name="a3571cd81b68de89350d9226584ab84cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAssetsList</b> ()</td></tr>
 <tr class="separator:a3571cd81b68de89350d9226584ab84cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,12 +81,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isComplete</b> () con
 <tr class="memitem:a83daa027d7d705f139ffc085e7a96f22" id="r_a83daa027d7d705f139ffc085e7a96f22"><td class="memItemLeft" align="right" valign="top"><a id="a83daa027d7d705f139ffc085e7a96f22" name="a83daa027d7d705f139ffc085e7a96f22"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initializePage</b> () override</td></tr>
 <tr class="separator:a83daa027d7d705f139ffc085e7a96f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada095d8b8eeb018e7ec535506a072d34" id="r_ada095d8b8eeb018e7ec535506a072d34"><td class="memItemLeft" align="right" valign="top"><a id="ada095d8b8eeb018e7ec535506a072d34" name="ada095d8b8eeb018e7ec535506a072d34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetCopyStatusChanged</b> (const Utils::CopyStatus &amp;status, const AZStd::string &amp;unresolvedFileName, const AZStd::string assetPath)</td></tr>
-<tr class="separator:ada095d8b8eeb018e7ec535506a072d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f92d3af4462024cfbad02f839a7d992" id="r_a5f92d3af4462024cfbad02f839a7d992"><td class="memItemLeft" align="right" valign="top"><a id="a5f92d3af4462024cfbad02f839a7d992" name="a5f92d3af4462024cfbad02f839a7d992"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetProcessStatusChanged</b> (const AZStd::string &amp;unresolvedFileName, const <a class="el" href="struct_r_o_s2_robot_importer_1_1_utils_1_1_urdf_asset.html">Utils::UrdfAsset</a> &amp;urdfAsset, bool isError)</td></tr>
-<tr class="separator:a5f92d3af4462024cfbad02f839a7d992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66b4e7e6ea9770ab0a71d8663e06dce" id="r_ad66b4e7e6ea9770ab0a71d8663e06dce"><td class="memItemLeft" align="right" valign="top"><a id="ad66b4e7e6ea9770ab0a71d8663e06dce" name="ad66b4e7e6ea9770ab0a71d8663e06dce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetCopyStatusChanged</b> (const Assets::CopyStatus &amp;status, const AZStd::string &amp;unresolvedFileName, const AZStd::string assetPath)</td></tr>
+<tr class="separator:ad66b4e7e6ea9770ab0a71d8663e06dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bfb741164ca72542a46cf025e7d36a" id="r_af9bfb741164ca72542a46cf025e7d36a"><td class="memItemLeft" align="right" valign="top"><a id="af9bfb741164ca72542a46cf025e7d36a" name="af9bfb741164ca72542a46cf025e7d36a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetProcessStatusChanged</b> (const AZStd::string &amp;unresolvedFileName, const <a class="el" href="struct_r_o_s2_robot_importer_1_1_assets_1_1_referenced_asset.html">Assets::ReferencedAsset</a> &amp;referencedAsset, bool isError)</td></tr>
+<tr class="separator:af9bfb741164ca72542a46cf025e7d36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0c22c056fc57d998c814f3aa48e805" id="r_aef0c22c056fc57d998c814f3aa48e805"><td class="memItemLeft" align="right" valign="top"><a id="aef0c22c056fc57d998c814f3aa48e805" name="aef0c22c056fc57d998c814f3aa48e805"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCopyThread</b> (AZStd::shared_ptr&lt; AZStd::thread &gt; copyThread)</td></tr>
 <tr class="separator:aef0c22c056fc57d998c814f3aa48e805"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,7 +100,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCopyThread</b> (AZ
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2RobotImporter</b></li><li class="navelem"><a class="el" href="class_r_o_s2_robot_importer_1_1_check_asset_page.html">CheckAssetPage</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:51 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

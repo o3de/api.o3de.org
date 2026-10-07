@@ -5,7 +5,9 @@ var class_physics_1_1_collider_configuration =
       [ "MaterialSelection", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1a92e18563ab61adac92b77c014186053b", null ],
       [ "IsTrigger", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1aebbb73b8680d41b0548af3e64c80dee5", null ],
       [ "IsVisible", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1a5ced7780f35f5146391150db514d7cc4", null ],
-      [ "Offset", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1a5239634950ec2c75a701f54920172831", null ]
+      [ "Offset", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1a5239634950ec2c75a701f54920172831", null ],
+      [ "Tag", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1a625a719fda7b26805be83c948c75d12e", null ],
+      [ "ContactOffset", "class_physics_1_1_collider_configuration.html#ad3df11738632186c3634ac79a9bb0ad1a3b0e551b99005db76854917a588db1de", null ]
     ] ],
     [ "m_collisionGroupId", "class_physics_1_1_collider_configuration.html#a6dc22909e2d143c8ec1cb1b3e3083971", null ],
     [ "m_collisionLayer", "class_physics_1_1_collider_configuration.html#a478fa6a8eba499513bbcc4870abf8b0d", null ],

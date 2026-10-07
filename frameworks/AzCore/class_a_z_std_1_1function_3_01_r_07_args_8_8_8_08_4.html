@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,14 +62,16 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1function_3_01_r_07_ar
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8327dcf5ff686c7669657d2fd356a396" id="r_a8327dcf5ff686c7669657d2fd356a396"><td class="memTemplParams" colspan="2"><a id="a8327dcf5ff686c7669657d2fd356a396" name="a8327dcf5ff686c7669657d2fd356a396"></a>
-template&lt;typename Functor &gt; </td></tr>
-<tr class="memitem:a8327dcf5ff686c7669657d2fd356a396"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>function</b> (Functor &amp;&amp;f, enable_if_t&lt;!is_integral&lt; Functor &gt;::value &amp;&amp;!is_same&lt; remove_cvref_t&lt; Functor &gt;, <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &gt;::value, int &gt;=0)</td></tr>
-<tr class="separator:a8327dcf5ff686c7669657d2fd356a396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c69a40ba881565fa27a2b20fe7e77b" id="r_a27c69a40ba881565fa27a2b20fe7e77b"><td class="memTemplParams" colspan="2"><a id="a27c69a40ba881565fa27a2b20fe7e77b" name="a27c69a40ba881565fa27a2b20fe7e77b"></a>
-template&lt;typename Functor , typename Allocator &gt; </td></tr>
-<tr class="memitem:a27c69a40ba881565fa27a2b20fe7e77b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>function</b> (Functor &amp;&amp;f, const Allocator &amp;a, enable_if_t&lt;!is_integral&lt; Functor &gt;::value &amp;&amp;!is_same&lt; remove_cvref_t&lt; Functor &gt;, <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &gt;::value, int &gt;=0)</td></tr>
-<tr class="separator:a27c69a40ba881565fa27a2b20fe7e77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99739235c9ac6d6c3ce9b80ac9497b0" id="r_ac99739235c9ac6d6c3ce9b80ac9497b0"><td class="memTemplParams" colspan="2"><a id="ac99739235c9ac6d6c3ce9b80ac9497b0" name="ac99739235c9ac6d6c3ce9b80ac9497b0"></a>
+template&lt;typename Functor &gt; <br />
+requires (!is_integral_v&lt;Functor&gt;) &amp;&amp; (!is_same_v&lt;remove_cvref_t&lt;Functor&gt;, <a class="el" href="class_a_z_std_1_1function.html">self_type</a>&gt;)</td></tr>
+<tr class="memitem:ac99739235c9ac6d6c3ce9b80ac9497b0"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>function</b> (Functor &amp;&amp;f)</td></tr>
+<tr class="separator:ac99739235c9ac6d6c3ce9b80ac9497b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a816bfba9f512d8f53d3417b071c07" id="r_ab2a816bfba9f512d8f53d3417b071c07"><td class="memTemplParams" colspan="2"><a id="ab2a816bfba9f512d8f53d3417b071c07" name="ab2a816bfba9f512d8f53d3417b071c07"></a>
+template&lt;typename Functor , typename Allocator &gt; <br />
+requires (!is_integral_v&lt;Functor&gt;) &amp;&amp; (!is_same_v&lt;remove_cvref_t&lt;Functor&gt;, <a class="el" href="class_a_z_std_1_1function.html">self_type</a>&gt;)</td></tr>
+<tr class="memitem:ab2a816bfba9f512d8f53d3417b071c07"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>function</b> (Functor &amp;&amp;f, const Allocator &amp;a)</td></tr>
+<tr class="separator:ab2a816bfba9f512d8f53d3417b071c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b91f4547d77bc6dde7871ec65c2fac" id="r_aa7b91f4547d77bc6dde7871ec65c2fac"><td class="memItemLeft" align="right" valign="top"><a id="aa7b91f4547d77bc6dde7871ec65c2fac" name="aa7b91f4547d77bc6dde7871ec65c2fac"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>function</b> (nullptr_t)</td></tr>
 <tr class="separator:aa7b91f4547d77bc6dde7871ec65c2fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,10 +93,11 @@ template&lt;typename Functor , typename Allocator &gt; </td></tr>
 <tr class="memitem:ab3bf7e167ebf5960d75c294dbeb44889" id="r_ab3bf7e167ebf5960d75c294dbeb44889"><td class="memItemLeft" align="right" valign="top"><a id="ab3bf7e167ebf5960d75c294dbeb44889" name="ab3bf7e167ebf5960d75c294dbeb44889"></a>
 <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1function.html">self_type</a> &amp;&amp;f)</td></tr>
 <tr class="separator:ab3bf7e167ebf5960d75c294dbeb44889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d8554441255beb2ec0258a90e7a9cc9" id="r_a8d8554441255beb2ec0258a90e7a9cc9"><td class="memTemplParams" colspan="2"><a id="a8d8554441255beb2ec0258a90e7a9cc9" name="a8d8554441255beb2ec0258a90e7a9cc9"></a>
-template&lt;typename Functor &gt; </td></tr>
-<tr class="memitem:a8d8554441255beb2ec0258a90e7a9cc9"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt;!is_integral&lt; Functor &gt;::value &amp;&amp;!is_same&lt; remove_cvref_t&lt; Functor &gt;, <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &gt;::value, <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (Functor &amp;&amp;f)</td></tr>
-<tr class="separator:a8d8554441255beb2ec0258a90e7a9cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9315eec9b63fd22bdf9a284a79d4c6" id="r_a8e9315eec9b63fd22bdf9a284a79d4c6"><td class="memTemplParams" colspan="2"><a id="a8e9315eec9b63fd22bdf9a284a79d4c6" name="a8e9315eec9b63fd22bdf9a284a79d4c6"></a>
+template&lt;typename Functor &gt; <br />
+requires (!is_integral_v&lt;Functor&gt;) &amp;&amp; (!is_same_v&lt;remove_cvref_t&lt;Functor&gt;, <a class="el" href="class_a_z_std_1_1function.html">self_type</a>&gt;)</td></tr>
+<tr class="memitem:a8e9315eec9b63fd22bdf9a284a79d4c6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (Functor &amp;&amp;f) -&gt; <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &amp;</td></tr>
+<tr class="separator:a8e9315eec9b63fd22bdf9a284a79d4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd95fb5c2ff94dd3d33163771202923c" id="r_acd95fb5c2ff94dd3d33163771202923c"><td class="memItemLeft" align="right" valign="top"><a id="acd95fb5c2ff94dd3d33163771202923c" name="acd95fb5c2ff94dd3d33163771202923c"></a>
 <a class="el" href="class_a_z_std_1_1function.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (nullptr_t)</td></tr>
 <tr class="separator:acd95fb5c2ff94dd3d33163771202923c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,12 +111,12 @@ template&lt;typename Functor &gt; </td></tr>
 R&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (Args... args) const</td></tr>
 <tr class="separator:a01f11b6d1feee317a17ee509938f29f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_std_1_1function__intermediate"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_std_1_1function__intermediate')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_std_1_1function__intermediate.html">AZStd::function_intermediate&lt; R, Args... &gt;</a></td></tr>
-<tr class="memitem:aa24f2045f229fa79f5b08c5d60103ce2 inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_aa24f2045f229fa79f5b08c5d60103ce2"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>function_intermediate</b> (Functor &amp;&amp;f, enable_if_t&lt;!is_integral&lt; Functor &gt;::value &amp;&amp;!is_same&lt; remove_cvref_t&lt; Functor &gt;, <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &gt;::value, int &gt;=0)</td></tr>
-<tr class="separator:aa24f2045f229fa79f5b08c5d60103ce2 inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9280a115464a202856b49f7c84ddf7f inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_ad9280a115464a202856b49f7c84ddf7f"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>function_intermediate</b> (Functor &amp;&amp;f, Allocator a, enable_if_t&lt;!is_integral&lt; Functor &gt;::value &amp;&amp;!is_same&lt; remove_cvref_t&lt; Functor &gt;, <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &gt;::value, int &gt;=0)</td></tr>
-<tr class="separator:ad9280a115464a202856b49f7c84ddf7f inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891a3c9424d0e04895895dafa3c9db68 inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_a891a3c9424d0e04895895dafa3c9db68"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>function_intermediate</b> (Functor &amp;&amp;f)</td></tr>
+<tr class="separator:a891a3c9424d0e04895895dafa3c9db68 inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5873c81f31e6ac36fb5abf98509eef9 inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_ab5873c81f31e6ac36fb5abf98509eef9"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>function_intermediate</b> (Functor &amp;&amp;f, Allocator a)</td></tr>
+<tr class="separator:ab5873c81f31e6ac36fb5abf98509eef9 inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc58835f3f3f9d71920b80df097fee70 inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_afc58835f3f3f9d71920b80df097fee70"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>function_intermediate</b> (nullptr_t)</td></tr>
 <tr class="separator:afc58835f3f3f9d71920b80df097fee70 inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +129,9 @@ R&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (Args... 
 <tr class="memitem:a2c9142b80ec42d03ac1b049102e53138 inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_a2c9142b80ec42d03ac1b049102e53138"><td class="memItemLeft" align="right" valign="top">
 R&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (Args &amp;&amp;... args) const</td></tr>
 <tr class="separator:a2c9142b80ec42d03ac1b049102e53138 inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6331228465ba12f7f6686354d06ed76d inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_a6331228465ba12f7f6686354d06ed76d"><td class="memItemLeft" align="right" valign="top">
-enable_if_t&lt;!is_integral&lt; Functor &gt;::value &amp;&amp;!is_same&lt; remove_cvref_t&lt; Functor &gt;, <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &gt;::value, <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (Functor &amp;&amp;f)</td></tr>
-<tr class="separator:a6331228465ba12f7f6686354d06ed76d inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0a988a9755cdc51d5bd664fcb22e34 inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_a6b0a988a9755cdc51d5bd664fcb22e34"><td class="memItemLeft" align="right" valign="top">
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (Functor &amp;&amp;f) -&gt; <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &amp;</td></tr>
+<tr class="separator:a6b0a988a9755cdc51d5bd664fcb22e34 inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848f49bd7949201fb82d1eb153e22b6d inherit pub_methods_class_a_z_std_1_1function__intermediate" id="r_a848f49bd7949201fb82d1eb153e22b6d"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (nullptr_t)</td></tr>
 <tr class="separator:a848f49bd7949201fb82d1eb153e22b6d inherit pub_methods_class_a_z_std_1_1function__intermediate"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,7 +200,7 @@ Internal::function_util::function_buffer&#160;</td><td class="memItemRight" vali
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1function_3_01_r_07_args_8_8_8_08_4.html">function&lt; R(Args...)&gt;</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

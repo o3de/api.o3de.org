@@ -79,7 +79,6 @@ var hierarchy =
     [ "AZStd::intrusive_base", null, [
       [ "AZ::Render::HairSharedBufferAllocation", "class_a_z_1_1_render_1_1_hair_shared_buffer_allocation.html", null ]
     ] ],
-    [ "CollisionMesh", "class_collision_mesh.html", null ],
     [ "Color", "class_color.html", null ],
     [ "Component", null, [
       [ "AZ::Render::Hair::HairBuilderComponent", "class_a_z_1_1_render_1_1_hair_1_1_hair_builder_component.html", null ],
@@ -95,31 +94,8 @@ var hierarchy =
       [ "AZ::Render::Hair::HairDispatchItem", "class_a_z_1_1_render_1_1_hair_1_1_hair_dispatch_item.html", null ],
       [ "AZ::Render::Hair::HairRenderObject", "class_a_z_1_1_render_1_1_hair_1_1_hair_render_object.html", null ]
     ] ],
-    [ "EI_AttachmentParams", "struct_e_i___attachment_params.html", null ],
-    [ "EI_Barrier", "struct_e_i___barrier.html", null ],
-    [ "EI_BindEntry", "struct_e_i___bind_entry.html", null ],
-    [ "EI_BindLayout", "struct_e_i___bind_layout.html", null ],
-    [ "EI_BindSet", "class_e_i___bind_set.html", null ],
-    [ "EI_BindSetDescription", "struct_e_i___bind_set_description.html", null ],
-    [ "EI_ColorBlendParams", "struct_e_i___color_blend_params.html", null ],
-    [ "EI_CommandContext", "class_e_i___command_context.html", null ],
-    [ "EI_Device", "class_e_i___device.html", null ],
-    [ "EI_DrawParams", "struct_e_i___draw_params.html", null ],
-    [ "EI_IndexedDrawParams", "struct_e_i___indexed_draw_params.html", null ],
-    [ "EI_LayoutDescription", "struct_e_i___layout_description.html", null ],
-    [ "EI_Marker", "class_e_i___marker.html", null ],
-    [ "EI_PSO", "class_e_i___p_s_o.html", null ],
-    [ "EI_PSOParams", "struct_e_i___p_s_o_params.html", null ],
-    [ "EI_RenderTargetSet", "struct_e_i___render_target_set.html", null ],
-    [ "EI_Resource", "class_e_i___resource.html", null ],
-    [ "EI_ResourceDescription", "struct_e_i___resource_description.html", null ],
-    [ "EI_Scene", "class_e_i___scene.html", null ],
-    [ "EI_Scene::State", "struct_e_i___scene_1_1_state.html", null ],
     [ "EMotionFX::Integration::ActorComponentNotificationBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
-    ] ],
-    [ "FrameworkWindows", null, [
-      [ "TressFXSample", "class_tress_f_x_sample.html", null ]
     ] ],
     [ "HairGlobalSettingsNotificationBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
@@ -130,7 +106,6 @@ var hierarchy =
     [ "HairRequestsBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
     ] ],
-    [ "HairStrands", "class_hair_strands.html", null ],
     [ "AZ::Render::Hair::HairUniformBuffer< AMD::TressFXRenderParams >", "class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html", null ],
     [ "AZ::Render::Hair::HairUniformBuffer< AMD::TressFXShadeParams >", "class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html", null ],
     [ "AZ::Render::Hair::HairUniformBuffer< AMD::TressFXSimulationParams >", "class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html", null ],
@@ -157,31 +132,8 @@ var hierarchy =
     [ "RPI::ShaderReloadNotificationBus::Handler", null, [
       [ "AZ::Render::Hair::HairGeometryRasterPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_geometry_raster_pass.html", null ]
     ] ],
-    [ "Simulation", "class_simulation.html", null ],
-    [ "SimulationContext", "struct_simulation_context.html", null ],
     [ "SystemTickBus::Handler", null, [
       [ "AZ::Render::SharedBuffer", "class_a_z_1_1_render_1_1_shared_buffer.html", null ]
     ] ],
-    [ "TressFXBoneSkinningUniformBuffer", "struct_tress_f_x_bone_skinning_uniform_buffer.html", null ],
-    [ "TressFXCollisionMeshDescription", "struct_tress_f_x_collision_mesh_description.html", null ],
-    [ "TressFXDynamicState", "class_tress_f_x_dynamic_state.html", null ],
-    [ "TressFXLayouts", "struct_tress_f_x_layouts.html", null ],
-    [ "TressFXMarchingCubesUniformBuffer", "struct_tress_f_x_marching_cubes_uniform_buffer.html", null ],
-    [ "TressFXNonCopyable", "class_tress_f_x_non_copyable.html", [
-      [ "TressFXHairObject", "class_tress_f_x_hair_object.html", null ],
-      [ "TressFXSDFCollision", "class_tress_f_x_s_d_f_collision.html", null ],
-      [ "TressFXSDFMarchingCubes", "class_tress_f_x_s_d_f_marching_cubes.html", null ],
-      [ "TressFXSimulation", "class_tress_f_x_simulation.html", null ]
-    ] ],
-    [ "TressFXObject", "struct_tress_f_x_object.html", null ],
-    [ "TressFXObjectDescription", "struct_tress_f_x_object_description.html", null ],
-    [ "TressFXPPLL", "class_tress_f_x_p_p_l_l.html", null ],
-    [ "TressFXScene", "struct_tress_f_x_scene.html", null ],
-    [ "TressFXSceneDescription", "struct_tress_f_x_scene_description.html", null ],
-    [ "TressFXSDFCollisionSystem", "class_tress_f_x_s_d_f_collision_system.html", null ],
-    [ "TressFXSDFInputMeshInterface", "class_tress_f_x_s_d_f_input_mesh_interface.html", [
-      [ "TressFXBoneSkinning", "class_tress_f_x_bone_skinning.html", null ]
-    ] ],
-    [ "TressFXShortCut", "class_tress_f_x_short_cut.html", null ],
-    [ "TressFXStrandLevelData", "struct_tress_f_x_strand_level_data.html", null ]
+    [ "TressFXNonCopyable", "class_tress_f_x_non_copyable.html", null ]
 ];

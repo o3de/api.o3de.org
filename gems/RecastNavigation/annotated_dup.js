@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "RecastNavigation", null, [
       [ "CustomRecastDeleter", "struct_recast_navigation_1_1_custom_recast_deleter.html", null ],
+      [ "CustomRecastDeleter< dtCrowd >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01dt_crowd_01_4.html", null ],
       [ "CustomRecastDeleter< dtNavMesh >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01dt_nav_mesh_01_4.html", null ],
       [ "CustomRecastDeleter< dtNavMeshQuery >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01dt_nav_mesh_query_01_4.html", null ],
       [ "CustomRecastDeleter< rcCompactHeightfield >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_compact_heightfield_01_4.html", null ],
@@ -9,8 +10,14 @@ var annotated_dup =
       [ "CustomRecastDeleter< rcHeightfield >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_heightfield_01_4.html", null ],
       [ "CustomRecastDeleter< rcPolyMesh >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_poly_mesh_01_4.html", null ],
       [ "CustomRecastDeleter< rcPolyMeshDetail >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_poly_mesh_detail_01_4.html", null ],
+      [ "DetourCrowdAgentNotificationHandler", "class_recast_navigation_1_1_detour_crowd_agent_notification_handler.html", null ],
+      [ "DetourCrowdAgentNotifications", "class_recast_navigation_1_1_detour_crowd_agent_notifications.html", "class_recast_navigation_1_1_detour_crowd_agent_notifications" ],
+      [ "DetourCrowdAgentParams", "class_recast_navigation_1_1_detour_crowd_agent_params.html", null ],
+      [ "DetourCrowdNavigationComponent", "class_recast_navigation_1_1_detour_crowd_navigation_component.html", null ],
+      [ "DetourCrowdNavigationRequests", "class_recast_navigation_1_1_detour_crowd_navigation_requests.html", "class_recast_navigation_1_1_detour_crowd_navigation_requests" ],
       [ "DetourNavigationComponent", "class_recast_navigation_1_1_detour_navigation_component.html", "class_recast_navigation_1_1_detour_navigation_component" ],
       [ "DetourNavigationRequests", "class_recast_navigation_1_1_detour_navigation_requests.html", "class_recast_navigation_1_1_detour_navigation_requests" ],
+      [ "DetourObstacleAvoidanceParams", "class_recast_navigation_1_1_detour_obstacle_avoidance_params.html", null ],
       [ "EditorDetourNavigationComponent", "class_recast_navigation_1_1_editor_detour_navigation_component.html", "class_recast_navigation_1_1_editor_detour_navigation_component" ],
       [ "EditorRecastNavigationMeshComponent", "class_recast_navigation_1_1_editor_recast_navigation_mesh_component.html", "class_recast_navigation_1_1_editor_recast_navigation_mesh_component" ],
       [ "EditorRecastNavigationPhysXProviderComponent", "class_recast_navigation_1_1_editor_recast_navigation_phys_x_provider_component.html", null ],

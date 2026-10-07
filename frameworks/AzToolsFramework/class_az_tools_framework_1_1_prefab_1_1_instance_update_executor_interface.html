@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -74,8 +74,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2631b2235ff4e6628fe659b30cf8bc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a9de5e8e86faca1c9f23865aa0f2e0" id="r_aa4a9de5e8e86faca1c9f23865aa0f2e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#aa4a9de5e8e86faca1c9f23865aa0f2e0">AddTemplateInstancesToQueue</a> (TemplateId instanceTemplateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt)=0</td></tr>
 <tr class="separator:aa4a9de5e8e86faca1c9f23865aa0f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64bd93546a57c15ab9c8827111eb9a5" id="r_ae64bd93546a57c15ab9c8827111eb9a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#ae64bd93546a57c15ab9c8827111eb9a5">UpdateTemplateInstancesInQueue</a> ()=0</td></tr>
-<tr class="separator:ae64bd93546a57c15ab9c8827111eb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfad9c9ba0b9d856a915c573cf9f7535" id="r_adfad9c9ba0b9d856a915c573cf9f7535"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#adfad9c9ba0b9d856a915c573cf9f7535">UpdateTemplateInstancesInQueue</a> (bool flush=true)=0</td></tr>
+<tr class="separator:adfad9c9ba0b9d856a915c573cf9f7535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d7f602ca8fded1df21eb7d9101cd525" id="r_a7d7f602ca8fded1df21eb7d9101cd525"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#a7d7f602ca8fded1df21eb7d9101cd525">IsUpdatingTemplateInstancesInQueue</a> () const =0</td></tr>
 <tr class="separator:a7d7f602ca8fded1df21eb7d9101cd525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86d595f1c4ea2a4ae2aaa497305df8c" id="r_ac86d595f1c4ea2a4ae2aaa497305df8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#ac86d595f1c4ea2a4ae2aaa497305df8c">RemoveTemplateInstanceFromQueue</a> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance)=0</td></tr>
@@ -291,8 +291,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae64bd93546a57c15ab9c8827111eb9a5" name="ae64bd93546a57c15ab9c8827111eb9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae64bd93546a57c15ab9c8827111eb9a5">&#9670;&#160;</a></span>UpdateTemplateInstancesInQueue()</h2>
+<a id="adfad9c9ba0b9d856a915c573cf9f7535" name="adfad9c9ba0b9d856a915c573cf9f7535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfad9c9ba0b9d856a915c573cf9f7535">&#9670;&#160;</a></span>UpdateTemplateInstancesInQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool AzToolsFramework::Prefab::InstanceUpdateExecutorInterface::UpdateTemplateInstancesInQueue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flush</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -314,8 +315,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Updates instances in the waiting queue. </p><dl class="section return"><dt>Returns</dt><dd>bool on whether the operation succeeds. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flush</td><td>(default true) - if set to true, all instances in the queue will be updated in one go. Otherwise, the update executor can update a limited number per call and will continue to do so each time this function is called until the queue is empty. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#afa6312856c38c8d959348abc9bea937b">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#ac1800a9e5c49d3a30afa37b0a66ec8c0">AzToolsFramework::Prefab::InstanceUpdateExecutor</a>.</p>
 
 </div>
 </div>
@@ -328,7 +335,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>Prefab</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html">InstanceUpdateExecutorInterface</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:31 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

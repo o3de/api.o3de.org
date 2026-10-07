@@ -1,6 +1,7 @@
 var class_r_o_s2_1_1_r_o_s2_frame_component_requests =
 [
     [ "GetFrameName", "class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a7e8320c8d3d9027908b85499d41e4fed", null ],
+    [ "GetFrameTransform", "class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a277d2fda9b00d24d17deab85a201b8e8", null ],
     [ "GetGlobalFrameID", "class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a7bfebbb35ea32c6f7e445ce1b5d337a9", null ],
     [ "GetJointName", "class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a0cb8a979bdbc1c6438442a6fd5a810fb", null ],
     [ "GetNamespace", "class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a75607583a7710bed884ac98dc605cdd9", null ],

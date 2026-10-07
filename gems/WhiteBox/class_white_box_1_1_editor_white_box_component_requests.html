@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine WhiteBox Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine WhiteBox Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -88,6 +88,20 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteAssetToC
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultShape</b> (DefaultShapeType defaultShape)=0</td></tr>
 <tr class="memdesc:aaef709b13753c1580bb99c9785279088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the white box mesh default shape. <br /></td></tr>
 <tr class="separator:aaef709b13753c1580bb99c9785279088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db3d63c8bb81edd95402ee9996748e1" id="r_a5db3d63c8bb81edd95402ee9996748e1"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_white_box_1_1_editor_white_box_component_requests.html#a5db3d63c8bb81edd95402ee9996748e1">GetDrawSides</a> ()</td></tr>
+<tr class="separator:a5db3d63c8bb81edd95402ee9996748e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171766fc021fa0e9a755066e448d7366" id="r_a171766fc021fa0e9a755066e448d7366"><td class="memItemLeft" align="right" valign="top"><a id="a171766fc021fa0e9a755066e448d7366" name="a171766fc021fa0e9a755066e448d7366"></a>
+virtual DrawShapeType&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawShape</b> ()</td></tr>
+<tr class="memdesc:a171766fc021fa0e9a755066e448d7366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape the draw-shape tool builds, from the component's "Draw Shape" property. <br /></td></tr>
+<tr class="separator:a171766fc021fa0e9a755066e448d7366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b888b5e1711d4620d3d7c1bc2660ca" id="r_a94b888b5e1711d4620d3d7c1bc2660ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_white_box_1_1_draw_stair_info.html">DrawStairInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_white_box_1_1_editor_white_box_component_requests.html#a94b888b5e1711d4620d3d7c1bc2660ca">GetDrawStairInfo</a> ()</td></tr>
+<tr class="separator:a94b888b5e1711d4620d3d7c1bc2660ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88854fdbe7d9379e77d4782f0be8ca0f" id="r_a88854fdbe7d9379e77d4782f0be8ca0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_white_box_1_1_editor_white_box_component_requests.html#a88854fdbe7d9379e77d4782f0be8ca0f">GetDrawCarve</a> ()</td></tr>
+<tr class="separator:a88854fdbe7d9379e77d4782f0be8ca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99973d07a0800cdb5dcb9ba276a97338" id="r_a99973d07a0800cdb5dcb9ba276a97338"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_white_box_1_1_editor_white_box_component_requests.html#a99973d07a0800cdb5dcb9ba276a97338">GetDrawUnitCube</a> ()</td></tr>
+<tr class="separator:a99973d07a0800cdb5dcb9ba276a97338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fe79afc63a079be00a407e192b0210" id="r_a19fe79afc63a079be00a407e192b0210"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_white_box_1_1_editor_white_box_component_requests.html#a19fe79afc63a079be00a407e192b0210">SetVoxelCell</a> (const AZ::Vector3 &amp;cellMin, bool filled)</td></tr>
+<tr class="separator:a19fe79afc63a079be00a407e192b0210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -121,6 +135,110 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 <p>Deserialize the stored mesh data. Take the previously serialized (stored) WhiteBoxMesh data and create a new WhiteBoxMesh from it. </p><dl class="section note"><dt>Note</dt><dd>The data is either loaded directly from the Component or from an Asset. </dd></dl>
+
+</div>
+</div>
+<a id="a88854fdbe7d9379e77d4782f0be8ca0f" name="a88854fdbe7d9379e77d4782f0be8ca0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88854fdbe7d9379e77d4782f0be8ca0f">&#9670;&#160;</a></span>GetDrawCarve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool WhiteBox::EditorWhiteBoxComponentRequests::GetDrawCarve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>When true, draw acts as a CSG boolean (same as holding Ctrl): pulling in carves/subtracts, pulling out adds/unions. </p>
+
+</div>
+</div>
+<a id="a5db3d63c8bb81edd95402ee9996748e1" name="a5db3d63c8bb81edd95402ee9996748e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db3d63c8bb81edd95402ee9996748e1">&#9670;&#160;</a></span>GetDrawSides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int WhiteBox::EditorWhiteBoxComponentRequests::GetDrawSides </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Number of sides the draw-shape tool uses for round / N-gon shapes (4 = box / square). Sourced from the component's "Draw Sides" property. </p>
+
+</div>
+</div>
+<a id="a94b888b5e1711d4620d3d7c1bc2660ca" name="a94b888b5e1711d4620d3d7c1bc2660ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b888b5e1711d4620d3d7c1bc2660ca">&#9670;&#160;</a></span>GetDrawStairInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_white_box_1_1_draw_stair_info.html">DrawStairInfo</a> WhiteBox::EditorWhiteBoxComponentRequests::GetDrawStairInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Staircase build parameters (step count, step-height division mode, riser height and 90-degree rotation), sourced from the component's Staircase properties. Returned as a single snapshot so callers fetch the whole group in one request. </p>
+
+</div>
+</div>
+<a id="a99973d07a0800cdb5dcb9ba276a97338" name="a99973d07a0800cdb5dcb9ba276a97338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99973d07a0800cdb5dcb9ba276a97338">&#9670;&#160;</a></span>GetDrawUnitCube()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool WhiteBox::EditorWhiteBoxComponentRequests::GetDrawUnitCube </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>When true, draw mode click-stamps grid-snapped 1x1x1 cubes (CSG union, or subtract with Ctrl) instead of the click-drag-pull workflow. </p>
 
 </div>
 </div>
@@ -202,6 +320,43 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a19fe79afc63a079be00a407e192b0210" name="a19fe79afc63a079be00a407e192b0210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fe79afc63a079be00a407e192b0210">&#9670;&#160;</a></span>SetVoxelCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void WhiteBox::EditorWhiteBoxComponentRequests::SetVoxelCell </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>cellMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>filled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Fill (<code>filled</code> true) or clear a 1x1x1 voxel cell whose minimum corner is <code>cellMin</code> (integer local coordinates). The mesh is regenerated from the voxel set as a clean, watertight, merged surface (no CSG round-trip). </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/WhiteBox/Code/Include/WhiteBox/<b>EditorWhiteBoxComponentBus.h</b></li>
 </ul>
@@ -211,7 +366,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>WhiteBox</b></li><li class="navelem"><a class="el" href="class_white_box_1_1_editor_white_box_component_requests.html">EditorWhiteBoxComponentRequests</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:54 for Open 3D Engine WhiteBox Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:55 for Open 3D Engine WhiteBox Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

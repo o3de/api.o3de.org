@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,14 +72,14 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8628d3895fd295ac5611a70e60f4766c" id="r_a8628d3895fd295ac5611a70e60f4766c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1function.html">JsonSerializationResult::JsonIssueCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_json_serializer_settings.html#a8628d3895fd295ac5611a70e60f4766c">m_reporting</a></td></tr>
 <tr class="separator:a8628d3895fd295ac5611a70e60f4766c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a480474d83da5613747e2403076eea950" id="r_a480474d83da5613747e2403076eea950"><td class="memItemLeft" align="right" valign="top"><a id="a480474d83da5613747e2403076eea950" name="a480474d83da5613747e2403076eea950"></a>
-<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b> = <a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a></td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b> = nullptr</td></tr>
 <tr class="memdesc:a480474d83da5613747e2403076eea950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional serialize context. If not provided the default instance will be retrieved through an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> call. <br /></td></tr>
 <tr class="separator:a480474d83da5613747e2403076eea950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e36869f1884cdf349666e829294c730" id="r_a4e36869f1884cdf349666e829294c730"><td class="memItemLeft" align="right" valign="top"><a id="a4e36869f1884cdf349666e829294c730" name="a4e36869f1884cdf349666e829294c730"></a>
-<a class="el" href="class_a_z_1_1_json_registration_context.html">JsonRegistrationContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_registrationContext</b> = <a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a></td></tr>
+<a class="el" href="class_a_z_1_1_json_registration_context.html">JsonRegistrationContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_registrationContext</b> = nullptr</td></tr>
 <tr class="memdesc:a4e36869f1884cdf349666e829294c730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional json registration context. If not provided the default instance will be retrieved through an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> call. <br /></td></tr>
 <tr class="separator:a4e36869f1884cdf349666e829294c730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd51a5a9432854eac68c9aecf011a54" id="r_a9bd51a5a9432854eac68c9aecf011a54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_json_serializer_settings.html#a9bd51a5a9432854eac68c9aecf011a54">m_keepDefaults</a> = <a class="el" href="class_a_z_1_1_e_bus.html">false</a></td></tr>
+<tr class="memitem:a9bd51a5a9432854eac68c9aecf011a54" id="r_a9bd51a5a9432854eac68c9aecf011a54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_json_serializer_settings.html#a9bd51a5a9432854eac68c9aecf011a54">m_keepDefaults</a> = false</td></tr>
 <tr class="separator:a9bd51a5a9432854eac68c9aecf011a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -92,7 +92,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::JsonSerializerSettings::m_keepDefaults = <a class="el" href="class_a_z_1_1_e_bus.html">false</a></td>
+          <td class="memname">bool AZ::JsonSerializerSettings::m_keepDefaults = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -124,7 +124,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_json_serializer_settings.html">JsonSerializerSettings</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

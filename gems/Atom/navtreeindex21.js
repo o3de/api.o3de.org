@@ -1,5 +1,17 @@
 var NAVTREEINDEX21 =
 {
+"class_a_z_1_1_vulkan_1_1_specialization_constant_data.html":[4,0,1,11,98],
+"class_a_z_1_1_vulkan_1_1_specialization_constant_data.html#aa76f9339875d4ea2b010d785ff088055":[4,0,1,11,98,2],
+"class_a_z_1_1_vulkan_1_1_specialization_constant_data.html#aa8cd76f7509d1103622948bd9e9b3fba":[4,0,1,11,98,1],
+"class_a_z_1_1_vulkan_1_1_specialization_constant_data.html#abf7e7188c0463a2145813e7654d8a25a":[4,0,1,11,98,0],
+"class_a_z_1_1_vulkan_1_1_streaming_image_pool.html":[4,0,1,11,99],
+"class_a_z_1_1_vulkan_1_1_streaming_image_pool.html#ab381e8d374244011aa0df04f27e902d5":[4,0,1,11,99,1],
+"class_a_z_1_1_vulkan_1_1_streaming_image_pool.html#af782d1e9b743a9f81953924d51dd27b8":[4,0,1,11,99,0],
+"class_a_z_1_1_vulkan_1_1_struct_appender.html":[4,0,1,11,100],
+"class_a_z_1_1_vulkan_1_1_struct_appender.html#a04c12389c3432cc87d18ff94761cf7f5":[4,0,1,11,100,1],
+"class_a_z_1_1_vulkan_1_1_struct_appender.html#a2da48d711f8cbc8aeab67a04905bd833":[4,0,1,11,100,3],
+"class_a_z_1_1_vulkan_1_1_struct_appender.html#a526ebba21f8fa70854d05329393eb0eb":[4,0,1,11,100,2],
+"class_a_z_1_1_vulkan_1_1_struct_appender.html#ac4ee55b40c92d36c329aafe62be22c69":[4,0,1,11,100,0],
 "class_a_z_1_1_vulkan_1_1_swap_chain.html":[4,0,1,11,101],
 "class_a_z_1_1_vulkan_1_1_swap_chain.html#af95ffd0fe88335a5871f862c79ddbb9d":[4,0,1,11,101,1],
 "class_a_z_1_1_vulkan_1_1_system_component.html":[4,0,1,11,102],
@@ -237,17 +249,5 @@ var NAVTREEINDEX21 =
 "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a71336258fa17bc97ee8387258d390d1c":[4,0,0,47,20],
 "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a734e83d21f3554705b95808736d4b601":[4,0,0,47,22],
 "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a740cc16806dfd5ff119632b2f313aff5":[4,0,0,47,33],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a8550125edcaeaaadf41f8b175e79dc6a":[4,0,0,47,8],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a8ff824219236971e6455df432ed19bb2":[4,0,0,47,17],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a9f7497681777f7febd554885377437ed":[4,0,0,47,35],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#aa044958aac62555aa0a515c78ff30a16":[4,0,0,47,10],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#abf443b6482fed48d60c4181a1c76bdc9":[4,0,0,47,2],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ac2e6553e9c9cdea225370c01f1e7df72":[4,0,0,47,26],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ad27a3bf4cdfc17b6c79f5aa23ccf558d":[4,0,0,47,38],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ad28e9456d43b1535cc87d35d86991c0b":[4,0,0,47,34],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#adb7afe9fb3b7fe6c73294c656cfc02af":[4,0,0,47,28],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#adf7a12d0afab808af3ce5bba87081671":[4,0,0,47,13],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ae53493b16efed00c63b5631596f696bd":[4,0,0,47,39],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#af077cbea8cdf2781a5d9de27c1e6ecde":[4,0,0,47,37],
-"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#af3927d769a80564f8f95016b7f85a988":[4,0,0,47,11]
+"class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a8550125edcaeaaadf41f8b175e79dc6a":[4,0,0,47,8]
 };

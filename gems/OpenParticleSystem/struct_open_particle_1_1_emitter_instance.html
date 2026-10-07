@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine OpenParticleSystem Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine OpenParticleSystem Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,6 +67,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Setup</b> (<a class="
 <tr class="memitem:a6e6580ace4c6cb36318c29b42a0506cd" id="r_a6e6580ace4c6cb36318c29b42a0506cd"><td class="memItemLeft" align="right" valign="top"><a id="a6e6580ace4c6cb36318c29b42a0506cd" name="a6e6580ace4c6cb36318c29b42a0506cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReBuildPipeline</b> ()</td></tr>
 <tr class="separator:a6e6580ace4c6cb36318c29b42a0506cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e14716f948f3f6684754e0f655a07de" id="r_a4e14716f948f3f6684754e0f655a07de"><td class="memItemLeft" align="right" valign="top"><a id="a4e14716f948f3f6684754e0f655a07de" name="a4e14716f948f3f6684754e0f655a07de"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryRebuildPipeline</b> ()</td></tr>
+<tr class="separator:a4e14716f948f3f6684754e0f655a07de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95607793a2858d06f7ea07ff7f0c1857" id="r_a95607793a2858d06f7ea07ff7f0c1857"><td class="memItemLeft" align="right" valign="top"><a id="a95607793a2858d06f7ea07ff7f0c1857" name="a95607793a2858d06f7ea07ff7f0c1857"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
 <tr class="separator:a95607793a2858d06f7ea07ff7f0c1857"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -76,12 +79,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae448e629f3f6071b95917235016814dc" id="r_ae448e629f3f6071b95917235016814dc"><td class="memItemLeft" align="right" valign="top"><a id="ae448e629f3f6071b95917235016814dc" name="ae448e629f3f6071b95917235016814dc"></a>
 AZStd::vector&lt; AZ::Data::Instance&lt; AZ::RPI::ShaderResourceGroup &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_perDrawSrgs</b></td></tr>
 <tr class="separator:ae448e629f3f6071b95917235016814dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad873eec7ef1cb9df2477f65424dc107a" id="r_ad873eec7ef1cb9df2477f65424dc107a"><td class="memItemLeft" align="right" valign="top"><a id="ad873eec7ef1cb9df2477f65424dc107a" name="ad873eec7ef1cb9df2477f65424dc107a"></a>
-AZStd::vector&lt; AZStd::pair&lt; AZ::RHI::DrawListTag, AZ::Data::Instance&lt; AZ::RPI::Shader &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaders</b></td></tr>
-<tr class="separator:ad873eec7ef1cb9df2477f65424dc107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade195a0d6947bd6c5e68681a2d6c97fe" id="r_ade195a0d6947bd6c5e68681a2d6c97fe"><td class="memItemLeft" align="right" valign="top"><a id="ade195a0d6947bd6c5e68681a2d6c97fe" name="ade195a0d6947bd6c5e68681a2d6c97fe"></a>
-AZStd::unordered_map&lt; AZ::RPI::Shader *, <a class="el" href="struct_open_particle_1_1_emitter_for_draw.html">EmitterForDraw</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_emitterForDrawPair</b></td></tr>
-<tr class="separator:ade195a0d6947bd6c5e68681a2d6c97fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac482f1382611284e200e81bfa7ccdd" id="r_a2ac482f1382611284e200e81bfa7ccdd"><td class="memItemLeft" align="right" valign="top"><a id="a2ac482f1382611284e200e81bfa7ccdd" name="a2ac482f1382611284e200e81bfa7ccdd"></a>
+AZStd::vector&lt; <a class="el" href="struct_open_particle_1_1_shader_draw_record.html">ShaderDrawRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaders</b></td></tr>
+<tr class="separator:a2ac482f1382611284e200e81bfa7ccdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c9acb31cd2e1d9c0d696027b91523f" id="r_ac3c9acb31cd2e1d9c0d696027b91523f"><td class="memItemLeft" align="right" valign="top"><a id="ac3c9acb31cd2e1d9c0d696027b91523f" name="ac3c9acb31cd2e1d9c0d696027b91523f"></a>
+AZStd::unordered_map&lt; <a class="el" href="struct_open_particle_1_1_emitter_draw_key.html">EmitterDrawKey</a>, <a class="el" href="struct_open_particle_1_1_emitter_for_draw.html">EmitterForDraw</a>, <a class="el" href="struct_open_particle_1_1_emitter_draw_key_hasher.html">EmitterDrawKeyHasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_emitterForDrawPair</b></td></tr>
+<tr class="separator:ac3c9acb31cd2e1d9c0d696027b91523f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4761d80a567002f68747762267d2bd" id="r_a6d4761d80a567002f68747762267d2bd"><td class="memItemLeft" align="right" valign="top"><a id="a6d4761d80a567002f68747762267d2bd" name="a6d4761d80a567002f68747762267d2bd"></a>
 AZ::Data::Instance&lt; AZ::RPI::Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_material</b></td></tr>
 <tr class="separator:a6d4761d80a567002f68747762267d2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +106,12 @@ AZ::RPI::Material::ChangeId&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a66cd758a277c9276a8e4e202b30a8a8e" id="r_a66cd758a277c9276a8e4e202b30a8a8e"><td class="memItemLeft" align="right" valign="top"><a id="a66cd758a277c9276a8e4e202b30a8a8e" name="a66cd758a277c9276a8e4e202b30a8a8e"></a>
 AZ::RPI::Scene *&#160;</td><td class="memItemRight" valign="bottom"><b>m_scene</b> = nullptr</td></tr>
 <tr class="separator:a66cd758a277c9276a8e4e202b30a8a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13a016c2a4ebd7f046ce7e8c42743d4" id="r_aa13a016c2a4ebd7f046ce7e8c42743d4"><td class="memItemLeft" align="right" valign="top"><a id="aa13a016c2a4ebd7f046ce7e8c42743d4" name="aa13a016c2a4ebd7f046ce7e8c42743d4"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_sortId</b> = 0</td></tr>
+<tr class="separator:aa13a016c2a4ebd7f046ce7e8c42743d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167b274ee7c8fc281b4dad0729ff2291" id="r_a167b274ee7c8fc281b4dad0729ff2291"><td class="memItemLeft" align="right" valign="top"><a id="a167b274ee7c8fc281b4dad0729ff2291" name="a167b274ee7c8fc281b4dad0729ff2291"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_needsPipelineRebuild</b> = false</td></tr>
+<tr class="separator:a167b274ee7c8fc281b4dad0729ff2291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/OpenParticleSystem/Code/Source/Runtime/OpenParticleSystem/<b>ParticlePipelineState.h</b></li>
@@ -113,7 +122,7 @@ AZ::RPI::Scene *&#160;</td><td class="memItemRight" valign="bottom"><b>m_scene</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>OpenParticle</b></li><li class="navelem"><a class="el" href="struct_open_particle_1_1_emitter_instance.html">EmitterInstance</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:47 for Open 3D Engine OpenParticleSystem Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:49 for Open 3D Engine OpenParticleSystem Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

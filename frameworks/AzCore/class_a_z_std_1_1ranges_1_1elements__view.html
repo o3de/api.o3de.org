@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Open 3D Engine AzCore API Reference: AZStd::ranges::elements_view&lt; View, N, class &gt; Class Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZStd::ranges::elements_view&lt; View, N &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,7 +55,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1elements__v
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_std_1_1ranges_1_1elements__view-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">AZStd::ranges::elements_view&lt; View, N, class &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">AZStd::ranges::elements_view&lt; View, N &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -63,40 +63,33 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1elements__v
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a1389084d1cf4a0d47db6bcb194fd47" id="r_a4a1389084d1cf4a0d47db6bcb194fd47"><td class="memItemLeft" align="right" valign="top"><a id="a4a1389084d1cf4a0d47db6bcb194fd47" name="a4a1389084d1cf4a0d47db6bcb194fd47"></a>
+<tr class="memitem:a2e4b659e06ed197aaadfbd211206420c" id="r_a2e4b659e06ed197aaadfbd211206420c"><td class="memItemLeft" align="right" valign="top"><a id="a2e4b659e06ed197aaadfbd211206420c" name="a2e4b659e06ed197aaadfbd211206420c"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>elements_view</b> (View base)</td></tr>
-<tr class="separator:a4a1389084d1cf4a0d47db6bcb194fd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a093864b1be3db780f1b8584cbae34013" id="r_a093864b1be3db780f1b8584cbae34013"><td class="memTemplParams" colspan="2"><a id="a093864b1be3db780f1b8584cbae34013" name="a093864b1be3db780f1b8584cbae34013"></a>
-template&lt;bool Enable = copy_constructible&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a093864b1be3db780f1b8584cbae34013"><td class="memTemplItemLeft" align="right" valign="top">constexpr View&#160;</td><td class="memTemplItemRight" valign="bottom"><b>base</b> () const &amp;</td></tr>
-<tr class="separator:a093864b1be3db780f1b8584cbae34013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0886571ef4321930487c9ec27cf2afb" id="r_ac0886571ef4321930487c9ec27cf2afb"><td class="memItemLeft" align="right" valign="top"><a id="ac0886571ef4321930487c9ec27cf2afb" name="ac0886571ef4321930487c9ec27cf2afb"></a>
+<tr class="separator:a2e4b659e06ed197aaadfbd211206420c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a4aaec43e6d6054b64eccbcd35963a" id="r_a54a4aaec43e6d6054b64eccbcd35963a"><td class="memItemLeft" align="right" valign="top"><a id="a54a4aaec43e6d6054b64eccbcd35963a" name="a54a4aaec43e6d6054b64eccbcd35963a"></a>
+constexpr View&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () const &amp;</td></tr>
+<tr class="separator:a54a4aaec43e6d6054b64eccbcd35963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ceadf67b221ad1687296f98b2f77e37" id="r_a8ceadf67b221ad1687296f98b2f77e37"><td class="memItemLeft" align="right" valign="top"><a id="a8ceadf67b221ad1687296f98b2f77e37" name="a8ceadf67b221ad1687296f98b2f77e37"></a>
 constexpr View&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () &amp;&amp;</td></tr>
-<tr class="separator:ac0886571ef4321930487c9ec27cf2afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51519f055d5d1bb18bffd14a4eee012d" id="r_a51519f055d5d1bb18bffd14a4eee012d"><td class="memTemplParams" colspan="2"><a id="a51519f055d5d1bb18bffd14a4eee012d" name="a51519f055d5d1bb18bffd14a4eee012d"></a>
-template&lt;bool Enable = !Internal::simple_view&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a51519f055d5d1bb18bffd14a4eee012d"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a51519f055d5d1bb18bffd14a4eee012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeafc624a7895e4928c94a2386916565" id="r_adeafc624a7895e4928c94a2386916565"><td class="memTemplParams" colspan="2"><a id="adeafc624a7895e4928c94a2386916565" name="adeafc624a7895e4928c94a2386916565"></a>
-template&lt;bool Enable = range&lt;const View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:adeafc624a7895e4928c94a2386916565"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>begin</b> () const</td></tr>
-<tr class="separator:adeafc624a7895e4928c94a2386916565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b7e916a76f1db844aec0ccf5446716" id="r_a79b7e916a76f1db844aec0ccf5446716"><td class="memTemplParams" colspan="2"><a id="a79b7e916a76f1db844aec0ccf5446716" name="a79b7e916a76f1db844aec0ccf5446716"></a>
-template&lt;bool Enable = !Internal::simple_view&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a79b7e916a76f1db844aec0ccf5446716"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:a79b7e916a76f1db844aec0ccf5446716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bb0bd64bd0c02f9845896828b4dae27" id="r_a5bb0bd64bd0c02f9845896828b4dae27"><td class="memTemplParams" colspan="2"><a id="a5bb0bd64bd0c02f9845896828b4dae27" name="a5bb0bd64bd0c02f9845896828b4dae27"></a>
-template&lt;bool Enable = range&lt;const View&gt;&gt; </td></tr>
-<tr class="memitem:a5bb0bd64bd0c02f9845896828b4dae27"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>end</b> () const</td></tr>
-<tr class="separator:a5bb0bd64bd0c02f9845896828b4dae27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff4b85cc292b30f74778badcea81008" id="r_aaff4b85cc292b30f74778badcea81008"><td class="memTemplParams" colspan="2"><a id="aaff4b85cc292b30f74778badcea81008" name="aaff4b85cc292b30f74778badcea81008"></a>
-template&lt;bool Enable = sized_range&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:aaff4b85cc292b30f74778badcea81008"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> ()</td></tr>
-<tr class="separator:aaff4b85cc292b30f74778badcea81008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bb68525a292d0406eef3c1e77cfce2" id="r_a16bb68525a292d0406eef3c1e77cfce2"><td class="memTemplParams" colspan="2"><a id="a16bb68525a292d0406eef3c1e77cfce2" name="a16bb68525a292d0406eef3c1e77cfce2"></a>
-template&lt;bool Enable = sized_range&lt;const View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a16bb68525a292d0406eef3c1e77cfce2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const</td></tr>
-<tr class="separator:a16bb68525a292d0406eef3c1e77cfce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8ceadf67b221ad1687296f98b2f77e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f11d9932b11d821e5533bf3288cff3" id="r_a06f11d9932b11d821e5533bf3288cff3"><td class="memItemLeft" align="right" valign="top"><a id="a06f11d9932b11d821e5533bf3288cff3" name="a06f11d9932b11d821e5533bf3288cff3"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a06f11d9932b11d821e5533bf3288cff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9bcccc65ec0eb5cfd419b45d7f19d2" id="r_a8d9bcccc65ec0eb5cfd419b45d7f19d2"><td class="memItemLeft" align="right" valign="top"><a id="a8d9bcccc65ec0eb5cfd419b45d7f19d2" name="a8d9bcccc65ec0eb5cfd419b45d7f19d2"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:a8d9bcccc65ec0eb5cfd419b45d7f19d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850f6d246a7c0ad1221e22da5ac6862f" id="r_a850f6d246a7c0ad1221e22da5ac6862f"><td class="memItemLeft" align="right" valign="top"><a id="a850f6d246a7c0ad1221e22da5ac6862f" name="a850f6d246a7c0ad1221e22da5ac6862f"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a850f6d246a7c0ad1221e22da5ac6862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2266f6414750e3d05eeac676299051a" id="r_ae2266f6414750e3d05eeac676299051a"><td class="memItemLeft" align="right" valign="top"><a id="ae2266f6414750e3d05eeac676299051a" name="ae2266f6414750e3d05eeac676299051a"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:ae2266f6414750e3d05eeac676299051a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677751a56ed7afb30c604c94dad08ac9" id="r_a677751a56ed7afb30c604c94dad08ac9"><td class="memItemLeft" align="right" valign="top"><a id="a677751a56ed7afb30c604c94dad08ac9" name="a677751a56ed7afb30c604c94dad08ac9"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> ()</td></tr>
+<tr class="separator:a677751a56ed7afb30c604c94dad08ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff209e697be60b3b64a1920e4f222cf3" id="r_aff209e697be60b3b64a1920e4f222cf3"><td class="memItemLeft" align="right" valign="top"><a id="aff209e697be60b3b64a1920e4f222cf3" name="aff209e697be60b3b64a1920e4f222cf3"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:aff209e697be60b3b64a1920e4f222cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/<b>elements_view.h</b></li>
@@ -107,7 +100,7 @@ template&lt;bool Enable = sized_range&lt;const View&gt;, class  = enable_if_t&lt
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ranges_1_1elements__view.html">elements_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,22 +69,22 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
 <tr class="separator:adb0a2ae0c1402c87fbe97f06b6616982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57f62dbe6190a2ea15cf1d5d8cf77298" id="r_a57f62dbe6190a2ea15cf1d5d8cf77298"><td class="memItemLeft" align="right" valign="top"><a id="a57f62dbe6190a2ea15cf1d5d8cf77298" name="a57f62dbe6190a2ea15cf1d5d8cf77298"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchTypeUpgrade</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> <a class="el" href="class_a_z_1_1_e_bus.html">nodeName</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">fromVersion</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">toVersion</a>, <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">ToT</a>(<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">FromT</a> &amp;data)&gt; <a class="el" href="class_a_z_1_1_e_bus.html">upgradeFunc</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchTypeUpgrade</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> nodeName, unsigned int fromVersion, unsigned int toVersion, <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; ToT(const FromT &amp;data)&gt; upgradeFunc)</td></tr>
 <tr class="separator:a57f62dbe6190a2ea15cf1d5d8cf77298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34dd04c8f60b7cd7826e4ee7ae5909ae" id="r_a34dd04c8f60b7cd7826e4ee7ae5909ae"><td class="memItemLeft" align="right" valign="top"><a id="a34dd04c8f60b7cd7826e4ee7ae5909ae" name="a34dd04c8f60b7cd7826e4ee7ae5909ae"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html">DataPatchTypeUpgrade</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">RHS</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html">DataPatchTypeUpgrade</a> &amp;RHS) const</td></tr>
 <tr class="separator:a34dd04c8f60b7cd7826e4ee7ae5909ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0eeda6451b5e8ba2a83967092c2d757" id="r_af0eeda6451b5e8ba2a83967092c2d757"><td class="memItemLeft" align="right" valign="top"><a id="af0eeda6451b5e8ba2a83967092c2d757" name="af0eeda6451b5e8ba2a83967092c2d757"></a>
-<a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;in) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (const <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;in) const override</td></tr>
 <tr class="separator:af0eeda6451b5e8ba2a83967092c2d757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4512656df60c9b9dbce177b71a5e8f" id="r_abf4512656df60c9b9dbce177b71a5e8f"><td class="memItemLeft" align="right" valign="top"><a id="abf4512656df60c9b9dbce177b71a5e8f" name="abf4512656df60c9b9dbce177b71a5e8f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">context</a>, SerializeContext::DataElementNode &amp;node) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;context, SerializeContext::DataElementNode &amp;node) const override</td></tr>
 <tr class="separator:abf4512656df60c9b9dbce177b71a5e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca7fc270ebff911b4143c3921144152" id="r_a9ca7fc270ebff911b4143c3921144152"><td class="memItemLeft" align="right" valign="top"><a id="a9ca7fc270ebff911b4143c3921144152" name="a9ca7fc270ebff911b4143c3921144152"></a>
-<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFromType</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFromType</b> () const override</td></tr>
 <tr class="separator:a9ca7fc270ebff911b4143c3921144152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28be42d0d43c5102e8911dfd5cab19d7" id="r_a28be42d0d43c5102e8911dfd5cab19d7"><td class="memItemLeft" align="right" valign="top"><a id="a28be42d0d43c5102e8911dfd5cab19d7" name="a28be42d0d43c5102e8911dfd5cab19d7"></a>
-<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetToType</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetToType</b> () const override</td></tr>
 <tr class="separator:a28be42d0d43c5102e8911dfd5cab19d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -96,7 +96,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html">DataPatchTypeUpgrade</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

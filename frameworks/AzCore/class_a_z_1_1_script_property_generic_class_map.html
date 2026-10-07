@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -72,22 +72,22 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_script_property_generic_class_map.html">ScriptPropertyGenericClassMap</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
 <tr class="separator:adab626b7dcab0eb733e40e311f223ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b6663620110e4370221abad5ab4cdf" id="r_aa1b6663620110e4370221abad5ab4cdf"><td class="memItemLeft" align="right" valign="top"><a id="aa1b6663620110e4370221abad5ab4cdf" name="aa1b6663620110e4370221abad5ab4cdf"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTableValue</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_script_property_generic_class.html">AZ::ScriptPropertyGenericClass</a> *<a class="el" href="class_a_z_1_1_e_bus.html">keyProperty</a>, <a class="el" href="class_a_z_1_1_script_data_context.html">AZ::ScriptDataContext</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">scriptDataContext</a>, <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">valueIndex</a>)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTableValue</b> (const <a class="el" href="class_a_z_1_1_script_property_generic_class.html">AZ::ScriptPropertyGenericClass</a> *keyProperty, <a class="el" href="class_a_z_1_1_script_data_context.html">AZ::ScriptDataContext</a> &amp;scriptDataContext, int valueIndex)=0</td></tr>
 <tr class="separator:aa1b6663620110e4370221abad5ab4cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8060a43be17dcae46719e83579a69aa" id="r_ad8060a43be17dcae46719e83579a69aa"><td class="memItemLeft" align="right" valign="top"><a id="ad8060a43be17dcae46719e83579a69aa" name="ad8060a43be17dcae46719e83579a69aa"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetTableValue</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_script_property_generic_class.html">AZ::ScriptPropertyGenericClass</a> *<a class="el" href="class_a_z_1_1_e_bus.html">keyProperty</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *<a class="el" href="class_a_z_1_1_e_bus.html">scriptProperty</a>)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTableValue</b> (const <a class="el" href="class_a_z_1_1_script_property_generic_class.html">AZ::ScriptPropertyGenericClass</a> *keyProperty, const <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *scriptProperty)=0</td></tr>
 <tr class="separator:ad8060a43be17dcae46719e83579a69aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a094a91bc8975c610333e4d81fe5cc" id="r_a33a094a91bc8975c610333e4d81fe5cc"><td class="memItemLeft" align="right" valign="top"><a id="a33a094a91bc8975c610333e4d81fe5cc" name="a33a094a91bc8975c610333e4d81fe5cc"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindTableValue</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_script_property_generic_class.html">AZ::ScriptPropertyGenericClass</a> *<a class="el" href="class_a_z_1_1_e_bus.html">keyProperty</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+virtual <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindTableValue</b> (const <a class="el" href="class_a_z_1_1_script_property_generic_class.html">AZ::ScriptPropertyGenericClass</a> *keyProperty) const =0</td></tr>
 <tr class="separator:a33a094a91bc8975c610333e4d81fe5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6fabcdf69a66e5b8c0217a9ca85658" id="r_a1f6fabcdf69a66e5b8c0217a9ca85658"><td class="memItemLeft" align="right" valign="top"><a id="a1f6fabcdf69a66e5b8c0217a9ca85658" name="a1f6fabcdf69a66e5b8c0217a9ca85658"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetWatcher</b> (<a class="el" href="class_a_z_1_1_script_property_watcher.html">AZ::ScriptPropertyWatcher</a> *<a class="el" href="class_a_z_1_1_e_bus.html">scriptPropertyWatcher</a>)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWatcher</b> (<a class="el" href="class_a_z_1_1_script_property_watcher.html">AZ::ScriptPropertyWatcher</a> *scriptPropertyWatcher)=0</td></tr>
 <tr class="separator:a1f6fabcdf69a66e5b8c0217a9ca85658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62bec2c2d608e2d6e6e800a1066c6823" id="r_a62bec2c2d608e2d6e6e800a1066c6823"><td class="memItemLeft" align="right" valign="top"><a id="a62bec2c2d608e2d6e6e800a1066c6823" name="a62bec2c2d608e2d6e6e800a1066c6823"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_script_property_generic_class_map.html">ScriptPropertyGenericClassMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> ()=0</td></tr>
+virtual <a class="el" href="class_a_z_1_1_script_property_generic_class_map.html">ScriptPropertyGenericClassMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> ()=0</td></tr>
 <tr class="separator:a62bec2c2d608e2d6e6e800a1066c6823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d04c41b6f479a167d4bfecaf4b3ed7" id="r_aa1d04c41b6f479a167d4bfecaf4b3ed7"><td class="memItemLeft" align="right" valign="top"><a id="aa1d04c41b6f479a167d4bfecaf4b3ed7" name="aa1d04c41b6f479a167d4bfecaf4b3ed7"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CloneDataFrom</b> (<a class="el" href="class_a_z_1_1_script_property_generic_class_map.html">ScriptPropertyGenericClassMap</a> *<a class="el" href="class_a_z_1_1_e_bus.html">dataSource</a>)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CloneDataFrom</b> (<a class="el" href="class_a_z_1_1_script_property_generic_class_map.html">ScriptPropertyGenericClassMap</a> *dataSource)=0</td></tr>
 <tr class="separator:aa1d04c41b6f479a167d4bfecaf4b3ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_script_property_generic_class_map.html">ScriptPropertyGenericClassMap</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -110,14 +110,16 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string_vie
 <tr class="memitem:a6ee42e27daca51af510ef5820458957d" id="r_a6ee42e27daca51af510ef5820458957d"><td class="memItemLeft" align="right" valign="top"><a id="a6ee42e27daca51af510ef5820458957d" name="a6ee42e27daca51af510ef5820458957d"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string_view</b> (const_pointer s, size_type count)</td></tr>
 <tr class="separator:a6ee42e27daca51af510ef5820458957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af81c79eb8dcbd483e5c2e5eaaa4c1a7b" id="r_af81c79eb8dcbd483e5c2e5eaaa4c1a7b"><td class="memTemplParams" colspan="2"><a id="af81c79eb8dcbd483e5c2e5eaaa4c1a7b" name="af81c79eb8dcbd483e5c2e5eaaa4c1a7b"></a>
-template&lt;typename It , typename End , typename  = AZStd::enable_if_t&lt;            contiguous_iterator&lt;It&gt;            &amp;&amp; sized_sentinel_for&lt;End, It&gt;            &amp;&amp; is_same_v&lt;iter_value_t&lt;It&gt;, value_type&gt;            &amp;&amp; !is_convertible_v&lt;End, size_type&gt;&gt;&gt; </td></tr>
-<tr class="memitem:af81c79eb8dcbd483e5c2e5eaaa4c1a7b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string_view</b> (It first, End last)</td></tr>
-<tr class="separator:af81c79eb8dcbd483e5c2e5eaaa4c1a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02c5aed71dd0c2123e52ea938bc928a" id="r_af02c5aed71dd0c2123e52ea938bc928a"><td class="memTemplParams" colspan="2"><a id="af02c5aed71dd0c2123e52ea938bc928a" name="af02c5aed71dd0c2123e52ea938bc928a"></a>
-template&lt;typename R , typename  = enable_if_t&lt;conjunction_v&lt;            bool_constant&lt;!same_as&lt;remove_cvref_t&lt;R&gt;, basic_string_view&gt;&gt;,            bool_constant&lt;!convertible_to&lt;R, const_pointer&gt;&gt;            &gt;&gt;, typename  = enable_if_t&lt;conjunction_v&lt;            bool_constant&lt;ranges::contiguous_range&lt;R&gt;&gt;,            bool_constant&lt;ranges::sized_range&lt;R&gt;&gt;,            bool_constant&lt;same_as&lt;ranges::range_value_t&lt;R&gt;, value_type&gt;&gt;,            bool_constant&lt;!Internal::convertible_to_string_view&lt;Element, Traits, R&gt;&gt;,            bool_constant&lt;Internal::range_trait_type_matches&lt;Element, Traits, R&gt;&gt;            &gt;&gt;&gt; </td></tr>
-<tr class="memitem:af02c5aed71dd0c2123e52ea938bc928a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string_view</b> (R &amp;&amp;r)</td></tr>
-<tr class="separator:af02c5aed71dd0c2123e52ea938bc928a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ca866ea2b186cd14ef8a7893b3db9a" id="r_a06ca866ea2b186cd14ef8a7893b3db9a"><td class="memTemplParams" colspan="2"><a id="a06ca866ea2b186cd14ef8a7893b3db9a" name="a06ca866ea2b186cd14ef8a7893b3db9a"></a>
+template&lt;contiguous_iterator It, sized_sentinel_for&lt; It &gt; End&gt; <br />
+requires is_same_v&lt;iter_value_t&lt;It&gt;, value_type&gt; &amp;&amp; (!is_convertible_v&lt;End, size_type&gt;)</td></tr>
+<tr class="memitem:a06ca866ea2b186cd14ef8a7893b3db9a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string_view</b> (It first, End last)</td></tr>
+<tr class="separator:a06ca866ea2b186cd14ef8a7893b3db9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ecbcab06c7c146859ccb7ef043fea7" id="r_a17ecbcab06c7c146859ccb7ef043fea7"><td class="memTemplParams" colspan="2"><a id="a17ecbcab06c7c146859ccb7ef043fea7" name="a17ecbcab06c7c146859ccb7ef043fea7"></a>
+template&lt;typename R &gt; <br />
+requires (!same_as&lt;remove_cvref_t&lt;R&gt;, <a class="el" href="class_a_z_std_1_1basic__string__view.html">basic_string_view</a>&gt;) &amp;&amp; (!convertible_to&lt;R, const_pointer&gt;) &amp;&amp; requires(R&amp; r) { { r.data() } -&gt; convertible_to&lt;const Element*&gt;; { r.size() } -&gt; convertible_to&lt;size_type&gt;; requires same_as&lt;remove_cv_t&lt;remove_pointer_t&lt;decltype(r.data())&gt;&gt;, Element&gt;; } &amp;&amp; (!Internal::convertible_to_string_view&lt;Element, Traits, R&gt;) &amp;&amp; Internal::range_trait_type_matches&lt;Element, Traits, R&gt;</td></tr>
+<tr class="memitem:a17ecbcab06c7c146859ccb7ef043fea7"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string_view</b> (R &amp;&amp;r)</td></tr>
+<tr class="separator:a17ecbcab06c7c146859ccb7ef043fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10beb2c63ea50fc949c64c5cf9109606" id="r_a10beb2c63ea50fc949c64c5cf9109606"><td class="memItemLeft" align="right" valign="top"><a id="a10beb2c63ea50fc949c64c5cf9109606" name="a10beb2c63ea50fc949c64c5cf9109606"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string_view</b> (const <a class="el" href="class_a_z_std_1_1basic__string__view.html">basic_string_view</a> &amp;) noexcept=default</td></tr>
 <tr class="separator:a10beb2c63ea50fc949c64c5cf9109606"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,7 +359,7 @@ class AZStd::basic_string_view&lt; Element, Traits &gt;</div><p>Immutable string
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1basic__string__view.html">basic_string_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

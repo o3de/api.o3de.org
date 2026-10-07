@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,6 +69,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6746f2d97857358076748cc008956238" id="r_a6746f2d97857358076748cc008956238"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#a6746f2d97857358076748cc008956238">GetWidget</a> () override</td></tr>
 <tr class="memdesc:a6746f2d97857358076748cc008956238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the widget that should be added to the <a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a>.  <br /></td></tr>
 <tr class="separator:a6746f2d97857358076748cc008956238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749df60c94b3ab9fb2a188aea6c8d354" id="r_a749df60c94b3ab9fb2a188aea6c8d354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#a749df60c94b3ab9fb2a188aea6c8d354">RefreshUI</a> () override</td></tr>
+<tr class="separator:a749df60c94b3ab9fb2a188aea6c8d354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade142a0fd7c090cbae4f0ece2857be4b" id="r_ade142a0fd7c090cbae4f0ece2857be4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ade142a0fd7c090cbae4f0ece2857be4b">SetValueFromDom</a> (const AZ::Dom::Value &amp;node)</td></tr>
 <tr class="separator:ade142a0fd7c090cbae4f0ece2857be4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace4d426f9260e294e21c624291b70f3b" id="r_ace4d426f9260e294e21c624291b70f3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ace4d426f9260e294e21c624291b70f3b">ResetToDefaults</a> () override</td></tr>
@@ -197,6 +199,36 @@ template&lt;typename WrappedType &gt; </div>
 
 </div>
 </div>
+<a id="a749df60c94b3ab9fb2a188aea6c8d354" name="a749df60c94b3ab9fb2a188aea6c8d354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749df60c94b3ab9fb2a188aea6c8d354">&#9670;&#160;</a></span>RefreshUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename WrappedType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html">AzToolsFramework::RpePropertyHandlerWrapper</a>&lt; WrappedType &gt;::RefreshUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The above SetValueFromDom function could be called repeatedly during updates, to set little pieces of the node data. In order to avoid repeatedly updating the widget, avoid setting any widget UI values in SetValueFromDom, and instead wait for this function to be called, which will be called after all DOM updates are complete. </p>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a08b0db6833607e4fe495ab967f884b66">AzToolsFramework::PropertyHandlerWidgetInterface</a>.</p>
+
+</div>
+</div>
 <a id="ace4d426f9260e294e21c624291b70f3b" name="ace4d426f9260e294e21c624291b70f3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace4d426f9260e294e21c624291b70f3b">&#9670;&#160;</a></span>ResetToDefaults()</h2>
 
@@ -268,7 +300,7 @@ template&lt;typename WrappedType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html">RpePropertyHandlerWrapper</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:29 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:31 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

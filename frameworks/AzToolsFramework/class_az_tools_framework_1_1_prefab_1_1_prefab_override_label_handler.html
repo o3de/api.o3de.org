@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,6 +68,8 @@ $(document).ready(function(){initNavTree('class_az_tools_framework_1_1_prefab_1_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a29c3e536cec9a3444538573b00b7b9fc" id="r_a29c3e536cec9a3444538573b00b7b9fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a29c3e536cec9a3444538573b00b7b9fc">SetValueFromDom</a> (const AZ::Dom::Value &amp;value) override</td></tr>
 <tr class="separator:a29c3e536cec9a3444538573b00b7b9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c962cfb037fc959c9faa1a770ce09d" id="r_a88c962cfb037fc959c9faa1a770ce09d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a88c962cfb037fc959c9faa1a770ce09d">RefreshUI</a> () override</td></tr>
+<tr class="separator:a88c962cfb037fc959c9faa1a770ce09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5730d82724f2af05b635fbd37ee23675" id="r_a5730d82724f2af05b635fbd37ee23675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a5730d82724f2af05b635fbd37ee23675">ResetToDefaults</a> () override</td></tr>
 <tr class="memdesc:a5730d82724f2af05b635fbd37ee23675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to reset the widget handler to default, typically for recycling. Returns true if successful.  <br /></td></tr>
 <tr class="separator:a5730d82724f2af05b635fbd37ee23675"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +111,34 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to handle the override label property when encountered in a DPE DOM. Responsible for setting the ui/ux for overridden properties. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88c962cfb037fc959c9faa1a770ce09d" name="a88c962cfb037fc959c9faa1a770ce09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c962cfb037fc959c9faa1a770ce09d">&#9670;&#160;</a></span>RefreshUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabOverrideLabelHandler::RefreshUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The above SetValueFromDom function could be called repeatedly during updates, to set little pieces of the node data. In order to avoid repeatedly updating the widget, avoid setting any widget UI values in SetValueFromDom, and instead wait for this function to be called, which will be called after all DOM updates are complete. </p>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a08b0db6833607e4fe495ab967f884b66">AzToolsFramework::PropertyHandlerWidgetInterface</a>.</p>
+
+</div>
+</div>
 <a id="a5730d82724f2af05b635fbd37ee23675" name="a5730d82724f2af05b635fbd37ee23675"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5730d82724f2af05b635fbd37ee23675">&#9670;&#160;</a></span>ResetToDefaults()</h2>
 
@@ -211,7 +241,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>Prefab</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html">PrefabOverrideLabelHandler</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:31 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

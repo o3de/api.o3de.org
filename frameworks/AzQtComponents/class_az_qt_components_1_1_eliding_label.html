@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzQtComponents API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzQtComponents API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -146,9 +146,6 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSizeHint</b> 
 QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
 <tr class="memdesc:a464a21d19b9473700d8b299887c1396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides the QLabel sizeHint function to return the elided text size. <br /></td></tr>
 <tr class="separator:a464a21d19b9473700d8b299887c1396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16efb429f90f1a4be85c7a968466aa1b" id="r_a16efb429f90f1a4be85c7a968466aa1b"><td class="memItemLeft" align="right" valign="top"><a id="a16efb429f90f1a4be85c7a968466aa1b" name="a16efb429f90f1a4be85c7a968466aa1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleElision</b> ()</td></tr>
-<tr class="separator:a16efb429f90f1a4be85c7a968466aa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -158,12 +155,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QRes
 <tr class="memitem:ac87edc11585e90dfaccce4f003b74147" id="r_ac87edc11585e90dfaccce4f003b74147"><td class="memItemLeft" align="right" valign="top"><a id="ac87edc11585e90dfaccce4f003b74147" name="ac87edc11585e90dfaccce4f003b74147"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
 <tr class="separator:ac87edc11585e90dfaccce4f003b74147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaeb39f3ac4a55c2067066c41e236f7a" id="r_aaaeb39f3ac4a55c2067066c41e236f7a"><td class="memItemLeft" align="right" valign="top"><a id="aaaeb39f3ac4a55c2067066c41e236f7a" name="aaaeb39f3ac4a55c2067066c41e236f7a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTimerEvent *event) override</td></tr>
-<tr class="separator:aaaeb39f3ac4a55c2067066c41e236f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d6153719df2bdefcfb327aebc93fac" id="r_ac7d6153719df2bdefcfb327aebc93fac"><td class="memItemLeft" align="right" valign="top"><a id="ac7d6153719df2bdefcfb327aebc93fac" name="ac7d6153719df2bdefcfb327aebc93fac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>requestElide</b> (bool updateGeometry)</td></tr>
-<tr class="separator:ac7d6153719df2bdefcfb327aebc93fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84aec2ec078bc3e05a1d7d8364620708" id="r_a84aec2ec078bc3e05a1d7d8364620708"><td class="memItemLeft" align="right" valign="top"><a id="a84aec2ec078bc3e05a1d7d8364620708" name="a84aec2ec078bc3e05a1d7d8364620708"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *event) override</td></tr>
+<tr class="separator:a84aec2ec078bc3e05a1d7d8364620708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaaba7f4f1d1fba03606a52705d7d6f2" id="r_aeaaba7f4f1d1fba03606a52705d7d6f2"><td class="memItemLeft" align="right" valign="top"><a id="aeaaba7f4f1d1fba03606a52705d7d6f2" name="aeaaba7f4f1d1fba03606a52705d7d6f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestElide</b> ()</td></tr>
+<tr class="memdesc:aeaaba7f4f1d1fba03606a52705d7d6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests that the label re-elide its text. <br /></td></tr>
+<tr class="separator:aeaaba7f4f1d1fba03606a52705d7d6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -242,7 +240,7 @@ QRegularExpression&#160;</td><td class="memItemRight" valign="bottom"><b>m_filte
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_qt_components.html">AzQtComponents</a></li><li class="navelem"><a class="el" href="class_az_qt_components_1_1_eliding_label.html">ElidingLabel</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:28 for Open 3D Engine AzQtComponents API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:29 for Open 3D Engine AzQtComponents API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

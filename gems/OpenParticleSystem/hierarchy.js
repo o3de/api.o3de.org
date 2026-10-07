@@ -42,6 +42,7 @@ var hierarchy =
       [ "OpenParticle::ParticleDataInstance", "class_open_particle_1_1_particle_data_instance.html", null ]
     ] ],
     [ "AZ::Data::AssetBus::MultiHandler", null, [
+      [ "OpenParticle::ParticleSystem", "class_open_particle_1_1_particle_system.html", null ],
       [ "OpenParticleSystemEditor::ParticleDocument", "class_open_particle_system_editor_1_1_particle_document.html", null ]
     ] ],
     [ "AZ::Data::AssetData", null, [
@@ -217,6 +218,8 @@ var hierarchy =
     [ "OpenParticle::EmitSpawn", "struct_open_particle_1_1_emit_spawn.html", null ],
     [ "OpenParticle::EmitSpawnOverMoving", "struct_open_particle_1_1_emit_spawn_over_moving.html", null ],
     [ "OpenParticle::EmitterConfig", "struct_open_particle_1_1_emitter_config.html", null ],
+    [ "OpenParticle::EmitterDrawKey", "struct_open_particle_1_1_emitter_draw_key.html", null ],
+    [ "OpenParticle::EmitterDrawKeyHasher", "struct_open_particle_1_1_emitter_draw_key_hasher.html", null ],
     [ "OpenParticle::EmitterForDraw", "struct_open_particle_1_1_emitter_for_draw.html", null ],
     [ "OpenParticle::EmitterInstance", "struct_open_particle_1_1_emitter_instance.html", null ],
     [ "OpenParticle::KeyPoint", "struct_open_particle_1_1_key_point.html", null ],
@@ -246,6 +249,7 @@ var hierarchy =
     [ "OpenParticle::Random", "struct_open_particle_1_1_random.html", null ],
     [ "OpenParticle::RibbonConfig", "struct_open_particle_1_1_ribbon_config.html", null ],
     [ "OpenParticle::RibbonParam", "struct_open_particle_1_1_ribbon_param.html", null ],
+    [ "OpenParticle::ShaderDrawRecord", "struct_open_particle_1_1_shader_draw_record.html", null ],
     [ "OpenParticle::SingleBurst", "struct_open_particle_1_1_single_burst.html", null ],
     [ "OpenParticle::SizeScale", "struct_open_particle_1_1_size_scale.html", null ],
     [ "OpenParticle::SpawnColor", "struct_open_particle_1_1_spawn_color.html", null ],
@@ -431,6 +435,7 @@ var hierarchy =
     [ "SimuCore::ParticleCore::ParticleEventHandler", "struct_simu_core_1_1_particle_core_1_1_particle_event_handler.html", null ],
     [ "SimuCore::ParticleCore::ParticleEventInfo", "struct_simu_core_1_1_particle_core_1_1_particle_event_info.html", null ],
     [ "SimuCore::ParticleCore::ParticleEventPool", "struct_simu_core_1_1_particle_core_1_1_particle_event_pool.html", null ],
+    [ "SimuCore::ParticleCore::ParticleMeshInstanceData", "struct_simu_core_1_1_particle_core_1_1_particle_mesh_instance_data.html", null ],
     [ "SimuCore::ParticleCore::ParticleMeshVertex", "struct_simu_core_1_1_particle_core_1_1_particle_mesh_vertex.html", null ],
     [ "SimuCore::ParticleCore::ParticlePool", "class_simu_core_1_1_particle_core_1_1_particle_pool.html", null ],
     [ "SimuCore::ParticleCore::ParticleRender", "class_simu_core_1_1_particle_core_1_1_particle_render.html", [

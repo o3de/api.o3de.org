@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Open 3D Engine AzCore API Reference: AZStd::ranges::repeat_view&lt; W, Bound, class &gt; Class Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZStd::ranges::repeat_view&lt; W, Bound &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,7 +55,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1repeat__vie
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_a_z_std_1_1ranges_1_1repeat__view-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">AZStd::ranges::repeat_view&lt; W, Bound, class &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">AZStd::ranges::repeat_view&lt; W, Bound &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -63,31 +63,31 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1repeat__vie
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a8c577a29c1921b25f9c8a3731813db" id="r_a6a8c577a29c1921b25f9c8a3731813db"><td class="memTemplParams" colspan="2"><a id="a6a8c577a29c1921b25f9c8a3731813db" name="a6a8c577a29c1921b25f9c8a3731813db"></a>
-template&lt;bool Enable = copy_constructible&lt;W&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a6a8c577a29c1921b25f9c8a3731813db"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>repeat_view</b> (const W &amp;value, Bound bound={})</td></tr>
-<tr class="separator:a6a8c577a29c1921b25f9c8a3731813db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe03b39a2a3a114b89a31109e5f49012" id="r_abe03b39a2a3a114b89a31109e5f49012"><td class="memItemLeft" align="right" valign="top"><a id="abe03b39a2a3a114b89a31109e5f49012" name="abe03b39a2a3a114b89a31109e5f49012"></a>
+<tr class="memitem:a03981295742bd6f10cbf0de680f41ea3" id="r_a03981295742bd6f10cbf0de680f41ea3"><td class="memItemLeft" align="right" valign="top"><a id="a03981295742bd6f10cbf0de680f41ea3" name="a03981295742bd6f10cbf0de680f41ea3"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>repeat_view</b> (const W &amp;value, Bound bound={})</td></tr>
+<tr class="separator:a03981295742bd6f10cbf0de680f41ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb384b9b9977a43650c00cc280ab241f" id="r_abb384b9b9977a43650c00cc280ab241f"><td class="memItemLeft" align="right" valign="top"><a id="abb384b9b9977a43650c00cc280ab241f" name="abb384b9b9977a43650c00cc280ab241f"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>repeat_view</b> (W &amp;&amp;value, Bound bound={})</td></tr>
-<tr class="separator:abe03b39a2a3a114b89a31109e5f49012"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35153a177965be429cc850d4b6239d77" id="r_a35153a177965be429cc850d4b6239d77"><td class="memTemplParams" colspan="2"><a id="a35153a177965be429cc850d4b6239d77" name="a35153a177965be429cc850d4b6239d77"></a>
-template&lt;class... WArgs, class... BoundArgs, bool Enable = constructible_from&lt;W, WArgs...&gt;&amp;&amp; constructible_from&lt;Bound, BoundArgs...&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a35153a177965be429cc850d4b6239d77"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>repeat_view</b> (<a class="el" href="struct_a_z_std_1_1piecewise__construct__t.html">piecewise_construct_t</a>, tuple&lt; WArgs... &gt; valueArgs, tuple&lt; BoundArgs... &gt; boundArgs={})</td></tr>
-<tr class="separator:a35153a177965be429cc850d4b6239d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c233f9c866853c25c625b486b982e91" id="r_a0c233f9c866853c25c625b486b982e91"><td class="memItemLeft" align="right" valign="top"><a id="a0c233f9c866853c25c625b486b982e91" name="a0c233f9c866853c25c625b486b982e91"></a>
+<tr class="separator:abb384b9b9977a43650c00cc280ab241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd528551e8735eedd79c591af7af2e0" id="r_a8bd528551e8735eedd79c591af7af2e0"><td class="memTemplParams" colspan="2"><a id="a8bd528551e8735eedd79c591af7af2e0" name="a8bd528551e8735eedd79c591af7af2e0"></a>
+template&lt;class... WArgs, class... BoundArgs&gt; <br />
+requires constructible_from&lt;W, WArgs...&gt; &amp;&amp; constructible_from&lt;Bound, BoundArgs...&gt;</td></tr>
+<tr class="memitem:a8bd528551e8735eedd79c591af7af2e0"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>repeat_view</b> (piecewise_construct_t, tuple&lt; WArgs... &gt; valueArgs, tuple&lt; BoundArgs... &gt; boundArgs={})</td></tr>
+<tr class="separator:a8bd528551e8735eedd79c591af7af2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9ae2a585b9dbf5bddd58ebc03ea7b1" id="r_a6c9ae2a585b9dbf5bddd58ebc03ea7b1"><td class="memItemLeft" align="right" valign="top"><a id="a6c9ae2a585b9dbf5bddd58ebc03ea7b1" name="a6c9ae2a585b9dbf5bddd58ebc03ea7b1"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
-<tr class="separator:a0c233f9c866853c25c625b486b982e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0628fc0d37c2e7347b737a0c2c8190f" id="r_ae0628fc0d37c2e7347b737a0c2c8190f"><td class="memItemLeft" align="right" valign="top"><a id="ae0628fc0d37c2e7347b737a0c2c8190f" name="ae0628fc0d37c2e7347b737a0c2c8190f"></a>
+<tr class="separator:a6c9ae2a585b9dbf5bddd58ebc03ea7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11cc9914d3bd6e9d70b8b1dc53af39e" id="r_ad11cc9914d3bd6e9d70b8b1dc53af39e"><td class="memItemLeft" align="right" valign="top"><a id="ad11cc9914d3bd6e9d70b8b1dc53af39e" name="ad11cc9914d3bd6e9d70b8b1dc53af39e"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const noexcept</td></tr>
-<tr class="separator:ae0628fc0d37c2e7347b737a0c2c8190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598e359e88f686b7b5769a992b035973" id="r_a598e359e88f686b7b5769a992b035973"><td class="memTemplParams" colspan="2"><a id="a598e359e88f686b7b5769a992b035973" name="a598e359e88f686b7b5769a992b035973"></a>
-template&lt;bool Enable = !same_as&lt;Bound, unreachable_sentinel_t&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a598e359e88f686b7b5769a992b035973"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const</td></tr>
-<tr class="separator:a598e359e88f686b7b5769a992b035973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad11cc9914d3bd6e9d70b8b1dc53af39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41dec1fd1ce2684ba487adf240852158" id="r_a41dec1fd1ce2684ba487adf240852158"><td class="memItemLeft" align="right" valign="top"><a id="a41dec1fd1ce2684ba487adf240852158" name="a41dec1fd1ce2684ba487adf240852158"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a41dec1fd1ce2684ba487adf240852158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class W, class Bound, class&gt;<br />
-class AZStd::ranges::repeat_view&lt; W, Bound, class &gt;</div><p>Generates a sequence of elements by repeating incrementing an initial element W up to Bound </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;move_constructible W, semiregular Bound&gt;<br />
+requires is_object_v&lt;W&gt; &amp;&amp; same_as&lt;W, remove_cv_t&lt;W&gt;&gt; &amp;&amp; (::AZStd::Internal::is_integer_like&lt;Bound&gt; || same_as&lt;Bound, unreachable_sentinel_t&gt;)<br />
+class AZStd::ranges::repeat_view&lt; W, Bound &gt;</div><p>Generates a sequence of elements by repeating incrementing an initial element W up to Bound </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/<b>repeat_view.h</b></li>
 </ul>
@@ -97,7 +97,7 @@ class AZStd::ranges::repeat_view&lt; W, Bound, class &gt;</div><p>Generates a se
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ranges_1_1repeat__view.html">repeat_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

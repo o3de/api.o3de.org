@@ -15,9 +15,14 @@ var hierarchy =
       [ "SuperluminalProfiler::ProfilerSystemComponent", "class_superluminal_profiler_1_1_profiler_system_component.html", null ],
       [ "TracyProfiler::ProfilerSystemComponent", "class_tracy_profiler_1_1_profiler_system_component.html", null ]
     ] ],
-    [ "AZ::TickBus::Handler", null, [
-      [ "OptickProfiler::OptickProfilerEventForwarder", "class_optick_profiler_1_1_optick_profiler_event_forwarder.html", null ],
+    [ "AZ::RHI::FrameEventBus::Handler", null, [
       [ "TracyProfiler::TracyProfilerEventForwarder", "class_tracy_profiler_1_1_tracy_profiler_event_forwarder.html", null ]
+    ] ],
+    [ "AZ::RHI::RHISystemNotificationBus::Handler", null, [
+      [ "TracyProfiler::TracyProfilerEventForwarder", "class_tracy_profiler_1_1_tracy_profiler_event_forwarder.html", null ]
+    ] ],
+    [ "AZ::TickBus::Handler", null, [
+      [ "OptickProfiler::OptickProfilerEventForwarder", "class_optick_profiler_1_1_optick_profiler_event_forwarder.html", null ]
     ] ],
     [ "AZStd::ThreadEventBus::Handler", null, [
       [ "OptickProfiler::OptickProfilerEventForwarder", "class_optick_profiler_1_1_optick_profiler_event_forwarder.html", null ]

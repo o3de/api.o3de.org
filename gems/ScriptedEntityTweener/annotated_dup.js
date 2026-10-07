@@ -8,7 +8,6 @@ var annotated_dup =
       [ "AnimationParameters", "struct_scripted_entity_tweener_1_1_animation_parameters.html", null ],
       [ "AnimationProperties", "struct_scripted_entity_tweener_1_1_animation_properties.html", null ],
       [ "CallbackData", "struct_scripted_entity_tweener_1_1_callback_data.html", "struct_scripted_entity_tweener_1_1_callback_data" ],
-      [ "EasingEquations", "class_scripted_entity_tweener_1_1_easing_equations.html", "class_scripted_entity_tweener_1_1_easing_equations" ],
       [ "ScriptedEntityTweenerNotifications", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_notifications.html", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_notifications" ],
       [ "ScriptedEntityTweenerRequests", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_requests.html", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_requests" ],
       [ "ScriptedEntityTweenerSubtask", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_subtask.html", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_subtask" ],

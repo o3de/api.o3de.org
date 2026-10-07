@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html#a1190b8b73231584d1d4fe44c090a4794":[2,0,5,154,6],
+"class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html#a1fa6017b82a3d9001dc3a48834236305":[2,0,5,154,0],
+"class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html#a3582c118f8504738c9c517edee6a167d":[2,0,5,154,1],
 "class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html#a736d700543ede4b5436b146a5973dd1b":[2,0,5,154,3],
 "class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html#aa240bbe5fcbfc28d3039978cfa1d69c6":[2,0,5,154,4],
 "class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html#ae7486eba5684c081013323e5fe790089":[2,0,5,154,5],
@@ -192,16 +195,17 @@ var NAVTREEINDEX4 =
 "class_az_tools_framework_1_1_entity_composition_requests.html#a13072f043ee9e07669614661c23bdcbb":[2,0,5,185,10],
 "class_az_tools_framework_1_1_entity_composition_requests.html#a423787c0bdc3489fe45d3ca1488a7a5b":[2,0,5,185,5],
 "class_az_tools_framework_1_1_entity_composition_requests.html#a454c6553040f4f4589fab8c42bad450e":[2,0,5,185,14],
-"class_az_tools_framework_1_1_entity_composition_requests.html#a5e4c44d4641632e0136c8fe150b69cad":[2,0,5,185,15],
+"class_az_tools_framework_1_1_entity_composition_requests.html#a5e4c44d4641632e0136c8fe150b69cad":[2,0,5,185,16],
 "class_az_tools_framework_1_1_entity_composition_requests.html#a6be41f7f11c2ea8301a07e0481567fed":[2,0,5,185,3],
 "class_az_tools_framework_1_1_entity_composition_requests.html#a7128854114249e6ad5119453fa972762":[2,0,5,185,11],
 "class_az_tools_framework_1_1_entity_composition_requests.html#a7dfe55eeffb71049486a330c23e86203":[2,0,5,185,6],
 "class_az_tools_framework_1_1_entity_composition_requests.html#a841b97b940cc3f302d127bbff6cb0437":[2,0,5,185,13],
+"class_az_tools_framework_1_1_entity_composition_requests.html#a8801da5208d78460bb3bc2bc9b563a98":[2,0,5,185,15],
 "class_az_tools_framework_1_1_entity_composition_requests.html#ab5454aef1032d6b49a945dc164876176":[2,0,5,185,8],
 "class_az_tools_framework_1_1_entity_composition_requests.html#ac46295a035025eb286b1e4b23319c43d":[2,0,5,185,12],
 "class_az_tools_framework_1_1_entity_composition_requests.html#ac6c7cec0f2e03eab55f0f65b80709d79":[2,0,5,185,9],
 "class_az_tools_framework_1_1_entity_composition_requests.html#acf4689a62e5477bbc735ff59b019b6ce":[2,0,5,185,7],
-"class_az_tools_framework_1_1_entity_composition_requests.html#afc9cbd368d5c5cec7b08a3187e9465c3":[2,0,5,185,16],
+"class_az_tools_framework_1_1_entity_composition_requests.html#afc9cbd368d5c5cec7b08a3187e9465c3":[2,0,5,185,17],
 "class_az_tools_framework_1_1_entity_highlight_messages.html":[2,0,5,186],
 "class_az_tools_framework_1_1_entity_id_q_line_edit.html":[2,0,5,189],
 "class_az_tools_framework_1_1_entity_manipulator_command.html":[2,0,5,190],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "class_az_tools_framework_1_1_entity_selection_events.html":[2,0,5,203],
 "class_az_tools_framework_1_1_exe_select_property_ctrl.html":[2,0,5,206],
 "class_az_tools_framework_1_1_exe_select_property_handler.html":[2,0,5,207],
-"class_az_tools_framework_1_1_expanding_fading_circles.html":[2,0,5,208],
-"class_az_tools_framework_1_1_expanding_fading_circles.html#a1dfc2b9f18e723a7e7e3fa31a19871be":[2,0,5,208,3],
-"class_az_tools_framework_1_1_expanding_fading_circles.html#a756e1147fc5691c382b54b6277dc6b62":[2,0,5,208,0],
-"class_az_tools_framework_1_1_expanding_fading_circles.html#a758e3b4cf35ff29d07fa4a334fc33431":[2,0,5,208,2],
-"class_az_tools_framework_1_1_expanding_fading_circles.html#ac6a84f02186727bf0551875018a16269":[2,0,5,208,1]
+"class_az_tools_framework_1_1_expanding_fading_circles.html":[2,0,5,208]
 };

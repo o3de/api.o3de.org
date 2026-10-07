@@ -10,6 +10,7 @@ var class_az_qt_components_1_1_double_spin_box =
     [ "displayDecimals", "class_az_qt_components_1_1_double_spin_box.html#a99710d4bfd581a3d3fcc0f41d05d5c3b", null ],
     [ "globalRedoTriggered", "class_az_qt_components_1_1_double_spin_box.html#a0f4647167295ebb77efc0c8bb014a216", null ],
     [ "globalUndoTriggered", "class_az_qt_components_1_1_double_spin_box.html#a2441ec7742ce6233ddd01f594b15378f", null ],
+    [ "hasInProgressEdit", "class_az_qt_components_1_1_double_spin_box.html#a269cfdbf0b133dcdd15dc51b929c9cb3", null ],
     [ "isEditing", "class_az_qt_components_1_1_double_spin_box.html#a7fe8c962cc9f105e669a3faaac2af142", null ],
     [ "isRedoAvailable", "class_az_qt_components_1_1_double_spin_box.html#aebd93e5284dbd6a2fab635e186c3753f", null ],
     [ "isUndoAvailable", "class_az_qt_components_1_1_double_spin_box.html#a3bb5ee38fbf0734ce31e552b766d1830", null ],

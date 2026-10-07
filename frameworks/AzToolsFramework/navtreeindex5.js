@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"class_az_tools_framework_1_1_expanding_fading_circles.html#a1dfc2b9f18e723a7e7e3fa31a19871be":[2,0,5,208,3],
+"class_az_tools_framework_1_1_expanding_fading_circles.html#a756e1147fc5691c382b54b6277dc6b62":[2,0,5,208,0],
+"class_az_tools_framework_1_1_expanding_fading_circles.html#a758e3b4cf35ff29d07fa4a334fc33431":[2,0,5,208,2],
+"class_az_tools_framework_1_1_expanding_fading_circles.html#ac6a84f02186727bf0551875018a16269":[2,0,5,208,1],
 "class_az_tools_framework_1_1_fading_text.html":[2,0,5,209],
 "class_az_tools_framework_1_1_fading_text.html#a091a0a3ebd630823f988b50b039ac24f":[2,0,5,209,3],
 "class_az_tools_framework_1_1_fading_text.html#a11ac1955fba71c7bc09ab4dac08d2cab":[2,0,5,209,1],
@@ -26,8 +30,9 @@ var NAVTREEINDEX5 =
 "class_az_tools_framework_1_1_focus_mode_system_component.html#ad8c55fd52a98932add40a2540774f39a":[2,0,5,215,2],
 "class_az_tools_framework_1_1_framework_messages.html":[2,0,5,217],
 "class_az_tools_framework_1_1_generic_button_handler.html":[2,0,5,218],
-"class_az_tools_framework_1_1_generic_button_handler.html#a829e1997a5c094e0bb62d341ca7dfa93":[2,0,5,218,1],
-"class_az_tools_framework_1_1_generic_button_handler.html#afb1081e6e794384eca57f6e011b8a2a7":[2,0,5,218,0],
+"class_az_tools_framework_1_1_generic_button_handler.html#a1b27dcdfdcb697d40b10323154956374":[2,0,5,218,0],
+"class_az_tools_framework_1_1_generic_button_handler.html#aaf1a8ee3f910611fcebcc58df3c46b26":[2,0,5,218,2],
+"class_az_tools_framework_1_1_generic_button_handler.html#aeb340e1bc273b113b191072c72587168":[2,0,5,218,1],
 "class_az_tools_framework_1_1_generic_combo_box_ctrl.html":[2,0,5,219],
 "class_az_tools_framework_1_1_generic_combo_box_ctrl_base.html":[2,0,5,220],
 "class_az_tools_framework_1_1_generic_combo_box_handler.html":[2,0,5,221],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "class_az_tools_framework_1_1_manipulator_view_cylinder.html":[2,0,5,273],
 "class_az_tools_framework_1_1_manipulator_view_line.html":[2,0,5,274],
 "class_az_tools_framework_1_1_manipulator_view_line_select.html":[2,0,5,275],
-"class_az_tools_framework_1_1_manipulator_view_projected_circle.html":[2,0,5,276],
-"class_az_tools_framework_1_1_manipulator_view_quad.html":[2,0,5,277],
-"class_az_tools_framework_1_1_manipulator_view_quad.html#a53d07cb41efbcfc55750f8659f3b42a2":[2,0,5,277,0],
-"class_az_tools_framework_1_1_manipulator_view_quad_billboard.html":[2,0,5,278],
-"class_az_tools_framework_1_1_manipulator_view_quad_billboard.html#a1c05df6fc1edcc14b8760659d3ad1432":[2,0,5,278,0],
-"class_az_tools_framework_1_1_manipulator_view_sphere.html":[2,0,5,279]
+"class_az_tools_framework_1_1_manipulator_view_projected_circle.html":[2,0,5,276]
 };

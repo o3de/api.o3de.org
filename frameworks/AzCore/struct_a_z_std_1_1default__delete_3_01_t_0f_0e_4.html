@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,14 +60,16 @@ $(document).ready(function(){initNavTree('struct_a_z_std_1_1default__delete_3_01
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa467ca5fbc7e3c5de48e46263b50ac0f" id="r_aa467ca5fbc7e3c5de48e46263b50ac0f"><td class="memTemplParams" colspan="2"><a id="aa467ca5fbc7e3c5de48e46263b50ac0f" name="aa467ca5fbc7e3c5de48e46263b50ac0f"></a>
-template&lt;class U , class  = typename enable_if&lt;is_convertible&lt;U(*)[], T(*)[]&gt;::value, void&gt;::type&gt; </td></tr>
-<tr class="memitem:aa467ca5fbc7e3c5de48e46263b50ac0f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>default_delete</b> (const <a class="el" href="struct_a_z_std_1_1default__delete.html">default_delete</a>&lt; U[]&gt; &amp;)</td></tr>
-<tr class="separator:aa467ca5fbc7e3c5de48e46263b50ac0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af364372d7441770335a32e03bb4ad312" id="r_af364372d7441770335a32e03bb4ad312"><td class="memTemplParams" colspan="2"><a id="af364372d7441770335a32e03bb4ad312" name="af364372d7441770335a32e03bb4ad312"></a>
-template&lt;class U , class  = typename enable_if&lt;is_convertible&lt;U(*)[], T(*)[]&gt;::value, void&gt;::type&gt; </td></tr>
-<tr class="memitem:af364372d7441770335a32e03bb4ad312"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (U *ptr) const</td></tr>
-<tr class="separator:af364372d7441770335a32e03bb4ad312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16effd89cd2a9d34f52576e723504f3b" id="r_a16effd89cd2a9d34f52576e723504f3b"><td class="memTemplParams" colspan="2"><a id="a16effd89cd2a9d34f52576e723504f3b" name="a16effd89cd2a9d34f52576e723504f3b"></a>
+template&lt;class U &gt; <br />
+requires is_convertible_v&lt;U(*)[], T(*)[]&gt;</td></tr>
+<tr class="memitem:a16effd89cd2a9d34f52576e723504f3b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>default_delete</b> (const <a class="el" href="struct_a_z_std_1_1default__delete.html">default_delete</a>&lt; U[]&gt; &amp;)</td></tr>
+<tr class="separator:a16effd89cd2a9d34f52576e723504f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7e681fc2e6e095f71ab4234cfb4442" id="r_acc7e681fc2e6e095f71ab4234cfb4442"><td class="memTemplParams" colspan="2"><a id="acc7e681fc2e6e095f71ab4234cfb4442" name="acc7e681fc2e6e095f71ab4234cfb4442"></a>
+template&lt;class U &gt; <br />
+requires is_convertible_v&lt;U(*)[], T(*)[]&gt;</td></tr>
+<tr class="memitem:acc7e681fc2e6e095f71ab4234cfb4442"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (U *ptr) const</td></tr>
+<tr class="separator:acc7e681fc2e6e095f71ab4234cfb4442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/<b>utils.h</b></li>
@@ -78,7 +80,7 @@ template&lt;class U , class  = typename enable_if&lt;is_convertible&lt;U(*)[], T
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="struct_a_z_std_1_1default__delete_3_01_t_0f_0e_4.html">default_delete&lt; T[]&gt;</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:21 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:15 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

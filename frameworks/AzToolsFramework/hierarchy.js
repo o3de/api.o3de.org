@@ -171,7 +171,8 @@ var hierarchy =
       [ "AzToolsFramework::Prefab::PrefabPropertyEditorNodes::PrefabOverrideLabel", "struct_az_tools_framework_1_1_prefab_1_1_prefab_property_editor_nodes_1_1_prefab_override_label.html", null ]
     ] ],
     [ "AZ::EBusConnectionPolicy", null, [
-      [ "AzToolsFramework::EntitySelectionEvents::SelectionConnectionPolicy< Bus >", "struct_az_tools_framework_1_1_entity_selection_events_1_1_selection_connection_policy.html", null ]
+      [ "AzToolsFramework::EntitySelectionEvents::SelectionConnectionPolicy< Bus >", "struct_az_tools_framework_1_1_entity_selection_events_1_1_selection_connection_policy.html", null ],
+      [ "AzToolsFramework::ReadOnlyEntityQueryRequests::ReadOnlyConnectionPolicy< Bus >", "struct_az_tools_framework_1_1_read_only_entity_query_requests_1_1_read_only_connection_policy.html", null ]
     ] ],
     [ "AZ::EBusTraits", null, [
       [ "AzFramework::ComponentModeDelegateNotifications", "class_az_framework_1_1_component_mode_delegate_notifications.html", null ],
@@ -575,6 +576,7 @@ var hierarchy =
       [ "AzToolsFramework::AssetBrowser::AssetBrowserListView", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_list_view.html", null ],
       [ "AzToolsFramework::AssetBrowser::AssetBrowserTreeView", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html", null ]
     ] ],
+    [ "AzToolsFramework::AssetBrowser::AssetBrowserFavoritesProjectSettings", "struct_az_tools_framework_1_1_asset_browser_1_1_asset_browser_favorites_project_settings.html", null ],
     [ "AzToolsFramework::AssetBrowser::AssetBrowserFileActionNotificationBus::Handler", null, [
       [ "AzToolsFramework::Prefab::PrefabSystemComponent", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html", null ]
     ] ],
@@ -599,6 +601,8 @@ var hierarchy =
     [ "AzToolsFramework::AssetBrowser::EBusAggregateAssetTypesIfBelongsToGroup", "struct_az_tools_framework_1_1_asset_browser_1_1_e_bus_aggregate_asset_types_if_belongs_to_group.html", null ],
     [ "AzToolsFramework::AssetBrowser::EBusAggregateUniqueResults< T >", "struct_az_tools_framework_1_1_asset_browser_1_1_e_bus_aggregate_unique_results.html", null ],
     [ "AzToolsFramework::AssetBrowser::EntryCache", "class_az_tools_framework_1_1_asset_browser_1_1_entry_cache.html", null ],
+    [ "AzToolsFramework::AssetBrowser::FavoriteRecord", "struct_az_tools_framework_1_1_asset_browser_1_1_favorite_record.html", null ],
+    [ "AzToolsFramework::AssetBrowser::FavoriteSearchTypeFilterRecord", "struct_az_tools_framework_1_1_asset_browser_1_1_favorite_search_type_filter_record.html", null ],
     [ "AzToolsFramework::AssetBrowser::PreviewerFactory", "class_az_tools_framework_1_1_asset_browser_1_1_previewer_factory.html", null ],
     [ "AzToolsFramework::AssetBrowser::SearchAssetBrowserFavoriteItem::SavedTypeFilter", "struct_az_tools_framework_1_1_asset_browser_1_1_search_asset_browser_favorite_item_1_1_saved_type_filter.html", null ],
     [ "AzToolsFramework::AssetBrowser::SourceFileCreatorDetails", "struct_az_tools_framework_1_1_asset_browser_1_1_source_file_creator_details.html", null ],
@@ -1106,6 +1110,9 @@ var hierarchy =
       [ "AzToolsFramework::Components::EditorSelectionAccentSystemComponent", "class_az_tools_framework_1_1_components_1_1_editor_selection_accent_system_component.html", null ],
       [ "AzToolsFramework::EditorEntityModel", "class_az_tools_framework_1_1_editor_entity_model.html", null ],
       [ "AzToolsFramework::SliceMetadataEntityContextComponent", "class_az_tools_framework_1_1_slice_metadata_entity_context_component.html", null ]
+    ] ],
+    [ "AzToolsFramework::ToolsApplicationNotificationBus::Handler", null, [
+      [ "AzToolsFramework::Prefab::InstanceUpdateExecutor", "class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html", null ]
     ] ],
     [ "AzToolsFramework::ToolsAssetSystemBus::Handler", null, [
       [ "AzToolsFramework::AssetSystem::AssetSystemComponent", "class_az_tools_framework_1_1_asset_system_1_1_asset_system_component.html", null ]

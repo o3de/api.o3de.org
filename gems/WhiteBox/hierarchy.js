@@ -31,6 +31,7 @@ var hierarchy =
       [ "WhiteBox::EditorWhiteBoxComponentNotifications", "class_white_box_1_1_editor_white_box_component_notifications.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponentRequests", "class_white_box_1_1_editor_white_box_component_requests.html", null ],
       [ "WhiteBox::EditorWhiteBoxDefaultModeRequests", "class_white_box_1_1_editor_white_box_default_mode_requests.html", null ],
+      [ "WhiteBox::EditorWhiteBoxDrawShapeModeRequests", "class_white_box_1_1_editor_white_box_draw_shape_mode_requests.html", null ],
       [ "WhiteBox::EditorWhiteBoxEdgeModifierNotifications", "class_white_box_1_1_editor_white_box_edge_modifier_notifications.html", null ],
       [ "WhiteBox::EditorWhiteBoxPolygonModifierNotifications", "class_white_box_1_1_editor_white_box_polygon_modifier_notifications.html", null ],
       [ "WhiteBox::EditorWhiteBoxTransformModeRequests", "class_white_box_1_1_editor_white_box_transform_mode_requests.html", null ],
@@ -59,6 +60,7 @@ var hierarchy =
       [ "WhiteBox::EditorWhiteBoxComponentMode", "class_white_box_1_1_editor_white_box_component_mode.html", null ]
     ] ],
     [ "AzFramework::ViewportDebugDisplayEventBus::Handler", null, [
+      [ "WhiteBox::DrawShapeMode", "class_white_box_1_1_draw_shape_mode.html", null ],
       [ "WhiteBox::VertexTranslationModifier", "class_white_box_1_1_vertex_translation_modifier.html", null ]
     ] ],
     [ "AzFramework::VisibleGeometryRequestBus::Handler", null, [
@@ -98,6 +100,7 @@ var hierarchy =
     ] ],
     [ "CryHooksModule", null, [
       [ "WhiteBox::WhiteBoxModule", "class_white_box_1_1_white_box_module.html", [
+        [ "WhiteBox::WhiteBoxEditorModule", "class_white_box_1_1_white_box_editor_module.html", null ],
         [ "WhiteBox::WhiteBoxEditorModule", "class_white_box_1_1_white_box_editor_module.html", null ]
       ] ]
     ] ],
@@ -117,6 +120,9 @@ var hierarchy =
     [ "EditorWhiteBoxDefaultModeRequestBus::Handler", null, [
       [ "WhiteBox::DefaultMode", "class_white_box_1_1_default_mode.html", null ]
     ] ],
+    [ "EditorWhiteBoxDrawShapeModeRequestBus::Handler", null, [
+      [ "WhiteBox::DrawShapeMode", "class_white_box_1_1_draw_shape_mode.html", null ]
+    ] ],
     [ "EditorWhiteBoxEdgeModifierNotificationBus::Handler", null, [
       [ "WhiteBox::DefaultMode", "class_white_box_1_1_default_mode.html", null ]
     ] ],
@@ -132,6 +138,7 @@ var hierarchy =
     [ "IEditorNotifyListener", null, [
       [ "WhiteBox::EditorWhiteBoxMeshAsset", "class_white_box_1_1_editor_white_box_mesh_asset.html", null ]
     ] ],
+    [ "WhiteBox::Api::Detail::V2", "struct_white_box_1_1_api_1_1_detail_1_1_v2.html", null ],
     [ "WhiteBox::AttributeBuffer< AttributeTypeT >", "class_white_box_1_1_attribute_buffer.html", null ],
     [ "WhiteBox::AttributeTrait< AttributeTypeT >", "struct_white_box_1_1_attribute_trait.html", null ],
     [ "WhiteBox::AttributeTrait< AttributeType::Bitangent >", "struct_white_box_1_1_attribute_trait_3_01_attribute_type_1_1_bitangent_01_4.html", null ],
@@ -142,6 +149,8 @@ var hierarchy =
     [ "WhiteBox::AttributeTrait< AttributeType::UV >", "struct_white_box_1_1_attribute_trait_3_01_attribute_type_1_1_u_v_01_4.html", null ],
     [ "WhiteBox::AZTangentSpaceCalculation", "class_white_box_1_1_a_z_tangent_space_calculation.html", null ],
     [ "WhiteBox::Buffer< VertexStreamDataType >", "class_white_box_1_1_buffer.html", null ],
+    [ "WhiteBox::Csg::TriangleMesh", "struct_white_box_1_1_csg_1_1_triangle_mesh.html", null ],
+    [ "WhiteBox::DrawStairInfo", "struct_white_box_1_1_draw_stair_info.html", null ],
     [ "WhiteBox::EdgeBound", "struct_white_box_1_1_edge_bound.html", null ],
     [ "WhiteBox::EdgeBoundWithHandle", "struct_white_box_1_1_edge_bound_with_handle.html", null ],
     [ "WhiteBox::EdgeIntersection", "struct_white_box_1_1_edge_intersection.html", null ],
@@ -153,6 +162,8 @@ var hierarchy =
     [ "WhiteBox::GeometryIntersectionData", "struct_white_box_1_1_geometry_intersection_data.html", null ],
     [ "WhiteBox::Intersection", "struct_white_box_1_1_intersection.html", null ],
     [ "WhiteBox::IntersectionAndRenderData", "struct_white_box_1_1_intersection_and_render_data.html", null ],
+    [ "WhiteBox::ModeMouseInteraction", "struct_white_box_1_1_mode_mouse_interaction.html", null ],
+    [ "WhiteBox::NumericInputState", "struct_white_box_1_1_numeric_input_state.html", null ],
     [ "WhiteBox::PolygonBound", "struct_white_box_1_1_polygon_bound.html", null ],
     [ "WhiteBox::PolygonBoundWithHandle", "struct_white_box_1_1_polygon_bound_with_handle.html", null ],
     [ "WhiteBox::PolygonIntersection", "struct_white_box_1_1_polygon_intersection.html", null ],

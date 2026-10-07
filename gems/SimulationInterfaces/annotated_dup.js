@@ -56,6 +56,8 @@ var annotated_dup =
       [ "Resource", "struct_simulation_interfaces_1_1_resource.html", null ],
       [ "SimulationEntitiesManager", "class_simulation_interfaces_1_1_simulation_entities_manager.html", null ],
       [ "SimulationEntitiesManagerEditor", "class_simulation_interfaces_1_1_simulation_entities_manager_editor.html", null ],
+      [ "SimulationEntitiesManagerNotifications", "class_simulation_interfaces_1_1_simulation_entities_manager_notifications.html", "class_simulation_interfaces_1_1_simulation_entities_manager_notifications" ],
+      [ "SimulationEntitiesManagerNotificationsBusTraits", "class_simulation_interfaces_1_1_simulation_entities_manager_notifications_bus_traits.html", null ],
       [ "SimulationEntityManagerRequests", "class_simulation_interfaces_1_1_simulation_entity_manager_requests.html", "class_simulation_interfaces_1_1_simulation_entity_manager_requests" ],
       [ "SimulationFeaturesAggregator", "class_simulation_interfaces_1_1_simulation_features_aggregator.html", null ],
       [ "SimulationFeaturesAggregatorEditor", "class_simulation_interfaces_1_1_simulation_features_aggregator_editor.html", null ],

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -99,10 +99,13 @@ Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMessage</
 <tr class="separator:a9e560d9d5e1853843ea83e70a032b38d inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62187a5576cd88ac2dd087d2975c8bd0 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter" id="r_a62187a5576cd88ac2dd087d2975c8bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_component_adapter.html#a62187a5576cd88ac2dd087d2975c8bd0">CreateLabel</a> (AdapterBuilder *adapterBuilder, AZStd::string_view labelText, AZStd::string_view serializedPath) override</td></tr>
 <tr class="separator:a62187a5576cd88ac2dd087d2975c8bd0 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9c9fa2a5aaf9327bf152f1960c75d66 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter" id="r_ae9c9fa2a5aaf9327bf152f1960c75d66"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDestruction</b> (const AZ::EntityId &amp;) override</td></tr>
-<tr class="memdesc:ae9c9fa2a5aaf9327bf152f1960c75d66 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets notification from the EntitySystemBus before destroying an entity. <br /></td></tr>
-<tr class="separator:ae9c9fa2a5aaf9327bf152f1960c75d66 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc24481bf1caeb3b8ced053cb322f24 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter" id="r_a8dc24481bf1caeb3b8ced053cb322f24"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</b> (const AZ::EntityId &amp;) override</td></tr>
+<tr class="memdesc:a8dc24481bf1caeb3b8ced053cb322f24 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets notification from the EntitySystemBus before destroying an entity. <br /></td></tr>
+<tr class="separator:a8dc24481bf1caeb3b8ced053cb322f24 inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9eaa3ed23c4616e2782ac3b75d1de9e inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter" id="r_aa9eaa3ed23c4616e2782ac3b75d1de9e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b> (const AZ::EntityId &amp;) override</td></tr>
+<tr class="separator:aa9eaa3ed23c4616e2782ac3b75d1de9e inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -122,6 +125,9 @@ AZ::ComponentId&#160;</td><td class="memItemRight" valign="bottom"><b>m_componen
 QObject&#160;</td><td class="memItemRight" valign="bottom"><b>m_stillAlive</b></td></tr>
 <tr class="memdesc:a1dd4776b7f91604c414dc5666d4a88c3 inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">object, used in conjunction with a QPointer, to track if this component is still alive <br /></td></tr>
 <tr class="separator:a1dd4776b7f91604c414dc5666d4a88c3 inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0379e0fc9a028dc6fb3e6091ceb9a36b inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_component_adapter" id="r_a0379e0fc9a028dc6fb3e6091ceb9a36b"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_gotInProgressEdit</b> = false</td></tr>
+<tr class="separator:a0379e0fc9a028dc6fb3e6091ceb9a36b inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_component_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a05c2da614e7852f493c6b9b1cab8a743" name="a05c2da614e7852f493c6b9b1cab8a743"></a>
@@ -195,7 +201,7 @@ QObject&#160;</td><td class="memItemRight" valign="bottom"><b>m_stillAlive</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>Prefab</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_component_adapter.html">PrefabComponentAdapter</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:31 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

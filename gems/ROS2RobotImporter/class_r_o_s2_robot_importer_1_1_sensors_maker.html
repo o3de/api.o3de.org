@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,14 +62,39 @@ $(document).ready(function(){initNavTree('class_r_o_s2_robot_importer_1_1_sensor
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4018f2c94824a1334b1d270cb1628ab0" id="r_a4018f2c94824a1334b1d270cb1628ab0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_sensors_maker.html#a4018f2c94824a1334b1d270cb1628ab0">SensorsMaker</a> (const ImportSessionId sessionId)</td></tr>
+<tr class="separator:a4018f2c94824a1334b1d270cb1628ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2acbab04f2e4388a5f44a69fbdc18480" id="r_a2acbab04f2e4388a5f44a69fbdc18480"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_sensors_maker.html#a2acbab04f2e4388a5f44a69fbdc18480">AddSensors</a> (const sdf::Model &amp;model, const sdf::Link *link, AZ::EntityId entityId)</td></tr>
 <tr class="separator:a2acbab04f2e4388a5f44a69fbdc18480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f6e527b9983b4886e7ab2ee90f67ed" id="r_ac9f6e527b9983b4886e7ab2ee90f67ed"><td class="memItemLeft" align="right" valign="top">const AZStd::set&lt; AZStd::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_sensors_maker.html#ac9f6e527b9983b4886e7ab2ee90f67ed">GetStatusMessages</a> () const</td></tr>
-<tr class="separator:ac9f6e527b9983b4886e7ab2ee90f67ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Populates a given entity with all the contents of the &lt;sensor&gt; tag. Sensors are specified as children of link or joint in SDFormat. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4018f2c94824a1334b1d270cb1628ab0" name="a4018f2c94824a1334b1d270cb1628ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4018f2c94824a1334b1d270cb1628ab0">&#9670;&#160;</a></span>SensorsMaker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ROS2RobotImporter::SensorsMaker::SensorsMaker </td>
+          <td>(</td>
+          <td class="paramtype">const ImportSessionId&#160;</td>
+          <td class="paramname"><em>sessionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct the class with given session id. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionId</td><td>id of current import session, allowing communication with asset and status busses. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2acbab04f2e4388a5f44a69fbdc18480" name="a2acbab04f2e4388a5f44a69fbdc18480"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2acbab04f2e4388a5f44a69fbdc18480">&#9670;&#160;</a></span>AddSensors()</h2>
 
@@ -113,26 +138,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac9f6e527b9983b4886e7ab2ee90f67ed" name="ac9f6e527b9983b4886e7ab2ee90f67ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9f6e527b9983b4886e7ab2ee90f67ed">&#9670;&#160;</a></span>GetStatusMessages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const AZStd::set&lt; AZStd::string &gt; &amp; ROS2RobotImporter::SensorsMaker::GetStatusMessages </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get a reference to collection of status messages (read-only) </p><dl class="section return"><dt>Returns</dt><dd>A reference to set containing status messages. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Gems/ROS2RobotImporter/Code/Source/RobotImporter/URDF/<b>SensorsMaker.h</b></li>
+<li>Gems/ROS2RobotImporter/Code/Source/RobotImporter/Building/Makers/<b>SensorsMaker.h</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -140,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2RobotImporter</b></li><li class="navelem"><a class="el" href="class_r_o_s2_robot_importer_1_1_sensors_maker.html">SensorsMaker</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:51 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

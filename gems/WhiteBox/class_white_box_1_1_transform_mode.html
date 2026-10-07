@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine WhiteBox Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine WhiteBox Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -84,12 +84,57 @@ AZStd::vector&lt; AzToolsFramework::ActionOverride &gt;&#160;</td><td class="mem
 <tr class="memitem:a273696a18fe859d1798cce932dad6e2e" id="r_a273696a18fe859d1798cce932dad6e2e"><td class="memItemLeft" align="right" valign="top"><a id="a273696a18fe859d1798cce932dad6e2e" name="a273696a18fe859d1798cce932dad6e2e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Display</b> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair, const AZ::Transform &amp;worldFromLocal, const <a class="el" href="struct_white_box_1_1_intersection_and_render_data.html">IntersectionAndRenderData</a> &amp;renderData, const AzFramework::ViewportInfo &amp;viewportInfo, AzFramework::DebugDisplayRequests &amp;debugDisplay)</td></tr>
 <tr class="separator:a273696a18fe859d1798cce932dad6e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1e451464daf99469631ac23a00846c" id="r_a1e1e451464daf99469631ac23a00846c"><td class="memItemLeft" align="right" valign="top"><a id="a1e1e451464daf99469631ac23a00846c" name="a1e1e451464daf99469631ac23a00846c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMouseInteraction</b> (const AzToolsFramework::ViewportInteraction::MouseInteractionEvent &amp;mouseInteraction, const AZ::EntityComponentIdPair &amp;entityComponentIdPair, const AZStd::optional&lt; <a class="el" href="struct_white_box_1_1_edge_intersection.html">EdgeIntersection</a> &gt; &amp;edgeIntersection, const AZStd::optional&lt; <a class="el" href="struct_white_box_1_1_polygon_intersection.html">PolygonIntersection</a> &gt; &amp;polygonIntersection, const AZStd::optional&lt; <a class="el" href="struct_white_box_1_1_vertex_intersection.html">VertexIntersection</a> &gt; &amp;vertexIntersection)</td></tr>
-<tr class="separator:a1e1e451464daf99469631ac23a00846c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9222d698c60b897d4c302ec8bd5d657d" id="r_a9222d698c60b897d4c302ec8bd5d657d"><td class="memItemLeft" align="right" valign="top"><a id="a9222d698c60b897d4c302ec8bd5d657d" name="a9222d698c60b897d4c302ec8bd5d657d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMouseInteraction</b> (const <a class="el" href="struct_white_box_1_1_mode_mouse_interaction.html">ModeMouseInteraction</a> &amp;mouse)</td></tr>
+<tr class="separator:a9222d698c60b897d4c302ec8bd5d657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d0e46f4fa0d3001ad953deb2800e46" id="r_ad6d0e46f4fa0d3001ad953deb2800e46"><td class="memItemLeft" align="right" valign="top"><a id="ad6d0e46f4fa0d3001ad953deb2800e46" name="ad6d0e46f4fa0d3001ad953deb2800e46"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeTransformType</b> (TransformType subModeType) override</td></tr>
 <tr class="separator:ad6d0e46f4fa0d3001ad953deb2800e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a25704fcb803d7b4d7ca7861f00a0a0" id="r_a2a25704fcb803d7b4d7ca7861f00a0a0"><td class="memItemLeft" align="right" valign="top"><a id="a2a25704fcb803d7b4d7ca7861f00a0a0" name="a2a25704fcb803d7b4d7ca7861f00a0a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericBeginMove</b> () override</td></tr>
+<tr class="separator:a2a25704fcb803d7b4d7ca7861f00a0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a86bc1b907b3b2d4de308cf5fa3d90" id="r_aa3a86bc1b907b3b2d4de308cf5fa3d90"><td class="memItemLeft" align="right" valign="top"><a id="aa3a86bc1b907b3b2d4de308cf5fa3d90" name="aa3a86bc1b907b3b2d4de308cf5fa3d90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericBeginRotate</b> () override</td></tr>
+<tr class="separator:aa3a86bc1b907b3b2d4de308cf5fa3d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3b5e684aa34a95d7d2467984f09878" id="r_a5c3b5e684aa34a95d7d2467984f09878"><td class="memItemLeft" align="right" valign="top"><a id="a5c3b5e684aa34a95d7d2467984f09878" name="a5c3b5e684aa34a95d7d2467984f09878"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericBeginScale</b> () override</td></tr>
+<tr class="separator:a5c3b5e684aa34a95d7d2467984f09878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2671f8d053b5f338167e83ab7ee438b" id="r_ac2671f8d053b5f338167e83ab7ee438b"><td class="memItemLeft" align="right" valign="top"><a id="ac2671f8d053b5f338167e83ab7ee438b" name="ac2671f8d053b5f338167e83ab7ee438b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericSetAxisX</b> () override</td></tr>
+<tr class="separator:ac2671f8d053b5f338167e83ab7ee438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50eabaf8aeeef512fe50e8906e0fd97" id="r_ab50eabaf8aeeef512fe50e8906e0fd97"><td class="memItemLeft" align="right" valign="top"><a id="ab50eabaf8aeeef512fe50e8906e0fd97" name="ab50eabaf8aeeef512fe50e8906e0fd97"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericSetAxisY</b> () override</td></tr>
+<tr class="separator:ab50eabaf8aeeef512fe50e8906e0fd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bd13ec3f6753c7b06480d98910a33b" id="r_ab4bd13ec3f6753c7b06480d98910a33b"><td class="memItemLeft" align="right" valign="top"><a id="ab4bd13ec3f6753c7b06480d98910a33b" name="ab4bd13ec3f6753c7b06480d98910a33b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericSetAxisZ</b> () override</td></tr>
+<tr class="separator:ab4bd13ec3f6753c7b06480d98910a33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e152361f1db26aad2602a14ee2a114" id="r_ad6e152361f1db26aad2602a14ee2a114"><td class="memItemLeft" align="right" valign="top"><a id="ad6e152361f1db26aad2602a14ee2a114" name="ad6e152361f1db26aad2602a14ee2a114"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericConfirm</b> () override</td></tr>
+<tr class="separator:ad6e152361f1db26aad2602a14ee2a114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0181ae6e6d13ea84daf40df2cdcadac" id="r_ac0181ae6e6d13ea84daf40df2cdcadac"><td class="memItemLeft" align="right" valign="top"><a id="ac0181ae6e6d13ea84daf40df2cdcadac" name="ac0181ae6e6d13ea84daf40df2cdcadac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericCancel</b> () override</td></tr>
+<tr class="separator:ac0181ae6e6d13ea84daf40df2cdcadac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011422816c672005e681f9cf234eca59" id="r_a011422816c672005e681f9cf234eca59"><td class="memItemLeft" align="right" valign="top"><a id="a011422816c672005e681f9cf234eca59" name="a011422816c672005e681f9cf234eca59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericBackspace</b> () override</td></tr>
+<tr class="separator:a011422816c672005e681f9cf234eca59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca8b0741911f6341c01a2cb7a78f42e" id="r_a0ca8b0741911f6341c01a2cb7a78f42e"><td class="memItemLeft" align="right" valign="top"><a id="a0ca8b0741911f6341c01a2cb7a78f42e" name="a0ca8b0741911f6341c01a2cb7a78f42e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericDecimal</b> () override</td></tr>
+<tr class="separator:a0ca8b0741911f6341c01a2cb7a78f42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acd4ff19bad504991ba927a7d469525" id="r_a9acd4ff19bad504991ba927a7d469525"><td class="memItemLeft" align="right" valign="top"><a id="a9acd4ff19bad504991ba927a7d469525" name="a9acd4ff19bad504991ba927a7d469525"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericNegate</b> () override</td></tr>
+<tr class="separator:a9acd4ff19bad504991ba927a7d469525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fa564aa1a2c5c1d89646c1f7832a07" id="r_a49fa564aa1a2c5c1d89646c1f7832a07"><td class="memItemLeft" align="right" valign="top"><a id="a49fa564aa1a2c5c1d89646c1f7832a07" name="a49fa564aa1a2c5c1d89646c1f7832a07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendDigit</b> (char d) override</td></tr>
+<tr class="separator:a49fa564aa1a2c5c1d89646c1f7832a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417a1472cb473b0425700a46f479a185" id="r_a417a1472cb473b0425700a46f479a185"><td class="memItemLeft" align="right" valign="top"><a id="a417a1472cb473b0425700a46f479a185" name="a417a1472cb473b0425700a46f479a185"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendOperatorPlus</b> () override</td></tr>
+<tr class="separator:a417a1472cb473b0425700a46f479a185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda8a543cf47670bc17e533d5ad9ca20" id="r_afda8a543cf47670bc17e533d5ad9ca20"><td class="memItemLeft" align="right" valign="top"><a id="afda8a543cf47670bc17e533d5ad9ca20" name="afda8a543cf47670bc17e533d5ad9ca20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendOperatorMult</b> () override</td></tr>
+<tr class="separator:afda8a543cf47670bc17e533d5ad9ca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3bf90743db648d6d9b6b9f66353759" id="r_aae3bf90743db648d6d9b6b9f66353759"><td class="memItemLeft" align="right" valign="top"><a id="aae3bf90743db648d6d9b6b9f66353759" name="aae3bf90743db648d6d9b6b9f66353759"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendOperatorDiv</b> () override</td></tr>
+<tr class="separator:aae3bf90743db648d6d9b6b9f66353759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -127,7 +172,7 @@ static constexpr const char *const&#160;</td><td class="memItemRight" valign="bo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>WhiteBox</b></li><li class="navelem"><a class="el" href="class_white_box_1_1_transform_mode.html">TransformMode</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:54 for Open 3D Engine WhiteBox Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:55 for Open 3D Engine WhiteBox Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
