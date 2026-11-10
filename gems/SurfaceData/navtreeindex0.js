@@ -63,7 +63,6 @@ var NAVTREEINDEX0 =
 "class_surface_data_1_1_surface_tag_weights.html#ab9110318c653cfb7409733fd49d3828f":[0,0,1,23,3],
 "class_surface_data_1_1_surface_tag_weights.html#af805acb146a1099d298a3d380e25262c":[0,0,1,23,6],
 "class_surface_data_1_1_surface_tag_weights.html#afe55933fce41ba6fb705f446bef60e44":[0,0,1,23,4],
-"class_surface_data_1_1mixed__stack__heap__allocator.html":[0,0,1,5],
 "classes.html":[0,1],
 "functions.html":[0,3,0],
 "functions_func.html":[0,3,1],
@@ -76,5 +75,6 @@ var NAVTREEINDEX0 =
 "struct_surface_data_1_1_surface_data_registry_entry.html#a1d4320ee15329625d7f5a550bfe40501":[0,0,1,12,0],
 "struct_surface_data_1_1_surface_data_registry_entry.html#a594c926d2a737c84098c3b460afc7e63":[0,0,1,12,1],
 "struct_surface_data_1_1_surface_data_registry_entry.html#a789fa982b6df9376a8d778506880c469":[0,0,1,12,2],
-"struct_surface_data_1_1_surface_data_registry_entry.html#aa9d8d2cdaa9a8fc3a365675fc61786f2":[0,0,1,12,3]
+"struct_surface_data_1_1_surface_data_registry_entry.html#aa9d8d2cdaa9a8fc3a365675fc61786f2":[0,0,1,12,3],
+"struct_surface_data_1_1mixed__stack__heap__allocator.html":[0,0,1,5]
 };

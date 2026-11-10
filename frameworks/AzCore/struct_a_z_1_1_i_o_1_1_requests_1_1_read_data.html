@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,43 +65,43 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_i_o_1_1_requests_1_1_re
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7ecd67c13e0526cfbd9ae97f120c8cd" id="r_ae7ecd67c13e0526cfbd9ae97f120c8cd"><td class="memItemLeft" align="right" valign="top"><a id="ae7ecd67c13e0526cfbd9ae97f120c8cd" name="ae7ecd67c13e0526cfbd9ae97f120c8cd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ReadData</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">output</a>, <a class="el" href="class_a_z_1_1_e_bus.html">u64</a> <a class="el" href="class_a_z_1_1_e_bus.html">outputSize</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">path</a>, <a class="el" href="class_a_z_1_1_e_bus.html">u64</a> <a class="el" href="class_a_z_1_1_e_bus.html">offset</a>, <a class="el" href="class_a_z_1_1_e_bus.html">u64</a> size, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_e_bus.html">sharedRead</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ReadData</b> (void *output, u64 outputSize, const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;path, u64 offset, u64 size, bool sharedRead)</td></tr>
 <tr class="separator:ae7ecd67c13e0526cfbd9ae97f120c8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a24568cfe5dbcc8cd5f2cb7fe85c5b588" id="r_a24568cfe5dbcc8cd5f2cb7fe85c5b588"><td class="memItemLeft" align="right" valign="top"><a id="a24568cfe5dbcc8cd5f2cb7fe85c5b588" name="a24568cfe5dbcc8cd5f2cb7fe85c5b588"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_path</b></td></tr>
+const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_path</b></td></tr>
 <tr class="memdesc:a24568cfe5dbcc8cd5f2cb7fe85c5b588"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the file that contains the requested data. <br /></td></tr>
 <tr class="separator:a24568cfe5dbcc8cd5f2cb7fe85c5b588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa02f52809c87bb5737e27aef152f8cb9" id="r_aa02f52809c87bb5737e27aef152f8cb9"><td class="memItemLeft" align="right" valign="top"><a id="aa02f52809c87bb5737e27aef152f8cb9" name="aa02f52809c87bb5737e27aef152f8cb9"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_output</b></td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_output</b></td></tr>
 <tr class="memdesc:aa02f52809c87bb5737e27aef152f8cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target output to write the read data to. <br /></td></tr>
 <tr class="separator:aa02f52809c87bb5737e27aef152f8cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7db6e1de09e07b4626ecba74f0fb7c8b" id="r_a7db6e1de09e07b4626ecba74f0fb7c8b"><td class="memItemLeft" align="right" valign="top"><a id="a7db6e1de09e07b4626ecba74f0fb7c8b" name="a7db6e1de09e07b4626ecba74f0fb7c8b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputSize</b></td></tr>
+u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputSize</b></td></tr>
 <tr class="memdesc:a7db6e1de09e07b4626ecba74f0fb7c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of memory m_output points to. This needs to be at least as big as m_size, but can be bigger. <br /></td></tr>
 <tr class="separator:a7db6e1de09e07b4626ecba74f0fb7c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad71359338fe0b268985c1cfd97c00644" id="r_ad71359338fe0b268985c1cfd97c00644"><td class="memItemLeft" align="right" valign="top"><a id="ad71359338fe0b268985c1cfd97c00644" name="ad71359338fe0b268985c1cfd97c00644"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_offset</b></td></tr>
+u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_offset</b></td></tr>
 <tr class="memdesc:ad71359338fe0b268985c1cfd97c00644"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset in bytes into the file. <br /></td></tr>
 <tr class="separator:ad71359338fe0b268985c1cfd97c00644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538b8448b2178c22f43f665b5acb4429" id="r_a538b8448b2178c22f43f665b5acb4429"><td class="memItemLeft" align="right" valign="top"><a id="a538b8448b2178c22f43f665b5acb4429" name="a538b8448b2178c22f43f665b5acb4429"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr>
+u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr>
 <tr class="memdesc:a538b8448b2178c22f43f665b5acb4429"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes to read from the file. <br /></td></tr>
 <tr class="separator:a538b8448b2178c22f43f665b5acb4429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a457151735749875c3288b138df1273e5" id="r_a457151735749875c3288b138df1273e5"><td class="memItemLeft" align="right" valign="top"><a id="a457151735749875c3288b138df1273e5" name="a457151735749875c3288b138df1273e5"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sharedRead</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_sharedRead</b></td></tr>
 <tr class="memdesc:a457151735749875c3288b138df1273e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if other code will be reading from the file or the stack entry can exclusively lock. <br /></td></tr>
 <tr class="separator:a457151735749875c3288b138df1273e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a56f96ad177c0372493bc68bd4e60a966" id="r_a56f96ad177c0372493bc68bd4e60a966"><td class="memItemLeft" align="right" valign="top"><a id="a56f96ad177c0372493bc68bd4e60a966" name="a56f96ad177c0372493bc68bd4e60a966"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> IStreamerTypes::Priority&#160;</td><td class="memItemRight" valign="bottom"><b>s_orderPriority</b> = IStreamerTypes::s_priorityMedium</td></tr>
+static constexpr IStreamerTypes::Priority&#160;</td><td class="memItemRight" valign="bottom"><b>s_orderPriority</b> = IStreamerTypes::s_priorityMedium</td></tr>
 <tr class="separator:a56f96ad177c0372493bc68bd4e60a966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83490df82196b7911441347379a8b64b" id="r_a83490df82196b7911441347379a8b64b"><td class="memItemLeft" align="right" valign="top"><a id="a83490df82196b7911441347379a8b64b" name="a83490df82196b7911441347379a8b64b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_failWhenUnhandled</b> = <a class="el" href="class_a_z_1_1_e_bus.html">true</a></td></tr>
+static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>s_failWhenUnhandled</b> = true</td></tr>
 <tr class="separator:a83490df82196b7911441347379a8b64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -115,7 +115,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_i_o.html">IO</a></li><li class="navelem"><b>Requests</b></li><li class="navelem"><a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_read_data.html">ReadData</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -67,6 +67,8 @@ var class_a_z_1_1_vector3 =
     [ "SetLengthEstimate", "class_a_z_1_1_vector3.html#a06c7343b2a3a1552cbe7570ce428e7d4", null ],
     [ "SetSimdValue", "class_a_z_1_1_vector3.html#a31bf81c15f40db9a935603cb79b82e59", null ],
     [ "Slerp", "class_a_z_1_1_vector3.html#a6cd231ff0f9205371435161119e11d91", null ],
+    [ "SmoothCriticallyDamped", "class_a_z_1_1_vector3.html#a285b93d737e929ca8dd908cee25b4b36", null ],
+    [ "SmoothStep", "class_a_z_1_1_vector3.html#a8ec85c1578b4828edb5039b93ce5b2cb", null ],
     [ "StoreToFloat3", "class_a_z_1_1_vector3.html#ac7e762a80264e581ecd1d5e7bd16049f", null ],
     [ "StoreToFloat4", "class_a_z_1_1_vector3.html#aef523c9f9c3559bb9c6082663d7dfafe", null ]
 ];

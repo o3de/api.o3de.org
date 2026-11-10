@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzQtComponents API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzQtComponents API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,6 +71,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>globalUndoTriggered</
 <tr class="memitem:a6d6b97dde96e838199bbf69a74a9dbcf" id="r_a6d6b97dde96e838199bbf69a74a9dbcf"><td class="memItemLeft" align="right" valign="top"><a id="a6d6b97dde96e838199bbf69a74a9dbcf" name="a6d6b97dde96e838199bbf69a74a9dbcf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>globalRedoTriggered</b> ()</td></tr>
 <tr class="separator:a6d6b97dde96e838199bbf69a74a9dbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacb2d0ff09db56a26608d4caa6ed26f" id="r_abacb2d0ff09db56a26608d4caa6ed26f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1internal_1_1_spin_box_line_edit.html#abacb2d0ff09db56a26608d4caa6ed26f">editCancelTriggered</a> ()</td></tr>
+<tr class="separator:abacb2d0ff09db56a26608d4caa6ed26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a44b10399888fa182b28c545cf24af0" id="r_a0a44b10399888fa182b28c545cf24af0"><td class="memItemLeft" align="right" valign="top"><a id="a0a44b10399888fa182b28c545cf24af0" name="a0a44b10399888fa182b28c545cf24af0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>selectAllTriggered</b> ()</td></tr>
 <tr class="separator:a0a44b10399888fa182b28c545cf24af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +109,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>overrideUndoRedo</b> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal class to add support to undo and redo for <a class="el" href="class_az_qt_components_1_1_spin_box.html">SpinBox</a> classes. Must not be used outside of the <a class="el" href="class_az_qt_components_1_1_spin_box.html">SpinBox</a> classes. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abacb2d0ff09db56a26608d4caa6ed26f" name="abacb2d0ff09db56a26608d4caa6ed26f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abacb2d0ff09db56a26608d4caa6ed26f">&#9670;&#160;</a></span>editCancelTriggered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzQtComponents::internal::SpinBoxLineEdit::editCancelTriggered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emitted when Ctrl+Z is pressed while the user has made local edits. The parent spinbox should revert to its pre-edit value and clear focus. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/<b>SpinBox.h</b></li>
 </ul>
 </div><!-- contents -->
@@ -116,7 +145,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>overrideUndoRedo</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_az_qt_components.html">AzQtComponents</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="class_az_qt_components_1_1internal_1_1_spin_box_line_edit.html">SpinBoxLineEdit</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:28 for Open 3D Engine AzQtComponents API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:29 for Open 3D Engine AzQtComponents API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

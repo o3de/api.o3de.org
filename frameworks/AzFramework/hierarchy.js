@@ -292,6 +292,7 @@ var hierarchy =
       [ "AzFramework::RootSpawnableNotifications", "class_az_framework_1_1_root_spawnable_notifications.html", null ],
       [ "AzFramework::ScriptDebugAgentEvents", "class_az_framework_1_1_script_debug_agent_events.html", null ],
       [ "AzFramework::Scripts::SpawnableScriptNotifications", "class_az_framework_1_1_scripts_1_1_spawnable_script_notifications.html", null ],
+      [ "AzFramework::SeatNotificationsBusTraits", "class_az_framework_1_1_seat_notifications_bus_traits.html", null ],
       [ "AzFramework::SliceEntityOwnershipServiceRequests", "class_az_framework_1_1_slice_entity_ownership_service_requests.html", null ],
       [ "AzFramework::SliceEntityRequests", "class_az_framework_1_1_slice_entity_requests.html", null ],
       [ "AzFramework::SliceGameEntityOwnershipServiceNotifications", "class_az_framework_1_1_slice_game_entity_ownership_service_notifications.html", null ],
@@ -306,6 +307,11 @@ var hierarchy =
       [ "AzFramework::ViewportDebugDisplayEvents", "class_az_framework_1_1_viewport_debug_display_events.html", null ],
       [ "AzFramework::ViewportImGuiNotifications", "class_az_framework_1_1_viewport_im_gui_notifications.html", null ],
       [ "AzFramework::ViewportRequests", "class_az_framework_1_1_viewport_requests.html", null ],
+      [ "AzFramework::WaylandConnectionManagerBusTraits", "class_az_framework_1_1_wayland_connection_manager_bus_traits.html", null ],
+      [ "AzFramework::WaylandInterfaceNotificationsBusTraits", "class_az_framework_1_1_wayland_interface_notifications_bus_traits.html", null ],
+      [ "AzFramework::WaylandProtocolManagerBusTraits", "class_az_framework_1_1_wayland_protocol_manager_bus_traits.html", null ],
+      [ "AzFramework::WaylandProxyBusTraits", "class_az_framework_1_1_wayland_proxy_bus_traits.html", null ],
+      [ "AzFramework::WaylandRegistryEventsBusTraits", "class_az_framework_1_1_wayland_registry_events_bus_traits.html", null ],
       [ "AzFramework::WindowNotifications", "class_az_framework_1_1_window_notifications.html", null ],
       [ "AzFramework::WindowRequests", "class_az_framework_1_1_window_requests.html", null ],
       [ "AzFramework::WindowSystemNotifications", "class_az_framework_1_1_window_system_notifications.html", null ],
@@ -327,13 +333,11 @@ var hierarchy =
       [ "ThermalInfoHandler", "class_thermal_info_handler.html", null ],
       [ "UiFrameworkInterface", "class_ui_framework_interface.html", null ]
     ] ],
-    [ "AZ::EntityBus::Handler", null, [
-      [ "AzFramework::TransformComponent", "class_az_framework_1_1_transform_component.html", null ]
-    ] ],
     [ "AZ::EntityBus::MultiHandler", null, [
       [ "AzFramework::EntityContext", "class_az_framework_1_1_entity_context.html", [
         [ "AzFramework::GameEntityContextComponent", "class_az_framework_1_1_game_entity_context_component.html", null ]
-      ] ]
+      ] ],
+      [ "AzFramework::TransformComponent", "class_az_framework_1_1_transform_component.html", null ]
     ] ],
     [ "AZ::Interface< T >", "class_a_z_1_1_interface.html", null ],
     [ "AZ::IO::ArchiveFileIterator", "struct_a_z_1_1_i_o_1_1_archive_file_iterator.html", null ],
@@ -447,6 +451,7 @@ var hierarchy =
     [ "AzFramework::AndroidEventDispatcher", "class_az_framework_1_1_android_event_dispatcher.html", null ],
     [ "AzFramework::Application::Implementation", "class_az_framework_1_1_application_1_1_implementation.html", [
       [ "AzFramework::ApplicationWindows", "class_az_framework_1_1_application_windows.html", null ],
+      [ "AzFramework::WaylandApplication", "class_az_framework_1_1_wayland_application.html", null ],
       [ "AzFramework::XcbApplication", "class_az_framework_1_1_xcb_application.html", null ]
     ] ],
     [ "AzFramework::Application::ImplementationFactory", "class_az_framework_1_1_application_1_1_implementation_factory.html", null ],
@@ -561,6 +566,9 @@ var hierarchy =
     [ "AzFramework::Components::ComponentInitHelper< T, AZStd::void_t< decltype(AZStd::declval< T >().Init())> >", "struct_az_framework_1_1_components_1_1_component_init_helper_3_01_t_00_01_a_z_std_1_1void__t_3_0af5b08ed6e326ce380ef001b7d122464.html", null ],
     [ "AzFramework::Components::DeprecatedInfo", "struct_az_framework_1_1_components_1_1_deprecated_info.html", null ],
     [ "AzFramework::CursorEvent", "struct_az_framework_1_1_cursor_event.html", null ],
+    [ "AzFramework::CursorShapeInterfaceRequests", "class_az_framework_1_1_cursor_shape_interface_requests.html", [
+      [ "AzFramework::CursorShapeManager", "class_az_framework_1_1_cursor_shape_manager.html", null ]
+    ] ],
     [ "AzFramework::CursorState", "struct_az_framework_1_1_cursor_state.html", null ],
     [ "AzFramework::DependencySearchRule", "class_az_framework_1_1_dependency_search_rule.html", null ],
     [ "AzFramework::DespawnAllEntitiesOptionalArgs", "struct_az_framework_1_1_despawn_all_entities_optional_args.html", null ],
@@ -574,6 +582,9 @@ var hierarchy =
       [ "AzFramework::DeviceAttributesSystemComponent", "class_az_framework_1_1_device_attributes_system_component.html", null ]
     ] ],
     [ "AzFramework::DiscreteInputEvent", "struct_az_framework_1_1_discrete_input_event.html", null ],
+    [ "AzFramework::EasingCurve", "class_az_framework_1_1_easing_curve.html", null ],
+    [ "AzFramework::EasingCurve::Point", "struct_az_framework_1_1_easing_curve_1_1_point.html", null ],
+    [ "AzFramework::EasingEquations", "class_az_framework_1_1_easing_equations.html", null ],
     [ "AzFramework::EditorEntityEvents", "class_az_framework_1_1_editor_entity_events.html", null ],
     [ "AzFramework::EntityAliasTypeChange", "struct_az_framework_1_1_entity_alias_type_change.html", null ],
     [ "AzFramework::EntityOwnershipServiceInterface", "class_az_framework_1_1_entity_ownership_service_interface.html", null ],
@@ -622,6 +633,7 @@ var hierarchy =
     [ "AzFramework::InputDeviceId", "class_az_framework_1_1_input_device_id.html", null ],
     [ "AzFramework::InputDeviceKeyboard::Implementation", "class_az_framework_1_1_input_device_keyboard_1_1_implementation.html", [
       [ "AzFramework::InputDeviceKeyboardWindows", "class_az_framework_1_1_input_device_keyboard_windows.html", null ],
+      [ "AzFramework::WaylandInputDeviceKeyboard", "class_az_framework_1_1_wayland_input_device_keyboard.html", null ],
       [ "AzFramework::XcbInputDeviceKeyboard", "class_az_framework_1_1_xcb_input_device_keyboard.html", null ]
     ] ],
     [ "AzFramework::InputDeviceKeyboard::ImplementationFactory", "class_az_framework_1_1_input_device_keyboard_1_1_implementation_factory.html", null ],
@@ -635,6 +647,7 @@ var hierarchy =
     [ "AzFramework::InputDeviceMouse::Button", "struct_az_framework_1_1_input_device_mouse_1_1_button.html", null ],
     [ "AzFramework::InputDeviceMouse::Implementation", "class_az_framework_1_1_input_device_mouse_1_1_implementation.html", [
       [ "AzFramework::InputDeviceMouseWindows", "class_az_framework_1_1_input_device_mouse_windows.html", null ],
+      [ "AzFramework::WaylandInputDeviceMouse", "class_az_framework_1_1_wayland_input_device_mouse.html", null ],
       [ "AzFramework::XcbInputDeviceMouse", "class_az_framework_1_1_xcb_input_device_mouse.html", null ]
     ] ],
     [ "AzFramework::InputDeviceMouse::ImplementationFactory", "class_az_framework_1_1_input_device_mouse_1_1_implementation_factory.html", null ],
@@ -669,10 +682,12 @@ var hierarchy =
     [ "AzFramework::MultiViewportControllerInstanceInterface< TController >", "class_az_framework_1_1_multi_viewport_controller_instance_interface.html", null ],
     [ "AzFramework::NativeWindow::Implementation", "class_az_framework_1_1_native_window_1_1_implementation.html", [
       [ "AzFramework::NativeWindowImpl_Win32", "class_az_framework_1_1_native_window_impl___win32.html", null ],
+      [ "AzFramework::WaylandNativeWindow", "class_az_framework_1_1_wayland_native_window.html", null ],
       [ "AzFramework::XcbNativeWindow", "class_az_framework_1_1_xcb_native_window.html", null ]
     ] ],
     [ "AzFramework::NativeWindow::ImplementationFactory", "class_az_framework_1_1_native_window_1_1_implementation_factory.html", null ],
     [ "AzFramework::OctreeDebug", "struct_az_framework_1_1_octree_debug.html", null ],
+    [ "AzFramework::OutputManagerRequests", "class_az_framework_1_1_output_manager_requests.html", null ],
     [ "AzFramework::PaintBrush", "class_az_framework_1_1_paint_brush.html", null ],
     [ "AzFramework::PaintBrushSessionBus::Handler", null, [
       [ "AzFramework::PaintBrushSystemComponent", "class_az_framework_1_1_paint_brush_system_component.html", null ]
@@ -695,6 +710,7 @@ var hierarchy =
     [ "AzFramework::ProcessOutput", "class_az_framework_1_1_process_output.html", null ],
     [ "AzFramework::ProcessWatcher", "class_az_framework_1_1_process_watcher.html", null ],
     [ "AzFramework::QualityCVarGroup", "class_az_framework_1_1_quality_c_var_group.html", null ],
+    [ "AzFramework::RelativePointerInterfaceRequests", "class_az_framework_1_1_relative_pointer_interface_requests.html", null ],
     [ "AzFramework::ReloadSpawnableOptionalArgs", "struct_az_framework_1_1_reload_spawnable_optional_args.html", null ],
     [ "AzFramework::RemoteToolsEndpointInfo", "class_az_framework_1_1_remote_tools_endpoint_info.html", null ],
     [ "AzFramework::RenderGeometry::EntityFilter", "struct_az_framework_1_1_render_geometry_1_1_entity_filter.html", null ],
@@ -719,6 +735,8 @@ var hierarchy =
     [ "AzFramework::ScriptUserPropertyInfo", "struct_az_framework_1_1_script_user_property_info.html", null ],
     [ "AzFramework::ScrollEvent", "struct_az_framework_1_1_scroll_event.html", null ],
     [ "AzFramework::SearchRuleDefinition", "class_az_framework_1_1_search_rule_definition.html", null ],
+    [ "AzFramework::SeatManagerRequests", "class_az_framework_1_1_seat_manager_requests.html", null ],
+    [ "AzFramework::SeatNotifications", "class_az_framework_1_1_seat_notifications.html", null ],
     [ "AzFramework::SeedInfo", "struct_az_framework_1_1_seed_info.html", null ],
     [ "AzFramework::SimpleAssetReferenceBase", "class_az_framework_1_1_simple_asset_reference_base.html", [
       [ "AzFramework::SimpleAssetReference< AssetType >", "class_az_framework_1_1_simple_asset_reference.html", null ]
@@ -790,6 +808,11 @@ var hierarchy =
       [ "AzFramework::OctreeNode", "class_az_framework_1_1_octree_node.html", null ]
     ] ],
     [ "AzFramework::VisibleGeometry", "struct_az_framework_1_1_visible_geometry.html", null ],
+    [ "AzFramework::WaylandConnectionManager", "class_az_framework_1_1_wayland_connection_manager.html", null ],
+    [ "AzFramework::WaylandDisplayProvider", "class_az_framework_1_1_wayland_display_provider.html", null ],
+    [ "AzFramework::WaylandInterfaceNotifications", "class_az_framework_1_1_wayland_interface_notifications.html", null ],
+    [ "AzFramework::WaylandProxyBusEvents", "class_az_framework_1_1_wayland_proxy_bus_events.html", null ],
+    [ "AzFramework::WaylandRegistryEvents", "class_az_framework_1_1_wayland_registry_events.html", null ],
     [ "AzFramework::WindowGeometry", "struct_az_framework_1_1_window_geometry.html", null ],
     [ "AzFramework::WindowPosOptions", "struct_az_framework_1_1_window_pos_options.html", null ],
     [ "AzFramework::WindowSize", "struct_az_framework_1_1_window_size.html", null ],
@@ -985,10 +1008,14 @@ var hierarchy =
       [ "AzFramework::OctreeSystemComponent", "class_az_framework_1_1_octree_system_component.html", null ]
     ] ],
     [ "LinuxLifecycleEvents::Bus::Handler", null, [
+      [ "AzFramework::WaylandApplication", "class_az_framework_1_1_wayland_application.html", null ],
       [ "AzFramework::XcbApplication", "class_az_framework_1_1_xcb_application.html", null ]
     ] ],
     [ "MissingAssetNotificationBus::Handler", null, [
       [ "AzFramework::MissingAssetLogger", "class_az_framework_1_1_missing_asset_logger.html", null ]
+    ] ],
+    [ "OutputManagerInterface::Registrar", null, [
+      [ "AzFramework::OutputManager", "class_az_framework_1_1_output_manager.html", null ]
     ] ],
     [ "Physics::AnimationConfiguration", "class_physics_1_1_animation_configuration.html", null ],
     [ "Physics::CharacterColliderConfiguration", "class_physics_1_1_character_collider_configuration.html", null ],
@@ -1036,6 +1063,9 @@ var hierarchy =
       [ "AzFramework::InputDeviceKeyboardWindows", "class_az_framework_1_1_input_device_keyboard_windows.html", null ],
       [ "AzFramework::InputDeviceMouseWindows", "class_az_framework_1_1_input_device_mouse_windows.html", null ]
     ] ],
+    [ "RelativePointerInterface::Registrar", null, [
+      [ "AzFramework::ProtocolManager", "class_az_framework_1_1_protocol_manager.html", null ]
+    ] ],
     [ "RootSpawnableInterface::Registrar", null, [
       [ "AzFramework::SpawnableSystemComponent", "class_az_framework_1_1_spawnable_system_component.html", null ]
     ] ],
@@ -1052,6 +1082,13 @@ var hierarchy =
     ] ],
     [ "SceneSystemInterface::Registrar", null, [
       [ "AzFramework::SceneSystemComponent", "class_az_framework_1_1_scene_system_component.html", null ]
+    ] ],
+    [ "SeatManagerInterface::Registrar", null, [
+      [ "AzFramework::SeatManager", "class_az_framework_1_1_seat_manager.html", null ]
+    ] ],
+    [ "SeatNotificationsBus::Handler", null, [
+      [ "AzFramework::WaylandInputDeviceKeyboard", "class_az_framework_1_1_wayland_input_device_keyboard.html", null ],
+      [ "AzFramework::WaylandInputDeviceMouse", "class_az_framework_1_1_wayland_input_device_mouse.html", null ]
     ] ],
     [ "SliceEntityOwnershipServiceRequestBus::Handler", null, [
       [ "AzFramework::SliceEntityOwnershipService", "class_az_framework_1_1_slice_entity_ownership_service.html", null ]
@@ -1079,6 +1116,20 @@ var hierarchy =
     ] ],
     [ "TraceMessageBus::Handler", null, [
       [ "AZ::Debug::StartupLogSink", "class_a_z_1_1_debug_1_1_startup_log_sink.html", null ]
+    ] ],
+    [ "WaylandInterfaceNotificationsBus::MultiHandler", null, [
+      [ "AzFramework::XdgManagerImpl", "class_az_framework_1_1_xdg_manager_impl.html", null ]
+    ] ],
+    [ "WaylandProxyBus::MultiHandler", null, [
+      [ "AzFramework::ProtocolManager", "class_az_framework_1_1_protocol_manager.html", null ],
+      [ "AzFramework::XdgManagerImpl", "class_az_framework_1_1_xdg_manager_impl.html", null ]
+    ] ],
+    [ "WaylandRegistryEventsBus::Handler", null, [
+      [ "AzFramework::CursorShapeManager", "class_az_framework_1_1_cursor_shape_manager.html", null ],
+      [ "AzFramework::OutputManager", "class_az_framework_1_1_output_manager.html", null ],
+      [ "AzFramework::ProtocolManager", "class_az_framework_1_1_protocol_manager.html", null ],
+      [ "AzFramework::SeatManager", "class_az_framework_1_1_seat_manager.html", null ],
+      [ "AzFramework::XdgManagerImpl", "class_az_framework_1_1_xdg_manager_impl.html", null ]
     ] ],
     [ "WindowRequestBus::Handler", null, [
       [ "AzFramework::NativeWindow", "class_az_framework_1_1_native_window.html", null ]

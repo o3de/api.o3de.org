@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -106,10 +106,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = type
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename tree_type::const_reference</td></tr>
 <tr class="separator:a9b768bac5557ca7124f69982268fb474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca17b7dac1840ee861929e1b75f388e4" id="r_aca17b7dac1840ee861929e1b75f388e4"><td class="memItemLeft" align="right" valign="top"><a id="aca17b7dac1840ee861929e1b75f388e4" name="aca17b7dac1840ee861929e1b75f388e4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = typename <a class="el" href="class_a_z_std_1_1rbtree__iterator.html">tree_type::iterator</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = typename tree_type::iterator</td></tr>
 <tr class="separator:aca17b7dac1840ee861929e1b75f388e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e881a435b4e905c2a1614f32ab00a33" id="r_a2e881a435b4e905c2a1614f32ab00a33"><td class="memItemLeft" align="right" valign="top"><a id="a2e881a435b4e905c2a1614f32ab00a33" name="a2e881a435b4e905c2a1614f32ab00a33"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = typename <a class="el" href="class_a_z_std_1_1rbtree__const__iterator.html">tree_type::const_iterator</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = typename tree_type::const_iterator</td></tr>
 <tr class="separator:a2e881a435b4e905c2a1614f32ab00a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4403b8c150078ef758f302cef3db11" id="r_a0f4403b8c150078ef758f302cef3db11"><td class="memItemLeft" align="right" valign="top"><a id="a0f4403b8c150078ef758f302cef3db11" name="a0f4403b8c150078ef758f302cef3db11"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b> = typename tree_type::reverse_iterator</td></tr>
@@ -118,7 +118,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b> = typename tree_type::const_reverse_iterator</td></tr>
 <tr class="separator:a653e7169dcfbe60802cade28a0bd520e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a634ef95aa880ddd5e6713b976c13b9b3" id="r_a634ef95aa880ddd5e6713b976c13b9b3"><td class="memItemLeft" align="right" valign="top"><a id="a634ef95aa880ddd5e6713b976c13b9b3" name="a634ef95aa880ddd5e6713b976c13b9b3"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = map_node_handle&lt; map_node_traits&lt; key_type, mapped_type, allocator_type, typename tree_type::node_type, typename <a class="el" href="class_a_z_std_1_1rbtree__node__destructor.html">tree_type::node_deleter</a> &gt; &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = map_node_handle&lt; map_node_traits&lt; key_type, mapped_type, allocator_type, typename tree_type::node_type, typename tree_type::node_deleter &gt; &gt;</td></tr>
 <tr class="separator:a634ef95aa880ddd5e6713b976c13b9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b21062e296cc12a90372a131813c62" id="r_a92b21062e296cc12a90372a131813c62"><td class="memItemLeft" align="right" valign="top"><a id="a92b21062e296cc12a90372a131813c62" name="a92b21062e296cc12a90372a131813c62"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>insert_return_type</b> = AssociativeInternal::insert_return_type&lt; iterator, node_type &gt;</td></tr>
@@ -133,10 +133,10 @@ Public Member Functions</h2></td></tr>
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:a19e69a78ceaf241bce15d985288d9c2a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>map</b> (InputIterator first, InputIterator last, const Compare &amp;comp=Compare(), const Allocator &amp;alloc=Allocator())</td></tr>
 <tr class="separator:a19e69a78ceaf241bce15d985288d9c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55df224eea2666f460ed2e5b8d56950e" id="r_a55df224eea2666f460ed2e5b8d56950e"><td class="memTemplParams" colspan="2"><a id="a55df224eea2666f460ed2e5b8d56950e" name="a55df224eea2666f460ed2e5b8d56950e"></a>
-template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a55df224eea2666f460ed2e5b8d56950e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>map</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, const Compare &amp;comp=Compare(), const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a55df224eea2666f460ed2e5b8d56950e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2d5876ef45fa2fdd2edfd0d1879dae" id="r_aab2d5876ef45fa2fdd2edfd0d1879dae"><td class="memTemplParams" colspan="2"><a id="aab2d5876ef45fa2fdd2edfd0d1879dae" name="aab2d5876ef45fa2fdd2edfd0d1879dae"></a>
+template&lt;Internal::container_compatible_range&lt; value_type &gt; R&gt; </td></tr>
+<tr class="memitem:aab2d5876ef45fa2fdd2edfd0d1879dae"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>map</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, const Compare &amp;comp=Compare(), const Allocator &amp;alloc=Allocator())</td></tr>
+<tr class="separator:aab2d5876ef45fa2fdd2edfd0d1879dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64e2dcce9bfde092d4eb67785b4ea96" id="r_ab64e2dcce9bfde092d4eb67785b4ea96"><td class="memItemLeft" align="right" valign="top"><a id="ab64e2dcce9bfde092d4eb67785b4ea96" name="ab64e2dcce9bfde092d4eb67785b4ea96"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>map</b> (const <a class="el" href="class_a_z_std_1_1map.html">map</a> &amp;rhs)</td></tr>
 <tr class="separator:ab64e2dcce9bfde092d4eb67785b4ea96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,15 +159,15 @@ template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_ran
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:a347996d3d043c50a5359f1347ac18f82"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>map</b> (InputIterator first, InputIterator last, const Allocator &amp;alloc)</td></tr>
 <tr class="separator:a347996d3d043c50a5359f1347ac18f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa80cc1aa19f682bd2dae2781732047db" id="r_aa80cc1aa19f682bd2dae2781732047db"><td class="memTemplParams" colspan="2"><a id="aa80cc1aa19f682bd2dae2781732047db" name="aa80cc1aa19f682bd2dae2781732047db"></a>
-template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
-<tr class="memitem:aa80cc1aa19f682bd2dae2781732047db"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>map</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, const Allocator &amp;a)</td></tr>
-<tr class="separator:aa80cc1aa19f682bd2dae2781732047db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5daffe089612fe3a24ed454d22ab107e" id="r_a5daffe089612fe3a24ed454d22ab107e"><td class="memTemplParams" colspan="2"><a id="a5daffe089612fe3a24ed454d22ab107e" name="a5daffe089612fe3a24ed454d22ab107e"></a>
+template&lt;Internal::container_compatible_range&lt; value_type &gt; R&gt; </td></tr>
+<tr class="memitem:a5daffe089612fe3a24ed454d22ab107e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>map</b> (<a class="el" href="struct_a_z_std_1_1from__range__t.html">from_range_t</a>, R &amp;&amp;rg, const Allocator &amp;a)</td></tr>
+<tr class="separator:a5daffe089612fe3a24ed454d22ab107e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb96c10d6475f4c4fe43bcbab9b0e8dc" id="r_afb96c10d6475f4c4fe43bcbab9b0e8dc"><td class="memItemLeft" align="right" valign="top"><a id="afb96c10d6475f4c4fe43bcbab9b0e8dc" name="afb96c10d6475f4c4fe43bcbab9b0e8dc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>map</b> (initializer_list&lt; value_type &gt; il, const Allocator &amp;a)</td></tr>
 <tr class="separator:afb96c10d6475f4c4fe43bcbab9b0e8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84378a1b98dfdc7321624287d8a25e6b" id="r_a84378a1b98dfdc7321624287d8a25e6b"><td class="memItemLeft" align="right" valign="top"><a id="a84378a1b98dfdc7321624287d8a25e6b" name="a84378a1b98dfdc7321624287d8a25e6b"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1map.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1map.html">this_type</a> &amp;rhs)</td></tr>
+AZ_FORCE_INLINE this_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const this_type &amp;rhs)</td></tr>
 <tr class="separator:a84378a1b98dfdc7321624287d8a25e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e651e937ceb2685423776fc582ca35" id="r_a52e651e937ceb2685423776fc582ca35"><td class="memItemLeft" align="right" valign="top"><a id="a52e651e937ceb2685423776fc582ca35" name="a52e651e937ceb2685423776fc582ca35"></a>
 AZ_FORCE_INLINE key_compare&#160;</td><td class="memItemRight" valign="bottom"><b>key_comp</b> () const</td></tr>
@@ -215,10 +215,10 @@ MappedType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[
 MappedType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (key_type &amp;&amp;key)</td></tr>
 <tr class="separator:a174b9069d5abc31390e9fb239d15c30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ff87c943762a964bd1492acbfb80ff" id="r_a73ff87c943762a964bd1492acbfb80ff"><td class="memItemLeft" align="right" valign="top"><a id="a73ff87c943762a964bd1492acbfb80ff" name="a73ff87c943762a964bd1492acbfb80ff"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_std_1_1map.html">this_type</a> &amp;rhs)</td></tr>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (this_type &amp;rhs)</td></tr>
 <tr class="separator:a73ff87c943762a964bd1492acbfb80ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3176ad3b0b1416928ae290e802bdfb4d" id="r_a3176ad3b0b1416928ae290e802bdfb4d"><td class="memItemLeft" align="right" valign="top"><a id="a3176ad3b0b1416928ae290e802bdfb4d" name="a3176ad3b0b1416928ae290e802bdfb4d"></a>
-AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const value_type &amp;value)</td></tr>
+AZ_FORCE_INLINE pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const value_type &amp;value)</td></tr>
 <tr class="separator:a3176ad3b0b1416928ae290e802bdfb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e074d9db5f32a6496b438d670fb7406" id="r_a4e074d9db5f32a6496b438d670fb7406"><td class="memItemLeft" align="right" valign="top"><a id="a4e074d9db5f32a6496b438d670fb7406" name="a4e074d9db5f32a6496b438d670fb7406"></a>
 AZ_FORCE_INLINE iterator&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const_iterator insertPos, const value_type &amp;value)</td></tr>
@@ -227,10 +227,10 @@ AZ_FORCE_INLINE iterator&#160;</td><td class="memItemRight" valign="bottom"><b>i
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:a1d0c7ba195a55b4c020ba3e6b549b18e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (InputIterator first, InputIterator last)</td></tr>
 <tr class="separator:a1d0c7ba195a55b4c020ba3e6b549b18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e55f8f9f385589ef98ea0e4b98428b" id="r_ab9e55f8f9f385589ef98ea0e4b98428b"><td class="memTemplParams" colspan="2"><a id="ab9e55f8f9f385589ef98ea0e4b98428b" name="ab9e55f8f9f385589ef98ea0e4b98428b"></a>
-template&lt;class R &gt; </td></tr>
-<tr class="memitem:ab9e55f8f9f385589ef98ea0e4b98428b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_range</b> (R &amp;&amp;rg) -&gt; enable_if_t&lt; Internal::container_compatible_range&lt; R, value_type &gt; &gt;</td></tr>
-<tr class="separator:ab9e55f8f9f385589ef98ea0e4b98428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b42fa5c7de4bf0c2717aba01608bf0" id="r_aa5b42fa5c7de4bf0c2717aba01608bf0"><td class="memTemplParams" colspan="2"><a id="aa5b42fa5c7de4bf0c2717aba01608bf0" name="aa5b42fa5c7de4bf0c2717aba01608bf0"></a>
+template&lt;Internal::container_compatible_range&lt; value_type &gt; R&gt; </td></tr>
+<tr class="memitem:aa5b42fa5c7de4bf0c2717aba01608bf0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_range</b> (R &amp;&amp;rg)</td></tr>
+<tr class="separator:aa5b42fa5c7de4bf0c2717aba01608bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4ce637e3b57ac130bf7432bf857a91" id="r_a5e4ce637e3b57ac130bf7432bf857a91"><td class="memItemLeft" align="right" valign="top"><a id="a5e4ce637e3b57ac130bf7432bf857a91" name="a5e4ce637e3b57ac130bf7432bf857a91"></a>
 AZ_FORCE_INLINE iterator&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (const_iterator erasePos)</td></tr>
 <tr class="separator:a5e4ce637e3b57ac130bf7432bf857a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,17 +244,17 @@ AZ_FORCE_INLINE iterator&#160;</td><td class="memItemRight" valign="bottom"><b>e
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:ac25b7543e8e6fcff65732f35af95cbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0993cefc01ad2c305bfb357ea3652b1d" id="r_a0993cefc01ad2c305bfb357ea3652b1d"><td class="memItemLeft" align="right" valign="top"><a id="a0993cefc01ad2c305bfb357ea3652b1d" name="a0993cefc01ad2c305bfb357ea3652b1d"></a>
-<a class="el" href="class_a_z_std_1_1map.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1map.html">this_type</a> &amp;&amp;rhs)</td></tr>
+this_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (this_type &amp;&amp;rhs)</td></tr>
 <tr class="separator:a0993cefc01ad2c305bfb357ea3652b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8ff8c074814e1a5b6f78d6caffc2ad" id="r_a1a8ff8c074814e1a5b6f78d6caffc2ad"><td class="memItemLeft" align="right" valign="top"><a id="a1a8ff8c074814e1a5b6f78d6caffc2ad" name="a1a8ff8c074814e1a5b6f78d6caffc2ad"></a>
-<a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (value_type &amp;&amp;value)</td></tr>
+AZStd::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (value_type &amp;&amp;value)</td></tr>
 <tr class="separator:a1a8ff8c074814e1a5b6f78d6caffc2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8417240e5e1695e3337468947c5c2f82" id="r_a8417240e5e1695e3337468947c5c2f82"><td class="memItemLeft" align="right" valign="top"><a id="a8417240e5e1695e3337468947c5c2f82" name="a8417240e5e1695e3337468947c5c2f82"></a>
 iterator&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const_iterator insertPos, value_type &amp;&amp;value)</td></tr>
 <tr class="separator:a8417240e5e1695e3337468947c5c2f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9cd0c255dfe4c0fb291c556d16a7573" id="r_af9cd0c255dfe4c0fb291c556d16a7573"><td class="memTemplParams" colspan="2"><a id="af9cd0c255dfe4c0fb291c556d16a7573" name="af9cd0c255dfe4c0fb291c556d16a7573"></a>
 template&lt;class ... InputArguments&gt; </td></tr>
-<tr class="memitem:af9cd0c255dfe4c0fb291c556d16a7573"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace</b> (InputArguments &amp;&amp;... arguments)</td></tr>
+<tr class="memitem:af9cd0c255dfe4c0fb291c556d16a7573"><td class="memTemplItemLeft" align="right" valign="top">AZStd::pair&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>emplace</b> (InputArguments &amp;&amp;... arguments)</td></tr>
 <tr class="separator:af9cd0c255dfe4c0fb291c556d16a7573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f941e06525e81f62c258d3f052fff68" id="r_a4f941e06525e81f62c258d3f052fff68"><td class="memTemplParams" colspan="2"><a id="a4f941e06525e81f62c258d3f052fff68" name="a4f941e06525e81f62c258d3f052fff68"></a>
 template&lt;class ... InputArguments&gt; </td></tr>
@@ -267,11 +267,11 @@ insert_return_type&#160;</td><td class="memItemRight" valign="bottom"><b>insert<
 iterator&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const_iterator hint, node_type &amp;&amp;nodeHandle)</td></tr>
 <tr class="separator:ad4ad21fe8ac0ec0b7101ca0b1a7e4399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868d52317a6aa2d08b2091a69cf4d8e2" id="r_a868d52317a6aa2d08b2091a69cf4d8e2"><td class="memTemplParams" colspan="2">template&lt;typename M &gt; </td></tr>
-<tr class="memitem:a868d52317a6aa2d08b2091a69cf4d8e2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1map.html#a868d52317a6aa2d08b2091a69cf4d8e2">insert_or_assign</a> (const key_type &amp;key, M &amp;&amp;value)</td></tr>
+<tr class="memitem:a868d52317a6aa2d08b2091a69cf4d8e2"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1map.html#a868d52317a6aa2d08b2091a69cf4d8e2">insert_or_assign</a> (const key_type &amp;key, M &amp;&amp;value)</td></tr>
 <tr class="separator:a868d52317a6aa2d08b2091a69cf4d8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85190fceabfb709cf6b6986be701bc84" id="r_a85190fceabfb709cf6b6986be701bc84"><td class="memTemplParams" colspan="2"><a id="a85190fceabfb709cf6b6986be701bc84" name="a85190fceabfb709cf6b6986be701bc84"></a>
 template&lt;typename M &gt; </td></tr>
-<tr class="memitem:a85190fceabfb709cf6b6986be701bc84"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_or_assign</b> (key_type &amp;&amp;key, M &amp;&amp;value)</td></tr>
+<tr class="memitem:a85190fceabfb709cf6b6986be701bc84"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_or_assign</b> (key_type &amp;&amp;key, M &amp;&amp;value)</td></tr>
 <tr class="separator:a85190fceabfb709cf6b6986be701bc84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d5382aa34331d8c39424c8c3dfa6992" id="r_a5d5382aa34331d8c39424c8c3dfa6992"><td class="memTemplParams" colspan="2"><a id="a5d5382aa34331d8c39424c8c3dfa6992" name="a5d5382aa34331d8c39424c8c3dfa6992"></a>
 template&lt;typename M &gt; </td></tr>
@@ -282,11 +282,11 @@ template&lt;typename M &gt; </td></tr>
 <tr class="memitem:ab8ac8b12f257436ba193be2f575ffe3a"><td class="memTemplItemLeft" align="right" valign="top">iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_or_assign</b> (const_iterator hint, key_type &amp;&amp;key, M &amp;&amp;value)</td></tr>
 <tr class="separator:ab8ac8b12f257436ba193be2f575ffe3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6cad02892e7e2f68185f85b800330ea" id="r_ae6cad02892e7e2f68185f85b800330ea"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ae6cad02892e7e2f68185f85b800330ea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1map.html#ae6cad02892e7e2f68185f85b800330ea">try_emplace</a> (const key_type &amp;key, Args &amp;&amp;... arguments)</td></tr>
+<tr class="memitem:ae6cad02892e7e2f68185f85b800330ea"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1map.html#ae6cad02892e7e2f68185f85b800330ea">try_emplace</a> (const key_type &amp;key, Args &amp;&amp;... arguments)</td></tr>
 <tr class="separator:ae6cad02892e7e2f68185f85b800330ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69b0194f5393ea910821f03d94599e5" id="r_aa69b0194f5393ea910821f03d94599e5"><td class="memTemplParams" colspan="2"><a id="aa69b0194f5393ea910821f03d94599e5" name="aa69b0194f5393ea910821f03d94599e5"></a>
 template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:aa69b0194f5393ea910821f03d94599e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>try_emplace</b> (key_type &amp;&amp;key, Args &amp;&amp;... arguments)</td></tr>
+<tr class="memitem:aa69b0194f5393ea910821f03d94599e5"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; iterator, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>try_emplace</b> (key_type &amp;&amp;key, Args &amp;&amp;... arguments)</td></tr>
 <tr class="separator:aa69b0194f5393ea910821f03d94599e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5efa68dcca07883aa1fffc8fb58d03af" id="r_a5efa68dcca07883aa1fffc8fb58d03af"><td class="memTemplParams" colspan="2"><a id="a5efa68dcca07883aa1fffc8fb58d03af" name="a5efa68dcca07883aa1fffc8fb58d03af"></a>
 template&lt;typename... Args&gt; </td></tr>
@@ -327,55 +327,65 @@ iterator&#160;</td><td class="memItemRight" valign="bottom"><b>upper_bound</b> (
 const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>upper_bound</b> (const key_type &amp;key) const</td></tr>
 <tr class="separator:a29740f51531ea692baec21f22ac94fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b11444ab4baf0fb3f3ed73b97193b64" id="r_a8b11444ab4baf0fb3f3ed73b97193b64"><td class="memItemLeft" align="right" valign="top"><a id="a8b11444ab4baf0fb3f3ed73b97193b64" name="a8b11444ab4baf0fb3f3ed73b97193b64"></a>
-<a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>equal_range</b> (const key_type &amp;key)</td></tr>
+pair&lt; iterator, iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>equal_range</b> (const key_type &amp;key)</td></tr>
 <tr class="separator:a8b11444ab4baf0fb3f3ed73b97193b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a49d22bf8611bd4b1ff8f096dc9e7e5" id="r_a2a49d22bf8611bd4b1ff8f096dc9e7e5"><td class="memItemLeft" align="right" valign="top"><a id="a2a49d22bf8611bd4b1ff8f096dc9e7e5" name="a2a49d22bf8611bd4b1ff8f096dc9e7e5"></a>
-<a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; const_iterator, const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>equal_range</b> (const key_type &amp;key) const</td></tr>
+pair&lt; const_iterator, const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>equal_range</b> (const key_type &amp;key) const</td></tr>
 <tr class="separator:a2a49d22bf8611bd4b1ff8f096dc9e7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023d35ecd5c472344d032b03615a9243" id="r_a023d35ecd5c472344d032b03615a9243"><td class="memTemplParams" colspan="2"><a id="a023d35ecd5c472344d032b03615a9243" name="a023d35ecd5c472344d032b03615a9243"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a023d35ecd5c472344d032b03615a9243"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, const_iterator &gt;</td></tr>
-<tr class="separator:a023d35ecd5c472344d032b03615a9243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad632ba6e4fd8c6f50789bcfcdf93354c" id="r_ad632ba6e4fd8c6f50789bcfcdf93354c"><td class="memTemplParams" colspan="2"><a id="ad632ba6e4fd8c6f50789bcfcdf93354c" name="ad632ba6e4fd8c6f50789bcfcdf93354c"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:ad632ba6e4fd8c6f50789bcfcdf93354c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, iterator &gt;</td></tr>
-<tr class="separator:ad632ba6e4fd8c6f50789bcfcdf93354c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868ef30a6c071cb7faa7532b187a3725" id="r_a868ef30a6c071cb7faa7532b187a3725"><td class="memTemplParams" colspan="2"><a id="a868ef30a6c071cb7faa7532b187a3725" name="a868ef30a6c071cb7faa7532b187a3725"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a868ef30a6c071cb7faa7532b187a3725"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contains</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, bool &gt;</td></tr>
-<tr class="separator:a868ef30a6c071cb7faa7532b187a3725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157b30e2144e76c0d3ea261fd5a605aa" id="r_a157b30e2144e76c0d3ea261fd5a605aa"><td class="memTemplParams" colspan="2"><a id="a157b30e2144e76c0d3ea261fd5a605aa" name="a157b30e2144e76c0d3ea261fd5a605aa"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a157b30e2144e76c0d3ea261fd5a605aa"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>count</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, size_type &gt;</td></tr>
-<tr class="separator:a157b30e2144e76c0d3ea261fd5a605aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ab51781616e57243c5941193c17928d" id="r_a9ab51781616e57243c5941193c17928d"><td class="memTemplParams" colspan="2"><a id="a9ab51781616e57243c5941193c17928d" name="a9ab51781616e57243c5941193c17928d"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a9ab51781616e57243c5941193c17928d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, iterator &gt;</td></tr>
-<tr class="separator:a9ab51781616e57243c5941193c17928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a9b34d7123b8cc7a58267e3eceb7b6" id="r_ad4a9b34d7123b8cc7a58267e3eceb7b6"><td class="memTemplParams" colspan="2"><a id="ad4a9b34d7123b8cc7a58267e3eceb7b6" name="ad4a9b34d7123b8cc7a58267e3eceb7b6"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:ad4a9b34d7123b8cc7a58267e3eceb7b6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, const_iterator &gt;</td></tr>
-<tr class="separator:ad4a9b34d7123b8cc7a58267e3eceb7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1799deeb441c26e3ee9cec58a1d999cb" id="r_a1799deeb441c26e3ee9cec58a1d999cb"><td class="memTemplParams" colspan="2"><a id="a1799deeb441c26e3ee9cec58a1d999cb" name="a1799deeb441c26e3ee9cec58a1d999cb"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a1799deeb441c26e3ee9cec58a1d999cb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, iterator &gt;</td></tr>
-<tr class="separator:a1799deeb441c26e3ee9cec58a1d999cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a560bfa97e17add00bf385be815c86cde" id="r_a560bfa97e17add00bf385be815c86cde"><td class="memTemplParams" colspan="2"><a id="a560bfa97e17add00bf385be815c86cde" name="a560bfa97e17add00bf385be815c86cde"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a560bfa97e17add00bf385be815c86cde"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, const_iterator &gt;</td></tr>
-<tr class="separator:a560bfa97e17add00bf385be815c86cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fcd1a3ec7054e33c749c24b09d1ba8e" id="r_a7fcd1a3ec7054e33c749c24b09d1ba8e"><td class="memTemplParams" colspan="2"><a id="a7fcd1a3ec7054e33c749c24b09d1ba8e" name="a7fcd1a3ec7054e33c749c24b09d1ba8e"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a7fcd1a3ec7054e33c749c24b09d1ba8e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, <a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, iterator &gt; &gt;</td></tr>
-<tr class="separator:a7fcd1a3ec7054e33c749c24b09d1ba8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892ffd5714ae07e184b9eaf892d44bcb" id="r_a892ffd5714ae07e184b9eaf892d44bcb"><td class="memTemplParams" colspan="2"><a id="a892ffd5714ae07e184b9eaf892d44bcb" name="a892ffd5714ae07e184b9eaf892d44bcb"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a892ffd5714ae07e184b9eaf892d44bcb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) const -&gt; enable_if_t&lt; Internal::is_transparent&lt; key_compare, ComparableToKey &gt;::value, <a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; const_iterator, const_iterator &gt; &gt;</td></tr>
-<tr class="separator:a892ffd5714ae07e184b9eaf892d44bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2880c502fc17075348c21f3c17ac506" id="r_ac2880c502fc17075348c21f3c17ac506"><td class="memTemplParams" colspan="2"><a id="ac2880c502fc17075348c21f3c17ac506" name="ac2880c502fc17075348c21f3c17ac506"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:ac2880c502fc17075348c21f3c17ac506"><td class="memTemplItemLeft" align="right" valign="top">const_iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:ac2880c502fc17075348c21f3c17ac506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8414bb01a8b5c00b0ed2693deaf5056" id="r_ae8414bb01a8b5c00b0ed2693deaf5056"><td class="memTemplParams" colspan="2"><a id="ae8414bb01a8b5c00b0ed2693deaf5056" name="ae8414bb01a8b5c00b0ed2693deaf5056"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:ae8414bb01a8b5c00b0ed2693deaf5056"><td class="memTemplItemLeft" align="right" valign="top">iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>find</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:ae8414bb01a8b5c00b0ed2693deaf5056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8ea7db7ec0cf38e9c7de999169295d" id="r_adf8ea7db7ec0cf38e9c7de999169295d"><td class="memTemplParams" colspan="2"><a id="adf8ea7db7ec0cf38e9c7de999169295d" name="adf8ea7db7ec0cf38e9c7de999169295d"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:adf8ea7db7ec0cf38e9c7de999169295d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contains</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:adf8ea7db7ec0cf38e9c7de999169295d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456c59b2947a3e40af2fa2c0fee61366" id="r_a456c59b2947a3e40af2fa2c0fee61366"><td class="memTemplParams" colspan="2"><a id="a456c59b2947a3e40af2fa2c0fee61366" name="a456c59b2947a3e40af2fa2c0fee61366"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a456c59b2947a3e40af2fa2c0fee61366"><td class="memTemplItemLeft" align="right" valign="top">size_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>count</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:a456c59b2947a3e40af2fa2c0fee61366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59077d16f5b33d26af27454abf05251d" id="r_a59077d16f5b33d26af27454abf05251d"><td class="memTemplParams" colspan="2"><a id="a59077d16f5b33d26af27454abf05251d" name="a59077d16f5b33d26af27454abf05251d"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a59077d16f5b33d26af27454abf05251d"><td class="memTemplItemLeft" align="right" valign="top">iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a59077d16f5b33d26af27454abf05251d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e6df60754cbd87648aada2ed041da2" id="r_a80e6df60754cbd87648aada2ed041da2"><td class="memTemplParams" colspan="2"><a id="a80e6df60754cbd87648aada2ed041da2" name="a80e6df60754cbd87648aada2ed041da2"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a80e6df60754cbd87648aada2ed041da2"><td class="memTemplItemLeft" align="right" valign="top">const_iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:a80e6df60754cbd87648aada2ed041da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649a3d8f4aaa991b183e7fa0bf49e489" id="r_a649a3d8f4aaa991b183e7fa0bf49e489"><td class="memTemplParams" colspan="2"><a id="a649a3d8f4aaa991b183e7fa0bf49e489" name="a649a3d8f4aaa991b183e7fa0bf49e489"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a649a3d8f4aaa991b183e7fa0bf49e489"><td class="memTemplItemLeft" align="right" valign="top">iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a649a3d8f4aaa991b183e7fa0bf49e489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8694537a48468ea4ecc819092a864e75" id="r_a8694537a48468ea4ecc819092a864e75"><td class="memTemplParams" colspan="2"><a id="a8694537a48468ea4ecc819092a864e75" name="a8694537a48468ea4ecc819092a864e75"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a8694537a48468ea4ecc819092a864e75"><td class="memTemplItemLeft" align="right" valign="top">const_iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:a8694537a48468ea4ecc819092a864e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152356aa15a971ea0412bdd1eace3ae6" id="r_a152356aa15a971ea0412bdd1eace3ae6"><td class="memTemplParams" colspan="2"><a id="a152356aa15a971ea0412bdd1eace3ae6" name="a152356aa15a971ea0412bdd1eace3ae6"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a152356aa15a971ea0412bdd1eace3ae6"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; iterator, iterator &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a152356aa15a971ea0412bdd1eace3ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d478af19de2e257aeb493b7f0f56832" id="r_a6d478af19de2e257aeb493b7f0f56832"><td class="memTemplParams" colspan="2"><a id="a6d478af19de2e257aeb493b7f0f56832" name="a6d478af19de2e257aeb493b7f0f56832"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;key_compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a6d478af19de2e257aeb493b7f0f56832"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; const_iterator, const_iterator &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>equal_range</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:a6d478af19de2e257aeb493b7f0f56832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Extensions</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="MapExtensions"></a></p>
 </div></td></tr>
-<tr class="memitem:a02d65f4e92d3cdd8de7c95b3c307f1af" id="r_a02d65f4e92d3cdd8de7c95b3c307f1af"><td class="memItemLeft" align="right" valign="top">AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1map.html#a02d65f4e92d3cdd8de7c95b3c307f1af">insert</a> (const key_type &amp;key)</td></tr>
+<tr class="memitem:a02d65f4e92d3cdd8de7c95b3c307f1af" id="r_a02d65f4e92d3cdd8de7c95b3c307f1af"><td class="memItemLeft" align="right" valign="top">AZ_FORCE_INLINE pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1map.html#a02d65f4e92d3cdd8de7c95b3c307f1af">insert</a> (const key_type &amp;key)</td></tr>
 <tr class="separator:a02d65f4e92d3cdd8de7c95b3c307f1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabc2330476123aaaa839cd2a736658a8" id="r_aabc2330476123aaaa839cd2a736658a8"><td class="memItemLeft" align="right" valign="top"><a id="aabc2330476123aaaa839cd2a736658a8" name="aabc2330476123aaaa839cd2a736658a8"></a>
 AZ_FORCE_INLINE allocator_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> ()</td></tr>
@@ -384,7 +394,7 @@ AZ_FORCE_INLINE allocator_type &amp;&#160;</td><td class="memItemRight" valign="
 AZ_FORCE_INLINE const allocator_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> () const</td></tr>
 <tr class="separator:a9c79846e13c02e72422edde75f69413b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f4eb8e42274c0dd6f9f1cc8cf026aa9" id="r_a4f4eb8e42274c0dd6f9f1cc8cf026aa9"><td class="memItemLeft" align="right" valign="top"><a id="a4f4eb8e42274c0dd6f9f1cc8cf026aa9" name="a4f4eb8e42274c0dd6f9f1cc8cf026aa9"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>set_allocator</b> (const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>set_allocator</b> (const allocator_type &amp;<a class="el" href="struct_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
 <tr class="memdesc:a4f4eb8e42274c0dd6f9f1cc8cf026aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the vector allocator. If different than then current all elements will be reallocated. <br /></td></tr>
 <tr class="separator:a4f4eb8e42274c0dd6f9f1cc8cf026aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af437579e275660ac84994b9bb178faf4" id="r_af437579e275660ac84994b9bb178faf4"><td class="memItemLeft" align="right" valign="top"><a id="af437579e275660ac84994b9bb178faf4" name="af437579e275660ac84994b9bb178faf4"></a>
@@ -417,7 +427,7 @@ template&lt;class Key , class MappedType , class Compare  = AZStd::less&lt;Key&g
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AZ_FORCE_INLINE <a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt; <a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>&lt; Key, MappedType, Compare, Allocator &gt;::insert </td>
+          <td class="memname">AZ_FORCE_INLINE pair&lt; iterator, bool &gt; <a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>&lt; Key, MappedType, Compare, Allocator &gt;::insert </td>
           <td>(</td>
           <td class="paramtype">const key_type &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
@@ -448,7 +458,7 @@ template&lt;typename M &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt; <a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>&lt; Key, MappedType, Compare, Allocator &gt;::insert_or_assign </td>
+          <td class="memname">pair&lt; iterator, bool &gt; <a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>&lt; Key, MappedType, Compare, Allocator &gt;::insert_or_assign </td>
           <td>(</td>
           <td class="paramtype">const key_type &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -517,7 +527,7 @@ template&lt;typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_a_z_std_1_1pair.html">pair</a>&lt; iterator, bool &gt; <a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>&lt; Key, MappedType, Compare, Allocator &gt;::try_emplace </td>
+          <td class="memname">pair&lt; iterator, bool &gt; <a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>&lt; Key, MappedType, Compare, Allocator &gt;::try_emplace </td>
           <td>(</td>
           <td class="paramtype">const key_type &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -554,7 +564,7 @@ template&lt;typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1map.html">map</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:24 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -15,7 +15,6 @@ var hierarchy =
     [ "ScriptedEntityTweener::AnimationParameters", "struct_scripted_entity_tweener_1_1_animation_parameters.html", null ],
     [ "ScriptedEntityTweener::AnimationProperties", "struct_scripted_entity_tweener_1_1_animation_properties.html", null ],
     [ "ScriptedEntityTweener::CallbackData", "struct_scripted_entity_tweener_1_1_callback_data.html", null ],
-    [ "ScriptedEntityTweener::EasingEquations", "class_scripted_entity_tweener_1_1_easing_equations.html", null ],
     [ "ScriptedEntityTweener::ScriptedEntityTweenerSubtask", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_subtask.html", null ],
     [ "ScriptedEntityTweener::ScriptedEntityTweenerTask", "class_scripted_entity_tweener_1_1_scripted_entity_tweener_task.html", null ],
     [ "ScriptedEntityTweenerBus::Handler", null, [

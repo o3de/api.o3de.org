@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,7 +67,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_metrics_1_1_json_trace_e
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aec21617e483933148b83a2d45887c8aa" id="r_aec21617e483933148b83a2d45887c8aa"><td class="memItemLeft" align="right" valign="top"><a id="aec21617e483933148b83a2d45887c8aa" name="aec21617e483933148b83a2d45887c8aa"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>JsonEventString</b> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; MaxEventJsonStringSize &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>JsonEventString</b> = AZStd::fixed_string&lt; MaxEventJsonStringSize &gt;</td></tr>
 <tr class="separator:aec21617e483933148b83a2d45887c8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -76,67 +76,67 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>JsonTraceEventLogger</b> (<a class="el" href="struct_a_z_1_1_metrics_1_1_json_trace_event_logger_config.html">JsonTraceEventLoggerConfig</a>)</td></tr>
 <tr class="separator:a89a620c9a794a3eada1026ea5af745fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11c32ebd169b1dec151f51b67d467515" id="r_a11c32ebd169b1dec151f51b67d467515"><td class="memItemLeft" align="right" valign="top"><a id="a11c32ebd169b1dec151f51b67d467515" name="a11c32ebd169b1dec151f51b67d467515"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>JsonTraceEventLogger</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &gt; <a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JsonTraceEventLogger</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &gt; stream)</td></tr>
 <tr class="memdesc:a11c32ebd169b1dec151f51b67d467515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic stream which owned by the JsonEventLogger. <br /></td></tr>
 <tr class="separator:a11c32ebd169b1dec151f51b67d467515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18a4f106b8b0335565ddb868c88fe2b" id="r_ae18a4f106b8b0335565ddb868c88fe2b"><td class="memItemLeft" align="right" valign="top"><a id="ae18a4f106b8b0335565ddb868c88fe2b" name="ae18a4f106b8b0335565ddb868c88fe2b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>JsonTraceEventLogger</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &gt; <a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="struct_a_z_1_1_metrics_1_1_json_trace_event_logger_config.html">JsonTraceEventLoggerConfig</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JsonTraceEventLogger</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &gt; stream, <a class="el" href="struct_a_z_1_1_metrics_1_1_json_trace_event_logger_config.html">JsonTraceEventLoggerConfig</a>)</td></tr>
 <tr class="separator:ae18a4f106b8b0335565ddb868c88fe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d39a1f6628a5def04452ba30c329fd2" id="r_a7d39a1f6628a5def04452ba30c329fd2"><td class="memItemLeft" align="right" valign="top"><a id="a7d39a1f6628a5def04452ba30c329fd2" name="a7d39a1f6628a5def04452ba30c329fd2"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>) override</td></tr>
 <tr class="memdesc:a7d39a1f6628a5def04452ba30c329fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name associated of this event logger. <br /></td></tr>
 <tr class="separator:a7d39a1f6628a5def04452ba30c329fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d2b67116d17afefda7c5c0b9239c3d" id="r_a14d2b67116d17afefda7c5c0b9239c3d"><td class="memItemLeft" align="right" valign="top"><a id="a14d2b67116d17afefda7c5c0b9239c3d" name="a14d2b67116d17afefda7c5c0b9239c3d"></a>
-<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const override</td></tr>
 <tr class="memdesc:a14d2b67116d17afefda7c5c0b9239c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name associated with this event logger. <br /></td></tr>
 <tr class="separator:a14d2b67116d17afefda7c5c0b9239c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a421d109c8c40d3ec465866c43dcc1c7c" id="r_a421d109c8c40d3ec465866c43dcc1c7c"><td class="memItemLeft" align="right" valign="top"><a id="a421d109c8c40d3ec465866c43dcc1c7c" name="a421d109c8c40d3ec465866c43dcc1c7c"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> () <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> () override</td></tr>
 <tr class="memdesc:a421d109c8c40d3ec465866c43dcc1c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes and json data to the stream. <br /></td></tr>
 <tr class="separator:a421d109c8c40d3ec465866c43dcc1c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522f9c9c37d28e9f7c873b0e474e34ef" id="r_a522f9c9c37d28e9f7c873b0e474e34ef"><td class="memItemLeft" align="right" valign="top"><a id="a522f9c9c37d28e9f7c873b0e474e34ef" name="a522f9c9c37d28e9f7c873b0e474e34ef"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RecordDurationEventBegin</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DurationArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RecordDurationEventBegin</b> (const DurationArgs &amp;) override</td></tr>
 <tr class="separator:a522f9c9c37d28e9f7c873b0e474e34ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03407214d4742c9ce3a23e2063cd317b" id="r_a03407214d4742c9ce3a23e2063cd317b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a03407214d4742c9ce3a23e2063cd317b">RecordDurationEventEnd</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> DurationArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:a03407214d4742c9ce3a23e2063cd317b" id="r_a03407214d4742c9ce3a23e2063cd317b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a03407214d4742c9ce3a23e2063cd317b">RecordDurationEventEnd</a> (const DurationArgs &amp;) override</td></tr>
 <tr class="separator:a03407214d4742c9ce3a23e2063cd317b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcebd627ccdc27454215fbe509a8b0ad" id="r_afcebd627ccdc27454215fbe509a8b0ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#afcebd627ccdc27454215fbe509a8b0ad">RecordCompleteEvent</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> CompleteArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:afcebd627ccdc27454215fbe509a8b0ad" id="r_afcebd627ccdc27454215fbe509a8b0ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#afcebd627ccdc27454215fbe509a8b0ad">RecordCompleteEvent</a> (const CompleteArgs &amp;) override</td></tr>
 <tr class="separator:afcebd627ccdc27454215fbe509a8b0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60845964ad7eb22c214f9796a5eec148" id="r_a60845964ad7eb22c214f9796a5eec148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a60845964ad7eb22c214f9796a5eec148">RecordInstantEvent</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> InstantArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:a60845964ad7eb22c214f9796a5eec148" id="r_a60845964ad7eb22c214f9796a5eec148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a60845964ad7eb22c214f9796a5eec148">RecordInstantEvent</a> (const InstantArgs &amp;) override</td></tr>
 <tr class="separator:a60845964ad7eb22c214f9796a5eec148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4651bff6177a4859b1c9516dd6f2b934" id="r_a4651bff6177a4859b1c9516dd6f2b934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a4651bff6177a4859b1c9516dd6f2b934">RecordCounterEvent</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> CounterArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:a4651bff6177a4859b1c9516dd6f2b934" id="r_a4651bff6177a4859b1c9516dd6f2b934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a4651bff6177a4859b1c9516dd6f2b934">RecordCounterEvent</a> (const CounterArgs &amp;) override</td></tr>
 <tr class="separator:a4651bff6177a4859b1c9516dd6f2b934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6621d19fe987fec0a9f3e3ff4856c3" id="r_aca6621d19fe987fec0a9f3e3ff4856c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#aca6621d19fe987fec0a9f3e3ff4856c3">RecordAsyncEventStart</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> AsyncArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:aca6621d19fe987fec0a9f3e3ff4856c3" id="r_aca6621d19fe987fec0a9f3e3ff4856c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#aca6621d19fe987fec0a9f3e3ff4856c3">RecordAsyncEventStart</a> (const AsyncArgs &amp;) override</td></tr>
 <tr class="separator:aca6621d19fe987fec0a9f3e3ff4856c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb71612856b7b1e72a63a5c4498193a" id="r_abfb71612856b7b1e72a63a5c4498193a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#abfb71612856b7b1e72a63a5c4498193a">RecordAsyncEventInstant</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> AsyncArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:abfb71612856b7b1e72a63a5c4498193a" id="r_abfb71612856b7b1e72a63a5c4498193a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#abfb71612856b7b1e72a63a5c4498193a">RecordAsyncEventInstant</a> (const AsyncArgs &amp;) override</td></tr>
 <tr class="separator:abfb71612856b7b1e72a63a5c4498193a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23a3e742df602d91e17d601a5a9fd8c4" id="r_a23a3e742df602d91e17d601a5a9fd8c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a23a3e742df602d91e17d601a5a9fd8c4">RecordAsyncEventEnd</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> AsyncArgs &amp;) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:a23a3e742df602d91e17d601a5a9fd8c4" id="r_a23a3e742df602d91e17d601a5a9fd8c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a23a3e742df602d91e17d601a5a9fd8c4">RecordAsyncEventEnd</a> (const AsyncArgs &amp;) override</td></tr>
 <tr class="separator:a23a3e742df602d91e17d601a5a9fd8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac19aab675e374ead94a22d82f1a8c2ca" id="r_ac19aab675e374ead94a22d82f1a8c2ca"><td class="memItemLeft" align="right" valign="top"><a id="ac19aab675e374ead94a22d82f1a8c2ca" name="ac19aab675e374ead94a22d82f1a8c2ca"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResetStream</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &gt; <a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetStream</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &gt; stream)</td></tr>
 <tr class="memdesc:ac19aab675e374ead94a22d82f1a8c2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the previous stream and associates a new stream. <br /></td></tr>
 <tr class="separator:ac19aab675e374ead94a22d82f1a8c2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a80196e1a3f74e888c9bdf7bd8d87644d" id="r_a80196e1a3f74e888c9bdf7bd8d87644d"><td class="memItemLeft" align="right" valign="top"><a id="a80196e1a3f74e888c9bdf7bd8d87644d" name="a80196e1a3f74e888c9bdf7bd8d87644d"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxEventJsonStringSize</b> = 1024</td></tr>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxEventJsonStringSize</b> = 1024</td></tr>
 <tr class="separator:a80196e1a3f74e888c9bdf7bd8d87644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a68a64e95e12a4c25efc11a1ffa2b2533" id="r_a68a64e95e12a4c25efc11a1ffa2b2533"><td class="memItemLeft" align="right" valign="top"><a id="a68a64e95e12a4c25efc11a1ffa2b2533" name="a68a64e95e12a4c25efc11a1ffa2b2533"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FlushRequest</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> EventDesc &amp;)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FlushRequest</b> (const EventDesc &amp;)</td></tr>
 <tr class="memdesc:a68a64e95e12a4c25efc11a1ffa2b2533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for writing the recorded event data to JSON. <br /></td></tr>
 <tr class="separator:a68a64e95e12a4c25efc11a1ffa2b2533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2c0dd35d9df370f35b71b07b6eb884" id="r_aed2c0dd35d9df370f35b71b07b6eb884"><td class="memItemLeft" align="right" valign="top"><a id="aed2c0dd35d9df370f35b71b07b6eb884" name="aed2c0dd35d9df370f35b71b07b6eb884"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &amp;stream)</td></tr>
 <tr class="memdesc:aed2c0dd35d9df370f35b71b07b6eb884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the JSON document by adding the opening '[' bracket. <br /></td></tr>
 <tr class="separator:aed2c0dd35d9df370f35b71b07b6eb884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5a98841b617b55b63912f7f6c0064d" id="r_a5a5a98841b617b55b63912f7f6c0064d"><td class="memItemLeft" align="right" valign="top"><a id="a5a5a98841b617b55b63912f7f6c0064d" name="a5a5a98841b617b55b63912f7f6c0064d"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Complete</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Complete</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a> &amp;stream)</td></tr>
 <tr class="memdesc:a5a5a98841b617b55b63912f7f6c0064d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete the JSON document by adding the ending ']' bracket. <br /></td></tr>
 <tr class="separator:a5a5a98841b617b55b63912f7f6c0064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1050d61ba5bdc3066b47bb043ac32eef" id="r_a1050d61ba5bdc3066b47bb043ac32eef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a1050d61ba5bdc3066b47bb043ac32eef">ResetSettingsHandler</a> ()</td></tr>
+<tr class="memitem:a1050d61ba5bdc3066b47bb043ac32eef" id="r_a1050d61ba5bdc3066b47bb043ac32eef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a1050d61ba5bdc3066b47bb043ac32eef">ResetSettingsHandler</a> ()</td></tr>
 <tr class="separator:a1050d61ba5bdc3066b47bb043ac32eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -151,14 +151,14 @@ AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.h
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
 <tr class="memdesc:a130196e1e065b615385f40579bc43005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a user friendly name for the event logger. <br /></td></tr>
 <tr class="separator:a130196e1e065b615385f40579bc43005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c01ebcca169239551cec491c53e95c" id="r_a21c01ebcca169239551cec491c53e95c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a21c01ebcca169239551cec491c53e95c">m_active</a> { GetDefaultActiveState() }</td></tr>
+<tr class="memitem:a21c01ebcca169239551cec491c53e95c" id="r_a21c01ebcca169239551cec491c53e95c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a21c01ebcca169239551cec491c53e95c">m_active</a> { GetDefaultActiveState() }</td></tr>
 <tr class="separator:a21c01ebcca169239551cec491c53e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6493c875b41639d898ec2c1bf22be908" id="r_a6493c875b41639d898ec2c1bf22be908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_settings_registry_interface.html">AZ::SettingsRegistryInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a6493c875b41639d898ec2c1bf22be908">m_settingsRegistry</a> {}</td></tr>
 <tr class="separator:a6493c875b41639d898ec2c1bf22be908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e29092dae4cc4e404f66225e13a4ff6" id="r_a9e29092dae4cc4e404f66225e13a4ff6"><td class="memItemLeft" align="right" valign="top"><a id="a9e29092dae4cc4e404f66225e13a4ff6" name="a9e29092dae4cc4e404f66225e13a4ff6"></a>
 AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsHandler</b></td></tr>
 <tr class="separator:a9e29092dae4cc4e404f66225e13a4ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aa129b13f6871f8a56dc7db12a43db5" id="r_a4aa129b13f6871f8a56dc7db12a43db5"><td class="memItemLeft" align="right" valign="top">AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a4aa129b13f6871f8a56dc7db12a43db5">m_prependComma</a> { <a class="el" href="class_a_z_1_1_e_bus.html">false</a> }</td></tr>
+<tr class="memitem:a4aa129b13f6871f8a56dc7db12a43db5" id="r_a4aa129b13f6871f8a56dc7db12a43db5"><td class="memItemLeft" align="right" valign="top">AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a4aa129b13f6871f8a56dc7db12a43db5">m_prependComma</a> { false }</td></tr>
 <tr class="separator:a4aa129b13f6871f8a56dc7db12a43db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f33559509f9db5987802d42270f9e69" id="r_a8f33559509f9db5987802d42270f9e69"><td class="memItemLeft" align="right" valign="top"><a id="a8f33559509f9db5987802d42270f9e69" name="a8f33559509f9db5987802d42270f9e69"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}</td></tr>
@@ -176,9 +176,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordAsyncEventEnd </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordAsyncEventEnd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> AsyncArgs &amp;&#160;</td>
+          <td class="paramtype">const AsyncArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -203,9 +203,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordAsyncEventInstant </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordAsyncEventInstant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> AsyncArgs &amp;&#160;</td>
+          <td class="paramtype">const AsyncArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -230,9 +230,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordAsyncEventStart </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordAsyncEventStart </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> AsyncArgs &amp;&#160;</td>
+          <td class="paramtype">const AsyncArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -257,9 +257,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordCompleteEvent </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordCompleteEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> CompleteArgs &amp;&#160;</td>
+          <td class="paramtype">const CompleteArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -284,9 +284,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordCounterEvent </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordCounterEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> CounterArgs &amp;&#160;</td>
+          <td class="paramtype">const CounterArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -311,9 +311,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordDurationEventEnd </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordDurationEventEnd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> DurationArgs &amp;&#160;</td>
+          <td class="paramtype">const DurationArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -338,9 +338,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordInstantEvent </td>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">ResultOutcome</a> AZ::Metrics::JsonTraceEventLogger::RecordInstantEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> InstantArgs &amp;&#160;</td>
+          <td class="paramtype">const InstantArgs &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -365,7 +365,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">void</a> AZ::Metrics::JsonTraceEventLogger::ResetSettingsHandler </td>
+          <td class="memname">void AZ::Metrics::JsonTraceEventLogger::ResetSettingsHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -392,7 +392,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::Metrics::JsonTraceEventLogger::m_active { GetDefaultActiveState() }</td>
+          <td class="memname">bool AZ::Metrics::JsonTraceEventLogger::m_active { GetDefaultActiveState() }</td>
         </tr>
       </table>
   </td>
@@ -415,7 +415,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::atomic_bool AZ::Metrics::JsonTraceEventLogger::m_prependComma { <a class="el" href="class_a_z_1_1_e_bus.html">false</a> }</td>
+          <td class="memname">AZStd::atomic_bool AZ::Metrics::JsonTraceEventLogger::m_prependComma { false }</td>
         </tr>
       </table>
   </td>
@@ -460,7 +460,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventCount</b> {}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Metrics</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html">JsonTraceEventLogger</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

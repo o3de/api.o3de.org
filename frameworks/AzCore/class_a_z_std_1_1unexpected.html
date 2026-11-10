@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,18 +69,21 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>unexpected</b> (
 <tr class="memitem:a269e001069e1f383505831765660bc38" id="r_a269e001069e1f383505831765660bc38"><td class="memItemLeft" align="right" valign="top"><a id="a269e001069e1f383505831765660bc38" name="a269e001069e1f383505831765660bc38"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>unexpected</b> (<a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a269e001069e1f383505831765660bc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adccc2dce02581725a6fcc38b092ddd60" id="r_adccc2dce02581725a6fcc38b092ddd60"><td class="memTemplParams" colspan="2"><a id="adccc2dce02581725a6fcc38b092ddd60" name="adccc2dce02581725a6fcc38b092ddd60"></a>
-template&lt;class Err  = E, class  = enable_if_t&lt;!is_same_v&lt;remove_cvref_t&lt;Err&gt;, unexpected&gt;            &amp;&amp; !is_same_v&lt;remove_cvref_t&lt;Err&gt;, in_place_t&gt;&amp;&amp; is_constructible_v&lt;E, Err&gt;&gt;&gt; </td></tr>
-<tr class="memitem:adccc2dce02581725a6fcc38b092ddd60"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (Err &amp;&amp;)</td></tr>
-<tr class="separator:adccc2dce02581725a6fcc38b092ddd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09589f5f4e4b243c4d047b646367fcf" id="r_af09589f5f4e4b243c4d047b646367fcf"><td class="memTemplParams" colspan="2"><a id="af09589f5f4e4b243c4d047b646367fcf" name="af09589f5f4e4b243c4d047b646367fcf"></a>
-template&lt;class... Args, class  = enable_if_t&lt;is_constructible_v&lt;E, Args...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:af09589f5f4e4b243c4d047b646367fcf"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (in_place_t, Args &amp;&amp;...)</td></tr>
-<tr class="separator:af09589f5f4e4b243c4d047b646367fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae7f769067be4468eac5126a82eac5ad" id="r_aae7f769067be4468eac5126a82eac5ad"><td class="memTemplParams" colspan="2"><a id="aae7f769067be4468eac5126a82eac5ad" name="aae7f769067be4468eac5126a82eac5ad"></a>
-template&lt;class U , class... Args, class  = enable_if_t&lt;is_constructible_v&lt;E, initializer_list&lt;U&gt;&amp;, Args...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:aae7f769067be4468eac5126a82eac5ad"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (in_place_t, initializer_list&lt; U &gt;, Args &amp;&amp;...)</td></tr>
-<tr class="separator:aae7f769067be4468eac5126a82eac5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5389ff487fc39b25bf8361cfa2cd8a" id="r_a1a5389ff487fc39b25bf8361cfa2cd8a"><td class="memTemplParams" colspan="2"><a id="a1a5389ff487fc39b25bf8361cfa2cd8a" name="a1a5389ff487fc39b25bf8361cfa2cd8a"></a>
+template&lt;class Err &gt; <br />
+requires (!is_same_v&lt;remove_cvref_t&lt;Err&gt;, <a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a>&lt;E&gt;&gt;) &amp;&amp; (!is_same_v&lt;remove_cvref_t&lt;Err&gt;, in_place_t&gt;) &amp;&amp; is_constructible_v&lt;E, Err&gt;</td></tr>
+<tr class="memitem:a1a5389ff487fc39b25bf8361cfa2cd8a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (Err &amp;&amp;err)</td></tr>
+<tr class="separator:a1a5389ff487fc39b25bf8361cfa2cd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef9a21e69a1ef1fcb4292b7e885375d" id="r_a3ef9a21e69a1ef1fcb4292b7e885375d"><td class="memTemplParams" colspan="2"><a id="a3ef9a21e69a1ef1fcb4292b7e885375d" name="a3ef9a21e69a1ef1fcb4292b7e885375d"></a>
+template&lt;class... Args&gt; <br />
+requires is_constructible_v&lt;E, Args...&gt;</td></tr>
+<tr class="memitem:a3ef9a21e69a1ef1fcb4292b7e885375d"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (in_place_t, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a3ef9a21e69a1ef1fcb4292b7e885375d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ad92fcafbf8b0d681a4548038c499b" id="r_a70ad92fcafbf8b0d681a4548038c499b"><td class="memTemplParams" colspan="2"><a id="a70ad92fcafbf8b0d681a4548038c499b" name="a70ad92fcafbf8b0d681a4548038c499b"></a>
+template&lt;class U , class... Args&gt; <br />
+requires is_constructible_v&lt;E, initializer_list&lt;U&gt;&amp;, Args...&gt;</td></tr>
+<tr class="memitem:a70ad92fcafbf8b0d681a4548038c499b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (in_place_t, initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a70ad92fcafbf8b0d681a4548038c499b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90d3fed48ddf91d42e94b5f9b90457c7" id="r_a90d3fed48ddf91d42e94b5f9b90457c7"><td class="memItemLeft" align="right" valign="top"><a id="a90d3fed48ddf91d42e94b5f9b90457c7" name="a90d3fed48ddf91d42e94b5f9b90457c7"></a>
 constexpr <a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a> &amp;)=default</td></tr>
 <tr class="separator:a90d3fed48ddf91d42e94b5f9b90457c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,14 +105,6 @@ constexpr E &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>err
 <tr class="memitem:abdd4e0e330eab29fe63b76d8b6ec41a1" id="r_abdd4e0e330eab29fe63b76d8b6ec41a1"><td class="memItemLeft" align="right" valign="top"><a id="abdd4e0e330eab29fe63b76d8b6ec41a1" name="abdd4e0e330eab29fe63b76d8b6ec41a1"></a>
 constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a> &amp;other) noexcept(is_nothrow_swappable_v&lt; E &gt;)</td></tr>
 <tr class="separator:abdd4e0e330eab29fe63b76d8b6ec41a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4efce4f13a2435bcbefb5bdccda8bf8f" id="r_a4efce4f13a2435bcbefb5bdccda8bf8f"><td class="memTemplParams" colspan="2"><a id="a4efce4f13a2435bcbefb5bdccda8bf8f" name="a4efce4f13a2435bcbefb5bdccda8bf8f"></a>
-template&lt;class... Args, class &gt; </td></tr>
-<tr class="memitem:a4efce4f13a2435bcbefb5bdccda8bf8f"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (in_place_t, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a4efce4f13a2435bcbefb5bdccda8bf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a746a09ad9b3c446901db806956288f3b" id="r_a746a09ad9b3c446901db806956288f3b"><td class="memTemplParams" colspan="2"><a id="a746a09ad9b3c446901db806956288f3b" name="a746a09ad9b3c446901db806956288f3b"></a>
-template&lt;class U , class... Args, class &gt; </td></tr>
-<tr class="memitem:a746a09ad9b3c446901db806956288f3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unexpected</b> (in_place_t, initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a746a09ad9b3c446901db806956288f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -125,9 +120,8 @@ template&lt;class E2 &gt; </td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class E&gt;<br />
 class AZStd::unexpected&lt; E &gt;</div><p>Wraps the unexpected value in a type that distinguishes the unexpected value from the expected value. This avoids ambiguity when constructing an expected where value type and error type are the same i.e expected&lt;int, int&gt; </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/utility/<b>expected.h</b></li>
-<li>Code/Framework/AzCore/AzCore/std/utility/<b>expected.inl</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -135,7 +129,7 @@ class AZStd::unexpected&lt; E &gt;</div><p>Wraps the unexpected value in a type 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:24 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

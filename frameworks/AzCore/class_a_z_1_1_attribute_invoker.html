@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,27 +64,27 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_attribute_invoker.html">AttributeInvoker</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">AZ::SystemAllocator</a>)</td></tr>
 <tr class="separator:ab20d8f6da951e108ceaf4abab5c02ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a606caf12c5320ce4bb75a34a3f83a705" id="r_a606caf12c5320ce4bb75a34a3f83a705"><td class="memTemplParams" colspan="2"><a id="a606caf12c5320ce4bb75a34a3f83a705" name="a606caf12c5320ce4bb75a34a3f83a705"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T , <a class="el" href="class_a_z_1_1_e_bus.html">class</a> <a class="el" href="class_a_z_1_1_e_bus.html">U</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:a606caf12c5320ce4bb75a34a3f83a705"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Read</b> (<a class="el" href="class_a_z_1_1_e_bus.html">U</a> &amp;value, Args &amp;&amp;... <a class="el" href="class_a_z_1_1_e_bus.html">args</a>)</td></tr>
+template&lt;class T , class U , typename... Args&gt; </td></tr>
+<tr class="memitem:a606caf12c5320ce4bb75a34a3f83a705"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Read</b> (U &amp;value, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a606caf12c5320ce4bb75a34a3f83a705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003a8f9b940a1d7eed7cf0f648f3baad" id="r_a003a8f9b940a1d7eed7cf0f648f3baad"><td class="memTemplParams" colspan="2"><a id="a003a8f9b940a1d7eed7cf0f648f3baad" name="a003a8f9b940a1d7eed7cf0f648f3baad"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">RetType</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:a003a8f9b940a1d7eed7cf0f648f3baad"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Invoke</b> (Args &amp;&amp;... <a class="el" href="class_a_z_1_1_e_bus.html">args</a>)</td></tr>
+template&lt;typename RetType , typename... Args&gt; </td></tr>
+<tr class="memitem:a003a8f9b940a1d7eed7cf0f648f3baad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Invoke</b> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a003a8f9b940a1d7eed7cf0f648f3baad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e42d1f462329a135f807221159023b3" id="r_a9e42d1f462329a135f807221159023b3"><td class="memItemLeft" align="right" valign="top"><a id="a9e42d1f462329a135f807221159023b3" name="a9e42d1f462329a135f807221159023b3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeInvoker</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">InstType</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">instance</a>, Attribute *<a class="el" href="class_a_z_1_1_e_bus.html">attrib</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeInvoker</b> (const InstType &amp;instance, Attribute *attrib)</td></tr>
 <tr class="separator:a9e42d1f462329a135f807221159023b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09687308190518e09451023a6a5cbfde" id="r_a09687308190518e09451023a6a5cbfde"><td class="memItemLeft" align="right" valign="top"><a id="a09687308190518e09451023a6a5cbfde" name="a09687308190518e09451023a6a5cbfde"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeInvoker</b> (<a class="el" href="class_a_z_1_1_e_bus.html">InstType</a> &amp;&amp;<a class="el" href="class_a_z_1_1_e_bus.html">instance</a>, Attribute *<a class="el" href="class_a_z_1_1_e_bus.html">attrib</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeInvoker</b> (InstType &amp;&amp;instance, Attribute *attrib)</td></tr>
 <tr class="separator:a09687308190518e09451023a6a5cbfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d9059709a60a3d8d5c0633dc75e80e" id="r_aa1d9059709a60a3d8d5c0633dc75e80e"><td class="memItemLeft" align="right" valign="top"><a id="aa1d9059709a60a3d8d5c0633dc75e80e" name="aa1d9059709a60a3d8d5c0633dc75e80e"></a>
-Attribute *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+Attribute *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</b> () const</td></tr>
 <tr class="separator:aa1d9059709a60a3d8d5c0633dc75e80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bacb7f63d614369be7c8dab924b75ed" id="r_a5bacb7f63d614369be7c8dab924b75ed"><td class="memItemLeft" align="right" valign="top"><a id="a5bacb7f63d614369be7c8dab924b75ed" name="a5bacb7f63d614369be7c8dab924b75ed"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">InstType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+InstType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
 <tr class="separator:a5bacb7f63d614369be7c8dab924b75ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7745eeae9f018cc4ffc158b3c88d2e4" id="r_ae7745eeae9f018cc4ffc158b3c88d2e4"><td class="memItemLeft" align="right" valign="top"><a id="ae7745eeae9f018cc4ffc158b3c88d2e4" name="ae7745eeae9f018cc4ffc158b3c88d2e4"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">InstType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+const InstType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> () const</td></tr>
 <tr class="separator:ae7745eeae9f018cc4ffc158b3c88d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -96,7 +96,7 @@ Attribute *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_attribute_invoker.html">AttributeInvoker</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

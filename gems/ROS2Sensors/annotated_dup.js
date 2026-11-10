@@ -4,6 +4,9 @@ var annotated_dup =
       [ "hash< ROS2Sensors::LidarId >", "struct_a_z_std_1_1hash_3_01_r_o_s2_sensors_1_1_lidar_id_01_4.html", null ]
     ] ],
     [ "ROS2Sensors", null, [
+      [ "ImageCompression", null, [
+        [ "Settings", "struct_r_o_s2_sensors_1_1_image_compression_1_1_settings.html", "struct_r_o_s2_sensors_1_1_image_compression_1_1_settings" ]
+      ] ],
       [ "CameraColorSensor", "class_r_o_s2_sensors_1_1_camera_color_sensor.html", null ],
       [ "CameraConfigurationRequest", "class_r_o_s2_sensors_1_1_camera_configuration_request.html", "class_r_o_s2_sensors_1_1_camera_configuration_request" ],
       [ "CameraDepthSensor", "class_r_o_s2_sensors_1_1_camera_depth_sensor.html", null ],
@@ -16,8 +19,9 @@ var annotated_dup =
       [ "ClassSegmentationConfigurationComponent", "class_r_o_s2_sensors_1_1_class_segmentation_configuration_component.html", null ],
       [ "ClassSegmentationRequestBusTraits", "class_r_o_s2_sensors_1_1_class_segmentation_request_bus_traits.html", null ],
       [ "ClassSegmentationRequests", "class_r_o_s2_sensors_1_1_class_segmentation_requests.html", "class_r_o_s2_sensors_1_1_class_segmentation_requests" ],
-      [ "EncodingConversion", "struct_r_o_s2_sensors_1_1_encoding_conversion.html", null ],
+      [ "EncodingConversion", "struct_r_o_s2_sensors_1_1_encoding_conversion.html", "struct_r_o_s2_sensors_1_1_encoding_conversion" ],
       [ "GNSSPostProcessingRequests", "class_r_o_s2_sensors_1_1_g_n_s_s_post_processing_requests.html", "class_r_o_s2_sensors_1_1_g_n_s_s_post_processing_requests" ],
+      [ "ImageCompressionConfiguration", "struct_r_o_s2_sensors_1_1_image_compression_configuration.html", "struct_r_o_s2_sensors_1_1_image_compression_configuration" ],
       [ "ImuConfigurationRequest", "class_r_o_s2_sensors_1_1_imu_configuration_request.html", "class_r_o_s2_sensors_1_1_imu_configuration_request" ],
       [ "ImuSensorConfiguration", "struct_r_o_s2_sensors_1_1_imu_sensor_configuration.html", "struct_r_o_s2_sensors_1_1_imu_sensor_configuration" ],
       [ "LidarConfigurationRequest", "class_r_o_s2_sensors_1_1_lidar_configuration_request.html", "class_r_o_s2_sensors_1_1_lidar_configuration_request" ],
@@ -48,6 +52,8 @@ var annotated_dup =
       [ "ROS2ContactSensorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_contact_sensor_component.html", null ],
       [ "ROS2EditorCameraSystemComponent", "class_r_o_s2_sensors_1_1_r_o_s2_editor_camera_system_component.html", null ],
       [ "ROS2GNSSSensorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_g_n_s_s_sensor_component.html", null ],
+      [ "ROS2ImageCompressionComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_compression_component.html", null ],
+      [ "ROS2ImageCompressionEditorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_compression_editor_component.html", null ],
       [ "ROS2ImageEncodingConversionComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_encoding_conversion_component.html", "class_r_o_s2_sensors_1_1_r_o_s2_image_encoding_conversion_component" ],
       [ "ROS2ImuSensorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_imu_sensor_component.html", null ],
       [ "ROS2Lidar2DSensorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_lidar2_d_sensor_component.html", null ],

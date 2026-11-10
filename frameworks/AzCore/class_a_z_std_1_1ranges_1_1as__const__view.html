@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,47 +58,41 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1ranges_1_1as__const__
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; as_const_view&lt; View &gt; &gt;</a>, and enable_if_t&lt; input_range&lt; View &gt; &amp;&amp;view&lt; View &gt;, Internal::as_const_view_requirements_fulfilled &gt;.</p>
+<p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; as_const_view&lt; View &gt; &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a966664c864a360fc829e295c46b8a0e6" id="r_a966664c864a360fc829e295c46b8a0e6"><td class="memItemLeft" align="right" valign="top"><a id="a966664c864a360fc829e295c46b8a0e6" name="a966664c864a360fc829e295c46b8a0e6"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>as_const_view</b> (View base)</td></tr>
 <tr class="separator:a966664c864a360fc829e295c46b8a0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15c6bf2eaec70ac0ccd7ac5beb89ed84" id="r_a15c6bf2eaec70ac0ccd7ac5beb89ed84"><td class="memTemplParams" colspan="2"><a id="a15c6bf2eaec70ac0ccd7ac5beb89ed84" name="a15c6bf2eaec70ac0ccd7ac5beb89ed84"></a>
-template&lt;bool Enable = copy_constructible&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a15c6bf2eaec70ac0ccd7ac5beb89ed84"><td class="memTemplItemLeft" align="right" valign="top">constexpr View&#160;</td><td class="memTemplItemRight" valign="bottom"><b>base</b> () const &amp;</td></tr>
-<tr class="separator:a15c6bf2eaec70ac0ccd7ac5beb89ed84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5e050ab8b935d17ad53d43b1ffd0e2" id="r_adb5e050ab8b935d17ad53d43b1ffd0e2"><td class="memItemLeft" align="right" valign="top"><a id="adb5e050ab8b935d17ad53d43b1ffd0e2" name="adb5e050ab8b935d17ad53d43b1ffd0e2"></a>
+constexpr View&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () const &amp;</td></tr>
+<tr class="separator:adb5e050ab8b935d17ad53d43b1ffd0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730a9aa1bdbaed0a78f1e27326eb479a" id="r_a730a9aa1bdbaed0a78f1e27326eb479a"><td class="memItemLeft" align="right" valign="top"><a id="a730a9aa1bdbaed0a78f1e27326eb479a" name="a730a9aa1bdbaed0a78f1e27326eb479a"></a>
 constexpr View&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () &amp;&amp;</td></tr>
 <tr class="separator:a730a9aa1bdbaed0a78f1e27326eb479a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219273fd56132b707853ea97f69b5894" id="r_a219273fd56132b707853ea97f69b5894"><td class="memTemplParams" colspan="2"><a id="a219273fd56132b707853ea97f69b5894" name="a219273fd56132b707853ea97f69b5894"></a>
-template&lt;bool Enable = !Internal::simple_view&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a219273fd56132b707853ea97f69b5894"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a219273fd56132b707853ea97f69b5894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ae24b208d19ce34c43d6c36e17cf5c" id="r_af5ae24b208d19ce34c43d6c36e17cf5c"><td class="memTemplParams" colspan="2"><a id="af5ae24b208d19ce34c43d6c36e17cf5c" name="af5ae24b208d19ce34c43d6c36e17cf5c"></a>
-template&lt;bool Enable = range&lt;const View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:af5ae24b208d19ce34c43d6c36e17cf5c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>begin</b> () const</td></tr>
-<tr class="separator:af5ae24b208d19ce34c43d6c36e17cf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab867f3eb240f15bb8436975e935bd1" id="r_afab867f3eb240f15bb8436975e935bd1"><td class="memTemplParams" colspan="2"><a id="afab867f3eb240f15bb8436975e935bd1" name="afab867f3eb240f15bb8436975e935bd1"></a>
-template&lt;bool Enable = !Internal::simple_view&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:afab867f3eb240f15bb8436975e935bd1"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:afab867f3eb240f15bb8436975e935bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f06c015fd64f1e4300c00f2726c02eb" id="r_a7f06c015fd64f1e4300c00f2726c02eb"><td class="memTemplParams" colspan="2"><a id="a7f06c015fd64f1e4300c00f2726c02eb" name="a7f06c015fd64f1e4300c00f2726c02eb"></a>
-template&lt;bool Enable = range&lt;const View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a7f06c015fd64f1e4300c00f2726c02eb"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>end</b> () const</td></tr>
-<tr class="separator:a7f06c015fd64f1e4300c00f2726c02eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae92c0b18c300128ed03bcc04aa20b8ab" id="r_ae92c0b18c300128ed03bcc04aa20b8ab"><td class="memTemplParams" colspan="2"><a id="ae92c0b18c300128ed03bcc04aa20b8ab" name="ae92c0b18c300128ed03bcc04aa20b8ab"></a>
-template&lt;bool Enable = sized_range&lt;View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:ae92c0b18c300128ed03bcc04aa20b8ab"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> ()</td></tr>
-<tr class="separator:ae92c0b18c300128ed03bcc04aa20b8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadd9123d6aebee479b1757037621f5a0" id="r_aadd9123d6aebee479b1757037621f5a0"><td class="memTemplParams" colspan="2"><a id="aadd9123d6aebee479b1757037621f5a0" name="aadd9123d6aebee479b1757037621f5a0"></a>
-template&lt;bool Enable = sized_range&lt;const View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:aadd9123d6aebee479b1757037621f5a0"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const</td></tr>
-<tr class="separator:aadd9123d6aebee479b1757037621f5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f57247f17042c0592ac9587a93bccad" id="r_a4f57247f17042c0592ac9587a93bccad"><td class="memItemLeft" align="right" valign="top"><a id="a4f57247f17042c0592ac9587a93bccad" name="a4f57247f17042c0592ac9587a93bccad"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:a4f57247f17042c0592ac9587a93bccad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf7e166e4425032eeac7c85ccd34578" id="r_a0bf7e166e4425032eeac7c85ccd34578"><td class="memItemLeft" align="right" valign="top"><a id="a0bf7e166e4425032eeac7c85ccd34578" name="a0bf7e166e4425032eeac7c85ccd34578"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:a0bf7e166e4425032eeac7c85ccd34578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3301e5215b28bf9f9bdac4b3da94ab18" id="r_a3301e5215b28bf9f9bdac4b3da94ab18"><td class="memItemLeft" align="right" valign="top"><a id="a3301e5215b28bf9f9bdac4b3da94ab18" name="a3301e5215b28bf9f9bdac4b3da94ab18"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a3301e5215b28bf9f9bdac4b3da94ab18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab73e2f5b0320abfa6ea6ae1f48d9fc" id="r_a2ab73e2f5b0320abfa6ea6ae1f48d9fc"><td class="memItemLeft" align="right" valign="top"><a id="a2ab73e2f5b0320abfa6ea6ae1f48d9fc" name="a2ab73e2f5b0320abfa6ea6ae1f48d9fc"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a2ab73e2f5b0320abfa6ea6ae1f48d9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303c319d703584a09c68c45aaa45775d" id="r_a303c319d703584a09c68c45aaa45775d"><td class="memItemLeft" align="right" valign="top"><a id="a303c319d703584a09c68c45aaa45775d" name="a303c319d703584a09c68c45aaa45775d"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> ()</td></tr>
+<tr class="separator:a303c319d703584a09c68c45aaa45775d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ba2946627d8cc5f00d4590ba906fc0" id="r_ac3ba2946627d8cc5f00d4590ba906fc0"><td class="memItemLeft" align="right" valign="top"><a id="ac3ba2946627d8cc5f00d4590ba906fc0" name="ac3ba2946627d8cc5f00d4590ba906fc0"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:ac3ba2946627d8cc5f00d4590ba906fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class View&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;input_range View&gt;<br />
+requires view&lt;View&gt;<br />
 class AZStd::ranges::as_const_view&lt; View &gt;</div><p>presents a view of the underlying sequence as a constant. Elements of const_view cannot be modified </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/<b>as_const_view.h</b></li>
@@ -109,7 +103,7 @@ class AZStd::ranges::as_const_view&lt; View &gt;</div><p>presents a view of the 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="class_a_z_std_1_1ranges_1_1as__const__view.html">as_const_view</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

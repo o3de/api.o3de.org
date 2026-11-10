@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,28 +64,28 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_i_o_1_1_file_descriptor_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5f5e27267db1af381a7b0b88b3effd91" id="r_a5f5e27267db1af381a7b0b88b3effd91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">OutputRedirectVisitor</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">void</a>(<a class="el" href="class_a_z_std_1_1span.html">AZStd::span</a>&lt; AZStd::byte &gt;)&gt;</td></tr>
+<tr class="memitem:a5f5e27267db1af381a7b0b88b3effd91" id="r_a5f5e27267db1af381a7b0b88b3effd91"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">OutputRedirectVisitor</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(AZStd::span&lt; AZStd::byte &gt;)&gt;</td></tr>
 <tr class="separator:a5f5e27267db1af381a7b0b88b3effd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5155eee5adc8ce90f95e74f986b6bca" id="r_ac5155eee5adc8ce90f95e74f986b6bca"><td class="memItemLeft" align="right" valign="top"><a id="ac5155eee5adc8ce90f95e74f986b6bca" name="ac5155eee5adc8ce90f95e74f986b6bca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileDescriptorCapturer</b> (<a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">sourceDescriptor</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FileDescriptorCapturer</b> (int sourceDescriptor)</td></tr>
 <tr class="separator:ac5155eee5adc8ce90f95e74f986b6bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ac04feb604e3ec593ddc2bf237e569" id="r_a60ac04feb604e3ec593ddc2bf237e569"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a60ac04feb604e3ec593ddc2bf237e569">Start</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">OutputRedirectVisitor</a> <a class="el" href="class_a_z_1_1_e_bus.html">redirectCallback</a>, AZStd::chrono::milliseconds <a class="el" href="class_a_z_1_1_e_bus.html">waitTimeout</a>=AZStd::chrono::seconds(1), <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">pipeSize</a>=DefaultPipeSize)</td></tr>
+<tr class="memitem:a60ac04feb604e3ec593ddc2bf237e569" id="r_a60ac04feb604e3ec593ddc2bf237e569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a60ac04feb604e3ec593ddc2bf237e569">Start</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">OutputRedirectVisitor</a> redirectCallback, AZStd::chrono::milliseconds waitTimeout=AZStd::chrono::seconds(1), int pipeSize=DefaultPipeSize)</td></tr>
 <tr class="separator:a60ac04feb604e3ec593ddc2bf237e569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae045790a1b5d72e264d939e6f7d4e549" id="r_ae045790a1b5d72e264d939e6f7d4e549"><td class="memItemLeft" align="right" valign="top"><a id="ae045790a1b5d72e264d939e6f7d4e549" name="ae045790a1b5d72e264d939e6f7d4e549"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
 <tr class="memdesc:ae045790a1b5d72e264d939e6f7d4e549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops capture of file descriptor and reset it back to it's previous value. <br /></td></tr>
 <tr class="separator:ae045790a1b5d72e264d939e6f7d4e549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4b5cffc658c7674f6ac1b7bb8c3868" id="r_a1c4b5cffc658c7674f6ac1b7bb8c3868"><td class="memItemLeft" align="right" valign="top"><a id="a1c4b5cffc658c7674f6ac1b7bb8c3868" name="a1c4b5cffc658c7674f6ac1b7bb8c3868"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WriteBypassingCapture</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *data, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> size)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WriteBypassingCapture</b> (const void *data, unsigned int size)</td></tr>
 <tr class="separator:a1c4b5cffc658c7674f6ac1b7bb8c3868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3bb6dd9a6513a03ceb56ac2fe005db52" id="r_a3bb6dd9a6513a03ceb56ac2fe005db52"><td class="memItemLeft" align="right" valign="top"><a id="a3bb6dd9a6513a03ceb56ac2fe005db52" name="a3bb6dd9a6513a03ceb56ac2fe005db52"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">constexpr</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultPipeSize</b> = (1 &lt;&lt; 16)</td></tr>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultPipeSize</b> = (1 &lt;&lt; 16)</td></tr>
 <tr class="separator:a3bb6dd9a6513a03ceb56ac2fe005db52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -99,7 +99,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">using</a> <a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">AZ::IO::FileDescriptorCapturer::OutputRedirectVisitor</a> =  <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt;<a class="el" href="class_a_z_1_1_e_bus.html">void</a>(<a class="el" href="class_a_z_std_1_1span.html">AZStd::span</a>&lt;AZStd::byte&gt;)&gt;</td>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">AZ::IO::FileDescriptorCapturer::OutputRedirectVisitor</a> =  <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt;void(AZStd::span&lt;AZStd::byte&gt;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -116,7 +116,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">void</a> AZ::IO::FileDescriptorCapturer::Start </td>
+          <td class="memname">void AZ::IO::FileDescriptorCapturer::Start </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html#a5f5e27267db1af381a7b0b88b3effd91">OutputRedirectVisitor</a>&#160;</td>
           <td class="paramname"><em>redirectCallback</em>, </td>
@@ -130,7 +130,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pipeSize</em> = <code>DefaultPipeSize</code>&#160;</td>
         </tr>
         <tr>
@@ -160,7 +160,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer.html">FileDescriptorCapturer</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

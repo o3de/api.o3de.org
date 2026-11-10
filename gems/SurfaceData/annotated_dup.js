@@ -9,7 +9,7 @@ var annotated_dup =
       [ "EditorSurfaceDataSystemComponent", "class_surface_data_1_1_editor_surface_data_system_component.html", null ],
       [ "EditorSurfaceDataSystemConfig", "class_surface_data_1_1_editor_surface_data_system_config.html", null ],
       [ "EditorSurfaceTagListAsset", "class_surface_data_1_1_editor_surface_tag_list_asset.html", null ],
-      [ "mixed_stack_heap_allocator", "class_surface_data_1_1mixed__stack__heap__allocator.html", null ],
+      [ "mixed_stack_heap_allocator", "struct_surface_data_1_1mixed__stack__heap__allocator.html", null ],
       [ "SurfaceDataColliderComponent", "class_surface_data_1_1_surface_data_collider_component.html", null ],
       [ "SurfaceDataColliderConfig", "class_surface_data_1_1_surface_data_collider_config.html", null ],
       [ "SurfaceDataEditorModule", "class_surface_data_1_1_surface_data_editor_module.html", null ],

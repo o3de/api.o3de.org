@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine WhiteBox Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine WhiteBox Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -117,6 +117,65 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HideSelectedE
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HideSelectedVertex</b> ()=0</td></tr>
 <tr class="memdesc:aa5d656fc56cbba7136e842c9d9f2062d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide the selected Vertex. <br /></td></tr>
 <tr class="separator:aa5d656fc56cbba7136e842c9d9f2062d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb61519edb9a110f92b954bcbe11003b" id="r_abb61519edb9a110f92b954bcbe11003b"><td class="memItemLeft" align="right" valign="top"><a id="abb61519edb9a110f92b954bcbe11003b" name="abb61519edb9a110f92b954bcbe11003b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveBegin</b> ()=0</td></tr>
+<tr class="separator:abb61519edb9a110f92b954bcbe11003b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5c057a7bc650675c79cc6f23512806" id="r_aae5c057a7bc650675c79cc6f23512806"><td class="memItemLeft" align="right" valign="top"><a id="aae5c057a7bc650675c79cc6f23512806" name="aae5c057a7bc650675c79cc6f23512806"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericScaleBegin</b> ()=0</td></tr>
+<tr class="memdesc:aae5c057a7bc650675c79cc6f23512806"><td class="mdescLeft">&#160;</td><td class="mdescRight">J - scale hovered polygon or edge. <br /></td></tr>
+<tr class="separator:aae5c057a7bc650675c79cc6f23512806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c62928fbd38e47d640b8e0517227bd" id="r_a43c62928fbd38e47d640b8e0517227bd"><td class="memItemLeft" align="right" valign="top"><a id="a43c62928fbd38e47d640b8e0517227bd" name="a43c62928fbd38e47d640b8e0517227bd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericRotateBegin</b> ()=0</td></tr>
+<tr class="memdesc:a43c62928fbd38e47d640b8e0517227bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">U - rotate hovered polygon or edge. <br /></td></tr>
+<tr class="separator:a43c62928fbd38e47d640b8e0517227bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f635f2e4cf74ed971aac4a040c230ca" id="r_a5f635f2e4cf74ed971aac4a040c230ca"><td class="memItemLeft" align="right" valign="top"><a id="a5f635f2e4cf74ed971aac4a040c230ca" name="a5f635f2e4cf74ed971aac4a040c230ca"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericExtrudeBegin</b> ()=0</td></tr>
+<tr class="memdesc:a5f635f2e4cf74ed971aac4a040c230ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">E - extrude hovered polygon (along normal) or edge. <br /></td></tr>
+<tr class="separator:a5f635f2e4cf74ed971aac4a040c230ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee19cce4f75c78104bb33bde1f3ffe4" id="r_a2ee19cce4f75c78104bb33bde1f3ffe4"><td class="memItemLeft" align="right" valign="top"><a id="a2ee19cce4f75c78104bb33bde1f3ffe4" name="a2ee19cce4f75c78104bb33bde1f3ffe4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericInsetBegin</b> ()=0</td></tr>
+<tr class="memdesc:a2ee19cce4f75c78104bb33bde1f3ffe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">F - face inset on hovered polygon (ratio 0-1) <br /></td></tr>
+<tr class="separator:a2ee19cce4f75c78104bb33bde1f3ffe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1349bfe801890351a9d6a9d696f2db" id="r_a7c1349bfe801890351a9d6a9d696f2db"><td class="memItemLeft" align="right" valign="top"><a id="a7c1349bfe801890351a9d6a9d696f2db" name="a7c1349bfe801890351a9d6a9d696f2db"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveSetAxisX</b> ()=0</td></tr>
+<tr class="separator:a7c1349bfe801890351a9d6a9d696f2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621fd73674ff5211d44358f30db7fb60" id="r_a621fd73674ff5211d44358f30db7fb60"><td class="memItemLeft" align="right" valign="top"><a id="a621fd73674ff5211d44358f30db7fb60" name="a621fd73674ff5211d44358f30db7fb60"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveSetAxisY</b> ()=0</td></tr>
+<tr class="separator:a621fd73674ff5211d44358f30db7fb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124d29f1b0f7e326fcb6ac72d94ab1d3" id="r_a124d29f1b0f7e326fcb6ac72d94ab1d3"><td class="memItemLeft" align="right" valign="top"><a id="a124d29f1b0f7e326fcb6ac72d94ab1d3" name="a124d29f1b0f7e326fcb6ac72d94ab1d3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveSetAxisZ</b> ()=0</td></tr>
+<tr class="separator:a124d29f1b0f7e326fcb6ac72d94ab1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88858aba5aed4e6877d0430b0be4ca53" id="r_a88858aba5aed4e6877d0430b0be4ca53"><td class="memItemLeft" align="right" valign="top"><a id="a88858aba5aed4e6877d0430b0be4ca53" name="a88858aba5aed4e6877d0430b0be4ca53"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveConfirm</b> ()=0</td></tr>
+<tr class="separator:a88858aba5aed4e6877d0430b0be4ca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451b0c372b2e38b6877287955c6d410a" id="r_a451b0c372b2e38b6877287955c6d410a"><td class="memItemLeft" align="right" valign="top"><a id="a451b0c372b2e38b6877287955c6d410a" name="a451b0c372b2e38b6877287955c6d410a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveCancel</b> ()=0</td></tr>
+<tr class="separator:a451b0c372b2e38b6877287955c6d410a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef5088a1ef9b79143a123236494ed2a" id="r_a2ef5088a1ef9b79143a123236494ed2a"><td class="memItemLeft" align="right" valign="top"><a id="a2ef5088a1ef9b79143a123236494ed2a" name="a2ef5088a1ef9b79143a123236494ed2a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveBackspace</b> ()=0</td></tr>
+<tr class="separator:a2ef5088a1ef9b79143a123236494ed2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd338aa6585cd9035ee26fa69677a07" id="r_a2bd338aa6585cd9035ee26fa69677a07"><td class="memItemLeft" align="right" valign="top"><a id="a2bd338aa6585cd9035ee26fa69677a07" name="a2bd338aa6585cd9035ee26fa69677a07"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveDecimal</b> ()=0</td></tr>
+<tr class="separator:a2bd338aa6585cd9035ee26fa69677a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80683a88e959045ee24fb5791104f1fd" id="r_a80683a88e959045ee24fb5791104f1fd"><td class="memItemLeft" align="right" valign="top"><a id="a80683a88e959045ee24fb5791104f1fd" name="a80683a88e959045ee24fb5791104f1fd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveNegate</b> ()=0</td></tr>
+<tr class="memdesc:a80683a88e959045ee24fb5791104f1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">'-' operator (leading minus or binary subtract) <br /></td></tr>
+<tr class="separator:a80683a88e959045ee24fb5791104f1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05c3efcf2e31736f1e78fa3f3928960" id="r_ad05c3efcf2e31736f1e78fa3f3928960"><td class="memItemLeft" align="right" valign="top"><a id="ad05c3efcf2e31736f1e78fa3f3928960" name="ad05c3efcf2e31736f1e78fa3f3928960"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericMoveAppendDigit</b> (char d)=0</td></tr>
+<tr class="separator:ad05c3efcf2e31736f1e78fa3f3928960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9633479496cbcbc43cd59d06e68d09c" id="r_af9633479496cbcbc43cd59d06e68d09c"><td class="memItemLeft" align="right" valign="top"><a id="af9633479496cbcbc43cd59d06e68d09c" name="af9633479496cbcbc43cd59d06e68d09c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendOperatorPlus</b> ()=0</td></tr>
+<tr class="memdesc:af9633479496cbcbc43cd59d06e68d09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">'+' binary add <br /></td></tr>
+<tr class="separator:af9633479496cbcbc43cd59d06e68d09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9799f403f1eab0f1374f69db2084b6d1" id="r_a9799f403f1eab0f1374f69db2084b6d1"><td class="memItemLeft" align="right" valign="top"><a id="a9799f403f1eab0f1374f69db2084b6d1" name="a9799f403f1eab0f1374f69db2084b6d1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendOperatorMult</b> ()=0</td></tr>
+<tr class="memdesc:a9799f403f1eab0f1374f69db2084b6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">'*' multiply <br /></td></tr>
+<tr class="separator:a9799f403f1eab0f1374f69db2084b6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e113cfeec5e7bd9c65e517ebe75bbd" id="r_ab2e113cfeec5e7bd9c65e517ebe75bbd"><td class="memItemLeft" align="right" valign="top"><a id="ab2e113cfeec5e7bd9c65e517ebe75bbd" name="ab2e113cfeec5e7bd9c65e517ebe75bbd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NumericAppendOperatorDiv</b> ()=0</td></tr>
+<tr class="memdesc:ab2e113cfeec5e7bd9c65e517ebe75bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">'/' divide <br /></td></tr>
+<tr class="separator:ab2e113cfeec5e7bd9c65e517ebe75bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Request bus for White Box ComponentMode operations while in 'default' mode. </p>
@@ -416,7 +475,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HideSelectedV
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>WhiteBox</b></li><li class="navelem"><a class="el" href="class_white_box_1_1_editor_white_box_default_mode_requests.html">EditorWhiteBoxDefaultModeRequests</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:54 for Open 3D Engine WhiteBox Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:55 for Open 3D Engine WhiteBox Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

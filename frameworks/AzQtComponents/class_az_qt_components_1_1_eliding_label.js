@@ -7,6 +7,7 @@ var class_az_qt_components_1_1_eliding_label =
     [ "minimumSizeHint", "class_az_qt_components_1_1_eliding_label.html#aa197688e6d4d36b06921e7c1362798b5", null ],
     [ "RefreshStyle", "class_az_qt_components_1_1_eliding_label.html#ac205a07ad34eacd5b5be8b1b23dfceb2", null ],
     [ "refreshStyle", "class_az_qt_components_1_1_eliding_label.html#a046eb2b377a7b36c72164bd1ca9c05a1", null ],
+    [ "requestElide", "class_az_qt_components_1_1_eliding_label.html#aeaaba7f4f1d1fba03606a52705d7d6f2", null ],
     [ "SetDescription", "class_az_qt_components_1_1_eliding_label.html#a47fed87e1efba1a2d12dfa89c8d18e23", null ],
     [ "setDescription", "class_az_qt_components_1_1_eliding_label.html#aa79db4d1db964022cb9b658aa4d8d699", null ],
     [ "SetElideMode", "class_az_qt_components_1_1_eliding_label.html#a79d955b4b537a1f6dcf8d1dfcc88bce3", null ],

@@ -60,7 +60,7 @@ var hierarchy =
     [ "Physics::ColliderComponentEventBus::Handler", null, [
       [ "SurfaceData::SurfaceDataColliderComponent", "class_surface_data_1_1_surface_data_collider_component.html", null ]
     ] ],
-    [ "SurfaceData::mixed_stack_heap_allocator< Node, NumNodes >", "class_surface_data_1_1mixed__stack__heap__allocator.html", null ],
+    [ "SurfaceData::mixed_stack_heap_allocator< Node, NumNodes >", "struct_surface_data_1_1mixed__stack__heap__allocator.html", null ],
     [ "SurfaceData::SurfaceDataRegistryEntry", "struct_surface_data_1_1_surface_data_registry_entry.html", null ],
     [ "SurfaceData::SurfaceDataSystem", "class_surface_data_1_1_surface_data_system.html", null ],
     [ "SurfaceData::SurfacePointList", "class_surface_data_1_1_surface_point_list.html", null ],

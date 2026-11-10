@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ExternalProfilers Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ExternalProfilers Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,7 +63,7 @@ $(document).ready(function(){initNavTree('class_tracy_profiler_1_1_tracy_profile
 
 <p><code>#include &lt;TracyProfilerEventForwarder.h&gt;</code></p>
 
-<p>Inherits AZ::Debug::Profiler, and AZ::TickBus::Handler.</p>
+<p>Inherits AZ::Debug::Profiler, AZ::RHI::FrameEventBus::Handler, and AZ::RHI::RHISystemNotificationBus::Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -87,13 +87,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginRegion</b> (cons
 <tr class="memitem:a216cd8c4218e02cdd2f029915e2f010c" id="r_a216cd8c4218e02cdd2f029915e2f010c"><td class="memItemLeft" align="right" valign="top"><a id="a216cd8c4218e02cdd2f029915e2f010c" name="a216cd8c4218e02cdd2f029915e2f010c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndRegion</b> (const AZ::Debug::Budget *budget) final override</td></tr>
 <tr class="separator:a216cd8c4218e02cdd2f029915e2f010c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2986735dd5c2401cb6a51723be132b0d" id="r_a2986735dd5c2401cb6a51723be132b0d"><td class="memItemLeft" align="right" valign="top"><a id="a2986735dd5c2401cb6a51723be132b0d" name="a2986735dd5c2401cb6a51723be132b0d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTickOrder</b> () override</td></tr>
-<tr class="memdesc:a2986735dd5c2401cb6a51723be132b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::TickBus::Handler overrides. <br /></td></tr>
-<tr class="separator:a2986735dd5c2401cb6a51723be132b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c3489c8f78aac44374ed305ac5511d" id="r_ad8c3489c8f78aac44374ed305ac5511d"><td class="memItemLeft" align="right" valign="top"><a id="ad8c3489c8f78aac44374ed305ac5511d" name="ad8c3489c8f78aac44374ed305ac5511d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint timePoint) override</td></tr>
-<tr class="separator:ad8c3489c8f78aac44374ed305ac5511d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db0416a595c6e88fa3c07b5c0014997" id="r_a6db0416a595c6e88fa3c07b5c0014997"><td class="memItemLeft" align="right" valign="top"><a id="a6db0416a595c6e88fa3c07b5c0014997" name="a6db0416a595c6e88fa3c07b5c0014997"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameEnd</b> () override</td></tr>
+<tr class="memdesc:a6db0416a595c6e88fa3c07b5c0014997"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::RHI::FrameEventInterface. <br /></td></tr>
+<tr class="separator:a6db0416a595c6e88fa3c07b5c0014997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ada6ccf3fc6ad18b1d1869112464f5c" id="r_a6ada6ccf3fc6ad18b1d1869112464f5c"><td class="memItemLeft" align="right" valign="top"><a id="a6ada6ccf3fc6ad18b1d1869112464f5c" name="a6ada6ccf3fc6ad18b1d1869112464f5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRHISystemInitialized</b> () override</td></tr>
+<tr class="memdesc:a6ada6ccf3fc6ad18b1d1869112464f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::RHI::RHISystemNotificiationInterface. <br /></td></tr>
+<tr class="separator:a6ada6ccf3fc6ad18b1d1869112464f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Listen to 03DE frame/profiling events and forward them to the Tracy profiling library. </p>
@@ -106,7 +107,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float del
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>TracyProfiler</b></li><li class="navelem"><a class="el" href="class_tracy_profiler_1_1_tracy_profiler_event_forwarder.html">TracyProfilerEventForwarder</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:42 for Open 3D Engine ExternalProfilers Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:44 for Open 3D Engine ExternalProfilers Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

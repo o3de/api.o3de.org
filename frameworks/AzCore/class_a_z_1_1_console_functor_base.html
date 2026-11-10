@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -52,6 +52,7 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_console_functor_base.htm
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -67,63 +68,79 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_console_functor_base.htm
 
 <p>Inherited by <a class="el" href="class_a_z_1_1_console_functor.html">AZ::ConsoleFunctor&lt; ConsoleDataWrapper&lt; BASE_TYPE, THREAD_SAFETY &gt;, true &gt;</a>, <a class="el" href="class_a_z_1_1_console_functor.html">AZ::ConsoleFunctor&lt; _TYPE, _REPLICATES_VALUE &gt;</a>, and <a class="el" href="class_a_z_1_1_console_functor_3_01void_00_01___r_e_p_l_i_c_a_t_e_s___v_a_l_u_e_01_4.html">AZ::ConsoleFunctor&lt; void, _REPLICATES_VALUE &gt;</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a26191f555630835dcf0df7ec60dfbbed" id="r_a26191f555630835dcf0df7ec60dfbbed"><td class="memItemLeft" align="right" valign="top"><a id="a26191f555630835dcf0df7ec60dfbbed" name="a26191f555630835dcf0df7ec60dfbbed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ArgumentAutoCompleteCallback</b> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> arguments, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &gt; &amp;matches)&gt;</td></tr>
+<tr class="separator:a26191f555630835dcf0df7ec60dfbbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6904f59c87f0e40633b773cc3c82506" id="r_ac6904f59c87f0e40633b773cc3c82506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#ac6904f59c87f0e40633b773cc3c82506">ConsoleFunctorBase</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *<a class="el" href="class_a_z_1_1_e_bus.html">desc</a>, ConsoleFunctorFlags flags, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">typeId</a>)</td></tr>
+<tr class="memitem:ac6904f59c87f0e40633b773cc3c82506" id="r_ac6904f59c87f0e40633b773cc3c82506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#ac6904f59c87f0e40633b773cc3c82506">ConsoleFunctorBase</a> (const char *name, const char *desc, ConsoleFunctorFlags flags, const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;typeId)</td></tr>
 <tr class="separator:ac6904f59c87f0e40633b773cc3c82506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68af7ec57edfdf5c7c3c660f8c615d87" id="r_a68af7ec57edfdf5c7c3c660f8c615d87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a68af7ec57edfdf5c7c3c660f8c615d87">ConsoleFunctorBase</a> (<a class="el" href="class_a_z_1_1_i_console.html">AZ::IConsole</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">console</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *name, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *<a class="el" href="class_a_z_1_1_e_bus.html">desc</a>, ConsoleFunctorFlags flags, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">typeId</a>)</td></tr>
+<tr class="memitem:a68af7ec57edfdf5c7c3c660f8c615d87" id="r_a68af7ec57edfdf5c7c3c660f8c615d87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a68af7ec57edfdf5c7c3c660f8c615d87">ConsoleFunctorBase</a> (<a class="el" href="class_a_z_1_1_i_console.html">AZ::IConsole</a> &amp;console, const char *name, const char *desc, ConsoleFunctorFlags flags, const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;typeId)</td></tr>
 <tr class="separator:a68af7ec57edfdf5c7c3c660f8c615d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad324bd8c67e052b646c782164fd08be8" id="r_ad324bd8c67e052b646c782164fd08be8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#ad324bd8c67e052b646c782164fd08be8">ConsoleFunctorBase</a> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> &amp;&amp;<a class="el" href="class_a_z_1_1_e_bus.html">other</a>)</td></tr>
+<tr class="memitem:ad324bd8c67e052b646c782164fd08be8" id="r_ad324bd8c67e052b646c782164fd08be8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#ad324bd8c67e052b646c782164fd08be8">ConsoleFunctorBase</a> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> &amp;&amp;other)</td></tr>
 <tr class="separator:ad324bd8c67e052b646c782164fd08be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8186f0b3b2580aa6bd325148e2f1ffb0" id="r_a8186f0b3b2580aa6bd325148e2f1ffb0"><td class="memItemLeft" align="right" valign="top"><a id="a8186f0b3b2580aa6bd325148e2f1ffb0" name="a8186f0b3b2580aa6bd325148e2f1ffb0"></a>
-<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> &amp;&amp;<a class="el" href="class_a_z_1_1_e_bus.html">other</a>)</td></tr>
+<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> &amp;&amp;other)</td></tr>
 <tr class="separator:a8186f0b3b2580aa6bd325148e2f1ffb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2db200af56c153e8ed7aa26800acb9c" id="r_ab2db200af56c153e8ed7aa26800acb9c"><td class="memItemLeft" align="right" valign="top"><a id="ab2db200af56c153e8ed7aa26800acb9c" name="ab2db200af56c153e8ed7aa26800acb9c"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><b>~ConsoleFunctorBase</b> ()</td></tr>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ConsoleFunctorBase</b> ()</td></tr>
 <tr class="memdesc:ab2db200af56c153e8ed7aa26800acb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:ab2db200af56c153e8ed7aa26800acb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23fadffcffe35516e2b9f9c38afdb6b7" id="r_a23fadffcffe35516e2b9f9c38afdb6b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a23fadffcffe35516e2b9f9c38afdb6b7">GetName</a> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="memitem:a23fadffcffe35516e2b9f9c38afdb6b7" id="r_a23fadffcffe35516e2b9f9c38afdb6b7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a23fadffcffe35516e2b9f9c38afdb6b7">GetName</a> () const</td></tr>
 <tr class="separator:a23fadffcffe35516e2b9f9c38afdb6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d948a1cc18612418262b4c1187f72bc" id="r_a4d948a1cc18612418262b4c1187f72bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a4d948a1cc18612418262b4c1187f72bc">GetDesc</a> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="memitem:a4d948a1cc18612418262b4c1187f72bc" id="r_a4d948a1cc18612418262b4c1187f72bc"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a4d948a1cc18612418262b4c1187f72bc">GetDesc</a> () const</td></tr>
 <tr class="separator:a4d948a1cc18612418262b4c1187f72bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af45903f727848c69951e7ab7fd2dd9b8" id="r_af45903f727848c69951e7ab7fd2dd9b8"><td class="memItemLeft" align="right" valign="top">ConsoleFunctorFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#af45903f727848c69951e7ab7fd2dd9b8">GetFlags</a> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="memitem:af45903f727848c69951e7ab7fd2dd9b8" id="r_af45903f727848c69951e7ab7fd2dd9b8"><td class="memItemLeft" align="right" valign="top">ConsoleFunctorFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#af45903f727848c69951e7ab7fd2dd9b8">GetFlags</a> () const</td></tr>
 <tr class="separator:af45903f727848c69951e7ab7fd2dd9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598be3133e9f3387e165255e78a7b3f5" id="r_a598be3133e9f3387e165255e78a7b3f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a598be3133e9f3387e165255e78a7b3f5">GetTypeId</a> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="memitem:a598be3133e9f3387e165255e78a7b3f5" id="r_a598be3133e9f3387e165255e78a7b3f5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a598be3133e9f3387e165255e78a7b3f5">GetTypeId</a> () const</td></tr>
 <tr class="separator:a598be3133e9f3387e165255e78a7b3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa97d377fbe559ffee40b1fe9a51ae50e" id="r_aa97d377fbe559ffee40b1fe9a51ae50e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#aa97d377fbe559ffee40b1fe9a51ae50e">operator()</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1fixed__vector.html">ConsoleCommandContainer</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">arguments</a>)=0</td></tr>
+<tr class="memitem:a9f46f895ca72ea2ccf24d7b4c74954ca" id="r_a9f46f895ca72ea2ccf24d7b4c74954ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a9f46f895ca72ea2ccf24d7b4c74954ca">SetArgumentAutoCompleteCallback</a> (<a class="el" href="class_a_z_std_1_1function.html">ArgumentAutoCompleteCallback</a> callback)</td></tr>
+<tr class="separator:a9f46f895ca72ea2ccf24d7b4c74954ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed23bbac151edc3dc07e18a99494551a" id="r_aed23bbac151edc3dc07e18a99494551a"><td class="memItemLeft" align="right" valign="top"><a id="aed23bbac151edc3dc07e18a99494551a" name="aed23bbac151edc3dc07e18a99494551a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasArgumentAutoCompleteCallback</b> () const</td></tr>
+<tr class="memdesc:aed23bbac151edc3dc07e18a99494551a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this functor has an argument autocomplete callback. <br /></td></tr>
+<tr class="separator:aed23bbac151edc3dc07e18a99494551a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ba17e7f9fba8b4efe8711295c15dd7" id="r_aa4ba17e7f9fba8b4efe8711295c15dd7"><td class="memItemLeft" align="right" valign="top"><a id="aa4ba17e7f9fba8b4efe8711295c15dd7" name="aa4ba17e7f9fba8b4efe8711295c15dd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AutoCompleteArguments</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> arguments, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &gt; &amp;matches) const</td></tr>
+<tr class="memdesc:aa4ba17e7f9fba8b4efe8711295c15dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends autocomplete matches for arguments after this functor name. <br /></td></tr>
+<tr class="separator:aa4ba17e7f9fba8b4efe8711295c15dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97d377fbe559ffee40b1fe9a51ae50e" id="r_aa97d377fbe559ffee40b1fe9a51ae50e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#aa97d377fbe559ffee40b1fe9a51ae50e">operator()</a> (const <a class="el" href="class_a_z_std_1_1fixed__vector.html">ConsoleCommandContainer</a> &amp;arguments)=0</td></tr>
 <tr class="separator:aa97d377fbe559ffee40b1fe9a51ae50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af72dbdac7bed4fe46c6a71fa8b906cc2" id="r_af72dbdac7bed4fe46c6a71fa8b906cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#af72dbdac7bed4fe46c6a71fa8b906cc2">GetReplicationString</a> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">outString</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+<tr class="memitem:af72dbdac7bed4fe46c6a71fa8b906cc2" id="r_af72dbdac7bed4fe46c6a71fa8b906cc2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#af72dbdac7bed4fe46c6a71fa8b906cc2">GetReplicationString</a> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;outString) const =0</td></tr>
 <tr class="separator:af72dbdac7bed4fe46c6a71fa8b906cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3491c1ab5b9f2c59ae74c07de1dc7b31" id="r_a3491c1ab5b9f2c59ae74c07de1dc7b31"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">RETURN_TYPE</a> &gt; </td></tr>
-<tr class="memitem:a3491c1ab5b9f2c59ae74c07de1dc7b31"><td class="memTemplItemLeft" align="right" valign="top">GetValueResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a3491c1ab5b9f2c59ae74c07de1dc7b31">GetValue</a> (<a class="el" href="class_a_z_1_1_e_bus.html">RETURN_TYPE</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">outResult</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+<tr class="memitem:a3491c1ab5b9f2c59ae74c07de1dc7b31" id="r_a3491c1ab5b9f2c59ae74c07de1dc7b31"><td class="memTemplParams" colspan="2">template&lt;typename RETURN_TYPE &gt; </td></tr>
+<tr class="memitem:a3491c1ab5b9f2c59ae74c07de1dc7b31"><td class="memTemplItemLeft" align="right" valign="top">GetValueResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a3491c1ab5b9f2c59ae74c07de1dc7b31">GetValue</a> (RETURN_TYPE &amp;outResult) const</td></tr>
 <tr class="separator:a3491c1ab5b9f2c59ae74c07de1dc7b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab90b805170d565aa4ea108cb6cb26069" id="r_ab90b805170d565aa4ea108cb6cb26069"><td class="memItemLeft" align="right" valign="top"><a id="ab90b805170d565aa4ea108cb6cb26069" name="ab90b805170d565aa4ea108cb6cb26069"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeferredHead</b> ()</td></tr>
+static <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeferredHead</b> ()</td></tr>
 <tr class="memdesc:ab90b805170d565aa4ea108cb6cb26069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to link cvars and functors from various modules to the console as they are loaded. <br /></td></tr>
 <tr class="separator:ab90b805170d565aa4ea108cb6cb26069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6262d9b844d30152d9598af5529b212b" id="r_a6262d9b844d30152d9598af5529b212b"><td class="memItemLeft" align="right" valign="top"><a id="a6262d9b844d30152d9598af5529b212b" name="a6262d9b844d30152d9598af5529b212b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> GetValueResult&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueAsString</b> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">outString</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+virtual GetValueResult&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueAsString</b> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;outString) const</td></tr>
 <tr class="separator:a6262d9b844d30152d9598af5529b212b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a977859b82a381ad249d0537191907fa0" id="r_a977859b82a381ad249d0537191907fa0"><td class="memItemLeft" align="right" valign="top"><a id="a977859b82a381ad249d0537191907fa0" name="a977859b82a381ad249d0537191907fa0"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Link</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;head)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Link</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;head)</td></tr>
 <tr class="separator:a977859b82a381ad249d0537191907fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc2b44e1d2b925e495bc884e4f86c5b9" id="r_abc2b44e1d2b925e495bc884e4f86c5b9"><td class="memItemLeft" align="right" valign="top"><a id="abc2b44e1d2b925e495bc884e4f86c5b9" name="abc2b44e1d2b925e495bc884e4f86c5b9"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Unlink</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;head)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Unlink</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;head)</td></tr>
 <tr class="separator:abc2b44e1d2b925e495bc884e4f86c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a15592633e800f19b0d1097653a6700f7" id="r_a15592633e800f19b0d1097653a6700f7"><td class="memItemLeft" align="right" valign="top"><a id="a15592633e800f19b0d1097653a6700f7" name="a15592633e800f19b0d1097653a6700f7"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b> = &quot;&quot;</td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b> = &quot;&quot;</td></tr>
 <tr class="separator:a15592633e800f19b0d1097653a6700f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde9132db1dbd6363651a40015bbbbb5" id="r_acde9132db1dbd6363651a40015bbbbb5"><td class="memItemLeft" align="right" valign="top"><a id="acde9132db1dbd6363651a40015bbbbb5" name="acde9132db1dbd6363651a40015bbbbb5"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_desc</b> = &quot;&quot;</td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_desc</b> = &quot;&quot;</td></tr>
 <tr class="separator:acde9132db1dbd6363651a40015bbbbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaedec608eaeb49cd228ca2ca6cdbe50c" id="r_aaedec608eaeb49cd228ca2ca6cdbe50c"><td class="memItemLeft" align="right" valign="top"><a id="aaedec608eaeb49cd228ca2ca6cdbe50c" name="aaedec608eaeb49cd228ca2ca6cdbe50c"></a>
 ConsoleFunctorFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_flags</b> = ConsoleFunctorFlags::Null</td></tr>
@@ -132,31 +149,34 @@ ConsoleFunctorFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_flag
 <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_typeId</b></td></tr>
 <tr class="separator:ade9aebc6b462f6694e0536a0772f3002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af63211686cc6e647e2edd56bf90fab51" id="r_af63211686cc6e647e2edd56bf90fab51"><td class="memItemLeft" align="right" valign="top"><a id="af63211686cc6e647e2edd56bf90fab51" name="af63211686cc6e647e2edd56bf90fab51"></a>
-<a class="el" href="class_a_z_1_1_i_console.html">IConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_console</b> = <a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a></td></tr>
+<a class="el" href="class_a_z_1_1_i_console.html">IConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_console</b> = nullptr</td></tr>
 <tr class="separator:af63211686cc6e647e2edd56bf90fab51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e166243716341aed5222e5bb727fde0" id="r_a5e166243716341aed5222e5bb727fde0"><td class="memItemLeft" align="right" valign="top"><a id="a5e166243716341aed5222e5bb727fde0" name="a5e166243716341aed5222e5bb727fde0"></a>
+<a class="el" href="class_a_z_std_1_1function.html">ArgumentAutoCompleteCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_argumentAutoCompleteCallback</b></td></tr>
+<tr class="separator:a5e166243716341aed5222e5bb727fde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad7828573c28e8b0bef1013fbde6e0d0" id="r_aad7828573c28e8b0bef1013fbde6e0d0"><td class="memItemLeft" align="right" valign="top"><a id="aad7828573c28e8b0bef1013fbde6e0d0" name="aad7828573c28e8b0bef1013fbde6e0d0"></a>
-<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prev</b> = <a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a></td></tr>
+<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prev</b> = nullptr</td></tr>
 <tr class="separator:aad7828573c28e8b0bef1013fbde6e0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553850f32da29c04dbdcce39a4e746e3" id="r_a553850f32da29c04dbdcce39a4e746e3"><td class="memItemLeft" align="right" valign="top"><a id="a553850f32da29c04dbdcce39a4e746e3" name="a553850f32da29c04dbdcce39a4e746e3"></a>
-<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_next</b> = <a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a></td></tr>
+<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_next</b> = nullptr</td></tr>
 <tr class="separator:a553850f32da29c04dbdcce39a4e746e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21e497bb882189d674bf7891bdd6517" id="r_ad21e497bb882189d674bf7891bdd6517"><td class="memItemLeft" align="right" valign="top"><a id="ad21e497bb882189d674bf7891bdd6517" name="ad21e497bb882189d674bf7891bdd6517"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeferred</b> = <a class="el" href="class_a_z_1_1_e_bus.html">true</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeferred</b> = true</td></tr>
 <tr class="separator:ad21e497bb882189d674bf7891bdd6517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr class="memitem:aca956ef23ea47db54a0ca88f49c300a2" id="r_aca956ef23ea47db54a0ca88f49c300a2"><td class="memItemLeft" align="right" valign="top"><a id="aca956ef23ea47db54a0ca88f49c300a2" name="aca956ef23ea47db54a0ca88f49c300a2"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_deferredHead</b></td></tr>
+static <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_deferredHead</b></td></tr>
 <tr class="separator:aca956ef23ea47db54a0ca88f49c300a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf04376e2420532054e9815afcf4d800" id="r_abf04376e2420532054e9815afcf4d800"><td class="memItemLeft" align="right" valign="top"><a id="abf04376e2420532054e9815afcf4d800" name="abf04376e2420532054e9815afcf4d800"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_deferredHeadInvoked</b></td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>s_deferredHeadInvoked</b></td></tr>
 <tr class="separator:abf04376e2420532054e9815afcf4d800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:aaa98810874c67664127370c7d8dc2ece" id="r_aaa98810874c67664127370c7d8dc2ece"><td class="memItemLeft" align="right" valign="top"><a id="aaa98810874c67664127370c7d8dc2ece" name="aaa98810874c67664127370c7d8dc2ece"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Console</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Console</b></td></tr>
 <tr class="separator:aaa98810874c67664127370c7d8dc2ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -171,13 +191,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">AZ::ConsoleFunctorBase::ConsoleFunctorBase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>desc</em>, </td>
         </tr>
         <tr>
@@ -189,7 +209,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td>
           <td class="paramname"><em>typeId</em>&#160;</td>
         </tr>
         <tr>
@@ -226,13 +246,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>desc</em>, </td>
         </tr>
         <tr>
@@ -244,7 +264,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td>
           <td class="paramname"><em>typeId</em>&#160;</td>
         </tr>
         <tr>
@@ -297,7 +317,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> * AZ::ConsoleFunctorBase::GetDesc </td>
+          <td class="memname">const char * AZ::ConsoleFunctorBase::GetDesc </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -349,7 +369,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> * AZ::ConsoleFunctorBase::GetName </td>
+          <td class="memname">const char * AZ::ConsoleFunctorBase::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -375,7 +395,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::ConsoleFunctorBase::GetReplicationString </td>
+          <td class="memname">virtual bool AZ::ConsoleFunctorBase::GetReplicationString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;&#160;</td>
           <td class="paramname"><em>outString</em></td><td>)</td>
@@ -410,7 +430,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp; AZ::ConsoleFunctorBase::GetTypeId </td>
+          <td class="memname">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp; AZ::ConsoleFunctorBase::GetTypeId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -432,7 +452,7 @@ Friends</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">RETURN_TYPE</a> &gt; </div>
+template&lt;typename RETURN_TYPE &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -440,7 +460,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
         <tr>
           <td class="memname">GetValueResult AZ::ConsoleFunctorBase::GetValue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">RETURN_TYPE</a> &amp;&#160;</td>
+          <td class="paramtype">RETURN_TYPE &amp;&#160;</td>
           <td class="paramname"><em>outResult</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -471,9 +491,9 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> AZ::ConsoleFunctorBase::operator() </td>
+          <td class="memname">virtual void AZ::ConsoleFunctorBase::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_std_1_1fixed__vector.html">ConsoleCommandContainer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_std_1_1fixed__vector.html">ConsoleCommandContainer</a> &amp;&#160;</td>
           <td class="paramname"><em>arguments</em></td><td>)</td>
           <td></td>
         </tr>
@@ -495,6 +515,25 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 
 </div>
 </div>
+<a id="a9f46f895ca72ea2ccf24d7b4c74954ca" name="a9f46f895ca72ea2ccf24d7b4c74954ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f46f895ca72ea2ccf24d7b4c74954ca">&#9670;&#160;</a></span>SetArgumentAutoCompleteCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::ConsoleFunctorBase::SetArgumentAutoCompleteCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1function.html">ArgumentAutoCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the callback used to autocomplete arguments after this functor name. The callback receives the raw argument substring after the command name and should append complete argument strings to matches. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/Console/<b>ConsoleFunctor.h</b></li>
 <li>Code/Framework/AzCore/AzCore/Console/<b>ConsoleFunctor.inl</b></li>
@@ -505,7 +544,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

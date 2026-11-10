@@ -8,6 +8,8 @@ var class_a_z_1_1_document_property_editor_1_1_document_adapter =
     [ "ConnectFilterHandler", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#adb5f81ba3bf02dbed165fd5aca93a252", null ],
     [ "ConnectMessageHandler", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ab149f1958fb9df4f30328a3b25969348", null ],
     [ "ConnectResetHandler", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a6cf1d95780de11ebf19bb6ad51ca4d3f", null ],
+    [ "ConnectResetQueuedHandler", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae7a931d3142914962dcea777acfa5b24", null ],
+    [ "ExecuteQueuedReset", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a90888250065ece763eefc00323646142", null ],
     [ "GenerateContents", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aee629f63b82b281c69e6caf059ed45fa", null ],
     [ "GetContents", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a74df3310a70b1728ae5df1642c61df20", null ],
     [ "HandleMessage", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aac00fd27e2315ce374e4abe2ff72f43c", null ],
@@ -16,6 +18,8 @@ var class_a_z_1_1_document_property_editor_1_1_document_adapter =
     [ "NotifyContentsChanged", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e", null ],
     [ "NotifyFilterChanged", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac0cc5c7d641b654c3c34d33adc12ee0f", null ],
     [ "NotifyResetDocument", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ab1cb4e7f1eb6b98224d5c9f3ec367d5e", null ],
+    [ "NotifyResetQueued", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aa910d60b2f4a53e1ec1554bca6c83b06", null ],
+    [ "QueueResetDocument", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#af1dc35be6d848cdfe6cdc239e16bd5ae", null ],
     [ "SendAdapterMessage", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4b0679e6d13b08ab40ffe3fc509a6afb", null ],
     [ "SetDebugModeEnabled", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4220bad42997ad1aedc6ec70e16f3414", null ],
     [ "SetRouter", "class_a_z_1_1_document_property_editor_1_1_document_adapter.html#afcebb571f79b679105d0c23f0ac74a32", null ]

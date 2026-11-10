@@ -4,6 +4,7 @@ var class_a_z_1_1_render_1_1_decal_notifications =
     [ "OnDecalColorChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#a01cc919c044072d78ff45fad0f84ef35", null ],
     [ "OnDecalColorFactorChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#a634ef61f396140b6eeaa1ea30605a1ab", null ],
     [ "OnMaterialChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#a13f5eb4b2d02e89710b6592cbc11496f", null ],
+    [ "OnMaxDrawDistanceChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#a1cfb6668137cbb08abd1ca48e3c8e9a2", null ],
     [ "OnNormalMapOpacityChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#a6117e9b3bbd025531327b6452afd6aa5", null ],
     [ "OnOpacityChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#a27fe8d93d68662bc323296b351066fa6", null ],
     [ "OnSortKeyChanged", "class_a_z_1_1_render_1_1_decal_notifications.html#aac34340d17c4c030df109722c9be08ec", null ]

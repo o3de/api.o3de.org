@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,15 +64,15 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_fixed_vertices.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a68722d349844c9ddb3c815e2d8f1f75f" id="r_a68722d349844c9ddb3c815e2d8f1f75f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_fixed_vertices.html#a68722d349844c9ddb3c815e2d8f1f75f">GetVertex</a> (size_t index, <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">vertex</a>) <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+<tr class="memitem:a68722d349844c9ddb3c815e2d8f1f75f" id="r_a68722d349844c9ddb3c815e2d8f1f75f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_fixed_vertices.html#a68722d349844c9ddb3c815e2d8f1f75f">GetVertex</a> (size_t index, Vertex &amp;vertex) const =0</td></tr>
 <tr class="separator:a68722d349844c9ddb3c815e2d8f1f75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44dd61c2d58a2443123cdfd2bea0d3c3" id="r_a44dd61c2d58a2443123cdfd2bea0d3c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_fixed_vertices.html#a44dd61c2d58a2443123cdfd2bea0d3c3">UpdateVertex</a> (size_t index, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">vertex</a>)=0</td></tr>
+<tr class="memitem:a44dd61c2d58a2443123cdfd2bea0d3c3" id="r_a44dd61c2d58a2443123cdfd2bea0d3c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_fixed_vertices.html#a44dd61c2d58a2443123cdfd2bea0d3c3">UpdateVertex</a> (size_t index, const Vertex &amp;vertex)=0</td></tr>
 <tr class="separator:a44dd61c2d58a2443123cdfd2bea0d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3500bbb010975395172b0f7c89a8fbc" id="r_ae3500bbb010975395172b0f7c89a8fbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_fixed_vertices.html#ae3500bbb010975395172b0f7c89a8fbc">Size</a> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+<tr class="memitem:ae3500bbb010975395172b0f7c89a8fbc" id="r_ae3500bbb010975395172b0f7c89a8fbc"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_fixed_vertices.html#ae3500bbb010975395172b0f7c89a8fbc">Size</a> () const =0</td></tr>
 <tr class="separator:ae3500bbb010975395172b0f7c89a8fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a>&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Vertex&gt;<br />
 class AZ::FixedVertices&lt; Vertex &gt;</div><p><a class="el" href="class_a_z_1_1_interface.html">Interface</a> provided by a container of vertices of fixed length (example: array or fixed_vector). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a68722d349844c9ddb3c815e2d8f1f75f" name="a68722d349844c9ddb3c815e2d8f1f75f"></a>
@@ -81,13 +81,13 @@ class AZ::FixedVertices&lt; Vertex &gt;</div><p><a class="el" href="class_a_z_1_
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &gt; </div>
+template&lt;typename Vertex &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_fixed_vertices.html">AZ::FixedVertices</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &gt;::GetVertex </td>
+          <td class="memname">virtual bool <a class="el" href="class_a_z_1_1_fixed_vertices.html">AZ::FixedVertices</a>&lt; Vertex &gt;::GetVertex </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
@@ -95,7 +95,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &amp;&#160;</td>
+          <td class="paramtype">Vertex &amp;&#160;</td>
           <td class="paramname"><em>vertex</em>&#160;</td>
         </tr>
         <tr>
@@ -127,13 +127,13 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &gt; </div>
+template&lt;typename Vertex &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> size_t <a class="el" href="class_a_z_1_1_fixed_vertices.html">AZ::FixedVertices</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &gt;::Size </td>
+          <td class="memname">virtual size_t <a class="el" href="class_a_z_1_1_fixed_vertices.html">AZ::FixedVertices</a>&lt; Vertex &gt;::Size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -155,13 +155,13 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &gt; </div>
+template&lt;typename Vertex &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> <a class="el" href="class_a_z_1_1_fixed_vertices.html">AZ::FixedVertices</a>&lt; <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &gt;::UpdateVertex </td>
+          <td class="memname">virtual bool <a class="el" href="class_a_z_1_1_fixed_vertices.html">AZ::FixedVertices</a>&lt; Vertex &gt;::UpdateVertex </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
@@ -169,7 +169,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">Vertex</a> &amp;&#160;</td>
+          <td class="paramtype">const Vertex &amp;&#160;</td>
           <td class="paramname"><em>vertex</em>&#160;</td>
         </tr>
         <tr>
@@ -204,7 +204,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_fixed_vertices.html">FixedVertices</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

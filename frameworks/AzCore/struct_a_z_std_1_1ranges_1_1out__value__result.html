@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,14 +61,16 @@ $(document).ready(function(){initNavTree('struct_a_z_std_1_1ranges_1_1out__value
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3364ed66e87feecfd4ab7f75a6d020a" id="r_ae3364ed66e87feecfd4ab7f75a6d020a"><td class="memTemplParams" colspan="2"><a id="ae3364ed66e87feecfd4ab7f75a6d020a" name="ae3364ed66e87feecfd4ab7f75a6d020a"></a>
-template&lt;class O2 , class T2 , class  = enable_if_t&lt;convertible_to&lt;const O&amp;, O2&gt; &amp;&amp; convertible_to&lt;const T&amp;, T2&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ae3364ed66e87feecfd4ab7f75a6d020a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator out_value_result&lt; O2, T2 &gt;</b> () const &amp;</td></tr>
-<tr class="separator:ae3364ed66e87feecfd4ab7f75a6d020a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f64c2c6a182b2c0b85791829c0e6733" id="r_a3f64c2c6a182b2c0b85791829c0e6733"><td class="memTemplParams" colspan="2"><a id="a3f64c2c6a182b2c0b85791829c0e6733" name="a3f64c2c6a182b2c0b85791829c0e6733"></a>
-template&lt;class O2 , class T2 , class  = enable_if_t&lt;convertible_to&lt;O, O2&gt; &amp;&amp; convertible_to&lt;T, T2&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a3f64c2c6a182b2c0b85791829c0e6733"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator out_value_result&lt; O2, T2 &gt;</b> () &amp;&amp;</td></tr>
-<tr class="separator:a3f64c2c6a182b2c0b85791829c0e6733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc2179b20054f7278aac88f194986a8" id="r_aefc2179b20054f7278aac88f194986a8"><td class="memTemplParams" colspan="2"><a id="aefc2179b20054f7278aac88f194986a8" name="aefc2179b20054f7278aac88f194986a8"></a>
+template&lt;class O2 , class T2 &gt; <br />
+requires convertible_to&lt;const O&amp;, O2&gt; &amp;&amp; convertible_to&lt;const T&amp;, T2&gt;</td></tr>
+<tr class="memitem:aefc2179b20054f7278aac88f194986a8"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator out_value_result&lt; O2, T2 &gt;</b> () const &amp;</td></tr>
+<tr class="separator:aefc2179b20054f7278aac88f194986a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3dbac8fafbf1c8e8d438dec6ed98a34" id="r_ae3dbac8fafbf1c8e8d438dec6ed98a34"><td class="memTemplParams" colspan="2"><a id="ae3dbac8fafbf1c8e8d438dec6ed98a34" name="ae3dbac8fafbf1c8e8d438dec6ed98a34"></a>
+template&lt;class O2 , class T2 &gt; <br />
+requires convertible_to&lt;O, O2&gt; &amp;&amp; convertible_to&lt;T, T2&gt;</td></tr>
+<tr class="memitem:ae3dbac8fafbf1c8e8d438dec6ed98a34"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator out_value_result&lt; O2, T2 &gt;</b> () &amp;&amp;</td></tr>
+<tr class="separator:ae3dbac8fafbf1c8e8d438dec6ed98a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -88,7 +90,7 @@ AZ_NO_UNIQUE_ADDRESS T&#160;</td><td class="memItemRight" valign="bottom"><b>val
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><b>ranges</b></li><li class="navelem"><a class="el" href="struct_a_z_std_1_1ranges_1_1out__value__result.html">out_value_result</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

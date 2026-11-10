@@ -8,6 +8,7 @@ var class_az_qt_components_1_1_spin_box =
     [ "deleteTriggered", "class_az_qt_components_1_1_spin_box.html#a4ff0f0f201dfb940c848f9c2ad125365", null ],
     [ "globalRedoTriggered", "class_az_qt_components_1_1_spin_box.html#a63ad992a2124f8dbba2e7fbf568da90c", null ],
     [ "globalUndoTriggered", "class_az_qt_components_1_1_spin_box.html#a91c4c23589755f35434a1d2eb6ca6f31", null ],
+    [ "hasInProgressEdit", "class_az_qt_components_1_1_spin_box.html#a04f05b0dcd818cd1a8384f9796db1437", null ],
     [ "isRedoAvailable", "class_az_qt_components_1_1_spin_box.html#a17b6ffccaa961be95118b36c8928654e", null ],
     [ "isUndoAvailable", "class_az_qt_components_1_1_spin_box.html#abb6d019b5153ff35bc97ae9042afe2bf", null ],
     [ "loadConfig", "class_az_qt_components_1_1_spin_box.html#ab5c792eeea573653d9d4a8172165a48b", null ],

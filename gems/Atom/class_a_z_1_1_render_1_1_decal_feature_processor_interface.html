@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -112,6 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7c1ecf93c56edf9cbf098715d55031e" id="r_ab7c1ecf93c56edf9cbf098715d55031e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ab7c1ecf93c56edf9cbf098715d55031e">SetDecalNormalMapOpacity</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, float opacity)=0</td></tr>
 <tr class="memdesc:ab7c1ecf93c56edf9cbf098715d55031e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the opacity of the decal normal map.  <br /></td></tr>
 <tr class="separator:ab7c1ecf93c56edf9cbf098715d55031e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb18ef070ee576d4114bddf98d5a8853" id="r_abb18ef070ee576d4114bddf98d5a8853"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#abb18ef070ee576d4114bddf98d5a8853">SetDecalMaxDrawDistance</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, float maxDrawDistance)=0</td></tr>
+<tr class="memdesc:abb18ef070ee576d4114bddf98d5a8853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distance from the camera beyond which the decal stops rendering.  <br /></td></tr>
+<tr class="separator:abb18ef070ee576d4114bddf98d5a8853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48507fc4a3ea666aadc9b7e3494b1bde" id="r_a48507fc4a3ea666aadc9b7e3494b1bde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a48507fc4a3ea666aadc9b7e3494b1bde">SetDecalMaterial</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, const AZ::Data::AssetId)=0</td></tr>
 <tr class="memdesc:a48507fc4a3ea666aadc9b7e3494b1bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material information for this decal.  <br /></td></tr>
 <tr class="separator:a48507fc4a3ea666aadc9b7e3494b1bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -561,6 +564,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
+<a id="abb18ef070ee576d4114bddf98d5a8853" name="abb18ef070ee576d4114bddf98d5a8853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb18ef070ee576d4114bddf98d5a8853">&#9670;&#160;</a></span>SetDecalMaxDrawDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::DecalFeatureProcessorInterface::SetDecalMaxDrawDistance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxDrawDistance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the distance from the camera beyond which the decal stops rendering. </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a3973a0d7b927c311ea2f8be659c88d31">AZ::Render::DecalTextureArrayFeatureProcessor</a>.</p>
+
+</div>
+</div>
 <a id="ab7c1ecf93c56edf9cbf098715d55031e" name="ab7c1ecf93c56edf9cbf098715d55031e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7c1ecf93c56edf9cbf098715d55031e">&#9670;&#160;</a></span>SetDecalNormalMapOpacity()</h2>
 
@@ -809,7 +852,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html">DecalFeatureProcessorInterface</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:35 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:37 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

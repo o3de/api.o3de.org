@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -84,10 +84,28 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9035c90595cbc5edc89f4e774fc2cdaa" id="r_a9035c90595cbc5edc89f4e774fc2cdaa"><td class="memItemLeft" align="right" valign="top"><a id="a9035c90595cbc5edc89f4e774fc2cdaa" name="a9035c90595cbc5edc89f4e774fc2cdaa"></a>
 MaterialAssignmentMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_materials</b></td></tr>
 <tr class="separator:a9035c90595cbc5edc89f4e774fc2cdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c01b12c274b10a567637d610a859ccd" id="r_a7c01b12c274b10a567637d610a859ccd"><td class="memItemLeft" align="right" valign="top">AZStd::unordered_map&lt; AZStd::string, <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html">MaterialAssignment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_config.html#a7c01b12c274b10a567637d610a859ccd">m_materialsByLabel</a></td></tr>
+<tr class="separator:a7c01b12c274b10a567637d610a859ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common configuration for <a class="el" href="class_a_z_1_1_render_1_1_material_component.html">MaterialComponent</a> that can be used to create MaterialComponents dynamically and can be shared with <a class="el" href="class_a_z_1_1_render_1_1_editor_material_component.html" title="In-editor material component for displaying and editing material assignments.">EditorMaterialComponent</a>. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7c01b12c274b10a567637d610a859ccd" name="a7c01b12c274b10a567637d610a859ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c01b12c274b10a567637d610a859ccd">&#9670;&#160;</a></span>m_materialsByLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::unordered_map&lt;AZStd::string, <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment.html">MaterialAssignment</a>&gt; AZ::Render::MaterialComponentConfig::m_materialsByLabel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pending material overrides keyed by slot display label. Resolved to entries in m_materials once the associated model is ready and labels are queryable. Survives mesh swaps so the same authored override re-binds against a new model that exposes a slot with the same label. Use case: prefab authoring pipelines that do not have access to SceneAPI MaterialUid stable IDs at generation time can write by-label entries and let the runtime bind them. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/Material/<b>MaterialComponentConfig.h</b></li>
 </ul>
 </div><!-- contents -->
@@ -96,7 +114,7 @@ MaterialAssignmentMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_ma
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_material_component_config.html">MaterialComponentConfig</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:38 for Open 3D Engine AtomLyIntegration Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:40 for Open 3D Engine AtomLyIntegration Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

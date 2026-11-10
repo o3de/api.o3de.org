@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -69,18 +69,19 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_p_i_1_1_buffer_asset_c
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#a2eb955bb8a55fd5ba3fbd37031788ae6">SetBuffer</a>(const void *initialData, const size_t initialDataSize, const RHI::BufferDescriptor &amp;descriptor)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#aeb0349739044788ea6e05949397c520a">SetBufferName</a>(AZStd::string_view name)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#a27d72071ee62f228fac06dac10311773">SetBufferViewDescriptor</a>(const RHI::BufferViewDescriptor &amp;viewDescriptor)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a26787bf58b938d387c329e6d12208d5b">SetElevateWarnings</a>(bool elevated)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; BufferAsset &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#a0d93ce2d323cf382383484f21e3b90a9">SetPoolAsset</a>(const Data::Asset&lt; ResourcePoolAsset &gt; &amp;poolAsset)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#a5ae09162eb7d7fd6de29c84230d70298">SetUseCommonPool</a>(CommonBufferPoolType poolType)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a81be5d63018b8bc4ae50b5d0064f5d1a">ValidateIsReady</a>()</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; BufferAsset &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#accb50cedb8700c42c74f20255434a509">ValidateNotNull</a>(void *pointer, const char *name)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; BufferAsset &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~BufferAssetCreator</b>()=default (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#af23990418aa7505bb9a6faaefbee486a">SetCompressionFormat</a>(const BufferAsset::CompressionFormat compressionFormat)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a26787bf58b938d387c329e6d12208d5b">SetElevateWarnings</a>(bool elevated)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; BufferAsset &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#a0d93ce2d323cf382383484f21e3b90a9">SetPoolAsset</a>(const Data::Asset&lt; ResourcePoolAsset &gt; &amp;poolAsset)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html#a5ae09162eb7d7fd6de29c84230d70298">SetUseCommonPool</a>(CommonBufferPoolType poolType)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a81be5d63018b8bc4ae50b5d0064f5d1a">ValidateIsReady</a>()</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; BufferAsset &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#accb50cedb8700c42c74f20255434a509">ValidateNotNull</a>(void *pointer, const char *name)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; BufferAsset &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~BufferAssetCreator</b>()=default (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html">AZ::RPI::BufferAssetCreator</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 26 2026 21:02:36 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:38 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

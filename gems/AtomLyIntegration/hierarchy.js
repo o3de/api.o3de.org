@@ -3,6 +3,9 @@ var hierarchy =
     [ "AnimViewportRequestBus::Handler", null, [
       [ "EMStudio::AnimViewportWidget", "class_e_m_studio_1_1_anim_viewport_widget.html", null ]
     ] ],
+    [ "AoRequestBus::Handler", null, [
+      [ "AZ::Render::AoComponentController", "class_a_z_1_1_render_1_1_ao_component_controller.html", null ]
+    ] ],
     [ "AreaLightRequestBus::Handler", null, [
       [ "AZ::Render::AreaLightComponentController", "class_a_z_1_1_render_1_1_area_light_component_controller.html", null ]
     ] ],
@@ -61,6 +64,7 @@ var hierarchy =
     ] ],
     [ "AZ::ComponentBus", null, [
       [ "AZ::AtomBridge::FlyCameraInputInterface", "class_a_z_1_1_atom_bridge_1_1_fly_camera_input_interface.html", null ],
+      [ "AZ::Render::AoRequests", "class_a_z_1_1_render_1_1_ao_requests.html", null ],
       [ "AZ::Render::AreaLightNotifications", "class_a_z_1_1_render_1_1_area_light_notifications.html", null ],
       [ "AZ::Render::AreaLightRequests", "class_a_z_1_1_render_1_1_area_light_requests.html", null ],
       [ "AZ::Render::BloomRequests", "class_a_z_1_1_render_1_1_bloom_requests.html", null ],
@@ -100,7 +104,6 @@ var hierarchy =
       [ "AZ::Render::RayTracingDebugRequests", "class_a_z_1_1_render_1_1_ray_tracing_debug_requests.html", null ],
       [ "AZ::Render::RenderDebugRequests", "class_a_z_1_1_render_1_1_render_debug_requests.html", null ],
       [ "AZ::Render::SkinnedMeshOverrideRequests", "class_a_z_1_1_render_1_1_skinned_mesh_override_requests.html", null ],
-      [ "AZ::Render::SsaoRequests", "class_a_z_1_1_render_1_1_ssao_requests.html", null ],
       [ "AZ::Render::VignetteRequests", "class_a_z_1_1_render_1_1_vignette_requests.html", null ],
       [ "AZ::Render::WhiteBalanceRequests", "class_a_z_1_1_render_1_1_white_balance_requests.html", null ],
       [ "AtomImGuiTools::AtomImGuiMeshCallbacks", "class_atom_im_gui_tools_1_1_atom_im_gui_mesh_callbacks.html", null ]
@@ -134,7 +137,6 @@ var hierarchy =
       [ "AZ::Render::RenderDebugComponentConfig", "class_a_z_1_1_render_1_1_render_debug_component_config.html", null ],
       [ "AZ::Render::ShapeWeightModifierComponentConfig", "class_a_z_1_1_render_1_1_shape_weight_modifier_component_config.html", null ],
       [ "AZ::Render::SpecularReflectionsComponentConfig", "class_a_z_1_1_render_1_1_specular_reflections_component_config.html", null ],
-      [ "AZ::Render::SsaoComponentConfig", "class_a_z_1_1_render_1_1_ssao_component_config.html", null ],
       [ "AZ::Render::VignetteComponentConfig", "class_a_z_1_1_render_1_1_vignette_component_config.html", null ],
       [ "AZ::Render::WhiteBalanceComponentConfig", "class_a_z_1_1_render_1_1_white_balance_component_config.html", null ],
       [ "SurfaceData::SurfaceDataMeshConfig", "class_surface_data_1_1_surface_data_mesh_config.html", null ]
@@ -341,6 +343,7 @@ var hierarchy =
       [ "AZ::Render::ReflectionProbeComponentController", "class_a_z_1_1_render_1_1_reflection_probe_component_controller.html", null ]
     ] ],
     [ "AzFramework::Components::ComponentAdapter", null, [
+      [ "AZ::Render::AoComponent", "class_a_z_1_1_render_1_1_ao_component.html", null ],
       [ "AZ::Render::AreaLightComponent", "class_a_z_1_1_render_1_1_area_light_component.html", null ],
       [ "AZ::Render::BloomComponent", "class_a_z_1_1_render_1_1_bloom_component.html", null ],
       [ "AZ::Render::ChromaticAberrationComponent", "class_a_z_1_1_render_1_1_chromatic_aberration_component.html", null ],
@@ -372,7 +375,6 @@ var hierarchy =
       [ "AZ::Render::RenderDebugComponent", "class_a_z_1_1_render_1_1_render_debug_component.html", null ],
       [ "AZ::Render::ShapeWeightModifierComponent", "class_a_z_1_1_render_1_1_shape_weight_modifier_component.html", null ],
       [ "AZ::Render::SpecularReflectionsComponent", "class_a_z_1_1_render_1_1_specular_reflections_component.html", null ],
-      [ "AZ::Render::SsaoComponent", "class_a_z_1_1_render_1_1_ssao_component.html", null ],
       [ "AZ::Render::VignetteComponent", "class_a_z_1_1_render_1_1_vignette_component.html", null ],
       [ "AZ::Render::WhiteBalanceComponent", "class_a_z_1_1_render_1_1_white_balance_component.html", null ]
     ] ],
@@ -436,9 +438,6 @@ var hierarchy =
       [ "AZ::Render::EditorCommonFeaturesSystemComponent", "class_a_z_1_1_render_1_1_editor_common_features_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::Components:: EditorComponentAdapter", null, [
-      [ "AZ::Render::RayTracingDebugEditorComponent", "class_a_z_1_1_render_1_1_ray_tracing_debug_editor_component.html", null ]
-    ] ],
-    [ "AzToolsFramework::Components:: EditorComponentAdapter", null, [
       [ "AZ::Render::EditorChromaticAberrationComponent", "class_a_z_1_1_render_1_1_editor_chromatic_aberration_component.html", null ],
       [ "AZ::Render::EditorFilmGrainComponent", "class_a_z_1_1_render_1_1_editor_film_grain_component.html", null ],
       [ "AZ::Render::EditorHDRColorGradingComponent", "class_a_z_1_1_render_1_1_editor_h_d_r_color_grading_component.html", null ],
@@ -447,7 +446,11 @@ var hierarchy =
       [ "AZ::Render::EditorVignetteComponent", "class_a_z_1_1_render_1_1_editor_vignette_component.html", null ],
       [ "AZ::Render::EditorWhiteBalanceComponent", "class_a_z_1_1_render_1_1_editor_white_balance_component.html", null ]
     ] ],
+    [ "AzToolsFramework::Components:: EditorComponentAdapter", null, [
+      [ "AZ::Render::RayTracingDebugEditorComponent", "class_a_z_1_1_render_1_1_ray_tracing_debug_editor_component.html", null ]
+    ] ],
     [ "AzToolsFramework::Components::EditorComponentAdapter", null, [
+      [ "AZ::Render::EditorAoComponent", "class_a_z_1_1_render_1_1_editor_ao_component.html", null ],
       [ "AZ::Render::EditorBloomComponent", "class_a_z_1_1_render_1_1_editor_bloom_component.html", null ],
       [ "AZ::Render::EditorDeferredFogComponent", "class_a_z_1_1_render_1_1_editor_deferred_fog_component.html", null ],
       [ "AZ::Render::EditorDepthOfFieldComponent", "class_a_z_1_1_render_1_1_editor_depth_of_field_component.html", null ],
@@ -460,7 +463,6 @@ var hierarchy =
       [ "AZ::Render::EditorRadiusWeightModifierComponent", "class_a_z_1_1_render_1_1_editor_radius_weight_modifier_component.html", null ],
       [ "AZ::Render::EditorShapeWeightModifierComponent", "class_a_z_1_1_render_1_1_editor_shape_weight_modifier_component.html", null ],
       [ "AZ::Render::EditorSpecularReflectionsComponent", "class_a_z_1_1_render_1_1_editor_specular_reflections_component.html", null ],
-      [ "AZ::Render::EditorSsaoComponent", "class_a_z_1_1_render_1_1_editor_ssao_component.html", null ],
       [ "AZ::Render::RenderDebugEditorComponent", "class_a_z_1_1_render_1_1_render_debug_editor_component.html", null ]
     ] ],
     [ "AzToolsFramework::Components::EditorComponentBase", null, [
@@ -528,6 +530,7 @@ var hierarchy =
       [ "AZ::AtomBridge::AssetCollectionAsyncLoaderTestInterface", "class_a_z_1_1_atom_bridge_1_1_asset_collection_async_loader_test_interface.html", null ]
     ] ],
     [ "ComponentConfig", null, [
+      [ "AZ::Render::AoComponentConfig", "class_a_z_1_1_render_1_1_ao_component_config.html", null ],
       [ "AZ::Render::AreaLightComponentConfig", "struct_a_z_1_1_render_1_1_area_light_component_config.html", null ],
       [ "AZ::Render::BloomComponentConfig", "class_a_z_1_1_render_1_1_bloom_component_config.html", null ],
       [ "AZ::Render::ChromaticAberrationComponentConfig", "class_a_z_1_1_render_1_1_chromatic_aberration_component_config.html", null ]
@@ -745,9 +748,6 @@ var hierarchy =
     ] ],
     [ "SkyBoxFogRequestBus::Handler", null, [
       [ "AZ::Render::PhysicalSkyComponentController", "class_a_z_1_1_render_1_1_physical_sky_component_controller.html", null ]
-    ] ],
-    [ "SsaoRequestBus::Handler", null, [
-      [ "AZ::Render::SsaoComponentController", "class_a_z_1_1_render_1_1_ssao_component_controller.html", null ]
     ] ],
     [ "SurfaceDataProviderRequestBus::Handler", null, [
       [ "SurfaceData::SurfaceDataMeshComponent", "class_surface_data_1_1_surface_data_mesh_component.html", null ]

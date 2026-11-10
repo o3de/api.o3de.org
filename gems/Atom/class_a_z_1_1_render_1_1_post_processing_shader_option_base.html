@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine Atom Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,14 +64,18 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_render_1_1_post_processi
 
 <p><code>#include &lt;PostProcessingShaderOptionBase.h&gt;</code></p>
 
-<p>Inherited by <a class="el" href="class_a_z_1_1_render_1_1_depth_of_field_bokeh_blur_pass.html">AZ::Render::DepthOfFieldBokehBlurPass</a>, <a class="el" href="class_a_z_1_1_render_1_1_depth_of_field_composite_pass.html">AZ::Render::DepthOfFieldCompositePass</a>, <a class="el" href="class_a_z_1_1_render_1_1_look_modification_composite_pass.html">AZ::Render::LookModificationCompositePass</a>, and <a class="el" href="class_a_z_1_1_render_1_1_output_transform_pass.html">AZ::Render::OutputTransformPass</a>.</p>
+<p>Inherited by <a class="el" href="class_a_z_1_1_render_1_1_depth_of_field_bokeh_blur_pass.html">AZ::Render::DepthOfFieldBokehBlurPass</a>, <a class="el" href="class_a_z_1_1_render_1_1_depth_of_field_composite_pass.html">AZ::Render::DepthOfFieldCompositePass</a>, <a class="el" href="class_a_z_1_1_render_1_1_gtao_compute_pass.html">AZ::Render::GtaoComputePass</a>, <a class="el" href="class_a_z_1_1_render_1_1_look_modification_composite_pass.html">AZ::Render::LookModificationCompositePass</a>, <a class="el" href="class_a_z_1_1_render_1_1_motion_blur_pass.html">AZ::Render::MotionBlurPass</a>, and <a class="el" href="class_a_z_1_1_render_1_1_output_transform_pass.html">AZ::Render::OutputTransformPass</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0c18df1fb4bcce80d41c1cca59a209fd" id="r_a0c18df1fb4bcce80d41c1cca59a209fd"><td class="memItemLeft" align="right" valign="top"><a id="a0c18df1fb4bcce80d41c1cca59a209fd" name="a0c18df1fb4bcce80d41c1cca59a209fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PreloadShaderVariant</b> (const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">AZ::RPI::Shader</a> &gt; &amp;shader, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html">RPI::ShaderOptionGroup</a> &amp;shaderOption, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_render_attachment_configuration.html">RHI::RenderAttachmentConfiguration</a> &amp;renderAttachmentConfiguration, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_multisample_state.html">RHI::MultisampleState</a> &amp;multisampleState)</td></tr>
-<tr class="memdesc:a0c18df1fb4bcce80d41c1cca59a209fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the PSO for ShaderOption and save it as a cache. <br /></td></tr>
-<tr class="separator:a0c18df1fb4bcce80d41c1cca59a209fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c2a03629b3025d597f840395b27fdd" id="r_a47c2a03629b3025d597f840395b27fdd"><td class="memItemLeft" align="right" valign="top"><a id="a47c2a03629b3025d597f840395b27fdd" name="a47c2a03629b3025d597f840395b27fdd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PreloadShaderVariantForDraw</b> (const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">AZ::RPI::Shader</a> &gt; &amp;shader, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html">RPI::ShaderOptionGroup</a> &amp;shaderOption, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_render_attachment_configuration.html">RHI::RenderAttachmentConfiguration</a> &amp;renderAttachmentConfiguration, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_multisample_state.html">RHI::MultisampleState</a> &amp;multisampleState)</td></tr>
+<tr class="memdesc:a47c2a03629b3025d597f840395b27fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the PSO for ShaderOption and save it as a cache. Use this for raster passes. <br /></td></tr>
+<tr class="separator:a47c2a03629b3025d597f840395b27fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb81b8ecd5021af7507bfd9608ccef5" id="r_a1cb81b8ecd5021af7507bfd9608ccef5"><td class="memItemLeft" align="right" valign="top"><a id="a1cb81b8ecd5021af7507bfd9608ccef5" name="a1cb81b8ecd5021af7507bfd9608ccef5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PreloadShaderVariantForDispatch</b> (const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">AZ::RPI::Shader</a> &gt; &amp;shader, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html">RPI::ShaderOptionGroup</a> &amp;shaderOption)</td></tr>
+<tr class="memdesc:a1cb81b8ecd5021af7507bfd9608ccef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the PSO for ShaderOption and save it as a cache. Use this for compute passes. <br /></td></tr>
+<tr class="separator:a1cb81b8ecd5021af7507bfd9608ccef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab928314b9e234a6a10608a0659065725" id="r_ab928314b9e234a6a10608a0659065725"><td class="memItemLeft" align="right" valign="top"><a id="ab928314b9e234a6a10608a0659065725" name="ab928314b9e234a6a10608a0659065725"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateShaderVariant</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group.html">AZ::RPI::ShaderOptionGroup</a> &amp;shaderOption)</td></tr>
 <tr class="memdesc:ab928314b9e234a6a10608a0659065725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update shaderVariant. Used when the shader is switched. <br /></td></tr>
@@ -96,7 +100,7 @@ const <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state.html">AZ::RHI::
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_post_processing_shader_option_base.html">PostProcessingShaderOptionBase</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:35 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:38 for Open 3D Engine Atom Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2 Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -85,6 +85,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7e8320c8d3d9027908b85499d41e4fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bfebbb35ea32c6f7e445ce1b5d337a9" id="r_a7bfebbb35ea32c6f7e445ce1b5d337a9"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a7bfebbb35ea32c6f7e445ce1b5d337a9">GetGlobalFrameID</a> () const =0</td></tr>
 <tr class="separator:a7bfebbb35ea32c6f7e445ce1b5d337a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277d2fda9b00d24d17deab85a201b8e8" id="r_a277d2fda9b00d24d17deab85a201b8e8"><td class="memItemLeft" align="right" valign="top">virtual AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html#a277d2fda9b00d24d17deab85a201b8e8">GetFrameTransform</a> () const =0</td></tr>
+<tr class="separator:a277d2fda9b00d24d17deab85a201b8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -119,6 +121,32 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 <p>Get the frame name without namespace </p><dl class="section return"><dt>Returns</dt><dd>The frame name without namespace prefix </dd></dl>
+
+</div>
+</div>
+<a id="a277d2fda9b00d24d17deab85a201b8e8" name="a277d2fda9b00d24d17deab85a201b8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277d2fda9b00d24d17deab85a201b8e8">&#9670;&#160;</a></span>GetFrameTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Transform ROS2::ROS2FrameComponentRequests::GetFrameTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the transform relative to the nearest ancestor entity with a ROS2Frame component. </p><dl class="section return"><dt>Returns</dt><dd>If a parent ROS2Frame exists, the transform from that parent frame to this entity. Otherwise, the world transform. </dd></dl>
 
 </div>
 </div>
@@ -262,7 +290,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_r_o_s2_frame_component_requests.html">ROS2FrameComponentRequests</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:51 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

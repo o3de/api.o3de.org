@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,7 +62,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1counted__iterator.htm
 
 <p><code>#include &lt;counted_iterator.h&gt;</code></p>
 
-<p>Inherits AZStd::Internal::counted_iterator_value_type&lt; I, class &gt;, AZStd::Internal::counted_iterator_iter_concept&lt; I, class &gt;, AZStd::Internal::counted_iterator_iter_category&lt; I, class &gt;, and enable_if_t&lt; input_or_output_iterator&lt; I &gt;, Internal::counted_iterator_requirements_fulfilled &gt;.</p>
+<p>Inherits AZStd::Internal::counted_iterator_value_type&lt; I &gt;, AZStd::Internal::counted_iterator_iter_concept&lt; I &gt;, AZStd::Internal::counted_iterator_iter_category&lt; I &gt;, and AZStd::Internal::counted_iterator_requirements_fulfilled.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -85,14 +85,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab757ed97dc71bd1cd9c278d1562b9a49" id="r_ab757ed97dc71bd1cd9c278d1562b9a49"><td class="memItemLeft" align="right" valign="top"><a id="ab757ed97dc71bd1cd9c278d1562b9a49" name="ab757ed97dc71bd1cd9c278d1562b9a49"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>counted_iterator</b> (I i, iter_difference_t&lt; I &gt; length)</td></tr>
 <tr class="separator:ab757ed97dc71bd1cd9c278d1562b9a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2649f5f53fafb793a510f959f03abb9a" id="r_a2649f5f53fafb793a510f959f03abb9a"><td class="memTemplParams" colspan="2"><a id="a2649f5f53fafb793a510f959f03abb9a" name="a2649f5f53fafb793a510f959f03abb9a"></a>
-template&lt;class I2 , class  = enable_if_t&lt;convertible_to&lt;const I2&amp;, I&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a2649f5f53fafb793a510f959f03abb9a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>counted_iterator</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;other)</td></tr>
-<tr class="separator:a2649f5f53fafb793a510f959f03abb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa654829962f770e0473c4f8dde48981e" id="r_aa654829962f770e0473c4f8dde48981e"><td class="memTemplParams" colspan="2"><a id="aa654829962f770e0473c4f8dde48981e" name="aa654829962f770e0473c4f8dde48981e"></a>
-template&lt;class I2 , class  = enable_if_t&lt;assignable_from&lt;I&amp;, const I2&amp;&gt;&gt;&gt; </td></tr>
-<tr class="memitem:aa654829962f770e0473c4f8dde48981e"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;other)</td></tr>
-<tr class="separator:aa654829962f770e0473c4f8dde48981e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974385cb8ab6d5c8cf2b794615a7d854" id="r_a974385cb8ab6d5c8cf2b794615a7d854"><td class="memTemplParams" colspan="2"><a id="a974385cb8ab6d5c8cf2b794615a7d854" name="a974385cb8ab6d5c8cf2b794615a7d854"></a>
+template&lt;class I2 &gt; <br />
+requires convertible_to&lt;const I2&amp;, I&gt;</td></tr>
+<tr class="memitem:a974385cb8ab6d5c8cf2b794615a7d854"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>counted_iterator</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;other)</td></tr>
+<tr class="separator:a974385cb8ab6d5c8cf2b794615a7d854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4d4d812d0023794c93bc4b026e2f95" id="r_a3a4d4d812d0023794c93bc4b026e2f95"><td class="memTemplParams" colspan="2"><a id="a3a4d4d812d0023794c93bc4b026e2f95" name="a3a4d4d812d0023794c93bc4b026e2f95"></a>
+template&lt;class I2 &gt; <br />
+requires assignable_from&lt;I&amp;, const I2&amp;&gt;</td></tr>
+<tr class="memitem:a3a4d4d812d0023794c93bc4b026e2f95"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;other)</td></tr>
+<tr class="separator:a3a4d4d812d0023794c93bc4b026e2f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e19f50c16c03e41a30f7515f79b37a" id="r_a55e19f50c16c03e41a30f7515f79b37a"><td class="memItemLeft" align="right" valign="top"><a id="a55e19f50c16c03e41a30f7515f79b37a" name="a55e19f50c16c03e41a30f7515f79b37a"></a>
 constexpr const I &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> () const &amp;noexcept</td></tr>
 <tr class="separator:a55e19f50c16c03e41a30f7515f79b37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,111 +107,109 @@ constexpr iter_difference_t&lt; I &gt;&#160;</td><td class="memItemRight" valign
 <tr class="memitem:a4c204e562e6db462ba0e8d0cdedd5169" id="r_a4c204e562e6db462ba0e8d0cdedd5169"><td class="memItemLeft" align="right" valign="top"><a id="a4c204e562e6db462ba0e8d0cdedd5169" name="a4c204e562e6db462ba0e8d0cdedd5169"></a>
 constexpr decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
 <tr class="separator:a4c204e562e6db462ba0e8d0cdedd5169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11525dea649d1452d7d06ebba2020f36" id="r_a11525dea649d1452d7d06ebba2020f36"><td class="memTemplParams" colspan="2"><a id="a11525dea649d1452d7d06ebba2020f36" name="a11525dea649d1452d7d06ebba2020f36"></a>
-template&lt;bool Enable = Internal::dereferenceable&lt;const I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a11525dea649d1452d7d06ebba2020f36"><td class="memTemplItemLeft" align="right" valign="top">constexpr decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
-<tr class="separator:a11525dea649d1452d7d06ebba2020f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3e476762b4aa79bcb75d6719e40b81" id="r_aaa3e476762b4aa79bcb75d6719e40b81"><td class="memTemplParams" colspan="2"><a id="aaa3e476762b4aa79bcb75d6719e40b81" name="aaa3e476762b4aa79bcb75d6719e40b81"></a>
-template&lt;bool Enable = contiguous_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:aaa3e476762b4aa79bcb75d6719e40b81"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-&gt;</b> () const noexcept</td></tr>
-<tr class="separator:aaa3e476762b4aa79bcb75d6719e40b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ab1f4d34e90113d996e6c46a910311" id="r_a31ab1f4d34e90113d996e6c46a910311"><td class="memTemplParams" colspan="2"><a id="a31ab1f4d34e90113d996e6c46a910311" name="a31ab1f4d34e90113d996e6c46a910311"></a>
-template&lt;bool Enable = random_access_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a31ab1f4d34e90113d996e6c46a910311"><td class="memTemplItemLeft" align="right" valign="top">constexpr decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator[]</b> (iter_difference_t&lt; I &gt; n) const noexcept</td></tr>
-<tr class="separator:a31ab1f4d34e90113d996e6c46a910311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9366811883a075f3b20c7421cf55dc81" id="r_a9366811883a075f3b20c7421cf55dc81"><td class="memItemLeft" align="right" valign="top"><a id="a9366811883a075f3b20c7421cf55dc81" name="a9366811883a075f3b20c7421cf55dc81"></a>
+constexpr decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:a9366811883a075f3b20c7421cf55dc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c87d1d9c868aece2c05966ed4711628" id="r_a3c87d1d9c868aece2c05966ed4711628"><td class="memItemLeft" align="right" valign="top"><a id="a3c87d1d9c868aece2c05966ed4711628" name="a3c87d1d9c868aece2c05966ed4711628"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const noexcept</td></tr>
+<tr class="separator:a3c87d1d9c868aece2c05966ed4711628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8837df3121bfc1cc9dac8209f252e1" id="r_abc8837df3121bfc1cc9dac8209f252e1"><td class="memItemLeft" align="right" valign="top"><a id="abc8837df3121bfc1cc9dac8209f252e1" name="abc8837df3121bfc1cc9dac8209f252e1"></a>
+constexpr decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (iter_difference_t&lt; I &gt; n) const noexcept</td></tr>
+<tr class="separator:abc8837df3121bfc1cc9dac8209f252e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec66c180742548a41e099053fe0624d" id="r_a9ec66c180742548a41e099053fe0624d"><td class="memItemLeft" align="right" valign="top"><a id="a9ec66c180742548a41e099053fe0624d" name="a9ec66c180742548a41e099053fe0624d"></a>
 constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
 <tr class="separator:a9ec66c180742548a41e099053fe0624d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ed937f097504acb7f64fc48c4fb3fb" id="r_aa0ed937f097504acb7f64fc48c4fb3fb"><td class="memItemLeft" align="right" valign="top"><a id="aa0ed937f097504acb7f64fc48c4fb3fb" name="aa0ed937f097504acb7f64fc48c4fb3fb"></a>
 constexpr decltype(auto)&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
 <tr class="separator:aa0ed937f097504acb7f64fc48c4fb3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ec0bc4c1522c1dc82d133b714c07854" id="r_a6ec0bc4c1522c1dc82d133b714c07854"><td class="memTemplParams" colspan="2"><a id="a6ec0bc4c1522c1dc82d133b714c07854" name="a6ec0bc4c1522c1dc82d133b714c07854"></a>
-template&lt;bool Enable = bidirectional_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a6ec0bc4c1522c1dc82d133b714c07854"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
-<tr class="separator:a6ec0bc4c1522c1dc82d133b714c07854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac742ef2456ba370768a0db8329f37052" id="r_ac742ef2456ba370768a0db8329f37052"><td class="memTemplParams" colspan="2"><a id="ac742ef2456ba370768a0db8329f37052" name="ac742ef2456ba370768a0db8329f37052"></a>
-template&lt;bool Enable = bidirectional_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:ac742ef2456ba370768a0db8329f37052"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator--</b> (int)</td></tr>
-<tr class="separator:ac742ef2456ba370768a0db8329f37052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f64f021998fc836a01bd77b0088f04" id="r_aa4f64f021998fc836a01bd77b0088f04"><td class="memTemplParams" colspan="2"><a id="aa4f64f021998fc836a01bd77b0088f04" name="aa4f64f021998fc836a01bd77b0088f04"></a>
-template&lt;bool Enable = random_access_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:aa4f64f021998fc836a01bd77b0088f04"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+</b> (iter_difference_t&lt; I &gt; n)</td></tr>
-<tr class="separator:aa4f64f021998fc836a01bd77b0088f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a42ec5119f19b86615f194389a90b8" id="r_ac2a42ec5119f19b86615f194389a90b8"><td class="memTemplParams" colspan="2"><a id="ac2a42ec5119f19b86615f194389a90b8" name="ac2a42ec5119f19b86615f194389a90b8"></a>
-template&lt;bool Enable = random_access_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:ac2a42ec5119f19b86615f194389a90b8"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (iter_difference_t&lt; I &gt; n)</td></tr>
-<tr class="separator:ac2a42ec5119f19b86615f194389a90b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a595929ea6c1e9082428be315f5e8a6d7" id="r_a595929ea6c1e9082428be315f5e8a6d7"><td class="memTemplParams" colspan="2"><a id="a595929ea6c1e9082428be315f5e8a6d7" name="a595929ea6c1e9082428be315f5e8a6d7"></a>
-template&lt;bool Enable = random_access_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a595929ea6c1e9082428be315f5e8a6d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-</b> (iter_difference_t&lt; I &gt; n)</td></tr>
-<tr class="separator:a595929ea6c1e9082428be315f5e8a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd9d9859df58e901c55d03f202e3772" id="r_adcd9d9859df58e901c55d03f202e3772"><td class="memTemplParams" colspan="2"><a id="adcd9d9859df58e901c55d03f202e3772" name="adcd9d9859df58e901c55d03f202e3772"></a>
-template&lt;bool Enable = random_access_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:adcd9d9859df58e901c55d03f202e3772"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (iter_difference_t&lt; I &gt; n)</td></tr>
-<tr class="separator:adcd9d9859df58e901c55d03f202e3772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8673ed204e45945e4ebb62ad0e3161" id="r_acf8673ed204e45945e4ebb62ad0e3161"><td class="memItemLeft" align="right" valign="top"><a id="acf8673ed204e45945e4ebb62ad0e3161" name="acf8673ed204e45945e4ebb62ad0e3161"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="separator:acf8673ed204e45945e4ebb62ad0e3161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861217541e870fb741b32a5184e5bc03" id="r_a861217541e870fb741b32a5184e5bc03"><td class="memItemLeft" align="right" valign="top"><a id="a861217541e870fb741b32a5184e5bc03" name="a861217541e870fb741b32a5184e5bc03"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (int)</td></tr>
+<tr class="separator:a861217541e870fb741b32a5184e5bc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae98c5b27fb2dac3fd3918e144764e21" id="r_aae98c5b27fb2dac3fd3918e144764e21"><td class="memItemLeft" align="right" valign="top"><a id="aae98c5b27fb2dac3fd3918e144764e21" name="aae98c5b27fb2dac3fd3918e144764e21"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (iter_difference_t&lt; I &gt; n)</td></tr>
+<tr class="separator:aae98c5b27fb2dac3fd3918e144764e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69798c839bcbde80f003f245cec19db" id="r_ab69798c839bcbde80f003f245cec19db"><td class="memItemLeft" align="right" valign="top"><a id="ab69798c839bcbde80f003f245cec19db" name="ab69798c839bcbde80f003f245cec19db"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (iter_difference_t&lt; I &gt; n)</td></tr>
+<tr class="separator:ab69798c839bcbde80f003f245cec19db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b3d4b44974f4cfc9fae6679ab7fee8" id="r_a35b3d4b44974f4cfc9fae6679ab7fee8"><td class="memItemLeft" align="right" valign="top"><a id="a35b3d4b44974f4cfc9fae6679ab7fee8" name="a35b3d4b44974f4cfc9fae6679ab7fee8"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (iter_difference_t&lt; I &gt; n)</td></tr>
+<tr class="separator:a35b3d4b44974f4cfc9fae6679ab7fee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844cbef61402de362bcc07e048242899" id="r_a844cbef61402de362bcc07e048242899"><td class="memItemLeft" align="right" valign="top"><a id="a844cbef61402de362bcc07e048242899" name="a844cbef61402de362bcc07e048242899"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (iter_difference_t&lt; I &gt; n)</td></tr>
+<tr class="separator:a844cbef61402de362bcc07e048242899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a627d7caa2914607129a5ceb1f674edf7" id="r_a627d7caa2914607129a5ceb1f674edf7"><td class="memTemplParams" colspan="2"><a id="a627d7caa2914607129a5ceb1f674edf7" name="a627d7caa2914607129a5ceb1f674edf7"></a>
-template&lt;bool Enable = random_access_iterator&lt;I&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
-<tr class="memitem:a627d7caa2914607129a5ceb1f674edf7"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+</b> (iter_difference_t&lt; I &gt; n, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x)</td></tr>
-<tr class="separator:a627d7caa2914607129a5ceb1f674edf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f0fedcc8114c223348ab1132f7b9fc" id="r_af3f0fedcc8114c223348ab1132f7b9fc"><td class="memTemplParams" colspan="2"><a id="af3f0fedcc8114c223348ab1132f7b9fc" name="af3f0fedcc8114c223348ab1132f7b9fc"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:af3f0fedcc8114c223348ab1132f7b9fc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, iter_difference_t&lt; I2 &gt; &gt;</td></tr>
-<tr class="separator:af3f0fedcc8114c223348ab1132f7b9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616305c21555ddeb14a2bc20440e4c81" id="r_a616305c21555ddeb14a2bc20440e4c81"><td class="memItemLeft" align="right" valign="top"><a id="a616305c21555ddeb14a2bc20440e4c81" name="a616305c21555ddeb14a2bc20440e4c81"></a>
+constexpr <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (iter_difference_t&lt; I &gt; n, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x)</td></tr>
+<tr class="separator:a616305c21555ddeb14a2bc20440e4c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b09308fe2d01da616ec03e2135615ae" id="r_a9b09308fe2d01da616ec03e2135615ae"><td class="memTemplParams" colspan="2"><a id="a9b09308fe2d01da616ec03e2135615ae" name="a9b09308fe2d01da616ec03e2135615ae"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:a9b09308fe2d01da616ec03e2135615ae"><td class="memTemplItemLeft" align="right" valign="top">constexpr iter_difference_t&lt; I2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:a9b09308fe2d01da616ec03e2135615ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35c04314a9c8f5e55f615cb97603306b" id="r_a35c04314a9c8f5e55f615cb97603306b"><td class="memItemLeft" align="right" valign="top"><a id="a35c04314a9c8f5e55f615cb97603306b" name="a35c04314a9c8f5e55f615cb97603306b"></a>
-constexpr iter_difference_t&lt; I &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, <a class="el" href="struct_a_z_std_1_1default__sentinel__t.html">default_sentinel_t</a>)</td></tr>
+constexpr iter_difference_t&lt; I &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, default_sentinel_t)</td></tr>
 <tr class="separator:a35c04314a9c8f5e55f615cb97603306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f502c31b3ca0c8771ff2d31d9df1a70" id="r_a0f502c31b3ca0c8771ff2d31d9df1a70"><td class="memItemLeft" align="right" valign="top"><a id="a0f502c31b3ca0c8771ff2d31d9df1a70" name="a0f502c31b3ca0c8771ff2d31d9df1a70"></a>
-constexpr iter_difference_t&lt; I &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="struct_a_z_std_1_1default__sentinel__t.html">default_sentinel_t</a>, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;y)</td></tr>
+constexpr iter_difference_t&lt; I &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (default_sentinel_t, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;y)</td></tr>
 <tr class="separator:a0f502c31b3ca0c8771ff2d31d9df1a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6543a70630611985e7c632443ce18ab4" id="r_a6543a70630611985e7c632443ce18ab4"><td class="memTemplParams" colspan="2"><a id="a6543a70630611985e7c632443ce18ab4" name="a6543a70630611985e7c632443ce18ab4"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:a6543a70630611985e7c632443ce18ab4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, bool &gt;</td></tr>
-<tr class="separator:a6543a70630611985e7c632443ce18ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeb94b2d80b02eaad107a4e5024f6b1a" id="r_afeb94b2d80b02eaad107a4e5024f6b1a"><td class="memTemplParams" colspan="2"><a id="afeb94b2d80b02eaad107a4e5024f6b1a" name="afeb94b2d80b02eaad107a4e5024f6b1a"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:afeb94b2d80b02eaad107a4e5024f6b1a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, bool &gt;</td></tr>
-<tr class="separator:afeb94b2d80b02eaad107a4e5024f6b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2497c80d635a7dfbdee19bba7e2ba424" id="r_a2497c80d635a7dfbdee19bba7e2ba424"><td class="memTemplParams" colspan="2"><a id="a2497c80d635a7dfbdee19bba7e2ba424" name="a2497c80d635a7dfbdee19bba7e2ba424"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:a2497c80d635a7dfbdee19bba7e2ba424"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:a2497c80d635a7dfbdee19bba7e2ba424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0385dbe63cba1e7b1b4e5efbc189f2cb" id="r_a0385dbe63cba1e7b1b4e5efbc189f2cb"><td class="memTemplParams" colspan="2"><a id="a0385dbe63cba1e7b1b4e5efbc189f2cb" name="a0385dbe63cba1e7b1b4e5efbc189f2cb"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:a0385dbe63cba1e7b1b4e5efbc189f2cb"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:a0385dbe63cba1e7b1b4e5efbc189f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66444fd60c1c12147a98a9cc8029eb1e" id="r_a66444fd60c1c12147a98a9cc8029eb1e"><td class="memItemLeft" align="right" valign="top"><a id="a66444fd60c1c12147a98a9cc8029eb1e" name="a66444fd60c1c12147a98a9cc8029eb1e"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, <a class="el" href="struct_a_z_std_1_1default__sentinel__t.html">default_sentinel_t</a>)</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, default_sentinel_t)</td></tr>
 <tr class="separator:a66444fd60c1c12147a98a9cc8029eb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f500bb586210b2c7e5b72894fa70a9f" id="r_a9f500bb586210b2c7e5b72894fa70a9f"><td class="memItemLeft" align="right" valign="top"><a id="a9f500bb586210b2c7e5b72894fa70a9f" name="a9f500bb586210b2c7e5b72894fa70a9f"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, <a class="el" href="struct_a_z_std_1_1default__sentinel__t.html">default_sentinel_t</a>)</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, default_sentinel_t)</td></tr>
 <tr class="separator:a9f500bb586210b2c7e5b72894fa70a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a5e75b50fafaf2bf7918e19a128cf3" id="r_a63a5e75b50fafaf2bf7918e19a128cf3"><td class="memItemLeft" align="right" valign="top"><a id="a63a5e75b50fafaf2bf7918e19a128cf3" name="a63a5e75b50fafaf2bf7918e19a128cf3"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="struct_a_z_std_1_1default__sentinel__t.html">default_sentinel_t</a>, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x)</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (default_sentinel_t, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x)</td></tr>
 <tr class="separator:a63a5e75b50fafaf2bf7918e19a128cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84dae20f3206d0066b00a7853cce70b4" id="r_a84dae20f3206d0066b00a7853cce70b4"><td class="memItemLeft" align="right" valign="top"><a id="a84dae20f3206d0066b00a7853cce70b4" name="a84dae20f3206d0066b00a7853cce70b4"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="struct_a_z_std_1_1default__sentinel__t.html">default_sentinel_t</a>, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x)</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (default_sentinel_t, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x)</td></tr>
 <tr class="separator:a84dae20f3206d0066b00a7853cce70b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2f69c29fdd2b1cb564dbe9857cc939" id="r_adc2f69c29fdd2b1cb564dbe9857cc939"><td class="memTemplParams" colspan="2"><a id="adc2f69c29fdd2b1cb564dbe9857cc939" name="adc2f69c29fdd2b1cb564dbe9857cc939"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:adc2f69c29fdd2b1cb564dbe9857cc939"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, bool &gt;</td></tr>
-<tr class="separator:adc2f69c29fdd2b1cb564dbe9857cc939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484715203418a0de59a03ff743a4b5d2" id="r_a484715203418a0de59a03ff743a4b5d2"><td class="memTemplParams" colspan="2"><a id="a484715203418a0de59a03ff743a4b5d2" name="a484715203418a0de59a03ff743a4b5d2"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:a484715203418a0de59a03ff743a4b5d2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, bool &gt;</td></tr>
-<tr class="separator:a484715203418a0de59a03ff743a4b5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34684b5a0ae95579afad44f7739f882a" id="r_a34684b5a0ae95579afad44f7739f882a"><td class="memTemplParams" colspan="2"><a id="a34684b5a0ae95579afad44f7739f882a" name="a34684b5a0ae95579afad44f7739f882a"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:a34684b5a0ae95579afad44f7739f882a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, bool &gt;</td></tr>
-<tr class="separator:a34684b5a0ae95579afad44f7739f882a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a017821f43e37c6e6876b1588825faade" id="r_a017821f43e37c6e6876b1588825faade"><td class="memTemplParams" colspan="2"><a id="a017821f43e37c6e6876b1588825faade" name="a017821f43e37c6e6876b1588825faade"></a>
-template&lt;class I2 &gt; </td></tr>
-<tr class="memitem:a017821f43e37c6e6876b1588825faade"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) -&gt; enable_if_t&lt; common_with&lt; I2, I &gt;, bool &gt;</td></tr>
-<tr class="separator:a017821f43e37c6e6876b1588825faade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541d47d1d4e5e1d2f4c83ae3a0a4cd3e" id="r_a541d47d1d4e5e1d2f4c83ae3a0a4cd3e"><td class="memItemLeft" align="right" valign="top"><a id="a541d47d1d4e5e1d2f4c83ae3a0a4cd3e" name="a541d47d1d4e5e1d2f4c83ae3a0a4cd3e"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>iter_move</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;i) noexcept(noexcept(ranges::iter_move(declval&lt; const I &amp; &gt;()))) -&gt; enable_if_t&lt; input_iterator&lt; I &gt;, iter_rvalue_reference_t&lt; I &gt; &gt;</td></tr>
-<tr class="separator:a541d47d1d4e5e1d2f4c83ae3a0a4cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43858dba75901403b925a434d4b9d960" id="r_a43858dba75901403b925a434d4b9d960"><td class="memTemplParams" colspan="2"><a id="a43858dba75901403b925a434d4b9d960" name="a43858dba75901403b925a434d4b9d960"></a>
-template&lt;class I2 , enable_if_t&lt; indirectly_swappable&lt; I2, I &gt; &gt; &gt; </td></tr>
-<tr class="memitem:a43858dba75901403b925a434d4b9d960"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>iter_swap</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) noexcept(noexcept(ranges::iter_swap(declval&lt; const I &amp; &gt;(), declval&lt; const I2 &amp; &gt;())))</td></tr>
-<tr class="separator:a43858dba75901403b925a434d4b9d960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb8909dbb807316ad145b10547cdbc2" id="r_a9cb8909dbb807316ad145b10547cdbc2"><td class="memTemplParams" colspan="2"><a id="a9cb8909dbb807316ad145b10547cdbc2" name="a9cb8909dbb807316ad145b10547cdbc2"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:a9cb8909dbb807316ad145b10547cdbc2"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:a9cb8909dbb807316ad145b10547cdbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0910bef086da59661777f3e10e30c7e" id="r_ac0910bef086da59661777f3e10e30c7e"><td class="memTemplParams" colspan="2"><a id="ac0910bef086da59661777f3e10e30c7e" name="ac0910bef086da59661777f3e10e30c7e"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:ac0910bef086da59661777f3e10e30c7e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:ac0910bef086da59661777f3e10e30c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7452edeebfe9fba815aa5ceb9cb91c89" id="r_a7452edeebfe9fba815aa5ceb9cb91c89"><td class="memTemplParams" colspan="2"><a id="a7452edeebfe9fba815aa5ceb9cb91c89" name="a7452edeebfe9fba815aa5ceb9cb91c89"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:a7452edeebfe9fba815aa5ceb9cb91c89"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:a7452edeebfe9fba815aa5ceb9cb91c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd3db4a2ecef11de15e899a525a3418" id="r_abcd3db4a2ecef11de15e899a525a3418"><td class="memTemplParams" colspan="2"><a id="abcd3db4a2ecef11de15e899a525a3418" name="abcd3db4a2ecef11de15e899a525a3418"></a>
+template&lt;class I2 &gt; <br />
+requires common_with&lt;I2, I&gt;</td></tr>
+<tr class="memitem:abcd3db4a2ecef11de15e899a525a3418"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y)</td></tr>
+<tr class="separator:abcd3db4a2ecef11de15e899a525a3418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583821cffa5c665c72354a33bcd21655" id="r_a583821cffa5c665c72354a33bcd21655"><td class="memItemLeft" align="right" valign="top"><a id="a583821cffa5c665c72354a33bcd21655" name="a583821cffa5c665c72354a33bcd21655"></a>
+constexpr iter_rvalue_reference_t&lt; I &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iter_move</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;i) noexcept(noexcept(ranges::iter_move(declval&lt; const I &amp; &gt;())))</td></tr>
+<tr class="separator:a583821cffa5c665c72354a33bcd21655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2b4ad0a54cfaf2fe92b469043d1b07" id="r_a9b2b4ad0a54cfaf2fe92b469043d1b07"><td class="memTemplParams" colspan="2"><a id="a9b2b4ad0a54cfaf2fe92b469043d1b07" name="a9b2b4ad0a54cfaf2fe92b469043d1b07"></a>
+template&lt;class I2 &gt; <br />
+requires indirectly_swappable&lt;I2, I&gt;</td></tr>
+<tr class="memitem:a9b2b4ad0a54cfaf2fe92b469043d1b07"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>iter_swap</b> (const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> &amp;x, const <a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a>&lt; I2 &gt; &amp;y) noexcept(noexcept(ranges::iter_swap(declval&lt; const I &amp; &gt;(), declval&lt; const I2 &amp; &gt;())))</td></tr>
+<tr class="separator:a9b2b4ad0a54cfaf2fe92b469043d1b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class I&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;input_or_output_iterator I&gt;<br />
 class AZStd::counted_iterator&lt; I &gt;</div><p><a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a> is an iterator adapter that behaves the same as the underlying iterator except its keeps track of the distance to the end of the range </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/iterator/<b>counted_iterator.h</b></li>
@@ -220,7 +220,7 @@ class AZStd::counted_iterator&lt; I &gt;</div><p><a class="el" href="class_a_z_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1counted__iterator.html">counted_iterator</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:21 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:15 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,15 +1,19 @@
 var hierarchy =
 [
     [ "AZ::BehaviorEBusHandler", null, [
+      [ "RecastNavigation::DetourCrowdAgentNotificationHandler", "class_recast_navigation_1_1_detour_crowd_agent_notification_handler.html", null ],
       [ "RecastNavigation::RecastNavigationNotificationHandler", "class_recast_navigation_1_1_recast_navigation_notification_handler.html", null ]
     ] ],
     [ "AZ::Component", null, [
+      [ "RecastNavigation::DetourCrowdNavigationComponent", "class_recast_navigation_1_1_detour_crowd_navigation_component.html", null ],
       [ "RecastNavigation::DetourNavigationComponent", "class_recast_navigation_1_1_detour_navigation_component.html", null ],
       [ "RecastNavigation::RecastNavigationSystemComponent", "class_recast_navigation_1_1_recast_navigation_system_component.html", [
         [ "RecastNavigation::RecastNavigationEditorSystemComponent", "class_recast_navigation_1_1_recast_navigation_editor_system_component.html", null ]
       ] ]
     ] ],
     [ "AZ::ComponentBus", null, [
+      [ "RecastNavigation::DetourCrowdAgentNotifications", "class_recast_navigation_1_1_detour_crowd_agent_notifications.html", null ],
+      [ "RecastNavigation::DetourCrowdNavigationRequests", "class_recast_navigation_1_1_detour_crowd_navigation_requests.html", null ],
       [ "RecastNavigation::DetourNavigationRequests", "class_recast_navigation_1_1_detour_navigation_requests.html", null ],
       [ "RecastNavigation::RecastNavigationMeshNotifications", "class_recast_navigation_1_1_recast_navigation_mesh_notifications.html", null ],
       [ "RecastNavigation::RecastNavigationMeshRequests", "class_recast_navigation_1_1_recast_navigation_mesh_requests.html", null ],
@@ -26,6 +30,7 @@ var hierarchy =
       [ "RecastNavigation::RecastNavigationModuleInterface", "class_recast_navigation_1_1_recast_navigation_module_interface.html", null ]
     ] ],
     [ "AZ::TickBus::Handler", null, [
+      [ "RecastNavigation::DetourCrowdNavigationComponent", "class_recast_navigation_1_1_detour_crowd_navigation_component.html", null ],
       [ "RecastNavigation::RecastNavigationSystemComponent", "class_recast_navigation_1_1_recast_navigation_system_component.html", null ]
     ] ],
     [ "AzFramework::Components::ComponentAdapter", null, [
@@ -42,6 +47,12 @@ var hierarchy =
     [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
       [ "RecastNavigation::RecastNavigationEditorSystemComponent", "class_recast_navigation_1_1_recast_navigation_editor_system_component.html", null ]
     ] ],
+    [ "DetourCrowdAgentNotificationBus::Handler", null, [
+      [ "RecastNavigation::DetourCrowdAgentNotificationHandler", "class_recast_navigation_1_1_detour_crowd_agent_notification_handler.html", null ]
+    ] ],
+    [ "DetourCrowdNavigationRequestBus::Handler", null, [
+      [ "RecastNavigation::DetourCrowdNavigationComponent", "class_recast_navigation_1_1_detour_crowd_navigation_component.html", null ]
+    ] ],
     [ "DetourNavigationRequestBus::Handler", null, [
       [ "RecastNavigation::DetourNavigationComponent", "class_recast_navigation_1_1_detour_navigation_component.html", null ]
     ] ],
@@ -49,6 +60,7 @@ var hierarchy =
       [ "RecastNavigation::RecastNavigationDebugDraw", "class_recast_navigation_1_1_recast_navigation_debug_draw.html", null ]
     ] ],
     [ "RecastNavigation::CustomRecastDeleter< T >", "struct_recast_navigation_1_1_custom_recast_deleter.html", null ],
+    [ "RecastNavigation::CustomRecastDeleter< dtCrowd >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01dt_crowd_01_4.html", null ],
     [ "RecastNavigation::CustomRecastDeleter< dtNavMesh >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01dt_nav_mesh_01_4.html", null ],
     [ "RecastNavigation::CustomRecastDeleter< dtNavMeshQuery >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01dt_nav_mesh_query_01_4.html", null ],
     [ "RecastNavigation::CustomRecastDeleter< rcCompactHeightfield >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_compact_heightfield_01_4.html", null ],
@@ -56,6 +68,8 @@ var hierarchy =
     [ "RecastNavigation::CustomRecastDeleter< rcHeightfield >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_heightfield_01_4.html", null ],
     [ "RecastNavigation::CustomRecastDeleter< rcPolyMesh >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_poly_mesh_01_4.html", null ],
     [ "RecastNavigation::CustomRecastDeleter< rcPolyMeshDetail >", "struct_recast_navigation_1_1_custom_recast_deleter_3_01rc_poly_mesh_detail_01_4.html", null ],
+    [ "RecastNavigation::DetourCrowdAgentParams", "class_recast_navigation_1_1_detour_crowd_agent_params.html", null ],
+    [ "RecastNavigation::DetourObstacleAvoidanceParams", "class_recast_navigation_1_1_detour_obstacle_avoidance_params.html", null ],
     [ "RecastNavigation::NavigationTileData", "struct_recast_navigation_1_1_navigation_tile_data.html", null ],
     [ "RecastNavigation::NavMeshQuery", "class_recast_navigation_1_1_nav_mesh_query.html", null ],
     [ "RecastNavigation::NavMeshQuery::LockGuard", "class_recast_navigation_1_1_nav_mesh_query_1_1_lock_guard.html", null ],
@@ -64,6 +78,7 @@ var hierarchy =
     [ "RecastNavigation::RecastVector3", "class_recast_navigation_1_1_recast_vector3.html", null ],
     [ "RecastNavigation::TileGeometry", "class_recast_navigation_1_1_tile_geometry.html", null ],
     [ "RecastNavigationMeshNotificationBus::Handler", null, [
+      [ "RecastNavigation::DetourCrowdNavigationComponent", "class_recast_navigation_1_1_detour_crowd_navigation_component.html", null ],
       [ "RecastNavigation::RecastNavigationNotificationHandler", "class_recast_navigation_1_1_recast_navigation_notification_handler.html", null ]
     ] ],
     [ "RecastNavigationMeshRequestBus::Handler", null, [

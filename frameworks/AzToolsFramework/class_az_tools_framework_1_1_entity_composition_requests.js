@@ -15,6 +15,7 @@ var class_az_tools_framework_1_1_entity_composition_requests =
     [ "GetComponentName", "class_az_tools_framework_1_1_entity_composition_requests.html#ac46295a035025eb286b1e4b23319c43d", null ],
     [ "HasComponentsToPaste", "class_az_tools_framework_1_1_entity_composition_requests.html#a841b97b940cc3f302d127bbff6cb0437", null ],
     [ "PasteComponentsToEntity", "class_az_tools_framework_1_1_entity_composition_requests.html#a454c6553040f4f4589fab8c42bad450e", null ],
+    [ "PasteComponentsToEntityFromMimeData", "class_az_tools_framework_1_1_entity_composition_requests.html#a8801da5208d78460bb3bc2bc9b563a98", null ],
     [ "RemoveComponents", "class_az_tools_framework_1_1_entity_composition_requests.html#a5e4c44d4641632e0136c8fe150b69cad", null ],
     [ "ScrubEntities", "class_az_tools_framework_1_1_entity_composition_requests.html#afc9cbd368d5c5cec7b08a3187e9465c3", null ]
 ];

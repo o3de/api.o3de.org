@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -98,10 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa572e3a005cb71964500cdbfaee31da8" id="r_aa572e3a005cb71964500cdbfaee31da8"><td class="memItemLeft" align="right" valign="top"><a id="aa572e3a005cb71964500cdbfaee31da8" name="aa572e3a005cb71964500cdbfaee31da8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_std_1_1any.html">any</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">AZ::SystemAllocator</a>)</td></tr>
 <tr class="separator:aa572e3a005cb71964500cdbfaee31da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae0fb4e67b652bfbf5f3bd7db69ebc39" id="r_aae0fb4e67b652bfbf5f3bd7db69ebc39"><td class="memItemLeft" align="right" valign="top"><a id="aae0fb4e67b652bfbf5f3bd7db69ebc39" name="aae0fb4e67b652bfbf5f3bd7db69ebc39"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>any</b> (<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a> alloc=<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>(&quot;AZStd::any&quot;))</td></tr>
-<tr class="memdesc:aae0fb4e67b652bfbf5f3bd7db69ebc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty object. <br /></td></tr>
-<tr class="separator:aae0fb4e67b652bfbf5f3bd7db69ebc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59423b62d0d15880b8e2550759a4332f" id="r_a59423b62d0d15880b8e2550759a4332f"><td class="memItemLeft" align="right" valign="top"><a id="a59423b62d0d15880b8e2550759a4332f" name="a59423b62d0d15880b8e2550759a4332f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>any</b> (<a class="el" href="struct_a_z_std_1_1allocator.html">allocator</a> alloc=<a class="el" href="struct_a_z_std_1_1allocator.html">allocator</a>{})</td></tr>
+<tr class="memdesc:a59423b62d0d15880b8e2550759a4332f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty object. <br /></td></tr>
+<tr class="separator:a59423b62d0d15880b8e2550759a4332f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5b4fa3df646505f81f82e472fcfc66" id="r_a5a5b4fa3df646505f81f82e472fcfc66"><td class="memItemLeft" align="right" valign="top"><a id="a5a5b4fa3df646505f81f82e472fcfc66" name="a5a5b4fa3df646505f81f82e472fcfc66"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>any</b> (const <a class="el" href="class_a_z_std_1_1any.html">any</a> &amp;val)</td></tr>
 <tr class="memdesc:a5a5b4fa3df646505f81f82e472fcfc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies content of val into a new instance. <br /></td></tr>
@@ -128,11 +128,12 @@ template&lt;typename ValueType , typename U , typename... Args&gt; </td></tr>
 <tr class="memitem:a90a39834313f629231a7987242a10d67"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>any</b> (const <a class="el" href="struct_a_z_std_1_1any_1_1type__info.html">type_info</a> &amp;typeInfo, in_place_type_t&lt; ValueType &gt;, AZStd::initializer_list&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a90a39834313f629231a7987242a10d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Extension] Create an any with a custom typeinfo while forwarding the initializer_list and variadic arguments to ValueType constructor <br /></td></tr>
 <tr class="separator:a90a39834313f629231a7987242a10d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bf19a9b45470492f20b28dd2fc537c8" id="r_a9bf19a9b45470492f20b28dd2fc537c8"><td class="memTemplParams" colspan="2"><a id="a9bf19a9b45470492f20b28dd2fc537c8" name="a9bf19a9b45470492f20b28dd2fc537c8"></a>
-template&lt;typename ValueType , typename  = enable_if_t&lt;!is_same&lt;decay_t&lt;ValueType&gt;, any&gt;::value&gt;&gt; </td></tr>
-<tr class="memitem:a9bf19a9b45470492f20b28dd2fc537c8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>any</b> (ValueType &amp;&amp;val, <a class="el" href="class_a_z_std_1_1allocator.html">allocator</a> alloc=<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>(&quot;AZStd::any&quot;))</td></tr>
-<tr class="memdesc:a9bf19a9b45470492f20b28dd2fc537c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object with initial content an object of type decay_t&lt;ValueType&gt;, direct-initialized from forward&lt;ValueType&gt;(val) <br /></td></tr>
-<tr class="separator:a9bf19a9b45470492f20b28dd2fc537c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b37287cdd12e94fcbb0ca31560e1099" id="r_a8b37287cdd12e94fcbb0ca31560e1099"><td class="memTemplParams" colspan="2"><a id="a8b37287cdd12e94fcbb0ca31560e1099" name="a8b37287cdd12e94fcbb0ca31560e1099"></a>
+template&lt;typename ValueType &gt; <br />
+requires (!is_same_v&lt;decay_t&lt;ValueType&gt;, <a class="el" href="class_a_z_std_1_1any.html">any</a>&gt;)</td></tr>
+<tr class="memitem:a8b37287cdd12e94fcbb0ca31560e1099"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>any</b> (ValueType &amp;&amp;val, <a class="el" href="struct_a_z_std_1_1allocator.html">allocator</a> alloc=<a class="el" href="struct_a_z_std_1_1allocator.html">allocator</a>())</td></tr>
+<tr class="memdesc:a8b37287cdd12e94fcbb0ca31560e1099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object with initial content an object of type decay_t&lt;ValueType&gt;, direct-initialized from forward&lt;ValueType&gt;(val) <br /></td></tr>
+<tr class="separator:a8b37287cdd12e94fcbb0ca31560e1099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b530202ef9938317d8de15465f45f40" id="r_a1b530202ef9938317d8de15465f45f40"><td class="memTemplParams" colspan="2"><a id="a1b530202ef9938317d8de15465f45f40" name="a1b530202ef9938317d8de15465f45f40"></a>
 template&lt;typename ValueType , typename... Args&gt; </td></tr>
 <tr class="memitem:a1b530202ef9938317d8de15465f45f40"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>any</b> (in_place_type_t&lt; ValueType &gt;, Args &amp;&amp;... args)</td></tr>
@@ -155,11 +156,12 @@ template&lt;typename ValueType , typename U , typename... Args&gt; </td></tr>
 <a class="el" href="class_a_z_std_1_1any.html">any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1any.html">any</a> &amp;&amp;val)</td></tr>
 <tr class="memdesc:a17b14134374257e1cf7cd5f1275896c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves content of val into this (via any(move(val)).swap(*this)) <br /></td></tr>
 <tr class="separator:a17b14134374257e1cf7cd5f1275896c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b1166c9f783152bb07410fc4f77884" id="r_a55b1166c9f783152bb07410fc4f77884"><td class="memTemplParams" colspan="2"><a id="a55b1166c9f783152bb07410fc4f77884" name="a55b1166c9f783152bb07410fc4f77884"></a>
-template&lt;typename ValueType , typename  = enable_if_t&lt;!is_same&lt;decay_t&lt;ValueType&gt;, any&gt;::value&gt;&gt; </td></tr>
-<tr class="memitem:a55b1166c9f783152bb07410fc4f77884"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1any.html">any</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (ValueType &amp;&amp;val)</td></tr>
-<tr class="memdesc:a55b1166c9f783152bb07410fc4f77884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the type and value of rhs (via any(forward&lt;ValueType&gt;(val)).swap(*this)) <br /></td></tr>
-<tr class="separator:a55b1166c9f783152bb07410fc4f77884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6c3eaaf19bc7ba707399dfddf40506" id="r_a4e6c3eaaf19bc7ba707399dfddf40506"><td class="memTemplParams" colspan="2"><a id="a4e6c3eaaf19bc7ba707399dfddf40506" name="a4e6c3eaaf19bc7ba707399dfddf40506"></a>
+template&lt;typename ValueType &gt; <br />
+requires (!is_same_v&lt;decay_t&lt;ValueType&gt;, <a class="el" href="class_a_z_std_1_1any.html">any</a>&gt;)</td></tr>
+<tr class="memitem:a4e6c3eaaf19bc7ba707399dfddf40506"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1any.html">any</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (ValueType &amp;&amp;val)</td></tr>
+<tr class="memdesc:a4e6c3eaaf19bc7ba707399dfddf40506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the type and value of rhs (via any(forward&lt;ValueType&gt;(val)).swap(*this)) <br /></td></tr>
+<tr class="separator:a4e6c3eaaf19bc7ba707399dfddf40506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2104e1a522016e85ed732d2363c455f9" id="r_a2104e1a522016e85ed732d2363c455f9"><td class="memItemLeft" align="right" valign="top"><a id="a2104e1a522016e85ed732d2363c455f9" name="a2104e1a522016e85ed732d2363c455f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="memdesc:a2104e1a522016e85ed732d2363c455f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If not empty, destroys the contained object. <br /></td></tr>
@@ -211,7 +213,7 @@ template&lt;typename ValueType &gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1any.html">any</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:11 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,13 +66,13 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
 <tr class="separator:a5a9aa4f60ead3f4ba6e6094da87c8f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43baa0ccf8e392c10ed3ac179f8a9930" id="r_a43baa0ccf8e392c10ed3ac179f8a9930"><td class="memItemLeft" align="right" valign="top"><a id="a43baa0ccf8e392c10ed3ac179f8a9930" name="a43baa0ccf8e392c10ed3ac179f8a9930"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TaskExecutor</b> (<a class="el" href="class_a_z_1_1_e_bus.html">uint32_t</a> <a class="el" href="class_a_z_1_1_e_bus.html">threadCount</a>=0)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TaskExecutor</b> (uint32_t threadCount=0)</td></tr>
 <tr class="separator:a43baa0ccf8e392c10ed3ac179f8a9930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fe4737fc3c7bc5809e44f9342ce8dfc" id="r_a4fe4737fc3c7bc5809e44f9342ce8dfc"><td class="memItemLeft" align="right" valign="top"><a id="a4fe4737fc3c7bc5809e44f9342ce8dfc" name="a4fe4737fc3c7bc5809e44f9342ce8dfc"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::CompiledTaskGraph &amp;<a class="el" href="class_a_z_1_1_e_bus.html">graph</a>, <a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *<a class="el" href="class_a_z_1_1_e_bus.html">event</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::CompiledTaskGraph &amp;graph, <a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *event)</td></tr>
 <tr class="separator:a4fe4737fc3c7bc5809e44f9342ce8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1766cb7c1d30149dcc3fdb85c4d27378" id="r_a1766cb7c1d30149dcc3fdb85c4d27378"><td class="memItemLeft" align="right" valign="top"><a id="a1766cb7c1d30149dcc3fdb85c4d27378" name="a1766cb7c1d30149dcc3fdb85c4d27378"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::Task &amp;<a class="el" href="class_a_z_1_1_e_bus.html">task</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (Internal::Task &amp;task)</td></tr>
 <tr class="separator:a1766cb7c1d30149dcc3fdb85c4d27378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd555ea881bb2510b821de201b006d88" id="r_abd555ea881bb2510b821de201b006d88"><td class="memItemLeft" align="right" valign="top"><a id="abd555ea881bb2510b821de201b006d88" name="abd555ea881bb2510b821de201b006d88"></a>
 Internal::CompiledTaskGraphTracker &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventTracker</b> ()</td></tr>
@@ -81,16 +81,16 @@ Internal::CompiledTaskGraphTracker &amp;&#160;</td><td class="memItemRight" vali
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa43c337d3a9d21e17282c1441dc18b2" id="r_aaa43c337d3a9d21e17282c1441dc18b2"><td class="memItemLeft" align="right" valign="top"><a id="aaa43c337d3a9d21e17282c1441dc18b2" name="aaa43c337d3a9d21e17282c1441dc18b2"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
+static <a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
 <tr class="separator:aaa43c337d3a9d21e17282c1441dc18b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada585f9f4a7a61eb57dc41dfd6f10db7" id="r_ada585f9f4a7a61eb57dc41dfd6f10db7"><td class="memItemLeft" align="right" valign="top"><a id="ada585f9f4a7a61eb57dc41dfd6f10db7" name="ada585f9f4a7a61eb57dc41dfd6f10db7"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> *<a class="el" href="class_a_z_1_1_e_bus.html">executor</a>)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> *executor)</td></tr>
 <tr class="separator:ada585f9f4a7a61eb57dc41dfd6f10db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:abe5e473f8a0cd841597340ca829ba5f7" id="r_abe5e473f8a0cd841597340ca829ba5f7"><td class="memItemLeft" align="right" valign="top"><a id="abe5e473f8a0cd841597340ca829ba5f7" name="abe5e473f8a0cd841597340ca829ba5f7"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphEvent</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphEvent</b></td></tr>
 <tr class="separator:abe5e473f8a0cd841597340ca829ba5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -102,7 +102,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

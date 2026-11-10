@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,10 +66,11 @@ Public Member Functions</h2></td></tr>
 template&lt;size_t... Indices&gt; </td></tr>
 <tr class="memitem:a62d5f223cd13edde06af9dd82c99ccf5"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ElementHasher</b> (const AZStd::tuple&lt; Types... &gt; &amp;value, AZStd::index_sequence&lt; Indices... &gt;) const</td></tr>
 <tr class="separator:a62d5f223cd13edde06af9dd82c99ccf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a3352853d239c33fd1a3cf61a7ba6e" id="r_a27a3352853d239c33fd1a3cf61a7ba6e"><td class="memTemplParams" colspan="2"><a id="a27a3352853d239c33fd1a3cf61a7ba6e" name="a27a3352853d239c33fd1a3cf61a7ba6e"></a>
-template&lt;typename... TupleTypes, typename  = AZStd::enable_if_t&lt;hash_enabled_concept_v&lt;TupleTypes...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a27a3352853d239c33fd1a3cf61a7ba6e"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const AZStd::tuple&lt; TupleTypes... &gt; &amp;value) const</td></tr>
-<tr class="separator:a27a3352853d239c33fd1a3cf61a7ba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96cbc810ac4f3a666e63fc4bd78e63c" id="r_ac96cbc810ac4f3a666e63fc4bd78e63c"><td class="memTemplParams" colspan="2"><a id="ac96cbc810ac4f3a666e63fc4bd78e63c" name="ac96cbc810ac4f3a666e63fc4bd78e63c"></a>
+template&lt;typename... TupleTypes&gt; <br />
+requires hash_enabled_concept_v&lt;TupleTypes...&gt;</td></tr>
+<tr class="memitem:ac96cbc810ac4f3a666e63fc4bd78e63c"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const AZStd::tuple&lt; TupleTypes... &gt; &amp;value) const</td></tr>
+<tr class="separator:ac96cbc810ac4f3a666e63fc4bd78e63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Types&gt;<br />
@@ -83,7 +84,7 @@ struct AZStd::hash&lt; AZStd::tuple&lt; Types... &gt; &gt;</div><p>Creates an ha
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="struct_a_z_std_1_1hash_3_01_a_z_std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html">hash&lt; AZStd::tuple&lt; Types... &gt; &gt;</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

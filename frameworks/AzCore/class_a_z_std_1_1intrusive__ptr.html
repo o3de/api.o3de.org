@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -78,28 +78,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a096696ed17271598ece8d2546e017510" id="r_a096696ed17271598ece8d2546e017510"><td class="memItemLeft" align="right" valign="top"><a id="a096696ed17271598ece8d2546e017510" name="a096696ed17271598ece8d2546e017510"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_ptr</b> (T *p)</td></tr>
 <tr class="separator:a096696ed17271598ece8d2546e017510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e9ceb8ba93ebf2535afebae5a7587d9" id="r_a1e9ceb8ba93ebf2535afebae5a7587d9"><td class="memTemplParams" colspan="2"><a id="a1e9ceb8ba93ebf2535afebae5a7587d9" name="a1e9ceb8ba93ebf2535afebae5a7587d9"></a>
-template&lt;class U &gt; </td></tr>
-<tr class="memitem:a1e9ceb8ba93ebf2535afebae5a7587d9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; const &amp;rhs, enable_if_t&lt; is_convertible&lt; U *, T * &gt;::value, int &gt;=0)</td></tr>
-<tr class="separator:a1e9ceb8ba93ebf2535afebae5a7587d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78998d056ecc527f5a4ae6c9b5995a97" id="r_a78998d056ecc527f5a4ae6c9b5995a97"><td class="memTemplParams" colspan="2"><a id="a78998d056ecc527f5a4ae6c9b5995a97" name="a78998d056ecc527f5a4ae6c9b5995a97"></a>
+template&lt;class U &gt; <br />
+requires is_convertible_v&lt;U*, T*&gt;</td></tr>
+<tr class="memitem:a78998d056ecc527f5a4ae6c9b5995a97"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; const &amp;rhs)</td></tr>
+<tr class="separator:a78998d056ecc527f5a4ae6c9b5995a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5736e01de2fc84a58bb6aede7d332d78" id="r_a5736e01de2fc84a58bb6aede7d332d78"><td class="memItemLeft" align="right" valign="top"><a id="a5736e01de2fc84a58bb6aede7d332d78" name="a5736e01de2fc84a58bb6aede7d332d78"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> const &amp;rhs)</td></tr>
 <tr class="separator:a5736e01de2fc84a58bb6aede7d332d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ac8f2a86a132241551662647fa194e" id="r_ac1ac8f2a86a132241551662647fa194e"><td class="memTemplParams" colspan="2"><a id="ac1ac8f2a86a132241551662647fa194e" name="ac1ac8f2a86a132241551662647fa194e"></a>
-template&lt;class U &gt; </td></tr>
-<tr class="memitem:ac1ac8f2a86a132241551662647fa194e"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; is_convertible&lt; U *, T * &gt;::value, <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; const &amp;rhs)</td></tr>
-<tr class="separator:ac1ac8f2a86a132241551662647fa194e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54eec8f845f93c27b5509d77e57c7f07" id="r_a54eec8f845f93c27b5509d77e57c7f07"><td class="memTemplParams" colspan="2"><a id="a54eec8f845f93c27b5509d77e57c7f07" name="a54eec8f845f93c27b5509d77e57c7f07"></a>
-template&lt;class U &gt; </td></tr>
-<tr class="memitem:a54eec8f845f93c27b5509d77e57c7f07"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; &amp;&amp;rhs, enable_if_t&lt; is_convertible&lt; U *, T * &gt;::value, int &gt;=0)</td></tr>
-<tr class="separator:a54eec8f845f93c27b5509d77e57c7f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4825435da5460213fd735f69b1e45042" id="r_a4825435da5460213fd735f69b1e45042"><td class="memTemplParams" colspan="2"><a id="a4825435da5460213fd735f69b1e45042" name="a4825435da5460213fd735f69b1e45042"></a>
+template&lt;class U &gt; <br />
+requires is_convertible_v&lt;U*, T*&gt;</td></tr>
+<tr class="memitem:a4825435da5460213fd735f69b1e45042"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; const &amp;rhs) -&gt; <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;</td></tr>
+<tr class="separator:a4825435da5460213fd735f69b1e45042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c3e0bb0ada90a49f75aa35cf364d86" id="r_a51c3e0bb0ada90a49f75aa35cf364d86"><td class="memTemplParams" colspan="2"><a id="a51c3e0bb0ada90a49f75aa35cf364d86" name="a51c3e0bb0ada90a49f75aa35cf364d86"></a>
+template&lt;class U &gt; <br />
+requires is_convertible_v&lt;U*, T*&gt;</td></tr>
+<tr class="memitem:a51c3e0bb0ada90a49f75aa35cf364d86"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; &amp;&amp;rhs)</td></tr>
+<tr class="separator:a51c3e0bb0ada90a49f75aa35cf364d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae349af8d34807b362fa5fb4011c65570" id="r_ae349af8d34807b362fa5fb4011c65570"><td class="memItemLeft" align="right" valign="top"><a id="ae349af8d34807b362fa5fb4011c65570" name="ae349af8d34807b362fa5fb4011c65570"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:ae349af8d34807b362fa5fb4011c65570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b07daccb15b538ae57adee485719a3a" id="r_a9b07daccb15b538ae57adee485719a3a"><td class="memTemplParams" colspan="2"><a id="a9b07daccb15b538ae57adee485719a3a" name="a9b07daccb15b538ae57adee485719a3a"></a>
-template&lt;class U &gt; </td></tr>
-<tr class="memitem:a9b07daccb15b538ae57adee485719a3a"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; is_convertible&lt; U *, T * &gt;::value, <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; &amp;&amp;rhs)</td></tr>
-<tr class="separator:a9b07daccb15b538ae57adee485719a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60b708f1cc154cb477689e0a4b6b163" id="r_aa60b708f1cc154cb477689e0a4b6b163"><td class="memTemplParams" colspan="2"><a id="aa60b708f1cc154cb477689e0a4b6b163" name="aa60b708f1cc154cb477689e0a4b6b163"></a>
+template&lt;class U &gt; <br />
+requires is_convertible_v&lt;U*, T*&gt;</td></tr>
+<tr class="memitem:aa60b708f1cc154cb477689e0a4b6b163"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; U &gt; &amp;&amp;rhs) -&gt; <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;</td></tr>
+<tr class="separator:aa60b708f1cc154cb477689e0a4b6b163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fe18284d1032662888f555a8db85a0" id="r_ab6fe18284d1032662888f555a8db85a0"><td class="memItemLeft" align="right" valign="top"><a id="ab6fe18284d1032662888f555a8db85a0" name="ab6fe18284d1032662888f555a8db85a0"></a>
 <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:ab6fe18284d1032662888f555a8db85a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +155,7 @@ class AZStd::intrusive_ptr&lt; T &gt;</div><p><a class="el" href="class_a_z_std_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1intrusive__ptr.html">intrusive_ptr</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

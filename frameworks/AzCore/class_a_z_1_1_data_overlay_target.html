@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -64,29 +64,29 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_data_overlay_target.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae941200482be39e816a33cf00cf3cddd" id="r_ae941200482be39e816a33cf00cf3cddd"><td class="memItemLeft" align="right" valign="top"><a id="ae941200482be39e816a33cf00cf3cddd" name="ae941200482be39e816a33cf00cf3cddd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataOverlayTarget</b> (SerializeContext::DataElementNode *<a class="el" href="class_a_z_1_1_e_bus.html">dataContainer</a>, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *<a class="el" href="class_a_z_1_1_e_bus.html">sc</a>, <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">SerializeContext::ErrorHandler</a> *<a class="el" href="class_a_z_1_1_e_bus.html">errorLogger</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataOverlayTarget</b> (SerializeContext::DataElementNode *dataContainer, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *sc, <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">SerializeContext::ErrorHandler</a> *errorLogger)</td></tr>
 <tr class="separator:ae941200482be39e816a33cf00cf3cddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710ffcd934bea05b83ffce7a0aab19b9" id="r_a710ffcd934bea05b83ffce7a0aab19b9"><td class="memTemplParams" colspan="2"><a id="a710ffcd934bea05b83ffce7a0aab19b9" name="a710ffcd934bea05b83ffce7a0aab19b9"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> T &gt; </td></tr>
-<tr class="memitem:a710ffcd934bea05b83ffce7a0aab19b9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetData</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> T &amp;<a class="el" href="class_a_z_1_1_e_bus.html">obj</a>)</td></tr>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a710ffcd934bea05b83ffce7a0aab19b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetData</b> (const T &amp;obj)</td></tr>
 <tr class="separator:a710ffcd934bea05b83ffce7a0aab19b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr class="memitem:a17defb37b7b74bf83d235572fa45f158" id="r_a17defb37b7b74bf83d235572fa45f158"><td class="memItemLeft" align="right" valign="top"><a id="a17defb37b7b74bf83d235572fa45f158" name="a17defb37b7b74bf83d235572fa45f158"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">typedef</a> <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; SerializeContext::DataElementNode * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>NodeStack</b></td></tr>
+typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; SerializeContext::DataElementNode * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>NodeStack</b></td></tr>
 <tr class="separator:a17defb37b7b74bf83d235572fa45f158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a98cea82cf72e796eb83c2330e85cb63f" id="r_a98cea82cf72e796eb83c2330e85cb63f"><td class="memItemLeft" align="right" valign="top"><a id="a98cea82cf72e796eb83c2330e85cb63f" name="a98cea82cf72e796eb83c2330e85cb63f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">classPtr</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> SerializeContext::ClassData *<a class="el" href="class_a_z_1_1_e_bus.html">classData</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (const void *classPtr, const SerializeContext::ClassData *classData)</td></tr>
 <tr class="separator:a98cea82cf72e796eb83c2330e85cb63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6831a4e7a2da52c1695eb0147c520ef" id="r_ae6831a4e7a2da52c1695eb0147c520ef"><td class="memItemLeft" align="right" valign="top"><a id="ae6831a4e7a2da52c1695eb0147c520ef" name="ae6831a4e7a2da52c1695eb0147c520ef"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ElementBegin</b> (<a class="el" href="class_a_z_std_1_1vector.html">NodeStack</a> *<a class="el" href="class_a_z_1_1_e_bus.html">nodeStack</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">elemPtr</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> SerializeContext::ClassData *<a class="el" href="class_a_z_1_1_e_bus.html">classData</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> SerializeContext::ClassElement *<a class="el" href="class_a_z_1_1_e_bus.html">elementData</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ElementBegin</b> (NodeStack *nodeStack, const void *elemPtr, const SerializeContext::ClassData *classData, const SerializeContext::ClassElement *elementData)</td></tr>
 <tr class="separator:ae6831a4e7a2da52c1695eb0147c520ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78aea6c7c0a89bacb62a9d67a9525a05" id="r_a78aea6c7c0a89bacb62a9d67a9525a05"><td class="memItemLeft" align="right" valign="top"><a id="a78aea6c7c0a89bacb62a9d67a9525a05" name="a78aea6c7c0a89bacb62a9d67a9525a05"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ElementEnd</b> (<a class="el" href="class_a_z_std_1_1vector.html">NodeStack</a> *<a class="el" href="class_a_z_1_1_e_bus.html">nodeStack</a>)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ElementEnd</b> (NodeStack *nodeStack)</td></tr>
 <tr class="separator:a78aea6c7c0a89bacb62a9d67a9525a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -110,7 +110,7 @@ SerializeContext::DataElementNode *&#160;</td><td class="memItemRight" valign="b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_data_overlay_target.html">DataOverlayTarget</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

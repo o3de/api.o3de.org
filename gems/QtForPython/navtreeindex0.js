@@ -1,7 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "annotated.html":[0,0],
-"class_qt_for_python_1_1_initialize_embedded_pyside2.html":[0,0,0,0],
+"class_qt_for_python_1_1_initialize_embedded_pyside.html":[0,0,0,0],
 "class_qt_for_python_1_1_qt_for_python_requests.html":[0,0,0,2],
 "class_qt_for_python_1_1_qt_for_python_requests.html#a6273fb6af8a152dcb5158e2ef717e22e":[0,0,0,2,1],
 "class_qt_for_python_1_1_qt_for_python_requests.html#aa3de5679f8375c09f11a5fa35e396d16":[0,0,0,2,0],

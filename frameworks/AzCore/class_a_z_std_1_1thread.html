@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -77,10 +77,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f17ec0be9e19d64cc833443a959b65e" id="r_a3f17ec0be9e19d64cc833443a959b65e"><td class="memItemLeft" align="right" valign="top"><a id="a3f17ec0be9e19d64cc833443a959b65e" name="a3f17ec0be9e19d64cc833443a959b65e"></a>
 <a class="el" href="class_a_z_std_1_1thread.html">thread</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1thread.html">thread</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a3f17ec0be9e19d64cc833443a959b65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b39d1fc1eac529ff604511a7476d7e6" id="r_a2b39d1fc1eac529ff604511a7476d7e6"><td class="memTemplParams" colspan="2"><a id="a2b39d1fc1eac529ff604511a7476d7e6" name="a2b39d1fc1eac529ff604511a7476d7e6"></a>
-template&lt;class F , class... Args, typename  = AZStd::enable_if_t&lt;!AZStd::is_convertible_v&lt;AZStd::decay_t&lt;F&gt;, thread_desc&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a2b39d1fc1eac529ff604511a7476d7e6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thread</b> (F &amp;&amp;f, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a2b39d1fc1eac529ff604511a7476d7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e8303098d4dad2f85d565917f922fa" id="r_a42e8303098d4dad2f85d565917f922fa"><td class="memTemplParams" colspan="2"><a id="a42e8303098d4dad2f85d565917f922fa" name="a42e8303098d4dad2f85d565917f922fa"></a>
+template&lt;class F , class... Args&gt; <br />
+requires (!AZStd::is_convertible_v&lt;AZStd::decay_t&lt;F&gt;, <a class="el" href="struct_a_z_std_1_1thread__desc.html">thread_desc</a>&gt;)</td></tr>
+<tr class="memitem:a42e8303098d4dad2f85d565917f922fa"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thread</b> (F &amp;&amp;f, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a42e8303098d4dad2f85d565917f922fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4facf1d6ad0b6227f33d55762194cf81" id="r_a4facf1d6ad0b6227f33d55762194cf81"><td class="memTemplParams" colspan="2">template&lt;class F , class... Args&gt; </td></tr>
 <tr class="memitem:a4facf1d6ad0b6227f33d55762194cf81"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1thread.html#a4facf1d6ad0b6227f33d55762194cf81">thread</a> (const <a class="el" href="struct_a_z_std_1_1thread__desc.html">thread_desc</a> &amp;desc, F &amp;&amp;f, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a4facf1d6ad0b6227f33d55762194cf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +169,7 @@ template&lt;class F , class... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1thread.html">thread</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:24 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

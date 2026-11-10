@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -67,44 +67,44 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_i_o_1_1_compressor.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a1ced722d851cec9e08ec400d77997759" id="r_a1ced722d851cec9e08ec400d77997759"><td class="memItemLeft" align="right" valign="top"><a id="a1ced722d851cec9e08ec400d77997759" name="a1ced722d851cec9e08ec400d77997759"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">typedef</a> AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>SizeType</b></td></tr>
+typedef AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>SizeType</b></td></tr>
 <tr class="separator:a1ced722d851cec9e08ec400d77997759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a366a7e3ac38d0e42de73ef1c27f93e0b" id="r_a366a7e3ac38d0e42de73ef1c27f93e0b"><td class="memItemLeft" align="right" valign="top"><a id="a366a7e3ac38d0e42de73ef1c27f93e0b" name="a366a7e3ac38d0e42de73ef1c27f93e0b"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><b>~Compressor</b> ()</td></tr>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Compressor</b> ()</td></tr>
 <tr class="memdesc:a366a7e3ac38d0e42de73ef1c27f93e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">When we open a stream to check if it's compressed we read the first m_maxHeaderSize bytes. <br /></td></tr>
 <tr class="separator:a366a7e3ac38d0e42de73ef1c27f93e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa186a5cae271bd12200a1df81b311ec1" id="r_aa186a5cae271bd12200a1df81b311ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">AZ::u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#aa186a5cae271bd12200a1df81b311ec1">GetTypeId</a> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a> =0</td></tr>
+<tr class="memitem:aa186a5cae271bd12200a1df81b311ec1" id="r_aa186a5cae271bd12200a1df81b311ec1"><td class="memItemLeft" align="right" valign="top">virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#aa186a5cae271bd12200a1df81b311ec1">GetTypeId</a> () const =0</td></tr>
 <tr class="memdesc:aa186a5cae271bd12200a1df81b311ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return compressor type id.  <br /></td></tr>
 <tr class="separator:aa186a5cae271bd12200a1df81b311ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af250ab19ba205177df14e3d9e318f8d3" id="r_af250ab19ba205177df14e3d9e318f8d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#af250ab19ba205177df14e3d9e318f8d3">ReadHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, AZ::u8 *data, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">dataSize</a>)=0</td></tr>
+<tr class="memitem:af250ab19ba205177df14e3d9e318f8d3" id="r_af250ab19ba205177df14e3d9e318f8d3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#af250ab19ba205177df14e3d9e318f8d3">ReadHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, AZ::u8 *data, unsigned int dataSize)=0</td></tr>
 <tr class="memdesc:af250ab19ba205177df14e3d9e318f8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we open a stream to Read for the first time. Data contains the first. dataSize &lt;= m_maxHeaderSize.  <br /></td></tr>
 <tr class="separator:af250ab19ba205177df14e3d9e318f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebe0c8fdb946296d5d8061da1c607f9" id="r_a6ebe0c8fdb946296d5d8061da1c607f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a6ebe0c8fdb946296d5d8061da1c607f9">WriteHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)</td></tr>
+<tr class="memitem:a6ebe0c8fdb946296d5d8061da1c607f9" id="r_a6ebe0c8fdb946296d5d8061da1c607f9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a6ebe0c8fdb946296d5d8061da1c607f9">WriteHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
 <tr class="memdesc:a6ebe0c8fdb946296d5d8061da1c607f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we are about to start writing to a compressed stream. (Must be called first to write compressor header)  <br /></td></tr>
 <tr class="separator:a6ebe0c8fdb946296d5d8061da1c607f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48043000da14882df8f10c7d82c4bfd5" id="r_a48043000da14882df8f10c7d82c4bfd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a48043000da14882df8f10c7d82c4bfd5">Read</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, SizeType byteSize, SizeType <a class="el" href="class_a_z_1_1_e_bus.html">offset</a>, <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">buffer</a>)=0</td></tr>
+<tr class="memitem:a48043000da14882df8f10c7d82c4bfd5" id="r_a48043000da14882df8f10c7d82c4bfd5"><td class="memItemLeft" align="right" valign="top">virtual SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a48043000da14882df8f10c7d82c4bfd5">Read</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, SizeType byteSize, SizeType offset, void *buffer)=0</td></tr>
 <tr class="memdesc:a48043000da14882df8f10c7d82c4bfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarded function from the Device when we from a compressed stream.  <br /></td></tr>
 <tr class="separator:a48043000da14882df8f10c7d82c4bfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301f621d3a4b692f48c98788c3d8971d" id="r_a301f621d3a4b692f48c98788c3d8971d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a301f621d3a4b692f48c98788c3d8971d">Write</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, SizeType byteSize, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *data, SizeType <a class="el" href="class_a_z_1_1_e_bus.html">offset</a>=SizeType(-1))=0</td></tr>
+<tr class="memitem:a301f621d3a4b692f48c98788c3d8971d" id="r_a301f621d3a4b692f48c98788c3d8971d"><td class="memItemLeft" align="right" valign="top">virtual SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a301f621d3a4b692f48c98788c3d8971d">Write</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, SizeType byteSize, const void *data, SizeType offset=SizeType(-1))=0</td></tr>
 <tr class="memdesc:a301f621d3a4b692f48c98788c3d8971d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarded function from the Device when we write to a compressed stream.  <br /></td></tr>
 <tr class="separator:a301f621d3a4b692f48c98788c3d8971d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84f69407e3aed2b3c88d84ee3c565a7" id="r_aa84f69407e3aed2b3c88d84ee3c565a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#aa84f69407e3aed2b3c88d84ee3c565a7">WriteSeekPoint</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)</td></tr>
+<tr class="memitem:aa84f69407e3aed2b3c88d84ee3c565a7" id="r_aa84f69407e3aed2b3c88d84ee3c565a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#aa84f69407e3aed2b3c88d84ee3c565a7">WriteSeekPoint</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
 <tr class="memdesc:aa84f69407e3aed2b3c88d84ee3c565a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a seek point.  <br /></td></tr>
 <tr class="separator:aa84f69407e3aed2b3c88d84ee3c565a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2946eb099ed5b25630850c71414581dd" id="r_a2946eb099ed5b25630850c71414581dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a2946eb099ed5b25630850c71414581dd">StartCompressor</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">int</a> <a class="el" href="class_a_z_1_1_e_bus.html">compressionLevel</a>, SizeType <a class="el" href="class_a_z_1_1_e_bus.html">autoSeekDataSize</a>)</td></tr>
+<tr class="memitem:a2946eb099ed5b25630850c71414581dd" id="r_a2946eb099ed5b25630850c71414581dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a2946eb099ed5b25630850c71414581dd">StartCompressor</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, int compressionLevel, SizeType autoSeekDataSize)</td></tr>
 <tr class="memdesc:a2946eb099ed5b25630850c71414581dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html">Compressor</a> for writing data.  <br /></td></tr>
 <tr class="separator:a2946eb099ed5b25630850c71414581dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5057d97e8d6c40e991d6f5ee6b3c5a99" id="r_a5057d97e8d6c40e991d6f5ee6b3c5a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a5057d97e8d6c40e991d6f5ee6b3c5a99">Close</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>)=0</td></tr>
+<tr class="memitem:a5057d97e8d6c40e991d6f5ee6b3c5a99" id="r_a5057d97e8d6c40e991d6f5ee6b3c5a99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a5057d97e8d6c40e991d6f5ee6b3c5a99">Close</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)=0</td></tr>
 <tr class="memdesc:a5057d97e8d6c40e991d6f5ee6b3c5a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called just before we close the stream. All compression data will be flushed and finalized. (You can't add data afterwards).  <br /></td></tr>
 <tr class="separator:a5057d97e8d6c40e991d6f5ee6b3c5a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4999e9e475339033be24abffe0b8d3d1" id="r_a4999e9e475339033be24abffe0b8d3d1"><td class="memItemLeft" align="right" valign="top"><a id="a4999e9e475339033be24abffe0b8d3d1" name="a4999e9e475339033be24abffe0b8d3d1"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">static</a> <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxHeaderSize</b> = 4096</td></tr>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxHeaderSize</b> = 4096</td></tr>
 <tr class="separator:a4999e9e475339033be24abffe0b8d3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -120,7 +120,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::IO::Compressor::Close </td>
+          <td class="memname">virtual bool AZ::IO::Compressor::Close </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
@@ -150,7 +150,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">AZ::u32</a> AZ::IO::Compressor::GetTypeId </td>
+          <td class="memname">virtual AZ::u32 AZ::IO::Compressor::GetTypeId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -179,7 +179,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> SizeType AZ::IO::Compressor::Read </td>
+          <td class="memname">virtual SizeType AZ::IO::Compressor::Read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -199,7 +199,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -231,7 +231,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::IO::Compressor::ReadHeaderAndData </td>
+          <td class="memname">virtual bool AZ::IO::Compressor::ReadHeaderAndData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -245,7 +245,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>dataSize</em>&#160;</td>
         </tr>
         <tr>
@@ -277,7 +277,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::IO::Compressor::StartCompressor </td>
+          <td class="memname">virtual bool AZ::IO::Compressor::StartCompressor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -285,7 +285,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>compressionLevel</em>, </td>
         </tr>
         <tr>
@@ -323,7 +323,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> SizeType AZ::IO::Compressor::Write </td>
+          <td class="memname">virtual SizeType AZ::IO::Compressor::Write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -337,7 +337,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -375,7 +375,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::IO::Compressor::WriteHeaderAndData </td>
+          <td class="memname">virtual bool AZ::IO::Compressor::WriteHeaderAndData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
@@ -405,7 +405,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">virtual</a> <a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::IO::Compressor::WriteSeekPoint </td>
+          <td class="memname">virtual bool AZ::IO::Compressor::WriteSeekPoint </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
@@ -434,7 +434,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="namespace_a_z_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html">Compressor</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

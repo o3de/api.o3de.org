@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -62,39 +62,39 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_task_graph.html',''); in
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaabcda77511eff97e7c25ff9094e7fb5" id="r_aaabcda77511eff97e7c25ff9094e7fb5"><td class="memItemLeft" align="right" valign="top"><a id="aaabcda77511eff97e7c25ff9094e7fb5" name="aaabcda77511eff97e7c25ff9094e7fb5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraph</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *<a class="el" href="class_a_z_1_1_e_bus.html">graphlabel</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraph</b> (const char *graphlabel)</td></tr>
 <tr class="separator:aaabcda77511eff97e7c25ff9094e7fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d49b8056e0f3b9caf6b11354b4a1104" id="r_a0d49b8056e0f3b9caf6b11354b4a1104"><td class="memItemLeft" align="right" valign="top"><a id="a0d49b8056e0f3b9caf6b11354b4a1104" name="a0d49b8056e0f3b9caf6b11354b4a1104"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraph</b> (AZStd::nullptr_t)=<a class="el" href="class_a_z_1_1_e_bus.html">delete</a></td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraph</b> (AZStd::nullptr_t)=delete</td></tr>
 <tr class="separator:a0d49b8056e0f3b9caf6b11354b4a1104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e13536086a67a978e72a45145ee983f" id="r_a0e13536086a67a978e72a45145ee983f"><td class="memItemLeft" align="right" valign="top"><a id="a0e13536086a67a978e72a45145ee983f" name="a0e13536086a67a978e72a45145ee983f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
 <tr class="separator:a0e13536086a67a978e72a45145ee983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19bcbc95ba40344ed96f43d242bd974d" id="r_a19bcbc95ba40344ed96f43d242bd974d"><td class="memItemLeft" align="right" valign="top"><a id="a19bcbc95ba40344ed96f43d242bd974d" name="a19bcbc95ba40344ed96f43d242bd974d"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> ()</td></tr>
 <tr class="separator:a19bcbc95ba40344ed96f43d242bd974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be91c8541c20ecf0801aae5254724b7" id="r_a3be91c8541c20ecf0801aae5254724b7"><td class="memTemplParams" colspan="2"><a id="a3be91c8541c20ecf0801aae5254724b7" name="a3be91c8541c20ecf0801aae5254724b7"></a>
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">typename</a> <a class="el" href="class_a_z_1_1_e_bus.html">Lambda</a> &gt; </td></tr>
-<tr class="memitem:a3be91c8541c20ecf0801aae5254724b7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_task_token.html">TaskToken</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AddTask</b> (<a class="el" href="struct_a_z_1_1_task_descriptor.html">TaskDescriptor</a> <a class="el" href="class_a_z_1_1_e_bus.html">const</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">descriptor</a>, <a class="el" href="class_a_z_1_1_e_bus.html">Lambda</a> &amp;&amp;<a class="el" href="class_a_z_1_1_e_bus.html">lambda</a>)</td></tr>
+template&lt;typename Lambda &gt; </td></tr>
+<tr class="memitem:a3be91c8541c20ecf0801aae5254724b7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_task_token.html">TaskToken</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AddTask</b> (<a class="el" href="struct_a_z_1_1_task_descriptor.html">TaskDescriptor</a> const &amp;descriptor, Lambda &amp;&amp;lambda)</td></tr>
 <tr class="separator:a3be91c8541c20ecf0801aae5254724b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4187c1586a1299f39ac96614d2c41db2" id="r_a4187c1586a1299f39ac96614d2c41db2"><td class="memTemplParams" colspan="2"><a id="a4187c1586a1299f39ac96614d2c41db2" name="a4187c1586a1299f39ac96614d2c41db2"></a>
 template&lt;typename... Lambdas&gt; </td></tr>
-<tr class="memitem:a4187c1586a1299f39ac96614d2c41db2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1array.html">AZStd::array</a>&lt; <a class="el" href="class_a_z_1_1_task_token.html">TaskToken</a>, sizeof...(<a class="el" href="class_a_z_1_1_e_bus.html">Lambdas</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AddTasks</b> (<a class="el" href="struct_a_z_1_1_task_descriptor.html">TaskDescriptor</a> <a class="el" href="class_a_z_1_1_e_bus.html">const</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">descriptor</a>, <a class="el" href="class_a_z_1_1_e_bus.html">Lambdas</a> &amp;&amp;... <a class="el" href="class_a_z_1_1_e_bus.html">lambdas</a>)</td></tr>
+<tr class="memitem:a4187c1586a1299f39ac96614d2c41db2"><td class="memTemplItemLeft" align="right" valign="top">AZStd::array&lt; <a class="el" href="class_a_z_1_1_task_token.html">TaskToken</a>, sizeof...(Lambdas)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AddTasks</b> (<a class="el" href="struct_a_z_1_1_task_descriptor.html">TaskDescriptor</a> const &amp;descriptor, Lambdas &amp;&amp;... lambdas)</td></tr>
 <tr class="separator:a4187c1586a1299f39ac96614d2c41db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7897333707300e9f6bfebedc310cb5dd" id="r_a7897333707300e9f6bfebedc310cb5dd"><td class="memItemLeft" align="right" valign="top"><a id="a7897333707300e9f6bfebedc310cb5dd" name="a7897333707300e9f6bfebedc310cb5dd"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Detach</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Detach</b> ()</td></tr>
 <tr class="separator:a7897333707300e9f6bfebedc310cb5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bfbbb16afc5536e6ea57fac516c3d41" id="r_a6bfbbb16afc5536e6ea57fac516c3d41"><td class="memItemLeft" align="right" valign="top"><a id="a6bfbbb16afc5536e6ea57fac516c3d41" name="a6bfbbb16afc5536e6ea57fac516c3d41"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (<a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *<a class="el" href="class_a_z_1_1_e_bus.html">waitEvent</a>=<a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (<a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *waitEvent=nullptr)</td></tr>
 <tr class="separator:a6bfbbb16afc5536e6ea57fac516c3d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ba5c6f47cbd676c7ba8aa844ae6c89" id="r_aa4ba5c6f47cbd676c7ba8aa844ae6c89"><td class="memItemLeft" align="right" valign="top"><a id="aa4ba5c6f47cbd676c7ba8aa844ae6c89" name="aa4ba5c6f47cbd676c7ba8aa844ae6c89"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitOnExecutor</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">executor</a>, <a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *<a class="el" href="class_a_z_1_1_e_bus.html">waitEvent</a>=<a class="el" href="class_a_z_1_1_e_bus.html">nullptr</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitOnExecutor</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> &amp;executor, <a class="el" href="class_a_z_1_1_task_graph_event.html">TaskGraphEvent</a> *waitEvent=nullptr)</td></tr>
 <tr class="separator:aa4ba5c6f47cbd676c7ba8aa844ae6c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a170609b641cfa756b7cc2d72ec94e67c" id="r_a170609b641cfa756b7cc2d72ec94e67c"><td class="memItemLeft" align="right" valign="top"><a id="a170609b641cfa756b7cc2d72ec94e67c" name="a170609b641cfa756b7cc2d72ec94e67c"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TaskToken</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskToken</b></td></tr>
 <tr class="separator:a170609b641cfa756b7cc2d72ec94e67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -107,7 +107,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_task_graph.html">TaskGraph</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

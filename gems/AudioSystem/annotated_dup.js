@@ -172,6 +172,7 @@ var annotated_dup =
       [ "hash< Audio::TriggerNotificationIdType >", "struct_a_z_std_1_1hash_3_01_audio_1_1_trigger_notification_id_type_01_4.html", null ]
     ] ],
     [ "CAudioControlsEditorPlugin", "class_c_audio_controls_editor_plugin.html", null ],
+    [ "CDockTitleBarWidget", "class_c_dock_title_bar_widget.html", null ],
     [ "CImplementationManager", "class_c_implementation_manager.html", null ],
     [ "ITreeWidgetItemFilter", "struct_i_tree_widget_item_filter.html", null ],
     [ "QAudioControlItem", "class_q_audio_control_item.html", null ],

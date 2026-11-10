@@ -5,6 +5,7 @@ var hierarchy =
       [ "ROS2Sensors::LidarRegistrarSystemComponent", "class_r_o_s2_sensors_1_1_lidar_registrar_system_component.html", [
         [ "ROS2Sensors::LidarRegistrarEditorSystemComponent", "class_r_o_s2_sensors_1_1_lidar_registrar_editor_system_component.html", null ]
       ] ],
+      [ "ROS2Sensors::ROS2ImageCompressionComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_compression_component.html", null ],
       [ "ROS2Sensors::ROS2ImageEncodingConversionComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_encoding_conversion_component.html", null ],
       [ "ROS2Sensors::ROS2SensorsSystemComponent", "class_r_o_s2_sensors_1_1_r_o_s2_sensors_system_component.html", [
         [ "ROS2Sensors::ROS2SensorsEditorSystemComponent", "class_r_o_s2_sensors_1_1_r_o_s2_sensors_editor_system_component.html", null ]
@@ -35,7 +36,8 @@ var hierarchy =
     ] ],
     [ "AZStd::hash< ROS2Sensors::LidarId >", "struct_a_z_std_1_1hash_3_01_r_o_s2_sensors_1_1_lidar_id_01_4.html", null ],
     [ "AzToolsFramework::Components::EditorComponentBase", null, [
-      [ "ROS2Sensors::ROS2CameraSensorEditorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_camera_sensor_editor_component.html", null ]
+      [ "ROS2Sensors::ROS2CameraSensorEditorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_camera_sensor_editor_component.html", null ],
+      [ "ROS2Sensors::ROS2ImageCompressionEditorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_compression_editor_component.html", null ]
     ] ],
     [ "AzToolsFramework::EditorEntityContextNotificationBus::Handler", null, [
       [ "ROS2Sensors::ROS2EditorCameraSystemComponent", "class_r_o_s2_sensors_1_1_r_o_s2_editor_camera_system_component.html", null ]
@@ -56,6 +58,7 @@ var hierarchy =
       [ "ROS2Sensors::ROS2CameraSensorEditorComponent", "class_r_o_s2_sensors_1_1_r_o_s2_camera_sensor_editor_component.html", null ]
     ] ],
     [ "CameraPostProcessingRequestBus::Handler", null, [
+      [ "ROS2Sensors::ROS2ImageCompressionComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_compression_component.html", null ],
       [ "ROS2Sensors::ROS2ImageEncodingConversionComponent", "class_r_o_s2_sensors_1_1_r_o_s2_image_encoding_conversion_component.html", null ]
     ] ],
     [ "ClassSegmentationRequestBus::Handler", null, [
@@ -91,6 +94,8 @@ var hierarchy =
     [ "ROS2Sensors::CameraSensorDescription", "struct_r_o_s2_sensors_1_1_camera_sensor_description.html", null ],
     [ "ROS2Sensors::ClassSegmentationRequests", "class_r_o_s2_sensors_1_1_class_segmentation_requests.html", null ],
     [ "ROS2Sensors::EncodingConversion", "struct_r_o_s2_sensors_1_1_encoding_conversion.html", null ],
+    [ "ROS2Sensors::ImageCompression::Settings", "struct_r_o_s2_sensors_1_1_image_compression_1_1_settings.html", null ],
+    [ "ROS2Sensors::ImageCompressionConfiguration", "struct_r_o_s2_sensors_1_1_image_compression_configuration.html", null ],
     [ "ROS2Sensors::ImuSensorConfiguration", "struct_r_o_s2_sensors_1_1_imu_sensor_configuration.html", null ],
     [ "ROS2Sensors::LidarCore", "class_r_o_s2_sensors_1_1_lidar_core.html", null ],
     [ "ROS2Sensors::LidarRaycasterRequests", "class_r_o_s2_sensors_1_1_lidar_raycaster_requests.html", null ],

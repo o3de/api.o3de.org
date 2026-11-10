@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -55,6 +55,7 @@ $(document).ready(function(){initNavTree('class_a_z_std_1_1static__pool__concurr
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_a_z_std_1_1static__pool__concurrent__allocator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AZStd::static_pool_concurrent_allocator&lt; Node, NumNodes &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -70,54 +71,42 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = Nod
 <tr class="memitem:a6843f5abc898be1196ab683f1d375c93" id="r_a6843f5abc898be1196ab683f1d375c93"><td class="memItemLeft" align="right" valign="top"><a id="a6843f5abc898be1196ab683f1d375c93" name="a6843f5abc898be1196ab683f1d375c93"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = Node *</td></tr>
 <tr class="separator:a6843f5abc898be1196ab683f1d375c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73a0301d69bf1dedf6c23449de447abf" id="r_a73a0301d69bf1dedf6c23449de447abf"><td class="memItemLeft" align="right" valign="top"><a id="a73a0301d69bf1dedf6c23449de447abf" name="a73a0301d69bf1dedf6c23449de447abf"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = AZStd::size_t</td></tr>
-<tr class="separator:a73a0301d69bf1dedf6c23449de447abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c52e7e14c9ba22165924fb4ad73b0d" id="r_a31c52e7e14c9ba22165924fb4ad73b0d"><td class="memItemLeft" align="right" valign="top"><a id="a31c52e7e14c9ba22165924fb4ad73b0d" name="a31c52e7e14c9ba22165924fb4ad73b0d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = AZStd::ptrdiff_t</td></tr>
-<tr class="separator:a31c52e7e14c9ba22165924fb4ad73b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60a356a84903c31a0b29215912763bb" id="r_ae60a356a84903c31a0b29215912763bb"><td class="memItemLeft" align="right" valign="top"><a id="ae60a356a84903c31a0b29215912763bb" name="ae60a356a84903c31a0b29215912763bb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = size_t</td></tr>
+<tr class="separator:ae60a356a84903c31a0b29215912763bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd5fee0475015a45b33a09034ef94ab" id="r_a1fd5fee0475015a45b33a09034ef94ab"><td class="memItemLeft" align="right" valign="top"><a id="a1fd5fee0475015a45b33a09034ef94ab" name="a1fd5fee0475015a45b33a09034ef94ab"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = ptrdiff_t</td></tr>
+<tr class="separator:a1fd5fee0475015a45b33a09034ef94ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e12e373f516d6bf8ca579f5f55add27" id="r_a6e12e373f516d6bf8ca579f5f55add27"><td class="memItemLeft" align="right" valign="top"><a id="a6e12e373f516d6bf8ca579f5f55add27" name="a6e12e373f516d6bf8ca579f5f55add27"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>static_pool_concurrent_allocator</b> (const char *name=&quot;AZStd::static_pool_concurrent_allocator&quot;)</td></tr>
-<tr class="separator:a6e12e373f516d6bf8ca579f5f55add27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e9bad25b4f96c67f5ff43f0894c2364" id="r_a5e9bad25b4f96c67f5ff43f0894c2364"><td class="memItemLeft" align="right" valign="top"><a id="a5e9bad25b4f96c67f5ff43f0894c2364" name="a5e9bad25b4f96c67f5ff43f0894c2364"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>static_pool_concurrent_allocator</b> (const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">this_type</a> &amp;rhs)</td></tr>
-<tr class="separator:a5e9bad25b4f96c67f5ff43f0894c2364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0df49220f46f0d0037c889335f13621" id="r_ac0df49220f46f0d0037c889335f13621"><td class="memItemLeft" align="right" valign="top"><a id="ac0df49220f46f0d0037c889335f13621" name="ac0df49220f46f0d0037c889335f13621"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>static_pool_concurrent_allocator</b> (const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">this_type</a> &amp;rhs, const char *name)</td></tr>
-<tr class="separator:ac0df49220f46f0d0037c889335f13621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7d84fff4fb54f28b2f392be9e795a59" id="r_ab7d84fff4fb54f28b2f392be9e795a59"><td class="memItemLeft" align="right" valign="top"><a id="ab7d84fff4fb54f28b2f392be9e795a59" name="ab7d84fff4fb54f28b2f392be9e795a59"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">this_type</a> &amp;rhs)</td></tr>
-<tr class="separator:ab7d84fff4fb54f28b2f392be9e795a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2edf9a1a3ee69aa422863ce8f25b4ec1" id="r_a2edf9a1a3ee69aa422863ce8f25b4ec1"><td class="memItemLeft" align="right" valign="top"><a id="a2edf9a1a3ee69aa422863ce8f25b4ec1" name="a2edf9a1a3ee69aa422863ce8f25b4ec1"></a>
-AZ_FORCE_INLINE const char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const</td></tr>
-<tr class="separator:a2edf9a1a3ee69aa422863ce8f25b4ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd7400928451f0928bf19da3be0c3f2a" id="r_abd7400928451f0928bf19da3be0c3f2a"><td class="memItemLeft" align="right" valign="top"><a id="abd7400928451f0928bf19da3be0c3f2a" name="abd7400928451f0928bf19da3be0c3f2a"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>set_name</b> (const char *name)</td></tr>
-<tr class="separator:abd7400928451f0928bf19da3be0c3f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff262eff0e0c93a47ad598a62085c33" id="r_aaff262eff0e0c93a47ad598a62085c33"><td class="memItemLeft" align="right" valign="top"><a id="aaff262eff0e0c93a47ad598a62085c33" name="aaff262eff0e0c93a47ad598a62085c33"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>static_pool_concurrent_allocator</b> (const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a> &amp;rhs)</td></tr>
+<tr class="separator:aaff262eff0e0c93a47ad598a62085c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbe844af8df5143a3d9b9d74df1a929" id="r_a4cbe844af8df5143a3d9b9d74df1a929"><td class="memItemLeft" align="right" valign="top"><a id="a4cbe844af8df5143a3d9b9d74df1a929" name="a4cbe844af8df5143a3d9b9d74df1a929"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a> &amp;rhs)</td></tr>
+<tr class="separator:a4cbe844af8df5143a3d9b9d74df1a929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ad685b247c03220de56da70085fea3" id="r_a85ad685b247c03220de56da70085fea3"><td class="memItemLeft" align="right" valign="top"><a id="a85ad685b247c03220de56da70085fea3" name="a85ad685b247c03220de56da70085fea3"></a>
 constexpr size_type&#160;</td><td class="memItemRight" valign="bottom"><b>max_size</b> () const</td></tr>
 <tr class="separator:a85ad685b247c03220de56da70085fea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdec12d0f4ab4bd5a7f82c0a3dd24efc" id="r_abdec12d0f4ab4bd5a7f82c0a3dd24efc"><td class="memItemLeft" align="right" valign="top"><a id="abdec12d0f4ab4bd5a7f82c0a3dd24efc" name="abdec12d0f4ab4bd5a7f82c0a3dd24efc"></a>
 AZ_FORCE_INLINE size_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocated_size</b> () const</td></tr>
 <tr class="separator:abdec12d0f4ab4bd5a7f82c0a3dd24efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818c99faf4dc7730e7e5821e997fe2e9" id="r_a818c99faf4dc7730e7e5821e997fe2e9"><td class="memItemLeft" align="right" valign="top"><a id="a818c99faf4dc7730e7e5821e997fe2e9" name="a818c99faf4dc7730e7e5821e997fe2e9"></a>
-Node *&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> ()</td></tr>
-<tr class="separator:a818c99faf4dc7730e7e5821e997fe2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a740baff00d023d32539073f60c207" id="r_a05a740baff00d023d32539073f60c207"><td class="memItemLeft" align="right" valign="top"><a id="a05a740baff00d023d32539073f60c207" name="a05a740baff00d023d32539073f60c207"></a>
-pointer&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (size_type byteSize, size_type alignment, int flags=0)</td></tr>
-<tr class="separator:a05a740baff00d023d32539073f60c207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd8651d9fa16bc422fbba34fee97520" id="r_aebd8651d9fa16bc422fbba34fee97520"><td class="memItemLeft" align="right" valign="top"><a id="aebd8651d9fa16bc422fbba34fee97520" name="aebd8651d9fa16bc422fbba34fee97520"></a>
+AZ_FORCE_INLINE Node *&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> ()</td></tr>
+<tr class="separator:aebd8651d9fa16bc422fbba34fee97520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af888276464b1da70338e1b8dd7e6b879" id="r_af888276464b1da70338e1b8dd7e6b879"><td class="memItemLeft" align="right" valign="top"><a id="af888276464b1da70338e1b8dd7e6b879" name="af888276464b1da70338e1b8dd7e6b879"></a>
+AZ_FORCE_INLINE pointer&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (size_type byteSize, size_type alignment, int flags=0)</td></tr>
+<tr class="separator:af888276464b1da70338e1b8dd7e6b879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67ab33caa1cfe15812c6fdb0d4f1e223" id="r_a67ab33caa1cfe15812c6fdb0d4f1e223"><td class="memItemLeft" align="right" valign="top"><a id="a67ab33caa1cfe15812c6fdb0d4f1e223" name="a67ab33caa1cfe15812c6fdb0d4f1e223"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate</b> (Node *ptr)</td></tr>
 <tr class="separator:a67ab33caa1cfe15812c6fdb0d4f1e223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0769287a8e973edc8ec64f95e21a7af" id="r_ab0769287a8e973edc8ec64f95e21a7af"><td class="memItemLeft" align="right" valign="top"><a id="ab0769287a8e973edc8ec64f95e21a7af" name="ab0769287a8e973edc8ec64f95e21a7af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate</b> (pointer ptr, size_type byteSize, size_type alignment)</td></tr>
-<tr class="separator:ab0769287a8e973edc8ec64f95e21a7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72847d76791da6e31deec41935919fe" id="r_aa72847d76791da6e31deec41935919fe"><td class="memItemLeft" align="right" valign="top"><a id="aa72847d76791da6e31deec41935919fe" name="aa72847d76791da6e31deec41935919fe"></a>
-AZ_FORCE_INLINE size_type&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (pointer ptr, size_type newSize)</td></tr>
-<tr class="separator:aa72847d76791da6e31deec41935919fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304ffae1079f3bb3d8ff7f3d7054efbc" id="r_a304ffae1079f3bb3d8ff7f3d7054efbc"><td class="memItemLeft" align="right" valign="top"><a id="a304ffae1079f3bb3d8ff7f3d7054efbc" name="a304ffae1079f3bb3d8ff7f3d7054efbc"></a>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate</b> (pointer ptr, size_type byteSize, size_type alignment)</td></tr>
+<tr class="separator:a304ffae1079f3bb3d8ff7f3d7054efbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9083be0c7dc5cfbab0bb81f7e3905600" id="r_a9083be0c7dc5cfbab0bb81f7e3905600"><td class="memItemLeft" align="right" valign="top"><a id="a9083be0c7dc5cfbab0bb81f7e3905600" name="a9083be0c7dc5cfbab0bb81f7e3905600"></a>
+AZ_FORCE_INLINE size_type&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (pointer ptr, size_type newSize) const</td></tr>
+<tr class="separator:a9083be0c7dc5cfbab0bb81f7e3905600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba7d252fce6ba6e0288164a117ad6bf2" id="r_aba7d252fce6ba6e0288164a117ad6bf2"><td class="memItemLeft" align="right" valign="top"><a id="aba7d252fce6ba6e0288164a117ad6bf2" name="aba7d252fce6ba6e0288164a117ad6bf2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:aba7d252fce6ba6e0288164a117ad6bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,10 +119,18 @@ AZ_FORCE_INLINE void *&#160;</td><td class="memItemRight" valign="bottom"><b>dat
 <tr class="memitem:a2ae7c7462208762dabb7f96452082e43" id="r_a2ae7c7462208762dabb7f96452082e43"><td class="memItemLeft" align="right" valign="top"><a id="a2ae7c7462208762dabb7f96452082e43" name="a2ae7c7462208762dabb7f96452082e43"></a>
 AZ_FORCE_INLINE constexpr size_type&#160;</td><td class="memItemRight" valign="bottom"><b>data_size</b> () const</td></tr>
 <tr class="separator:a2ae7c7462208762dabb7f96452082e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a9cab4c75f41e002d4e1b457078198d71" id="r_a9cab4c75f41e002d4e1b457078198d71"><td class="memItemLeft" align="right" valign="top"><a id="a9cab4c75f41e002d4e1b457078198d71" name="a9cab4c75f41e002d4e1b457078198d71"></a>
+AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a> &amp;a, const <a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a> &amp;b)</td></tr>
+<tr class="separator:a9cab4c75f41e002d4e1b457078198d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class Node, AZStd::size_t NumNodes&gt;<br />
-class AZStd::static_pool_concurrent_allocator&lt; Node, NumNodes &gt;</div><p>Declares a static buffer of Node[NumNodes], and them pools them. It provides concurrent safe access. This is a perfect allocator for pooling lists or hash table nodes. Internally the buffer is allocated using <a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>. </p><dl class="section note"><dt>Note</dt><dd>only allocate/deallocate are thread safe. reset, leak_before_destroy and comparison operators are not thread safe. get_allocated_size is thread safe but the returned value is not perfectly in sync on the actual number of allocations (the number of allocations is incremented before the allocation happens and decremented after the allocation happens, trying to give a conservative number) </dd>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Node, size_t NumNodes&gt;<br />
+class AZStd::static_pool_concurrent_allocator&lt; Node, NumNodes &gt;</div><p>Declares a static buffer of Node[NumNodes], and them pools them. It provides concurrent safe access.</p>
+<p>This is a perfect allocator for pooling lists or hash table nodes. Internally the buffer is allocated using <a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>.</p>
+<dl class="section note"><dt>Note</dt><dd>only allocate/deallocate are thread safe. reset, leak_before_destroy and comparison operators are not thread safe. get_allocated_size is thread safe but the returned value is not perfectly in sync on the actual number of allocations (the number of allocations is incremented before the allocation happens and decremented after the allocation happens, trying to give a conservative number)</dd>
 <dd>
 be careful if you use this on the stack, since many platforms do NOT support alignment more than 16 bytes. In such cases you will need to do it manually. </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
@@ -145,7 +142,7 @@ be careful if you use this on the stack, since many platforms do NOT support ali
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:24 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

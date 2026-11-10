@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -66,9 +66,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a960476f7da6fcf0b250abdf40b963b02" id="r_a960476f7da6fcf0b250abdf40b963b02"><td class="memItemLeft" align="right" valign="top"><a id="a960476f7da6fcf0b250abdf40b963b02" name="a960476f7da6fcf0b250abdf40b963b02"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_scoped_undo_batch.html">ScopedUndoBatch</a>, AZ::SystemAllocator)</td></tr>
 <tr class="separator:a960476f7da6fcf0b250abdf40b963b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb02ea9ed51df010b11eccda93720d33" id="r_abb02ea9ed51df010b11eccda93720d33"><td class="memItemLeft" align="right" valign="top"><a id="abb02ea9ed51df010b11eccda93720d33" name="abb02ea9ed51df010b11eccda93720d33"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScopedUndoBatch</b> (const char *batchName)</td></tr>
-<tr class="separator:abb02ea9ed51df010b11eccda93720d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1694fb4e536cb167844aaec2884a79fe" id="r_a1694fb4e536cb167844aaec2884a79fe"><td class="memItemLeft" align="right" valign="top"><a id="a1694fb4e536cb167844aaec2884a79fe" name="a1694fb4e536cb167844aaec2884a79fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ScopedUndoBatch</b> (const char *batchName, <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> **resumeHandle=nullptr)</td></tr>
+<tr class="separator:a1694fb4e536cb167844aaec2884a79fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5fd9f8c37b28eca1bd0dcf135192100" id="r_aa5fd9f8c37b28eca1bd0dcf135192100"><td class="memItemLeft" align="right" valign="top"><a id="aa5fd9f8c37b28eca1bd0dcf135192100" name="aa5fd9f8c37b28eca1bd0dcf135192100"></a>
 <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetUndoBatch</b> () const</td></tr>
 <tr class="separator:aa5fd9f8c37b28eca1bd0dcf135192100"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,7 +81,17 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkEntityDirt
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RAII Helper class for undo batches.</p>
-<p><a class="el" href="class_az_tools_framework_1_1_scoped_undo_batch.html">AzToolsFramework::ScopedUndoBatch</a> undoBatch("Batch Name"); entity-&gt;ChangeData(...); undoBatch.MarkEntityDirty(entity-&gt;GetId()); </p>
+<p>Usage: If you are doing a single one-off operation in one frame:</p><ol type="1">
+<li>Open a scope.</li>
+<li><a class="el" href="class_az_tools_framework_1_1_scoped_undo_batch.html">ScopedUndoBatch</a> batch("Do a thing");</li>
+<li>Modify data in entities, set them dirty, and/or add child undo commands for special undo nodes.</li>
+<li>Allow the <a class="el" href="class_az_tools_framework_1_1_scoped_undo_batch.html">ScopedUndoBatch</a> to leave scope.</li>
+</ol>
+<p>Usage: If you are doing a multi-frame operation:</p><ol type="1">
+<li>Store a <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a>* resumeHandle = nullptr; in your class to remember your operation handle.</li>
+<li>Each time data changes: a) <a class="el" href="class_az_tools_framework_1_1_scoped_undo_batch.html">ScopedUndoBatch</a> batch("Do a thing", &amp;resumeHandle); ResumeHandle will either be reused and be unchanged, or it will be set to a new value if resumeHandle was a nullptr, or was not able to be resumed. b) Modify the entity data and set them dirty, and/or add child undo commands for special undo nodes. c) Allow the scoped undo batch to leave scope. Retain the resumehandle for next time data changes.</li>
+<li>When the operation is complete (as in, logical user operation, like they release the mouse in a drag), forget the resume handle (set it to nullptr). This will cause the next operation to start a new batch. </li>
+</ol>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/API/<b>ToolsApplicationAPI.h</b></li>
 </ul>
@@ -91,7 +101,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkEntityDirt
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_scoped_undo_batch.html">ScopedUndoBatch</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:29 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:31 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

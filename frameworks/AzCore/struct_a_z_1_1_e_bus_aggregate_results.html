@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,9 +63,9 @@ $(document).ready(function(){initNavTree('struct_a_z_1_1_e_bus_aggregate_results
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a114dc689647a27b847d0261540c4d061" id="r_a114dc689647a27b847d0261540c4d061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#a114dc689647a27b847d0261540c4d061">operator=</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> T &amp;<a class="el" href="class_a_z_1_1_e_bus.html">rhs</a>)</td></tr>
+<tr class="memitem:a114dc689647a27b847d0261540c4d061" id="r_a114dc689647a27b847d0261540c4d061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#a114dc689647a27b847d0261540c4d061">operator=</a> (const T &amp;rhs)</td></tr>
 <tr class="separator:a114dc689647a27b847d0261540c4d061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac952b8f722be9ac2cefdfce984b397d2" id="r_ac952b8f722be9ac2cefdfce984b397d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#ac952b8f722be9ac2cefdfce984b397d2">operator=</a> (T &amp;&amp;<a class="el" href="class_a_z_1_1_e_bus.html">rhs</a>)</td></tr>
+<tr class="memitem:ac952b8f722be9ac2cefdfce984b397d2" id="r_ac952b8f722be9ac2cefdfce984b397d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html#ac952b8f722be9ac2cefdfce984b397d2">operator=</a> (T &amp;&amp;rhs)</td></tr>
 <tr class="separator:ac952b8f722be9ac2cefdfce984b397d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -74,7 +74,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac85bbef48992193e593fe4f05c5a5432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 struct AZ::EBusAggregateResults&lt; T &gt;</div><p>Collects results returned by all handlers of an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> event. The results are collected into an <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -82,10 +82,10 @@ struct AZ::EBusAggregateResults&lt; T &gt;</div><p>Collects results returned by 
   </table>
   </dd>
 </dl>
-<p>The following is an example of adding handler results to a vector of previous results: </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_a_z_1_1_e_bus.html">EBusAggregateResults&lt;int&gt;</a> <a class="code hl_class" href="class_a_z_1_1_e_bus.html">result</a>;</div>
-<div class="line">MyBus::BroadcastResult(<a class="code hl_class" href="class_a_z_1_1_e_bus.html">result</a>, &amp;MyBus::Events::GetANumber);</div>
-<div class="line"><span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; val : <a class="code hl_class" href="class_a_z_1_1_e_bus.html">result</a>.<a class="code hl_variable" href="struct_a_z_1_1_e_bus_aggregate_results.html#ac85bbef48992193e593fe4f05c5a5432">values</a>) { ... }</div>
-<div class="ttc" id="aclass_a_z_1_1_e_bus_html"><div class="ttname"><a href="class_a_z_1_1_e_bus.html">AZ::EBus</a></div><div class="ttdef"><b>Definition</b> EBus.h:405</div></div>
+<p>The following is an example of adding handler results to a vector of previous results: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_z_1_1_e_bus_aggregate_results.html">EBusAggregateResults&lt;int&gt;</a> result;</div>
+<div class="line">MyBus::BroadcastResult(result, &amp;MyBus::Events::GetANumber);</div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; val : result.<a class="code hl_variable" href="struct_a_z_1_1_e_bus_aggregate_results.html#ac85bbef48992193e593fe4f05c5a5432">values</a>) { ... }</div>
+<div class="ttc" id="astruct_a_z_1_1_e_bus_aggregate_results_html"><div class="ttname"><a href="struct_a_z_1_1_e_bus_aggregate_results.html">AZ::EBusAggregateResults</a></div><div class="ttdef"><b>Definition</b> Results.h:206</div></div>
 <div class="ttc" id="astruct_a_z_1_1_e_bus_aggregate_results_html_ac85bbef48992193e593fe4f05c5a5432"><div class="ttname"><a href="struct_a_z_1_1_e_bus_aggregate_results.html#ac85bbef48992193e593fe4f05c5a5432">AZ::EBusAggregateResults::values</a></div><div class="ttdeci">AZStd::vector&lt; T &gt; values</div><div class="ttdef"><b>Definition</b> Results.h:210</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a114dc689647a27b847d0261540c4d061" name="a114dc689647a27b847d0261540c4d061"></a>
@@ -94,15 +94,15 @@ struct AZ::EBusAggregateResults&lt; T &gt;</div><p>Collects results returned by 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div>
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">void</a> <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html">AZ::EBusAggregateResults</a>&lt; T &gt;::operator= </td>
+          <td class="memname">void <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html">AZ::EBusAggregateResults</a>&lt; T &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> T &amp;&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -123,13 +123,13 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div>
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">void</a> <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html">AZ::EBusAggregateResults</a>&lt; T &gt;::operator= </td>
+          <td class="memname">void <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html">AZ::EBusAggregateResults</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
@@ -153,7 +153,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt;T&gt; <a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html">AZ::EBusAggregateResults</a>&lt; T &gt;::values</td>
@@ -173,7 +173,7 @@ template&lt;<a class="el" href="class_a_z_1_1_e_bus.html">class</a> T &gt; </div
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_e_bus_aggregate_results.html">EBusAggregateResults</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

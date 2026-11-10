@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -87,14 +87,14 @@ template&lt;class Y &gt; </td></tr>
 <tr class="memitem:a5327fcb873e94517aaa0211ee69660b5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>weak_ptr</b> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">shared_ptr</a>&lt; Y &gt; const &amp;r, typename AZStd::Internal::sp_enable_if_convertible&lt; Y, T &gt;::type=AZStd::Internal::sp_empty())</td></tr>
 <tr class="separator:a5327fcb873e94517aaa0211ee69660b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca68bd6b6ac6453d959adb2f398a48c2" id="r_aca68bd6b6ac6453d959adb2f398a48c2"><td class="memItemLeft" align="right" valign="top"><a id="aca68bd6b6ac6453d959adb2f398a48c2" name="aca68bd6b6ac6453d959adb2f398a48c2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>weak_ptr</b> (const <a class="el" href="class_a_z_std_1_1weak__ptr.html">this_type</a> &amp;r)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>weak_ptr</b> (const this_type &amp;r)</td></tr>
 <tr class="separator:aca68bd6b6ac6453d959adb2f398a48c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a161bb24197f2f97714cd534887f24ccc" id="r_a161bb24197f2f97714cd534887f24ccc"><td class="memTemplParams" colspan="2"><a id="a161bb24197f2f97714cd534887f24ccc" name="a161bb24197f2f97714cd534887f24ccc"></a>
 template&lt;class Y &gt; </td></tr>
 <tr class="memitem:a161bb24197f2f97714cd534887f24ccc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1weak__ptr.html">weak_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_std_1_1weak__ptr.html">weak_ptr</a>&lt; Y &gt; const &amp;r)</td></tr>
 <tr class="separator:a161bb24197f2f97714cd534887f24ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e53b9d2bfa7ce8558520d566528e22" id="r_a78e53b9d2bfa7ce8558520d566528e22"><td class="memItemLeft" align="right" valign="top"><a id="a78e53b9d2bfa7ce8558520d566528e22" name="a78e53b9d2bfa7ce8558520d566528e22"></a>
-<a class="el" href="class_a_z_std_1_1weak__ptr.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1weak__ptr.html">this_type</a> &amp;r)</td></tr>
+this_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const this_type &amp;r)</td></tr>
 <tr class="separator:a78e53b9d2bfa7ce8558520d566528e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a228f1e256d9cd8f7e44ddf7b7af241ec" id="r_a228f1e256d9cd8f7e44ddf7b7af241ec"><td class="memTemplParams" colspan="2"><a id="a228f1e256d9cd8f7e44ddf7b7af241ec" name="a228f1e256d9cd8f7e44ddf7b7af241ec"></a>
 template&lt;class Y &gt; </td></tr>
@@ -120,7 +120,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_empty</b> () const</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:a61d639d594d679e6b88b5a330a997262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ab38e5ee08edd99d3db0e3d3d16543" id="r_a19ab38e5ee08edd99d3db0e3d3d16543"><td class="memItemLeft" align="right" valign="top"><a id="a19ab38e5ee08edd99d3db0e3d3d16543" name="a19ab38e5ee08edd99d3db0e3d3d16543"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_std_1_1weak__ptr.html">this_type</a> &amp;other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (this_type &amp;other)</td></tr>
 <tr class="separator:a19ab38e5ee08edd99d3db0e3d3d16543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad222b6acc59cae6da980d2061541b515" id="r_ad222b6acc59cae6da980d2061541b515"><td class="memItemLeft" align="right" valign="top"><a id="ad222b6acc59cae6da980d2061541b515" name="ad222b6acc59cae6da980d2061541b515"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_internal_assign</b> (T *px2, AZStd::Internal::shared_count const &amp;pn2)</td></tr>
@@ -147,7 +147,7 @@ template&lt;class Y &gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1weak__ptr.html">weak_ptr</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:25 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:26 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

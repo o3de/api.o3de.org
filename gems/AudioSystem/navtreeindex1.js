@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"struct_audio_1_1_system_request_1_1_initialize.html":[0,0,0,4,5],
 "struct_audio_1_1_system_request_1_1_load_bank.html":[0,0,0,4,6],
 "struct_audio_1_1_system_request_1_1_load_controls.html":[0,0,0,4,7],
 "struct_audio_1_1_system_request_1_1_lose_focus.html":[0,0,0,4,8],
@@ -24,8 +25,8 @@ var NAVTREEINDEX1 =
 "struct_audio_controls_1_1_s_control_scope.html":[0,0,1,28],
 "struct_audio_controls_1_1_s_library_scope.html":[0,0,1,29],
 "struct_audio_controls_1_1_s_raw_connection_data.html":[0,0,1,30],
-"struct_i_tree_widget_item_filter.html":[0,0,7],
-"struct_s_hide_connected_filter.html":[0,0,14],
-"struct_s_impl_name_filter.html":[0,0,15],
-"struct_s_impl_type_filter.html":[0,0,16]
+"struct_i_tree_widget_item_filter.html":[0,0,8],
+"struct_s_hide_connected_filter.html":[0,0,15],
+"struct_s_impl_name_filter.html":[0,0,16],
+"struct_s_impl_type_filter.html":[0,0,17]
 };

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -136,12 +136,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginEditing</b> ()</
 <tr class="memitem:a379349587988630d868b939ae1832c3b" id="r_a379349587988630d868b939ae1832c3b"><td class="memItemLeft" align="right" valign="top"><a id="a379349587988630d868b939ae1832c3b" name="a379349587988630d868b939ae1832c3b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndEditing</b> ()</td></tr>
 <tr class="separator:a379349587988630d868b939ae1832c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3fdc69c8c409ee4e539115c1ade053" id="r_aea3fdc69c8c409ee4e539115c1ade053"><td class="memItemLeft" align="right" valign="top"><a id="aea3fdc69c8c409ee4e539115c1ade053" name="aea3fdc69c8c409ee4e539115c1ade053"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginUndoBatch</b> (const char *label)</td></tr>
-<tr class="separator:aea3fdc69c8c409ee4e539115c1ade053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adabae2c7e3a6f1d9cdaeba8644540ea5" id="r_adabae2c7e3a6f1d9cdaeba8644540ea5"><td class="memItemLeft" align="right" valign="top"><a id="adabae2c7e3a6f1d9cdaeba8644540ea5" name="adabae2c7e3a6f1d9cdaeba8644540ea5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EndUndoBatch</b> ()</td></tr>
-<tr class="separator:adabae2c7e3a6f1d9cdaeba8644540ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -169,9 +163,6 @@ AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a569895356930aacc53ebcec83b779bb9" id="r_a569895356930aacc53ebcec83b779bb9"><td class="memItemLeft" align="right" valign="top"><a id="a569895356930aacc53ebcec83b779bb9" name="a569895356930aacc53ebcec83b779bb9"></a>
 AZStd::unordered_set&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityIds</b></td></tr>
 <tr class="separator:a569895356930aacc53ebcec83b779bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf5175f80ddba3f7cdb5a0fe78859ff8" id="r_aaf5175f80ddba3f7cdb5a0fe78859ff8"><td class="memItemLeft" align="right" valign="top"><a id="aaf5175f80ddba3f7cdb5a0fe78859ff8" name="aaf5175f80ddba3f7cdb5a0fe78859ff8"></a>
-<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoBatch</b> = nullptr</td></tr>
-<tr class="separator:aaf5175f80ddba3f7cdb5a0fe78859ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for viewport editing of shapes. This class and its descendants are intended to be viewport independent, so avoid using buses addressed by EntityId or EntityComponentIdPair. To facilitate uses in the main viewport, an EntityComponentIdPair can optionally be specified using AddEntityComponentIdPair, in order to hook manipulators up to undo/redo behavior and UI refreshing. </p>
@@ -358,7 +349,7 @@ AZStd::unordered_set&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" va
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_base_shape_viewport_edit.html">BaseShapeViewportEdit</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:29 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

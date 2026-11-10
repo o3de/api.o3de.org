@@ -54,6 +54,8 @@ var class_a_z_1_1_quaternion =
     [ "SetFromEulerDegrees", "class_a_z_1_1_quaternion.html#ac1700b11286af12fc6d0090d8b97bbb8", null ],
     [ "SetFromEulerRadians", "class_a_z_1_1_quaternion.html#a02a54ffe764ea2b14178bd08c3831cfd", null ],
     [ "Slerp", "class_a_z_1_1_quaternion.html#a70cc19be6c627166ab5d785942f994eb", null ],
+    [ "SmoothCriticallyDamped", "class_a_z_1_1_quaternion.html#aa9d5a44b97d3b4dbf504d1cf895aa154", null ],
+    [ "SmoothStep", "class_a_z_1_1_quaternion.html#a3a8cf599c9bb42af9000881d482f761b", null ],
     [ "Squad", "class_a_z_1_1_quaternion.html#a94040965a861e6577079df07b617df59", null ],
     [ "StoreToFloat4", "class_a_z_1_1_quaternion.html#a72fd6ba0c0835af42d320eeb91498cbb", null ],
     [ "TransformVector", "class_a_z_1_1_quaternion.html#a57919d1d4781826528ccfedfe71a1e80", null ]

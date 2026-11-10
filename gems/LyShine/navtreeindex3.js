@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"class_ui_anim_undo_manager.html#a83a31bc5d12d3d31987ee91a870be159":[2,0,182,6],
+"class_ui_anim_undo_manager.html#a862a1352ebddb5c497f9138959d5915e":[2,0,182,2],
+"class_ui_anim_undo_manager.html#a9d45bd6f1a509a7900994a13113b2059":[2,0,182,0],
+"class_ui_anim_undo_manager.html#aab612a5f91830f93c972c8aa6f584e82":[2,0,182,4],
 "class_ui_anim_undo_manager.html#ab7846f4cecacab49fb943fd6bd55fe2a":[2,0,182,7],
 "class_ui_anim_undo_manager.html#acf4765443fe4c804b4685bdcddfdc60f":[2,0,182,3],
 "class_ui_anim_undo_manager.html#ada6a26ad1e14b6019c65d2356c774a63":[2,0,182,5],
@@ -238,16 +242,12 @@ var NAVTREEINDEX3 =
 "class_ui_clickable_text_notifications.html":[2,0,220],
 "class_ui_clickable_text_notifications.html#a12f893b2cb2058df69b5e55f62a1fb33":[2,0,220,0],
 "class_ui_clipboard.html":[2,0,221],
-"class_ui_compound_spline_track.html":[2,0,222],
-"class_ui_compound_spline_track.html#a013a9ad0d844b187b6d852ff3720d4fe":[2,0,222,10],
-"class_ui_compound_spline_track.html#a0bca41a0f2efd9182d10f455c1c0fe06":[2,0,222,0],
-"class_ui_compound_spline_track.html#a13836ba99b02efa3b3cbf39e4decf6bc":[2,0,222,5],
-"class_ui_compound_spline_track.html#a164d37e0610cd55fff72a61078c6ea81":[2,0,222,3],
-"class_ui_compound_spline_track.html#a1e820a2c44197d7110a8a0e2881b27e6":[2,0,222,14],
-"class_ui_compound_spline_track.html#a241f75bc958de734a3f3137f01f8582d":[2,0,222,2],
-"class_ui_compound_spline_track.html#a36bc77792a37ed7bf7b5936bc8314a9c":[2,0,222,17],
-"class_ui_compound_spline_track.html#a406e258226a516c3571ade8dd85d78af":[2,0,222,8],
-"class_ui_compound_spline_track.html#a58a4c513221eaa7e09cd6e7cee5877f2":[2,0,222,1],
-"class_ui_compound_spline_track.html#a6aa420f29c0400951cf5732fe9902d5f":[2,0,222,12],
-"class_ui_compound_spline_track.html#a6e228912f4ae413cd018b7939f8e2d9f":[2,0,222,13]
+"class_ui_component_palette_widget.html":[2,0,222],
+"class_ui_component_palette_widget.html#a658ca46cc8b6f4dc19779b6a3d5373eb":[2,0,222,0],
+"class_ui_compound_spline_track.html":[2,0,223],
+"class_ui_compound_spline_track.html#a013a9ad0d844b187b6d852ff3720d4fe":[2,0,223,10],
+"class_ui_compound_spline_track.html#a0bca41a0f2efd9182d10f455c1c0fe06":[2,0,223,0],
+"class_ui_compound_spline_track.html#a13836ba99b02efa3b3cbf39e4decf6bc":[2,0,223,5],
+"class_ui_compound_spline_track.html#a164d37e0610cd55fff72a61078c6ea81":[2,0,223,3],
+"class_ui_compound_spline_track.html#a1e820a2c44197d7110a8a0e2881b27e6":[2,0,223,14]
 };

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,6 +54,7 @@ $(document).ready(function(){initNavTree('class_az_tools_framework_1_1_property_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_property_handler_widget_interface-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">AzToolsFramework::PropertyHandlerWidgetInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -70,6 +71,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a174e1bd0e10db903c638658dc48edbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b927a9124d67c9d9ebf76fda893329f" id="r_a4b927a9124d67c9d9ebf76fda893329f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a4b927a9124d67c9d9ebf76fda893329f">SetValueFromDom</a> (const AZ::Dom::Value &amp;node)=0</td></tr>
 <tr class="separator:a4b927a9124d67c9d9ebf76fda893329f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b0db6833607e4fe495ab967f884b66" id="r_a08b0db6833607e4fe495ab967f884b66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a08b0db6833607e4fe495ab967f884b66">RefreshUI</a> ()=0</td></tr>
+<tr class="separator:a08b0db6833607e4fe495ab967f884b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971f0ee42dd1584800ece0fdcbdc8fe8" id="r_a971f0ee42dd1584800ece0fdcbdc8fe8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a971f0ee42dd1584800ece0fdcbdc8fe8">ResetToDefaults</a> ()</td></tr>
 <tr class="memdesc:a971f0ee42dd1584800ece0fdcbdc8fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to reset the widget handler to default, typically for recycling. Returns true if successful.  <br /></td></tr>
 <tr class="separator:a971f0ee42dd1584800ece0fdcbdc8fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,6 +92,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a32ea2204ce9442b84903a3da126a3a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a473278dba9ed608ba745db166319a74a" id="r_a473278dba9ed608ba745db166319a74a"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html#a473278dba9ed608ba745db166319a74a">IsDefaultHandler</a> ()</td></tr>
 <tr class="separator:a473278dba9ed608ba745db166319a74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ad79db6c1f958b9fa202cdf3c4c1e2447" id="r_ad79db6c1f958b9fa202cdf3c4c1e2447"><td class="memItemLeft" align="right" valign="top"><a id="ad79db6c1f958b9fa202cdf3c4c1e2447" name="ad79db6c1f958b9fa202cdf3c4c1e2447"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DocumentPropertyEditor</b></td></tr>
+<tr class="separator:ad79db6c1f958b9fa202cdf3c4c1e2447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af116ffedf8f91ba115de979cb94ab103" id="r_af116ffedf8f91ba115de979cb94ab103"><td class="memItemLeft" align="right" valign="top"><a id="af116ffedf8f91ba115de979cb94ab103" name="af116ffedf8f91ba115de979cb94ab103"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DPERowWidget</b></td></tr>
+<tr class="separator:af116ffedf8f91ba115de979cb94ab103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all property editor widgets in the <a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a>. Property handler widgets are registered to the <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system_interface.html">PropertyEditorToolsSystemInterface</a> and instantiated as part of the <a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a>, with one handler instance being constructed for each property editor. </p>
@@ -230,6 +242,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a08b0db6833607e4fe495ab967f884b66" name="a08b0db6833607e4fe495ab967f884b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b0db6833607e4fe495ab967f884b66">&#9670;&#160;</a></span>RefreshUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::PropertyHandlerWidgetInterface::RefreshUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The above SetValueFromDom function could be called repeatedly during updates, to set little pieces of the node data. In order to avoid repeatedly updating the widget, avoid setting any widget UI values in SetValueFromDom, and instead wait for this function to be called, which will be called after all DOM updates are complete. </p>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a88c962cfb037fc959c9faa1a770ce09d">AzToolsFramework::Prefab::PrefabOverrideLabelHandler</a>, <a class="el" href="class_az_tools_framework_1_1_container_action_button_handler.html#a1d599c9d20094773297847bb91812711">AzToolsFramework::ContainerActionButtonHandler</a>, <a class="el" href="class_az_tools_framework_1_1_generic_button_handler.html#a1b27dcdfdcb697d40b10323154956374">AzToolsFramework::GenericButtonHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#a749df60c94b3ab9fb2a188aea6c8d354">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a971f0ee42dd1584800ece0fdcbdc8fe8" name="a971f0ee42dd1584800ece0fdcbdc8fe8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a971f0ee42dd1584800ece0fdcbdc8fe8">&#9670;&#160;</a></span>ResetToDefaults()</h2>
 
@@ -255,7 +295,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Attempts to reset the widget handler to default, typically for recycling. Returns true if successful. </p>
 
-<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a5730d82724f2af05b635fbd37ee23675">AzToolsFramework::Prefab::PrefabOverrideLabelHandler</a>, <a class="el" href="class_az_tools_framework_1_1_container_action_button_handler.html#a4837968ae006158b1a5409b5ece663da">AzToolsFramework::ContainerActionButtonHandler</a>, <a class="el" href="class_az_tools_framework_1_1_generic_button_handler.html#afb1081e6e794384eca57f6e011b8a2a7">AzToolsFramework::GenericButtonHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ace4d426f9260e294e21c624291b70f3b">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a5730d82724f2af05b635fbd37ee23675">AzToolsFramework::Prefab::PrefabOverrideLabelHandler</a>, <a class="el" href="class_az_tools_framework_1_1_container_action_button_handler.html#a4837968ae006158b1a5409b5ece663da">AzToolsFramework::ContainerActionButtonHandler</a>, <a class="el" href="class_az_tools_framework_1_1_generic_button_handler.html#aeb340e1bc273b113b191072c72587168">AzToolsFramework::GenericButtonHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ace4d426f9260e294e21c624291b70f3b">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>.</p>
 
 </div>
 </div>
@@ -314,7 +354,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets up the widget provided by GetWidget to reflect the values provided by a given DOM node. This should consume both the property value (if applicable) and any attributes, including OnChange. </p>
 
-<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ade142a0fd7c090cbae4f0ece2857be4b">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>, <a class="el" href="class_az_tools_framework_1_1_container_action_button_handler.html#adef0166997f4fbb2f36520be55e64b8d">AzToolsFramework::ContainerActionButtonHandler</a>, <a class="el" href="class_az_tools_framework_1_1_generic_button_handler.html#a829e1997a5c094e0bb62d341ca7dfa93">AzToolsFramework::GenericButtonHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a29c3e536cec9a3444538573b00b7b9fc">AzToolsFramework::Prefab::PrefabOverrideLabelHandler</a>.</p>
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_rpe_property_handler_wrapper.html#ade142a0fd7c090cbae4f0ece2857be4b">AzToolsFramework::RpePropertyHandlerWrapper&lt; WrappedType &gt;</a>, <a class="el" href="class_az_tools_framework_1_1_container_action_button_handler.html#adef0166997f4fbb2f36520be55e64b8d">AzToolsFramework::ContainerActionButtonHandler</a>, <a class="el" href="class_az_tools_framework_1_1_generic_button_handler.html#aaf1a8ee3f910611fcebcc58df3c46b26">AzToolsFramework::GenericButtonHandler</a>, and <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_label_handler.html#a29c3e536cec9a3444538573b00b7b9fc">AzToolsFramework::Prefab::PrefabOverrideLabelHandler</a>.</p>
 
 </div>
 </div>
@@ -354,7 +394,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html">PropertyHandlerWidgetInterface</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:29 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

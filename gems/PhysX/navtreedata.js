@@ -54,7 +54,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_phys_x_1_1_editor_primitive_collider_component_requests.html#a50339c7ee6ac8b2ef0f7538046ad3f9c",
 "class_phys_x_1_1_rigid_body_component.html",
-"struct_phys_x_1_1_utils_1_1_prefab_info.html"
+"struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

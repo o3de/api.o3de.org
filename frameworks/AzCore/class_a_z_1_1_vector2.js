@@ -58,5 +58,7 @@ var class_a_z_1_1_vector2 =
     [ "SetLengthEstimate", "class_a_z_1_1_vector2.html#ab50f6705a217b1d4b7c5c0b5a65f32b8", null ],
     [ "SetSimdValue", "class_a_z_1_1_vector2.html#a6524e8aaadf224ebbfc8e2137ac4e6d3", null ],
     [ "Slerp", "class_a_z_1_1_vector2.html#ae86b0c19a08237e525d181c80ec3c095", null ],
+    [ "SmoothCriticallyDamped", "class_a_z_1_1_vector2.html#ab2fd3f2f5a91e8a593697878b7324c12", null ],
+    [ "SmoothStep", "class_a_z_1_1_vector2.html#af784d3ffbe06a2e18cde9bfffe54a57b", null ],
     [ "StoreToFloat2", "class_a_z_1_1_vector2.html#a691a93ba44147a2dddff3fde26d36845", null ]
 ];

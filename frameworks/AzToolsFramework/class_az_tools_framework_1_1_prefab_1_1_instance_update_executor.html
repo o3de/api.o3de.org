@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -58,7 +58,7 @@ $(document).ready(function(){initNavTree('class_az_tools_framework_1_1_prefab_1_
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>.</p>
+<p>Inherits <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>, and AzToolsFramework::ToolsApplicationNotificationBus::Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -75,8 +75,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb7b23020734214fdbd8d015fdbf4a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e9836225a26162303985ffa2be5783" id="r_a33e9836225a26162303985ffa2be5783"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#a33e9836225a26162303985ffa2be5783">AddTemplateInstancesToQueue</a> (TemplateId instanceTemplateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt) override</td></tr>
 <tr class="separator:a33e9836225a26162303985ffa2be5783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6312856c38c8d959348abc9bea937b" id="r_afa6312856c38c8d959348abc9bea937b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#afa6312856c38c8d959348abc9bea937b">UpdateTemplateInstancesInQueue</a> () override</td></tr>
-<tr class="separator:afa6312856c38c8d959348abc9bea937b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1800a9e5c49d3a30afa37b0a66ec8c0" id="r_ac1800a9e5c49d3a30afa37b0a66ec8c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#ac1800a9e5c49d3a30afa37b0a66ec8c0">UpdateTemplateInstancesInQueue</a> (bool flush) override</td></tr>
+<tr class="separator:ac1800a9e5c49d3a30afa37b0a66ec8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9cc98222545918c082fc835424ba53" id="r_a4a9cc98222545918c082fc835424ba53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#a4a9cc98222545918c082fc835424ba53">IsUpdatingTemplateInstancesInQueue</a> () const override</td></tr>
 <tr class="separator:a4a9cc98222545918c082fc835424ba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3913a3bdb0de93a8c2b1f0dff7cd0051" id="r_a3913a3bdb0de93a8c2b1f0dff7cd0051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#a3913a3bdb0de93a8c2b1f0dff7cd0051">RemoveTemplateInstanceFromQueue</a> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance) override</td></tr>
@@ -300,8 +300,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
 
 </div>
 </div>
-<a id="afa6312856c38c8d959348abc9bea937b" name="afa6312856c38c8d959348abc9bea937b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6312856c38c8d959348abc9bea937b">&#9670;&#160;</a></span>UpdateTemplateInstancesInQueue()</h2>
+<a id="ac1800a9e5c49d3a30afa37b0a66ec8c0" name="ac1800a9e5c49d3a30afa37b0a66ec8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1800a9e5c49d3a30afa37b0a66ec8c0">&#9670;&#160;</a></span>UpdateTemplateInstancesInQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +312,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
         <tr>
           <td class="memname">bool AzToolsFramework::Prefab::InstanceUpdateExecutor::UpdateTemplateInstancesInQueue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flush</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -323,8 +324,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
 </table>
 </div><div class="memdoc">
 <p>Updates instances in the waiting queue. </p><dl class="section return"><dt>Returns</dt><dd>bool on whether the operation succeeds. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flush</td><td>(default true) - if set to true, all instances in the queue will be updated in one go. Otherwise, the update executor can update a limited number per call and will continue to do so each time this function is called until the queue is empty. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#ae64bd93546a57c15ab9c8827111eb9a5">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#adfad9c9ba0b9d856a915c573cf9f7535">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>.</p>
 
 </div>
 </div>
@@ -337,7 +344,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><b>Prefab</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html">InstanceUpdateExecutor</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:31 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

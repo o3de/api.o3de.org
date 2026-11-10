@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine ROS2RobotImporter Gem API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,8 +63,8 @@ $(document).ready(function(){initNavTree('class_r_o_s2_robot_importer_1_1_robot_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a613fbce23882a83947fc44bb034effa7" id="r_a613fbce23882a83947fc44bb034effa7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_robot_importer_request.html#a613fbce23882a83947fc44bb034effa7">GeneratePrefabFromFile</a> (const AZStd::string_view filePath, bool importAssetWithUrdf, bool useArticulation)=0</td></tr>
-<tr class="separator:a613fbce23882a83947fc44bb034effa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fc1e51f5634dae55b195bdee7521a5" id="r_ac8fc1e51f5634dae55b195bdee7521a5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_robot_importer_1_1_robot_importer_request.html#ac8fc1e51f5634dae55b195bdee7521a5">GeneratePrefabFromFile</a> (const AZStd::string_view filePath, bool importAssetWithFile, bool useArticulation)=0</td></tr>
+<tr class="separator:ac8fc1e51f5634dae55b195bdee7521a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9899284a478340bae434bdd36a142e9b" id="r_a9899284a478340bae434bdd36a142e9b"><td class="memItemLeft" align="right" valign="top"><a id="a9899284a478340bae434bdd36a142e9b" name="a9899284a478340bae434bdd36a142e9b"></a>
 virtual const SDFormat::SensorImporterHooksStorage &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSensorHooks</b> () const =0</td></tr>
 <tr class="memdesc:a9899284a478340bae434bdd36a142e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the reference to the list of sensor importer hooks. <br /></td></tr>
@@ -84,8 +84,8 @@ static constexpr AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign
 <tr class="separator:a373aefde75bdb6962a077a3b5fd346ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a613fbce23882a83947fc44bb034effa7" name="a613fbce23882a83947fc44bb034effa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a613fbce23882a83947fc44bb034effa7">&#9670;&#160;</a></span>GeneratePrefabFromFile()</h2>
+<a id="ac8fc1e51f5634dae55b195bdee7521a5" name="ac8fc1e51f5634dae55b195bdee7521a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8fc1e51f5634dae55b195bdee7521a5">&#9670;&#160;</a></span>GeneratePrefabFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,7 +103,7 @@ static constexpr AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>importAssetWithUrdf</em>, </td>
+          <td class="paramname"><em>importAssetWithFile</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -123,10 +123,10 @@ static constexpr AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Generate prefab from the urdf file. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Generate prefab from the URDF/SDF file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filePath</td><td>The path of the urdf file </td></tr>
-    <tr><td class="paramname">importAssetWithUrdf</td><td>If true, the assets referenced in the urdf file will be imported </td></tr>
+    <tr><td class="paramname">filePath</td><td>The path of the URDF/SDF file </td></tr>
+    <tr><td class="paramname">importAssetWithFile</td><td>If true, the assets referenced in the URDF/SDF file will be imported </td></tr>
     <tr><td class="paramname">useArticulation</td><td>If true, the prefab will be generated with articulation </td></tr>
   </table>
   </dd>
@@ -143,7 +143,7 @@ static constexpr AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2RobotImporter</b></li><li class="navelem"><a class="el" href="class_r_o_s2_robot_importer_1_1_robot_importer_request.html">RobotImporterRequest</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:49 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:51 for Open 3D Engine ROS2RobotImporter Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -51,7 +51,6 @@ var hierarchy =
     [ "AzQtComponents::MappedPoint", "struct_az_qt_components_1_1_mapped_point.html", null ],
     [ "AzQtComponents::Menu", "class_az_qt_components_1_1_menu.html", null ],
     [ "AzQtComponents::Menu::Config", "struct_az_qt_components_1_1_menu_1_1_config.html", null ],
-    [ "AzQtComponents::Menu::Margins", "struct_az_qt_components_1_1_menu_1_1_margins.html", null ],
     [ "AzQtComponents::OverlayWidget::LayerInfo", "struct_az_qt_components_1_1_overlay_widget_1_1_layer_info.html", null ],
     [ "AzQtComponents::OverlayWidgetButton", "struct_az_qt_components_1_1_overlay_widget_button.html", null ],
     [ "AzQtComponents::Palette", "class_az_qt_components_1_1_palette.html", null ],
@@ -70,7 +69,6 @@ var hierarchy =
     [ "AzQtComponents::PushButton::SmallIcon", "struct_az_qt_components_1_1_push_button_1_1_small_icon.html", null ],
     [ "AzQtComponents::RadioButton", "class_az_qt_components_1_1_radio_button.html", null ],
     [ "AzQtComponents::RadioButton::Config", "struct_az_qt_components_1_1_radio_button_1_1_config.html", null ],
-    [ "AzQtComponents::RepolishMinimizer", "class_az_qt_components_1_1_repolish_minimizer.html", null ],
     [ "AzQtComponents::ScrollBar", "class_az_qt_components_1_1_scroll_bar.html", null ],
     [ "AzQtComponents::ScrollBar::Config", "struct_az_qt_components_1_1_scroll_bar_1_1_config.html", null ],
     [ "AzQtComponents::SearchTypeFilter", "struct_az_qt_components_1_1_search_type_filter.html", null ],
@@ -192,22 +190,18 @@ var hierarchy =
         [ "AzQtComponents::RGBColorValidator", "class_az_qt_components_1_1_r_g_b_color_validator.html", null ]
       ] ],
       [ "AzQtComponents::DockBar", "class_az_qt_components_1_1_dock_bar.html", null ],
-      [ "AzQtComponents::GlobalEventFilter", "class_az_qt_components_1_1_global_event_filter.html", null ],
       [ "AzQtComponents::InteractiveWindowGeometryChanger", "class_az_qt_components_1_1_interactive_window_geometry_changer.html", [
         [ "AzQtComponents::InteractiveWindowMover", "class_az_qt_components_1_1_interactive_window_mover.html", null ],
         [ "AzQtComponents::InteractiveWindowResizer", "class_az_qt_components_1_1_interactive_window_resizer.html", null ]
       ] ],
+      [ "AzQtComponents::LineEditRevertHandler", "class_az_qt_components_1_1_line_edit_revert_handler.html", null ],
       [ "AzQtComponents::MouseHider", "class_az_qt_components_1_1_mouse_hider.html", null ],
       [ "AzQtComponents::ScreenGrabber", "class_az_qt_components_1_1_screen_grabber.html", null ],
       [ "AzQtComponents::StyleManager", "class_az_qt_components_1_1_style_manager.html", [
         [ "AzQtComponents::O3DEStylesheet", "class_az_qt_components_1_1_o3_d_e_stylesheet.html", null ]
       ] ],
       [ "AzQtComponents::StyleSheetCache", "class_az_qt_components_1_1_style_sheet_cache.html", null ],
-      [ "AzQtComponents::StylesheetPreprocessor", "class_az_qt_components_1_1_stylesheet_preprocessor.html", null ],
-      [ "AzQtComponents::TitleBarOverdrawHandler", "class_az_qt_components_1_1_title_bar_overdraw_handler.html", [
-        [ "AzQtComponents::TitleBarOverdrawHandlerWindows", "class_az_qt_components_1_1_title_bar_overdraw_handler_windows.html", null ]
-      ] ],
-      [ "AzQtComponents::TitleBarOverdrawScreenHandler", "class_az_qt_components_1_1_title_bar_overdraw_screen_handler.html", null ]
+      [ "AzQtComponents::StylesheetPreprocessor", "class_az_qt_components_1_1_stylesheet_preprocessor.html", null ]
     ] ],
     [ "QProxyStyle", null, [
       [ "AzQtComponents::Style", "class_az_qt_components_1_1_style.html", null ]

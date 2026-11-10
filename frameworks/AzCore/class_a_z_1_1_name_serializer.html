@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -68,22 +68,22 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_name_serializer.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad119253fc1ba2cd4de1c10f001b15ec5" id="r_ad119253fc1ba2cd4de1c10f001b15ec5"><td class="memItemLeft" align="right" valign="top"><a id="ad119253fc1ba2cd4de1c10f001b15ec5" name="ad119253fc1ba2cd4de1c10f001b15ec5"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DataToText</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;in, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;out, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DataToText</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;in, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;out, bool) override</td></tr>
 <tr class="memdesc:ad119253fc1ba2cd4de1c10f001b15ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert binary data to text. <br /></td></tr>
 <tr class="separator:ad119253fc1ba2cd4de1c10f001b15ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd202aff0f4983516403f998bf6a5f5" id="r_a5bd202aff0f4983516403f998bf6a5f5"><td class="memItemLeft" align="right" valign="top"><a id="a5bd202aff0f4983516403f998bf6a5f5" name="a5bd202aff0f4983516403f998bf6a5f5"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>TextToData</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">char</a> *<a class="el" href="class_a_z_1_1_e_bus.html">text</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>TextToData</b> (const char *text, unsigned int, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, bool) override</td></tr>
 <tr class="memdesc:a5bd202aff0f4983516403f998bf6a5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert text data to binary, to support loading old version formats. We must respect text version if the text-&gt;binary format has changed! <br /></td></tr>
 <tr class="separator:a5bd202aff0f4983516403f998bf6a5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64258817ae06b7856f06fdd0596378b0" id="r_a64258817ae06b7856f06fdd0596378b0"><td class="memItemLeft" align="right" valign="top"><a id="a64258817ae06b7856f06fdd0596378b0" name="a64258817ae06b7856f06fdd0596378b0"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">classPtr</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (const void *classPtr, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, bool) override</td></tr>
 <tr class="memdesc:a64258817ae06b7856f06fdd0596378b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the class data into a stream. <br /></td></tr>
 <tr class="separator:a64258817ae06b7856f06fdd0596378b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb7def09c6e637da0d23e53a823fa31e" id="r_aeb7def09c6e637da0d23e53a823fa31e"><td class="memItemLeft" align="right" valign="top"><a id="aeb7def09c6e637da0d23e53a823fa31e" name="aeb7def09c6e637da0d23e53a823fa31e"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">classPtr</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">stream</a>, <a class="el" href="class_a_z_1_1_e_bus.html">unsigned</a> <a class="el" href="class_a_z_1_1_e_bus.html">int</a>, <a class="el" href="class_a_z_1_1_e_bus.html">bool</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (void *classPtr, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">IO::GenericStream</a> &amp;stream, unsigned int, bool) override</td></tr>
 <tr class="memdesc:aeb7def09c6e637da0d23e53a823fa31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the class data from a stream. <br /></td></tr>
 <tr class="separator:aeb7def09c6e637da0d23e53a823fa31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bcdf0c615da5a5408ea6532c9b650a7" id="r_a3bcdf0c615da5a5408ea6532c9b650a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_serializer.html#a3bcdf0c615da5a5408ea6532c9b650a7">CompareValueData</a> (<a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">lhs</a>, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *<a class="el" href="class_a_z_1_1_e_bus.html">rhs</a>) <a class="el" href="class_a_z_1_1_e_bus.html">override</a></td></tr>
+<tr class="memitem:a3bcdf0c615da5a5408ea6532c9b650a7" id="r_a3bcdf0c615da5a5408ea6532c9b650a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_serializer.html#a3bcdf0c615da5a5408ea6532c9b650a7">CompareValueData</a> (const void *lhs, const void *rhs) override</td></tr>
 <tr class="separator:a3bcdf0c615da5a5408ea6532c9b650a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -99,15 +99,15 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (<a class=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_e_bus.html">bool</a> AZ::NameSerializer::CompareValueData </td>
+          <td class="memname">bool AZ::NameSerializer::CompareValueData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -135,7 +135,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> (<a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="class_a_z_1_1_name_serializer.html">NameSerializer</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:19 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

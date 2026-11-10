@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -65,19 +65,19 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL_API</b> (AZCORE_API, <a class="el" href="struct_a_z_1_1_behavior_object.html">BehaviorObject</a>)</td></tr>
 <tr class="separator:ab6fbf60ab94a8330ad9e388dc9ddb0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ebabd0d7dd02ab99ce506dbfc5f263" id="r_af2ebabd0d7dd02ab99ce506dbfc5f263"><td class="memItemLeft" align="right" valign="top"><a id="af2ebabd0d7dd02ab99ce506dbfc5f263" name="af2ebabd0d7dd02ab99ce506dbfc5f263"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorObject</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *address, <a class="el" href="class_a_z_1_1_e_bus.html">const</a> <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;<a class="el" href="class_a_z_1_1_e_bus.html">typeId</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorObject</b> (void *address, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeId)</td></tr>
 <tr class="separator:af2ebabd0d7dd02ab99ce506dbfc5f263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e65a6804c09a8c1f7675a3990898b5" id="r_a15e65a6804c09a8c1f7675a3990898b5"><td class="memItemLeft" align="right" valign="top"><a id="a15e65a6804c09a8c1f7675a3990898b5" name="a15e65a6804c09a8c1f7675a3990898b5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorObject</b> (<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *address, <a class="el" href="class_a_z_1_1_i_rtti_helper.html">IRttiHelper</a> *<a class="el" href="class_a_z_1_1_e_bus.html">rttiHelper</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorObject</b> (void *address, <a class="el" href="class_a_z_1_1_i_rtti_helper.html">IRttiHelper</a> *rttiHelper)</td></tr>
 <tr class="separator:a15e65a6804c09a8c1f7675a3990898b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79673ca2bf6c5f6d53a93c8070a9bf88" id="r_a79673ca2bf6c5f6d53a93c8070a9bf88"><td class="memItemLeft" align="right" valign="top"><a id="a79673ca2bf6c5f6d53a93c8070a9bf88" name="a79673ca2bf6c5f6d53a93c8070a9bf88"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () <a class="el" href="class_a_z_1_1_e_bus.html">const</a></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
 <tr class="separator:a79673ca2bf6c5f6d53a93c8070a9bf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a531e37144b6ae54e953bad98aaafda3f" id="r_a531e37144b6ae54e953bad98aaafda3f"><td class="memItemLeft" align="right" valign="top"><a id="a531e37144b6ae54e953bad98aaafda3f" name="a531e37144b6ae54e953bad98aaafda3f"></a>
-<a class="el" href="class_a_z_1_1_e_bus.html">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_address</b></td></tr>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_address</b></td></tr>
 <tr class="separator:a531e37144b6ae54e953bad98aaafda3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e35691301698a8f73f838315bf2e804" id="r_a4e35691301698a8f73f838315bf2e804"><td class="memItemLeft" align="right" valign="top"><a id="a4e35691301698a8f73f838315bf2e804" name="a4e35691301698a8f73f838315bf2e804"></a>
 <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_typeId</b></td></tr>
@@ -95,7 +95,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_behavior_object.html">BehaviorObject</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:18 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:10 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

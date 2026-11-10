@@ -187,14 +187,12 @@ var hierarchy =
     [ "Audio::CATLEntity< TAudioPreloadRequestID >", "class_audio_1_1_c_a_t_l_entity.html", [
       [ "Audio::CATLPreloadRequest", "class_audio_1_1_c_a_t_l_preload_request.html", null ]
     ] ],
+    [ "CAudioControlsEditorPlugin", "class_c_audio_controls_editor_plugin.html", null ],
     [ "Audio::CInstanceManager< Audio::CATLAudioObject, TAudioObjectID >", "class_audio_1_1_c_instance_manager.html", null ],
     [ "Audio::CInstanceManager< Audio::CATLEvent, TAudioEventID >", "class_audio_1_1_c_instance_manager.html", null ],
     [ "Audio::Flags< TATLEnumFlagsType >", "class_audio_1_1_flags.html", null ],
     [ "IEditorNotifyListener", null, [
       [ "AudioControls::CAudioControlsEditorWindow", "class_audio_controls_1_1_c_audio_controls_editor_window.html", null ]
-    ] ],
-    [ "IPlugin", null, [
-      [ "CAudioControlsEditorPlugin", "class_c_audio_controls_editor_plugin.html", null ]
     ] ],
     [ "ISystemEventListener", null, [
       [ "Audio::CAudioTranslationLayer", "class_audio_1_1_c_audio_translation_layer.html", null ]
@@ -251,7 +249,8 @@ var hierarchy =
       [ "AudioControls::CAudioSystemPanel", "class_audio_controls_1_1_c_audio_system_panel.html", null ],
       [ "AudioControls::CInspectorPanel", "class_audio_controls_1_1_c_inspector_panel.html", null ],
       [ "AudioControls::QConnectionsWidget", "class_audio_controls_1_1_q_connections_widget.html", null ],
-      [ "AudioControls::QFilterButton", "class_audio_controls_1_1_q_filter_button.html", null ]
+      [ "AudioControls::QFilterButton", "class_audio_controls_1_1_q_filter_button.html", null ],
+      [ "CDockTitleBarWidget", "class_c_dock_title_bar_widget.html", null ]
     ] ],
     [ "Ui::ATLControlsPanel", null, [
       [ "AudioControls::CATLControlsPanel", "class_audio_controls_1_1_c_a_t_l_controls_panel.html", null ]

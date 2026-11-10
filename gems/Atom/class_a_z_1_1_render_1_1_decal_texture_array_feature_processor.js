@@ -14,6 +14,7 @@ var class_a_z_1_1_render_1_1_decal_texture_array_feature_processor =
     [ "SetDecalData", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a89b674fafcacb528c4af65bd3d98d968", null ],
     [ "SetDecalHalfSize", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a0894c7bfea662b29e2490e4aa01b6e34", null ],
     [ "SetDecalMaterial", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a66959ff2e2fd1b5a13c725f62e94c570", null ],
+    [ "SetDecalMaxDrawDistance", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a3973a0d7b927c311ea2f8be659c88d31", null ],
     [ "SetDecalNormalMapOpacity", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#ab073d8c7a984022b9e3f3899de246102", null ],
     [ "SetDecalOpacity", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a3245b4c962e4192e8d309861ceac8c7d", null ],
     [ "SetDecalOrientation", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a21de4ff2ea301ca891f7e9aaab48d9c4", null ],

@@ -41,7 +41,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"struct_open_particle_1_1_update_const_force.html"
+"struct_open_particle_1_1_trail_param.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzCore API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -117,7 +117,7 @@ typedef const node_type *&#160;</td><td class="memItemRight" valign="bottom"><b>
 typedef <a class="el" href="struct_a_z_std_1_1intrusive__multiset__node.html">intrusive_multiset_node</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hook_node_type</b></td></tr>
 <tr class="separator:ace60f6f9612059660fce2bd4388472cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8bbd84158b10adc965ddfcff6202fc1" id="r_ab8bbd84158b10adc965ddfcff6202fc1"><td class="memItemLeft" align="right" valign="top"><a id="ab8bbd84158b10adc965ddfcff6202fc1" name="ab8bbd84158b10adc965ddfcff6202fc1"></a>
-typedef <a class="el" href="struct_a_z_std_1_1intrusive__multiset__node.html">hook_node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>hook_node_ptr_type</b></td></tr>
+typedef hook_node_type *&#160;</td><td class="memItemRight" valign="bottom"><b>hook_node_ptr_type</b></td></tr>
 <tr class="separator:ab8bbd84158b10adc965ddfcff6202fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae482800be0655c0727d54a6e4b2407b7" id="r_ae482800be0655c0727d54a6e4b2407b7"><td class="memItemLeft" align="right" valign="top"><a id="ae482800be0655c0727d54a6e4b2407b7" name="ae482800be0655c0727d54a6e4b2407b7"></a>
 typedef <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator_impl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
@@ -142,10 +142,10 @@ template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:adb87243f884274e279691e4dfe2efa70"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_multiset</b> (const InputIterator &amp;first, const InputIterator &amp;last)</td></tr>
 <tr class="separator:adb87243f884274e279691e4dfe2efa70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a568cdeec409021a5a7d1e7bb11913e87" id="r_a568cdeec409021a5a7d1e7bb11913e87"><td class="memItemLeft" align="right" valign="top"><a id="a568cdeec409021a5a7d1e7bb11913e87" name="a568cdeec409021a5a7d1e7bb11913e87"></a>
-AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_multiset</b> (const <a class="el" href="class_a_z_std_1_1intrusive__multiset.html">this_type</a> &amp;rhs)</td></tr>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_multiset</b> (const this_type &amp;rhs)</td></tr>
 <tr class="separator:a568cdeec409021a5a7d1e7bb11913e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4553e764d9c6f374d68e2f3637b3bf" id="r_a7d4553e764d9c6f374d68e2f3637b3bf"><td class="memItemLeft" align="right" valign="top"><a id="a7d4553e764d9c6f374d68e2f3637b3bf" name="a7d4553e764d9c6f374d68e2f3637b3bf"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1intrusive__multiset.html">this_type</a> &amp;rhs)</td></tr>
+AZ_FORCE_INLINE this_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const this_type &amp;rhs)</td></tr>
 <tr class="separator:a7d4553e764d9c6f374d68e2f3637b3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e3ce2144d5195e4a78c95881357d60" id="r_a68e3ce2144d5195e4a78c95881357d60"><td class="memItemLeft" align="right" valign="top"><a id="a68e3ce2144d5195e4a78c95881357d60" name="a68e3ce2144d5195e4a78c95881357d60"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
@@ -160,22 +160,22 @@ AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1cons
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
 <tr class="separator:a4bd405eb398336add9e8833204710784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376876c3a974a9ad8957ec51674be17e" id="r_a376876c3a974a9ad8957ec51674be17e"><td class="memItemLeft" align="right" valign="top"><a id="a376876c3a974a9ad8957ec51674be17e" name="a376876c3a974a9ad8957ec51674be17e"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1reverse__iterator__impl.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
+AZ_FORCE_INLINE reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
 <tr class="separator:a376876c3a974a9ad8957ec51674be17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fdccffab4ce2f69628cc7f247fdb7f8" id="r_a3fdccffab4ce2f69628cc7f247fdb7f8"><td class="memItemLeft" align="right" valign="top"><a id="a3fdccffab4ce2f69628cc7f247fdb7f8" name="a3fdccffab4ce2f69628cc7f247fdb7f8"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1reverse__iterator__impl.html">const_reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const</td></tr>
+AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const</td></tr>
 <tr class="separator:a3fdccffab4ce2f69628cc7f247fdb7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4175f9f8bf3f70a1e1183a69c26b09ba" id="r_a4175f9f8bf3f70a1e1183a69c26b09ba"><td class="memItemLeft" align="right" valign="top"><a id="a4175f9f8bf3f70a1e1183a69c26b09ba" name="a4175f9f8bf3f70a1e1183a69c26b09ba"></a>
-<a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1reverse__iterator__impl.html">const_reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>crbegin</b> () const</td></tr>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>crbegin</b> () const</td></tr>
 <tr class="separator:a4175f9f8bf3f70a1e1183a69c26b09ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5274b3c05b5e9c00912da22753e2dfa1" id="r_a5274b3c05b5e9c00912da22753e2dfa1"><td class="memItemLeft" align="right" valign="top"><a id="a5274b3c05b5e9c00912da22753e2dfa1" name="a5274b3c05b5e9c00912da22753e2dfa1"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1reverse__iterator__impl.html">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
+AZ_FORCE_INLINE reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
 <tr class="separator:a5274b3c05b5e9c00912da22753e2dfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcc399c449c782862dd688af3ea73d96" id="r_adcc399c449c782862dd688af3ea73d96"><td class="memItemLeft" align="right" valign="top"><a id="adcc399c449c782862dd688af3ea73d96" name="adcc399c449c782862dd688af3ea73d96"></a>
-AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1reverse__iterator__impl.html">const_reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const</td></tr>
+AZ_FORCE_INLINE const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const</td></tr>
 <tr class="separator:adcc399c449c782862dd688af3ea73d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4675be00d95090fa30e7c181a0a8a9f" id="r_af4675be00d95090fa30e7c181a0a8a9f"><td class="memItemLeft" align="right" valign="top"><a id="af4675be00d95090fa30e7c181a0a8a9f" name="af4675be00d95090fa30e7c181a0a8a9f"></a>
-<a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1reverse__iterator__impl.html">const_reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const</td></tr>
+const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const</td></tr>
 <tr class="separator:af4675be00d95090fa30e7c181a0a8a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c4dcf471d57519857174f23accefa1" id="r_af1c4dcf471d57519857174f23accefa1"><td class="memItemLeft" align="right" valign="top"><a id="af1c4dcf471d57519857174f23accefa1" name="af1c4dcf471d57519857174f23accefa1"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>root</b> () const</td></tr>
@@ -201,28 +201,32 @@ AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iter
 <tr class="memitem:a99ce55dde4ebc088aa482ff0a7faf612" id="r_a99ce55dde4ebc088aa482ff0a7faf612"><td class="memItemLeft" align="right" valign="top"><a id="a99ce55dde4ebc088aa482ff0a7faf612" name="a99ce55dde4ebc088aa482ff0a7faf612"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lower_bound</b> (const KeyType &amp;key) const</td></tr>
 <tr class="separator:a99ce55dde4ebc088aa482ff0a7faf612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a7be50627a05be2bb7709b5171da9b" id="r_a00a7be50627a05be2bb7709b5171da9b"><td class="memTemplParams" colspan="2"><a id="a00a7be50627a05be2bb7709b5171da9b" name="a00a7be50627a05be2bb7709b5171da9b"></a>
-template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a00a7be50627a05be2bb7709b5171da9b"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key)</td></tr>
-<tr class="separator:a00a7be50627a05be2bb7709b5171da9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114621cb07c6aecf2996408ea5e2d00d" id="r_a114621cb07c6aecf2996408ea5e2d00d"><td class="memTemplParams" colspan="2"><a id="a114621cb07c6aecf2996408ea5e2d00d" name="a114621cb07c6aecf2996408ea5e2d00d"></a>
-template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a114621cb07c6aecf2996408ea5e2d00d"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) const</td></tr>
-<tr class="separator:a114621cb07c6aecf2996408ea5e2d00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91330c08dbebd2a6771e4d0df0e8a86b" id="r_a91330c08dbebd2a6771e4d0df0e8a86b"><td class="memTemplParams" colspan="2"><a id="a91330c08dbebd2a6771e4d0df0e8a86b" name="a91330c08dbebd2a6771e4d0df0e8a86b"></a>
+template&lt;class ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a91330c08dbebd2a6771e4d0df0e8a86b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a91330c08dbebd2a6771e4d0df0e8a86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74ca5396c1218531be896c17178f38c" id="r_ae74ca5396c1218531be896c17178f38c"><td class="memTemplParams" colspan="2"><a id="ae74ca5396c1218531be896c17178f38c" name="ae74ca5396c1218531be896c17178f38c"></a>
+template&lt;class ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:ae74ca5396c1218531be896c17178f38c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lower_bound</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:ae74ca5396c1218531be896c17178f38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de042c3b7250cdc28d6f40daadf20d6" id="r_a3de042c3b7250cdc28d6f40daadf20d6"><td class="memItemLeft" align="right" valign="top"><a id="a3de042c3b7250cdc28d6f40daadf20d6" name="a3de042c3b7250cdc28d6f40daadf20d6"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>upper_bound</b> (const KeyType &amp;key)</td></tr>
 <tr class="separator:a3de042c3b7250cdc28d6f40daadf20d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6738503a14f96de32811a2488ef978ad" id="r_a6738503a14f96de32811a2488ef978ad"><td class="memItemLeft" align="right" valign="top"><a id="a6738503a14f96de32811a2488ef978ad" name="a6738503a14f96de32811a2488ef978ad"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>upper_bound</b> (const KeyType &amp;key) const</td></tr>
 <tr class="separator:a6738503a14f96de32811a2488ef978ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d27ded0182335087ae43d26c4277b7" id="r_aa0d27ded0182335087ae43d26c4277b7"><td class="memTemplParams" colspan="2"><a id="aa0d27ded0182335087ae43d26c4277b7" name="aa0d27ded0182335087ae43d26c4277b7"></a>
-template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:aa0d27ded0182335087ae43d26c4277b7"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key)</td></tr>
-<tr class="separator:aa0d27ded0182335087ae43d26c4277b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b1bd1a6c53be50ad4a37959d6f70c0" id="r_a25b1bd1a6c53be50ad4a37959d6f70c0"><td class="memTemplParams" colspan="2"><a id="a25b1bd1a6c53be50ad4a37959d6f70c0" name="a25b1bd1a6c53be50ad4a37959d6f70c0"></a>
-template&lt;class ComparableToKey &gt; </td></tr>
-<tr class="memitem:a25b1bd1a6c53be50ad4a37959d6f70c0"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) const</td></tr>
-<tr class="separator:a25b1bd1a6c53be50ad4a37959d6f70c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01649d9a42398618cf6ed4f1cf4df914" id="r_a01649d9a42398618cf6ed4f1cf4df914"><td class="memTemplParams" colspan="2"><a id="a01649d9a42398618cf6ed4f1cf4df914" name="a01649d9a42398618cf6ed4f1cf4df914"></a>
+template&lt;class ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a01649d9a42398618cf6ed4f1cf4df914"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a01649d9a42398618cf6ed4f1cf4df914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924e7610458be4842ccdc816d9b70fe8" id="r_a924e7610458be4842ccdc816d9b70fe8"><td class="memTemplParams" colspan="2"><a id="a924e7610458be4842ccdc816d9b70fe8" name="a924e7610458be4842ccdc816d9b70fe8"></a>
+template&lt;class ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a924e7610458be4842ccdc816d9b70fe8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1const__iterator__impl.html">const_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>upper_bound</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:a924e7610458be4842ccdc816d9b70fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b53ce39689b65c9427ccd10528faf5" id="r_aa1b53ce39689b65c9427ccd10528faf5"><td class="memItemLeft" align="right" valign="top"><a id="aa1b53ce39689b65c9427ccd10528faf5" name="aa1b53ce39689b65c9427ccd10528faf5"></a>
 AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__multiset_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const KeyType &amp;key)</td></tr>
 <tr class="separator:aa1b53ce39689b65c9427ccd10528faf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,28 +284,32 @@ node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>DoLowerBound
 <tr class="memitem:a26024abdc70359cb10a6da9fc0bab224" id="r_a26024abdc70359cb10a6da9fc0bab224"><td class="memItemLeft" align="right" valign="top"><a id="a26024abdc70359cb10a6da9fc0bab224" name="a26024abdc70359cb10a6da9fc0bab224"></a>
 const_node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>DoLowerBound</b> (const KeyType &amp;key) const</td></tr>
 <tr class="separator:a26024abdc70359cb10a6da9fc0bab224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5252d740d1a00066fac566a136b06a" id="r_ace5252d740d1a00066fac566a136b06a"><td class="memTemplParams" colspan="2"><a id="ace5252d740d1a00066fac566a136b06a" name="ace5252d740d1a00066fac566a136b06a"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:ace5252d740d1a00066fac566a136b06a"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, node_ptr_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoLowerBound</b> (const ComparableToKey &amp;key)</td></tr>
-<tr class="separator:ace5252d740d1a00066fac566a136b06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0a4dffe8dc0cffaef92f343e4f2942" id="r_a3d0a4dffe8dc0cffaef92f343e4f2942"><td class="memTemplParams" colspan="2"><a id="a3d0a4dffe8dc0cffaef92f343e4f2942" name="a3d0a4dffe8dc0cffaef92f343e4f2942"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a3d0a4dffe8dc0cffaef92f343e4f2942"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, const_node_ptr_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoLowerBound</b> (const ComparableToKey &amp;key) const</td></tr>
-<tr class="separator:a3d0a4dffe8dc0cffaef92f343e4f2942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d21861b9e80968bd4de0ca1929bc29f" id="r_a6d21861b9e80968bd4de0ca1929bc29f"><td class="memTemplParams" colspan="2"><a id="a6d21861b9e80968bd4de0ca1929bc29f" name="a6d21861b9e80968bd4de0ca1929bc29f"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a6d21861b9e80968bd4de0ca1929bc29f"><td class="memTemplItemLeft" align="right" valign="top">node_ptr_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoLowerBound</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a6d21861b9e80968bd4de0ca1929bc29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56372789c4bb5429fed138b3af447ab" id="r_ae56372789c4bb5429fed138b3af447ab"><td class="memTemplParams" colspan="2"><a id="ae56372789c4bb5429fed138b3af447ab" name="ae56372789c4bb5429fed138b3af447ab"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:ae56372789c4bb5429fed138b3af447ab"><td class="memTemplItemLeft" align="right" valign="top">const_node_ptr_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoLowerBound</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:ae56372789c4bb5429fed138b3af447ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880002f77aabb8774de5a9a9ffa7c87c" id="r_a880002f77aabb8774de5a9a9ffa7c87c"><td class="memItemLeft" align="right" valign="top"><a id="a880002f77aabb8774de5a9a9ffa7c87c" name="a880002f77aabb8774de5a9a9ffa7c87c"></a>
 node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>DoUpperBound</b> (const KeyType &amp;key)</td></tr>
 <tr class="separator:a880002f77aabb8774de5a9a9ffa7c87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ccf7a66d5a4edaf1ecd330389bb592" id="r_af4ccf7a66d5a4edaf1ecd330389bb592"><td class="memItemLeft" align="right" valign="top"><a id="af4ccf7a66d5a4edaf1ecd330389bb592" name="af4ccf7a66d5a4edaf1ecd330389bb592"></a>
 const_node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>DoUpperBound</b> (const KeyType &amp;key) const</td></tr>
 <tr class="separator:af4ccf7a66d5a4edaf1ecd330389bb592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422470172570edb87c55ce61dd7bb555" id="r_a422470172570edb87c55ce61dd7bb555"><td class="memTemplParams" colspan="2"><a id="a422470172570edb87c55ce61dd7bb555" name="a422470172570edb87c55ce61dd7bb555"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:a422470172570edb87c55ce61dd7bb555"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, node_ptr_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoUpperBound</b> (const ComparableToKey &amp;key)</td></tr>
-<tr class="separator:a422470172570edb87c55ce61dd7bb555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa66180ec27f176e32541975cadd8d4d1" id="r_aa66180ec27f176e32541975cadd8d4d1"><td class="memTemplParams" colspan="2"><a id="aa66180ec27f176e32541975cadd8d4d1" name="aa66180ec27f176e32541975cadd8d4d1"></a>
-template&lt;typename ComparableToKey &gt; </td></tr>
-<tr class="memitem:aa66180ec27f176e32541975cadd8d4d1"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; Internal::is_transparent&lt; Compare, ComparableToKey &gt;::value, const_node_ptr_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoUpperBound</b> (const ComparableToKey &amp;key) const</td></tr>
-<tr class="separator:aa66180ec27f176e32541975cadd8d4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcb6eede97afcab6854c01e3f22be48" id="r_a5fcb6eede97afcab6854c01e3f22be48"><td class="memTemplParams" colspan="2"><a id="a5fcb6eede97afcab6854c01e3f22be48" name="a5fcb6eede97afcab6854c01e3f22be48"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a5fcb6eede97afcab6854c01e3f22be48"><td class="memTemplItemLeft" align="right" valign="top">node_ptr_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoUpperBound</b> (const ComparableToKey &amp;key)</td></tr>
+<tr class="separator:a5fcb6eede97afcab6854c01e3f22be48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b21eed2ae4741ff3ef340ff9978e848" id="r_a7b21eed2ae4741ff3ef340ff9978e848"><td class="memTemplParams" colspan="2"><a id="a7b21eed2ae4741ff3ef340ff9978e848" name="a7b21eed2ae4741ff3ef340ff9978e848"></a>
+template&lt;typename ComparableToKey &gt; <br />
+requires Internal::is_transparent_v&lt;Compare, ComparableToKey&gt;</td></tr>
+<tr class="memitem:a7b21eed2ae4741ff3ef340ff9978e848"><td class="memTemplItemLeft" align="right" valign="top">const_node_ptr_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoUpperBound</b> (const ComparableToKey &amp;key) const</td></tr>
+<tr class="separator:a7b21eed2ae4741ff3ef340ff9978e848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82be5098433dee8988d4071d5b4a9365" id="r_a82be5098433dee8988d4071d5b4a9365"><td class="memItemLeft" align="right" valign="top"><a id="a82be5098433dee8988d4071d5b4a9365" name="a82be5098433dee8988d4071d5b4a9365"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setNil</b> (node_ptr_type node) const</td></tr>
 <tr class="separator:a82be5098433dee8988d4071d5b4a9365"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,8 +357,8 @@ Static Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab55de8406ad4bdc89cc6ee6fb609668d" id="r_ab55de8406ad4bdc89cc6ee6fb609668d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>&lt; sizeof(node_type), alignment_of&lt; node_type &gt;::value &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__multiset.html#ab55de8406ad4bdc89cc6ee6fb609668d">m_head</a></td></tr>
-<tr class="separator:ab55de8406ad4bdc89cc6ee6fb609668d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ec4c7d04048ac40b149527f18f716e" id="r_aa7ec4c7d04048ac40b149527f18f716e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>&lt; sizeof(node_type), alignment_of_v&lt; node_type &gt; &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__multiset.html#aa7ec4c7d04048ac40b149527f18f716e">m_head</a></td></tr>
+<tr class="separator:aa7ec4c7d04048ac40b149527f18f716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2108d111ed97bddc3f353b95614a2b9" id="r_ac2108d111ed97bddc3f353b95614a2b9"><td class="memItemLeft" align="right" valign="top"><a id="ac2108d111ed97bddc3f353b95614a2b9" name="ac2108d111ed97bddc3f353b95614a2b9"></a>
 AZStd::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_numElements</b></td></tr>
 <tr class="separator:ac2108d111ed97bddc3f353b95614a2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,8 +424,8 @@ template&lt;class T , class Hook , class Compare  = AZStd::less&lt;T&gt;&gt; </d
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab55de8406ad4bdc89cc6ee6fb609668d" name="ab55de8406ad4bdc89cc6ee6fb609668d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab55de8406ad4bdc89cc6ee6fb609668d">&#9670;&#160;</a></span>m_head</h2>
+<a id="aa7ec4c7d04048ac40b149527f18f716e" name="aa7ec4c7d04048ac40b149527f18f716e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ec4c7d04048ac40b149527f18f716e">&#9670;&#160;</a></span>m_head</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +436,7 @@ template&lt;class T , class Hook , class Compare  = AZStd::less&lt;T&gt;&gt; </d
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>&lt;sizeof(node_type),alignment_of&lt;node_type&gt;::value&gt;::type <a class="el" href="class_a_z_std_1_1intrusive__multiset.html">AZStd::intrusive_multiset</a>&lt; T, Hook, Compare &gt;::m_head</td>
+          <td class="memname"><a class="el" href="struct_a_z_std_1_1aligned__storage.html">aligned_storage</a>&lt;sizeof(node_type),alignment_of_v&lt;node_type&gt;&gt;::type <a class="el" href="class_a_z_std_1_1intrusive__multiset.html">AZStd::intrusive_multiset</a>&lt; T, Hook, Compare &gt;::m_head</td>
         </tr>
       </table>
   </td>
@@ -453,7 +461,7 @@ template&lt;class T , class Hook , class Compare  = AZStd::less&lt;T&gt;&gt; </d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z_std.html">AZStd</a></li><li class="navelem"><a class="el" href="class_a_z_std_1_1intrusive__multiset.html">intrusive_multiset</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:23 for Open 3D Engine AzCore API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

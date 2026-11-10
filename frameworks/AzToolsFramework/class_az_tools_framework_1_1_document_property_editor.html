@@ -24,7 +24,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.05.0</span>
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference<span id="projectnumber">&#160;26.10.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -82,6 +82,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAdapter</b> (AZ::D
 <tr class="memitem:a118b94dc8ee6e9321fa4212cc2f22bcf" id="r_a118b94dc8ee6e9321fa4212cc2f22bcf"><td class="memItemLeft" align="right" valign="top"><a id="a118b94dc8ee6e9321fa4212cc2f22bcf" name="a118b94dc8ee6e9321fa4212cc2f22bcf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="separator:a118b94dc8ee6e9321fa4212cc2f22bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110248478908ac0baea7146418493a40" id="r_a110248478908ac0baea7146418493a40"><td class="memItemLeft" align="right" valign="top"><a id="a110248478908ac0baea7146418493a40" name="a110248478908ac0baea7146418493a40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteQueuedReset</b> ()</td></tr>
+<tr class="separator:a110248478908ac0baea7146418493a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
@@ -141,12 +144,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CollapseAll</b> ()</t
 <tr class="memitem:ac27759363d92b837180657cc60e6c5c2" id="r_ac27759363d92b837180657cc60e6c5c2"><td class="memItemLeft" align="right" valign="top"><a id="ac27759363d92b837180657cc60e6c5c2" name="ac27759363d92b837180657cc60e6c5c2"></a>
 virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
 <tr class="separator:ac27759363d92b837180657cc60e6c5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b94f1e7e3f148d9d87d09c66cbcd59" id="r_ad0b94f1e7e3f148d9d87d09c66cbcd59"><td class="memItemLeft" align="right" valign="top"><a id="ad0b94f1e7e3f148d9d87d09c66cbcd59" name="ad0b94f1e7e3f148d9d87d09c66cbcd59"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>focusNextPrevChild</b> (bool next) override</td></tr>
+<tr class="separator:ad0b94f1e7e3f148d9d87d09c66cbcd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4a11bdbbb5cffa652bd244841f781a" id="r_a5b4a11bdbbb5cffa652bd244841f781a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_document_property_editor.html#a5b4a11bdbbb5cffa652bd244841f781a">SetSavedStateKey</a> (AZ::u32 key, AZStd::string propertyEditorName={}) override</td></tr>
 <tr class="separator:a5b4a11bdbbb5cffa652bd244841f781a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a925fd97cd6ae2da095c3245ff6c10143" id="r_a925fd97cd6ae2da095c3245ff6c10143"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_document_property_editor.html#a925fd97cd6ae2da095c3245ff6c10143">ClearInstances</a> () override</td></tr>
 <tr class="separator:a925fd97cd6ae2da095c3245ff6c10143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a9287601ecde2300517857bf749a62" id="r_a31a9287601ecde2300517857bf749a62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_document_property_editor.html#a31a9287601ecde2300517857bf749a62">SetFilterString</a> (AZStd::string str) override</td></tr>
 <tr class="separator:a31a9287601ecde2300517857bf749a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1a31c291cf428bf2a7ed95d790415c" id="r_aef1a31c291cf428bf2a7ed95d790415c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_document_property_editor.html#aef1a31c291cf428bf2a7ed95d790415c">InvalidateAll</a> (const char *filter) override</td></tr>
+<tr class="separator:aef1a31c291cf428bf2a7ed95d790415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89713085e6ce55825471affcd8f8618f" id="r_a89713085e6ce55825471affcd8f8618f"><td class="memItemLeft" align="right" valign="top"><a id="a89713085e6ce55825471affcd8f8618f" name="a89713085e6ce55825471affcd8f8618f"></a>
 AZ::Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>GetDomValueForRow</b> (<a class="el" href="class_az_tools_framework_1_1_d_p_e_row_widget.html">DPERowWidget</a> *row) const</td></tr>
 <tr class="separator:a89713085e6ce55825471affcd8f8618f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +173,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecursiveExpansion
 <tr class="memitem:ae67b3c7295adfb9a5bdd2e9aed1ad3d4" id="r_ae67b3c7295adfb9a5bdd2e9aed1ad3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae67b3c7295adfb9a5bdd2e9aed1ad3d4" name="ae67b3c7295adfb9a5bdd2e9aed1ad3d4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterHandlerPool</b> (AZ::Name handlerName, AZStd::shared_ptr&lt; AZ::InstancePoolBase &gt; handlerPool)</td></tr>
 <tr class="separator:ae67b3c7295adfb9a5bdd2e9aed1ad3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71250ca440d58f29476effccaa893c9b" id="r_a71250ca440d58f29476effccaa893c9b"><td class="memItemLeft" align="right" valign="top"><a id="a71250ca440d58f29476effccaa893c9b" name="a71250ca440d58f29476effccaa893c9b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDirtyHandler</b> (<a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html">PropertyHandlerWidgetInterface</a> *dirtyWidget)</td></tr>
+<tr class="separator:a71250ca440d58f29476effccaa893c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c96c40331be617815f43023ac156e7b" id="r_a8c96c40331be617815f43023ac156e7b"><td class="memItemLeft" align="right" valign="top"><a id="a8c96c40331be617815f43023ac156e7b" name="a8c96c40331be617815f43023ac156e7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearDirtyHandler</b> (<a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html">PropertyHandlerWidgetInterface</a> *toClear)</td></tr>
+<tr class="separator:a8c96c40331be617815f43023ac156e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_tools_framework_1_1_i_property_editor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_i_property_editor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_i_property_editor.html">AzToolsFramework::IPropertyEditor</a></td></tr>
 <tr class="memitem:a8c0f90bffd34b8da98163eb643e9a65e inherit pub_methods_class_az_tools_framework_1_1_i_property_editor" id="r_a8c0f90bffd34b8da98163eb643e9a65e"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
@@ -202,9 +216,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHideRootPr
 <tr class="memitem:a02c1627b46f8bc7c82ddcc254d02c756 inherit pub_methods_class_az_tools_framework_1_1_i_property_editor" id="r_a02c1627b46f8bc7c82ddcc254d02c756"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoResizeLabels</b> (bool autoResizeLabels)</td></tr>
 <tr class="separator:a02c1627b46f8bc7c82ddcc254d02c756 inherit pub_methods_class_az_tools_framework_1_1_i_property_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c66e232fa79a625d2c1c7953572dc1 inherit pub_methods_class_az_tools_framework_1_1_i_property_editor" id="r_a11c66e232fa79a625d2c1c7953572dc1"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateAll</b> (const char *filter=nullptr)</td></tr>
-<tr class="separator:a11c66e232fa79a625d2c1c7953572dc1 inherit pub_methods_class_az_tools_framework_1_1_i_property_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afffd99a86ecd0da0145636bdca8897 inherit pub_methods_class_az_tools_framework_1_1_i_property_editor" id="r_a5afffd99a86ecd0da0145636bdca8897"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueInvalidation</b> (PropertyModificationRefreshLevel level)</td></tr>
 <tr class="separator:a5afffd99a86ecd0da0145636bdca8897 inherit pub_methods_class_az_tools_framework_1_1_i_property_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +246,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abb5e9559c24956f6ed0b3f4a63a89ee8" id="r_abb5e9559c24956f6ed0b3f4a63a89ee8"><td class="memItemLeft" align="right" valign="top"><a id="abb5e9559c24956f6ed0b3f4a63a89ee8" name="abb5e9559c24956f6ed0b3f4a63a89ee8"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldReplaceCVarEditor</b> ()</td></tr>
 <tr class="separator:abb5e9559c24956f6ed0b3f4a63a89ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2b45e514bcb9d01f76817d60a14227" id="r_a8b2b45e514bcb9d01f76817d60a14227"><td class="memItemLeft" align="right" valign="top"><a id="a8b2b45e514bcb9d01f76817d60a14227" name="a8b2b45e514bcb9d01f76817d60a14227"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldUseWidgetPooling</b> ()</td></tr>
+<tr class="separator:a8b2b45e514bcb9d01f76817d60a14227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae690e3468d9b713789b20ecf1fdde7c3" id="r_ae690e3468d9b713789b20ecf1fdde7c3"><td class="memItemLeft" align="right" valign="top"><a id="ae690e3468d9b713789b20ecf1fdde7c3" name="ae690e3468d9b713789b20ecf1fdde7c3"></a>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnableCVarEditorName</b> ()</td></tr>
 <tr class="separator:ae690e3468d9b713789b20ecf1fdde7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,6 +279,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDomChange</b> (
 <tr class="memitem:acebb2ccc07096ab7423eebe08fa0ce2f" id="r_acebb2ccc07096ab7423eebe08fa0ce2f"><td class="memItemLeft" align="right" valign="top"><a id="acebb2ccc07096ab7423eebe08fa0ce2f" name="acebb2ccc07096ab7423eebe08fa0ce2f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDomMessage</b> (const AZ::DocumentPropertyEditor::AdapterMessage &amp;message, AZ::Dom::Value &amp;value)</td></tr>
 <tr class="separator:acebb2ccc07096ab7423eebe08fa0ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8002885681745faa3ae0237db3873e84" id="r_a8002885681745faa3ae0237db3873e84"><td class="memItemLeft" align="right" valign="top"><a id="a8002885681745faa3ae0237db3873e84" name="a8002885681745faa3ae0237db3873e84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestExecuteQueuedReset</b> ()</td></tr>
+<tr class="separator:a8002885681745faa3ae0237db3873e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2cbd8f71b7afaa8e108b21430a397d" id="r_a5b2cbd8f71b7afaa8e108b21430a397d"><td class="memItemLeft" align="right" valign="top"><a id="a5b2cbd8f71b7afaa8e108b21430a397d" name="a5b2cbd8f71b7afaa8e108b21430a397d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateDirtyHandlers</b> ()</td></tr>
+<tr class="separator:a5b2cbd8f71b7afaa8e108b21430a397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a1e806e837ae832cebb9b4dcb70796" id="r_a68a1e806e837ae832cebb9b4dcb70796"><td class="memItemLeft" align="right" valign="top"><a id="a68a1e806e837ae832cebb9b4dcb70796" name="a68a1e806e837ae832cebb9b4dcb70796"></a>
 QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateWidgetForHandler</b> (<a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system_interface.html#a357d9a49f1890dcc3a5545cae2a07a3d">PropertyEditorToolsSystemInterface::PropertyHandlerId</a> handlerId, const AZ::Dom::Value &amp;domValue)</td></tr>
 <tr class="separator:a68a1e806e837ae832cebb9b4dcb70796"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,12 +300,18 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseHandler
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:ac4c6d5c6c44285279d4d65fb1ad07fe7" id="r_ac4c6d5c6c44285279d4d65fb1ad07fe7"><td class="memItemLeft" align="right" valign="top"><a id="ac4c6d5c6c44285279d4d65fb1ad07fe7" name="ac4c6d5c6c44285279d4d65fb1ad07fe7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_executeQueuedResetAlreadyQueued</b> = false</td></tr>
+<tr class="separator:ac4c6d5c6c44285279d4d65fb1ad07fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2201700a41b0b5fa9b7714d27fcc9e36" id="r_a2201700a41b0b5fa9b7714d27fcc9e36"><td class="memItemLeft" align="right" valign="top"><a id="a2201700a41b0b5fa9b7714d27fcc9e36" name="a2201700a41b0b5fa9b7714d27fcc9e36"></a>
 AZ::DocumentPropertyEditor::DocumentAdapterPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_adapter</b></td></tr>
 <tr class="separator:a2201700a41b0b5fa9b7714d27fcc9e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425ffeeff1654866ab6c55c211df8120" id="r_a425ffeeff1654866ab6c55c211df8120"><td class="memItemLeft" align="right" valign="top"><a id="a425ffeeff1654866ab6c55c211df8120" name="a425ffeeff1654866ab6c55c211df8120"></a>
 AZ::DocumentPropertyEditor::DocumentAdapter::ResetEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_resetHandler</b></td></tr>
 <tr class="separator:a425ffeeff1654866ab6c55c211df8120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e21dcea4e438cd44854d74087bf908" id="r_a49e21dcea4e438cd44854d74087bf908"><td class="memItemLeft" align="right" valign="top"><a id="a49e21dcea4e438cd44854d74087bf908" name="a49e21dcea4e438cd44854d74087bf908"></a>
+AZ::DocumentPropertyEditor::DocumentAdapter::ResetQueuedEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_resetQueuedHandler</b></td></tr>
+<tr class="separator:a49e21dcea4e438cd44854d74087bf908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5493dc0a75d31d6b5570fd2a959e4f0" id="r_ad5493dc0a75d31d6b5570fd2a959e4f0"><td class="memItemLeft" align="right" valign="top"><a id="ad5493dc0a75d31d6b5570fd2a959e4f0" name="ad5493dc0a75d31d6b5570fd2a959e4f0"></a>
 AZ::DocumentPropertyEditor::DocumentAdapter::ChangedEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_changedHandler</b></td></tr>
 <tr class="separator:ad5493dc0a75d31d6b5570fd2a959e4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,6 +354,9 @@ AZStd::shared_ptr&lt; AZ::InstancePool&lt; AzQtComponents::ElidingLabel &gt; &gt
 <tr class="memitem:a3caf65606c39fcc032784f43216f97f8" id="r_a3caf65606c39fcc032784f43216f97f8"><td class="memItemLeft" align="right" valign="top"><a id="a3caf65606c39fcc032784f43216f97f8" name="a3caf65606c39fcc032784f43216f97f8"></a>
 AZStd::unordered_map&lt; AZ::Name, AZStd::shared_ptr&lt; AZ::InstancePoolBase &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_handlerPools</b></td></tr>
 <tr class="separator:a3caf65606c39fcc032784f43216f97f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccd3befd9daef94f88855966992552e" id="r_a9ccd3befd9daef94f88855966992552e"><td class="memItemLeft" align="right" valign="top"><a id="a9ccd3befd9daef94f88855966992552e" name="a9ccd3befd9daef94f88855966992552e"></a>
+AZStd::unordered_set&lt; <a class="el" href="class_az_tools_framework_1_1_property_handler_widget_interface.html">PropertyHandlerWidgetInterface</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dirtyHandlers</b></td></tr>
+<tr class="separator:a9ccd3befd9daef94f88855966992552e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -368,6 +397,34 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicEditDataProvi
           <td class="memname">void AzToolsFramework::DocumentPropertyEditor::ClearInstances </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_i_property_editor.html">AzToolsFramework::IPropertyEditor</a>.</p>
+
+</div>
+</div>
+<a id="aef1a31c291cf428bf2a7ed95d790415c" name="aef1a31c291cf428bf2a7ed95d790415c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1a31c291cf428bf2a7ed95d790415c">&#9670;&#160;</a></span>InvalidateAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::DocumentPropertyEditor::InvalidateAll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -495,7 +552,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicEditDataProvi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>AzToolsFramework</b></li><li class="navelem"><a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a></li>
-    <li class="footer">Generated on Tue May 26 2026 21:02:29 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 20:06:30 for Open 3D Engine AzToolsFramework API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
